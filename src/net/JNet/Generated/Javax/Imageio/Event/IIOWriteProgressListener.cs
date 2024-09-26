@@ -403,7 +403,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg1"><see cref="float"/></param>
         public override void ImageProgress(Javax.Imageio.ImageWriter arg0, float arg1)
         {
-            IExecute("imageProgress", arg0, arg1);
+            IExecuteWithSignature("imageProgress", "(Ljavax/imageio/ImageWriter;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#imageStarted(javax.imageio.ImageWriter,int)"/>
@@ -412,7 +412,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg1"><see cref="int"/></param>
         public override void ImageStarted(Javax.Imageio.ImageWriter arg0, int arg1)
         {
-            IExecute("imageStarted", arg0, arg1);
+            IExecuteWithSignature("imageStarted", "(Ljavax/imageio/ImageWriter;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailComplete(javax.imageio.ImageWriter)"/>
@@ -429,7 +429,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg1"><see cref="float"/></param>
         public override void ThumbnailProgress(Javax.Imageio.ImageWriter arg0, float arg1)
         {
-            IExecute("thumbnailProgress", arg0, arg1);
+            IExecuteWithSignature("thumbnailProgress", "(Ljavax/imageio/ImageWriter;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#thumbnailStarted(javax.imageio.ImageWriter,int,int)"/>
@@ -439,7 +439,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg2"><see cref="int"/></param>
         public override void ThumbnailStarted(Javax.Imageio.ImageWriter arg0, int arg1, int arg2)
         {
-            IExecute("thumbnailStarted", arg0, arg1, arg2);
+            IExecuteWithSignature("thumbnailStarted", "(Ljavax/imageio/ImageWriter;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOWriteProgressListener.html#writeAborted(javax.imageio.ImageWriter)"/>

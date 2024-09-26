@@ -110,7 +110,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public static Java.Sql.Connection GetConnection(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String,java.util.Properties)"/>
@@ -121,7 +121,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public static Java.Sql.Connection GetConnection(Java.Lang.String arg0, Java.Util.Properties arg1)
         {
-            return SExecute<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", arg0, arg1);
+            return SExecuteWithSignature<Java.Sql.Connection>(LocalBridgeClazz, "getConnection", "(Ljava/lang/String;Ljava/util/Properties;)Ljava/sql/Connection;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#getConnection(java.lang.String)"/>
@@ -184,7 +184,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public static void RegisterDriver(Java.Sql.Driver arg0, Java.Sql.DriverAction arg1)
         {
-            SExecute(LocalBridgeClazz, "registerDriver", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "registerDriver", "(Ljava/sql/Driver;Ljava/sql/DriverAction;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DriverManager.html#registerDriver(java.sql.Driver)"/>

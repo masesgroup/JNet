@@ -104,7 +104,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="object"/></returns>
         public static object NewProxyInstance(Java.Lang.ClassLoader arg0, Java.Lang.Class[] arg1, Java.Lang.Reflect.InvocationHandler arg2)
         {
-            return SExecute(LocalBridgeClazz, "newProxyInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature(LocalBridgeClazz, "newProxyInstance", "(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/reflect/Proxy.html#getInvocationHandler(java.lang.Object)"/>

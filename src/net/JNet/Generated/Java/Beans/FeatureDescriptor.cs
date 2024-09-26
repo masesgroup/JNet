@@ -183,7 +183,7 @@ namespace Java.Beans
         /// <param name="arg1"><see cref="object"/></param>
         public void SetValue(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setValue", arg0, arg1);
+            IExecuteWithSignature("setValue", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion

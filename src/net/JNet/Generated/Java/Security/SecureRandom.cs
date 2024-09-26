@@ -120,7 +120,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.SecureRandom GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/SecureRandom;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -131,7 +131,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.SecureRandom GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/SecureRandom;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.SecureRandomParameters,java.lang.String)"/>
@@ -144,7 +144,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.SecureRandom GetInstance(Java.Lang.String arg0, Java.Security.SecureRandomParameters arg1, Java.Lang.String arg2)
         {
-            return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/SecureRandomParameters;Ljava/lang/String;)Ljava/security/SecureRandom;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.SecureRandomParameters,java.security.Provider)"/>
@@ -156,7 +156,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.SecureRandom GetInstance(Java.Lang.String arg0, Java.Security.SecureRandomParameters arg1, Java.Security.Provider arg2)
         {
-            return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/SecureRandomParameters;Ljava/security/Provider;)Ljava/security/SecureRandom;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.SecureRandomParameters)"/>
@@ -167,7 +167,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.SecureRandom GetInstance(Java.Lang.String arg0, Java.Security.SecureRandomParameters arg1)
         {
-            return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/SecureRandomParameters;)Ljava/security/SecureRandom;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#getInstance(java.lang.String)"/>
@@ -220,7 +220,7 @@ namespace Java.Security
         /// <param name="arg1"><see cref="Java.Security.SecureRandomParameters"/></param>
         public void NextBytes(byte[] arg0, Java.Security.SecureRandomParameters arg1)
         {
-            IExecute("nextBytes", arg0, arg1);
+            IExecuteWithSignature("nextBytes", "([BLjava/security/SecureRandomParameters;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/SecureRandom.html#reseed()"/>

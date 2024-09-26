@@ -193,7 +193,7 @@ namespace Javax.Sound.Sampled
         /// <exception cref="Javax.Sound.Sampled.LineUnavailableException"/>
         public void Open(Javax.Sound.Sampled.AudioFormat arg0, byte[] arg1, int arg2, int arg3)
         {
-            IExecute("open", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("open", "(Ljavax/sound/sampled/AudioFormat;[BII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#open(javax.sound.sampled.AudioInputStream)"/>
@@ -220,7 +220,7 @@ namespace Javax.Sound.Sampled
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLoopPoints(int arg0, int arg1)
         {
-            IExecute("setLoopPoints", arg0, arg1);
+            IExecuteWithSignature("setLoopPoints", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Clip.html#setMicrosecondPosition(long)"/>

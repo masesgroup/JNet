@@ -121,7 +121,7 @@ namespace Javax.Naming.Ldap
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Ldap.ExtendedResponse CreateExtendedResponse(Java.Lang.String arg0, byte[] arg1, int arg2, int arg3)
         {
-            return IExecute<Javax.Naming.Ldap.ExtendedResponse>("createExtendedResponse", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Naming.Ldap.ExtendedResponse>("createExtendedResponse", "(Ljava/lang/String;[BII)Ljavax/naming/ldap/ExtendedResponse;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

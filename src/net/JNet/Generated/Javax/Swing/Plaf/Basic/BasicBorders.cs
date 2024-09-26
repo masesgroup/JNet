@@ -837,7 +837,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg5"><see cref="int"/></param>
             public void PaintBorder(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
             {
-                IExecute("paintBorder", arg0, arg1, arg2, arg3, arg4, arg5);
+                IExecuteWithSignature("paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
             }
 
             #endregion

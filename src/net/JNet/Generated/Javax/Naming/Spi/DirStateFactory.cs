@@ -178,7 +178,7 @@ namespace Javax.Naming.Spi
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Spi.DirStateFactory.Result GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3, Javax.Naming.Directory.Attributes arg4)
         {
-            return IExecute<Javax.Naming.Spi.DirStateFactory.Result>("getStateToBind", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Javax.Naming.Spi.DirStateFactory.Result>("getStateToBind", "(Ljava/lang/Object;Ljavax/naming/Name;Ljavax/naming/Context;Ljava/util/Hashtable;Ljavax/naming/directory/Attributes;)Ljavax/naming/spi/DirStateFactory$Result;", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

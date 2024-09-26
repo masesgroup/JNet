@@ -110,7 +110,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public static Java.Nio.FloatBuffer Wrap(float[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.FloatBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Nio.FloatBuffer>(LocalBridgeClazz, "wrap", "([FII)Ljava/nio/FloatBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#wrap(float[])"/>
@@ -183,7 +183,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Put(int arg0, float arg1)
         {
-            return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "(IF)Ljava/nio/FloatBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#put(float[])"/>
@@ -230,7 +230,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Get(float[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.FloatBuffer>("get", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.FloatBuffer>("get", "([FII)Ljava/nio/FloatBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#get(float[])"/>
@@ -250,7 +250,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.FloatBuffer"/></returns>
         public Java.Nio.FloatBuffer Put(float[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.FloatBuffer>("put", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.FloatBuffer>("put", "([FII)Ljava/nio/FloatBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/FloatBuffer.html#put(java.nio.FloatBuffer)"/>

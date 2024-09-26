@@ -142,7 +142,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetOffset(int arg0, int arg1)
         {
-            return IExecute<int>("getOffset", arg0, arg1);
+            return IExecuteWithSignature<int>("getOffset", "(II)I", arg0, arg1);
         }
 
         #endregion

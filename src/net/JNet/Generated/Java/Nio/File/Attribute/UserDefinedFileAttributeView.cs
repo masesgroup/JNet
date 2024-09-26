@@ -159,7 +159,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public int Read(Java.Lang.String arg0, Java.Nio.ByteBuffer arg1)
         {
-            return IExecute<int>("read", arg0, arg1);
+            return IExecuteWithSignature<int>("read", "(Ljava/lang/String;Ljava/nio/ByteBuffer;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#size(java.lang.String)"/>
@@ -180,7 +180,7 @@ namespace Java.Nio.File.Attribute
         /// <exception cref="Java.Io.IOException"/>
         public int Write(Java.Lang.String arg0, Java.Nio.ByteBuffer arg1)
         {
-            return IExecute<int>("write", arg0, arg1);
+            return IExecuteWithSignature<int>("write", "(Ljava/lang/String;Ljava/nio/ByteBuffer;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/UserDefinedFileAttributeView.html#name()"/>

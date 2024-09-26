@@ -200,7 +200,7 @@ namespace Javax.Management.Openmbean
         /// <returns><see cref="object"/></returns>
         public object Put(object arg0, object arg1)
         {
-            return IExecute("put", arg0, arg1);
+            return IExecuteWithSignature("put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/TabularDataSupport.html#remove(java.lang.Object)"/>

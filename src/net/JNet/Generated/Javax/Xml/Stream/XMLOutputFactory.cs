@@ -120,7 +120,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.FactoryConfigurationError"/>
         public static Javax.Xml.Stream.XMLOutputFactory NewFactory(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Javax.Xml.Stream.XMLOutputFactory>(LocalBridgeClazz, "newFactory", arg0, arg1);
+            return SExecuteWithSignature<Javax.Xml.Stream.XMLOutputFactory>(LocalBridgeClazz, "newFactory", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljavax/xml/stream/XMLOutputFactory;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#newInstance()"/>
@@ -163,7 +163,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLEventWriter CreateXMLEventWriter(Java.Io.OutputStream arg0, Java.Lang.String arg1)
         {
-            return IExecute<Javax.Xml.Stream.XMLEventWriter>("createXMLEventWriter", arg0, arg1);
+            return IExecuteWithSignature<Javax.Xml.Stream.XMLEventWriter>("createXMLEventWriter", "(Ljava/io/OutputStream;Ljava/lang/String;)Ljavax/xml/stream/XMLEventWriter;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLEventWriter(java.io.OutputStream)"/>
@@ -204,7 +204,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public Javax.Xml.Stream.XMLStreamWriter CreateXMLStreamWriter(Java.Io.OutputStream arg0, Java.Lang.String arg1)
         {
-            return IExecute<Javax.Xml.Stream.XMLStreamWriter>("createXMLStreamWriter", arg0, arg1);
+            return IExecuteWithSignature<Javax.Xml.Stream.XMLStreamWriter>("createXMLStreamWriter", "(Ljava/io/OutputStream;Ljava/lang/String;)Ljavax/xml/stream/XMLStreamWriter;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/XMLOutputFactory.html#createXMLStreamWriter(java.io.OutputStream)"/>
@@ -244,7 +244,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void SetProperty(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setProperty", arg0, arg1);
+            IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion

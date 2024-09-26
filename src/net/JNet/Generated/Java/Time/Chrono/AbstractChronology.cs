@@ -118,7 +118,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate ResolveDate(Java.Util.Map<Java.Time.Temporal.TemporalField, Java.Lang.Long> arg0, Java.Time.Format.ResolverStyle arg1)
         {
-            return IExecute<Java.Time.Chrono.ChronoLocalDate>("resolveDate", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("resolveDate", "(Ljava/util/Map;Ljava/time/format/ResolverStyle;)Ljava/time/chrono/ChronoLocalDate;", arg0, arg1);
         }
 
         #endregion

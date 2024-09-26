@@ -136,7 +136,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void NotationDecl(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("notationDecl", arg0, arg1, arg2);
+            IExecuteWithSignature("notationDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/DTDHandler.html#unparsedEntityDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -148,7 +148,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void UnparsedEntityDecl(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            IExecute("unparsedEntityDecl", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("unparsedEntityDecl", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion

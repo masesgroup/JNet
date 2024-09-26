@@ -133,7 +133,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfHoursMinutes(int arg0, int arg1)
         {
-            return SExecute<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofHoursMinutes", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofHoursMinutes", "(II)Ljava/time/ZoneOffset;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofHoursMinutesSeconds(int,int,int)"/>
@@ -144,7 +144,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
         public static Java.Time.ZoneOffset OfHoursMinutesSeconds(int arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofHoursMinutesSeconds", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.ZoneOffset>(LocalBridgeClazz, "ofHoursMinutesSeconds", "(III)Ljava/time/ZoneOffset;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZoneOffset.html#ofTotalSeconds(int)"/>

@@ -143,7 +143,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="object"/></returns>
         public object GetService(Java.Beans.Beancontext.BeanContextServices arg0, object arg1, Java.Lang.Class arg2, object arg3)
         {
-            return IExecute("getService", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature("getService", "(Ljava/beans/beancontext/BeanContextServices;Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html#getCurrentServiceSelectors(java.beans.beancontext.BeanContextServices,java.lang.Class)"/>
@@ -153,7 +153,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<object> GetCurrentServiceSelectors(Java.Beans.Beancontext.BeanContextServices arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Java.Util.Iterator<object>>("getCurrentServiceSelectors", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Iterator<object>>("getCurrentServiceSelectors", "(Ljava/beans/beancontext/BeanContextServices;Ljava/lang/Class;)Ljava/util/Iterator;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServiceProvider.html#releaseService(java.beans.beancontext.BeanContextServices,java.lang.Object,java.lang.Object)"/>
@@ -163,7 +163,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg2"><see cref="object"/></param>
         public void ReleaseService(Java.Beans.Beancontext.BeanContextServices arg0, object arg1, object arg2)
         {
-            IExecute("releaseService", arg0, arg1, arg2);
+            IExecuteWithSignature("releaseService", "(Ljava/beans/beancontext/BeanContextServices;Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
 
         #endregion

@@ -442,7 +442,7 @@ namespace Javax.Swing.Tree
         /// <param name="arg1"><see cref="int"/></param>
         public void Insert(Javax.Swing.Tree.MutableTreeNode arg0, int arg1)
         {
-            IExecute("insert", arg0, arg1);
+            IExecuteWithSignature("insert", "(Ljavax/swing/tree/MutableTreeNode;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/DefaultMutableTreeNode.html#remove(int)"/>

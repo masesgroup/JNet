@@ -97,7 +97,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousChannelGroup WithCachedThreadPool(Java.Util.Concurrent.ExecutorService arg0, int arg1)
         {
-            return SExecute<Java.Nio.Channels.AsynchronousChannelGroup>(LocalBridgeClazz, "withCachedThreadPool", arg0, arg1);
+            return SExecuteWithSignature<Java.Nio.Channels.AsynchronousChannelGroup>(LocalBridgeClazz, "withCachedThreadPool", "(Ljava/util/concurrent/ExecutorService;I)Ljava/nio/channels/AsynchronousChannelGroup;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#withFixedThreadPool(int,java.util.concurrent.ThreadFactory)"/>
@@ -108,7 +108,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.Channels.AsynchronousChannelGroup WithFixedThreadPool(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
         {
-            return SExecute<Java.Nio.Channels.AsynchronousChannelGroup>(LocalBridgeClazz, "withFixedThreadPool", arg0, arg1);
+            return SExecuteWithSignature<Java.Nio.Channels.AsynchronousChannelGroup>(LocalBridgeClazz, "withFixedThreadPool", "(ILjava/util/concurrent/ThreadFactory;)Ljava/nio/channels/AsynchronousChannelGroup;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#withThreadPool(java.util.concurrent.ExecutorService)"/>
@@ -133,7 +133,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool AwaitTermination(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<bool>("awaitTermination", arg0, arg1);
+            return IExecuteWithSignature<bool>("awaitTermination", "(JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/AsynchronousChannelGroup.html#isShutdown()"/>

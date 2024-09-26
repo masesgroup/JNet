@@ -125,7 +125,7 @@ namespace Javax.Print
         /// <exception cref="Javax.Print.PrintException"/>
         public void Print(Javax.Print.MultiDoc arg0, Javax.Print.Attribute.PrintRequestAttributeSet arg1)
         {
-            IExecute("print", arg0, arg1);
+            IExecuteWithSignature("print", "(Ljavax/print/MultiDoc;Ljavax/print/attribute/PrintRequestAttributeSet;)V", arg0, arg1);
         }
 
         #endregion

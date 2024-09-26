@@ -247,7 +247,7 @@ namespace Org.W3c.Dom.Ls
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public Org.W3c.Dom.Node ParseWithContext(Org.W3c.Dom.Ls.LSInput arg0, Org.W3c.Dom.Node arg1, short arg2)
         {
-            return IExecute<Org.W3c.Dom.Node>("parseWithContext", arg0, arg1, arg2);
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("parseWithContext", "(Lorg/w3c/dom/ls/LSInput;Lorg/w3c/dom/Node;S)Lorg/w3c/dom/Node;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSParser.html#abort()"/>

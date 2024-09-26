@@ -125,7 +125,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public Java.Util.ResourceBundle GetBundle(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Util.ResourceBundle>("getBundle", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.ResourceBundle>("getBundle", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/util/ResourceBundle;", arg0, arg1);
         }
 
         #endregion

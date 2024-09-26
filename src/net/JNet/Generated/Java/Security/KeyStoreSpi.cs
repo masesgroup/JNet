@@ -164,7 +164,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.UnrecoverableKeyException"/>
         public Java.Security.Key EngineGetKey(Java.Lang.String arg0, char[] arg1)
         {
-            return IExecute<Java.Security.Key>("engineGetKey", arg0, arg1);
+            return IExecuteWithSignature<Java.Security.Key>("engineGetKey", "(Ljava/lang/String;[C)Ljava/security/Key;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineGetCreationDate(java.lang.String)"/>
@@ -202,7 +202,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void EngineLoad(Java.Io.InputStream arg0, char[] arg1)
         {
-            IExecute("engineLoad", arg0, arg1);
+            IExecuteWithSignature("engineLoad", "(Ljava/io/InputStream;[C)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineSetCertificateEntry(java.lang.String,java.security.cert.Certificate)"/>
@@ -212,7 +212,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public void EngineSetCertificateEntry(Java.Lang.String arg0, Java.Security.Cert.Certificate arg1)
         {
-            IExecute("engineSetCertificateEntry", arg0, arg1);
+            IExecuteWithSignature("engineSetCertificateEntry", "(Ljava/lang/String;Ljava/security/cert/Certificate;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineSetKeyEntry(java.lang.String,byte[],java.security.cert.Certificate[])"/>
@@ -223,7 +223,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public void EngineSetKeyEntry(Java.Lang.String arg0, byte[] arg1, Java.Security.Cert.Certificate[] arg2)
         {
-            IExecute("engineSetKeyEntry", arg0, arg1, arg2);
+            IExecuteWithSignature("engineSetKeyEntry", "(Ljava/lang/String;[B[Ljava/security/cert/Certificate;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineSetKeyEntry(java.lang.String,java.security.Key,char[],java.security.cert.Certificate[])"/>
@@ -235,7 +235,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public void EngineSetKeyEntry(Java.Lang.String arg0, Java.Security.Key arg1, char[] arg2, Java.Security.Cert.Certificate[] arg3)
         {
-            IExecute("engineSetKeyEntry", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("engineSetKeyEntry", "(Ljava/lang/String;Ljava/security/Key;[C[Ljava/security/cert/Certificate;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineStore(java.io.OutputStream,char[])"/>
@@ -247,7 +247,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void EngineStore(Java.Io.OutputStream arg0, char[] arg1)
         {
-            IExecute("engineStore", arg0, arg1);
+            IExecuteWithSignature("engineStore", "(Ljava/io/OutputStream;[C)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineEntryInstanceOf(java.lang.String,java.lang.Class)"/>
@@ -257,7 +257,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool EngineEntryInstanceOf(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
-            return IExecute<bool>("engineEntryInstanceOf", arg0, arg1);
+            return IExecuteWithSignature<bool>("engineEntryInstanceOf", "(Ljava/lang/String;Ljava/lang/Class;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineProbe(java.io.InputStream)"/>
@@ -280,7 +280,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.UnrecoverableEntryException"/>
         public Java.Security.KeyStore.Entry EngineGetEntry(Java.Lang.String arg0, Java.Security.KeyStore.ProtectionParameter arg1)
         {
-            return IExecute<Java.Security.KeyStore.Entry>("engineGetEntry", arg0, arg1);
+            return IExecuteWithSignature<Java.Security.KeyStore.Entry>("engineGetEntry", "(Ljava/lang/String;Ljava/security/KeyStore$ProtectionParameter;)Ljava/security/KeyStore$Entry;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineLoad(java.security.KeyStore.LoadStoreParameter)"/>
@@ -302,7 +302,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.KeyStoreException"/>
         public void EngineSetEntry(Java.Lang.String arg0, Java.Security.KeyStore.Entry arg1, Java.Security.KeyStore.ProtectionParameter arg2)
         {
-            IExecute("engineSetEntry", arg0, arg1, arg2);
+            IExecuteWithSignature("engineSetEntry", "(Ljava/lang/String;Ljava/security/KeyStore$Entry;Ljava/security/KeyStore$ProtectionParameter;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyStoreSpi.html#engineStore(java.security.KeyStore.LoadStoreParameter)"/>

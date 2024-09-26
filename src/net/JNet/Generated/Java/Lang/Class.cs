@@ -156,7 +156,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public static Java.Lang.Class ForName(Java.Lang.Module arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.Class>(LocalBridgeClazz, "forName", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Class>(LocalBridgeClazz, "forName", "(Ljava/lang/Module;Ljava/lang/String;)Ljava/lang/Class;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#forName(java.lang.String,boolean,java.lang.ClassLoader)"/>
@@ -168,7 +168,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static Java.Lang.Class ForName(Java.Lang.String arg0, bool arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Java.Lang.Class>(LocalBridgeClazz, "forName", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.Class>(LocalBridgeClazz, "forName", "(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#forName(java.lang.String)"/>
@@ -618,7 +618,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Method GetDeclaredMethod(Java.Lang.String arg0, params Java.Lang.Class[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Lang.Reflect.Method>("getDeclaredMethod", arg0); else return IExecute<Java.Lang.Reflect.Method>("getDeclaredMethod", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Method>("getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0); else return IExecuteWithSignature<Java.Lang.Reflect.Method>("getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class[])"/>
@@ -630,7 +630,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Method GetMethod(Java.Lang.String arg0, params Java.Lang.Class[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0); else return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Method>("getMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0); else return IExecuteWithSignature<Java.Lang.Reflect.Method>("getMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#toGenericString()"/>
@@ -755,7 +755,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public static Java.Lang.Class ForName(Java.Lang.Module arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.Class>(LocalBridgeClazz, "forName", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Class>(LocalBridgeClazz, "forName", "(Ljava/lang/Module;Ljava/lang/String;)Ljava/lang/Class;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#forName(java.lang.String,boolean,java.lang.ClassLoader)"/>
@@ -767,7 +767,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static Java.Lang.Class ForName(Java.Lang.String arg0, bool arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Java.Lang.Class>(LocalBridgeClazz, "forName", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.Class>(LocalBridgeClazz, "forName", "(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#forName(java.lang.String)"/>
@@ -1223,7 +1223,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Method GetDeclaredMethod(Java.Lang.String arg0, params Java.Lang.Class[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Lang.Reflect.Method>("getDeclaredMethod", arg0); else return IExecute<Java.Lang.Reflect.Method>("getDeclaredMethod", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Method>("getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0); else return IExecuteWithSignature<Java.Lang.Reflect.Method>("getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class[])"/>
@@ -1235,7 +1235,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.SecurityException"/>
         public Java.Lang.Reflect.Method GetMethod(Java.Lang.String arg0, params Java.Lang.Class[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0); else return IExecute<Java.Lang.Reflect.Method>("getMethod", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Method>("getMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0); else return IExecuteWithSignature<Java.Lang.Reflect.Method>("getMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#toGenericString()"/>

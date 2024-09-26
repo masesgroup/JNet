@@ -111,7 +111,7 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="int"/></param>
         public void CheckAccept(Java.Lang.String arg0, int arg1)
         {
-            IExecute("checkAccept", arg0, arg1);
+            IExecuteWithSignature("checkAccept", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkAccess(java.lang.Thread)"/>
@@ -137,7 +137,7 @@ namespace Java.Lang
         /// <param name="arg2"><see cref="object"/></param>
         public void CheckConnect(Java.Lang.String arg0, int arg1, object arg2)
         {
-            IExecute("checkConnect", arg0, arg1, arg2);
+            IExecuteWithSignature("checkConnect", "(Ljava/lang/String;ILjava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkConnect(java.lang.String,int)"/>
@@ -146,7 +146,7 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="int"/></param>
         public void CheckConnect(Java.Lang.String arg0, int arg1)
         {
-            IExecute("checkConnect", arg0, arg1);
+            IExecuteWithSignature("checkConnect", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkCreateClassLoader()"/>
@@ -226,7 +226,7 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="object"/></param>
         public void CheckPermission(Java.Security.Permission arg0, object arg1)
         {
-            IExecute("checkPermission", arg0, arg1);
+            IExecuteWithSignature("checkPermission", "(Ljava/security/Permission;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkPermission(java.security.Permission)"/>
@@ -273,7 +273,7 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="object"/></param>
         public void CheckRead(Java.Lang.String arg0, object arg1)
         {
-            IExecute("checkRead", arg0, arg1);
+            IExecuteWithSignature("checkRead", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/SecurityManager.html#checkRead(java.lang.String)"/>

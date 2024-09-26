@@ -434,7 +434,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg8"><see cref="int"/></param>
         public override void ImageUpdate(Javax.Imageio.ImageReader arg0, Java.Awt.ImageNs.BufferedImage arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int[] arg8)
         {
-            IExecute("imageUpdate", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            IExecuteWithSignature("imageUpdate", "(Ljavax/imageio/ImageReader;Ljava/awt/image/BufferedImage;IIIIII[I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#passComplete(javax.imageio.ImageReader,java.awt.image.BufferedImage)"/>
@@ -443,7 +443,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg1"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
         public override void PassComplete(Javax.Imageio.ImageReader arg0, Java.Awt.ImageNs.BufferedImage arg1)
         {
-            IExecute("passComplete", arg0, arg1);
+            IExecuteWithSignature("passComplete", "(Ljavax/imageio/ImageReader;Ljava/awt/image/BufferedImage;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#passStarted(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int,int[])"/>
@@ -460,7 +460,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg9"><see cref="int"/></param>
         public override void PassStarted(Javax.Imageio.ImageReader arg0, Java.Awt.ImageNs.BufferedImage arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int[] arg9)
         {
-            IExecute("passStarted", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            IExecuteWithSignature("passStarted", "(Ljavax/imageio/ImageReader;Ljava/awt/image/BufferedImage;IIIIIII[I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#thumbnailPassComplete(javax.imageio.ImageReader,java.awt.image.BufferedImage)"/>
@@ -469,7 +469,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg1"><see cref="Java.Awt.ImageNs.BufferedImage"/></param>
         public override void ThumbnailPassComplete(Javax.Imageio.ImageReader arg0, Java.Awt.ImageNs.BufferedImage arg1)
         {
-            IExecute("thumbnailPassComplete", arg0, arg1);
+            IExecuteWithSignature("thumbnailPassComplete", "(Ljavax/imageio/ImageReader;Ljava/awt/image/BufferedImage;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#thumbnailPassStarted(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int,int[])"/>
@@ -486,7 +486,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg9"><see cref="int"/></param>
         public override void ThumbnailPassStarted(Javax.Imageio.ImageReader arg0, Java.Awt.ImageNs.BufferedImage arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int[] arg9)
         {
-            IExecute("thumbnailPassStarted", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            IExecuteWithSignature("thumbnailPassStarted", "(Ljavax/imageio/ImageReader;Ljava/awt/image/BufferedImage;IIIIIII[I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadUpdateListener.html#thumbnailUpdate(javax.imageio.ImageReader,java.awt.image.BufferedImage,int,int,int,int,int,int,int[])"/>
@@ -502,7 +502,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg8"><see cref="int"/></param>
         public override void ThumbnailUpdate(Javax.Imageio.ImageReader arg0, Java.Awt.ImageNs.BufferedImage arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int[] arg8)
         {
-            IExecute("thumbnailUpdate", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            IExecuteWithSignature("thumbnailUpdate", "(Ljavax/imageio/ImageReader;Ljava/awt/image/BufferedImage;IIIIII[I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
 
         #endregion

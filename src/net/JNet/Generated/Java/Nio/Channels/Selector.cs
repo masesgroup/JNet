@@ -186,7 +186,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public int Select(Java.Util.Function.Consumer<Java.Nio.Channels.SelectionKey> arg0, long arg1)
         {
-            return IExecute<int>("select", arg0, arg1);
+            return IExecuteWithSignature<int>("select", "(Ljava/util/function/Consumer;J)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Selector.html#select(java.util.function.Consumer)"/>

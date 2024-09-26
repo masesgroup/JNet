@@ -907,7 +907,7 @@ namespace Java.Awt.ColorNs
         /// <param name="arg1"><see cref="byte"/></param>
         public void SetData(int arg0, byte[] arg1)
         {
-            IExecute("setData", arg0, arg1);
+            IExecuteWithSignature("setData", "(I[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/color/ICC_Profile.html#write(java.io.OutputStream)"/>

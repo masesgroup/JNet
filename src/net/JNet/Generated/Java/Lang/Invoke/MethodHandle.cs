@@ -129,7 +129,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle AsCollector(int arg0, Java.Lang.Class arg1, int arg2)
         {
-            return IExecute<Java.Lang.Invoke.MethodHandle>("asCollector", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("asCollector", "(ILjava/lang/Class;I)Ljava/lang/invoke/MethodHandle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asCollector(java.lang.Class,int)"/>
@@ -139,7 +139,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle AsCollector(Java.Lang.Class arg0, int arg1)
         {
-            return IExecute<Java.Lang.Invoke.MethodHandle>("asCollector", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("asCollector", "(Ljava/lang/Class;I)Ljava/lang/invoke/MethodHandle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asFixedArity()"/>
@@ -158,7 +158,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle AsSpreader(int arg0, Java.Lang.Class arg1, int arg2)
         {
-            return IExecute<Java.Lang.Invoke.MethodHandle>("asSpreader", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("asSpreader", "(ILjava/lang/Class;I)Ljava/lang/invoke/MethodHandle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asSpreader(java.lang.Class,int)"/>
@@ -168,7 +168,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle AsSpreader(Java.Lang.Class arg0, int arg1)
         {
-            return IExecute<Java.Lang.Invoke.MethodHandle>("asSpreader", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("asSpreader", "(Ljava/lang/Class;I)Ljava/lang/invoke/MethodHandle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asType(java.lang.invoke.MethodType)"/>

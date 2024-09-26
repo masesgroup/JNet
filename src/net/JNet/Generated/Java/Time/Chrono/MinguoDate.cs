@@ -129,7 +129,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.MinguoDate"/></returns>
         public static Java.Time.Chrono.MinguoDate Of(int arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Time.Chrono.MinguoDate>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.Chrono.MinguoDate>(LocalBridgeClazz, "of", "(III)Ljava/time/chrono/MinguoDate;", arg0, arg1, arg2);
         }
 
         #endregion

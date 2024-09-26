@@ -191,7 +191,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Max(float arg0, float arg1)
         {
-            return SExecute<float>(LocalBridgeClazz, "max", arg0, arg1);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "max", "(FF)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#min(float,float)"/>
@@ -201,7 +201,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Min(float arg0, float arg1)
         {
-            return SExecute<float>(LocalBridgeClazz, "min", arg0, arg1);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "min", "(FF)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#parseFloat(java.lang.String)"/>
@@ -221,7 +221,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Sum(float arg0, float arg1)
         {
-            return SExecute<float>(LocalBridgeClazz, "sum", arg0, arg1);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "sum", "(FF)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#compare(float,float)"/>
@@ -231,7 +231,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(float arg0, float arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(FF)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html#floatToIntBits(float)"/>

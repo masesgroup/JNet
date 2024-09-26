@@ -169,7 +169,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9)
         {
-            return SExecute<Java.Util.Set>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -186,7 +186,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8)
         {
-            return SExecute<Java.Util.Set>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -202,7 +202,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7)
         {
-            return SExecute<Java.Util.Set>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -217,7 +217,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6)
         {
-            return SExecute<Java.Util.Set>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -231,7 +231,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5)
         {
-            return SExecute<Java.Util.Set>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -244,7 +244,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set Of(object arg0, object arg1, object arg2, object arg3, object arg4)
         {
-            return SExecute<Java.Util.Set>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -256,7 +256,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set Of(object arg0, object arg1, object arg2, object arg3)
         {
-            return SExecute<Java.Util.Set>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -267,7 +267,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set Of(object arg0, object arg1, object arg2)
         {
-            return SExecute<Java.Util.Set>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object)"/>
@@ -277,7 +277,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set Of(object arg0, object arg1)
         {
-            return SExecute<Java.Util.Set>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object[])"/>
@@ -582,7 +582,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6, E arg7, E arg8, E arg9)
         {
-            return SExecute<Java.Util.Set<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -599,7 +599,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6, E arg7, E arg8)
         {
-            return SExecute<Java.Util.Set<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -615,7 +615,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6, E arg7)
         {
-            return SExecute<Java.Util.Set<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -630,7 +630,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5, E arg6)
         {
-            return SExecute<Java.Util.Set<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -644,7 +644,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4, E arg5)
         {
-            return SExecute<Java.Util.Set<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -657,7 +657,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2, E arg3, E arg4)
         {
-            return SExecute<Java.Util.Set<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -669,7 +669,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2, E arg3)
         {
-            return SExecute<Java.Util.Set<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -680,7 +680,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1, E arg2)
         {
-            return SExecute<Java.Util.Set<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object,java.lang.Object)"/>
@@ -690,7 +690,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> Of(E arg0, E arg1)
         {
-            return SExecute<Java.Util.Set<E>>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object[])"/>

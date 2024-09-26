@@ -235,7 +235,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int Offer(object arg0, Java.Util.Function.BiPredicate arg1)
         {
-            return IExecute<int>("offer", arg0, arg1);
+            return IExecuteWithSignature<int>("offer", "(Ljava/lang/Object;Ljava/util/function/BiPredicate;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit,java.util.function.BiPredicate)"/>
@@ -247,7 +247,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int Offer(object arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, Java.Util.Function.BiPredicate arg3)
         {
-            return IExecute<int>("offer", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("offer", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;Ljava/util/function/BiPredicate;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#submit(java.lang.Object)"/>
@@ -434,7 +434,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int Offer<Arg1objectSuperT>(T arg0, Java.Util.Function.BiPredicate<Java.Util.Concurrent.Flow.Subscriber<Arg1objectSuperT>, Arg1objectSuperT> arg1) where Arg1objectSuperT : T
         {
-            return IExecute<int>("offer", arg0, arg1);
+            return IExecuteWithSignature<int>("offer", "(Ljava/lang/Object;Ljava/util/function/BiPredicate;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit,java.util.function.BiPredicate)"/>
@@ -447,7 +447,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int Offer<Arg3objectSuperT>(T arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2, Java.Util.Function.BiPredicate<Java.Util.Concurrent.Flow.Subscriber<Arg3objectSuperT>, Arg3objectSuperT> arg3) where Arg3objectSuperT : T
         {
-            return IExecute<int>("offer", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("offer", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;Ljava/util/function/BiPredicate;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/SubmissionPublisher.html#submit(java.lang.Object)"/>

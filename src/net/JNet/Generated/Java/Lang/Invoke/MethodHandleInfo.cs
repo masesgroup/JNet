@@ -212,7 +212,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(int arg0, Java.Lang.Class arg1, Java.Lang.String arg2, Java.Lang.Invoke.MethodType arg3)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(ILjava/lang/Class;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/String;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

@@ -145,7 +145,7 @@ namespace Java.Net
         /// <param name="arg1"><see cref="bool"/></param>
         public static void SetDefaultUseCaches(Java.Lang.String arg0, bool arg1)
         {
-            SExecute(LocalBridgeClazz, "setDefaultUseCaches", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setDefaultUseCaches", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
 
         #endregion
@@ -321,7 +321,7 @@ namespace Java.Net
         /// <returns><see cref="int"/></returns>
         public int GetHeaderFieldInt(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("getHeaderFieldInt", arg0, arg1);
+            return IExecuteWithSignature<int>("getHeaderFieldInt", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getContent(java.lang.Class[])"/>
@@ -377,7 +377,7 @@ namespace Java.Net
         /// <returns><see cref="long"/></returns>
         public long GetHeaderFieldDate(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<long>("getHeaderFieldDate", arg0, arg1);
+            return IExecuteWithSignature<long>("getHeaderFieldDate", "(Ljava/lang/String;J)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#getHeaderFieldLong(java.lang.String,long)"/>
@@ -387,7 +387,7 @@ namespace Java.Net
         /// <returns><see cref="long"/></returns>
         public long GetHeaderFieldLong(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<long>("getHeaderFieldLong", arg0, arg1);
+            return IExecuteWithSignature<long>("getHeaderFieldLong", "(Ljava/lang/String;J)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#addRequestProperty(java.lang.String,java.lang.String)"/>
@@ -396,7 +396,7 @@ namespace Java.Net
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void AddRequestProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("addRequestProperty", arg0, arg1);
+            IExecuteWithSignature("addRequestProperty", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html#setRequestProperty(java.lang.String,java.lang.String)"/>
@@ -405,7 +405,7 @@ namespace Java.Net
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetRequestProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setRequestProperty", arg0, arg1);
+            IExecuteWithSignature("setRequestProperty", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
 
         #endregion

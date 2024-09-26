@@ -200,7 +200,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double GetFlatness(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
         {
-            return SExecute<double>(LocalBridgeClazz, "getFlatness", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "getFlatness", "(DDDDDDDD)D", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getFlatness(double[],int)"/>
@@ -210,7 +210,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double GetFlatness(double[] arg0, int arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "getFlatness", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "getFlatness", "([DI)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getFlatnessSq(double,double,double,double,double,double,double,double)"/>
@@ -226,7 +226,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double GetFlatnessSq(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
         {
-            return SExecute<double>(LocalBridgeClazz, "getFlatnessSq", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "getFlatnessSq", "(DDDDDDDD)D", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getFlatnessSq(double[],int)"/>
@@ -236,7 +236,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double GetFlatnessSq(double[] arg0, int arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "getFlatnessSq", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "getFlatnessSq", "([DI)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#solveCubic(double[],double[])"/>
@@ -246,7 +246,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="int"/></returns>
         public static int SolveCubic(double[] arg0, double[] arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "solveCubic", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "solveCubic", "([D[D)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#solveCubic(double[])"/>
@@ -268,7 +268,7 @@ namespace Java.Awt.Geom
         /// <param name="arg5"><see cref="int"/></param>
         public static void Subdivide(double[] arg0, int arg1, double[] arg2, int arg3, double[] arg4, int arg5)
         {
-            SExecute(LocalBridgeClazz, "subdivide", arg0, arg1, arg2, arg3, arg4, arg5);
+            SExecuteWithSignature(LocalBridgeClazz, "subdivide", "([DI[DI[DI)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#subdivide(java.awt.geom.CubicCurve2D,java.awt.geom.CubicCurve2D,java.awt.geom.CubicCurve2D)"/>
@@ -278,7 +278,7 @@ namespace Java.Awt.Geom
         /// <param name="arg2"><see cref="Java.Awt.Geom.CubicCurve2D"/></param>
         public static void Subdivide(Java.Awt.Geom.CubicCurve2D arg0, Java.Awt.Geom.CubicCurve2D arg1, Java.Awt.Geom.CubicCurve2D arg2)
         {
-            SExecute(LocalBridgeClazz, "subdivide", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "subdivide", "(Ljava/awt/geom/CubicCurve2D;Ljava/awt/geom/CubicCurve2D;Ljava/awt/geom/CubicCurve2D;)V", arg0, arg1, arg2);
         }
 
         #endregion
@@ -402,7 +402,7 @@ namespace Java.Awt.Geom
         /// <param name="arg7"><see cref="double"/></param>
         public void SetCurve(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
         {
-            IExecute("setCurve", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("setCurve", "(DDDDDDDD)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#contains(double,double,double,double)"/>
@@ -414,7 +414,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(double arg0, double arg1, double arg2, double arg3)
         {
-            return IExecute<bool>("contains", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("contains", "(DDDD)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#contains(double,double)"/>
@@ -424,7 +424,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(double arg0, double arg1)
         {
-            return IExecute<bool>("contains", arg0, arg1);
+            return IExecuteWithSignature<bool>("contains", "(DD)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#contains(java.awt.geom.Point2D)"/>
@@ -454,7 +454,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Intersects(double arg0, double arg1, double arg2, double arg3)
         {
-            return IExecute<bool>("intersects", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("intersects", "(DDDD)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#intersects(java.awt.geom.Rectangle2D)"/>
@@ -473,7 +473,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0, double arg1)
         {
-            return IExecute<Java.Awt.Geom.PathIterator>("getPathIterator", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Geom.PathIterator>("getPathIterator", "(Ljava/awt/geom/AffineTransform;D)Ljava/awt/geom/PathIterator;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#getPathIterator(java.awt.geom.AffineTransform)"/>
@@ -491,7 +491,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="int"/></param>
         public void SetCurve(double[] arg0, int arg1)
         {
-            IExecute("setCurve", arg0, arg1);
+            IExecuteWithSignature("setCurve", "([DI)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#setCurve(java.awt.geom.CubicCurve2D)"/>
@@ -510,7 +510,7 @@ namespace Java.Awt.Geom
         /// <param name="arg3"><see cref="Java.Awt.Geom.Point2D"/></param>
         public void SetCurve(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1, Java.Awt.Geom.Point2D arg2, Java.Awt.Geom.Point2D arg3)
         {
-            IExecute("setCurve", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setCurve", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#setCurve(java.awt.geom.Point2D[],int)"/>
@@ -519,7 +519,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="int"/></param>
         public void SetCurve(Java.Awt.Geom.Point2D[] arg0, int arg1)
         {
-            IExecute("setCurve", arg0, arg1);
+            IExecuteWithSignature("setCurve", "([Ljava/awt/geom/Point2D;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/CubicCurve2D.html#subdivide(java.awt.geom.CubicCurve2D,java.awt.geom.CubicCurve2D)"/>
@@ -528,7 +528,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="Java.Awt.Geom.CubicCurve2D"/></param>
         public void Subdivide(Java.Awt.Geom.CubicCurve2D arg0, Java.Awt.Geom.CubicCurve2D arg1)
         {
-            IExecute("subdivide", arg0, arg1);
+            IExecuteWithSignature("subdivide", "(Ljava/awt/geom/CubicCurve2D;Ljava/awt/geom/CubicCurve2D;)V", arg0, arg1);
         }
 
         #endregion
@@ -700,7 +700,7 @@ namespace Java.Awt.Geom
             /// <param name="arg7"><see cref="float"/></param>
             public void SetCurve(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7)
             {
-                IExecute("setCurve", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+                IExecuteWithSignature("setCurve", "(FFFFFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
             }
 
             #endregion

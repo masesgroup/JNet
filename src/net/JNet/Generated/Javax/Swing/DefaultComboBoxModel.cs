@@ -171,7 +171,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         public void AddAll(int arg0, Java.Util.Collection arg1)
         {
-            IExecute("addAll", arg0, arg1);
+            IExecuteWithSignature("addAll", "(ILjava/util/Collection;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#addAll(java.util.Collection)"/>
@@ -196,7 +196,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void InsertElementAt(object arg0, int arg1)
         {
-            IExecute("insertElementAt", arg0, arg1);
+            IExecuteWithSignature("insertElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#removeAllElements()"/>
@@ -300,7 +300,7 @@ namespace Javax.Swing
         /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
         public void AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E
         {
-            IExecute("addAll", arg0, arg1);
+            IExecuteWithSignature("addAll", "(ILjava/util/Collection;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#addAll(java.util.Collection)"/>
@@ -326,7 +326,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void InsertElementAt(E arg0, int arg1)
         {
-            IExecute("insertElementAt", arg0, arg1);
+            IExecuteWithSignature("insertElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultComboBoxModel.html#removeAllElements()"/>

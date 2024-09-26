@@ -117,7 +117,7 @@ namespace Javax.Security.Auth.Kerberos
         /// <returns><see cref="Javax.Security.Auth.Kerberos.KeyTab"/></returns>
         public static Javax.Security.Auth.Kerberos.KeyTab GetInstance(Javax.Security.Auth.Kerberos.KerberosPrincipal arg0, Java.Io.File arg1)
         {
-            return SExecute<Javax.Security.Auth.Kerberos.KeyTab>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Security.Auth.Kerberos.KeyTab>(LocalBridgeClazz, "getInstance", "(Ljavax/security/auth/kerberos/KerberosPrincipal;Ljava/io/File;)Ljavax/security/auth/kerberos/KeyTab;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/javax/security/auth/kerberos/KeyTab.html#getInstance(javax.security.auth.kerberos.KerberosPrincipal)"/>

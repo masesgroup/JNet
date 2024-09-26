@@ -147,7 +147,7 @@ namespace Java.Awt.Im.Spi
         /// <returns><see cref="Java.Awt.Window"/></returns>
         public Java.Awt.Window CreateInputMethodWindow(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<Java.Awt.Window>("createInputMethodWindow", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Window>("createInputMethodWindow", "(Ljava/lang/String;Z)Ljava/awt/Window;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html#createInputMethodJFrame(java.lang.String,boolean)"/>
@@ -157,7 +157,7 @@ namespace Java.Awt.Im.Spi
         /// <returns><see cref="Javax.Swing.JFrame"/></returns>
         public Javax.Swing.JFrame CreateInputMethodJFrame(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<Javax.Swing.JFrame>("createInputMethodJFrame", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.JFrame>("createInputMethodJFrame", "(Ljava/lang/String;Z)Ljavax/swing/JFrame;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html#dispatchInputMethodEvent(int,java.text.AttributedCharacterIterator,int,java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)"/>
@@ -169,7 +169,7 @@ namespace Java.Awt.Im.Spi
         /// <param name="arg4"><see cref="Java.Awt.FontNs.TextHitInfo"/></param>
         public void DispatchInputMethodEvent(int arg0, Java.Text.AttributedCharacterIterator arg1, int arg2, Java.Awt.FontNs.TextHitInfo arg3, Java.Awt.FontNs.TextHitInfo arg4)
         {
-            IExecute("dispatchInputMethodEvent", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("dispatchInputMethodEvent", "(ILjava/text/AttributedCharacterIterator;ILjava/awt/font/TextHitInfo;Ljava/awt/font/TextHitInfo;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethodContext.html#enableClientWindowNotification(java.awt.im.spi.InputMethod,boolean)"/>
@@ -178,7 +178,7 @@ namespace Java.Awt.Im.Spi
         /// <param name="arg1"><see cref="bool"/></param>
         public void EnableClientWindowNotification(Java.Awt.Im.Spi.InputMethod arg0, bool arg1)
         {
-            IExecute("enableClientWindowNotification", arg0, arg1);
+            IExecuteWithSignature("enableClientWindowNotification", "(Ljava/awt/im/spi/InputMethod;Z)V", arg0, arg1);
         }
 
         #endregion

@@ -103,7 +103,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Net.Ssl.SSLContext GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/net/ssl/SSLContext;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -114,7 +114,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Net.Ssl.SSLContext GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljavax/net/ssl/SSLContext;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#getInstance(java.lang.String)"/>
@@ -202,7 +202,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="Javax.Net.Ssl.SSLEngine"/></returns>
         public Javax.Net.Ssl.SSLEngine CreateSSLEngine(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Javax.Net.Ssl.SSLEngine>("createSSLEngine", arg0, arg1);
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLEngine>("createSSLEngine", "(Ljava/lang/String;I)Ljavax/net/ssl/SSLEngine;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/SSLContext.html#init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)"/>
@@ -213,7 +213,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.KeyManagementException"/>
         public void Init(Javax.Net.Ssl.KeyManager[] arg0, Javax.Net.Ssl.TrustManager[] arg1, Java.Security.SecureRandom arg2)
         {
-            IExecute("init", arg0, arg1, arg2);
+            IExecuteWithSignature("init", "([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V", arg0, arg1, arg2);
         }
 
         #endregion

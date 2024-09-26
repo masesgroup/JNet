@@ -99,7 +99,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg3"><see cref="Javax.Swing.MenuSelectionManager"/></param>
         public void ProcessMouseEvent(Javax.Swing.JMenuItem arg0, Java.Awt.EventNs.MouseEvent arg1, Javax.Swing.MenuElement[] arg2, Javax.Swing.MenuSelectionManager arg3)
         {
-            IExecute("processMouseEvent", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("processMouseEvent", "(Ljavax/swing/JMenuItem;Ljava/awt/event/MouseEvent;[Ljavax/swing/MenuElement;Ljavax/swing/MenuSelectionManager;)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion

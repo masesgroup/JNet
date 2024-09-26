@@ -98,7 +98,7 @@ namespace Javax.Naming.Spi
         /// <exception cref="Java.Lang.Exception"/>
         public static object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3, Javax.Naming.Directory.Attributes arg4)
         {
-            return SExecute(LocalBridgeClazz, "getObjectInstance", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature(LocalBridgeClazz, "getObjectInstance", "(Ljava/lang/Object;Ljavax/naming/Name;Ljavax/naming/Context;Ljava/util/Hashtable;Ljavax/naming/directory/Attributes;)Ljava/lang/Object;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/spi/DirectoryManager.html#getContinuationDirContext(javax.naming.CannotProceedException)"/>
@@ -122,7 +122,7 @@ namespace Javax.Naming.Spi
         /// <exception cref="Javax.Naming.NamingException"/>
         public static Javax.Naming.Spi.DirStateFactory.Result GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3, Javax.Naming.Directory.Attributes arg4)
         {
-            return SExecute<Javax.Naming.Spi.DirStateFactory.Result>(LocalBridgeClazz, "getStateToBind", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Javax.Naming.Spi.DirStateFactory.Result>(LocalBridgeClazz, "getStateToBind", "(Ljava/lang/Object;Ljavax/naming/Name;Ljavax/naming/Context;Ljava/util/Hashtable;Ljavax/naming/directory/Attributes;)Ljavax/naming/spi/DirStateFactory$Result;", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

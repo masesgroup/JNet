@@ -194,7 +194,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector Of(Java.Util.Function.Supplier arg0, Java.Util.Function.BiConsumer arg1, Java.Util.Function.BinaryOperator arg2, Java.Util.Function.Function arg3, params Java.Util.Stream.Collector.Characteristics[] arg4)
         {
-            if (arg4.Length == 0) return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3); else return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4);
+            if (arg4.Length == 0) return SExecuteWithSignature<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;Ljava/util/function/Function;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2, arg3); else return SExecuteWithSignature<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;Ljava/util/function/Function;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.stream.Collector.Characteristics[])"/>
@@ -206,7 +206,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector Of(Java.Util.Function.Supplier arg0, Java.Util.Function.BiConsumer arg1, Java.Util.Function.BinaryOperator arg2, params Java.Util.Stream.Collector.Characteristics[] arg3)
         {
-            if (arg3.Length == 0) return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", arg0, arg1, arg2); else return SExecute<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecuteWithSignature<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2); else return SExecuteWithSignature<Java.Util.Stream.Collector>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2, arg3);
         }
 
         #endregion
@@ -455,7 +455,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, A, R> Of(Java.Util.Function.Supplier<A> arg0, Java.Util.Function.BiConsumer<A, T> arg1, Java.Util.Function.BinaryOperator<A> arg2, Java.Util.Function.Function<A, R> arg3, params Java.Util.Stream.Collector.Characteristics[] arg4)
         {
-            if (arg4.Length == 0) return SExecute<Java.Util.Stream.Collector<T, A, R>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3); else return SExecute<Java.Util.Stream.Collector<T, A, R>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4);
+            if (arg4.Length == 0) return SExecuteWithSignature<Java.Util.Stream.Collector<T, A, R>>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;Ljava/util/function/Function;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2, arg3); else return SExecuteWithSignature<Java.Util.Stream.Collector<T, A, R>>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;Ljava/util/function/Function;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collector.html#of(java.util.function.Supplier,java.util.function.BiConsumer,java.util.function.BinaryOperator,java.util.stream.Collector.Characteristics[])"/>
@@ -467,7 +467,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
         public static Java.Util.Stream.Collector<T, R, R> Of(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.BiConsumer<R, T> arg1, Java.Util.Function.BinaryOperator<R> arg2, params Java.Util.Stream.Collector.Characteristics[] arg3)
         {
-            if (arg3.Length == 0) return SExecute<Java.Util.Stream.Collector<T, R, R>>(LocalBridgeClazz, "of", arg0, arg1, arg2); else return SExecute<Java.Util.Stream.Collector<T, R, R>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
+            if (arg3.Length == 0) return SExecuteWithSignature<Java.Util.Stream.Collector<T, R, R>>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2); else return SExecuteWithSignature<Java.Util.Stream.Collector<T, R, R>>(LocalBridgeClazz, "of", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BinaryOperator;[Ljava/util/stream/Collector$Characteristics;)Ljava/util/stream/Collector;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

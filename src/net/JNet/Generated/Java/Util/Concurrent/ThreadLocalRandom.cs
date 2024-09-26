@@ -106,7 +106,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="double"/></returns>
         public double NextDouble(double arg0, double arg1)
         {
-            return IExecute<double>("nextDouble", arg0, arg1);
+            return IExecuteWithSignature<double>("nextDouble", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextDouble(double)"/>
@@ -125,7 +125,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int NextInt(int arg0, int arg1)
         {
-            return IExecute<int>("nextInt", arg0, arg1);
+            return IExecuteWithSignature<int>("nextInt", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextLong(long,long)"/>
@@ -135,7 +135,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long NextLong(long arg0, long arg1)
         {
-            return IExecute<long>("nextLong", arg0, arg1);
+            return IExecuteWithSignature<long>("nextLong", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html#nextLong(long)"/>

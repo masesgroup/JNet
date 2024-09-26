@@ -110,7 +110,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateWritableChild(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int[] arg6)
         {
-            return IExecute<Java.Awt.ImageNs.WritableRaster>("createWritableChild", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("createWritableChild", "(IIIIII[I)Ljava/awt/image/WritableRaster;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#createWritableTranslatedChild(int,int)"/>
@@ -120,7 +120,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster CreateWritableTranslatedChild(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.WritableRaster>("createWritableTranslatedChild", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("createWritableTranslatedChild", "(II)Ljava/awt/image/WritableRaster;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setDataElements(int,int,int,int,java.lang.Object)"/>
@@ -132,7 +132,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg4"><see cref="object"/></param>
         public void SetDataElements(int arg0, int arg1, int arg2, int arg3, object arg4)
         {
-            IExecute("setDataElements", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setDataElements", "(IIIILjava/lang/Object;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setDataElements(int,int,java.awt.image.Raster)"/>
@@ -142,7 +142,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg2"><see cref="Java.Awt.ImageNs.Raster"/></param>
         public void SetDataElements(int arg0, int arg1, Java.Awt.ImageNs.Raster arg2)
         {
-            IExecute("setDataElements", arg0, arg1, arg2);
+            IExecuteWithSignature("setDataElements", "(IILjava/awt/image/Raster;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setDataElements(int,int,java.lang.Object)"/>
@@ -152,7 +152,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg2"><see cref="object"/></param>
         public void SetDataElements(int arg0, int arg1, object arg2)
         {
-            IExecute("setDataElements", arg0, arg1, arg2);
+            IExecuteWithSignature("setDataElements", "(IILjava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setPixel(int,int,double[])"/>
@@ -162,7 +162,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg2"><see cref="double"/></param>
         public void SetPixel(int arg0, int arg1, double[] arg2)
         {
-            IExecute("setPixel", arg0, arg1, arg2);
+            IExecuteWithSignature("setPixel", "(II[D)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setPixel(int,int,float[])"/>
@@ -172,7 +172,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg2"><see cref="float"/></param>
         public void SetPixel(int arg0, int arg1, float[] arg2)
         {
-            IExecute("setPixel", arg0, arg1, arg2);
+            IExecuteWithSignature("setPixel", "(II[F)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setPixel(int,int,int[])"/>
@@ -182,7 +182,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg2"><see cref="int"/></param>
         public void SetPixel(int arg0, int arg1, int[] arg2)
         {
-            IExecute("setPixel", arg0, arg1, arg2);
+            IExecuteWithSignature("setPixel", "(II[I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setPixels(int,int,int,int,double[])"/>
@@ -194,7 +194,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg4"><see cref="double"/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, double[] arg4)
         {
-            IExecute("setPixels", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setPixels", "(IIII[D)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setPixels(int,int,int,int,float[])"/>
@@ -206,7 +206,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg4"><see cref="float"/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, float[] arg4)
         {
-            IExecute("setPixels", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setPixels", "(IIII[F)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setPixels(int,int,int,int,int[])"/>
@@ -218,7 +218,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg4"><see cref="int"/></param>
         public void SetPixels(int arg0, int arg1, int arg2, int arg3, int[] arg4)
         {
-            IExecute("setPixels", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setPixels", "(IIII[I)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setRect(int,int,java.awt.image.Raster)"/>
@@ -228,7 +228,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg2"><see cref="Java.Awt.ImageNs.Raster"/></param>
         public void SetRect(int arg0, int arg1, Java.Awt.ImageNs.Raster arg2)
         {
-            IExecute("setRect", arg0, arg1, arg2);
+            IExecuteWithSignature("setRect", "(IILjava/awt/image/Raster;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setRect(java.awt.image.Raster)"/>
@@ -247,7 +247,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg3"><see cref="double"/></param>
         public void SetSample(int arg0, int arg1, int arg2, double arg3)
         {
-            IExecute("setSample", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setSample", "(IIID)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setSample(int,int,int,float)"/>
@@ -258,7 +258,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg3"><see cref="float"/></param>
         public void SetSample(int arg0, int arg1, int arg2, float arg3)
         {
-            IExecute("setSample", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setSample", "(IIIF)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setSample(int,int,int,int)"/>
@@ -269,7 +269,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg3"><see cref="int"/></param>
         public void SetSample(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setSample", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setSample", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setSamples(int,int,int,int,int,double[])"/>
@@ -282,7 +282,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg5"><see cref="double"/></param>
         public void SetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, double[] arg5)
         {
-            IExecute("setSamples", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("setSamples", "(IIIII[D)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setSamples(int,int,int,int,int,float[])"/>
@@ -295,7 +295,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg5"><see cref="float"/></param>
         public void SetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, float[] arg5)
         {
-            IExecute("setSamples", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("setSamples", "(IIIII[F)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRaster.html#setSamples(int,int,int,int,int,int[])"/>
@@ -308,7 +308,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg5"><see cref="int"/></param>
         public void SetSamples(int arg0, int arg1, int arg2, int arg3, int arg4, int[] arg5)
         {
-            IExecute("setSamples", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("setSamples", "(IIIII[I)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

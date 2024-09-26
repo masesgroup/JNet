@@ -141,7 +141,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Evaluate(object arg0, int arg1)
         {
-            return IExecute<bool>("evaluate", arg0, arg1);
+            return IExecuteWithSignature<bool>("evaluate", "(Ljava/lang/Object;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Predicate.html#evaluate(java.lang.Object,java.lang.String)"/>
@@ -152,7 +152,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Evaluate(object arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("evaluate", arg0, arg1);
+            return IExecuteWithSignature<bool>("evaluate", "(Ljava/lang/Object;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/Predicate.html#evaluate(javax.sql.RowSet)"/>

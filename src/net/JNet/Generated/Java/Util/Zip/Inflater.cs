@@ -174,7 +174,7 @@ namespace Java.Util.Zip
         /// <exception cref="Java.Util.Zip.DataFormatException"/>
         public int Inflate(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("inflate", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("inflate", "([BII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#inflate(byte[])"/>
@@ -218,7 +218,7 @@ namespace Java.Util.Zip
         /// <param name="arg2"><see cref="int"/></param>
         public void SetDictionary(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("setDictionary", arg0, arg1, arg2);
+            IExecuteWithSignature("setDictionary", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#setDictionary(byte[])"/>
@@ -244,7 +244,7 @@ namespace Java.Util.Zip
         /// <param name="arg2"><see cref="int"/></param>
         public void SetInput(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("setInput", arg0, arg1, arg2);
+            IExecuteWithSignature("setInput", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Inflater.html#setInput(byte[])"/>

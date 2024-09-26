@@ -210,7 +210,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Io.IOException"/>
         public void WriteXml(Java.Sql.ResultSet arg0, Java.Io.OutputStream arg1)
         {
-            IExecute("writeXml", arg0, arg1);
+            IExecuteWithSignature("writeXml", "(Ljava/sql/ResultSet;Ljava/io/OutputStream;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/WebRowSet.html#writeXml(java.sql.ResultSet,java.io.Writer)"/>
@@ -220,7 +220,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteXml(Java.Sql.ResultSet arg0, Java.Io.Writer arg1)
         {
-            IExecute("writeXml", arg0, arg1);
+            IExecuteWithSignature("writeXml", "(Ljava/sql/ResultSet;Ljava/io/Writer;)V", arg0, arg1);
         }
 
         #endregion

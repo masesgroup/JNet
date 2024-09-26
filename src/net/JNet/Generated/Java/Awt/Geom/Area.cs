@@ -130,7 +130,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(double arg0, double arg1, double arg2, double arg3)
         {
-            return IExecute<bool>("contains", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("contains", "(DDDD)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#contains(double,double)"/>
@@ -140,7 +140,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(double arg0, double arg1)
         {
-            return IExecute<bool>("contains", arg0, arg1);
+            return IExecuteWithSignature<bool>("contains", "(DD)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#contains(java.awt.geom.Point2D)"/>
@@ -170,7 +170,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Intersects(double arg0, double arg1, double arg2, double arg3)
         {
-            return IExecute<bool>("intersects", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("intersects", "(DDDD)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#intersects(java.awt.geom.Rectangle2D)"/>
@@ -230,7 +230,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0, double arg1)
         {
-            return IExecute<Java.Awt.Geom.PathIterator>("getPathIterator", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Geom.PathIterator>("getPathIterator", "(Ljava/awt/geom/AffineTransform;D)Ljava/awt/geom/PathIterator;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Area.html#getPathIterator(java.awt.geom.AffineTransform)"/>

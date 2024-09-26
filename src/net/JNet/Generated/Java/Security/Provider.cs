@@ -190,7 +190,7 @@ namespace Java.Security
         /// <returns><see cref="Java.Security.Provider.Service"/></returns>
         public Java.Security.Provider.Service GetService(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Security.Provider.Service>("getService", arg0, arg1);
+            return IExecuteWithSignature<Java.Security.Provider.Service>("getService", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/Provider$Service;", arg0, arg1);
         }
 
         #endregion

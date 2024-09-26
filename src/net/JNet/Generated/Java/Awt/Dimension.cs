@@ -133,7 +133,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void SetSize(int arg0, int arg1)
         {
-            IExecute("setSize", arg0, arg1);
+            IExecuteWithSignature("setSize", "(II)V", arg0, arg1);
         }
 
         #endregion

@@ -162,7 +162,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Comment(char[] arg0, int arg1, int arg2)
         {
-            IExecute("comment", arg0, arg1, arg2);
+            IExecuteWithSignature("comment", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#endCDATA()"/>
@@ -206,7 +206,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartDTD(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("startDTD", arg0, arg1, arg2);
+            IExecuteWithSignature("startDTD", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html#startEntity(java.lang.String)"/>

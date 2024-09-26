@@ -100,7 +100,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="int"/></returns>
         public int LocationToIndex(Javax.Swing.JList<object> arg0, Java.Awt.Point arg1)
         {
-            return IExecute<int>("locationToIndex", arg0, arg1);
+            return IExecuteWithSignature<int>("locationToIndex", "(Ljavax/swing/JList;Ljava/awt/Point;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ListUI.html#indexToLocation(javax.swing.JList,int)"/>
@@ -110,7 +110,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="Java.Awt.Point"/></returns>
         public Java.Awt.Point IndexToLocation(Javax.Swing.JList<object> arg0, int arg1)
         {
-            return IExecute<Java.Awt.Point>("indexToLocation", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Point>("indexToLocation", "(Ljavax/swing/JList;I)Ljava/awt/Point;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ListUI.html#getCellBounds(javax.swing.JList,int,int)"/>
@@ -121,7 +121,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetCellBounds(Javax.Swing.JList<object> arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Awt.Rectangle>("getCellBounds", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Rectangle>("getCellBounds", "(Ljavax/swing/JList;II)Ljava/awt/Rectangle;", arg0, arg1, arg2);
         }
 
         #endregion

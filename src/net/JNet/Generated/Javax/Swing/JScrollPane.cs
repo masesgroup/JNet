@@ -236,7 +236,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public void SetCorner(Java.Lang.String arg0, Java.Awt.Component arg1)
         {
-            IExecute("setCorner", arg0, arg1);
+            IExecuteWithSignature("setCorner", "(Ljava/lang/String;Ljava/awt/Component;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JScrollPane.html#setRowHeaderView(java.awt.Component)"/>

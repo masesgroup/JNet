@@ -117,7 +117,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetPopupVisible(Javax.Swing.JComboBox<object> arg0, bool arg1)
         {
-            IExecute("setPopupVisible", arg0, arg1);
+            IExecuteWithSignature("setPopupVisible", "(Ljavax/swing/JComboBox;Z)V", arg0, arg1);
         }
 
         #endregion

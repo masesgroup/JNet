@@ -183,7 +183,7 @@ namespace Javax.Swing.Table
         /// <returns><see cref="bool"/></returns>
         public bool IsCellEditable(int arg0, int arg1)
         {
-            return IExecute<bool>("isCellEditable", arg0, arg1);
+            return IExecuteWithSignature<bool>("isCellEditable", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableModel.html#getColumnClass(int)"/>
@@ -202,7 +202,7 @@ namespace Javax.Swing.Table
         /// <returns><see cref="object"/></returns>
         public object GetValueAt(int arg0, int arg1)
         {
-            return IExecute("getValueAt", arg0, arg1);
+            return IExecuteWithSignature("getValueAt", "(II)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableModel.html#getColumnName(int)"/>
@@ -237,7 +237,7 @@ namespace Javax.Swing.Table
         /// <param name="arg2"><see cref="int"/></param>
         public void SetValueAt(object arg0, int arg1, int arg2)
         {
-            IExecute("setValueAt", arg0, arg1, arg2);
+            IExecuteWithSignature("setValueAt", "(Ljava/lang/Object;II)V", arg0, arg1, arg2);
         }
 
         #endregion

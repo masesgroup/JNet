@@ -147,7 +147,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
         /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
         public void Marshal(Javax.Xml.Crypto.XMLStructure arg0, Javax.Xml.Crypto.XMLCryptoContext arg1)
         {
-            IExecute("marshal", arg0, arg1);
+            IExecuteWithSignature("marshal", "(Ljavax/xml/crypto/XMLStructure;Ljavax/xml/crypto/XMLCryptoContext;)V", arg0, arg1);
         }
 
         #endregion

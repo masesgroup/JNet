@@ -102,7 +102,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public Java.Security.Cert.CertPathValidatorResult EngineValidate(Java.Security.Cert.CertPath arg0, Java.Security.Cert.CertPathParameters arg1)
         {
-            return IExecute<Java.Security.Cert.CertPathValidatorResult>("engineValidate", arg0, arg1);
+            return IExecuteWithSignature<Java.Security.Cert.CertPathValidatorResult>("engineValidate", "(Ljava/security/cert/CertPath;Ljava/security/cert/CertPathParameters;)Ljava/security/cert/CertPathValidatorResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertPathValidatorSpi.html#engineGetRevocationChecker()"/>

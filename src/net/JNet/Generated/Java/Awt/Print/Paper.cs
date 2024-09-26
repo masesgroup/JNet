@@ -141,7 +141,7 @@ namespace Java.Awt.Print
         /// <param name="arg3"><see cref="double"/></param>
         public void SetImageableArea(double arg0, double arg1, double arg2, double arg3)
         {
-            IExecute("setImageableArea", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setImageableArea", "(DDDD)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/Paper.html#setSize(double,double)"/>
@@ -150,7 +150,7 @@ namespace Java.Awt.Print
         /// <param name="arg1"><see cref="double"/></param>
         public void SetSize(double arg0, double arg1)
         {
-            IExecute("setSize", arg0, arg1);
+            IExecuteWithSignature("setSize", "(DD)V", arg0, arg1);
         }
 
         #endregion

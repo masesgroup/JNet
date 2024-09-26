@@ -191,7 +191,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool Contains(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<bool>("contains", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("contains", "(IIII)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#contains(int,int)"/>
@@ -201,7 +201,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool Contains(int arg0, int arg1)
         {
-            return IExecute<bool>("contains", arg0, arg1);
+            return IExecuteWithSignature<bool>("contains", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#contains(java.awt.Point)"/>
@@ -255,7 +255,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void Add(int arg0, int arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#add(java.awt.Point)"/>
@@ -280,7 +280,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void Grow(int arg0, int arg1)
         {
-            IExecute("grow", arg0, arg1);
+            IExecuteWithSignature("grow", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#setBounds(int,int,int,int)"/>
@@ -291,7 +291,7 @@ namespace Java.Awt
         /// <param name="arg3"><see cref="int"/></param>
         public void SetBounds(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setBounds", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setBounds", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#setBounds(java.awt.Rectangle)"/>
@@ -308,7 +308,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLocation(int arg0, int arg1)
         {
-            IExecute("setLocation", arg0, arg1);
+            IExecuteWithSignature("setLocation", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#setSize(int,int)"/>
@@ -317,7 +317,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void SetSize(int arg0, int arg1)
         {
-            IExecute("setSize", arg0, arg1);
+            IExecuteWithSignature("setSize", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Rectangle.html#translate(int,int)"/>
@@ -326,7 +326,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void Translate(int arg0, int arg1)
         {
-            IExecute("translate", arg0, arg1);
+            IExecuteWithSignature("translate", "(II)V", arg0, arg1);
         }
 
         #endregion

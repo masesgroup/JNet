@@ -149,7 +149,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="object"/></returns>
         public object Visit(Javax.Lang.Model.Element.Element arg0, object arg1)
         {
-            return IExecute("visit", arg0, arg1);
+            return IExecuteWithSignature("visit", "(Ljavax/lang/model/element/Element;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor6.html#visit(javax.lang.model.element.Element)"/>
@@ -168,7 +168,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="object"/></returns>
         public object VisitModule(Javax.Lang.Model.Element.ModuleElement arg0, object arg1)
         {
-            return IExecute("visitModule", arg0, arg1);
+            return IExecuteWithSignature("visitModule", "(Ljavax/lang/model/element/ModuleElement;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor6.html#visitUnknown(javax.lang.model.element.Element,java.lang.Object)"/>
@@ -178,7 +178,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="object"/></returns>
         public object VisitUnknown(Javax.Lang.Model.Element.Element arg0, object arg1)
         {
-            return IExecute("visitUnknown", arg0, arg1);
+            return IExecuteWithSignature("visitUnknown", "(Ljavax/lang/model/element/Element;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
 
         #endregion
@@ -223,7 +223,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><typeparamref name="R"/></returns>
         public R Visit(Javax.Lang.Model.Element.Element arg0, P arg1)
         {
-            return IExecute<R>("visit", arg0, arg1);
+            return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/element/Element;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor6.html#visit(javax.lang.model.element.Element)"/>
@@ -242,7 +242,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><typeparamref name="R"/></returns>
         public R VisitModule(Javax.Lang.Model.Element.ModuleElement arg0, P arg1)
         {
-            return IExecute<R>("visitModule", arg0, arg1);
+            return IExecuteWithSignature<R>("visitModule", "(Ljavax/lang/model/element/ModuleElement;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractElementVisitor6.html#visitUnknown(javax.lang.model.element.Element,java.lang.Object)"/>
@@ -252,7 +252,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><typeparamref name="R"/></returns>
         public R VisitUnknown(Javax.Lang.Model.Element.Element arg0, P arg1)
         {
-            return IExecute<R>("visitUnknown", arg0, arg1);
+            return IExecuteWithSignature<R>("visitUnknown", "(Ljavax/lang/model/element/Element;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
 
         #endregion

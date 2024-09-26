@@ -198,7 +198,7 @@ namespace Org.Xml.Sax
         /// <returns><see cref="int"/></returns>
         public int GetIndex(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("getIndex", arg0, arg1);
+            return IExecuteWithSignature<int>("getIndex", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Attributes.html#getIndex(java.lang.String)"/>
@@ -244,7 +244,7 @@ namespace Org.Xml.Sax
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetType(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getType", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getType", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Attributes.html#getType(java.lang.String)"/>
@@ -281,7 +281,7 @@ namespace Org.Xml.Sax
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/Attributes.html#getValue(java.lang.String)"/>

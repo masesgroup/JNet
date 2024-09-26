@@ -104,7 +104,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
         public static Java.Lang.ModuleNs.Configuration Resolve(Java.Lang.ModuleNs.ModuleFinder arg0, Java.Util.List<Java.Lang.ModuleNs.Configuration> arg1, Java.Lang.ModuleNs.ModuleFinder arg2, Java.Util.Collection<Java.Lang.String> arg3)
         {
-            return SExecute<Java.Lang.ModuleNs.Configuration>(LocalBridgeClazz, "resolve", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.ModuleNs.Configuration>(LocalBridgeClazz, "resolve", "(Ljava/lang/module/ModuleFinder;Ljava/util/List;Ljava/lang/module/ModuleFinder;Ljava/util/Collection;)Ljava/lang/module/Configuration;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#resolveAndBind(java.lang.module.ModuleFinder,java.util.List,java.lang.module.ModuleFinder,java.util.Collection)"/>
@@ -116,7 +116,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
         public static Java.Lang.ModuleNs.Configuration ResolveAndBind(Java.Lang.ModuleNs.ModuleFinder arg0, Java.Util.List<Java.Lang.ModuleNs.Configuration> arg1, Java.Lang.ModuleNs.ModuleFinder arg2, Java.Util.Collection<Java.Lang.String> arg3)
         {
-            return SExecute<Java.Lang.ModuleNs.Configuration>(LocalBridgeClazz, "resolveAndBind", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Lang.ModuleNs.Configuration>(LocalBridgeClazz, "resolveAndBind", "(Ljava/lang/module/ModuleFinder;Ljava/util/List;Ljava/lang/module/ModuleFinder;Ljava/util/Collection;)Ljava/lang/module/Configuration;", arg0, arg1, arg2, arg3);
         }
 
         #endregion
@@ -131,7 +131,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
         public Java.Lang.ModuleNs.Configuration Resolve(Java.Lang.ModuleNs.ModuleFinder arg0, Java.Lang.ModuleNs.ModuleFinder arg1, Java.Util.Collection<Java.Lang.String> arg2)
         {
-            return IExecute<Java.Lang.ModuleNs.Configuration>("resolve", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.ModuleNs.Configuration>("resolve", "(Ljava/lang/module/ModuleFinder;Ljava/lang/module/ModuleFinder;Ljava/util/Collection;)Ljava/lang/module/Configuration;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#resolveAndBind(java.lang.module.ModuleFinder,java.lang.module.ModuleFinder,java.util.Collection)"/>
@@ -142,7 +142,7 @@ namespace Java.Lang.ModuleNs
         /// <returns><see cref="Java.Lang.ModuleNs.Configuration"/></returns>
         public Java.Lang.ModuleNs.Configuration ResolveAndBind(Java.Lang.ModuleNs.ModuleFinder arg0, Java.Lang.ModuleNs.ModuleFinder arg1, Java.Util.Collection<Java.Lang.String> arg2)
         {
-            return IExecute<Java.Lang.ModuleNs.Configuration>("resolveAndBind", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.ModuleNs.Configuration>("resolveAndBind", "(Ljava/lang/module/ModuleFinder;Ljava/lang/module/ModuleFinder;Ljava/util/Collection;)Ljava/lang/module/Configuration;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/Configuration.html#parents()"/>

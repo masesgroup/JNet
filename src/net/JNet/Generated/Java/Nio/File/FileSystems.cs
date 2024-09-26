@@ -112,7 +112,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.FileSystem NewFileSystem(Java.Net.URI arg0, Java.Util.Map<Java.Lang.String, object> arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", "(Ljava/net/URI;Ljava/util/Map;Ljava/lang/ClassLoader;)Ljava/nio/file/FileSystem;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.net.URI,java.util.Map)"/>
@@ -123,7 +123,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.FileSystem NewFileSystem(Java.Net.URI arg0, Java.Util.Map<Java.Lang.String, object> arg1)
         {
-            return SExecute<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", arg0, arg1);
+            return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", "(Ljava/net/URI;Ljava/util/Map;)Ljava/nio/file/FileSystem;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/FileSystems.html#newFileSystem(java.nio.file.Path,java.lang.ClassLoader)"/>
@@ -134,7 +134,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Nio.File.FileSystem NewFileSystem(Java.Nio.File.Path arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", arg0, arg1);
+            return SExecuteWithSignature<Java.Nio.File.FileSystem>(LocalBridgeClazz, "newFileSystem", "(Ljava/nio/file/Path;Ljava/lang/ClassLoader;)Ljava/nio/file/FileSystem;", arg0, arg1);
         }
 
         #endregion

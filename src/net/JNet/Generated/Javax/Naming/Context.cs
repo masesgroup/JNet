@@ -411,7 +411,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public object AddToEnvironment(Java.Lang.String arg0, object arg1)
         {
-            return IExecute("addToEnvironment", arg0, arg1);
+            return IExecuteWithSignature("addToEnvironment", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#lookup(java.lang.String)"/>
@@ -472,7 +472,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public Java.Lang.String ComposeName(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("composeName", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("composeName", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#createSubcontext(java.lang.String)"/>
@@ -503,7 +503,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public Javax.Naming.Name ComposeName(Javax.Naming.Name arg0, Javax.Naming.Name arg1)
         {
-            return IExecute<Javax.Naming.Name>("composeName", arg0, arg1);
+            return IExecuteWithSignature<Javax.Naming.Name>("composeName", "(Ljavax/naming/Name;Ljavax/naming/Name;)Ljavax/naming/Name;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#getNameParser(java.lang.String)"/>
@@ -573,7 +573,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Bind(Java.Lang.String arg0, object arg1)
         {
-            IExecute("bind", arg0, arg1);
+            IExecuteWithSignature("bind", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#bind(javax.naming.Name,java.lang.Object)"/>
@@ -583,7 +583,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Bind(Javax.Naming.Name arg0, object arg1)
         {
-            IExecute("bind", arg0, arg1);
+            IExecuteWithSignature("bind", "(Ljavax/naming/Name;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#close()"/>
@@ -619,7 +619,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Rebind(Java.Lang.String arg0, object arg1)
         {
-            IExecute("rebind", arg0, arg1);
+            IExecuteWithSignature("rebind", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#rebind(javax.naming.Name,java.lang.Object)"/>
@@ -629,7 +629,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Rebind(Javax.Naming.Name arg0, object arg1)
         {
-            IExecute("rebind", arg0, arg1);
+            IExecuteWithSignature("rebind", "(Ljavax/naming/Name;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#rename(java.lang.String,java.lang.String)"/>
@@ -639,7 +639,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Rename(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("rename", arg0, arg1);
+            IExecuteWithSignature("rename", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#rename(javax.naming.Name,javax.naming.Name)"/>
@@ -649,7 +649,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.NamingException"/>
         public void Rename(Javax.Naming.Name arg0, Javax.Naming.Name arg1)
         {
-            IExecute("rename", arg0, arg1);
+            IExecuteWithSignature("rename", "(Ljavax/naming/Name;Ljavax/naming/Name;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Context.html#unbind(java.lang.String)"/>

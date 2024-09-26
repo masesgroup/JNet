@@ -141,7 +141,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(long arg0, long arg1)
         {
-            return IExecute<bool>("compareAndSet", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndSet", "(JJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetAcquire(long,long)"/>
@@ -151,7 +151,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetAcquire(long arg0, long arg1)
         {
-            return IExecute<bool>("weakCompareAndSetAcquire", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetAcquire", "(JJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetPlain(long,long)"/>
@@ -161,7 +161,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetPlain(long arg0, long arg1)
         {
-            return IExecute<bool>("weakCompareAndSetPlain", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetPlain", "(JJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetRelease(long,long)"/>
@@ -171,7 +171,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetRelease(long arg0, long arg1)
         {
-            return IExecute<bool>("weakCompareAndSetRelease", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetRelease", "(JJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#weakCompareAndSetVolatile(long,long)"/>
@@ -181,7 +181,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetVolatile(long arg0, long arg1)
         {
-            return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetVolatile", "(JJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#accumulateAndGet(long,java.util.function.LongBinaryOperator)"/>
@@ -191,7 +191,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long AccumulateAndGet(long arg0, Java.Util.Function.LongBinaryOperator arg1)
         {
-            return IExecute<long>("accumulateAndGet", arg0, arg1);
+            return IExecuteWithSignature<long>("accumulateAndGet", "(JLjava/util/function/LongBinaryOperator;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#addAndGet(long)"/>
@@ -210,7 +210,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long CompareAndExchange(long arg0, long arg1)
         {
-            return IExecute<long>("compareAndExchange", arg0, arg1);
+            return IExecuteWithSignature<long>("compareAndExchange", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#compareAndExchangeAcquire(long,long)"/>
@@ -220,7 +220,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long CompareAndExchangeAcquire(long arg0, long arg1)
         {
-            return IExecute<long>("compareAndExchangeAcquire", arg0, arg1);
+            return IExecuteWithSignature<long>("compareAndExchangeAcquire", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#compareAndExchangeRelease(long,long)"/>
@@ -230,7 +230,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long CompareAndExchangeRelease(long arg0, long arg1)
         {
-            return IExecute<long>("compareAndExchangeRelease", arg0, arg1);
+            return IExecuteWithSignature<long>("compareAndExchangeRelease", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#decrementAndGet()"/>
@@ -256,7 +256,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="long"/></returns>
         public long GetAndAccumulate(long arg0, Java.Util.Function.LongBinaryOperator arg1)
         {
-            return IExecute<long>("getAndAccumulate", arg0, arg1);
+            return IExecuteWithSignature<long>("getAndAccumulate", "(JLjava/util/function/LongBinaryOperator;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html#getAndAdd(long)"/>

@@ -207,7 +207,7 @@ namespace Java.Awt.Geom
         /// <param name="arg5"><see cref="double"/></param>
         public void SetRoundRect(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
-            IExecute("setRoundRect", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("setRoundRect", "(DDDDDD)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/RoundRectangle2D.html#setRoundRect(java.awt.geom.RoundRectangle2D)"/>
@@ -365,7 +365,7 @@ namespace Java.Awt.Geom
             /// <param name="arg5"><see cref="float"/></param>
             public void SetRoundRect(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)
             {
-                IExecute("setRoundRect", arg0, arg1, arg2, arg3, arg4, arg5);
+                IExecuteWithSignature("setRoundRect", "(FFFFFF)V", arg0, arg1, arg2, arg3, arg4, arg5);
             }
 
             #endregion

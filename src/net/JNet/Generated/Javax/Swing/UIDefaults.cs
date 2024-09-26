@@ -305,7 +305,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool GetBoolean(object arg0, Java.Util.Locale arg1)
         {
-            return IExecute<bool>("getBoolean", arg0, arg1);
+            return IExecuteWithSignature<bool>("getBoolean", "(Ljava/lang/Object;Ljava/util/Locale;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getBoolean(java.lang.Object)"/>
@@ -324,7 +324,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetInt(object arg0, Java.Util.Locale arg1)
         {
-            return IExecute<int>("getInt", arg0, arg1);
+            return IExecuteWithSignature<int>("getInt", "(Ljava/lang/Object;Ljava/util/Locale;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getInt(java.lang.Object)"/>
@@ -343,7 +343,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetColor(object arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Awt.Color>("getColor", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Color>("getColor", "(Ljava/lang/Object;Ljava/util/Locale;)Ljava/awt/Color;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getColor(java.lang.Object)"/>
@@ -362,7 +362,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetDimension(object arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Awt.Dimension>("getDimension", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Dimension>("getDimension", "(Ljava/lang/Object;Ljava/util/Locale;)Ljava/awt/Dimension;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getDimension(java.lang.Object)"/>
@@ -381,7 +381,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font GetFont(object arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Awt.Font>("getFont", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Font>("getFont", "(Ljava/lang/Object;Ljava/util/Locale;)Ljava/awt/Font;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getFont(java.lang.Object)"/>
@@ -400,7 +400,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Insets"/></returns>
         public Java.Awt.Insets GetInsets(object arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Awt.Insets>("getInsets", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Insets>("getInsets", "(Ljava/lang/Object;Ljava/util/Locale;)Ljava/awt/Insets;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getInsets(java.lang.Object)"/>
@@ -420,7 +420,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class GetUIClass<ReturnExtendsJavax_Swing_Plaf_ComponentUI>(Java.Lang.String arg0, Java.Lang.ClassLoader arg1) where ReturnExtendsJavax_Swing_Plaf_ComponentUI : Javax.Swing.Plaf.ComponentUI
         {
-            return IExecute<Java.Lang.Class>("getUIClass", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Class>("getUIClass", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getUIClass(java.lang.String)"/>
@@ -440,7 +440,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public object Get(object arg0, Java.Util.Locale arg1)
         {
-            return IExecute("get", arg0, arg1);
+            return IExecuteWithSignature("get", "(Ljava/lang/Object;Ljava/util/Locale;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getString(java.lang.Object,java.util.Locale)"/>
@@ -450,7 +450,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetString(object arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Lang.String>("getString", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/Object;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getString(java.lang.Object)"/>
@@ -469,7 +469,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Border.Border"/></returns>
         public Javax.Swing.Border.Border GetBorder(object arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Javax.Swing.Border.Border>("getBorder", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Border.Border>("getBorder", "(Ljava/lang/Object;Ljava/util/Locale;)Ljavax/swing/border/Border;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getBorder(java.lang.Object)"/>
@@ -488,7 +488,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Icon"/></returns>
         public Javax.Swing.Icon GetIcon(object arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Javax.Swing.Icon>("getIcon", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Icon>("getIcon", "(Ljava/lang/Object;Ljava/util/Locale;)Ljavax/swing/Icon;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/UIDefaults.html#getIcon(java.lang.Object)"/>

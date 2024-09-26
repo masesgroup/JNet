@@ -205,7 +205,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
         public Java.Nio.Charset.CoderResult Encode(Java.Nio.CharBuffer arg0, Java.Nio.ByteBuffer arg1, bool arg2)
         {
-            return IExecute<Java.Nio.Charset.CoderResult>("encode", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.Charset.CoderResult>("encode", "(Ljava/nio/CharBuffer;Ljava/nio/ByteBuffer;Z)Ljava/nio/charset/CoderResult;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetEncoder.html#flush(java.nio.ByteBuffer)"/>

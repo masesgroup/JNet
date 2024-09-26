@@ -208,7 +208,7 @@ namespace Org.W3c.Dom.Events
         /// <param name="arg7"><see cref="short"/></param>
         public void InitMutationEvent(Java.Lang.String arg0, bool arg1, bool arg2, Org.W3c.Dom.Node arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6, short arg7)
         {
-            IExecute("initMutationEvent", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("initMutationEvent", "(Ljava/lang/String;ZZLorg/w3c/dom/Node;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;S)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
 
         #endregion

@@ -136,7 +136,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image GetResolutionVariant(double arg0, double arg1)
         {
-            return IExecute<Java.Awt.Image>("getResolutionVariant", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Image>("getResolutionVariant", "(DD)Ljava/awt/Image;", arg0, arg1);
         }
 
         #endregion

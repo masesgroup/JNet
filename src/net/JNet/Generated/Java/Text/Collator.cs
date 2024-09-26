@@ -187,7 +187,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int Compare(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("compare", arg0, arg1);
+            return IExecuteWithSignature<int>("compare", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#getCollationKey(java.lang.String)"/>
@@ -206,7 +206,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public bool Equals(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("equals", arg0, arg1);
+            return IExecuteWithSignature<bool>("equals", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Collator.html#compare(java.lang.Object,java.lang.Object)"/>
@@ -216,7 +216,7 @@ namespace Java.Text
         /// <returns><see cref="int"/></returns>
         public int Compare(object arg0, object arg1)
         {
-            return IExecute<int>("compare", arg0, arg1);
+            return IExecuteWithSignature<int>("compare", "(Ljava/lang/Object;Ljava/lang/Object;)I", arg0, arg1);
         }
 
         #endregion

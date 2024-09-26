@@ -128,7 +128,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(short arg0, short arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(SS)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#compareUnsigned(short,short)"/>
@@ -138,7 +138,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(short arg0, short arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compareUnsigned", "(SS)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#hashCode(short)"/>
@@ -177,7 +177,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Java.Lang.Short ValueOf(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Lang.Short>(LocalBridgeClazz, "valueOf", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Short>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;I)Ljava/lang/Short;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#valueOf(java.lang.String)"/>
@@ -225,7 +225,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static short ParseShort(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<short>(LocalBridgeClazz, "parseShort", arg0, arg1);
+            return SExecuteWithSignature<short>(LocalBridgeClazz, "parseShort", "(Ljava/lang/String;I)S", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Short.html#parseShort(java.lang.String)"/>

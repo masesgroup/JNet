@@ -191,7 +191,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Max(double arg0, double arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "max", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "max", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#min(double,double)"/>
@@ -201,7 +201,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Min(double arg0, double arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "min", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "min", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#parseDouble(java.lang.String)"/>
@@ -221,7 +221,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Sum(double arg0, double arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "sum", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "sum", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#compare(double,double)"/>
@@ -231,7 +231,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(double arg0, double arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(DD)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html#hashCode(double)"/>

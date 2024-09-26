@@ -170,7 +170,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SeekableByteChannel NewByteChannel(object arg0, Java.Util.Set arg1, params Java.Nio.File.Attribute.FileAttribute[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1); else return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", "(Ljava/lang/Object;Ljava/util/Set;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/channels/SeekableByteChannel;", arg0, arg1); else return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", "(Ljava/lang/Object;Ljava/util/Set;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/channels/SeekableByteChannel;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#newDirectoryStream(java.lang.Object,java.nio.file.LinkOption[])"/>
@@ -181,7 +181,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.SecureDirectoryStream NewDirectoryStream(object arg0, params Java.Nio.File.LinkOption[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Nio.File.SecureDirectoryStream>("newDirectoryStream", arg0); else return IExecute<Java.Nio.File.SecureDirectoryStream>("newDirectoryStream", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Nio.File.SecureDirectoryStream>("newDirectoryStream", "(Ljava/lang/Object;[Ljava/nio/file/LinkOption;)Ljava/nio/file/SecureDirectoryStream;", arg0); else return IExecuteWithSignature<Java.Nio.File.SecureDirectoryStream>("newDirectoryStream", "(Ljava/lang/Object;[Ljava/nio/file/LinkOption;)Ljava/nio/file/SecureDirectoryStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#deleteDirectory(java.lang.Object)"/>
@@ -210,7 +210,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public void Move(object arg0, Java.Nio.File.SecureDirectoryStream arg1, object arg2)
         {
-            IExecute("move", arg0, arg1, arg2);
+            IExecuteWithSignature("move", "(Ljava/lang/Object;Ljava/nio/file/SecureDirectoryStream;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
 
         #endregion
@@ -352,7 +352,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.SeekableByteChannel NewByteChannel<Arg1ExtendsJava_Nio_File_OpenOption>(T arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption : Java.Nio.File.OpenOption
         {
-            if (arg2.Length == 0) return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1); else return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", "(Ljava/lang/Object;Ljava/util/Set;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/channels/SeekableByteChannel;", arg0, arg1); else return IExecuteWithSignature<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", "(Ljava/lang/Object;Ljava/util/Set;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/channels/SeekableByteChannel;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#newDirectoryStream(java.lang.Object,java.nio.file.LinkOption[])"/>
@@ -363,7 +363,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.SecureDirectoryStream<T> NewDirectoryStream(T arg0, params Java.Nio.File.LinkOption[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Nio.File.SecureDirectoryStream<T>>("newDirectoryStream", arg0); else return IExecute<Java.Nio.File.SecureDirectoryStream<T>>("newDirectoryStream", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Nio.File.SecureDirectoryStream<T>>("newDirectoryStream", "(Ljava/lang/Object;[Ljava/nio/file/LinkOption;)Ljava/nio/file/SecureDirectoryStream;", arg0); else return IExecuteWithSignature<Java.Nio.File.SecureDirectoryStream<T>>("newDirectoryStream", "(Ljava/lang/Object;[Ljava/nio/file/LinkOption;)Ljava/nio/file/SecureDirectoryStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/SecureDirectoryStream.html#deleteDirectory(java.lang.Object)"/>
@@ -392,7 +392,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public void Move(T arg0, Java.Nio.File.SecureDirectoryStream<T> arg1, T arg2)
         {
-            IExecute("move", arg0, arg1, arg2);
+            IExecuteWithSignature("move", "(Ljava/lang/Object;Ljava/nio/file/SecureDirectoryStream;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
 
         #endregion

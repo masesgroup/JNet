@@ -222,7 +222,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SetField(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setField", arg0, arg1);
+            IExecuteWithSignature("setField", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#setFields(java.lang.String[],java.lang.Object[])"/>
@@ -232,7 +232,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SetFields(Java.Lang.String[] arg0, object[] arg1)
         {
-            IExecute("setFields", arg0, arg1);
+            IExecuteWithSignature("setFields", "([Ljava/lang/String;[Ljava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion

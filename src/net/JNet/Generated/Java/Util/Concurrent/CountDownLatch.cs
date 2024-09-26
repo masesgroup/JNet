@@ -114,7 +114,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool Await(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<bool>("await", arg0, arg1);
+            return IExecuteWithSignature<bool>("await", "(JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountDownLatch.html#await()"/>

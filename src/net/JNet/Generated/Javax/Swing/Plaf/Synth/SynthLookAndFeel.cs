@@ -119,7 +119,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <returns><see cref="Javax.Swing.Plaf.Synth.SynthStyle"/></returns>
         public static Javax.Swing.Plaf.Synth.SynthStyle GetStyle(Javax.Swing.JComponent arg0, Javax.Swing.Plaf.Synth.Region arg1)
         {
-            return SExecute<Javax.Swing.Plaf.Synth.SynthStyle>(LocalBridgeClazz, "getStyle", arg0, arg1);
+            return SExecuteWithSignature<Javax.Swing.Plaf.Synth.SynthStyle>(LocalBridgeClazz, "getStyle", "(Ljavax/swing/JComponent;Ljavax/swing/plaf/synth/Region;)Ljavax/swing/plaf/synth/SynthStyle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#updateStyles(java.awt.Component)"/>
@@ -149,7 +149,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <exception cref="Java.Text.ParseException"/>
         public void Load(Java.Io.InputStream arg0, Java.Lang.Class arg1)
         {
-            IExecute("load", arg0, arg1);
+            IExecuteWithSignature("load", "(Ljava/io/InputStream;Ljava/lang/Class;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthLookAndFeel.html#load(java.net.URL)"/>

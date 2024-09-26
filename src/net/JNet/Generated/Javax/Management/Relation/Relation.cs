@@ -296,7 +296,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
         public void HandleMBeanUnregistration(Javax.Management.ObjectName arg0, Java.Lang.String arg1)
         {
-            IExecute("handleMBeanUnregistration", arg0, arg1);
+            IExecuteWithSignature("handleMBeanUnregistration", "(Ljavax/management/ObjectName;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/Relation.html#setRole(javax.management.relation.Role)"/>

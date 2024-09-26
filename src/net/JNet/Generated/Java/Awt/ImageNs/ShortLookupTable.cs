@@ -123,7 +123,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="short"/></returns>
         public short[] LookupPixel(short[] arg0, short[] arg1)
         {
-            return IExecuteArray<short>("lookupPixel", arg0, arg1);
+            return IExecuteWithSignatureArray<short>("lookupPixel", "([S[S)[S", arg0, arg1);
         }
 
         #endregion

@@ -277,7 +277,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public bool HasAttributeNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("hasAttributeNS", arg0, arg1);
+            return IExecuteWithSignature<bool>("hasAttributeNS", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#getAttribute(java.lang.String)"/>
@@ -297,7 +297,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Java.Lang.String GetAttributeNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getAttributeNS", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeNS", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#getAttributeNode(java.lang.String)"/>
@@ -317,7 +317,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Attr GetAttributeNodeNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.W3c.Dom.Attr>("getAttributeNodeNS", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Attr>("getAttributeNodeNS", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Attr;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#removeAttributeNode(org.w3c.dom.Attr)"/>
@@ -367,7 +367,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.NodeList GetElementsByTagNameNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.W3c.Dom.NodeList>("getElementsByTagNameNS", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.NodeList>("getElementsByTagNameNS", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/NodeList;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#removeAttribute(java.lang.String)"/>
@@ -386,7 +386,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void RemoveAttributeNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("removeAttributeNS", arg0, arg1);
+            IExecuteWithSignature("removeAttributeNS", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#setAttribute(java.lang.String,java.lang.String)"/>
@@ -396,7 +396,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetAttribute(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setAttribute", arg0, arg1);
+            IExecuteWithSignature("setAttribute", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#setAttributeNS(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -407,7 +407,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetAttributeNS(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("setAttributeNS", arg0, arg1, arg2);
+            IExecuteWithSignature("setAttributeNS", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#setIdAttribute(java.lang.String,boolean)"/>
@@ -417,7 +417,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetIdAttribute(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setIdAttribute", arg0, arg1);
+            IExecuteWithSignature("setIdAttribute", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#setIdAttributeNode(org.w3c.dom.Attr,boolean)"/>
@@ -427,7 +427,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetIdAttributeNode(Org.W3c.Dom.Attr arg0, bool arg1)
         {
-            IExecute("setIdAttributeNode", arg0, arg1);
+            IExecuteWithSignature("setIdAttributeNode", "(Lorg/w3c/dom/Attr;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/Element.html#setIdAttributeNS(java.lang.String,java.lang.String,boolean)"/>
@@ -438,7 +438,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetIdAttributeNS(Java.Lang.String arg0, Java.Lang.String arg1, bool arg2)
         {
-            IExecute("setIdAttributeNS", arg0, arg1, arg2);
+            IExecuteWithSignature("setIdAttributeNS", "(Ljava/lang/String;Ljava/lang/String;Z)V", arg0, arg1, arg2);
         }
 
         #endregion

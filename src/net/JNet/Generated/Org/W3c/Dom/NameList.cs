@@ -163,7 +163,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="bool"/></returns>
         public bool ContainsNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("containsNS", arg0, arg1);
+            return IExecuteWithSignature<bool>("containsNS", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NameList.html#getName(int)"/>

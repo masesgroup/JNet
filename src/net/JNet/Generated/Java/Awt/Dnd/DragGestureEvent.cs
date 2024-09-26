@@ -177,7 +177,7 @@ namespace Java.Awt.Dnd
         /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
         public void StartDrag(Java.Awt.Cursor arg0, Java.Awt.Datatransfer.Transferable arg1, Java.Awt.Dnd.DragSourceListener arg2)
         {
-            IExecute("startDrag", arg0, arg1, arg2);
+            IExecuteWithSignature("startDrag", "(Ljava/awt/Cursor;Ljava/awt/datatransfer/Transferable;Ljava/awt/dnd/DragSourceListener;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#startDrag(java.awt.Cursor,java.awt.datatransfer.Transferable)"/>
@@ -187,7 +187,7 @@ namespace Java.Awt.Dnd
         /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
         public void StartDrag(Java.Awt.Cursor arg0, Java.Awt.Datatransfer.Transferable arg1)
         {
-            IExecute("startDrag", arg0, arg1);
+            IExecuteWithSignature("startDrag", "(Ljava/awt/Cursor;Ljava/awt/datatransfer/Transferable;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureEvent.html#startDrag(java.awt.Cursor,java.awt.Image,java.awt.Point,java.awt.datatransfer.Transferable,java.awt.dnd.DragSourceListener)"/>
@@ -200,7 +200,7 @@ namespace Java.Awt.Dnd
         /// <exception cref="Java.Awt.Dnd.InvalidDnDOperationException"/>
         public void StartDrag(Java.Awt.Cursor arg0, Java.Awt.Image arg1, Java.Awt.Point arg2, Java.Awt.Datatransfer.Transferable arg3, Java.Awt.Dnd.DragSourceListener arg4)
         {
-            IExecute("startDrag", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("startDrag", "(Ljava/awt/Cursor;Ljava/awt/Image;Ljava/awt/Point;Ljava/awt/datatransfer/Transferable;Ljava/awt/dnd/DragSourceListener;)V", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

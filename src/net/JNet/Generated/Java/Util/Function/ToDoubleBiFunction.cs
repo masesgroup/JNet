@@ -254,7 +254,7 @@ namespace Java.Util.Function
         /// <returns><see cref="double"/></returns>
         public override double ApplyAsDouble(object arg0, object arg1)
         {
-            return IExecute<double>("applyAsDouble", arg0, arg1);
+            return IExecuteWithSignature<double>("applyAsDouble", "(Ljava/lang/Object;Ljava/lang/Object;)D", arg0, arg1);
         }
 
         #endregion
@@ -385,7 +385,7 @@ namespace Java.Util.Function
         /// <returns><see cref="double"/></returns>
         public override double ApplyAsDouble(T arg0, U arg1)
         {
-            return IExecute<double>("applyAsDouble", arg0, arg1);
+            return IExecuteWithSignature<double>("applyAsDouble", "(Ljava/lang/Object;Ljava/lang/Object;)D", arg0, arg1);
         }
 
         #endregion

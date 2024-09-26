@@ -266,7 +266,7 @@ namespace Javax.Tools
         /// <returns><see cref="bool"/></returns>
         public bool IsSameFile(Javax.Tools.FileObject arg0, Javax.Tools.FileObject arg1)
         {
-            return IExecute<bool>("isSameFile", arg0, arg1);
+            return IExecuteWithSignature<bool>("isSameFile", "(Ljavax/tools/FileObject;Ljavax/tools/FileObject;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getLocation(javax.tools.JavaFileManager.Location)"/>
@@ -328,7 +328,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public void SetLocation<Arg1ExtendsJava_Io_File>(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.Iterable<Arg1ExtendsJava_Io_File> arg1) where Arg1ExtendsJava_Io_File : Java.Io.File
         {
-            IExecute("setLocation", arg0, arg1);
+            IExecuteWithSignature("setLocation", "(Ljavax/tools/JavaFileManager$Location;Ljava/lang/Iterable;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getLocationAsPaths(javax.tools.JavaFileManager.Location)"/>
@@ -380,7 +380,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public void SetLocationForModule<Arg2ExtendsJava_Nio_File_Path>(Javax.Tools.JavaFileManager.Location arg0, Java.Lang.String arg1, Java.Util.Collection<Arg2ExtendsJava_Nio_File_Path> arg2) where Arg2ExtendsJava_Nio_File_Path : Java.Nio.File.Path
         {
-            IExecute("setLocationForModule", arg0, arg1, arg2);
+            IExecuteWithSignature("setLocationForModule", "(Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;Ljava/util/Collection;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#setLocationFromPaths(javax.tools.JavaFileManager.Location,java.util.Collection)"/>
@@ -391,7 +391,7 @@ namespace Javax.Tools
         /// <exception cref="Java.Io.IOException"/>
         public void SetLocationFromPaths<Arg1ExtendsJava_Nio_File_Path>(Javax.Tools.JavaFileManager.Location arg0, Java.Util.Collection<Arg1ExtendsJava_Nio_File_Path> arg1) where Arg1ExtendsJava_Nio_File_Path : Java.Nio.File.Path
         {
-            IExecute("setLocationFromPaths", arg0, arg1);
+            IExecuteWithSignature("setLocationFromPaths", "(Ljavax/tools/JavaFileManager$Location;Ljava/util/Collection;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#setPathFactory(javax.tools.StandardJavaFileManager.PathFactory)"/>
@@ -433,7 +433,7 @@ namespace Javax.Tools
             /// <returns><see cref="Java.Nio.File.Path"/></returns>
             public Java.Nio.File.Path GetPath(Java.Lang.String arg0, params Java.Lang.String[] arg1)
             {
-                if (arg1.Length == 0) return IExecute<Java.Nio.File.Path>("getPath", arg0); else return IExecute<Java.Nio.File.Path>("getPath", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<Java.Nio.File.Path>("getPath", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;", arg0); else return IExecuteWithSignature<Java.Nio.File.Path>("getPath", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;", arg0, arg1);
             }
 
             #endregion

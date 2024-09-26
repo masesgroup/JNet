@@ -96,7 +96,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Crypto.SecretKeyFactory GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/crypto/SecretKeyFactory;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -107,7 +107,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Crypto.SecretKeyFactory GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljavax/crypto/SecretKeyFactory;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String)"/>
@@ -146,7 +146,7 @@ namespace Javax.Crypto
         /// <exception cref="Java.Security.Spec.InvalidKeySpecException"/>
         public Java.Security.Spec.KeySpec GetKeySpec(Javax.Crypto.SecretKey arg0, Java.Lang.Class arg1)
         {
-            return IExecute<Java.Security.Spec.KeySpec>("getKeySpec", arg0, arg1);
+            return IExecuteWithSignature<Java.Security.Spec.KeySpec>("getKeySpec", "(Ljavax/crypto/SecretKey;Ljava/lang/Class;)Ljava/security/spec/KeySpec;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/crypto/SecretKeyFactory.html#generateSecret(java.security.spec.KeySpec)"/>

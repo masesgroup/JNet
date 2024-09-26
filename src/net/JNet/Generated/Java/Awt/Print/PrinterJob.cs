@@ -220,7 +220,7 @@ namespace Java.Awt.Print
         /// <param name="arg1"><see cref="Java.Awt.Print.PageFormat"/></param>
         public void SetPrintable(Java.Awt.Print.Printable arg0, Java.Awt.Print.PageFormat arg1)
         {
-            IExecute("setPrintable", arg0, arg1);
+            IExecuteWithSignature("setPrintable", "(Ljava/awt/print/Printable;Ljava/awt/print/PageFormat;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/print/PrinterJob.html#setPrintable(java.awt.print.Printable)"/>

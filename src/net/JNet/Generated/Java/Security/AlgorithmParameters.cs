@@ -96,7 +96,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.AlgorithmParameters GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Security.AlgorithmParameters>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.AlgorithmParameters>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/AlgorithmParameters;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -107,7 +107,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.AlgorithmParameters GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Java.Security.AlgorithmParameters>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.AlgorithmParameters>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/AlgorithmParameters;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#getInstance(java.lang.String)"/>
@@ -173,7 +173,7 @@ namespace Java.Security
         /// <exception cref="Java.Io.IOException"/>
         public void Init(byte[] arg0, Java.Lang.String arg1)
         {
-            IExecute("init", arg0, arg1);
+            IExecuteWithSignature("init", "([BLjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmParameters.html#init(byte[])"/>

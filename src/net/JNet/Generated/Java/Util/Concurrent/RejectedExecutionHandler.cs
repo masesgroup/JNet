@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
         public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
         {
-            IExecute("rejectedExecution", arg0, arg1);
+            IExecuteWithSignature("rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V", arg0, arg1);
         }
 
         #endregion

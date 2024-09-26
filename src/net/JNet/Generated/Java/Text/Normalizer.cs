@@ -139,7 +139,7 @@ namespace Java.Text
         /// <returns><see cref="bool"/></returns>
         public static bool IsNormalized(Java.Lang.CharSequence arg0, Java.Text.Normalizer.Form arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isNormalized", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isNormalized", "(Ljava/lang/CharSequence;Ljava/text/Normalizer$Form;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/Normalizer.html#normalize(java.lang.CharSequence,java.text.Normalizer.Form)"/>
@@ -149,7 +149,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Normalize(Java.Lang.CharSequence arg0, Java.Text.Normalizer.Form arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "normalize", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "normalize", "(Ljava/lang/CharSequence;Ljava/text/Normalizer$Form;)Ljava/lang/String;", arg0, arg1);
         }
 
         #endregion

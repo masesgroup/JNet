@@ -272,7 +272,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="int"/></returns>
             public int GetViewIndexAtPoint(float arg0, float arg1, Java.Awt.Shape arg2)
             {
-                return IExecute<int>("getViewIndexAtPoint", arg0, arg1, arg2);
+                return IExecuteWithSignature<int>("getViewIndexAtPoint", "(FFLjava/awt/Shape;)I", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#getChildAllocation(int,java.awt.Shape)"/>
@@ -282,7 +282,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Java.Awt.Shape"/></returns>
             public Java.Awt.Shape GetChildAllocation(int arg0, Java.Awt.Shape arg1)
             {
-                return IExecute<Java.Awt.Shape>("getChildAllocation", arg0, arg1);
+                return IExecuteWithSignature<Java.Awt.Shape>("getChildAllocation", "(ILjava/awt/Shape;)Ljava/awt/Shape;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildLocator.html#childChanged(javax.swing.text.AsyncBoxView.ChildState)"/>
@@ -390,7 +390,7 @@ namespace Javax.Swing.Text
             /// <param name="arg1"><see cref="bool"/></param>
             public void PreferenceChanged(bool arg0, bool arg1)
             {
-                IExecute("preferenceChanged", arg0, arg1);
+                IExecuteWithSignature("preferenceChanged", "(ZZ)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html#run()"/>

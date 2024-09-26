@@ -479,7 +479,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String FindWithinHorizon(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("findWithinHorizon", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("findWithinHorizon", "(Ljava/lang/String;I)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#findWithinHorizon(java.util.regex.Pattern,int)"/>
@@ -489,7 +489,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String FindWithinHorizon(Java.Util.Regex.Pattern arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("findWithinHorizon", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("findWithinHorizon", "(Ljava/util/regex/Pattern;I)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Scanner.html#next(java.lang.String)"/>

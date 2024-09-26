@@ -109,7 +109,7 @@ namespace Java.Rmi.Activation
         /// <exception cref="Java.Rmi.Activation.ActivationException"/>
         public static Java.Rmi.Activation.ActivationGroup CreateGroup(Java.Rmi.Activation.ActivationGroupID arg0, Java.Rmi.Activation.ActivationGroupDesc arg1, long arg2)
         {
-            return SExecute<Java.Rmi.Activation.ActivationGroup>(LocalBridgeClazz, "createGroup", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Rmi.Activation.ActivationGroup>(LocalBridgeClazz, "createGroup", "(Ljava/rmi/activation/ActivationGroupID;Ljava/rmi/activation/ActivationGroupDesc;J)Ljava/rmi/activation/ActivationGroup;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#currentGroupID()"/>
@@ -133,7 +133,7 @@ namespace Java.Rmi.Activation
         /// <exception cref="Java.Rmi.RemoteException"/>
         public void ActiveObject(Java.Rmi.Activation.ActivationID arg0, Java.Rmi.Remote arg1)
         {
-            IExecute("activeObject", arg0, arg1);
+            IExecuteWithSignature("activeObject", "(Ljava/rmi/activation/ActivationID;Ljava/rmi/Remote;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationGroup.html#inactiveObject(java.rmi.activation.ActivationID)"/>

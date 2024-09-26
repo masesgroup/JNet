@@ -109,7 +109,7 @@ namespace Java.Beans
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         public static void RegisterEditor(Java.Lang.Class arg0, Java.Lang.Class arg1)
         {
-            SExecute(LocalBridgeClazz, "registerEditor", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "registerEditor", "(Ljava/lang/Class;Ljava/lang/Class;)V", arg0, arg1);
         }
 
         #endregion

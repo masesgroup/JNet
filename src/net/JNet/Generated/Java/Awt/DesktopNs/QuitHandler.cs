@@ -123,7 +123,7 @@ namespace Java.Awt.DesktopNs
         /// <param name="arg1"><see cref="Java.Awt.DesktopNs.QuitResponse"/></param>
         public void HandleQuitRequestWith(Java.Awt.DesktopNs.QuitEvent arg0, Java.Awt.DesktopNs.QuitResponse arg1)
         {
-            IExecute("handleQuitRequestWith", arg0, arg1);
+            IExecuteWithSignature("handleQuitRequestWith", "(Ljava/awt/desktop/QuitEvent;Ljava/awt/desktop/QuitResponse;)V", arg0, arg1);
         }
 
         #endregion

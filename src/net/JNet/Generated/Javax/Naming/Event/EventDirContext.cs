@@ -167,7 +167,7 @@ namespace Javax.Naming.Event
         /// <exception cref="Javax.Naming.NamingException"/>
         public void AddNamingListener(Java.Lang.String arg0, Java.Lang.String arg1, object[] arg2, Javax.Naming.Directory.SearchControls arg3, Javax.Naming.Event.NamingListener arg4)
         {
-            IExecute("addNamingListener", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("addNamingListener", "(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;Ljavax/naming/directory/SearchControls;Ljavax/naming/event/NamingListener;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html#addNamingListener(java.lang.String,java.lang.String,javax.naming.directory.SearchControls,javax.naming.event.NamingListener)"/>
@@ -179,7 +179,7 @@ namespace Javax.Naming.Event
         /// <exception cref="Javax.Naming.NamingException"/>
         public void AddNamingListener(Java.Lang.String arg0, Java.Lang.String arg1, Javax.Naming.Directory.SearchControls arg2, Javax.Naming.Event.NamingListener arg3)
         {
-            IExecute("addNamingListener", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("addNamingListener", "(Ljava/lang/String;Ljava/lang/String;Ljavax/naming/directory/SearchControls;Ljavax/naming/event/NamingListener;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html#addNamingListener(javax.naming.Name,java.lang.String,java.lang.Object[],javax.naming.directory.SearchControls,javax.naming.event.NamingListener)"/>
@@ -192,7 +192,7 @@ namespace Javax.Naming.Event
         /// <exception cref="Javax.Naming.NamingException"/>
         public void AddNamingListener(Javax.Naming.Name arg0, Java.Lang.String arg1, object[] arg2, Javax.Naming.Directory.SearchControls arg3, Javax.Naming.Event.NamingListener arg4)
         {
-            IExecute("addNamingListener", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("addNamingListener", "(Ljavax/naming/Name;Ljava/lang/String;[Ljava/lang/Object;Ljavax/naming/directory/SearchControls;Ljavax/naming/event/NamingListener;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/event/EventDirContext.html#addNamingListener(javax.naming.Name,java.lang.String,javax.naming.directory.SearchControls,javax.naming.event.NamingListener)"/>
@@ -204,7 +204,7 @@ namespace Javax.Naming.Event
         /// <exception cref="Javax.Naming.NamingException"/>
         public void AddNamingListener(Javax.Naming.Name arg0, Java.Lang.String arg1, Javax.Naming.Directory.SearchControls arg2, Javax.Naming.Event.NamingListener arg3)
         {
-            IExecute("addNamingListener", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("addNamingListener", "(Ljavax/naming/Name;Ljava/lang/String;Ljavax/naming/directory/SearchControls;Ljavax/naming/event/NamingListener;)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion

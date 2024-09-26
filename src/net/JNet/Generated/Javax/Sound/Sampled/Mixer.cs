@@ -276,7 +276,7 @@ namespace Javax.Sound.Sampled
         /// <returns><see cref="bool"/></returns>
         public bool IsSynchronizationSupported(Javax.Sound.Sampled.Line[] arg0, bool arg1)
         {
-            return IExecute<bool>("isSynchronizationSupported", arg0, arg1);
+            return IExecuteWithSignature<bool>("isSynchronizationSupported", "([Ljavax/sound/sampled/Line;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#getMaxLines(javax.sound.sampled.Line.Info)"/>
@@ -322,7 +322,7 @@ namespace Javax.Sound.Sampled
         /// <param name="arg1"><see cref="bool"/></param>
         public void Synchronize(Javax.Sound.Sampled.Line[] arg0, bool arg1)
         {
-            IExecute("synchronize", arg0, arg1);
+            IExecuteWithSignature("synchronize", "([Ljavax/sound/sampled/Line;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/Mixer.html#unsynchronize(javax.sound.sampled.Line[])"/>

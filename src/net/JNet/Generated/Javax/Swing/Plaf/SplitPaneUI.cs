@@ -126,7 +126,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg1"><see cref="Java.Awt.Graphics"/></param>
         public void FinishedPaintingChildren(Javax.Swing.JSplitPane arg0, Java.Awt.Graphics arg1)
         {
-            IExecute("finishedPaintingChildren", arg0, arg1);
+            IExecuteWithSignature("finishedPaintingChildren", "(Ljavax/swing/JSplitPane;Ljava/awt/Graphics;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/SplitPaneUI.html#resetToPreferredSizes(javax.swing.JSplitPane)"/>
@@ -143,7 +143,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg1"><see cref="int"/></param>
         public void SetDividerLocation(Javax.Swing.JSplitPane arg0, int arg1)
         {
-            IExecute("setDividerLocation", arg0, arg1);
+            IExecuteWithSignature("setDividerLocation", "(Ljavax/swing/JSplitPane;I)V", arg0, arg1);
         }
 
         #endregion

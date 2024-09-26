@@ -243,7 +243,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.JMenuItem"/></returns>
         public Javax.Swing.JMenuItem Insert(Javax.Swing.Action arg0, int arg1)
         {
-            return IExecute<Javax.Swing.JMenuItem>("insert", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.JMenuItem>("insert", "(Ljavax/swing/Action;I)Ljavax/swing/JMenuItem;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#insert(javax.swing.JMenuItem,int)"/>
@@ -253,7 +253,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.JMenuItem"/></returns>
         public Javax.Swing.JMenuItem Insert(Javax.Swing.JMenuItem arg0, int arg1)
         {
-            return IExecute<Javax.Swing.JMenuItem>("insert", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.JMenuItem>("insert", "(Ljavax/swing/JMenuItem;I)Ljavax/swing/JMenuItem;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#addMenuListener(javax.swing.event.MenuListener)"/>
@@ -277,7 +277,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void Insert(Java.Lang.String arg0, int arg1)
         {
-            IExecute("insert", arg0, arg1);
+            IExecuteWithSignature("insert", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#insertSeparator(int)"/>
@@ -310,7 +310,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void SetMenuLocation(int arg0, int arg1)
         {
-            IExecute("setMenuLocation", arg0, arg1);
+            IExecuteWithSignature("setMenuLocation", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JMenu.html#setPopupMenuVisible(boolean)"/>

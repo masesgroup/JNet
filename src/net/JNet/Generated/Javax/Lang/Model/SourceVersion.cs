@@ -175,7 +175,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="bool"/></returns>
         public static bool IsKeyword(Java.Lang.CharSequence arg0, Javax.Lang.Model.SourceVersion arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isKeyword", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isKeyword", "(Ljava/lang/CharSequence;Ljavax/lang/model/SourceVersion;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isKeyword(java.lang.CharSequence)"/>
@@ -194,7 +194,7 @@ namespace Javax.Lang.Model
         /// <returns><see cref="bool"/></returns>
         public static bool IsName(Java.Lang.CharSequence arg0, Javax.Lang.Model.SourceVersion arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isName", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isName", "(Ljava/lang/CharSequence;Ljavax/lang/model/SourceVersion;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/SourceVersion.html#isName(java.lang.CharSequence)"/>

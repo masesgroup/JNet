@@ -172,7 +172,7 @@ namespace Java.Awt.FontNs
         /// <param name="arg2"><see cref="float"/></param>
         public void Draw(Java.Awt.Graphics2D arg0, float arg1, float arg2)
         {
-            IExecute("draw", arg0, arg1, arg2);
+            IExecuteWithSignature("draw", "(Ljava/awt/Graphics2D;FF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GraphicAttribute.html#getOutline(java.awt.geom.AffineTransform)"/>

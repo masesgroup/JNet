@@ -259,7 +259,7 @@ namespace Org.W3c.Dom.Html
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void Add(Org.W3c.Dom.Html.HTMLElement arg0, Org.W3c.Dom.Html.HTMLElement arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(Lorg/w3c/dom/html/HTMLElement;Lorg/w3c/dom/html/HTMLElement;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLSelectElement.html#blur()"/>

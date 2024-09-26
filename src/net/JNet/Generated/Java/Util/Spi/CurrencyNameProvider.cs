@@ -100,7 +100,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetSymbol(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Lang.String>("getSymbol", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getSymbol", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/CurrencyNameProvider.html#getDisplayName(java.lang.String,java.util.Locale)"/>
@@ -110,7 +110,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayName(Java.Lang.String arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);
         }
 
         #endregion

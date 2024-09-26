@@ -151,7 +151,7 @@ namespace Javax.Management
         /// <returns><typeparamref name="T"/></returns>
         public static T NewMBeanProxy<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
         {
-            return SExecute<T>(LocalBridgeClazz, "newMBeanProxy", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "newMBeanProxy", "(Ljavax/management/MBeanServerConnection;Ljavax/management/ObjectName;Ljava/lang/Class;Z)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#newMBeanProxy(javax.management.MBeanServerConnection,javax.management.ObjectName,java.lang.Class)"/>
@@ -163,7 +163,7 @@ namespace Javax.Management
         /// <returns><typeparamref name="T"/></returns>
         public static T NewMBeanProxy<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2)
         {
-            return SExecute<T>(LocalBridgeClazz, "newMBeanProxy", arg0, arg1, arg2);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "newMBeanProxy", "(Ljavax/management/MBeanServerConnection;Ljavax/management/ObjectName;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#newMXBeanProxy(javax.management.MBeanServerConnection,javax.management.ObjectName,java.lang.Class,boolean)"/>
@@ -176,7 +176,7 @@ namespace Javax.Management
         /// <returns><typeparamref name="T"/></returns>
         public static T NewMXBeanProxy<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
         {
-            return SExecute<T>(LocalBridgeClazz, "newMXBeanProxy", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "newMXBeanProxy", "(Ljavax/management/MBeanServerConnection;Ljavax/management/ObjectName;Ljava/lang/Class;Z)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#newMXBeanProxy(javax.management.MBeanServerConnection,javax.management.ObjectName,java.lang.Class)"/>
@@ -188,7 +188,7 @@ namespace Javax.Management
         /// <returns><typeparamref name="T"/></returns>
         public static T NewMXBeanProxy<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2)
         {
-            return SExecute<T>(LocalBridgeClazz, "newMXBeanProxy", arg0, arg1, arg2);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "newMXBeanProxy", "(Ljavax/management/MBeanServerConnection;Ljavax/management/ObjectName;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/JMX.html#isMXBeanInterface(java.lang.Class)"/>

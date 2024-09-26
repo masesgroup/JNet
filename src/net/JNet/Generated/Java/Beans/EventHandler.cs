@@ -109,7 +109,7 @@ namespace Java.Beans
         /// <returns><typeparamref name="T"/></returns>
         public static T Create<T>(Java.Lang.Class arg0, object arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            return SExecute<T>(LocalBridgeClazz, "create", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "create", "(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#create(java.lang.Class,java.lang.Object,java.lang.String,java.lang.String)"/>
@@ -122,7 +122,7 @@ namespace Java.Beans
         /// <returns><typeparamref name="T"/></returns>
         public static T Create<T>(Java.Lang.Class arg0, object arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            return SExecute<T>(LocalBridgeClazz, "create", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "create", "(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/EventHandler.html#create(java.lang.Class,java.lang.Object,java.lang.String)"/>
@@ -134,7 +134,7 @@ namespace Java.Beans
         /// <returns><typeparamref name="T"/></returns>
         public static T Create<T>(Java.Lang.Class arg0, object arg1, Java.Lang.String arg2)
         {
-            return SExecute<T>(LocalBridgeClazz, "create", arg0, arg1, arg2);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "create", "(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
 
         #endregion
@@ -177,7 +177,7 @@ namespace Java.Beans
         /// <returns><see cref="object"/></returns>
         public object Invoke(object arg0, Java.Lang.Reflect.Method arg1, object[] arg2)
         {
-            return IExecute("invoke", arg0, arg1, arg2);
+            return IExecuteWithSignature("invoke", "(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
 
         #endregion

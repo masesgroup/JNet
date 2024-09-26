@@ -166,7 +166,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Offer(Java.Util.Concurrent.Delayed arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<bool>("offer", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("offer", "(Ljava/util/concurrent/Delayed;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#offer(java.util.concurrent.Delayed)"/>
@@ -187,7 +187,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool Offer(object arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<bool>("offer", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#drainTo(java.util.Collection,int)"/>
@@ -197,7 +197,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int DrainTo(Java.Util.Collection arg0, int arg1)
         {
-            return IExecute<int>("drainTo", arg0, arg1);
+            return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#drainTo(java.util.Collection)"/>
@@ -225,7 +225,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute("poll", arg0, arg1);
+            return IExecuteWithSignature("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#take()"/>
@@ -318,7 +318,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool Offer(E arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<bool>("offer", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("offer", "(Ljava/util/concurrent/Delayed;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#offer(java.util.concurrent.Delayed)"/>
@@ -339,7 +339,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool Offer(object arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<bool>("offer", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#drainTo(java.util.Collection,int)"/>
@@ -350,7 +350,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="int"/></returns>
         public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0, int arg1) where Arg0objectSuperE : E
         {
-            return IExecute<int>("drainTo", arg0, arg1);
+            return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#drainTo(java.util.Collection)"/>
@@ -379,7 +379,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public object Poll(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute("poll", arg0, arg1);
+            return IExecuteWithSignature("poll", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html#take()"/>

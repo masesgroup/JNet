@@ -175,7 +175,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsExported(Java.Lang.String arg0, Java.Lang.Module arg1)
         {
-            return IExecute<bool>("isExported", arg0, arg1);
+            return IExecuteWithSignature<bool>("isExported", "(Ljava/lang/String;Ljava/lang/Module;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isExported(java.lang.String)"/>
@@ -202,7 +202,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public bool IsOpen(Java.Lang.String arg0, Java.Lang.Module arg1)
         {
-            return IExecute<bool>("isOpen", arg0, arg1);
+            return IExecuteWithSignature<bool>("isOpen", "(Ljava/lang/String;Ljava/lang/Module;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#isOpen(java.lang.String)"/>
@@ -231,7 +231,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Module"/></returns>
         public Java.Lang.Module AddExports(Java.Lang.String arg0, Java.Lang.Module arg1)
         {
-            return IExecute<Java.Lang.Module>("addExports", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Module>("addExports", "(Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/Module;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addOpens(java.lang.String,java.lang.Module)"/>
@@ -241,7 +241,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.Module"/></returns>
         public Java.Lang.Module AddOpens(Java.Lang.String arg0, Java.Lang.Module arg1)
         {
-            return IExecute<Java.Lang.Module>("addOpens", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Module>("addOpens", "(Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/Module;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Module.html#addReads(java.lang.Module)"/>

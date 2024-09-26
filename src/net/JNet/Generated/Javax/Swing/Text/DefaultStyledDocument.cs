@@ -303,7 +303,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style AddStyle(Java.Lang.String arg0, Javax.Swing.Text.Style arg1)
         {
-            return IExecute<Javax.Swing.Text.Style>("addStyle", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Text.Style>("addStyle", "(Ljava/lang/String;Ljavax/swing/text/Style;)Ljavax/swing/text/Style;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#getLogicalStyle(int)"/>
@@ -348,7 +348,7 @@ namespace Javax.Swing.Text
         /// <param name="arg3"><see cref="bool"/></param>
         public void SetCharacterAttributes(int arg0, int arg1, Javax.Swing.Text.AttributeSet arg2, bool arg3)
         {
-            IExecute("setCharacterAttributes", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setCharacterAttributes", "(IILjavax/swing/text/AttributeSet;Z)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#setLogicalStyle(int,javax.swing.text.Style)"/>
@@ -357,7 +357,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="Javax.Swing.Text.Style"/></param>
         public void SetLogicalStyle(int arg0, Javax.Swing.Text.Style arg1)
         {
-            IExecute("setLogicalStyle", arg0, arg1);
+            IExecuteWithSignature("setLogicalStyle", "(ILjavax/swing/text/Style;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.html#setParagraphAttributes(int,int,javax.swing.text.AttributeSet,boolean)"/>
@@ -368,7 +368,7 @@ namespace Javax.Swing.Text
         /// <param name="arg3"><see cref="bool"/></param>
         public void SetParagraphAttributes(int arg0, int arg1, Javax.Swing.Text.AttributeSet arg2, bool arg3)
         {
-            IExecute("setParagraphAttributes", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setParagraphAttributes", "(IILjavax/swing/text/AttributeSet;Z)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion
@@ -459,7 +459,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Javax.Swing.Text.Element"/></returns>
             public Javax.Swing.Text.Element Clone(Javax.Swing.Text.Element arg0, Javax.Swing.Text.Element arg1)
             {
-                return IExecute<Javax.Swing.Text.Element>("clone", arg0, arg1);
+                return IExecuteWithSignature<Javax.Swing.Text.Element>("clone", "(Ljavax/swing/text/Element;Ljavax/swing/text/Element;)Ljavax/swing/text/Element;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#change(int,int,javax.swing.text.AbstractDocument.DefaultDocumentEvent)"/>
@@ -469,7 +469,7 @@ namespace Javax.Swing.Text
             /// <param name="arg2"><see cref="Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent"/></param>
             public void Change(int arg0, int arg1, Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent arg2)
             {
-                IExecute("change", arg0, arg1, arg2);
+                IExecuteWithSignature("change", "(IILjavax/swing/text/AbstractDocument$DefaultDocumentEvent;)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#insert(int,int,javax.swing.text.DefaultStyledDocument.ElementSpec[],javax.swing.text.AbstractDocument.DefaultDocumentEvent)"/>
@@ -480,7 +480,7 @@ namespace Javax.Swing.Text
             /// <param name="arg3"><see cref="Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent"/></param>
             public void Insert(int arg0, int arg1, Javax.Swing.Text.DefaultStyledDocument.ElementSpec[] arg2, Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent arg3)
             {
-                IExecute("insert", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("insert", "(II[Ljavax/swing/text/DefaultStyledDocument$ElementSpec;Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;)V", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/DefaultStyledDocument.ElementBuffer.html#remove(int,int,javax.swing.text.AbstractDocument.DefaultDocumentEvent)"/>
@@ -490,7 +490,7 @@ namespace Javax.Swing.Text
             /// <param name="arg2"><see cref="Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent"/></param>
             public void Remove(int arg0, int arg1, Javax.Swing.Text.AbstractDocument.DefaultDocumentEvent arg2)
             {
-                IExecute("remove", arg0, arg1, arg2);
+                IExecuteWithSignature("remove", "(IILjavax/swing/text/AbstractDocument$DefaultDocumentEvent;)V", arg0, arg1, arg2);
             }
 
             #endregion

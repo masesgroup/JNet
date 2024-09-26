@@ -143,7 +143,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void CheckClientTrusted(Java.Security.Cert.X509Certificate[] arg0, Java.Lang.String arg1)
         {
-            IExecute("checkClientTrusted", arg0, arg1);
+            IExecuteWithSignature("checkClientTrusted", "([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509TrustManager.html#checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String)"/>
@@ -153,7 +153,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void CheckServerTrusted(Java.Security.Cert.X509Certificate[] arg0, Java.Lang.String arg1)
         {
-            IExecute("checkServerTrusted", arg0, arg1);
+            IExecuteWithSignature("checkServerTrusted", "([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V", arg0, arg1);
         }
 
         #endregion

@@ -176,7 +176,7 @@ namespace Org.W3c.Dom.Ls
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public bool Write(Org.W3c.Dom.Node arg0, Org.W3c.Dom.Ls.LSOutput arg1)
         {
-            return IExecute<bool>("write", arg0, arg1);
+            return IExecuteWithSignature<bool>("write", "(Lorg/w3c/dom/Node;Lorg/w3c/dom/ls/LSOutput;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#writeToURI(org.w3c.dom.Node,java.lang.String)"/>
@@ -187,7 +187,7 @@ namespace Org.W3c.Dom.Ls
         /// <exception cref="Org.W3c.Dom.Ls.LSException"/>
         public bool WriteToURI(Org.W3c.Dom.Node arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("writeToURI", arg0, arg1);
+            return IExecuteWithSignature<bool>("writeToURI", "(Lorg/w3c/dom/Node;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/ls/LSSerializer.html#writeToString(org.w3c.dom.Node)"/>

@@ -152,7 +152,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Text.AttributedCharacterIterator"/></returns>
         public Java.Text.AttributedCharacterIterator GetIterator(Java.Text.AttributedCharacterIterator.Attribute[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Text.AttributedCharacterIterator>("getIterator", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Text.AttributedCharacterIterator>("getIterator", "([Ljava/text/AttributedCharacterIterator$Attribute;II)Ljava/text/AttributedCharacterIterator;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#getIterator(java.text.AttributedCharacterIterator.Attribute[])"/>
@@ -172,7 +172,7 @@ namespace Java.Text
         /// <param name="arg3"><see cref="int"/></param>
         public void AddAttribute(Java.Text.AttributedCharacterIterator.Attribute arg0, object arg1, int arg2, int arg3)
         {
-            IExecute("addAttribute", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("addAttribute", "(Ljava/text/AttributedCharacterIterator$Attribute;Ljava/lang/Object;II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#addAttribute(java.text.AttributedCharacterIterator.Attribute,java.lang.Object)"/>
@@ -181,7 +181,7 @@ namespace Java.Text
         /// <param name="arg1"><see cref="object"/></param>
         public void AddAttribute(Java.Text.AttributedCharacterIterator.Attribute arg0, object arg1)
         {
-            IExecute("addAttribute", arg0, arg1);
+            IExecuteWithSignature("addAttribute", "(Ljava/text/AttributedCharacterIterator$Attribute;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedString.html#addAttributes(java.util.Map,int,int)"/>
@@ -192,7 +192,7 @@ namespace Java.Text
         /// <typeparam name="Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute"><see cref="Java.Text.AttributedCharacterIterator.Attribute"/></typeparam>
         public void AddAttributes<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute>(Java.Util.Map<Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute, object> arg0, int arg1, int arg2) where Arg0ExtendsJava_Text_AttributedCharacterIterator_Attribute : Java.Text.AttributedCharacterIterator.Attribute
         {
-            IExecute("addAttributes", arg0, arg1, arg2);
+            IExecuteWithSignature("addAttributes", "(Ljava/util/Map;II)V", arg0, arg1, arg2);
         }
 
         #endregion

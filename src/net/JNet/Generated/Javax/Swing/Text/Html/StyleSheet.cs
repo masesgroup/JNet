@@ -212,7 +212,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="bool"/></returns>
         public bool AddCSSAttributeFromHTML(Javax.Swing.Text.MutableAttributeSet arg0, Javax.Swing.Text.Html.CSS.Attribute arg1, Java.Lang.String arg2)
         {
-            return IExecute<bool>("addCSSAttributeFromHTML", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("addCSSAttributeFromHTML", "(Ljavax/swing/text/MutableAttributeSet;Ljavax/swing/text/html/CSS$Attribute;Ljava/lang/String;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#getPointSize(int)"/>
@@ -303,7 +303,7 @@ namespace Javax.Swing.Text.Html
         /// <returns><see cref="Javax.Swing.Text.Style"/></returns>
         public Javax.Swing.Text.Style GetRule(Javax.Swing.Text.Html.HTML.Tag arg0, Javax.Swing.Text.Element arg1)
         {
-            return IExecute<Javax.Swing.Text.Style>("getRule", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Text.Style>("getRule", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/Element;)Ljavax/swing/text/Style;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addCSSAttribute(javax.swing.text.MutableAttributeSet,javax.swing.text.html.CSS.Attribute,java.lang.String)"/>
@@ -313,7 +313,7 @@ namespace Javax.Swing.Text.Html
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         public void AddCSSAttribute(Javax.Swing.Text.MutableAttributeSet arg0, Javax.Swing.Text.Html.CSS.Attribute arg1, Java.Lang.String arg2)
         {
-            IExecute("addCSSAttribute", arg0, arg1, arg2);
+            IExecuteWithSignature("addCSSAttribute", "(Ljavax/swing/text/MutableAttributeSet;Ljavax/swing/text/html/CSS$Attribute;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#addRule(java.lang.String)"/>
@@ -347,7 +347,7 @@ namespace Javax.Swing.Text.Html
         /// <exception cref="Java.Io.IOException"/>
         public void LoadRules(Java.Io.Reader arg0, Java.Net.URL arg1)
         {
-            IExecute("loadRules", arg0, arg1);
+            IExecuteWithSignature("loadRules", "(Ljava/io/Reader;Ljava/net/URL;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.html#removeStyleSheet(javax.swing.text.html.StyleSheet)"/>
@@ -405,7 +405,7 @@ namespace Javax.Swing.Text.Html
             /// <returns><see cref="float"/></returns>
             public float GetInset(int arg0, Javax.Swing.Text.View arg1)
             {
-                return IExecute<float>("getInset", arg0, arg1);
+                return IExecuteWithSignature<float>("getInset", "(ILjavax/swing/text/View;)F", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/StyleSheet.BoxPainter.html#paint(java.awt.Graphics,float,float,float,float,javax.swing.text.View)"/>
@@ -418,7 +418,7 @@ namespace Javax.Swing.Text.Html
             /// <param name="arg5"><see cref="Javax.Swing.Text.View"/></param>
             public void Paint(Java.Awt.Graphics arg0, float arg1, float arg2, float arg3, float arg4, Javax.Swing.Text.View arg5)
             {
-                IExecute("paint", arg0, arg1, arg2, arg3, arg4, arg5);
+                IExecuteWithSignature("paint", "(Ljava/awt/Graphics;FFFFLjavax/swing/text/View;)V", arg0, arg1, arg2, arg3, arg4, arg5);
             }
 
             #endregion
@@ -463,7 +463,7 @@ namespace Javax.Swing.Text.Html
             /// <param name="arg6"><see cref="int"/></param>
             public void Paint(Java.Awt.Graphics arg0, float arg1, float arg2, float arg3, float arg4, Javax.Swing.Text.View arg5, int arg6)
             {
-                IExecute("paint", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+                IExecuteWithSignature("paint", "(Ljava/awt/Graphics;FFFFLjavax/swing/text/View;I)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
             }
 
             #endregion

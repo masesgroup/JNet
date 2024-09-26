@@ -169,7 +169,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <param name="arg1"><see cref="Java.Util.Logging.Level"/></param>
         public static void SetLogger(Java.Util.Logging.Logger arg0, Java.Util.Logging.Level arg1)
         {
-            SExecute(LocalBridgeClazz, "setLogger", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setLogger", "(Ljava/util/logging/Logger;Ljava/util/logging/Level;)V", arg0, arg1);
         }
 
         #endregion

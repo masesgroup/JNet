@@ -305,7 +305,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg1"><see cref="int"/></param>
         public void ControlChange(int arg0, int arg1)
         {
-            IExecute("controlChange", arg0, arg1);
+            IExecuteWithSignature("controlChange", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#noteOff(int,int)"/>
@@ -314,7 +314,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg1"><see cref="int"/></param>
         public void NoteOff(int arg0, int arg1)
         {
-            IExecute("noteOff", arg0, arg1);
+            IExecuteWithSignature("noteOff", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#noteOff(int)"/>
@@ -331,7 +331,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg1"><see cref="int"/></param>
         public void NoteOn(int arg0, int arg1)
         {
-            IExecute("noteOn", arg0, arg1);
+            IExecuteWithSignature("noteOn", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#programChange(int,int)"/>
@@ -340,7 +340,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg1"><see cref="int"/></param>
         public void ProgramChange(int arg0, int arg1)
         {
-            IExecute("programChange", arg0, arg1);
+            IExecuteWithSignature("programChange", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiChannel.html#programChange(int)"/>
@@ -364,7 +364,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg1"><see cref="int"/></param>
         public void SetPolyPressure(int arg0, int arg1)
         {
-            IExecute("setPolyPressure", arg0, arg1);
+            IExecuteWithSignature("setPolyPressure", "(II)V", arg0, arg1);
         }
 
         #endregion

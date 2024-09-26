@@ -116,7 +116,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Unread(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("unread", arg0, arg1, arg2);
+            IExecuteWithSignature("unread", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PushbackInputStream.html#unread(byte[])"/>

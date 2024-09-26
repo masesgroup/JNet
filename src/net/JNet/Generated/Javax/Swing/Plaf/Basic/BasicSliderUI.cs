@@ -411,7 +411,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg1"><see cref="int"/></param>
         public void SetThumbLocation(int arg0, int arg1)
         {
-            IExecute("setThumbLocation", arg0, arg1);
+            IExecuteWithSignature("setThumbLocation", "(II)V", arg0, arg1);
         }
 
         #endregion

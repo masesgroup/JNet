@@ -152,7 +152,7 @@ namespace Javax.Imageio.Metadata
         /// <exception cref="Javax.Imageio.Metadata.IIOInvalidTreeException"/>
         public void MergeTree(Java.Lang.String arg0, Org.W3c.Dom.Node arg1)
         {
-            IExecute("mergeTree", arg0, arg1);
+            IExecuteWithSignature("mergeTree", "(Ljava/lang/String;Lorg/w3c/dom/Node;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/metadata/IIOMetadata.html#reset()"/>
@@ -202,7 +202,7 @@ namespace Javax.Imageio.Metadata
         /// <exception cref="Javax.Imageio.Metadata.IIOInvalidTreeException"/>
         public void SetFromTree(Java.Lang.String arg0, Org.W3c.Dom.Node arg1)
         {
-            IExecute("setFromTree", arg0, arg1);
+            IExecuteWithSignature("setFromTree", "(Ljava/lang/String;Lorg/w3c/dom/Node;)V", arg0, arg1);
         }
 
         #endregion

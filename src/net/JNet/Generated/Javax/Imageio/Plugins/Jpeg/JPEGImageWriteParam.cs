@@ -142,7 +142,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <param name="arg2"><see cref="Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable"/></param>
         public void SetEncodeTables(Javax.Imageio.Plugins.Jpeg.JPEGQTable[] arg0, Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable[] arg1, Javax.Imageio.Plugins.Jpeg.JPEGHuffmanTable[] arg2)
         {
-            IExecute("setEncodeTables", arg0, arg1, arg2);
+            IExecuteWithSignature("setEncodeTables", "([Ljavax/imageio/plugins/jpeg/JPEGQTable;[Ljavax/imageio/plugins/jpeg/JPEGHuffmanTable;[Ljavax/imageio/plugins/jpeg/JPEGHuffmanTable;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/jpeg/JPEGImageWriteParam.html#unsetEncodeTables()"/>

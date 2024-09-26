@@ -96,7 +96,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.Cert.CertificateFactory GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Security.Cert.CertificateFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.Cert.CertificateFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/cert/CertificateFactory;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -107,7 +107,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public static Java.Security.Cert.CertificateFactory GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Java.Security.Cert.CertificateFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.Cert.CertificateFactory>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/cert/CertificateFactory;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#getInstance(java.lang.String)"/>
@@ -163,7 +163,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public Java.Security.Cert.CertPath GenerateCertPath(Java.Io.InputStream arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Security.Cert.CertPath>("generateCertPath", arg0, arg1);
+            return IExecuteWithSignature<Java.Security.Cert.CertPath>("generateCertPath", "(Ljava/io/InputStream;Ljava/lang/String;)Ljava/security/cert/CertPath;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactory.html#generateCertPath(java.io.InputStream)"/>

@@ -113,7 +113,7 @@ namespace Org.Xml.Sax.Helpers
         /// <returns><see cref="int"/></returns>
         public int GetIndex(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<int>("getIndex", arg0, arg1);
+            return IExecuteWithSignature<int>("getIndex", "(Ljava/lang/String;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#getIndex(java.lang.String)"/>
@@ -159,7 +159,7 @@ namespace Org.Xml.Sax.Helpers
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetType(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getType", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getType", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#getType(java.lang.String)"/>
@@ -196,7 +196,7 @@ namespace Org.Xml.Sax.Helpers
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#getValue(java.lang.String)"/>
@@ -217,7 +217,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg4"><see cref="Java.Lang.String"/></param>
         public void AddAttribute(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            IExecute("addAttribute", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("addAttribute", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#clear()"/>
@@ -245,7 +245,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg5"><see cref="Java.Lang.String"/></param>
         public void SetAttribute(int arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5)
         {
-            IExecute("setAttribute", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("setAttribute", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#setAttributes(org.xml.sax.Attributes)"/>
@@ -262,7 +262,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetLocalName(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setLocalName", arg0, arg1);
+            IExecuteWithSignature("setLocalName", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#setQName(int,java.lang.String)"/>
@@ -271,7 +271,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetQName(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setQName", arg0, arg1);
+            IExecuteWithSignature("setQName", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#setType(int,java.lang.String)"/>
@@ -280,7 +280,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetType(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setType", arg0, arg1);
+            IExecuteWithSignature("setType", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#setURI(int,java.lang.String)"/>
@@ -289,7 +289,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetURI(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setURI", arg0, arg1);
+            IExecuteWithSignature("setURI", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/AttributesImpl.html#setValue(int,java.lang.String)"/>
@@ -298,7 +298,7 @@ namespace Org.Xml.Sax.Helpers
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetValue(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setValue", arg0, arg1);
+            IExecuteWithSignature("setValue", "(ILjava/lang/String;)V", arg0, arg1);
         }
 
         #endregion

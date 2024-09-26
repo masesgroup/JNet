@@ -154,7 +154,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetOffset(int arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getOffset", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getOffset", "(III)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ComponentSampleModel.html#getOffset(int,int)"/>
@@ -164,7 +164,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetOffset(int arg0, int arg1)
         {
-            return IExecute<int>("getOffset", arg0, arg1);
+            return IExecuteWithSignature<int>("getOffset", "(II)I", arg0, arg1);
         }
 
         #endregion

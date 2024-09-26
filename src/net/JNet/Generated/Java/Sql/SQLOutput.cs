@@ -530,7 +530,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void WriteObject(object arg0, Java.Sql.SQLType arg1)
         {
-            IExecute("writeObject", arg0, arg1);
+            IExecuteWithSignature("writeObject", "(Ljava/lang/Object;Ljava/sql/SQLType;)V", arg0, arg1);
         }
 
         #endregion

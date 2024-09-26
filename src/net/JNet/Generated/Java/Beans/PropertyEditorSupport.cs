@@ -186,7 +186,7 @@ namespace Java.Beans
         /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
         public void PaintValue(Java.Awt.Graphics arg0, Java.Awt.Rectangle arg1)
         {
-            IExecute("paintValue", arg0, arg1);
+            IExecuteWithSignature("paintValue", "(Ljava/awt/Graphics;Ljava/awt/Rectangle;)V", arg0, arg1);
         }
 
         #endregion

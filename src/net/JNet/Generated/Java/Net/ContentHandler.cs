@@ -111,7 +111,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public object GetContent(Java.Net.URLConnection arg0, Java.Lang.Class[] arg1)
         {
-            return IExecute("getContent", arg0, arg1);
+            return IExecuteWithSignature("getContent", "(Ljava/net/URLConnection;[Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1);
         }
 
         #endregion

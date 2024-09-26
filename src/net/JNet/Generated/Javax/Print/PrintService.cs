@@ -256,7 +256,7 @@ namespace Javax.Print
         /// <returns><see cref="bool"/></returns>
         public bool IsAttributeValueSupported(Javax.Print.Attribute.Attribute arg0, Javax.Print.DocFlavor arg1, Javax.Print.Attribute.AttributeSet arg2)
         {
-            return IExecute<bool>("isAttributeValueSupported", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("isAttributeValueSupported", "(Ljavax/print/attribute/Attribute;Ljavax/print/DocFlavor;Ljavax/print/attribute/AttributeSet;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#isDocFlavorSupported(javax.print.DocFlavor)"/>
@@ -285,7 +285,7 @@ namespace Javax.Print
         /// <returns><see cref="object"/></returns>
         public object GetSupportedAttributeValues(Java.Lang.Class arg0, Javax.Print.DocFlavor arg1, Javax.Print.Attribute.AttributeSet arg2)
         {
-            return IExecute("getSupportedAttributeValues", arg0, arg1, arg2);
+            return IExecuteWithSignature("getSupportedAttributeValues", "(Ljava/lang/Class;Ljavax/print/DocFlavor;Ljavax/print/attribute/AttributeSet;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#getUnsupportedAttributes(javax.print.DocFlavor,javax.print.attribute.AttributeSet)"/>
@@ -295,7 +295,7 @@ namespace Javax.Print
         /// <returns><see cref="Javax.Print.Attribute.AttributeSet"/></returns>
         public Javax.Print.Attribute.AttributeSet GetUnsupportedAttributes(Javax.Print.DocFlavor arg0, Javax.Print.Attribute.AttributeSet arg1)
         {
-            return IExecute<Javax.Print.Attribute.AttributeSet>("getUnsupportedAttributes", arg0, arg1);
+            return IExecuteWithSignature<Javax.Print.Attribute.AttributeSet>("getUnsupportedAttributes", "(Ljavax/print/DocFlavor;Ljavax/print/attribute/AttributeSet;)Ljavax/print/attribute/AttributeSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/PrintService.html#createPrintJob()"/>

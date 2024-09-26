@@ -228,7 +228,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.DatagramSocket SetOption<T>(Java.Net.SocketOption<T> arg0, T arg1)
         {
-            return IExecute<Java.Net.DatagramSocket>("setOption", arg0, arg1);
+            return IExecuteWithSignature<Java.Net.DatagramSocket>("setOption", "(Ljava/net/SocketOption;Ljava/lang/Object;)Ljava/net/DatagramSocket;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#getOption(java.net.SocketOption)"/>
@@ -305,7 +305,7 @@ namespace Java.Net
         /// <param name="arg1"><see cref="int"/></param>
         public void Connect(Java.Net.InetAddress arg0, int arg1)
         {
-            IExecute("connect", arg0, arg1);
+            IExecuteWithSignature("connect", "(Ljava/net/InetAddress;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/DatagramSocket.html#connect(java.net.SocketAddress)"/>

@@ -125,7 +125,7 @@ namespace Org.W3c.Dom.Css
         /// <returns><see cref="Org.W3c.Dom.Css.CSSStyleDeclaration"/></returns>
         public Org.W3c.Dom.Css.CSSStyleDeclaration GetOverrideStyle(Org.W3c.Dom.Element arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.W3c.Dom.Css.CSSStyleDeclaration>("getOverrideStyle", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Css.CSSStyleDeclaration>("getOverrideStyle", "(Lorg/w3c/dom/Element;Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleDeclaration;", arg0, arg1);
         }
 
         #endregion

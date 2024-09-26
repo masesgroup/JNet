@@ -125,7 +125,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
         public Java.Awt.ImageNs.RenderedImage Create(Java.Awt.ImageNs.Renderable.ParameterBlock arg0, Java.Awt.RenderingHints arg1)
         {
-            return IExecute<Java.Awt.ImageNs.RenderedImage>("create", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.RenderedImage>("create", "(Ljava/awt/image/renderable/ParameterBlock;Ljava/awt/RenderingHints;)Ljava/awt/image/RenderedImage;", arg0, arg1);
         }
 
         #endregion

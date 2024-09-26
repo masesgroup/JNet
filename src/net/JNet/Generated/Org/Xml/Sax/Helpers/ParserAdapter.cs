@@ -759,7 +759,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public override void Characters(char[] arg0, int arg1, int arg2)
         {
-            IExecute("characters", arg0, arg1, arg2);
+            IExecuteWithSignature("characters", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#endDocument()"/>
@@ -787,7 +787,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public override void IgnorableWhitespace(char[] arg0, int arg1, int arg2)
         {
-            IExecute("ignorableWhitespace", arg0, arg1, arg2);
+            IExecuteWithSignature("ignorableWhitespace", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#parse(java.lang.String)"/>
@@ -817,7 +817,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public override void ProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("processingInstruction", arg0, arg1);
+            IExecuteWithSignature("processingInstruction", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setDocumentLocator(org.xml.sax.Locator)"/>
@@ -836,7 +836,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public override void SetFeature(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setFeature", arg0, arg1);
+            IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#setProperty(java.lang.String,java.lang.Object)"/>
@@ -847,7 +847,7 @@ namespace Org.Xml.Sax.Helpers
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public override void SetProperty(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setProperty", arg0, arg1);
+            IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/helpers/ParserAdapter.html#startDocument()"/>

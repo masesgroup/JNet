@@ -228,7 +228,7 @@ namespace Org.W3c.Dom.Events
         /// <param name="arg2"><see cref="bool"/></param>
         public void InitEvent(Java.Lang.String arg0, bool arg1, bool arg2)
         {
-            IExecute("initEvent", arg0, arg1, arg2);
+            IExecuteWithSignature("initEvent", "(Ljava/lang/String;ZZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/events/Event.html#preventDefault()"/>

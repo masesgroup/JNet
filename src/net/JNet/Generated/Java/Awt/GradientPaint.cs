@@ -194,7 +194,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.PaintContext"/></returns>
         public Java.Awt.PaintContext CreateContext(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.Rectangle arg1, Java.Awt.Geom.Rectangle2D arg2, Java.Awt.Geom.AffineTransform arg3, Java.Awt.RenderingHints arg4)
         {
-            return IExecute<Java.Awt.PaintContext>("createContext", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Java.Awt.PaintContext>("createContext", "(Ljava/awt/image/ColorModel;Ljava/awt/Rectangle;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/AffineTransform;Ljava/awt/RenderingHints;)Ljava/awt/PaintContext;", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

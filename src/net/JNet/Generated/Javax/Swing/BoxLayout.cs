@@ -205,7 +205,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="object"/></param>
         public void AddLayoutComponent(Java.Awt.Component arg0, object arg1)
         {
-            IExecute("addLayoutComponent", arg0, arg1);
+            IExecuteWithSignature("addLayoutComponent", "(Ljava/awt/Component;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
@@ -214,7 +214,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public void AddLayoutComponent(Java.Lang.String arg0, Java.Awt.Component arg1)
         {
-            IExecute("addLayoutComponent", arg0, arg1);
+            IExecuteWithSignature("addLayoutComponent", "(Ljava/lang/String;Ljava/awt/Component;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/BoxLayout.html#layoutContainer(java.awt.Container)"/>

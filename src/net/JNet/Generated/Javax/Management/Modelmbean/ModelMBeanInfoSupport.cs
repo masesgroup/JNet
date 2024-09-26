@@ -146,7 +146,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public Javax.Management.Descriptor GetDescriptor(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Javax.Management.Descriptor>("getDescriptor", arg0, arg1);
+            return IExecuteWithSignature<Javax.Management.Descriptor>("getDescriptor", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/management/Descriptor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfoSupport.html#getDescriptor(java.lang.String)"/>
@@ -223,7 +223,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SetDescriptor(Javax.Management.Descriptor arg0, Java.Lang.String arg1)
         {
-            IExecute("setDescriptor", arg0, arg1);
+            IExecuteWithSignature("setDescriptor", "(Ljavax/management/Descriptor;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanInfoSupport.html#setDescriptors(javax.management.Descriptor[])"/>

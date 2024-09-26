@@ -177,7 +177,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool IsTileWritable(int arg0, int arg1)
         {
-            return IExecute<bool>("isTileWritable", arg0, arg1);
+            return IExecuteWithSignature<bool>("isTileWritable", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#getWritableTile(int,int)"/>
@@ -187,7 +187,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster GetWritableTile(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.WritableRaster>("getWritableTile", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("getWritableTile", "(II)Ljava/awt/image/WritableRaster;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#addTileObserver(java.awt.image.TileObserver)"/>
@@ -204,7 +204,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg1"><see cref="int"/></param>
         public void ReleaseWritableTile(int arg0, int arg1)
         {
-            IExecute("releaseWritableTile", arg0, arg1);
+            IExecuteWithSignature("releaseWritableTile", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/WritableRenderedImage.html#removeTileObserver(java.awt.image.TileObserver)"/>

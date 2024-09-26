@@ -626,7 +626,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <param name="arg3"><see cref="int"/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
-                IExecute("paintIcon", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("paintIcon", "(Ljava/awt/Component;Ljava/awt/Graphics;II)V", arg0, arg1, arg2, arg3);
             }
 
             #endregion
@@ -704,7 +704,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <param name="arg3"><see cref="int"/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
-                IExecute("paintIcon", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("paintIcon", "(Ljava/awt/Component;Ljava/awt/Graphics;II)V", arg0, arg1, arg2, arg3);
             }
 
             #endregion
@@ -772,7 +772,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <param name="arg3"><see cref="int"/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
-                IExecute("paintIcon", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("paintIcon", "(Ljava/awt/Component;Ljava/awt/Graphics;II)V", arg0, arg1, arg2, arg3);
             }
 
             #endregion
@@ -844,7 +844,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <param name="arg3"><see cref="int"/></param>
             public void PaintIcon(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
-                IExecute("paintIcon", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("paintIcon", "(Ljava/awt/Component;Ljava/awt/Graphics;II)V", arg0, arg1, arg2, arg3);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalIconFactory.TreeControlIcon.html#paintMe(java.awt.Component,java.awt.Graphics,int,int)"/>
@@ -855,7 +855,7 @@ namespace Javax.Swing.Plaf.Metal
             /// <param name="arg3"><see cref="int"/></param>
             public void PaintMe(Java.Awt.Component arg0, Java.Awt.Graphics arg1, int arg2, int arg3)
             {
-                IExecute("paintMe", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("paintMe", "(Ljava/awt/Component;Ljava/awt/Graphics;II)V", arg0, arg1, arg2, arg3);
             }
 
             #endregion

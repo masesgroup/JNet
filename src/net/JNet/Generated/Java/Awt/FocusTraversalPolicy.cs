@@ -100,7 +100,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetComponentAfter(Java.Awt.Container arg0, Java.Awt.Component arg1)
         {
-            return IExecute<Java.Awt.Component>("getComponentAfter", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Component>("getComponentAfter", "(Ljava/awt/Container;Ljava/awt/Component;)Ljava/awt/Component;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getComponentBefore(java.awt.Container,java.awt.Component)"/>
@@ -110,7 +110,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetComponentBefore(Java.Awt.Container arg0, Java.Awt.Component arg1)
         {
-            return IExecute<Java.Awt.Component>("getComponentBefore", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Component>("getComponentBefore", "(Ljava/awt/Container;Ljava/awt/Component;)Ljava/awt/Component;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/FocusTraversalPolicy.html#getDefaultComponent(java.awt.Container)"/>

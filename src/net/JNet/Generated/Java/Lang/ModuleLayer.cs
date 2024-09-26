@@ -156,7 +156,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
         public static Java.Lang.ModuleLayer.Controller DefineModules(Java.Lang.ModuleNs.Configuration arg0, Java.Util.List<Java.Lang.ModuleLayer> arg1, Java.Util.Function.Function<Java.Lang.String, Java.Lang.ClassLoader> arg2)
         {
-            return SExecute<Java.Lang.ModuleLayer.Controller>(LocalBridgeClazz, "defineModules", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.ModuleLayer.Controller>(LocalBridgeClazz, "defineModules", "(Ljava/lang/module/Configuration;Ljava/util/List;Ljava/util/function/Function;)Ljava/lang/ModuleLayer$Controller;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithManyLoaders(java.lang.module.Configuration,java.util.List,java.lang.ClassLoader)"/>
@@ -167,7 +167,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
         public static Java.Lang.ModuleLayer.Controller DefineModulesWithManyLoaders(Java.Lang.ModuleNs.Configuration arg0, Java.Util.List<Java.Lang.ModuleLayer> arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Java.Lang.ModuleLayer.Controller>(LocalBridgeClazz, "defineModulesWithManyLoaders", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.ModuleLayer.Controller>(LocalBridgeClazz, "defineModulesWithManyLoaders", "(Ljava/lang/module/Configuration;Ljava/util/List;Ljava/lang/ClassLoader;)Ljava/lang/ModuleLayer$Controller;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithOneLoader(java.lang.module.Configuration,java.util.List,java.lang.ClassLoader)"/>
@@ -178,7 +178,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
         public static Java.Lang.ModuleLayer.Controller DefineModulesWithOneLoader(Java.Lang.ModuleNs.Configuration arg0, Java.Util.List<Java.Lang.ModuleLayer> arg1, Java.Lang.ClassLoader arg2)
         {
-            return SExecute<Java.Lang.ModuleLayer.Controller>(LocalBridgeClazz, "defineModulesWithOneLoader", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.ModuleLayer.Controller>(LocalBridgeClazz, "defineModulesWithOneLoader", "(Ljava/lang/module/Configuration;Ljava/util/List;Ljava/lang/ClassLoader;)Ljava/lang/ModuleLayer$Controller;", arg0, arg1, arg2);
         }
 
         #endregion
@@ -209,7 +209,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
         public Java.Lang.ModuleLayer DefineModules(Java.Lang.ModuleNs.Configuration arg0, Java.Util.Function.Function<Java.Lang.String, Java.Lang.ClassLoader> arg1)
         {
-            return IExecute<Java.Lang.ModuleLayer>("defineModules", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.ModuleLayer>("defineModules", "(Ljava/lang/module/Configuration;Ljava/util/function/Function;)Ljava/lang/ModuleLayer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithManyLoaders(java.lang.module.Configuration,java.lang.ClassLoader)"/>
@@ -219,7 +219,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
         public Java.Lang.ModuleLayer DefineModulesWithManyLoaders(Java.Lang.ModuleNs.Configuration arg0, Java.Lang.ClassLoader arg1)
         {
-            return IExecute<Java.Lang.ModuleLayer>("defineModulesWithManyLoaders", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.ModuleLayer>("defineModulesWithManyLoaders", "(Ljava/lang/module/Configuration;Ljava/lang/ClassLoader;)Ljava/lang/ModuleLayer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#defineModulesWithOneLoader(java.lang.module.Configuration,java.lang.ClassLoader)"/>
@@ -229,7 +229,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ModuleLayer"/></returns>
         public Java.Lang.ModuleLayer DefineModulesWithOneLoader(Java.Lang.ModuleNs.Configuration arg0, Java.Lang.ClassLoader arg1)
         {
-            return IExecute<Java.Lang.ModuleLayer>("defineModulesWithOneLoader", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.ModuleLayer>("defineModulesWithOneLoader", "(Ljava/lang/module/Configuration;Ljava/lang/ClassLoader;)Ljava/lang/ModuleLayer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.html#parents()"/>
@@ -297,7 +297,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
             public Java.Lang.ModuleLayer.Controller AddExports(Java.Lang.Module arg0, Java.Lang.String arg1, Java.Lang.Module arg2)
             {
-                return IExecute<Java.Lang.ModuleLayer.Controller>("addExports", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Lang.ModuleLayer.Controller>("addExports", "(Ljava/lang/Module;Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/ModuleLayer$Controller;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#addOpens(java.lang.Module,java.lang.String,java.lang.Module)"/>
@@ -308,7 +308,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
             public Java.Lang.ModuleLayer.Controller AddOpens(Java.Lang.Module arg0, Java.Lang.String arg1, Java.Lang.Module arg2)
             {
-                return IExecute<Java.Lang.ModuleLayer.Controller>("addOpens", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Lang.ModuleLayer.Controller>("addOpens", "(Ljava/lang/Module;Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/ModuleLayer$Controller;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ModuleLayer.Controller.html#addReads(java.lang.Module,java.lang.Module)"/>
@@ -318,7 +318,7 @@ namespace Java.Lang
             /// <returns><see cref="Java.Lang.ModuleLayer.Controller"/></returns>
             public Java.Lang.ModuleLayer.Controller AddReads(Java.Lang.Module arg0, Java.Lang.Module arg1)
             {
-                return IExecute<Java.Lang.ModuleLayer.Controller>("addReads", arg0, arg1);
+                return IExecuteWithSignature<Java.Lang.ModuleLayer.Controller>("addReads", "(Ljava/lang/Module;Ljava/lang/Module;)Ljava/lang/ModuleLayer$Controller;", arg0, arg1);
             }
 
             #endregion

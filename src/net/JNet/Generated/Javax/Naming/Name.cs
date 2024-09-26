@@ -293,7 +293,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.InvalidNameException"/>
         public Javax.Naming.Name Add(int arg0, Java.Lang.String arg1)
         {
-            return IExecute<Javax.Naming.Name>("add", arg0, arg1);
+            return IExecuteWithSignature<Javax.Naming.Name>("add", "(ILjava/lang/String;)Ljavax/naming/Name;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#add(java.lang.String)"/>
@@ -314,7 +314,7 @@ namespace Javax.Naming
         /// <exception cref="Javax.Naming.InvalidNameException"/>
         public Javax.Naming.Name AddAll(int arg0, Javax.Naming.Name arg1)
         {
-            return IExecute<Javax.Naming.Name>("addAll", arg0, arg1);
+            return IExecuteWithSignature<Javax.Naming.Name>("addAll", "(ILjavax/naming/Name;)Ljavax/naming/Name;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Name.html#addAll(javax.naming.Name)"/>

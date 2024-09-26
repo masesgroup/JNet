@@ -158,7 +158,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.MalformedObjectNameException"/>
         public static Javax.Management.ObjectName GetInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/management/ObjectName;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(java.lang.String,java.util.Hashtable)"/>
@@ -169,7 +169,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.MalformedObjectNameException"/>
         public static Javax.Management.ObjectName GetInstance(Java.Lang.String arg0, Java.Util.Hashtable<Java.Lang.String, Java.Lang.String> arg1)
         {
-            return SExecute<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Management.ObjectName>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/util/Hashtable;)Ljavax/management/ObjectName;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ObjectName.html#getInstance(java.lang.String)"/>

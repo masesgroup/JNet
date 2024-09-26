@@ -168,7 +168,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void Insert(Java.Awt.MenuItem arg0, int arg1)
         {
-            IExecute("insert", arg0, arg1);
+            IExecuteWithSignature("insert", "(Ljava/awt/MenuItem;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#insert(java.lang.String,int)"/>
@@ -177,7 +177,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void Insert(Java.Lang.String arg0, int arg1)
         {
-            IExecute("insert", arg0, arg1);
+            IExecuteWithSignature("insert", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Menu.html#insertSeparator(int)"/>

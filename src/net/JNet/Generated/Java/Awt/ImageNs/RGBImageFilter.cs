@@ -101,7 +101,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int FilterRGB(int arg0, int arg1, int arg2)
         {
-            return IExecute<int>("filterRGB", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("filterRGB", "(III)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RGBImageFilter.html#filterIndexColorModel(java.awt.image.IndexColorModel)"/>
@@ -124,7 +124,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg6"><see cref="int"/></param>
         public void FilterRGBPixels(int arg0, int arg1, int arg2, int arg3, int[] arg4, int arg5, int arg6)
         {
-            IExecute("filterRGBPixels", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("filterRGBPixels", "(IIII[III)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RGBImageFilter.html#substituteColorModel(java.awt.image.ColorModel,java.awt.image.ColorModel)"/>
@@ -133,7 +133,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg1"><see cref="Java.Awt.ImageNs.ColorModel"/></param>
         public void SubstituteColorModel(Java.Awt.ImageNs.ColorModel arg0, Java.Awt.ImageNs.ColorModel arg1)
         {
-            IExecute("substituteColorModel", arg0, arg1);
+            IExecuteWithSignature("substituteColorModel", "(Ljava/awt/image/ColorModel;Ljava/awt/image/ColorModel;)V", arg0, arg1);
         }
 
         #endregion

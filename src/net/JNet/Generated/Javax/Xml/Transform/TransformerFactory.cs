@@ -114,7 +114,7 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerFactoryConfigurationError"/>
         public static Javax.Xml.Transform.TransformerFactory NewInstance(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Javax.Xml.Transform.TransformerFactory>(LocalBridgeClazz, "newInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Xml.Transform.TransformerFactory>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljavax/xml/transform/TransformerFactory;", arg0, arg1);
         }
 
         #endregion
@@ -163,7 +163,7 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public Javax.Xml.Transform.Source GetAssociatedStylesheet(Javax.Xml.Transform.Source arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            return IExecute<Javax.Xml.Transform.Source>("getAssociatedStylesheet", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Xml.Transform.Source>("getAssociatedStylesheet", "(Ljavax/xml/transform/Source;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#newTemplates(javax.xml.transform.Source)"/>
@@ -201,7 +201,7 @@ namespace Javax.Xml.Transform
         /// <param name="arg1"><see cref="object"/></param>
         public void SetAttribute(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setAttribute", arg0, arg1);
+            IExecuteWithSignature("setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/TransformerFactory.html#setFeature(java.lang.String,boolean)"/>
@@ -211,7 +211,7 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerConfigurationException"/>
         public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setFeature", arg0, arg1);
+            IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
 
         #endregion

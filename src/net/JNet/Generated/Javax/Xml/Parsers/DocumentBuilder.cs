@@ -186,7 +186,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Io.IOException"/>
         public Org.W3c.Dom.Document Parse(Java.Io.InputStream arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.W3c.Dom.Document>("parse", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Document>("parse", "(Ljava/io/InputStream;Ljava/lang/String;)Lorg/w3c/dom/Document;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilder.html#parse(java.io.InputStream)"/>

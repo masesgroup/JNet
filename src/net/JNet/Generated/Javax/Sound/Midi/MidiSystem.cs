@@ -136,7 +136,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="bool"/></returns>
         public static bool IsFileTypeSupported(int arg0, Javax.Sound.Midi.Sequence arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isFileTypeSupported", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isFileTypeSupported", "(ILjavax/sound/midi/Sequence;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#isFileTypeSupported(int)"/>
@@ -157,7 +157,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Java.Io.IOException"/>
         public static int Write(Javax.Sound.Midi.Sequence arg0, int arg1, Java.Io.File arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "write", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "write", "(Ljavax/sound/midi/Sequence;ILjava/io/File;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#write(javax.sound.midi.Sequence,int,java.io.OutputStream)"/>
@@ -169,7 +169,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Java.Io.IOException"/>
         public static int Write(Javax.Sound.Midi.Sequence arg0, int arg1, Java.Io.OutputStream arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "write", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "write", "(Ljavax/sound/midi/Sequence;ILjava/io/OutputStream;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiSystem.html#getMidiFileTypes(javax.sound.midi.Sequence)"/>

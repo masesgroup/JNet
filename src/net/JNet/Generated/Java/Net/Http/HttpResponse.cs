@@ -768,7 +768,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
             public static Java.Net.Http.HttpResponse.BodyHandler<T> Buffering<T>(Java.Net.Http.HttpResponse.BodyHandler<T> arg0, int arg1)
             {
-                return SExecute<Java.Net.Http.HttpResponse.BodyHandler<T>>(LocalBridgeClazz, "buffering", arg0, arg1);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<T>>(LocalBridgeClazz, "buffering", "(Ljava/net/http/HttpResponse$BodyHandler;I)Ljava/net/http/HttpResponse$BodyHandler;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#replacing(java.lang.Object)"/>
@@ -858,7 +858,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
             public static Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path> OfFile(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
             {
-                if (arg1.Length == 0) return SExecute<Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFile", arg0); else return SExecute<Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFile", arg0, arg1);
+                if (arg1.Length == 0) return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFile", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/net/http/HttpResponse$BodyHandler;", arg0); else return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFile", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/net/http/HttpResponse$BodyHandler;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFile(java.nio.file.Path)"/>
@@ -877,7 +877,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodyHandler"/></returns>
             public static Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path> OfFileDownload(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
             {
-                if (arg1.Length == 0) return SExecute<Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFileDownload", arg0); else return SExecute<Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFileDownload", arg0, arg1);
+                if (arg1.Length == 0) return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFileDownload", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/net/http/HttpResponse$BodyHandler;", arg0); else return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFileDownload", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/net/http/HttpResponse$BodyHandler;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofPublisher()"/>
@@ -1048,7 +1048,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
             public static Java.Net.Http.HttpResponse.BodySubscriber<U> Mapping<U, T, Arg1objectSuperT, Arg1ExtendsU>(Java.Net.Http.HttpResponse.BodySubscriber<T> arg0, Java.Util.Function.Function<Arg1objectSuperT, Arg1ExtendsU> arg1) where Arg1objectSuperT : T where Arg1ExtendsU : U
             {
-                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber<U>>(LocalBridgeClazz, "mapping", arg0, arg1);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<U>>(LocalBridgeClazz, "mapping", "(Ljava/net/http/HttpResponse$BodySubscriber;Ljava/util/function/Function;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#buffering(java.net.http.HttpResponse.BodySubscriber,int)"/>
@@ -1059,7 +1059,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
             public static Java.Net.Http.HttpResponse.BodySubscriber<T> Buffering<T>(Java.Net.Http.HttpResponse.BodySubscriber<T> arg0, int arg1)
             {
-                return SExecute<Java.Net.Http.HttpResponse.BodySubscriber<T>>(LocalBridgeClazz, "buffering", arg0, arg1);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<T>>(LocalBridgeClazz, "buffering", "(Ljava/net/http/HttpResponse$BodySubscriber;I)Ljava/net/http/HttpResponse$BodySubscriber;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#replacing(java.lang.Object)"/>
@@ -1141,7 +1141,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpResponse.BodySubscriber"/></returns>
             public static Java.Net.Http.HttpResponse.BodySubscriber<Java.Nio.File.Path> OfFile(Java.Nio.File.Path arg0, params Java.Nio.File.OpenOption[] arg1)
             {
-                if (arg1.Length == 0) return SExecute<Java.Net.Http.HttpResponse.BodySubscriber<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFile", arg0); else return SExecute<Java.Net.Http.HttpResponse.BodySubscriber<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFile", arg0, arg1);
+                if (arg1.Length == 0) return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFile", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0); else return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFile", "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofFile(java.nio.file.Path)"/>
@@ -1208,7 +1208,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpResponse.PushPromiseHandler"/></returns>
             public static Java.Net.Http.HttpResponse.PushPromiseHandler Of(Java.Util.Function.Function arg0, Java.Util.Concurrent.ConcurrentMap arg1)
             {
-                return SExecute<Java.Net.Http.HttpResponse.PushPromiseHandler>(LocalBridgeClazz, "of", arg0, arg1);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.PushPromiseHandler>(LocalBridgeClazz, "of", "(Ljava/util/function/Function;Ljava/util/concurrent/ConcurrentMap;)Ljava/net/http/HttpResponse$PushPromiseHandler;", arg0, arg1);
             }
 
             #endregion
@@ -1222,7 +1222,7 @@ namespace Java.Net.Http
             /// <param name="arg2"><see cref="Java.Util.Function.Function"/></param>
             public void ApplyPushPromise(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpRequest arg1, Java.Util.Function.Function arg2)
             {
-                IExecute("applyPushPromise", arg0, arg1, arg2);
+                IExecuteWithSignature("applyPushPromise", "(Ljava/net/http/HttpRequest;Ljava/net/http/HttpRequest;Ljava/util/function/Function;)V", arg0, arg1, arg2);
             }
 
             #endregion
@@ -1263,7 +1263,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpResponse.PushPromiseHandler"/></returns>
             public static Java.Net.Http.HttpResponse.PushPromiseHandler<T> Of(Java.Util.Function.Function<Java.Net.Http.HttpRequest, Java.Net.Http.HttpResponse.BodyHandler<T>> arg0, Java.Util.Concurrent.ConcurrentMap<Java.Net.Http.HttpRequest, Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>>> arg1)
             {
-                return SExecute<Java.Net.Http.HttpResponse.PushPromiseHandler<T>>(LocalBridgeClazz, "of", arg0, arg1);
+                return SExecuteWithSignature<Java.Net.Http.HttpResponse.PushPromiseHandler<T>>(LocalBridgeClazz, "of", "(Ljava/util/function/Function;Ljava/util/concurrent/ConcurrentMap;)Ljava/net/http/HttpResponse$PushPromiseHandler;", arg0, arg1);
             }
 
             #endregion
@@ -1277,7 +1277,7 @@ namespace Java.Net.Http
             /// <param name="arg2"><see cref="Java.Util.Function.Function"/></param>
             public void ApplyPushPromise(Java.Net.Http.HttpRequest arg0, Java.Net.Http.HttpRequest arg1, Java.Util.Function.Function<Java.Net.Http.HttpResponse.BodyHandler<T>, Java.Util.Concurrent.CompletableFuture<Java.Net.Http.HttpResponse<T>>> arg2)
             {
-                IExecute("applyPushPromise", arg0, arg1, arg2);
+                IExecuteWithSignature("applyPushPromise", "(Ljava/net/http/HttpRequest;Ljava/net/http/HttpRequest;Ljava/util/function/Function;)V", arg0, arg1, arg2);
             }
 
             #endregion

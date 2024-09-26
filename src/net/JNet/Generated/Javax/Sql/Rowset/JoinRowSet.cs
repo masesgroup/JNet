@@ -306,7 +306,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void AddRowSet(Javax.Sql.RowSet arg0, int arg1)
         {
-            IExecute("addRowSet", arg0, arg1);
+            IExecuteWithSignature("addRowSet", "(Ljavax/sql/RowSet;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet,java.lang.String)"/>
@@ -316,7 +316,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void AddRowSet(Javax.Sql.RowSet arg0, Java.Lang.String arg1)
         {
-            IExecute("addRowSet", arg0, arg1);
+            IExecuteWithSignature("addRowSet", "(Ljavax/sql/RowSet;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.rowset.Joinable)"/>
@@ -335,7 +335,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void AddRowSet(Javax.Sql.RowSet[] arg0, int[] arg1)
         {
-            IExecute("addRowSet", arg0, arg1);
+            IExecuteWithSignature("addRowSet", "([Ljavax/sql/RowSet;[I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/JoinRowSet.html#addRowSet(javax.sql.RowSet[],java.lang.String[])"/>
@@ -345,7 +345,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void AddRowSet(Javax.Sql.RowSet[] arg0, Java.Lang.String[] arg1)
         {
-            IExecute("addRowSet", arg0, arg1);
+            IExecuteWithSignature("addRowSet", "([Ljavax/sql/RowSet;[Ljava/lang/String;)V", arg0, arg1);
         }
 
         #endregion

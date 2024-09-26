@@ -144,7 +144,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream Concat(Java.Util.Stream.Stream arg0, Java.Util.Stream.Stream arg1)
         {
-            return SExecute<Java.Util.Stream.Stream>(LocalBridgeClazz, "concat", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Stream>(LocalBridgeClazz, "concat", "(Ljava/util/stream/Stream;Ljava/util/stream/Stream;)Ljava/util/stream/Stream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#empty()"/>
@@ -172,7 +172,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream Iterate(object arg0, Java.Util.Function.Predicate arg1, Java.Util.Function.UnaryOperator arg2)
         {
-            return SExecute<Java.Util.Stream.Stream>(LocalBridgeClazz, "iterate", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.Stream>(LocalBridgeClazz, "iterate", "(Ljava/lang/Object;Ljava/util/function/Predicate;Ljava/util/function/UnaryOperator;)Ljava/util/stream/Stream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#iterate(java.lang.Object,java.util.function.UnaryOperator)"/>
@@ -182,7 +182,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream Iterate(object arg0, Java.Util.Function.UnaryOperator arg1)
         {
-            return SExecute<Java.Util.Stream.Stream>(LocalBridgeClazz, "iterate", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Stream>(LocalBridgeClazz, "iterate", "(Ljava/lang/Object;Ljava/util/function/UnaryOperator;)Ljava/util/stream/Stream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#of(java.lang.Object[])"/>
@@ -231,7 +231,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="object"/></returns>
         public object Collect(Java.Util.Stream.Collector arg0)
         {
-            return IExecute("collect", arg0);
+            return IExecuteWithSignature("collect", "(Ljava/util/stream/Collector;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#flatMap(java.util.function.Function)"/>
@@ -260,7 +260,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="object"/></returns>
         public object Collect(Java.Util.Function.Supplier arg0, Java.Util.Function.BiConsumer arg1, Java.Util.Function.BiConsumer arg2)
         {
-            return IExecute("collect", arg0, arg1, arg2);
+            return IExecuteWithSignature("collect", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BiConsumer;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(java.lang.Object,java.util.function.BiFunction,java.util.function.BinaryOperator)"/>
@@ -271,7 +271,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="object"/></returns>
         public object Reduce(object arg0, Java.Util.Function.BiFunction arg1, Java.Util.Function.BinaryOperator arg2)
         {
-            return IExecute("reduce", arg0, arg1, arg2);
+            return IExecuteWithSignature("reduce", "(Ljava/lang/Object;Ljava/util/function/BiFunction;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#allMatch(java.util.function.Predicate)"/>
@@ -482,7 +482,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="object"/></returns>
         public object Reduce(object arg0, Java.Util.Function.BinaryOperator arg1)
         {
-            return IExecute("reduce", arg0, arg1);
+            return IExecuteWithSignature("reduce", "(Ljava/lang/Object;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#forEach(java.util.function.Consumer)"/>
@@ -814,7 +814,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Concat<Arg0ExtendsT, Arg1ExtendsT>(Java.Util.Stream.Stream<Arg0ExtendsT> arg0, Java.Util.Stream.Stream<Arg1ExtendsT> arg1) where Arg0ExtendsT : T where Arg1ExtendsT : T
         {
-            return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "concat", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "concat", "(Ljava/util/stream/Stream;Ljava/util/stream/Stream;)Ljava/util/stream/Stream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#empty()"/>
@@ -844,7 +844,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Iterate<Arg1objectSuperT>(T arg0, Java.Util.Function.Predicate<Arg1objectSuperT> arg1, Java.Util.Function.UnaryOperator<T> arg2) where Arg1objectSuperT : T
         {
-            return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "iterate", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "iterate", "(Ljava/lang/Object;Ljava/util/function/Predicate;Ljava/util/function/UnaryOperator;)Ljava/util/stream/Stream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#iterate(java.lang.Object,java.util.function.UnaryOperator)"/>
@@ -854,7 +854,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public static Java.Util.Stream.Stream<T> Iterate(T arg0, Java.Util.Function.UnaryOperator<T> arg1)
         {
-            return SExecute<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "iterate", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.Stream<T>>(LocalBridgeClazz, "iterate", "(Ljava/lang/Object;Ljava/util/function/UnaryOperator;)Ljava/util/stream/Stream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#of(java.lang.Object[])"/>
@@ -907,7 +907,7 @@ namespace Java.Util.Stream
         /// <returns><typeparamref name="R"/></returns>
         public R Collect<R, Arg0objectSuperT, A>(Java.Util.Stream.Collector<Arg0objectSuperT, A, R> arg0) where Arg0objectSuperT : T
         {
-            return IExecute<R>("collect", arg0);
+            return IExecuteWithSignature<R>("collect", "(Ljava/util/stream/Collector;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#flatMap(java.util.function.Function)"/>
@@ -945,7 +945,7 @@ namespace Java.Util.Stream
         /// <returns><typeparamref name="R"/></returns>
         public R Collect<R, Arg1objectSuperT>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.BiConsumer<R, Arg1objectSuperT> arg1, Java.Util.Function.BiConsumer<R, R> arg2) where Arg1objectSuperT : T
         {
-            return IExecute<R>("collect", arg0, arg1, arg2);
+            return IExecuteWithSignature<R>("collect", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BiConsumer;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#reduce(java.lang.Object,java.util.function.BiFunction,java.util.function.BinaryOperator)"/>
@@ -958,7 +958,7 @@ namespace Java.Util.Stream
         /// <returns><typeparamref name="U"/></returns>
         public U Reduce<U, Arg1objectSuperT>(U arg0, Java.Util.Function.BiFunction<U, Arg1objectSuperT, U> arg1, Java.Util.Function.BinaryOperator<U> arg2) where Arg1objectSuperT : T
         {
-            return IExecute<U>("reduce", arg0, arg1, arg2);
+            return IExecuteWithSignature<U>("reduce", "(Ljava/lang/Object;Ljava/util/function/BiFunction;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#allMatch(java.util.function.Predicate)"/>
@@ -1186,7 +1186,7 @@ namespace Java.Util.Stream
         /// <returns><typeparamref name="T"/></returns>
         public T Reduce(T arg0, Java.Util.Function.BinaryOperator<T> arg1)
         {
-            return IExecute<T>("reduce", arg0, arg1);
+            return IExecuteWithSignature<T>("reduce", "(Ljava/lang/Object;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html#forEach(java.util.function.Consumer)"/>

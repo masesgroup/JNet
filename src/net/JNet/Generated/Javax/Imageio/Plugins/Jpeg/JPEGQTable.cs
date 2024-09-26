@@ -137,7 +137,7 @@ namespace Javax.Imageio.Plugins.Jpeg
         /// <returns><see cref="Javax.Imageio.Plugins.Jpeg.JPEGQTable"/></returns>
         public Javax.Imageio.Plugins.Jpeg.JPEGQTable GetScaledInstance(float arg0, bool arg1)
         {
-            return IExecute<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("getScaledInstance", arg0, arg1);
+            return IExecuteWithSignature<Javax.Imageio.Plugins.Jpeg.JPEGQTable>("getScaledInstance", "(FZ)Ljavax/imageio/plugins/jpeg/JPEGQTable;", arg0, arg1);
         }
 
         #endregion

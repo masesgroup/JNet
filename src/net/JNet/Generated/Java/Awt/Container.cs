@@ -198,7 +198,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component Add(Java.Awt.Component arg0, int arg1)
         {
-            return IExecute<Java.Awt.Component>("add", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Component>("add", "(Ljava/awt/Component;I)Ljava/awt/Component;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#add(java.awt.Component)"/>
@@ -217,7 +217,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component Add(Java.Lang.String arg0, Java.Awt.Component arg1)
         {
-            return IExecute<Java.Awt.Component>("add", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Component>("add", "(Ljava/lang/String;Ljava/awt/Component;)Ljava/awt/Component;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#findComponentAt(int,int)"/>
@@ -227,7 +227,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component FindComponentAt(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.Component>("findComponentAt", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Component>("findComponentAt", "(II)Ljava/awt/Component;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#findComponentAt(java.awt.Point)"/>
@@ -281,7 +281,7 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="int"/></param>
         public void Add(Java.Awt.Component arg0, object arg1, int arg2)
         {
-            IExecute("add", arg0, arg1, arg2);
+            IExecuteWithSignature("add", "(Ljava/awt/Component;Ljava/lang/Object;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#add(java.awt.Component,java.lang.Object)"/>
@@ -290,7 +290,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="object"/></param>
         public void Add(Java.Awt.Component arg0, object arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(Ljava/awt/Component;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#paintComponents(java.awt.Graphics)"/>
@@ -338,7 +338,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void SetComponentZOrder(Java.Awt.Component arg0, int arg1)
         {
-            IExecute("setComponentZOrder", arg0, arg1);
+            IExecuteWithSignature("setComponentZOrder", "(Ljava/awt/Component;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Container.html#setFocusCycleRoot(boolean)"/>

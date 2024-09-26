@@ -155,7 +155,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void InsertElementAt(object arg0, int arg1)
         {
-            IExecute("insertElementAt", arg0, arg1);
+            IExecuteWithSignature("insertElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#removeElement(java.lang.Object)"/>
@@ -262,7 +262,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void InsertElementAt(E arg0, int arg1)
         {
-            IExecute("insertElementAt", arg0, arg1);
+            IExecuteWithSignature("insertElementAt", "(Ljava/lang/Object;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/MutableComboBoxModel.html#removeElement(java.lang.Object)"/>

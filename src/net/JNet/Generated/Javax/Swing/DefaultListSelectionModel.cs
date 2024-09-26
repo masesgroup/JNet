@@ -201,7 +201,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void AddSelectionInterval(int arg0, int arg1)
         {
-            IExecute("addSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("addSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#clearSelection()"/>
@@ -218,7 +218,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="bool"/></param>
         public void InsertIndexInterval(int arg0, int arg1, bool arg2)
         {
-            IExecute("insertIndexInterval", arg0, arg1, arg2);
+            IExecuteWithSignature("insertIndexInterval", "(IIZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#moveLeadSelectionIndex(int)"/>
@@ -235,7 +235,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void RemoveIndexInterval(int arg0, int arg1)
         {
-            IExecute("removeIndexInterval", arg0, arg1);
+            IExecuteWithSignature("removeIndexInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#removeListSelectionListener(javax.swing.event.ListSelectionListener)"/>
@@ -252,7 +252,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void RemoveSelectionInterval(int arg0, int arg1)
         {
-            IExecute("removeSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("removeSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultListSelectionModel.html#setLeadAnchorNotificationEnabled(boolean)"/>
@@ -269,7 +269,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void SetSelectionInterval(int arg0, int arg1)
         {
-            IExecute("setSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("setSelectionInterval", "(II)V", arg0, arg1);
         }
 
         #endregion

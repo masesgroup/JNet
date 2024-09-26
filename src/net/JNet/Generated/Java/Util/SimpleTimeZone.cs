@@ -190,7 +190,7 @@ namespace Java.Util
         /// <param name="arg4"><see cref="bool"/></param>
         public void SetEndRule(int arg0, int arg1, int arg2, int arg3, bool arg4)
         {
-            IExecute("setEndRule", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setEndRule", "(IIIIZ)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SimpleTimeZone.html#setEndRule(int,int,int,int)"/>
@@ -201,7 +201,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="int"/></param>
         public void SetEndRule(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setEndRule", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setEndRule", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SimpleTimeZone.html#setEndRule(int,int,int)"/>
@@ -211,7 +211,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public void SetEndRule(int arg0, int arg1, int arg2)
         {
-            IExecute("setEndRule", arg0, arg1, arg2);
+            IExecuteWithSignature("setEndRule", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SimpleTimeZone.html#setStartRule(int,int,int,int,boolean)"/>
@@ -223,7 +223,7 @@ namespace Java.Util
         /// <param name="arg4"><see cref="bool"/></param>
         public void SetStartRule(int arg0, int arg1, int arg2, int arg3, bool arg4)
         {
-            IExecute("setStartRule", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("setStartRule", "(IIIIZ)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SimpleTimeZone.html#setStartRule(int,int,int,int)"/>
@@ -234,7 +234,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="int"/></param>
         public void SetStartRule(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setStartRule", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setStartRule", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SimpleTimeZone.html#setStartRule(int,int,int)"/>
@@ -244,7 +244,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public void SetStartRule(int arg0, int arg1, int arg2)
         {
-            IExecute("setStartRule", arg0, arg1, arg2);
+            IExecuteWithSignature("setStartRule", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SimpleTimeZone.html#setStartYear(int)"/>

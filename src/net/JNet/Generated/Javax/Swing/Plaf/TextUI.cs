@@ -104,7 +104,7 @@ namespace Javax.Swing.Plaf
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public int GetNextVisualPositionFrom(Javax.Swing.Text.JTextComponent arg0, int arg1, Javax.Swing.Text.Position.Bias arg2, int arg3, Javax.Swing.Text.Position.Bias[] arg4)
         {
-            return IExecute<int>("getNextVisualPositionFrom", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("getNextVisualPositionFrom", "(Ljavax/swing/text/JTextComponent;ILjavax/swing/text/Position$Bias;I[Ljavax/swing/text/Position$Bias;)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#getEditorKit(javax.swing.text.JTextComponent)"/>
@@ -134,7 +134,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg4"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         public void DamageRange(Javax.Swing.Text.JTextComponent arg0, int arg1, int arg2, Javax.Swing.Text.Position.Bias arg3, Javax.Swing.Text.Position.Bias arg4)
         {
-            IExecute("damageRange", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("damageRange", "(Ljavax/swing/text/JTextComponent;IILjavax/swing/text/Position$Bias;Ljavax/swing/text/Position$Bias;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#damageRange(javax.swing.text.JTextComponent,int,int)"/>
@@ -144,7 +144,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg2"><see cref="int"/></param>
         public void DamageRange(Javax.Swing.Text.JTextComponent arg0, int arg1, int arg2)
         {
-            IExecute("damageRange", arg0, arg1, arg2);
+            IExecuteWithSignature("damageRange", "(Ljavax/swing/text/JTextComponent;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#viewToModel2D(javax.swing.text.JTextComponent,java.awt.geom.Point2D,javax.swing.text.Position.Bias[])"/>
@@ -155,7 +155,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="int"/></returns>
         public int ViewToModel2D(Javax.Swing.Text.JTextComponent arg0, Java.Awt.Geom.Point2D arg1, Javax.Swing.Text.Position.Bias[] arg2)
         {
-            return IExecute<int>("viewToModel2D", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("viewToModel2D", "(Ljavax/swing/text/JTextComponent;Ljava/awt/geom/Point2D;[Ljavax/swing/text/Position$Bias;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#modelToView2D(javax.swing.text.JTextComponent,int,javax.swing.text.Position.Bias)"/>
@@ -167,7 +167,7 @@ namespace Javax.Swing.Plaf
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Java.Awt.Geom.Rectangle2D ModelToView2D(Javax.Swing.Text.JTextComponent arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
-            return IExecute<Java.Awt.Geom.Rectangle2D>("modelToView2D", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("modelToView2D", "(Ljavax/swing/text/JTextComponent;ILjavax/swing/text/Position$Bias;)Ljava/awt/geom/Rectangle2D;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TextUI.html#getToolTipText2D(javax.swing.text.JTextComponent,java.awt.geom.Point2D)"/>
@@ -177,7 +177,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetToolTipText2D(Javax.Swing.Text.JTextComponent arg0, Java.Awt.Geom.Point2D arg1)
         {
-            return IExecute<Java.Lang.String>("getToolTipText2D", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getToolTipText2D", "(Ljavax/swing/text/JTextComponent;Ljava/awt/geom/Point2D;)Ljava/lang/String;", arg0, arg1);
         }
 
         #endregion

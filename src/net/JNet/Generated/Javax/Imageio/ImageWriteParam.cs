@@ -285,7 +285,7 @@ namespace Javax.Imageio
         /// <param name="arg3"><see cref="int"/></param>
         public void SetTiling(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setTiling", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setTiling", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageWriteParam.html#unsetCompression()"/>

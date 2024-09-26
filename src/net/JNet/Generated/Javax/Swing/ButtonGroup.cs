@@ -150,7 +150,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetSelected(Javax.Swing.ButtonModel arg0, bool arg1)
         {
-            IExecute("setSelected", arg0, arg1);
+            IExecuteWithSignature("setSelected", "(Ljavax/swing/ButtonModel;Z)V", arg0, arg1);
         }
 
         #endregion

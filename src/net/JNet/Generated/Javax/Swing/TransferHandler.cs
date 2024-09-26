@@ -261,7 +261,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool CanImport(Javax.Swing.JComponent arg0, Java.Awt.Datatransfer.DataFlavor[] arg1)
         {
-            return IExecute<bool>("canImport", arg0, arg1);
+            return IExecuteWithSignature<bool>("canImport", "(Ljavax/swing/JComponent;[Ljava/awt/datatransfer/DataFlavor;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#canImport(javax.swing.TransferHandler.TransferSupport)"/>
@@ -280,7 +280,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool ImportData(Javax.Swing.JComponent arg0, Java.Awt.Datatransfer.Transferable arg1)
         {
-            return IExecute<bool>("importData", arg0, arg1);
+            return IExecuteWithSignature<bool>("importData", "(Ljavax/swing/JComponent;Ljava/awt/datatransfer/Transferable;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#importData(javax.swing.TransferHandler.TransferSupport)"/>
@@ -317,7 +317,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="int"/></param>
         public void ExportAsDrag(Javax.Swing.JComponent arg0, Java.Awt.EventNs.InputEvent arg1, int arg2)
         {
-            IExecute("exportAsDrag", arg0, arg1, arg2);
+            IExecuteWithSignature("exportAsDrag", "(Ljavax/swing/JComponent;Ljava/awt/event/InputEvent;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/TransferHandler.html#exportToClipboard(javax.swing.JComponent,java.awt.datatransfer.Clipboard,int)"/>
@@ -328,7 +328,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Lang.IllegalStateException"/>
         public void ExportToClipboard(Javax.Swing.JComponent arg0, Java.Awt.Datatransfer.Clipboard arg1, int arg2)
         {
-            IExecute("exportToClipboard", arg0, arg1, arg2);
+            IExecuteWithSignature("exportToClipboard", "(Ljavax/swing/JComponent;Ljava/awt/datatransfer/Clipboard;I)V", arg0, arg1, arg2);
         }
 
         #endregion

@@ -139,7 +139,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public int Read(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("read", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("read", "([BII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#isCached()"/>
@@ -379,7 +379,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void ReadBytes(Javax.Imageio.Stream.IIOByteBuffer arg0, int arg1)
         {
-            IExecute("readBytes", arg0, arg1);
+            IExecuteWithSignature("readBytes", "(Ljavax/imageio/stream/IIOByteBuffer;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readFully(byte[],int,int)"/>
@@ -390,7 +390,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("readFully", arg0, arg1, arg2);
+            IExecuteWithSignature("readFully", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readFully(byte[])"/>
@@ -410,7 +410,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(char[] arg0, int arg1, int arg2)
         {
-            IExecute("readFully", arg0, arg1, arg2);
+            IExecuteWithSignature("readFully", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readFully(double[],int,int)"/>
@@ -421,7 +421,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(double[] arg0, int arg1, int arg2)
         {
-            IExecute("readFully", arg0, arg1, arg2);
+            IExecuteWithSignature("readFully", "([DII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readFully(float[],int,int)"/>
@@ -432,7 +432,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(float[] arg0, int arg1, int arg2)
         {
-            IExecute("readFully", arg0, arg1, arg2);
+            IExecuteWithSignature("readFully", "([FII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readFully(int[],int,int)"/>
@@ -443,7 +443,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(int[] arg0, int arg1, int arg2)
         {
-            IExecute("readFully", arg0, arg1, arg2);
+            IExecuteWithSignature("readFully", "([III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readFully(long[],int,int)"/>
@@ -454,7 +454,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(long[] arg0, int arg1, int arg2)
         {
-            IExecute("readFully", arg0, arg1, arg2);
+            IExecuteWithSignature("readFully", "([JII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#readFully(short[],int,int)"/>
@@ -465,7 +465,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void ReadFully(short[] arg0, int arg1, int arg2)
         {
-            IExecute("readFully", arg0, arg1, arg2);
+            IExecuteWithSignature("readFully", "([SII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageInputStreamImpl.html#reset()"/>

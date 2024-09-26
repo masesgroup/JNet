@@ -252,7 +252,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void RowsDeleted(int arg0, int arg1)
         {
-            IExecute("rowsDeleted", arg0, arg1);
+            IExecuteWithSignature("rowsDeleted", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsInserted(int,int)"/>
@@ -261,7 +261,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void RowsInserted(int arg0, int arg1)
         {
-            IExecute("rowsInserted", arg0, arg1);
+            IExecuteWithSignature("rowsInserted", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsUpdated(int,int,int)"/>
@@ -271,7 +271,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="int"/></param>
         public void RowsUpdated(int arg0, int arg1, int arg2)
         {
-            IExecute("rowsUpdated", arg0, arg1, arg2);
+            IExecuteWithSignature("rowsUpdated", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsUpdated(int,int)"/>
@@ -280,7 +280,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void RowsUpdated(int arg0, int arg1)
         {
-            IExecute("rowsUpdated", arg0, arg1);
+            IExecuteWithSignature("rowsUpdated", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#toggleSortOrder(int)"/>
@@ -462,7 +462,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void RowsDeleted(int arg0, int arg1)
         {
-            IExecute("rowsDeleted", arg0, arg1);
+            IExecuteWithSignature("rowsDeleted", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsInserted(int,int)"/>
@@ -471,7 +471,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void RowsInserted(int arg0, int arg1)
         {
-            IExecute("rowsInserted", arg0, arg1);
+            IExecuteWithSignature("rowsInserted", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsUpdated(int,int,int)"/>
@@ -481,7 +481,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="int"/></param>
         public void RowsUpdated(int arg0, int arg1, int arg2)
         {
-            IExecute("rowsUpdated", arg0, arg1, arg2);
+            IExecuteWithSignature("rowsUpdated", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#rowsUpdated(int,int)"/>
@@ -490,7 +490,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void RowsUpdated(int arg0, int arg1)
         {
-            IExecute("rowsUpdated", arg0, arg1);
+            IExecuteWithSignature("rowsUpdated", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowSorter.html#toggleSortOrder(int)"/>

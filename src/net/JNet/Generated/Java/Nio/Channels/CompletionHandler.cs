@@ -148,7 +148,7 @@ namespace Java.Nio.Channels
         /// <param name="arg1"><see cref="object"/></param>
         public void Completed(object arg0, object arg1)
         {
-            IExecute("completed", arg0, arg1);
+            IExecuteWithSignature("completed", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#failed(java.lang.Throwable,java.lang.Object)"/>
@@ -157,7 +157,7 @@ namespace Java.Nio.Channels
         /// <param name="arg1"><see cref="object"/></param>
         public void Failed(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, object arg1)
         {
-            IExecute("failed", arg0, arg1);
+            IExecuteWithSignature("failed", "(Ljava/lang/Throwable;Ljava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion
@@ -231,7 +231,7 @@ namespace Java.Nio.Channels
         /// <param name="arg1"><typeparamref name="A"/></param>
         public void Completed(V arg0, A arg1)
         {
-            IExecute("completed", arg0, arg1);
+            IExecuteWithSignature("completed", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/CompletionHandler.html#failed(java.lang.Throwable,java.lang.Object)"/>
@@ -240,7 +240,7 @@ namespace Java.Nio.Channels
         /// <param name="arg1"><typeparamref name="A"/></param>
         public void Failed(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, A arg1)
         {
-            IExecute("failed", arg0, arg1);
+            IExecuteWithSignature("failed", "(Ljava/lang/Throwable;Ljava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion

@@ -115,7 +115,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         public static Javax.Imageio.ImageTypeSpecifier CreateBanded(Java.Awt.ColorNs.ColorSpace arg0, int[] arg1, int[] arg2, int arg3, bool arg4, bool arg5)
         {
-            return SExecute<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createBanded", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createBanded", "(Ljava/awt/color/ColorSpace;[I[IIZZ)Ljavax/imageio/ImageTypeSpecifier;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#createFromBufferedImageType(int)"/>
@@ -145,7 +145,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         public static Javax.Imageio.ImageTypeSpecifier CreateGrayscale(int arg0, int arg1, bool arg2, bool arg3)
         {
-            return SExecute<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createGrayscale", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createGrayscale", "(IIZZ)Ljavax/imageio/ImageTypeSpecifier;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#createGrayscale(int,int,boolean)"/>
@@ -156,7 +156,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         public static Javax.Imageio.ImageTypeSpecifier CreateGrayscale(int arg0, int arg1, bool arg2)
         {
-            return SExecute<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createGrayscale", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createGrayscale", "(IIZ)Ljavax/imageio/ImageTypeSpecifier;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#createIndexed(byte[],byte[],byte[],byte[],int,int)"/>
@@ -170,7 +170,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         public static Javax.Imageio.ImageTypeSpecifier CreateIndexed(byte[] arg0, byte[] arg1, byte[] arg2, byte[] arg3, int arg4, int arg5)
         {
-            return SExecute<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createIndexed", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createIndexed", "([B[B[B[BII)Ljavax/imageio/ImageTypeSpecifier;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#createInterleaved(java.awt.color.ColorSpace,int[],int,boolean,boolean)"/>
@@ -183,7 +183,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         public static Javax.Imageio.ImageTypeSpecifier CreateInterleaved(Java.Awt.ColorNs.ColorSpace arg0, int[] arg1, int arg2, bool arg3, bool arg4)
         {
-            return SExecute<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createInterleaved", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createInterleaved", "(Ljava/awt/color/ColorSpace;[IIZZ)Ljavax/imageio/ImageTypeSpecifier;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#createPacked(java.awt.color.ColorSpace,int,int,int,int,int,boolean)"/>
@@ -198,7 +198,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Javax.Imageio.ImageTypeSpecifier"/></returns>
         public static Javax.Imageio.ImageTypeSpecifier CreatePacked(Java.Awt.ColorNs.ColorSpace arg0, int arg1, int arg2, int arg3, int arg4, int arg5, bool arg6)
         {
-            return SExecute<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createPacked", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecuteWithSignature<Javax.Imageio.ImageTypeSpecifier>(LocalBridgeClazz, "createPacked", "(Ljava/awt/color/ColorSpace;IIIIIZ)Ljavax/imageio/ImageTypeSpecifier;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
 
         #endregion
@@ -256,7 +256,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage CreateBufferedImage(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.BufferedImage>("createBufferedImage", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("createBufferedImage", "(II)Ljava/awt/image/BufferedImage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/ImageTypeSpecifier.html#getSampleModel(int,int)"/>
@@ -266,7 +266,7 @@ namespace Javax.Imageio
         /// <returns><see cref="Java.Awt.ImageNs.SampleModel"/></returns>
         public Java.Awt.ImageNs.SampleModel GetSampleModel(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.SampleModel>("getSampleModel", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.SampleModel>("getSampleModel", "(II)Ljava/awt/image/SampleModel;", arg0, arg1);
         }
 
         #endregion

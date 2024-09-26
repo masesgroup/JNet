@@ -140,7 +140,7 @@ namespace Java.Sql
         /// <returns><see cref="Java.Sql.ShardingKeyBuilder"/></returns>
         public Java.Sql.ShardingKeyBuilder Subkey(object arg0, Java.Sql.SQLType arg1)
         {
-            return IExecute<Java.Sql.ShardingKeyBuilder>("subkey", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.ShardingKeyBuilder>("subkey", "(Ljava/lang/Object;Ljava/sql/SQLType;)Ljava/sql/ShardingKeyBuilder;", arg0, arg1);
         }
 
         #endregion

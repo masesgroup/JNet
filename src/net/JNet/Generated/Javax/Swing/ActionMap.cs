@@ -153,7 +153,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Javax.Swing.Action"/></param>
         public void Put(object arg0, Javax.Swing.Action arg1)
         {
-            IExecute("put", arg0, arg1);
+            IExecuteWithSignature("put", "(Ljava/lang/Object;Ljavax/swing/Action;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/ActionMap.html#remove(java.lang.Object)"/>

@@ -173,7 +173,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="bool"/></returns>
         public bool IsDerivedFrom(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
-            return IExecute<bool>("isDerivedFrom", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("isDerivedFrom", "(Ljava/lang/String;Ljava/lang/String;I)Z", arg0, arg1, arg2);
         }
 
         #endregion

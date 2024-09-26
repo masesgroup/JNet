@@ -118,7 +118,7 @@ namespace Javax.Swing.Plaf.Synth
         /// <param name="arg5"><see cref="int"/></param>
         public void PaintBorder(Javax.Swing.Plaf.Synth.SynthContext arg0, Java.Awt.Graphics arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            IExecute("paintBorder", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("paintBorder", "(Ljavax/swing/plaf/synth/SynthContext;Ljava/awt/Graphics;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/synth/SynthTableHeaderUI.html#propertyChange(java.beans.PropertyChangeEvent)"/>

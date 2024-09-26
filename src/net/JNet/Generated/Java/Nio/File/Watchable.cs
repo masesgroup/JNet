@@ -136,7 +136,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind<object>[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Nio.File.WatchKey>("register", arg0); else return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Nio.File.WatchKey>("register", "(Ljava/nio/file/WatchService;[Ljava/nio/file/WatchEvent$Kind;)Ljava/nio/file/WatchKey;", arg0); else return IExecuteWithSignature<Java.Nio.File.WatchKey>("register", "(Ljava/nio/file/WatchService;[Ljava/nio/file/WatchEvent$Kind;)Ljava/nio/file/WatchKey;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Watchable.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[],java.nio.file.WatchEvent.Modifier[])"/>
@@ -148,7 +148,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind<object>[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1); else return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Nio.File.WatchKey>("register", "(Ljava/nio/file/WatchService;[Ljava/nio/file/WatchEvent$Kind;[Ljava/nio/file/WatchEvent$Modifier;)Ljava/nio/file/WatchKey;", arg0, arg1); else return IExecuteWithSignature<Java.Nio.File.WatchKey>("register", "(Ljava/nio/file/WatchService;[Ljava/nio/file/WatchEvent$Kind;[Ljava/nio/file/WatchEvent$Modifier;)Ljava/nio/file/WatchKey;", arg0, arg1, arg2);
         }
 
         #endregion

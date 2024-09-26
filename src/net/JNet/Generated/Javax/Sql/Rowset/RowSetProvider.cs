@@ -104,7 +104,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public static Javax.Sql.Rowset.RowSetFactory NewFactory(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Javax.Sql.Rowset.RowSetFactory>(LocalBridgeClazz, "newFactory", arg0, arg1);
+            return SExecuteWithSignature<Javax.Sql.Rowset.RowSetFactory>(LocalBridgeClazz, "newFactory", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljavax/sql/rowset/RowSetFactory;", arg0, arg1);
         }
 
         #endregion

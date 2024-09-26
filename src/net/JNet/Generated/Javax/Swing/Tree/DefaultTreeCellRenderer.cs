@@ -184,7 +184,7 @@ namespace Javax.Swing.Tree
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetTreeCellRendererComponent(Javax.Swing.JTree arg0, object arg1, bool arg2, bool arg3, bool arg4, int arg5, bool arg6)
         {
-            return IExecute<Java.Awt.Component>("getTreeCellRendererComponent", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<Java.Awt.Component>("getTreeCellRendererComponent", "(Ljavax/swing/JTree;Ljava/lang/Object;ZZZIZ)Ljava/awt/Component;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
 
         #endregion

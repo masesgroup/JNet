@@ -154,7 +154,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool CheckID(int arg0, bool arg1)
         {
-            return IExecute<bool>("checkID", arg0, arg1);
+            return IExecuteWithSignature<bool>("checkID", "(IZ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#checkID(int)"/>
@@ -182,7 +182,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public int StatusID(int arg0, bool arg1)
         {
-            return IExecute<int>("statusID", arg0, arg1);
+            return IExecuteWithSignature<int>("statusID", "(IZ)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#isErrorAny()"/>
@@ -220,7 +220,7 @@ namespace Java.Awt
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool WaitForID(int arg0, long arg1)
         {
-            return IExecute<bool>("waitForID", arg0, arg1);
+            return IExecuteWithSignature<bool>("waitForID", "(IJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#getErrorsID(int)"/>
@@ -240,7 +240,7 @@ namespace Java.Awt
         /// <param name="arg3"><see cref="int"/></param>
         public void AddImage(Java.Awt.Image arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("addImage", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("addImage", "(Ljava/awt/Image;III)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#removeImage(java.awt.Image,int,int,int)"/>
@@ -251,7 +251,7 @@ namespace Java.Awt
         /// <param name="arg3"><see cref="int"/></param>
         public void RemoveImage(Java.Awt.Image arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("removeImage", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("removeImage", "(Ljava/awt/Image;III)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#removeImage(java.awt.Image,int)"/>
@@ -260,7 +260,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void RemoveImage(Java.Awt.Image arg0, int arg1)
         {
-            IExecute("removeImage", arg0, arg1);
+            IExecuteWithSignature("removeImage", "(Ljava/awt/Image;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#removeImage(java.awt.Image)"/>
@@ -277,7 +277,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void AddImage(Java.Awt.Image arg0, int arg1)
         {
-            IExecute("addImage", arg0, arg1);
+            IExecuteWithSignature("addImage", "(Ljava/awt/Image;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/MediaTracker.html#waitForAll()"/>

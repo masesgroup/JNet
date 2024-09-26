@@ -113,7 +113,7 @@ namespace Javax.Security.Auth
         /// <returns><see cref="Java.Security.ProtectionDomain"/></returns>
         public Java.Security.ProtectionDomain[] Combine(Java.Security.ProtectionDomain[] arg0, Java.Security.ProtectionDomain[] arg1)
         {
-            return IExecuteArray<Java.Security.ProtectionDomain>("combine", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Security.ProtectionDomain>("combine", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)[Ljava/security/ProtectionDomain;", arg0, arg1);
         }
 
         #endregion

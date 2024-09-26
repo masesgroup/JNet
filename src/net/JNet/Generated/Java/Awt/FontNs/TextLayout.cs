@@ -273,7 +273,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="float"/></returns>
         public float[] GetCaretInfo(Java.Awt.FontNs.TextHitInfo arg0, Java.Awt.Geom.Rectangle2D arg1)
         {
-            return IExecuteArray<float>("getCaretInfo", arg0, arg1);
+            return IExecuteWithSignatureArray<float>("getCaretInfo", "(Ljava/awt/font/TextHitInfo;Ljava/awt/geom/Rectangle2D;)[F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretInfo(java.awt.font.TextHitInfo)"/>
@@ -292,7 +292,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="int"/></returns>
         public int[] GetLogicalRangesForVisualSelection(Java.Awt.FontNs.TextHitInfo arg0, Java.Awt.FontNs.TextHitInfo arg1)
         {
-            return IExecuteArray<int>("getLogicalRangesForVisualSelection", arg0, arg1);
+            return IExecuteWithSignatureArray<int>("getLogicalRangesForVisualSelection", "(Ljava/awt/font/TextHitInfo;Ljava/awt/font/TextHitInfo;)[I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextLeftHit(int,java.awt.font.TextLayout.CaretPolicy)"/>
@@ -302,7 +302,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo GetNextLeftHit(int arg0, Java.Awt.FontNs.TextLayout.CaretPolicy arg1)
         {
-            return IExecute<Java.Awt.FontNs.TextHitInfo>("getNextLeftHit", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.FontNs.TextHitInfo>("getNextLeftHit", "(ILjava/awt/font/TextLayout$CaretPolicy;)Ljava/awt/font/TextHitInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextLeftHit(int)"/>
@@ -330,7 +330,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo GetNextRightHit(int arg0, Java.Awt.FontNs.TextLayout.CaretPolicy arg1)
         {
-            return IExecute<Java.Awt.FontNs.TextHitInfo>("getNextRightHit", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.FontNs.TextHitInfo>("getNextRightHit", "(ILjava/awt/font/TextLayout$CaretPolicy;)Ljava/awt/font/TextHitInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getNextRightHit(int)"/>
@@ -368,7 +368,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo HitTestChar(float arg0, float arg1, Java.Awt.Geom.Rectangle2D arg2)
         {
-            return IExecute<Java.Awt.FontNs.TextHitInfo>("hitTestChar", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.FontNs.TextHitInfo>("hitTestChar", "(FFLjava/awt/geom/Rectangle2D;)Ljava/awt/font/TextHitInfo;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#hitTestChar(float,float)"/>
@@ -378,7 +378,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
         public Java.Awt.FontNs.TextHitInfo HitTestChar(float arg0, float arg1)
         {
-            return IExecute<Java.Awt.FontNs.TextHitInfo>("hitTestChar", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.FontNs.TextHitInfo>("hitTestChar", "(FF)Ljava/awt/font/TextHitInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getJustifiedLayout(float)"/>
@@ -398,7 +398,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetPixelBounds(Java.Awt.FontNs.FontRenderContext arg0, float arg1, float arg2)
         {
-            return IExecute<Java.Awt.Rectangle>("getPixelBounds", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Rectangle>("getPixelBounds", "(Ljava/awt/font/FontRenderContext;FF)Ljava/awt/Rectangle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getBlackBoxBounds(int,int)"/>
@@ -408,7 +408,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetBlackBoxBounds(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.Shape>("getBlackBoxBounds", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Shape>("getBlackBoxBounds", "(II)Ljava/awt/Shape;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShape(java.awt.font.TextHitInfo,java.awt.geom.Rectangle2D)"/>
@@ -418,7 +418,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetCaretShape(Java.Awt.FontNs.TextHitInfo arg0, Java.Awt.Geom.Rectangle2D arg1)
         {
-            return IExecute<Java.Awt.Shape>("getCaretShape", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Shape>("getCaretShape", "(Ljava/awt/font/TextHitInfo;Ljava/awt/geom/Rectangle2D;)Ljava/awt/Shape;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShape(java.awt.font.TextHitInfo)"/>
@@ -438,7 +438,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetLogicalHighlightShape(int arg0, int arg1, Java.Awt.Geom.Rectangle2D arg2)
         {
-            return IExecute<Java.Awt.Shape>("getLogicalHighlightShape", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Shape>("getLogicalHighlightShape", "(IILjava/awt/geom/Rectangle2D;)Ljava/awt/Shape;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getLogicalHighlightShape(int,int)"/>
@@ -448,7 +448,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetLogicalHighlightShape(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.Shape>("getLogicalHighlightShape", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Shape>("getLogicalHighlightShape", "(II)Ljava/awt/Shape;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getOutline(java.awt.geom.AffineTransform)"/>
@@ -468,7 +468,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetVisualHighlightShape(Java.Awt.FontNs.TextHitInfo arg0, Java.Awt.FontNs.TextHitInfo arg1, Java.Awt.Geom.Rectangle2D arg2)
         {
-            return IExecute<Java.Awt.Shape>("getVisualHighlightShape", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Shape>("getVisualHighlightShape", "(Ljava/awt/font/TextHitInfo;Ljava/awt/font/TextHitInfo;Ljava/awt/geom/Rectangle2D;)Ljava/awt/Shape;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getVisualHighlightShape(java.awt.font.TextHitInfo,java.awt.font.TextHitInfo)"/>
@@ -478,7 +478,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetVisualHighlightShape(Java.Awt.FontNs.TextHitInfo arg0, Java.Awt.FontNs.TextHitInfo arg1)
         {
-            return IExecute<Java.Awt.Shape>("getVisualHighlightShape", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Shape>("getVisualHighlightShape", "(Ljava/awt/font/TextHitInfo;Ljava/awt/font/TextHitInfo;)Ljava/awt/Shape;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShapes(int,java.awt.geom.Rectangle2D,java.awt.font.TextLayout.CaretPolicy)"/>
@@ -489,7 +489,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape[] GetCaretShapes(int arg0, Java.Awt.Geom.Rectangle2D arg1, Java.Awt.FontNs.TextLayout.CaretPolicy arg2)
         {
-            return IExecuteArray<Java.Awt.Shape>("getCaretShapes", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<Java.Awt.Shape>("getCaretShapes", "(ILjava/awt/geom/Rectangle2D;Ljava/awt/font/TextLayout$CaretPolicy;)[Ljava/awt/Shape;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShapes(int,java.awt.geom.Rectangle2D)"/>
@@ -499,7 +499,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape[] GetCaretShapes(int arg0, Java.Awt.Geom.Rectangle2D arg1)
         {
-            return IExecuteArray<Java.Awt.Shape>("getCaretShapes", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Awt.Shape>("getCaretShapes", "(ILjava/awt/geom/Rectangle2D;)[Ljava/awt/Shape;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#getCaretShapes(int)"/>
@@ -518,7 +518,7 @@ namespace Java.Awt.FontNs
         /// <param name="arg2"><see cref="float"/></param>
         public void Draw(Java.Awt.Graphics2D arg0, float arg1, float arg2)
         {
-            IExecute("draw", arg0, arg1, arg2);
+            IExecuteWithSignature("draw", "(Ljava/awt/Graphics2D;FF)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextLayout.html#hitToPoint(java.awt.font.TextHitInfo,java.awt.geom.Point2D)"/>
@@ -527,7 +527,7 @@ namespace Java.Awt.FontNs
         /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
         public void HitToPoint(Java.Awt.FontNs.TextHitInfo arg0, Java.Awt.Geom.Point2D arg1)
         {
-            IExecute("hitToPoint", arg0, arg1);
+            IExecuteWithSignature("hitToPoint", "(Ljava/awt/font/TextHitInfo;Ljava/awt/geom/Point2D;)V", arg0, arg1);
         }
 
         #endregion
@@ -562,7 +562,7 @@ namespace Java.Awt.FontNs
             /// <returns><see cref="Java.Awt.FontNs.TextHitInfo"/></returns>
             public Java.Awt.FontNs.TextHitInfo GetStrongCaret(Java.Awt.FontNs.TextHitInfo arg0, Java.Awt.FontNs.TextHitInfo arg1, Java.Awt.FontNs.TextLayout arg2)
             {
-                return IExecute<Java.Awt.FontNs.TextHitInfo>("getStrongCaret", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Awt.FontNs.TextHitInfo>("getStrongCaret", "(Ljava/awt/font/TextHitInfo;Ljava/awt/font/TextHitInfo;Ljava/awt/font/TextLayout;)Ljava/awt/font/TextHitInfo;", arg0, arg1, arg2);
             }
 
             #endregion

@@ -95,7 +95,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
         public static Java.Util.Concurrent.Callable<T> Callable<T>(Java.Lang.Runnable arg0, T arg1)
         {
-            return SExecute<Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "callable", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "callable", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Callable;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallable(java.util.concurrent.Callable)"/>
@@ -169,7 +169,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ExecutorService"/></returns>
         public static Java.Util.Concurrent.ExecutorService NewFixedThreadPool(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
         {
-            return SExecute<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newFixedThreadPool", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Concurrent.ExecutorService>(LocalBridgeClazz, "newFixedThreadPool", "(ILjava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newFixedThreadPool(int)"/>
@@ -231,7 +231,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ScheduledExecutorService"/></returns>
         public static Java.Util.Concurrent.ScheduledExecutorService NewScheduledThreadPool(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
         {
-            return SExecute<Java.Util.Concurrent.ScheduledExecutorService>(LocalBridgeClazz, "newScheduledThreadPool", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Concurrent.ScheduledExecutorService>(LocalBridgeClazz, "newScheduledThreadPool", "(ILjava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ScheduledExecutorService;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newScheduledThreadPool(int)"/>

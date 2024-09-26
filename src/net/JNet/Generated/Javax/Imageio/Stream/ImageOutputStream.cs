@@ -289,7 +289,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void Write(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("write", arg0, arg1, arg2);
+            IExecuteWithSignature("write", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#write(byte[])"/>
@@ -326,7 +326,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteBits(long arg0, int arg1)
         {
-            IExecute("writeBits", arg0, arg1);
+            IExecuteWithSignature("writeBits", "(JI)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeBoolean(boolean)"/>
@@ -373,7 +373,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteChars(char[] arg0, int arg1, int arg2)
         {
-            IExecute("writeChars", arg0, arg1, arg2);
+            IExecuteWithSignature("writeChars", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeChars(java.lang.String)"/>
@@ -402,7 +402,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteDoubles(double[] arg0, int arg1, int arg2)
         {
-            IExecute("writeDoubles", arg0, arg1, arg2);
+            IExecuteWithSignature("writeDoubles", "([DII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeFloat(float)"/>
@@ -422,7 +422,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteFloats(float[] arg0, int arg1, int arg2)
         {
-            IExecute("writeFloats", arg0, arg1, arg2);
+            IExecuteWithSignature("writeFloats", "([FII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeInt(int)"/>
@@ -442,7 +442,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteInts(int[] arg0, int arg1, int arg2)
         {
-            IExecute("writeInts", arg0, arg1, arg2);
+            IExecuteWithSignature("writeInts", "([III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeLong(long)"/>
@@ -462,7 +462,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteLongs(long[] arg0, int arg1, int arg2)
         {
-            IExecute("writeLongs", arg0, arg1, arg2);
+            IExecuteWithSignature("writeLongs", "([JII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeShort(int)"/>
@@ -482,7 +482,7 @@ namespace Javax.Imageio.Stream
         /// <exception cref="Java.Io.IOException"/>
         public void WriteShorts(short[] arg0, int arg1, int arg2)
         {
-            IExecute("writeShorts", arg0, arg1, arg2);
+            IExecuteWithSignature("writeShorts", "([SII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html#writeUTF(java.lang.String)"/>

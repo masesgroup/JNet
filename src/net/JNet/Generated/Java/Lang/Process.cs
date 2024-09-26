@@ -162,7 +162,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool WaitFor(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<bool>("waitFor", arg0, arg1);
+            return IExecuteWithSignature<bool>("waitFor", "(JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Process.html#destroyForcibly()"/>

@@ -167,7 +167,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage CreateCompatibleImage(int arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Awt.ImageNs.BufferedImage>("createCompatibleImage", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("createCompatibleImage", "(III)Ljava/awt/image/BufferedImage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleImage(int,int)"/>
@@ -177,7 +177,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage CreateCompatibleImage(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.BufferedImage>("createCompatibleImage", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("createCompatibleImage", "(II)Ljava/awt/image/BufferedImage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int,int)"/>
@@ -188,7 +188,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.ImageNs.VolatileImage"/></returns>
         public Java.Awt.ImageNs.VolatileImage CreateCompatibleVolatileImage(int arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Awt.ImageNs.VolatileImage>("createCompatibleVolatileImage", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.ImageNs.VolatileImage>("createCompatibleVolatileImage", "(III)Ljava/awt/image/VolatileImage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int,java.awt.ImageCapabilities,int)"/>
@@ -201,7 +201,7 @@ namespace Java.Awt
         /// <exception cref="Java.Awt.AWTException"/>
         public Java.Awt.ImageNs.VolatileImage CreateCompatibleVolatileImage(int arg0, int arg1, Java.Awt.ImageCapabilities arg2, int arg3)
         {
-            return IExecute<Java.Awt.ImageNs.VolatileImage>("createCompatibleVolatileImage", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.ImageNs.VolatileImage>("createCompatibleVolatileImage", "(IILjava/awt/ImageCapabilities;I)Ljava/awt/image/VolatileImage;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int,java.awt.ImageCapabilities)"/>
@@ -213,7 +213,7 @@ namespace Java.Awt
         /// <exception cref="Java.Awt.AWTException"/>
         public Java.Awt.ImageNs.VolatileImage CreateCompatibleVolatileImage(int arg0, int arg1, Java.Awt.ImageCapabilities arg2)
         {
-            return IExecute<Java.Awt.ImageNs.VolatileImage>("createCompatibleVolatileImage", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.ImageNs.VolatileImage>("createCompatibleVolatileImage", "(IILjava/awt/ImageCapabilities;)Ljava/awt/image/VolatileImage;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GraphicsConfiguration.html#createCompatibleVolatileImage(int,int)"/>
@@ -223,7 +223,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.ImageNs.VolatileImage"/></returns>
         public Java.Awt.ImageNs.VolatileImage CreateCompatibleVolatileImage(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.VolatileImage>("createCompatibleVolatileImage", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.VolatileImage>("createCompatibleVolatileImage", "(II)Ljava/awt/image/VolatileImage;", arg0, arg1);
         }
 
         #endregion

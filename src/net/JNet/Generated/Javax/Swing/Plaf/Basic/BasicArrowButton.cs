@@ -132,7 +132,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg5"><see cref="bool"/></param>
         public void PaintTriangle(Java.Awt.Graphics arg0, int arg1, int arg2, int arg3, int arg4, bool arg5)
         {
-            IExecute("paintTriangle", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("paintTriangle", "(Ljava/awt/Graphics;IIIIZ)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

@@ -125,7 +125,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="int"/></returns>
         public int NextOffset(float arg0, int arg1, bool arg2)
         {
-            return IExecute<int>("nextOffset", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("nextOffset", "(FIZ)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineBreakMeasurer.html#nextOffset(float)"/>
@@ -145,7 +145,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.FontNs.TextLayout"/></returns>
         public Java.Awt.FontNs.TextLayout NextLayout(float arg0, int arg1, bool arg2)
         {
-            return IExecute<Java.Awt.FontNs.TextLayout>("nextLayout", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.FontNs.TextLayout>("nextLayout", "(FIZ)Ljava/awt/font/TextLayout;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineBreakMeasurer.html#nextLayout(float)"/>
@@ -163,7 +163,7 @@ namespace Java.Awt.FontNs
         /// <param name="arg1"><see cref="int"/></param>
         public void DeleteChar(Java.Text.AttributedCharacterIterator arg0, int arg1)
         {
-            IExecute("deleteChar", arg0, arg1);
+            IExecuteWithSignature("deleteChar", "(Ljava/text/AttributedCharacterIterator;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LineBreakMeasurer.html#insertChar(java.text.AttributedCharacterIterator,int)"/>
@@ -172,7 +172,7 @@ namespace Java.Awt.FontNs
         /// <param name="arg1"><see cref="int"/></param>
         public void InsertChar(Java.Text.AttributedCharacterIterator arg0, int arg1)
         {
-            IExecute("insertChar", arg0, arg1);
+            IExecuteWithSignature("insertChar", "(Ljava/text/AttributedCharacterIterator;I)V", arg0, arg1);
         }
 
         #endregion

@@ -96,7 +96,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.Inet6Address GetByAddress(Java.Lang.String arg0, byte[] arg1, int arg2)
         {
-            return SExecute<Java.Net.Inet6Address>(LocalBridgeClazz, "getByAddress", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Net.Inet6Address>(LocalBridgeClazz, "getByAddress", "(Ljava/lang/String;[BI)Ljava/net/Inet6Address;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Inet6Address.html#getByAddress(java.lang.String,byte[],java.net.NetworkInterface)"/>
@@ -108,7 +108,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.UnknownHostException"/>
         public static Java.Net.Inet6Address GetByAddress(Java.Lang.String arg0, byte[] arg1, Java.Net.NetworkInterface arg2)
         {
-            return SExecute<Java.Net.Inet6Address>(LocalBridgeClazz, "getByAddress", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Net.Inet6Address>(LocalBridgeClazz, "getByAddress", "(Ljava/lang/String;[BLjava/net/NetworkInterface;)Ljava/net/Inet6Address;", arg0, arg1, arg2);
         }
 
         #endregion

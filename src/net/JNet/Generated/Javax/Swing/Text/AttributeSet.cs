@@ -387,7 +387,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="bool"/></returns>
         public bool ContainsAttribute(object arg0, object arg1)
         {
-            return IExecute<bool>("containsAttribute", arg0, arg1);
+            return IExecuteWithSignature<bool>("containsAttribute", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AttributeSet.html#containsAttributes(javax.swing.text.AttributeSet)"/>

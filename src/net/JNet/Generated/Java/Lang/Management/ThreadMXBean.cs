@@ -380,7 +380,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo GetThreadInfo(long arg0, int arg1)
         {
-            return IExecute<Java.Lang.Management.ThreadInfo>("getThreadInfo", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Management.ThreadInfo>("getThreadInfo", "(JI)Ljava/lang/management/ThreadInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long)"/>
@@ -399,7 +399,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo[] DumpAllThreads(bool arg0, bool arg1)
         {
-            return IExecuteArray<Java.Lang.Management.ThreadInfo>("dumpAllThreads", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.Management.ThreadInfo>("dumpAllThreads", "(ZZ)[Ljava/lang/management/ThreadInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[],boolean,boolean)"/>
@@ -410,7 +410,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo[] GetThreadInfo(long[] arg0, bool arg1, bool arg2)
         {
-            return IExecuteArray<Java.Lang.Management.ThreadInfo>("getThreadInfo", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<Java.Lang.Management.ThreadInfo>("getThreadInfo", "([JZZ)[Ljava/lang/management/ThreadInfo;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[],int)"/>
@@ -420,7 +420,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo[] GetThreadInfo(long[] arg0, int arg1)
         {
-            return IExecuteArray<Java.Lang.Management.ThreadInfo>("getThreadInfo", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.Management.ThreadInfo>("getThreadInfo", "([JI)[Ljava/lang/management/ThreadInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[])"/>
@@ -497,7 +497,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo[] DumpAllThreads(bool arg0, bool arg1, int arg2)
         {
-            return IExecuteArray<Java.Lang.Management.ThreadInfo>("dumpAllThreads", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<Java.Lang.Management.ThreadInfo>("dumpAllThreads", "(ZZI)[Ljava/lang/management/ThreadInfo;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html#getThreadInfo(long[],boolean,boolean,int)"/>
@@ -509,7 +509,7 @@ namespace Java.Lang.Management
         /// <returns><see cref="Java.Lang.Management.ThreadInfo"/></returns>
         public Java.Lang.Management.ThreadInfo[] GetThreadInfo(long[] arg0, bool arg1, bool arg2, int arg3)
         {
-            return IExecuteArray<Java.Lang.Management.ThreadInfo>("getThreadInfo", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignatureArray<Java.Lang.Management.ThreadInfo>("getThreadInfo", "([JZZI)[Ljava/lang/management/ThreadInfo;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

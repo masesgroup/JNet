@@ -267,7 +267,7 @@ namespace Java.Util.Concurrent.Locks
         /// <exception cref="Java.Lang.InterruptedException"/>
         public long TryReadLock(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<long>("tryReadLock", arg0, arg1);
+            return IExecuteWithSignature<long>("tryReadLock", "(JLjava/util/concurrent/TimeUnit;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#tryWriteLock()"/>
@@ -286,7 +286,7 @@ namespace Java.Util.Concurrent.Locks
         /// <exception cref="Java.Lang.InterruptedException"/>
         public long TryWriteLock(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<long>("tryWriteLock", arg0, arg1);
+            return IExecuteWithSignature<long>("tryWriteLock", "(JLjava/util/concurrent/TimeUnit;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/StampedLock.html#writeLock()"/>

@@ -109,7 +109,7 @@ namespace Java.Nio.Channels.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.AsynchronousChannelGroup OpenAsynchronousChannelGroup(int arg0, Java.Util.Concurrent.ThreadFactory arg1)
         {
-            return IExecute<Java.Nio.Channels.AsynchronousChannelGroup>("openAsynchronousChannelGroup", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.Channels.AsynchronousChannelGroup>("openAsynchronousChannelGroup", "(ILjava/util/concurrent/ThreadFactory;)Ljava/nio/channels/AsynchronousChannelGroup;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousChannelGroup(java.util.concurrent.ExecutorService,int)"/>
@@ -120,7 +120,7 @@ namespace Java.Nio.Channels.Spi
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.AsynchronousChannelGroup OpenAsynchronousChannelGroup(Java.Util.Concurrent.ExecutorService arg0, int arg1)
         {
-            return IExecute<Java.Nio.Channels.AsynchronousChannelGroup>("openAsynchronousChannelGroup", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.Channels.AsynchronousChannelGroup>("openAsynchronousChannelGroup", "(Ljava/util/concurrent/ExecutorService;I)Ljava/nio/channels/AsynchronousChannelGroup;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/spi/AsynchronousChannelProvider.html#openAsynchronousServerSocketChannel(java.nio.channels.AsynchronousChannelGroup)"/>

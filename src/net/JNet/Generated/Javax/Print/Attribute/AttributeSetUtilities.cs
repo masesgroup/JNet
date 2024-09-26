@@ -94,7 +94,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public static Java.Lang.Class VerifyAttributeCategory(object arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Lang.Class>(LocalBridgeClazz, "verifyAttributeCategory", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Class>(LocalBridgeClazz, "verifyAttributeCategory", "(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Class;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#verifyAttributeValue(java.lang.Object,java.lang.Class)"/>
@@ -104,7 +104,7 @@ namespace Javax.Print.Attribute
         /// <returns><see cref="Javax.Print.Attribute.Attribute"/></returns>
         public static Javax.Print.Attribute.Attribute VerifyAttributeValue(object arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Javax.Print.Attribute.Attribute>(LocalBridgeClazz, "verifyAttributeValue", arg0, arg1);
+            return SExecuteWithSignature<Javax.Print.Attribute.Attribute>(LocalBridgeClazz, "verifyAttributeValue", "(Ljava/lang/Object;Ljava/lang/Class;)Ljavax/print/attribute/Attribute;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/AttributeSetUtilities.html#synchronizedView(javax.print.attribute.AttributeSet)"/>
@@ -203,7 +203,7 @@ namespace Javax.Print.Attribute
         /// <param name="arg1"><see cref="Javax.Print.Attribute.Attribute"/></param>
         public static void VerifyCategoryForValue(Java.Lang.Class arg0, Javax.Print.Attribute.Attribute arg1)
         {
-            SExecute(LocalBridgeClazz, "verifyCategoryForValue", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "verifyCategoryForValue", "(Ljava/lang/Class;Ljavax/print/attribute/Attribute;)V", arg0, arg1);
         }
 
         #endregion

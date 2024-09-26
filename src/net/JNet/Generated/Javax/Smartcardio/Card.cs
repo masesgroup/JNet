@@ -122,7 +122,7 @@ namespace Javax.Smartcardio
         /// <exception cref="Javax.Smartcardio.CardException"/>
         public byte[] TransmitControlCommand(int arg0, byte[] arg1)
         {
-            return IExecuteArray<byte>("transmitControlCommand", arg0, arg1);
+            return IExecuteWithSignatureArray<byte>("transmitControlCommand", "(I[B)[B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.smartcardio/javax/smartcardio/Card.html#openLogicalChannel()"/>

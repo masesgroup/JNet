@@ -218,7 +218,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int IndexAtLocation(int arg0, int arg1)
         {
-            return IExecute<int>("indexAtLocation", arg0, arg1);
+            return IExecuteWithSignature<int>("indexAtLocation", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#indexOfComponent(java.awt.Component)"/>
@@ -352,7 +352,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public void AddTab(Java.Lang.String arg0, Java.Awt.Component arg1)
         {
-            IExecute("addTab", arg0, arg1);
+            IExecuteWithSignature("addTab", "(Ljava/lang/String;Ljava/awt/Component;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#addTab(java.lang.String,javax.swing.Icon,java.awt.Component,java.lang.String)"/>
@@ -363,7 +363,7 @@ namespace Javax.Swing
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
         public void AddTab(Java.Lang.String arg0, Javax.Swing.Icon arg1, Java.Awt.Component arg2, Java.Lang.String arg3)
         {
-            IExecute("addTab", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("addTab", "(Ljava/lang/String;Ljavax/swing/Icon;Ljava/awt/Component;Ljava/lang/String;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#addTab(java.lang.String,javax.swing.Icon,java.awt.Component)"/>
@@ -373,7 +373,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="Java.Awt.Component"/></param>
         public void AddTab(Java.Lang.String arg0, Javax.Swing.Icon arg1, Java.Awt.Component arg2)
         {
-            IExecute("addTab", arg0, arg1, arg2);
+            IExecuteWithSignature("addTab", "(Ljava/lang/String;Ljavax/swing/Icon;Ljava/awt/Component;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#insertTab(java.lang.String,javax.swing.Icon,java.awt.Component,java.lang.String,int)"/>
@@ -385,7 +385,7 @@ namespace Javax.Swing
         /// <param name="arg4"><see cref="int"/></param>
         public void InsertTab(Java.Lang.String arg0, Javax.Swing.Icon arg1, Java.Awt.Component arg2, Java.Lang.String arg3, int arg4)
         {
-            IExecute("insertTab", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("insertTab", "(Ljava/lang/String;Ljavax/swing/Icon;Ljava/awt/Component;Ljava/lang/String;I)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#removeChangeListener(javax.swing.event.ChangeListener)"/>
@@ -410,7 +410,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
         public void SetBackgroundAt(int arg0, Java.Awt.Color arg1)
         {
-            IExecute("setBackgroundAt", arg0, arg1);
+            IExecuteWithSignature("setBackgroundAt", "(ILjava/awt/Color;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#setComponentAt(int,java.awt.Component)"/>
@@ -419,7 +419,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public void SetComponentAt(int arg0, Java.Awt.Component arg1)
         {
-            IExecute("setComponentAt", arg0, arg1);
+            IExecuteWithSignature("setComponentAt", "(ILjava/awt/Component;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#setDisabledIconAt(int,javax.swing.Icon)"/>
@@ -428,7 +428,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
         public void SetDisabledIconAt(int arg0, Javax.Swing.Icon arg1)
         {
-            IExecute("setDisabledIconAt", arg0, arg1);
+            IExecuteWithSignature("setDisabledIconAt", "(ILjavax/swing/Icon;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#setDisplayedMnemonicIndexAt(int,int)"/>
@@ -437,7 +437,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void SetDisplayedMnemonicIndexAt(int arg0, int arg1)
         {
-            IExecute("setDisplayedMnemonicIndexAt", arg0, arg1);
+            IExecuteWithSignature("setDisplayedMnemonicIndexAt", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#setEnabledAt(int,boolean)"/>
@@ -446,7 +446,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetEnabledAt(int arg0, bool arg1)
         {
-            IExecute("setEnabledAt", arg0, arg1);
+            IExecuteWithSignature("setEnabledAt", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#setForegroundAt(int,java.awt.Color)"/>
@@ -455,7 +455,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
         public void SetForegroundAt(int arg0, Java.Awt.Color arg1)
         {
-            IExecute("setForegroundAt", arg0, arg1);
+            IExecuteWithSignature("setForegroundAt", "(ILjava/awt/Color;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#setIconAt(int,javax.swing.Icon)"/>
@@ -464,7 +464,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
         public void SetIconAt(int arg0, Javax.Swing.Icon arg1)
         {
-            IExecute("setIconAt", arg0, arg1);
+            IExecuteWithSignature("setIconAt", "(ILjavax/swing/Icon;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#setMnemonicAt(int,int)"/>
@@ -473,7 +473,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void SetMnemonicAt(int arg0, int arg1)
         {
-            IExecute("setMnemonicAt", arg0, arg1);
+            IExecuteWithSignature("setMnemonicAt", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#setTabComponentAt(int,java.awt.Component)"/>
@@ -482,7 +482,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public void SetTabComponentAt(int arg0, Java.Awt.Component arg1)
         {
-            IExecute("setTabComponentAt", arg0, arg1);
+            IExecuteWithSignature("setTabComponentAt", "(ILjava/awt/Component;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#setTitleAt(int,java.lang.String)"/>
@@ -491,7 +491,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetTitleAt(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setTitleAt", arg0, arg1);
+            IExecuteWithSignature("setTitleAt", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#setToolTipTextAt(int,java.lang.String)"/>
@@ -500,7 +500,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetToolTipTextAt(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setToolTipTextAt", arg0, arg1);
+            IExecuteWithSignature("setToolTipTextAt", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTabbedPane.html#setUI(javax.swing.plaf.TabbedPaneUI)"/>

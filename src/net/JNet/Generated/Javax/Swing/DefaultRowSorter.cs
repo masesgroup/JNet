@@ -187,7 +187,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
         public void SetComparator(int arg0, Java.Util.Comparator arg1)
         {
-            IExecute("setComparator", arg0, arg1);
+            IExecuteWithSignature("setComparator", "(ILjava/util/Comparator;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#setSortable(int,boolean)"/>
@@ -196,7 +196,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetSortable(int arg0, bool arg1)
         {
-            IExecute("setSortable", arg0, arg1);
+            IExecuteWithSignature("setSortable", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#sort()"/>
@@ -286,7 +286,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Util.Comparator"/></param>
         public void SetComparator(int arg0, Java.Util.Comparator<object> arg1)
         {
-            IExecute("setComparator", arg0, arg1);
+            IExecuteWithSignature("setComparator", "(ILjava/util/Comparator;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#setSortable(int,boolean)"/>
@@ -295,7 +295,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetSortable(int arg0, bool arg1)
         {
-            IExecute("setSortable", arg0, arg1);
+            IExecuteWithSignature("setSortable", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/DefaultRowSorter.html#sort()"/>

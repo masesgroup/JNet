@@ -149,7 +149,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public int GetNextVisualPositionFrom(Javax.Swing.Text.JTextComponent arg0, int arg1, Javax.Swing.Text.Position.Bias arg2, int arg3, Javax.Swing.Text.Position.Bias[] arg4)
         {
-            return IExecute<int>("getNextVisualPositionFrom", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<int>("getNextVisualPositionFrom", "(Ljavax/swing/text/JTextComponent;ILjavax/swing/text/Position$Bias;I[Ljavax/swing/text/Position$Bias;)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/NavigationFilter.html#moveDot(javax.swing.text.NavigationFilter.FilterBypass,int,javax.swing.text.Position.Bias)"/>
@@ -159,7 +159,7 @@ namespace Javax.Swing.Text
         /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         public void MoveDot(Javax.Swing.Text.NavigationFilter.FilterBypass arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
-            IExecute("moveDot", arg0, arg1, arg2);
+            IExecuteWithSignature("moveDot", "(Ljavax/swing/text/NavigationFilter$FilterBypass;ILjavax/swing/text/Position$Bias;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/NavigationFilter.html#setDot(javax.swing.text.NavigationFilter.FilterBypass,int,javax.swing.text.Position.Bias)"/>
@@ -169,7 +169,7 @@ namespace Javax.Swing.Text
         /// <param name="arg2"><see cref="Javax.Swing.Text.Position.Bias"/></param>
         public void SetDot(Javax.Swing.Text.NavigationFilter.FilterBypass arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
-            IExecute("setDot", arg0, arg1, arg2);
+            IExecuteWithSignature("setDot", "(Ljavax/swing/text/NavigationFilter$FilterBypass;ILjavax/swing/text/Position$Bias;)V", arg0, arg1, arg2);
         }
 
         #endregion
@@ -209,7 +209,7 @@ namespace Javax.Swing.Text
             /// <param name="arg1"><see cref="Javax.Swing.Text.Position.Bias"/></param>
             public void MoveDot(int arg0, Javax.Swing.Text.Position.Bias arg1)
             {
-                IExecute("moveDot", arg0, arg1);
+                IExecuteWithSignature("moveDot", "(ILjavax/swing/text/Position$Bias;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/NavigationFilter.FilterBypass.html#setDot(int,javax.swing.text.Position.Bias)"/>
@@ -218,7 +218,7 @@ namespace Javax.Swing.Text
             /// <param name="arg1"><see cref="Javax.Swing.Text.Position.Bias"/></param>
             public void SetDot(int arg0, Javax.Swing.Text.Position.Bias arg1)
             {
-                IExecute("setDot", arg0, arg1);
+                IExecuteWithSignature("setDot", "(ILjavax/swing/text/Position$Bias;)V", arg0, arg1);
             }
 
             #endregion

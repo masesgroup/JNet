@@ -188,7 +188,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node GetNamedItemNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.W3c.Dom.Node>("getNamedItemNS", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("getNamedItemNS", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Node;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html#item(int)"/>
@@ -218,7 +218,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Node RemoveNamedItemNS(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.W3c.Dom.Node>("removeNamedItemNS", arg0, arg1);
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("removeNamedItemNS", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Node;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/NamedNodeMap.html#setNamedItem(org.w3c.dom.Node)"/>

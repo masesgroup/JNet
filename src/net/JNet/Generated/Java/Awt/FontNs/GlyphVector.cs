@@ -180,7 +180,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="float"/></returns>
         public float[] GetGlyphPositions(int arg0, int arg1, float[] arg2)
         {
-            return IExecuteArray<float>("getGlyphPositions", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<float>("getGlyphPositions", "(II[F)[F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#getGlyphCode(int)"/>
@@ -200,7 +200,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="int"/></returns>
         public int[] GetGlyphCodes(int arg0, int arg1, int[] arg2)
         {
-            return IExecuteArray<int>("getGlyphCodes", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<int>("getGlyphCodes", "(II[I)[I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#getGlyphJustificationInfo(int)"/>
@@ -273,7 +273,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetOutline(float arg0, float arg1)
         {
-            return IExecute<Java.Awt.Shape>("getOutline", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Shape>("getOutline", "(FF)Ljava/awt/Shape;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#performDefaultLayout()"/>
@@ -289,7 +289,7 @@ namespace Java.Awt.FontNs
         /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
         public void SetGlyphPosition(int arg0, Java.Awt.Geom.Point2D arg1)
         {
-            IExecute("setGlyphPosition", arg0, arg1);
+            IExecuteWithSignature("setGlyphPosition", "(ILjava/awt/geom/Point2D;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#setGlyphTransform(int,java.awt.geom.AffineTransform)"/>
@@ -298,7 +298,7 @@ namespace Java.Awt.FontNs
         /// <param name="arg1"><see cref="Java.Awt.Geom.AffineTransform"/></param>
         public void SetGlyphTransform(int arg0, Java.Awt.Geom.AffineTransform arg1)
         {
-            IExecute("setGlyphTransform", arg0, arg1);
+            IExecuteWithSignature("setGlyphTransform", "(ILjava/awt/geom/AffineTransform;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#getGlyphCharIndex(int)"/>
@@ -318,7 +318,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="int"/></returns>
         public int[] GetGlyphCharIndices(int arg0, int arg1, int[] arg2)
         {
-            return IExecuteArray<int>("getGlyphCharIndices", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<int>("getGlyphCharIndices", "(II[I)[I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#getGlyphPixelBounds(int,java.awt.font.FontRenderContext,float,float)"/>
@@ -330,7 +330,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetGlyphPixelBounds(int arg0, Java.Awt.FontNs.FontRenderContext arg1, float arg2, float arg3)
         {
-            return IExecute<Java.Awt.Rectangle>("getGlyphPixelBounds", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.Rectangle>("getGlyphPixelBounds", "(ILjava/awt/font/FontRenderContext;FF)Ljava/awt/Rectangle;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#getPixelBounds(java.awt.font.FontRenderContext,float,float)"/>
@@ -341,7 +341,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetPixelBounds(Java.Awt.FontNs.FontRenderContext arg0, float arg1, float arg2)
         {
-            return IExecute<Java.Awt.Rectangle>("getPixelBounds", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Rectangle>("getPixelBounds", "(Ljava/awt/font/FontRenderContext;FF)Ljava/awt/Rectangle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/GlyphVector.html#getGlyphOutline(int,float,float)"/>
@@ -352,7 +352,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Shape"/></returns>
         public Java.Awt.Shape GetGlyphOutline(int arg0, float arg1, float arg2)
         {
-            return IExecute<Java.Awt.Shape>("getGlyphOutline", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Shape>("getGlyphOutline", "(IFF)Ljava/awt/Shape;", arg0, arg1, arg2);
         }
 
         #endregion

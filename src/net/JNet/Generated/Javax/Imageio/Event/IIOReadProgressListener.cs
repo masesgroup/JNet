@@ -465,7 +465,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg1"><see cref="float"/></param>
         public override void ImageProgress(Javax.Imageio.ImageReader arg0, float arg1)
         {
-            IExecute("imageProgress", arg0, arg1);
+            IExecuteWithSignature("imageProgress", "(Ljavax/imageio/ImageReader;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#imageStarted(javax.imageio.ImageReader,int)"/>
@@ -474,7 +474,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg1"><see cref="int"/></param>
         public override void ImageStarted(Javax.Imageio.ImageReader arg0, int arg1)
         {
-            IExecute("imageStarted", arg0, arg1);
+            IExecuteWithSignature("imageStarted", "(Ljavax/imageio/ImageReader;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#readAborted(javax.imageio.ImageReader)"/>
@@ -499,7 +499,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg1"><see cref="int"/></param>
         public override void SequenceStarted(Javax.Imageio.ImageReader arg0, int arg1)
         {
-            IExecute("sequenceStarted", arg0, arg1);
+            IExecuteWithSignature("sequenceStarted", "(Ljavax/imageio/ImageReader;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#thumbnailComplete(javax.imageio.ImageReader)"/>
@@ -516,7 +516,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg1"><see cref="float"/></param>
         public override void ThumbnailProgress(Javax.Imageio.ImageReader arg0, float arg1)
         {
-            IExecute("thumbnailProgress", arg0, arg1);
+            IExecuteWithSignature("thumbnailProgress", "(Ljavax/imageio/ImageReader;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/event/IIOReadProgressListener.html#thumbnailStarted(javax.imageio.ImageReader,int,int)"/>
@@ -526,7 +526,7 @@ namespace Javax.Imageio.Event
         /// <param name="arg2"><see cref="int"/></param>
         public override void ThumbnailStarted(Javax.Imageio.ImageReader arg0, int arg1, int arg2)
         {
-            IExecute("thumbnailStarted", arg0, arg1, arg2);
+            IExecuteWithSignature("thumbnailStarted", "(Ljavax/imageio/ImageReader;II)V", arg0, arg1, arg2);
         }
 
         #endregion

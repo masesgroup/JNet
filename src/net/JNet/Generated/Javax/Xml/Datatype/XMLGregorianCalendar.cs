@@ -218,7 +218,7 @@ namespace Javax.Xml.Datatype
         /// <returns><see cref="Java.Util.GregorianCalendar"/></returns>
         public Java.Util.GregorianCalendar ToGregorianCalendar(Java.Util.TimeZone arg0, Java.Util.Locale arg1, Javax.Xml.Datatype.XMLGregorianCalendar arg2)
         {
-            return IExecute<Java.Util.GregorianCalendar>("toGregorianCalendar", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Util.GregorianCalendar>("toGregorianCalendar", "(Ljava/util/TimeZone;Ljava/util/Locale;Ljavax/xml/datatype/XMLGregorianCalendar;)Ljava/util/GregorianCalendar;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#getTimeZone(int)"/>
@@ -284,7 +284,7 @@ namespace Javax.Xml.Datatype
         /// <param name="arg3"><see cref="int"/></param>
         public void SetTime(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setTime", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setTime", "(IIII)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setTime(int,int,int,java.math.BigDecimal)"/>
@@ -295,7 +295,7 @@ namespace Javax.Xml.Datatype
         /// <param name="arg3"><see cref="Java.Math.BigDecimal"/></param>
         public void SetTime(int arg0, int arg1, int arg2, Java.Math.BigDecimal arg3)
         {
-            IExecute("setTime", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setTime", "(IIILjava/math/BigDecimal;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/datatype/XMLGregorianCalendar.html#setTime(int,int,int)"/>
@@ -305,7 +305,7 @@ namespace Javax.Xml.Datatype
         /// <param name="arg2"><see cref="int"/></param>
         public void SetTime(int arg0, int arg1, int arg2)
         {
-            IExecute("setTime", arg0, arg1, arg2);
+            IExecuteWithSignature("setTime", "(III)V", arg0, arg1, arg2);
         }
 
         #endregion

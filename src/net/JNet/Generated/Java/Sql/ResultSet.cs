@@ -1540,7 +1540,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public T GetObject<T>(int arg0, Java.Lang.Class arg1)
         {
-            return IExecute<T>("getObject", arg0, arg1);
+            return IExecuteWithSignature<T>("getObject", "(ILjava/lang/Class;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(java.lang.String,java.lang.Class)"/>
@@ -1552,7 +1552,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public T GetObject<T>(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
-            return IExecute<T>("getObject", arg0, arg1);
+            return IExecuteWithSignature<T>("getObject", "(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#absolute(int)"/>
@@ -1910,7 +1910,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public object GetObject(int arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
         {
-            return IExecute("getObject", arg0, arg1);
+            return IExecuteWithSignature("getObject", "(ILjava/util/Map;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(int)"/>
@@ -1931,7 +1931,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public object GetObject(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg1)
         {
-            return IExecute("getObject", arg0, arg1);
+            return IExecuteWithSignature("getObject", "(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getObject(java.lang.String)"/>
@@ -2092,7 +2092,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Date GetDate(int arg0, Java.Util.Calendar arg1)
         {
-            return IExecute<Java.Sql.Date>("getDate", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.Date>("getDate", "(ILjava/util/Calendar;)Ljava/sql/Date;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(int)"/>
@@ -2113,7 +2113,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Date GetDate(Java.Lang.String arg0, Java.Util.Calendar arg1)
         {
-            return IExecute<Java.Sql.Date>("getDate", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.Date>("getDate", "(Ljava/lang/String;Ljava/util/Calendar;)Ljava/sql/Date;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getDate(java.lang.String)"/>
@@ -2214,7 +2214,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Time GetTime(int arg0, Java.Util.Calendar arg1)
         {
-            return IExecute<Java.Sql.Time>("getTime", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.Time>("getTime", "(ILjava/util/Calendar;)Ljava/sql/Time;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(int)"/>
@@ -2235,7 +2235,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Time GetTime(Java.Lang.String arg0, Java.Util.Calendar arg1)
         {
-            return IExecute<Java.Sql.Time>("getTime", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.Time>("getTime", "(Ljava/lang/String;Ljava/util/Calendar;)Ljava/sql/Time;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTime(java.lang.String)"/>
@@ -2256,7 +2256,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Timestamp GetTimestamp(int arg0, Java.Util.Calendar arg1)
         {
-            return IExecute<Java.Sql.Timestamp>("getTimestamp", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.Timestamp>("getTimestamp", "(ILjava/util/Calendar;)Ljava/sql/Timestamp;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(int)"/>
@@ -2277,7 +2277,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Timestamp GetTimestamp(Java.Lang.String arg0, Java.Util.Calendar arg1)
         {
-            return IExecute<Java.Sql.Timestamp>("getTimestamp", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.Timestamp>("getTimestamp", "(Ljava/lang/String;Ljava/util/Calendar;)Ljava/sql/Timestamp;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#getTimestamp(java.lang.String)"/>
@@ -2417,7 +2417,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateArray(int arg0, Java.Sql.Array arg1)
         {
-            IExecute("updateArray", arg0, arg1);
+            IExecuteWithSignature("updateArray", "(ILjava/sql/Array;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateArray(java.lang.String,java.sql.Array)"/>
@@ -2427,7 +2427,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateArray(Java.Lang.String arg0, Java.Sql.Array arg1)
         {
-            IExecute("updateArray", arg0, arg1);
+            IExecuteWithSignature("updateArray", "(Ljava/lang/String;Ljava/sql/Array;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(int,java.io.InputStream,int)"/>
@@ -2438,7 +2438,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateAsciiStream(int arg0, Java.Io.InputStream arg1, int arg2)
         {
-            IExecute("updateAsciiStream", arg0, arg1, arg2);
+            IExecuteWithSignature("updateAsciiStream", "(ILjava/io/InputStream;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(int,java.io.InputStream,long)"/>
@@ -2449,7 +2449,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateAsciiStream(int arg0, Java.Io.InputStream arg1, long arg2)
         {
-            IExecute("updateAsciiStream", arg0, arg1, arg2);
+            IExecuteWithSignature("updateAsciiStream", "(ILjava/io/InputStream;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(int,java.io.InputStream)"/>
@@ -2459,7 +2459,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateAsciiStream(int arg0, Java.Io.InputStream arg1)
         {
-            IExecute("updateAsciiStream", arg0, arg1);
+            IExecuteWithSignature("updateAsciiStream", "(ILjava/io/InputStream;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(java.lang.String,java.io.InputStream,int)"/>
@@ -2470,7 +2470,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateAsciiStream(Java.Lang.String arg0, Java.Io.InputStream arg1, int arg2)
         {
-            IExecute("updateAsciiStream", arg0, arg1, arg2);
+            IExecuteWithSignature("updateAsciiStream", "(Ljava/lang/String;Ljava/io/InputStream;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(java.lang.String,java.io.InputStream,long)"/>
@@ -2481,7 +2481,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateAsciiStream(Java.Lang.String arg0, Java.Io.InputStream arg1, long arg2)
         {
-            IExecute("updateAsciiStream", arg0, arg1, arg2);
+            IExecuteWithSignature("updateAsciiStream", "(Ljava/lang/String;Ljava/io/InputStream;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateAsciiStream(java.lang.String,java.io.InputStream)"/>
@@ -2491,7 +2491,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateAsciiStream(Java.Lang.String arg0, Java.Io.InputStream arg1)
         {
-            IExecute("updateAsciiStream", arg0, arg1);
+            IExecuteWithSignature("updateAsciiStream", "(Ljava/lang/String;Ljava/io/InputStream;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBigDecimal(int,java.math.BigDecimal)"/>
@@ -2501,7 +2501,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBigDecimal(int arg0, Java.Math.BigDecimal arg1)
         {
-            IExecute("updateBigDecimal", arg0, arg1);
+            IExecuteWithSignature("updateBigDecimal", "(ILjava/math/BigDecimal;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBigDecimal(java.lang.String,java.math.BigDecimal)"/>
@@ -2511,7 +2511,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBigDecimal(Java.Lang.String arg0, Java.Math.BigDecimal arg1)
         {
-            IExecute("updateBigDecimal", arg0, arg1);
+            IExecuteWithSignature("updateBigDecimal", "(Ljava/lang/String;Ljava/math/BigDecimal;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(int,java.io.InputStream,int)"/>
@@ -2522,7 +2522,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBinaryStream(int arg0, Java.Io.InputStream arg1, int arg2)
         {
-            IExecute("updateBinaryStream", arg0, arg1, arg2);
+            IExecuteWithSignature("updateBinaryStream", "(ILjava/io/InputStream;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(int,java.io.InputStream,long)"/>
@@ -2533,7 +2533,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBinaryStream(int arg0, Java.Io.InputStream arg1, long arg2)
         {
-            IExecute("updateBinaryStream", arg0, arg1, arg2);
+            IExecuteWithSignature("updateBinaryStream", "(ILjava/io/InputStream;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(int,java.io.InputStream)"/>
@@ -2543,7 +2543,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBinaryStream(int arg0, Java.Io.InputStream arg1)
         {
-            IExecute("updateBinaryStream", arg0, arg1);
+            IExecuteWithSignature("updateBinaryStream", "(ILjava/io/InputStream;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(java.lang.String,java.io.InputStream,int)"/>
@@ -2554,7 +2554,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBinaryStream(Java.Lang.String arg0, Java.Io.InputStream arg1, int arg2)
         {
-            IExecute("updateBinaryStream", arg0, arg1, arg2);
+            IExecuteWithSignature("updateBinaryStream", "(Ljava/lang/String;Ljava/io/InputStream;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(java.lang.String,java.io.InputStream,long)"/>
@@ -2565,7 +2565,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBinaryStream(Java.Lang.String arg0, Java.Io.InputStream arg1, long arg2)
         {
-            IExecute("updateBinaryStream", arg0, arg1, arg2);
+            IExecuteWithSignature("updateBinaryStream", "(Ljava/lang/String;Ljava/io/InputStream;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBinaryStream(java.lang.String,java.io.InputStream)"/>
@@ -2575,7 +2575,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBinaryStream(Java.Lang.String arg0, Java.Io.InputStream arg1)
         {
-            IExecute("updateBinaryStream", arg0, arg1);
+            IExecuteWithSignature("updateBinaryStream", "(Ljava/lang/String;Ljava/io/InputStream;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(int,java.io.InputStream,long)"/>
@@ -2586,7 +2586,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBlob(int arg0, Java.Io.InputStream arg1, long arg2)
         {
-            IExecute("updateBlob", arg0, arg1, arg2);
+            IExecuteWithSignature("updateBlob", "(ILjava/io/InputStream;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(int,java.io.InputStream)"/>
@@ -2596,7 +2596,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBlob(int arg0, Java.Io.InputStream arg1)
         {
-            IExecute("updateBlob", arg0, arg1);
+            IExecuteWithSignature("updateBlob", "(ILjava/io/InputStream;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(int,java.sql.Blob)"/>
@@ -2606,7 +2606,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBlob(int arg0, Java.Sql.Blob arg1)
         {
-            IExecute("updateBlob", arg0, arg1);
+            IExecuteWithSignature("updateBlob", "(ILjava/sql/Blob;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(java.lang.String,java.io.InputStream,long)"/>
@@ -2617,7 +2617,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBlob(Java.Lang.String arg0, Java.Io.InputStream arg1, long arg2)
         {
-            IExecute("updateBlob", arg0, arg1, arg2);
+            IExecuteWithSignature("updateBlob", "(Ljava/lang/String;Ljava/io/InputStream;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(java.lang.String,java.io.InputStream)"/>
@@ -2627,7 +2627,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBlob(Java.Lang.String arg0, Java.Io.InputStream arg1)
         {
-            IExecute("updateBlob", arg0, arg1);
+            IExecuteWithSignature("updateBlob", "(Ljava/lang/String;Ljava/io/InputStream;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBlob(java.lang.String,java.sql.Blob)"/>
@@ -2637,7 +2637,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBlob(Java.Lang.String arg0, Java.Sql.Blob arg1)
         {
-            IExecute("updateBlob", arg0, arg1);
+            IExecuteWithSignature("updateBlob", "(Ljava/lang/String;Ljava/sql/Blob;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBoolean(int,boolean)"/>
@@ -2647,7 +2647,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBoolean(int arg0, bool arg1)
         {
-            IExecute("updateBoolean", arg0, arg1);
+            IExecuteWithSignature("updateBoolean", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBoolean(java.lang.String,boolean)"/>
@@ -2657,7 +2657,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBoolean(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("updateBoolean", arg0, arg1);
+            IExecuteWithSignature("updateBoolean", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateByte(int,byte)"/>
@@ -2667,7 +2667,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateByte(int arg0, byte arg1)
         {
-            IExecute("updateByte", arg0, arg1);
+            IExecuteWithSignature("updateByte", "(IB)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateByte(java.lang.String,byte)"/>
@@ -2677,7 +2677,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateByte(Java.Lang.String arg0, byte arg1)
         {
-            IExecute("updateByte", arg0, arg1);
+            IExecuteWithSignature("updateByte", "(Ljava/lang/String;B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBytes(int,byte[])"/>
@@ -2687,7 +2687,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBytes(int arg0, byte[] arg1)
         {
-            IExecute("updateBytes", arg0, arg1);
+            IExecuteWithSignature("updateBytes", "(I[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateBytes(java.lang.String,byte[])"/>
@@ -2697,7 +2697,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateBytes(Java.Lang.String arg0, byte[] arg1)
         {
-            IExecute("updateBytes", arg0, arg1);
+            IExecuteWithSignature("updateBytes", "(Ljava/lang/String;[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(int,java.io.Reader,int)"/>
@@ -2708,7 +2708,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateCharacterStream(int arg0, Java.Io.Reader arg1, int arg2)
         {
-            IExecute("updateCharacterStream", arg0, arg1, arg2);
+            IExecuteWithSignature("updateCharacterStream", "(ILjava/io/Reader;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(int,java.io.Reader,long)"/>
@@ -2719,7 +2719,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateCharacterStream(int arg0, Java.Io.Reader arg1, long arg2)
         {
-            IExecute("updateCharacterStream", arg0, arg1, arg2);
+            IExecuteWithSignature("updateCharacterStream", "(ILjava/io/Reader;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(int,java.io.Reader)"/>
@@ -2729,7 +2729,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateCharacterStream(int arg0, Java.Io.Reader arg1)
         {
-            IExecute("updateCharacterStream", arg0, arg1);
+            IExecuteWithSignature("updateCharacterStream", "(ILjava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(java.lang.String,java.io.Reader,int)"/>
@@ -2740,7 +2740,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1, int arg2)
         {
-            IExecute("updateCharacterStream", arg0, arg1, arg2);
+            IExecuteWithSignature("updateCharacterStream", "(Ljava/lang/String;Ljava/io/Reader;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(java.lang.String,java.io.Reader,long)"/>
@@ -2751,7 +2751,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1, long arg2)
         {
-            IExecute("updateCharacterStream", arg0, arg1, arg2);
+            IExecuteWithSignature("updateCharacterStream", "(Ljava/lang/String;Ljava/io/Reader;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateCharacterStream(java.lang.String,java.io.Reader)"/>
@@ -2761,7 +2761,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1)
         {
-            IExecute("updateCharacterStream", arg0, arg1);
+            IExecuteWithSignature("updateCharacterStream", "(Ljava/lang/String;Ljava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(int,java.io.Reader,long)"/>
@@ -2772,7 +2772,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateClob(int arg0, Java.Io.Reader arg1, long arg2)
         {
-            IExecute("updateClob", arg0, arg1, arg2);
+            IExecuteWithSignature("updateClob", "(ILjava/io/Reader;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(int,java.io.Reader)"/>
@@ -2782,7 +2782,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateClob(int arg0, Java.Io.Reader arg1)
         {
-            IExecute("updateClob", arg0, arg1);
+            IExecuteWithSignature("updateClob", "(ILjava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(int,java.sql.Clob)"/>
@@ -2792,7 +2792,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateClob(int arg0, Java.Sql.Clob arg1)
         {
-            IExecute("updateClob", arg0, arg1);
+            IExecuteWithSignature("updateClob", "(ILjava/sql/Clob;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(java.lang.String,java.io.Reader,long)"/>
@@ -2803,7 +2803,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateClob(Java.Lang.String arg0, Java.Io.Reader arg1, long arg2)
         {
-            IExecute("updateClob", arg0, arg1, arg2);
+            IExecuteWithSignature("updateClob", "(Ljava/lang/String;Ljava/io/Reader;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(java.lang.String,java.io.Reader)"/>
@@ -2813,7 +2813,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateClob(Java.Lang.String arg0, Java.Io.Reader arg1)
         {
-            IExecute("updateClob", arg0, arg1);
+            IExecuteWithSignature("updateClob", "(Ljava/lang/String;Ljava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateClob(java.lang.String,java.sql.Clob)"/>
@@ -2823,7 +2823,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateClob(Java.Lang.String arg0, Java.Sql.Clob arg1)
         {
-            IExecute("updateClob", arg0, arg1);
+            IExecuteWithSignature("updateClob", "(Ljava/lang/String;Ljava/sql/Clob;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDate(int,java.sql.Date)"/>
@@ -2833,7 +2833,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateDate(int arg0, Java.Sql.Date arg1)
         {
-            IExecute("updateDate", arg0, arg1);
+            IExecuteWithSignature("updateDate", "(ILjava/sql/Date;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDate(java.lang.String,java.sql.Date)"/>
@@ -2843,7 +2843,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateDate(Java.Lang.String arg0, Java.Sql.Date arg1)
         {
-            IExecute("updateDate", arg0, arg1);
+            IExecuteWithSignature("updateDate", "(Ljava/lang/String;Ljava/sql/Date;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDouble(int,double)"/>
@@ -2853,7 +2853,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateDouble(int arg0, double arg1)
         {
-            IExecute("updateDouble", arg0, arg1);
+            IExecuteWithSignature("updateDouble", "(ID)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateDouble(java.lang.String,double)"/>
@@ -2863,7 +2863,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateDouble(Java.Lang.String arg0, double arg1)
         {
-            IExecute("updateDouble", arg0, arg1);
+            IExecuteWithSignature("updateDouble", "(Ljava/lang/String;D)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateFloat(int,float)"/>
@@ -2873,7 +2873,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateFloat(int arg0, float arg1)
         {
-            IExecute("updateFloat", arg0, arg1);
+            IExecuteWithSignature("updateFloat", "(IF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateFloat(java.lang.String,float)"/>
@@ -2883,7 +2883,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateFloat(Java.Lang.String arg0, float arg1)
         {
-            IExecute("updateFloat", arg0, arg1);
+            IExecuteWithSignature("updateFloat", "(Ljava/lang/String;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateInt(int,int)"/>
@@ -2893,7 +2893,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateInt(int arg0, int arg1)
         {
-            IExecute("updateInt", arg0, arg1);
+            IExecuteWithSignature("updateInt", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateInt(java.lang.String,int)"/>
@@ -2903,7 +2903,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateInt(Java.Lang.String arg0, int arg1)
         {
-            IExecute("updateInt", arg0, arg1);
+            IExecuteWithSignature("updateInt", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateLong(int,long)"/>
@@ -2913,7 +2913,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateLong(int arg0, long arg1)
         {
-            IExecute("updateLong", arg0, arg1);
+            IExecuteWithSignature("updateLong", "(IJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateLong(java.lang.String,long)"/>
@@ -2923,7 +2923,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateLong(Java.Lang.String arg0, long arg1)
         {
-            IExecute("updateLong", arg0, arg1);
+            IExecuteWithSignature("updateLong", "(Ljava/lang/String;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(int,java.io.Reader,long)"/>
@@ -2934,7 +2934,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNCharacterStream(int arg0, Java.Io.Reader arg1, long arg2)
         {
-            IExecute("updateNCharacterStream", arg0, arg1, arg2);
+            IExecuteWithSignature("updateNCharacterStream", "(ILjava/io/Reader;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(int,java.io.Reader)"/>
@@ -2944,7 +2944,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNCharacterStream(int arg0, Java.Io.Reader arg1)
         {
-            IExecute("updateNCharacterStream", arg0, arg1);
+            IExecuteWithSignature("updateNCharacterStream", "(ILjava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(java.lang.String,java.io.Reader,long)"/>
@@ -2955,7 +2955,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1, long arg2)
         {
-            IExecute("updateNCharacterStream", arg0, arg1, arg2);
+            IExecuteWithSignature("updateNCharacterStream", "(Ljava/lang/String;Ljava/io/Reader;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNCharacterStream(java.lang.String,java.io.Reader)"/>
@@ -2965,7 +2965,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1)
         {
-            IExecute("updateNCharacterStream", arg0, arg1);
+            IExecuteWithSignature("updateNCharacterStream", "(Ljava/lang/String;Ljava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(int,java.io.Reader,long)"/>
@@ -2976,7 +2976,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNClob(int arg0, Java.Io.Reader arg1, long arg2)
         {
-            IExecute("updateNClob", arg0, arg1, arg2);
+            IExecuteWithSignature("updateNClob", "(ILjava/io/Reader;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(int,java.io.Reader)"/>
@@ -2986,7 +2986,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNClob(int arg0, Java.Io.Reader arg1)
         {
-            IExecute("updateNClob", arg0, arg1);
+            IExecuteWithSignature("updateNClob", "(ILjava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(int,java.sql.NClob)"/>
@@ -2996,7 +2996,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNClob(int arg0, Java.Sql.NClob arg1)
         {
-            IExecute("updateNClob", arg0, arg1);
+            IExecuteWithSignature("updateNClob", "(ILjava/sql/NClob;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(java.lang.String,java.io.Reader,long)"/>
@@ -3007,7 +3007,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNClob(Java.Lang.String arg0, Java.Io.Reader arg1, long arg2)
         {
-            IExecute("updateNClob", arg0, arg1, arg2);
+            IExecuteWithSignature("updateNClob", "(Ljava/lang/String;Ljava/io/Reader;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(java.lang.String,java.io.Reader)"/>
@@ -3017,7 +3017,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNClob(Java.Lang.String arg0, Java.Io.Reader arg1)
         {
-            IExecute("updateNClob", arg0, arg1);
+            IExecuteWithSignature("updateNClob", "(Ljava/lang/String;Ljava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNClob(java.lang.String,java.sql.NClob)"/>
@@ -3027,7 +3027,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNClob(Java.Lang.String arg0, Java.Sql.NClob arg1)
         {
-            IExecute("updateNClob", arg0, arg1);
+            IExecuteWithSignature("updateNClob", "(Ljava/lang/String;Ljava/sql/NClob;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNString(int,java.lang.String)"/>
@@ -3037,7 +3037,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNString(int arg0, Java.Lang.String arg1)
         {
-            IExecute("updateNString", arg0, arg1);
+            IExecuteWithSignature("updateNString", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNString(java.lang.String,java.lang.String)"/>
@@ -3047,7 +3047,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateNString(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("updateNString", arg0, arg1);
+            IExecuteWithSignature("updateNString", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateNull(int)"/>
@@ -3076,7 +3076,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(int arg0, object arg1, int arg2)
         {
-            IExecute("updateObject", arg0, arg1, arg2);
+            IExecuteWithSignature("updateObject", "(ILjava/lang/Object;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object)"/>
@@ -3086,7 +3086,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(int arg0, object arg1)
         {
-            IExecute("updateObject", arg0, arg1);
+            IExecuteWithSignature("updateObject", "(ILjava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,int)"/>
@@ -3097,7 +3097,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(Java.Lang.String arg0, object arg1, int arg2)
         {
-            IExecute("updateObject", arg0, arg1, arg2);
+            IExecuteWithSignature("updateObject", "(Ljava/lang/String;Ljava/lang/Object;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object)"/>
@@ -3107,7 +3107,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(Java.Lang.String arg0, object arg1)
         {
-            IExecute("updateObject", arg0, arg1);
+            IExecuteWithSignature("updateObject", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRef(int,java.sql.Ref)"/>
@@ -3117,7 +3117,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateRef(int arg0, Java.Sql.Ref arg1)
         {
-            IExecute("updateRef", arg0, arg1);
+            IExecuteWithSignature("updateRef", "(ILjava/sql/Ref;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRef(java.lang.String,java.sql.Ref)"/>
@@ -3127,7 +3127,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateRef(Java.Lang.String arg0, Java.Sql.Ref arg1)
         {
-            IExecute("updateRef", arg0, arg1);
+            IExecuteWithSignature("updateRef", "(Ljava/lang/String;Ljava/sql/Ref;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRow()"/>
@@ -3145,7 +3145,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateRowId(int arg0, Java.Sql.RowId arg1)
         {
-            IExecute("updateRowId", arg0, arg1);
+            IExecuteWithSignature("updateRowId", "(ILjava/sql/RowId;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateRowId(java.lang.String,java.sql.RowId)"/>
@@ -3155,7 +3155,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateRowId(Java.Lang.String arg0, Java.Sql.RowId arg1)
         {
-            IExecute("updateRowId", arg0, arg1);
+            IExecuteWithSignature("updateRowId", "(Ljava/lang/String;Ljava/sql/RowId;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateShort(int,short)"/>
@@ -3165,7 +3165,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateShort(int arg0, short arg1)
         {
-            IExecute("updateShort", arg0, arg1);
+            IExecuteWithSignature("updateShort", "(IS)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateShort(java.lang.String,short)"/>
@@ -3175,7 +3175,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateShort(Java.Lang.String arg0, short arg1)
         {
-            IExecute("updateShort", arg0, arg1);
+            IExecuteWithSignature("updateShort", "(Ljava/lang/String;S)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateSQLXML(int,java.sql.SQLXML)"/>
@@ -3185,7 +3185,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateSQLXML(int arg0, Java.Sql.SQLXML arg1)
         {
-            IExecute("updateSQLXML", arg0, arg1);
+            IExecuteWithSignature("updateSQLXML", "(ILjava/sql/SQLXML;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateSQLXML(java.lang.String,java.sql.SQLXML)"/>
@@ -3195,7 +3195,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateSQLXML(Java.Lang.String arg0, Java.Sql.SQLXML arg1)
         {
-            IExecute("updateSQLXML", arg0, arg1);
+            IExecuteWithSignature("updateSQLXML", "(Ljava/lang/String;Ljava/sql/SQLXML;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateString(int,java.lang.String)"/>
@@ -3205,7 +3205,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateString(int arg0, Java.Lang.String arg1)
         {
-            IExecute("updateString", arg0, arg1);
+            IExecuteWithSignature("updateString", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateString(java.lang.String,java.lang.String)"/>
@@ -3215,7 +3215,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateString(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("updateString", arg0, arg1);
+            IExecuteWithSignature("updateString", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTime(int,java.sql.Time)"/>
@@ -3225,7 +3225,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateTime(int arg0, Java.Sql.Time arg1)
         {
-            IExecute("updateTime", arg0, arg1);
+            IExecuteWithSignature("updateTime", "(ILjava/sql/Time;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTime(java.lang.String,java.sql.Time)"/>
@@ -3235,7 +3235,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateTime(Java.Lang.String arg0, Java.Sql.Time arg1)
         {
-            IExecute("updateTime", arg0, arg1);
+            IExecuteWithSignature("updateTime", "(Ljava/lang/String;Ljava/sql/Time;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTimestamp(int,java.sql.Timestamp)"/>
@@ -3245,7 +3245,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateTimestamp(int arg0, Java.Sql.Timestamp arg1)
         {
-            IExecute("updateTimestamp", arg0, arg1);
+            IExecuteWithSignature("updateTimestamp", "(ILjava/sql/Timestamp;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateTimestamp(java.lang.String,java.sql.Timestamp)"/>
@@ -3255,7 +3255,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateTimestamp(Java.Lang.String arg0, Java.Sql.Timestamp arg1)
         {
-            IExecute("updateTimestamp", arg0, arg1);
+            IExecuteWithSignature("updateTimestamp", "(Ljava/lang/String;Ljava/sql/Timestamp;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object,java.sql.SQLType,int)"/>
@@ -3267,7 +3267,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(int arg0, object arg1, Java.Sql.SQLType arg2, int arg3)
         {
-            IExecute("updateObject", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("updateObject", "(ILjava/lang/Object;Ljava/sql/SQLType;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(int,java.lang.Object,java.sql.SQLType)"/>
@@ -3278,7 +3278,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(int arg0, object arg1, Java.Sql.SQLType arg2)
         {
-            IExecute("updateObject", arg0, arg1, arg2);
+            IExecuteWithSignature("updateObject", "(ILjava/lang/Object;Ljava/sql/SQLType;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,java.sql.SQLType,int)"/>
@@ -3290,7 +3290,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(Java.Lang.String arg0, object arg1, Java.Sql.SQLType arg2, int arg3)
         {
-            IExecute("updateObject", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("updateObject", "(Ljava/lang/String;Ljava/lang/Object;Ljava/sql/SQLType;I)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/ResultSet.html#updateObject(java.lang.String,java.lang.Object,java.sql.SQLType)"/>
@@ -3301,7 +3301,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void UpdateObject(Java.Lang.String arg0, object arg1, Java.Sql.SQLType arg2)
         {
-            IExecute("updateObject", arg0, arg1, arg2);
+            IExecuteWithSignature("updateObject", "(Ljava/lang/String;Ljava/lang/Object;Ljava/sql/SQLType;)V", arg0, arg1, arg2);
         }
 
         #endregion

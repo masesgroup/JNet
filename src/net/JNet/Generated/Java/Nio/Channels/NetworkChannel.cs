@@ -160,7 +160,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.NetworkChannel SetOption<T>(Java.Net.SocketOption<T> arg0, T arg1)
         {
-            return IExecute<Java.Nio.Channels.NetworkChannel>("setOption", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("setOption", "(Ljava/net/SocketOption;Ljava/lang/Object;)Ljava/nio/channels/NetworkChannel;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/NetworkChannel.html#getOption(java.net.SocketOption)"/>

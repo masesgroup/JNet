@@ -138,7 +138,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public static Java.Time.ZonedDateTime Of(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, Java.Time.ZoneId arg7)
         {
-            return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<Java.Time.ZonedDateTime>(LocalBridgeClazz, "of", "(IIIIIIILjava/time/ZoneId;)Ljava/time/ZonedDateTime;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#of(java.time.LocalDate,java.time.LocalTime,java.time.ZoneId)"/>
@@ -149,7 +149,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public static Java.Time.ZonedDateTime Of(Java.Time.LocalDate arg0, Java.Time.LocalTime arg1, Java.Time.ZoneId arg2)
         {
-            return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.ZonedDateTime>(LocalBridgeClazz, "of", "(Ljava/time/LocalDate;Ljava/time/LocalTime;Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#of(java.time.LocalDateTime,java.time.ZoneId)"/>
@@ -159,7 +159,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public static Java.Time.ZonedDateTime Of(Java.Time.LocalDateTime arg0, Java.Time.ZoneId arg1)
         {
-            return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.ZonedDateTime>(LocalBridgeClazz, "of", "(Ljava/time/LocalDateTime;Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#ofInstant(java.time.Instant,java.time.ZoneId)"/>
@@ -169,7 +169,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public static Java.Time.ZonedDateTime OfInstant(Java.Time.Instant arg0, Java.Time.ZoneId arg1)
         {
-            return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "ofInstant", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.ZonedDateTime>(LocalBridgeClazz, "ofInstant", "(Ljava/time/Instant;Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#ofInstant(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneId)"/>
@@ -180,7 +180,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public static Java.Time.ZonedDateTime OfInstant(Java.Time.LocalDateTime arg0, Java.Time.ZoneOffset arg1, Java.Time.ZoneId arg2)
         {
-            return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "ofInstant", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.ZonedDateTime>(LocalBridgeClazz, "ofInstant", "(Ljava/time/LocalDateTime;Ljava/time/ZoneOffset;Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#ofLocal(java.time.LocalDateTime,java.time.ZoneId,java.time.ZoneOffset)"/>
@@ -191,7 +191,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public static Java.Time.ZonedDateTime OfLocal(Java.Time.LocalDateTime arg0, Java.Time.ZoneId arg1, Java.Time.ZoneOffset arg2)
         {
-            return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "ofLocal", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.ZonedDateTime>(LocalBridgeClazz, "ofLocal", "(Ljava/time/LocalDateTime;Ljava/time/ZoneId;Ljava/time/ZoneOffset;)Ljava/time/ZonedDateTime;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#ofStrict(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneId)"/>
@@ -202,7 +202,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public static Java.Time.ZonedDateTime OfStrict(Java.Time.LocalDateTime arg0, Java.Time.ZoneOffset arg1, Java.Time.ZoneId arg2)
         {
-            return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "ofStrict", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.ZonedDateTime>(LocalBridgeClazz, "ofStrict", "(Ljava/time/LocalDateTime;Ljava/time/ZoneOffset;Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
@@ -212,7 +212,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public static Java.Time.ZonedDateTime Parse(Java.Lang.CharSequence arg0, Java.Time.Format.DateTimeFormatter arg1)
         {
-            return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "parse", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.ZonedDateTime>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;Ljava/time/format/DateTimeFormatter;)Ljava/time/ZonedDateTime;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/ZonedDateTime.html#parse(java.lang.CharSequence)"/>
@@ -682,7 +682,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long Until(Java.Time.Temporal.Temporal arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<long>("until", arg0, arg1);
+            return IExecuteWithSignature<long>("until", "(Ljava/time/temporal/Temporal;Ljava/time/temporal/TemporalUnit;)J", arg0, arg1);
         }
 
         #endregion

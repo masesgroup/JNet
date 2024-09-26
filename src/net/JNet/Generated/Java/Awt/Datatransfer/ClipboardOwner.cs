@@ -123,7 +123,7 @@ namespace Java.Awt.Datatransfer
         /// <param name="arg1"><see cref="Java.Awt.Datatransfer.Transferable"/></param>
         public void LostOwnership(Java.Awt.Datatransfer.Clipboard arg0, Java.Awt.Datatransfer.Transferable arg1)
         {
-            IExecute("lostOwnership", arg0, arg1);
+            IExecuteWithSignature("lostOwnership", "(Ljava/awt/datatransfer/Clipboard;Ljava/awt/datatransfer/Transferable;)V", arg0, arg1);
         }
 
         #endregion

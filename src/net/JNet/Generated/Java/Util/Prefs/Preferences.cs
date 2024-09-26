@@ -162,7 +162,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="bool"/></returns>
         public bool GetBoolean(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<bool>("getBoolean", arg0, arg1);
+            return IExecuteWithSignature<bool>("getBoolean", "(Ljava/lang/String;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#isUserNode()"/>
@@ -190,7 +190,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="byte"/></returns>
         public byte[] GetByteArray(Java.Lang.String arg0, byte[] arg1)
         {
-            return IExecuteArray<byte>("getByteArray", arg0, arg1);
+            return IExecuteWithSignatureArray<byte>("getByteArray", "(Ljava/lang/String;[B)[B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getDouble(java.lang.String,double)"/>
@@ -200,7 +200,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="double"/></returns>
         public double GetDouble(Java.Lang.String arg0, double arg1)
         {
-            return IExecute<double>("getDouble", arg0, arg1);
+            return IExecuteWithSignature<double>("getDouble", "(Ljava/lang/String;D)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getFloat(java.lang.String,float)"/>
@@ -210,7 +210,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="float"/></returns>
         public float GetFloat(Java.Lang.String arg0, float arg1)
         {
-            return IExecute<float>("getFloat", arg0, arg1);
+            return IExecuteWithSignature<float>("getFloat", "(Ljava/lang/String;F)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#getInt(java.lang.String,int)"/>
@@ -220,7 +220,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="int"/></returns>
         public int GetInt(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("getInt", arg0, arg1);
+            return IExecuteWithSignature<int>("getInt", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#absolutePath()"/>
@@ -238,7 +238,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Get(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("get", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("get", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#name()"/>
@@ -291,7 +291,7 @@ namespace Java.Util.Prefs
         /// <returns><see cref="long"/></returns>
         public long GetLong(Java.Lang.String arg0, long arg1)
         {
-            return IExecute<long>("getLong", arg0, arg1);
+            return IExecuteWithSignature<long>("getLong", "(Ljava/lang/String;J)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#addNodeChangeListener(java.util.prefs.NodeChangeListener)"/>
@@ -352,7 +352,7 @@ namespace Java.Util.Prefs
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void Put(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("put", arg0, arg1);
+            IExecuteWithSignature("put", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putBoolean(java.lang.String,boolean)"/>
@@ -361,7 +361,7 @@ namespace Java.Util.Prefs
         /// <param name="arg1"><see cref="bool"/></param>
         public void PutBoolean(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("putBoolean", arg0, arg1);
+            IExecuteWithSignature("putBoolean", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putByteArray(java.lang.String,byte[])"/>
@@ -370,7 +370,7 @@ namespace Java.Util.Prefs
         /// <param name="arg1"><see cref="byte"/></param>
         public void PutByteArray(Java.Lang.String arg0, byte[] arg1)
         {
-            IExecute("putByteArray", arg0, arg1);
+            IExecuteWithSignature("putByteArray", "(Ljava/lang/String;[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putDouble(java.lang.String,double)"/>
@@ -379,7 +379,7 @@ namespace Java.Util.Prefs
         /// <param name="arg1"><see cref="double"/></param>
         public void PutDouble(Java.Lang.String arg0, double arg1)
         {
-            IExecute("putDouble", arg0, arg1);
+            IExecuteWithSignature("putDouble", "(Ljava/lang/String;D)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putFloat(java.lang.String,float)"/>
@@ -388,7 +388,7 @@ namespace Java.Util.Prefs
         /// <param name="arg1"><see cref="float"/></param>
         public void PutFloat(Java.Lang.String arg0, float arg1)
         {
-            IExecute("putFloat", arg0, arg1);
+            IExecuteWithSignature("putFloat", "(Ljava/lang/String;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putInt(java.lang.String,int)"/>
@@ -397,7 +397,7 @@ namespace Java.Util.Prefs
         /// <param name="arg1"><see cref="int"/></param>
         public void PutInt(Java.Lang.String arg0, int arg1)
         {
-            IExecute("putInt", arg0, arg1);
+            IExecuteWithSignature("putInt", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#putLong(java.lang.String,long)"/>
@@ -406,7 +406,7 @@ namespace Java.Util.Prefs
         /// <param name="arg1"><see cref="long"/></param>
         public void PutLong(Java.Lang.String arg0, long arg1)
         {
-            IExecute("putLong", arg0, arg1);
+            IExecuteWithSignature("putLong", "(Ljava/lang/String;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.prefs/java/util/prefs/Preferences.html#remove(java.lang.String)"/>

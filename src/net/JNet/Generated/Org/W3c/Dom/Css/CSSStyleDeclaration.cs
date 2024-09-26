@@ -237,7 +237,7 @@ namespace Org.W3c.Dom.Css
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetProperty(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("setProperty", arg0, arg1, arg2);
+            IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
 
         #endregion

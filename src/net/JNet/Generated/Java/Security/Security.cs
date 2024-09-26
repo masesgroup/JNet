@@ -155,7 +155,7 @@ namespace Java.Security
         /// <returns><see cref="int"/></returns>
         public static int InsertProviderAt(Java.Security.Provider arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "insertProviderAt", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "insertProviderAt", "(Ljava/security/Provider;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Security.html#removeProvider(java.lang.String)"/>
@@ -172,7 +172,7 @@ namespace Java.Security
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public static void SetProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            SExecute(LocalBridgeClazz, "setProperty", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setProperty", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
 
         #endregion

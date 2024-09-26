@@ -452,7 +452,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetNextMatch(Java.Lang.String arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
-            return IExecute<int>("getNextMatch", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getNextMatch", "(Ljava/lang/String;ILjavax/swing/text/Position$Bias;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
@@ -463,7 +463,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getScrollableBlockIncrement", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getScrollableBlockIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
@@ -474,7 +474,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getScrollableUnitIncrement", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getScrollableUnitIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#locationToIndex(java.awt.Point)"/>
@@ -502,7 +502,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetCellBounds(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.Rectangle>("getCellBounds", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Rectangle>("getCellBounds", "(II)Ljava/awt/Rectangle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#addListSelectionListener(javax.swing.event.ListSelectionListener)"/>
@@ -519,7 +519,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void AddSelectionInterval(int arg0, int arg1)
         {
-            IExecute("addSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("addSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#clearSelection()"/>
@@ -551,7 +551,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void RemoveSelectionInterval(int arg0, int arg1)
         {
-            IExecute("removeSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("removeSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setListData(java.lang.Object[])"/>
@@ -576,7 +576,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetSelectedValue(object arg0, bool arg1)
         {
-            IExecute("setSelectedValue", arg0, arg1);
+            IExecuteWithSignature("setSelectedValue", "(Ljava/lang/Object;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionInterval(int,int)"/>
@@ -585,7 +585,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void SetSelectionInterval(int arg0, int arg1)
         {
-            IExecute("setSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("setSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setUI(javax.swing.plaf.ListUI)"/>
@@ -955,7 +955,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetNextMatch(Java.Lang.String arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
-            return IExecute<int>("getNextMatch", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getNextMatch", "(Ljava/lang/String;ILjavax/swing/text/Position$Bias;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getScrollableBlockIncrement(java.awt.Rectangle,int,int)"/>
@@ -966,7 +966,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getScrollableBlockIncrement", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getScrollableBlockIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
@@ -977,7 +977,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getScrollableUnitIncrement", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getScrollableUnitIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#locationToIndex(java.awt.Point)"/>
@@ -1005,7 +1005,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetCellBounds(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.Rectangle>("getCellBounds", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Rectangle>("getCellBounds", "(II)Ljava/awt/Rectangle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#addListSelectionListener(javax.swing.event.ListSelectionListener)"/>
@@ -1022,7 +1022,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void AddSelectionInterval(int arg0, int arg1)
         {
-            IExecute("addSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("addSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#clearSelection()"/>
@@ -1054,7 +1054,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void RemoveSelectionInterval(int arg0, int arg1)
         {
-            IExecute("removeSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("removeSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setListData(java.lang.Object[])"/>
@@ -1080,7 +1080,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetSelectedValue(object arg0, bool arg1)
         {
-            IExecute("setSelectedValue", arg0, arg1);
+            IExecuteWithSignature("setSelectedValue", "(Ljava/lang/Object;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setSelectionInterval(int,int)"/>
@@ -1089,7 +1089,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void SetSelectionInterval(int arg0, int arg1)
         {
-            IExecute("setSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("setSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JList.html#setUI(javax.swing.plaf.ListUI)"/>

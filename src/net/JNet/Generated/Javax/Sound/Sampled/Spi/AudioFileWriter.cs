@@ -109,7 +109,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <exception cref="Java.Io.IOException"/>
         public int Write(Javax.Sound.Sampled.AudioInputStream arg0, Javax.Sound.Sampled.AudioFileFormat.Type arg1, Java.Io.File arg2)
         {
-            return IExecute<int>("write", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("write", "(Ljavax/sound/sampled/AudioInputStream;Ljavax/sound/sampled/AudioFileFormat$Type;Ljava/io/File;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html#write(javax.sound.sampled.AudioInputStream,javax.sound.sampled.AudioFileFormat.Type,java.io.OutputStream)"/>
@@ -121,7 +121,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <exception cref="Java.Io.IOException"/>
         public int Write(Javax.Sound.Sampled.AudioInputStream arg0, Javax.Sound.Sampled.AudioFileFormat.Type arg1, Java.Io.OutputStream arg2)
         {
-            return IExecute<int>("write", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("write", "(Ljavax/sound/sampled/AudioInputStream;Ljavax/sound/sampled/AudioFileFormat$Type;Ljava/io/OutputStream;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html#getAudioFileTypes(javax.sound.sampled.AudioInputStream)"/>
@@ -140,7 +140,7 @@ namespace Javax.Sound.Sampled.Spi
         /// <returns><see cref="bool"/></returns>
         public bool IsFileTypeSupported(Javax.Sound.Sampled.AudioFileFormat.Type arg0, Javax.Sound.Sampled.AudioInputStream arg1)
         {
-            return IExecute<bool>("isFileTypeSupported", arg0, arg1);
+            return IExecuteWithSignature<bool>("isFileTypeSupported", "(Ljavax/sound/sampled/AudioFileFormat$Type;Ljavax/sound/sampled/AudioInputStream;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/spi/AudioFileWriter.html#isFileTypeSupported(javax.sound.sampled.AudioFileFormat.Type)"/>

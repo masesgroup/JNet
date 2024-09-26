@@ -159,7 +159,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Policy GetInstance(Java.Lang.String arg0, Java.Security.Policy.Parameters arg1, Java.Lang.String arg2)
         {
-            return SExecute<Java.Security.Policy>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Security.Policy>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Policy$Parameters;Ljava/lang/String;)Ljava/security/Policy;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy.Parameters,java.security.Provider)"/>
@@ -171,7 +171,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Policy GetInstance(Java.Lang.String arg0, Java.Security.Policy.Parameters arg1, Java.Security.Provider arg2)
         {
-            return SExecute<Java.Security.Policy>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Security.Policy>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Policy$Parameters;Ljava/security/Provider;)Ljava/security/Policy;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getInstance(java.lang.String,java.security.Policy.Parameters)"/>
@@ -182,7 +182,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Policy GetInstance(Java.Lang.String arg0, Java.Security.Policy.Parameters arg1)
         {
-            return SExecute<Java.Security.Policy>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.Policy>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Policy$Parameters;)Ljava/security/Policy;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#setPolicy(java.security.Policy)"/>
@@ -225,7 +225,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool Implies(Java.Security.ProtectionDomain arg0, Java.Security.Permission arg1)
         {
-            return IExecute<bool>("implies", arg0, arg1);
+            return IExecuteWithSignature<bool>("implies", "(Ljava/security/ProtectionDomain;Ljava/security/Permission;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Policy.html#getPermissions(java.security.CodeSource)"/>

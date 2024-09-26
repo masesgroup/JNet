@@ -360,7 +360,7 @@ namespace Org.W3c.Dom.Css
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetFloatValue(short arg0, float arg1)
         {
-            IExecute("setFloatValue", arg0, arg1);
+            IExecuteWithSignature("setFloatValue", "(SF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/CSSPrimitiveValue.html#setStringValue(short,java.lang.String)"/>
@@ -370,7 +370,7 @@ namespace Org.W3c.Dom.Css
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public void SetStringValue(short arg0, Java.Lang.String arg1)
         {
-            IExecute("setStringValue", arg0, arg1);
+            IExecuteWithSignature("setStringValue", "(SLjava/lang/String;)V", arg0, arg1);
         }
 
         #endregion

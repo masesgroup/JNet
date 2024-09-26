@@ -110,7 +110,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="int"/></returns>
         public int TabForCoordinate(Javax.Swing.JTabbedPane arg0, int arg1, int arg2)
         {
-            return IExecute<int>("tabForCoordinate", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("tabForCoordinate", "(Ljavax/swing/JTabbedPane;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/TabbedPaneUI.html#getTabBounds(javax.swing.JTabbedPane,int)"/>
@@ -120,7 +120,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetTabBounds(Javax.Swing.JTabbedPane arg0, int arg1)
         {
-            return IExecute<Java.Awt.Rectangle>("getTabBounds", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Rectangle>("getTabBounds", "(Ljavax/swing/JTabbedPane;I)Ljava/awt/Rectangle;", arg0, arg1);
         }
 
         #endregion

@@ -245,7 +245,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Awt.EventNs.KeyEvent"/></param>
         public void ProcessKeyEvent(Java.Awt.Component arg0, Java.Awt.EventNs.KeyEvent arg1)
         {
-            IExecute("processKeyEvent", arg0, arg1);
+            IExecuteWithSignature("processKeyEvent", "(Ljava/awt/Component;Ljava/awt/event/KeyEvent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#upFocusCycle(java.awt.Component)"/>
@@ -283,7 +283,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Awt.AWTEvent"/></param>
         public void RedispatchEvent(Java.Awt.Component arg0, Java.Awt.AWTEvent arg1)
         {
-            IExecute("redispatchEvent", arg0, arg1);
+            IExecuteWithSignature("redispatchEvent", "(Ljava/awt/Component;Ljava/awt/AWTEvent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#upFocusCycle()"/>
@@ -350,7 +350,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         {
-            IExecute("addPropertyChangeListener", arg0, arg1);
+            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#addVetoableChangeListener(java.beans.VetoableChangeListener)"/>
@@ -367,7 +367,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
         public void AddVetoableChangeListener(Java.Lang.String arg0, Java.Beans.VetoableChangeListener arg1)
         {
-            IExecute("addVetoableChangeListener", arg0, arg1);
+            IExecuteWithSignature("addVetoableChangeListener", "(Ljava/lang/String;Ljava/beans/VetoableChangeListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#clearFocusOwner()"/>
@@ -415,7 +415,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         {
-            IExecute("removePropertyChangeListener", arg0, arg1);
+            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#removeVetoableChangeListener(java.beans.VetoableChangeListener)"/>
@@ -432,7 +432,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
         public void RemoveVetoableChangeListener(Java.Lang.String arg0, Java.Beans.VetoableChangeListener arg1)
         {
-            IExecute("removeVetoableChangeListener", arg0, arg1);
+            IExecuteWithSignature("removeVetoableChangeListener", "(Ljava/lang/String;Ljava/beans/VetoableChangeListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#setDefaultFocusTraversalKeys(int,java.util.Set)"/>
@@ -442,7 +442,7 @@ namespace Java.Awt
         /// <typeparam name="Arg1ExtendsJava_Awt_AWTKeyStroke"><see cref="Java.Awt.AWTKeyStroke"/></typeparam>
         public void SetDefaultFocusTraversalKeys<Arg1ExtendsJava_Awt_AWTKeyStroke>(int arg0, Java.Util.Set<Arg1ExtendsJava_Awt_AWTKeyStroke> arg1) where Arg1ExtendsJava_Awt_AWTKeyStroke : Java.Awt.AWTKeyStroke
         {
-            IExecute("setDefaultFocusTraversalKeys", arg0, arg1);
+            IExecuteWithSignature("setDefaultFocusTraversalKeys", "(ILjava/util/Set;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/KeyboardFocusManager.html#setGlobalCurrentFocusCycleRoot(java.awt.Container)"/>

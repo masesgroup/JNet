@@ -145,7 +145,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.YearMonth"/></returns>
         public static Java.Time.YearMonth Of(int arg0, int arg1)
         {
-            return SExecute<Java.Time.YearMonth>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.YearMonth>(LocalBridgeClazz, "of", "(II)Ljava/time/YearMonth;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#of(int,java.time.Month)"/>
@@ -155,7 +155,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.YearMonth"/></returns>
         public static Java.Time.YearMonth Of(int arg0, Java.Time.Month arg1)
         {
-            return SExecute<Java.Time.YearMonth>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.YearMonth>(LocalBridgeClazz, "of", "(ILjava/time/Month;)Ljava/time/YearMonth;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
@@ -165,7 +165,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.YearMonth"/></returns>
         public static Java.Time.YearMonth Parse(Java.Lang.CharSequence arg0, Java.Time.Format.DateTimeFormatter arg1)
         {
-            return SExecute<Java.Time.YearMonth>(LocalBridgeClazz, "parse", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.YearMonth>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;Ljava/time/format/DateTimeFormatter;)Ljava/time/YearMonth;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#parse(java.lang.CharSequence)"/>
@@ -359,7 +359,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Minus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("minus", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("minus", "(JLjava/time/temporal/TemporalUnit;)Ljava/time/temporal/Temporal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#plus(java.time.temporal.TemporalAmount)"/>
@@ -378,7 +378,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Plus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("plus", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("plus", "(JLjava/time/temporal/TemporalUnit;)Ljava/time/temporal/Temporal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#with(java.time.temporal.TemporalAdjuster)"/>
@@ -397,7 +397,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal With(Java.Time.Temporal.TemporalField arg0, long arg1)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("with", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("with", "(Ljava/time/temporal/TemporalField;J)Ljava/time/temporal/Temporal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/YearMonth.html#range(java.time.temporal.TemporalField)"/>
@@ -479,7 +479,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long Until(Java.Time.Temporal.Temporal arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<long>("until", arg0, arg1);
+            return IExecuteWithSignature<long>("until", "(Ljava/time/temporal/Temporal;Ljava/time/temporal/TemporalUnit;)J", arg0, arg1);
         }
 
         #endregion

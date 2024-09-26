@@ -224,7 +224,7 @@ namespace Javax.Xml.Stream
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void SetPrefix(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setPrefix", arg0, arg1);
+            IExecuteWithSignature("setPrefix", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
 
         #endregion

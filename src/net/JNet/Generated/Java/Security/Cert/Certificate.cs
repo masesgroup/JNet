@@ -125,7 +125,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.SignatureException"/>
         public void Verify(Java.Security.PublicKey arg0, Java.Lang.String arg1)
         {
-            IExecute("verify", arg0, arg1);
+            IExecuteWithSignature("verify", "(Ljava/security/PublicKey;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/Certificate.html#verify(java.security.PublicKey)"/>
@@ -151,7 +151,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.SignatureException"/>
         public void Verify(Java.Security.PublicKey arg0, Java.Security.Provider arg1)
         {
-            IExecute("verify", arg0, arg1);
+            IExecuteWithSignature("verify", "(Ljava/security/PublicKey;Ljava/security/Provider;)V", arg0, arg1);
         }
 
         #endregion

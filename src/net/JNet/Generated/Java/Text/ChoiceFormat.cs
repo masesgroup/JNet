@@ -111,7 +111,7 @@ namespace Java.Text
         /// <returns><see cref="double"/></returns>
         public static double NextDouble(double arg0, bool arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "nextDouble", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "nextDouble", "(DZ)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/ChoiceFormat.html#nextDouble(double)"/>
@@ -172,7 +172,7 @@ namespace Java.Text
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetChoices(double[] arg0, Java.Lang.String[] arg1)
         {
-            IExecute("setChoices", arg0, arg1);
+            IExecuteWithSignature("setChoices", "([D[Ljava/lang/String;)V", arg0, arg1);
         }
 
         #endregion

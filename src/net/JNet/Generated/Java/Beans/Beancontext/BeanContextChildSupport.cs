@@ -152,7 +152,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         {
-            IExecute("addPropertyChangeListener", arg0, arg1);
+            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#addVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)"/>
@@ -161,7 +161,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
         public void AddVetoableChangeListener(Java.Lang.String arg0, Java.Beans.VetoableChangeListener arg1)
         {
-            IExecute("addVetoableChangeListener", arg0, arg1);
+            IExecuteWithSignature("addVetoableChangeListener", "(Ljava/lang/String;Ljava/beans/VetoableChangeListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
@@ -171,7 +171,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg2"><see cref="object"/></param>
         public void FirePropertyChange(Java.Lang.String arg0, object arg1, object arg2)
         {
-            IExecute("firePropertyChange", arg0, arg1, arg2);
+            IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#fireVetoableChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
@@ -182,7 +182,7 @@ namespace Java.Beans.Beancontext
         /// <exception cref="Java.Beans.PropertyVetoException"/>
         public void FireVetoableChange(Java.Lang.String arg0, object arg1, object arg2)
         {
-            IExecute("fireVetoableChange", arg0, arg1, arg2);
+            IExecuteWithSignature("fireVetoableChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#removePropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
@@ -191,7 +191,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         {
-            IExecute("removePropertyChangeListener", arg0, arg1);
+            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#removeVetoableChangeListener(java.lang.String,java.beans.VetoableChangeListener)"/>
@@ -200,7 +200,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
         public void RemoveVetoableChangeListener(Java.Lang.String arg0, Java.Beans.VetoableChangeListener arg1)
         {
-            IExecute("removeVetoableChangeListener", arg0, arg1);
+            IExecuteWithSignature("removeVetoableChangeListener", "(Ljava/lang/String;Ljava/beans/VetoableChangeListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextChildSupport.html#serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent)"/>

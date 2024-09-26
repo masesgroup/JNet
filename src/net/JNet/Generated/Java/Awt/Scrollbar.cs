@@ -220,7 +220,7 @@ namespace Java.Awt
         /// <param name="arg3"><see cref="int"/></param>
         public void SetValues(int arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("setValues", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setValues", "(IIII)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion

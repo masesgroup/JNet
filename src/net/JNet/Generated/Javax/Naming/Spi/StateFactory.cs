@@ -131,7 +131,7 @@ namespace Javax.Naming.Spi
         /// <exception cref="Javax.Naming.NamingException"/>
         public object GetStateToBind(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3)
         {
-            return IExecute("getStateToBind", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature("getStateToBind", "(Ljava/lang/Object;Ljavax/naming/Name;Ljavax/naming/Context;Ljava/util/Hashtable;)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

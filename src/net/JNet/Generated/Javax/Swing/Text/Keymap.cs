@@ -247,7 +247,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="Javax.Swing.Action"/></param>
         public void AddActionForKeyStroke(Javax.Swing.KeyStroke arg0, Javax.Swing.Action arg1)
         {
-            IExecute("addActionForKeyStroke", arg0, arg1);
+            IExecuteWithSignature("addActionForKeyStroke", "(Ljavax/swing/KeyStroke;Ljavax/swing/Action;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Keymap.html#removeBindings()"/>

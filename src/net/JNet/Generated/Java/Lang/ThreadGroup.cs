@@ -198,7 +198,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int Enumerate(Java.Lang.Thread[] arg0, bool arg1)
         {
-            return IExecute<int>("enumerate", arg0, arg1);
+            return IExecuteWithSignature<int>("enumerate", "([Ljava/lang/Thread;Z)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.Thread[])"/>
@@ -217,7 +217,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public int Enumerate(Java.Lang.ThreadGroup[] arg0, bool arg1)
         {
-            return IExecute<int>("enumerate", arg0, arg1);
+            return IExecuteWithSignature<int>("enumerate", "([Ljava/lang/ThreadGroup;Z)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ThreadGroup.html#enumerate(java.lang.ThreadGroup[])"/>
@@ -250,7 +250,7 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
         public void UncaughtException(Java.Lang.Thread arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
         {
-            IExecute("uncaughtException", arg0, arg1);
+            IExecuteWithSignature("uncaughtException", "(Ljava/lang/Thread;Ljava/lang/Throwable;)V", arg0, arg1);
         }
 
         #endregion

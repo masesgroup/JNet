@@ -339,7 +339,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
         public Java.Awt.ImageNs.Raster GetTile(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.Raster>("getTile", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Raster>("getTile", "(II)Ljava/awt/image/Raster;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/RenderedImage.html#copyData(java.awt.image.WritableRaster)"/>

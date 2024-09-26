@@ -145,7 +145,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="object"/></returns>
         public object Scan(Java.Lang.Iterable arg0, object arg1)
         {
-            return IExecute("scan", arg0, arg1);
+            return IExecuteWithSignature("scan", "(Ljava/lang/Iterable;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#scan(javax.lang.model.element.Element)"/>
@@ -164,7 +164,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="object"/></returns>
         public object Scan(Javax.Lang.Model.Element.Element arg0, object arg1)
         {
-            return IExecute("scan", arg0, arg1);
+            return IExecuteWithSignature("scan", "(Ljavax/lang/model/element/Element;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
 
         #endregion
@@ -210,7 +210,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><typeparamref name="R"/></returns>
         public R Scan<Arg0ExtendsJavax_Lang_Model_Element_Element>(Java.Lang.Iterable<Arg0ExtendsJavax_Lang_Model_Element_Element> arg0, P arg1) where Arg0ExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element
         {
-            return IExecute<R>("scan", arg0, arg1);
+            return IExecuteWithSignature<R>("scan", "(Ljava/lang/Iterable;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/ElementScanner6.html#scan(javax.lang.model.element.Element)"/>
@@ -229,7 +229,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><typeparamref name="R"/></returns>
         public R Scan(Javax.Lang.Model.Element.Element arg0, P arg1)
         {
-            return IExecute<R>("scan", arg0, arg1);
+            return IExecuteWithSignature<R>("scan", "(Ljavax/lang/model/element/Element;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
 
         #endregion

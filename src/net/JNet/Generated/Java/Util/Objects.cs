@@ -97,7 +97,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Compare<T, Arg2objectSuperT>(T arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg2objectSuperT : T
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Comparator;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNull(java.lang.Object,java.lang.String)"/>
@@ -108,7 +108,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public static T RequireNonNull<T>(T arg0, Java.Lang.String arg1)
         {
-            return SExecute<T>(LocalBridgeClazz, "requireNonNull", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "requireNonNull", "(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNull(java.lang.Object,java.util.function.Supplier)"/>
@@ -119,7 +119,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public static T RequireNonNull<T>(T arg0, Java.Util.Function.Supplier<Java.Lang.String> arg1)
         {
-            return SExecute<T>(LocalBridgeClazz, "requireNonNull", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "requireNonNull", "(Ljava/lang/Object;Ljava/util/function/Supplier;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNull(java.lang.Object)"/>
@@ -140,7 +140,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public static T RequireNonNullElse<T>(T arg0, T arg1)
         {
-            return SExecute<T>(LocalBridgeClazz, "requireNonNullElse", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "requireNonNullElse", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#requireNonNullElseGet(java.lang.Object,java.util.function.Supplier)"/>
@@ -152,7 +152,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public static T RequireNonNullElseGet<T, Arg1ExtendsT>(T arg0, Java.Util.Function.Supplier<Arg1ExtendsT> arg1) where Arg1ExtendsT : T
         {
-            return SExecute<T>(LocalBridgeClazz, "requireNonNullElseGet", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "requireNonNullElseGet", "(Ljava/lang/Object;Ljava/util/function/Supplier;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#deepEquals(java.lang.Object,java.lang.Object)"/>
@@ -162,7 +162,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool DeepEquals(object arg0, object arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "deepEquals", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "deepEquals", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)"/>
@@ -172,7 +172,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Equals(object arg0, object arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "equals", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "equals", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#isNull(java.lang.Object)"/>
@@ -201,7 +201,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int CheckFromIndexSize(int arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "checkFromIndexSize", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "checkFromIndexSize", "(III)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#checkFromToIndex(int,int,int)"/>
@@ -212,7 +212,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int CheckFromToIndex(int arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "checkFromToIndex", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "checkFromToIndex", "(III)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#checkIndex(int,int)"/>
@@ -222,7 +222,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int CheckIndex(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "checkIndex", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "checkIndex", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#hash(java.lang.Object[])"/>
@@ -250,7 +250,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String ToString(object arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "toString", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Objects.html#toString(java.lang.Object)"/>

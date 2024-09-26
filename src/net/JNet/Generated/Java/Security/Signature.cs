@@ -98,7 +98,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.Signature GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Security.Signature>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.Signature>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/Signature;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -109,7 +109,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.Signature GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Java.Security.Signature>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.Signature>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/Signature;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#getInstance(java.lang.String)"/>
@@ -156,7 +156,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.SignatureException"/>
         public bool Verify(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("verify", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("verify", "([BII)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#verify(byte[])"/>
@@ -187,7 +187,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.SignatureException"/>
         public int Sign(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("sign", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("sign", "([BII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#initSign(java.security.PrivateKey,java.security.SecureRandom)"/>
@@ -197,7 +197,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.InvalidKeyException"/>
         public void InitSign(Java.Security.PrivateKey arg0, Java.Security.SecureRandom arg1)
         {
-            IExecute("initSign", arg0, arg1);
+            IExecuteWithSignature("initSign", "(Ljava/security/PrivateKey;Ljava/security/SecureRandom;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#initSign(java.security.PrivateKey)"/>
@@ -253,7 +253,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.SignatureException"/>
         public void Update(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("update", arg0, arg1, arg2);
+            IExecuteWithSignature("update", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/Signature.html#update(byte[])"/>

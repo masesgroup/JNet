@@ -129,7 +129,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static byte ParseByte(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<byte>(LocalBridgeClazz, "parseByte", arg0, arg1);
+            return SExecuteWithSignature<byte>(LocalBridgeClazz, "parseByte", "(Ljava/lang/String;I)B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#parseByte(java.lang.String)"/>
@@ -149,7 +149,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(byte arg0, byte arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(BB)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#compareUnsigned(byte,byte)"/>
@@ -159,7 +159,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CompareUnsigned(byte arg0, byte arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compareUnsigned", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compareUnsigned", "(BB)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#hashCode(byte)"/>
@@ -207,7 +207,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.NumberFormatException"/>
         public static Java.Lang.Byte ValueOf(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Lang.Byte>(LocalBridgeClazz, "valueOf", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.Byte>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;I)Ljava/lang/Byte;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Byte.html#valueOf(java.lang.String)"/>

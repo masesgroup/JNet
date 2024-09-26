@@ -103,7 +103,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String GetProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "getProperty", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
 
         #endregion
@@ -221,7 +221,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public bool PrepareImage(Java.Awt.Image arg0, int arg1, int arg2, Java.Awt.ImageNs.ImageObserver arg3)
         {
-            return IExecute<bool>("prepareImage", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("prepareImage", "(Ljava/awt/Image;IILjava/awt/image/ImageObserver;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#checkImage(java.awt.Image,int,int,java.awt.image.ImageObserver)"/>
@@ -233,7 +233,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public int CheckImage(Java.Awt.Image arg0, int arg1, int arg2, Java.Awt.ImageNs.ImageObserver arg3)
         {
-            return IExecute<int>("checkImage", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("checkImage", "(Ljava/awt/Image;IILjava/awt/image/ImageObserver;)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#createImage(byte[],int,int)"/>
@@ -244,7 +244,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image CreateImage(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Awt.Image>("createImage", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Image>("createImage", "([BII)Ljava/awt/Image;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#createImage(java.awt.image.ImageProducer)"/>
@@ -300,7 +300,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.PrintJob"/></returns>
         public Java.Awt.PrintJob GetPrintJob(Java.Awt.Frame arg0, Java.Lang.String arg1, Java.Util.Properties arg2)
         {
-            return IExecute<Java.Awt.PrintJob>("getPrintJob", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.PrintJob>("getPrintJob", "(Ljava/awt/Frame;Ljava/lang/String;Ljava/util/Properties;)Ljava/awt/PrintJob;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#mapInputMethodHighlight(java.awt.im.InputMethodHighlight)"/>
@@ -392,7 +392,7 @@ namespace Java.Awt
         /// <exception cref="Java.Awt.HeadlessException"/>
         public Java.Awt.Cursor CreateCustomCursor(Java.Awt.Image arg0, Java.Awt.Point arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Awt.Cursor>("createCustomCursor", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Cursor>("createCustomCursor", "(Ljava/awt/Image;Ljava/awt/Point;Ljava/lang/String;)Ljava/awt/Cursor;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getBestCursorSize(int,int)"/>
@@ -403,7 +403,7 @@ namespace Java.Awt
         /// <exception cref="Java.Awt.HeadlessException"/>
         public Java.Awt.Dimension GetBestCursorSize(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.Dimension>("getBestCursorSize", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Dimension>("getBestCursorSize", "(II)Ljava/awt/Dimension;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getAWTEventListeners(long)"/>
@@ -443,7 +443,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.PrintJob"/></returns>
         public Java.Awt.PrintJob GetPrintJob(Java.Awt.Frame arg0, Java.Lang.String arg1, Java.Awt.JobAttributes arg2, Java.Awt.PageAttributes arg3)
         {
-            return IExecute<Java.Awt.PrintJob>("getPrintJob", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.PrintJob>("getPrintJob", "(Ljava/awt/Frame;Ljava/lang/String;Ljava/awt/JobAttributes;Ljava/awt/PageAttributes;)Ljava/awt/PrintJob;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#getPropertyChangeListeners(java.lang.String)"/>
@@ -461,7 +461,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="long"/></param>
         public void AddAWTEventListener(Java.Awt.EventNs.AWTEventListener arg0, long arg1)
         {
-            IExecute("addAWTEventListener", arg0, arg1);
+            IExecuteWithSignature("addAWTEventListener", "(Ljava/awt/event/AWTEventListener;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#addPropertyChangeListener(java.lang.String,java.beans.PropertyChangeListener)"/>
@@ -470,7 +470,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         {
-            IExecute("addPropertyChangeListener", arg0, arg1);
+            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#removeAWTEventListener(java.awt.event.AWTEventListener)"/>
@@ -487,7 +487,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         {
-            IExecute("removePropertyChangeListener", arg0, arg1);
+            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Toolkit.html#setDynamicLayout(boolean)"/>
@@ -506,7 +506,7 @@ namespace Java.Awt
         /// <exception cref="Java.Lang.UnsupportedOperationException"/>
         public void SetLockingKeyState(int arg0, bool arg1)
         {
-            IExecute("setLockingKeyState", arg0, arg1);
+            IExecuteWithSignature("setLockingKeyState", "(IZ)V", arg0, arg1);
         }
 
         #endregion

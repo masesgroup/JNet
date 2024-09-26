@@ -212,7 +212,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintStream"/></returns>
         public Java.Io.PrintStream Format(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Io.PrintStream>("format", arg0); else return IExecute<Java.Io.PrintStream>("format", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Io.PrintStream>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0); else return IExecuteWithSignature<Java.Io.PrintStream>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#format(java.util.Locale,java.lang.String,java.lang.Object[])"/>
@@ -223,7 +223,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintStream"/></returns>
         public Java.Io.PrintStream Format(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Io.PrintStream>("format", arg0, arg1); else return IExecute<Java.Io.PrintStream>("format", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Io.PrintStream>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1); else return IExecuteWithSignature<Java.Io.PrintStream>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#printf(java.lang.String,java.lang.Object[])"/>
@@ -233,7 +233,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintStream"/></returns>
         public Java.Io.PrintStream Printf(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Io.PrintStream>("printf", arg0); else return IExecute<Java.Io.PrintStream>("printf", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Io.PrintStream>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0); else return IExecuteWithSignature<Java.Io.PrintStream>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#printf(java.util.Locale,java.lang.String,java.lang.Object[])"/>
@@ -244,7 +244,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintStream"/></returns>
         public Java.Io.PrintStream Printf(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Io.PrintStream>("printf", arg0, arg1); else return IExecute<Java.Io.PrintStream>("printf", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Io.PrintStream>("printf", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1); else return IExecuteWithSignature<Java.Io.PrintStream>("printf", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#append(char)"/>
@@ -266,7 +266,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Appendable Append(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Lang.Appendable>("append", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.Appendable>("append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#append(java.lang.CharSequence)"/>

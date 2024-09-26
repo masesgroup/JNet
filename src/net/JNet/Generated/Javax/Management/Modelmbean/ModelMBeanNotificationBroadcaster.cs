@@ -169,7 +169,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void AddAttributeChangeNotificationListener(Javax.Management.NotificationListener arg0, Java.Lang.String arg1, object arg2)
         {
-            IExecute("addAttributeChangeNotificationListener", arg0, arg1, arg2);
+            IExecuteWithSignature("addAttributeChangeNotificationListener", "(Ljavax/management/NotificationListener;Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#removeAttributeChangeNotificationListener(javax.management.NotificationListener,java.lang.String)"/>
@@ -181,7 +181,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveAttributeChangeNotificationListener(Javax.Management.NotificationListener arg0, Java.Lang.String arg1)
         {
-            IExecute("removeAttributeChangeNotificationListener", arg0, arg1);
+            IExecuteWithSignature("removeAttributeChangeNotificationListener", "(Ljavax/management/NotificationListener;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendAttributeChangeNotification(javax.management.Attribute,javax.management.Attribute)"/>
@@ -192,7 +192,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SendAttributeChangeNotification(Javax.Management.Attribute arg0, Javax.Management.Attribute arg1)
         {
-            IExecute("sendAttributeChangeNotification", arg0, arg1);
+            IExecuteWithSignature("sendAttributeChangeNotification", "(Ljavax/management/Attribute;Ljavax/management/Attribute;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanNotificationBroadcaster.html#sendAttributeChangeNotification(javax.management.AttributeChangeNotification)"/>

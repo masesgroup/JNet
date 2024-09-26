@@ -143,7 +143,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public bool ShouldAccept(Java.Net.URI arg0, Java.Net.HttpCookie arg1)
         {
-            return IExecute<bool>("shouldAccept", arg0, arg1);
+            return IExecuteWithSignature<bool>("shouldAccept", "(Ljava/net/URI;Ljava/net/HttpCookie;)Z", arg0, arg1);
         }
 
         #endregion

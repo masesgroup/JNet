@@ -145,7 +145,7 @@ namespace Java.Lang.Instrument
         /// <exception cref="Java.Lang.Instrument.IllegalClassFormatException"/>
         public byte[] Transform(Java.Lang.ClassLoader arg0, Java.Lang.String arg1, Java.Lang.Class arg2, Java.Security.ProtectionDomain arg3, byte[] arg4)
         {
-            return IExecuteArray<byte>("transform", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignatureArray<byte>("transform", "(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/Class;Ljava/security/ProtectionDomain;[B)[B", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/ClassFileTransformer.html#transform(java.lang.Module,java.lang.ClassLoader,java.lang.String,java.lang.Class,java.security.ProtectionDomain,byte[])"/>
@@ -160,7 +160,7 @@ namespace Java.Lang.Instrument
         /// <exception cref="Java.Lang.Instrument.IllegalClassFormatException"/>
         public byte[] Transform(Java.Lang.Module arg0, Java.Lang.ClassLoader arg1, Java.Lang.String arg2, Java.Lang.Class arg3, Java.Security.ProtectionDomain arg4, byte[] arg5)
         {
-            return IExecuteArray<byte>("transform", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignatureArray<byte>("transform", "(Ljava/lang/Module;Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/Class;Ljava/security/ProtectionDomain;[B)[B", arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

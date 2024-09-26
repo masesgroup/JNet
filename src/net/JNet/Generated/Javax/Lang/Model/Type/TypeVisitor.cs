@@ -149,7 +149,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="object"/></returns>
         public object Visit(Javax.Lang.Model.Type.TypeMirror arg0, object arg1)
         {
-            return IExecute("visit", arg0, arg1);
+            return IExecuteWithSignature("visit", "(Ljavax/lang/model/type/TypeMirror;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitArray(javax.lang.model.type.ArrayType,java.lang.Object)"/>
@@ -159,7 +159,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="object"/></returns>
         public object VisitArray(Javax.Lang.Model.Type.ArrayType arg0, object arg1)
         {
-            return IExecute("visitArray", arg0, arg1);
+            return IExecuteWithSignature("visitArray", "(Ljavax/lang/model/type/ArrayType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitDeclared(javax.lang.model.type.DeclaredType,java.lang.Object)"/>
@@ -169,7 +169,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="object"/></returns>
         public object VisitDeclared(Javax.Lang.Model.Type.DeclaredType arg0, object arg1)
         {
-            return IExecute("visitDeclared", arg0, arg1);
+            return IExecuteWithSignature("visitDeclared", "(Ljavax/lang/model/type/DeclaredType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitError(javax.lang.model.type.ErrorType,java.lang.Object)"/>
@@ -179,7 +179,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="object"/></returns>
         public object VisitError(Javax.Lang.Model.Type.ErrorType arg0, object arg1)
         {
-            return IExecute("visitError", arg0, arg1);
+            return IExecuteWithSignature("visitError", "(Ljavax/lang/model/type/ErrorType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitExecutable(javax.lang.model.type.ExecutableType,java.lang.Object)"/>
@@ -189,7 +189,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="object"/></returns>
         public object VisitExecutable(Javax.Lang.Model.Type.ExecutableType arg0, object arg1)
         {
-            return IExecute("visitExecutable", arg0, arg1);
+            return IExecuteWithSignature("visitExecutable", "(Ljavax/lang/model/type/ExecutableType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitIntersection(javax.lang.model.type.IntersectionType,java.lang.Object)"/>
@@ -199,7 +199,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="object"/></returns>
         public object VisitIntersection(Javax.Lang.Model.Type.IntersectionType arg0, object arg1)
         {
-            return IExecute("visitIntersection", arg0, arg1);
+            return IExecuteWithSignature("visitIntersection", "(Ljavax/lang/model/type/IntersectionType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitNoType(javax.lang.model.type.NoType,java.lang.Object)"/>
@@ -209,7 +209,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="object"/></returns>
         public object VisitNoType(Javax.Lang.Model.Type.NoType arg0, object arg1)
         {
-            return IExecute("visitNoType", arg0, arg1);
+            return IExecuteWithSignature("visitNoType", "(Ljavax/lang/model/type/NoType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitNull(javax.lang.model.type.NullType,java.lang.Object)"/>
@@ -219,7 +219,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="object"/></returns>
         public object VisitNull(Javax.Lang.Model.Type.NullType arg0, object arg1)
         {
-            return IExecute("visitNull", arg0, arg1);
+            return IExecuteWithSignature("visitNull", "(Ljavax/lang/model/type/NullType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitPrimitive(javax.lang.model.type.PrimitiveType,java.lang.Object)"/>
@@ -229,7 +229,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="object"/></returns>
         public object VisitPrimitive(Javax.Lang.Model.Type.PrimitiveType arg0, object arg1)
         {
-            return IExecute("visitPrimitive", arg0, arg1);
+            return IExecuteWithSignature("visitPrimitive", "(Ljavax/lang/model/type/PrimitiveType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitTypeVariable(javax.lang.model.type.TypeVariable,java.lang.Object)"/>
@@ -239,7 +239,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="object"/></returns>
         public object VisitTypeVariable(Javax.Lang.Model.Type.TypeVariable arg0, object arg1)
         {
-            return IExecute("visitTypeVariable", arg0, arg1);
+            return IExecuteWithSignature("visitTypeVariable", "(Ljavax/lang/model/type/TypeVariable;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitUnion(javax.lang.model.type.UnionType,java.lang.Object)"/>
@@ -249,7 +249,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="object"/></returns>
         public object VisitUnion(Javax.Lang.Model.Type.UnionType arg0, object arg1)
         {
-            return IExecute("visitUnion", arg0, arg1);
+            return IExecuteWithSignature("visitUnion", "(Ljavax/lang/model/type/UnionType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitUnknown(javax.lang.model.type.TypeMirror,java.lang.Object)"/>
@@ -259,7 +259,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="object"/></returns>
         public object VisitUnknown(Javax.Lang.Model.Type.TypeMirror arg0, object arg1)
         {
-            return IExecute("visitUnknown", arg0, arg1);
+            return IExecuteWithSignature("visitUnknown", "(Ljavax/lang/model/type/TypeMirror;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitWildcard(javax.lang.model.type.WildcardType,java.lang.Object)"/>
@@ -269,7 +269,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><see cref="object"/></returns>
         public object VisitWildcard(Javax.Lang.Model.Type.WildcardType arg0, object arg1)
         {
-            return IExecute("visitWildcard", arg0, arg1);
+            return IExecuteWithSignature("visitWildcard", "(Ljavax/lang/model/type/WildcardType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visit(javax.lang.model.type.TypeMirror)"/>
@@ -438,7 +438,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><typeparamref name="R"/></returns>
         public R Visit(Javax.Lang.Model.Type.TypeMirror arg0, P arg1)
         {
-            return IExecute<R>("visit", arg0, arg1);
+            return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/type/TypeMirror;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitArray(javax.lang.model.type.ArrayType,java.lang.Object)"/>
@@ -448,7 +448,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><typeparamref name="R"/></returns>
         public R VisitArray(Javax.Lang.Model.Type.ArrayType arg0, P arg1)
         {
-            return IExecute<R>("visitArray", arg0, arg1);
+            return IExecuteWithSignature<R>("visitArray", "(Ljavax/lang/model/type/ArrayType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitDeclared(javax.lang.model.type.DeclaredType,java.lang.Object)"/>
@@ -458,7 +458,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><typeparamref name="R"/></returns>
         public R VisitDeclared(Javax.Lang.Model.Type.DeclaredType arg0, P arg1)
         {
-            return IExecute<R>("visitDeclared", arg0, arg1);
+            return IExecuteWithSignature<R>("visitDeclared", "(Ljavax/lang/model/type/DeclaredType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitError(javax.lang.model.type.ErrorType,java.lang.Object)"/>
@@ -468,7 +468,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><typeparamref name="R"/></returns>
         public R VisitError(Javax.Lang.Model.Type.ErrorType arg0, P arg1)
         {
-            return IExecute<R>("visitError", arg0, arg1);
+            return IExecuteWithSignature<R>("visitError", "(Ljavax/lang/model/type/ErrorType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitExecutable(javax.lang.model.type.ExecutableType,java.lang.Object)"/>
@@ -478,7 +478,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><typeparamref name="R"/></returns>
         public R VisitExecutable(Javax.Lang.Model.Type.ExecutableType arg0, P arg1)
         {
-            return IExecute<R>("visitExecutable", arg0, arg1);
+            return IExecuteWithSignature<R>("visitExecutable", "(Ljavax/lang/model/type/ExecutableType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitIntersection(javax.lang.model.type.IntersectionType,java.lang.Object)"/>
@@ -488,7 +488,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><typeparamref name="R"/></returns>
         public R VisitIntersection(Javax.Lang.Model.Type.IntersectionType arg0, P arg1)
         {
-            return IExecute<R>("visitIntersection", arg0, arg1);
+            return IExecuteWithSignature<R>("visitIntersection", "(Ljavax/lang/model/type/IntersectionType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitNoType(javax.lang.model.type.NoType,java.lang.Object)"/>
@@ -498,7 +498,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><typeparamref name="R"/></returns>
         public R VisitNoType(Javax.Lang.Model.Type.NoType arg0, P arg1)
         {
-            return IExecute<R>("visitNoType", arg0, arg1);
+            return IExecuteWithSignature<R>("visitNoType", "(Ljavax/lang/model/type/NoType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitNull(javax.lang.model.type.NullType,java.lang.Object)"/>
@@ -508,7 +508,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><typeparamref name="R"/></returns>
         public R VisitNull(Javax.Lang.Model.Type.NullType arg0, P arg1)
         {
-            return IExecute<R>("visitNull", arg0, arg1);
+            return IExecuteWithSignature<R>("visitNull", "(Ljavax/lang/model/type/NullType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitPrimitive(javax.lang.model.type.PrimitiveType,java.lang.Object)"/>
@@ -518,7 +518,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><typeparamref name="R"/></returns>
         public R VisitPrimitive(Javax.Lang.Model.Type.PrimitiveType arg0, P arg1)
         {
-            return IExecute<R>("visitPrimitive", arg0, arg1);
+            return IExecuteWithSignature<R>("visitPrimitive", "(Ljavax/lang/model/type/PrimitiveType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitTypeVariable(javax.lang.model.type.TypeVariable,java.lang.Object)"/>
@@ -528,7 +528,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><typeparamref name="R"/></returns>
         public R VisitTypeVariable(Javax.Lang.Model.Type.TypeVariable arg0, P arg1)
         {
-            return IExecute<R>("visitTypeVariable", arg0, arg1);
+            return IExecuteWithSignature<R>("visitTypeVariable", "(Ljavax/lang/model/type/TypeVariable;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitUnion(javax.lang.model.type.UnionType,java.lang.Object)"/>
@@ -538,7 +538,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><typeparamref name="R"/></returns>
         public R VisitUnion(Javax.Lang.Model.Type.UnionType arg0, P arg1)
         {
-            return IExecute<R>("visitUnion", arg0, arg1);
+            return IExecuteWithSignature<R>("visitUnion", "(Ljavax/lang/model/type/UnionType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitUnknown(javax.lang.model.type.TypeMirror,java.lang.Object)"/>
@@ -548,7 +548,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><typeparamref name="R"/></returns>
         public R VisitUnknown(Javax.Lang.Model.Type.TypeMirror arg0, P arg1)
         {
-            return IExecute<R>("visitUnknown", arg0, arg1);
+            return IExecuteWithSignature<R>("visitUnknown", "(Ljavax/lang/model/type/TypeMirror;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visitWildcard(javax.lang.model.type.WildcardType,java.lang.Object)"/>
@@ -558,7 +558,7 @@ namespace Javax.Lang.Model.Type
         /// <returns><typeparamref name="R"/></returns>
         public R VisitWildcard(Javax.Lang.Model.Type.WildcardType arg0, P arg1)
         {
-            return IExecute<R>("visitWildcard", arg0, arg1);
+            return IExecuteWithSignature<R>("visitWildcard", "(Ljavax/lang/model/type/WildcardType;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeVisitor.html#visit(javax.lang.model.type.TypeMirror)"/>
