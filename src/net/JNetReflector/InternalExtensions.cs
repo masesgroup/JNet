@@ -323,11 +323,14 @@ namespace MASES.JNetReflector
             return methodSignature;
         }
 
-        public static string SignatureFromGenericString(this IReadOnlyDictionary<string, string> methodSignatures, string genString)
+        public static string SignatureFromGenericString(this IReadOnlyDictionary<string, string> methodSignatures, Method entry)
         {
-            var filteredGenString = genString.RemoveThrowsAndCleanupSignature();
+            var filteredGenString = entry.GenericString.RemoveThrowsAndCleanupSignature();
             string signature = null;
-            methodSignatures.TryGetValue(filteredGenString, out signature);
+            if (!methodSignatures.TryGetValue(filteredGenString, out signature))
+            {
+                ReflectionUtils.ReportTrace(ReflectionUtils.ReflectionTraceLevel.Critical, $"SignatureFromGenericString: signature not found for method {entry.Name} (Generic string: {entry.GenericString}) of class {entry.DeclaringClass.TypeName} using {filteredGenString} not found.");
+            }
             return signature;
         }
 
