@@ -122,7 +122,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetPixelColor(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.Color>("getPixelColor", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Color>("getPixelColor", "(II)Ljava/awt/Color;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#createScreenCapture(java.awt.Rectangle)"/>
@@ -173,7 +173,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void MouseMove(int arg0, int arg1)
         {
-            IExecute("mouseMove", arg0, arg1);
+            IExecuteWithSignature("mouseMove", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Robot.html#mousePress(int)"/>

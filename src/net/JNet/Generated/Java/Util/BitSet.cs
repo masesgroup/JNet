@@ -244,7 +244,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.BitSet"/></returns>
         public Java.Util.BitSet Get(int arg0, int arg1)
         {
-            return IExecute<Java.Util.BitSet>("get", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.BitSet>("get", "(II)Ljava/util/BitSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#stream()"/>
@@ -292,7 +292,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void Clear(int arg0, int arg1)
         {
-            IExecute("clear", arg0, arg1);
+            IExecuteWithSignature("clear", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#clear(int)"/>
@@ -309,7 +309,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void Flip(int arg0, int arg1)
         {
-            IExecute("flip", arg0, arg1);
+            IExecuteWithSignature("flip", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#flip(int)"/>
@@ -334,7 +334,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="bool"/></param>
         public void Set(int arg0, bool arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#set(int,int,boolean)"/>
@@ -344,7 +344,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="bool"/></param>
         public void Set(int arg0, int arg1, bool arg2)
         {
-            IExecute("set", arg0, arg1, arg2);
+            IExecuteWithSignature("set", "(IIZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#set(int,int)"/>
@@ -353,7 +353,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         public void Set(int arg0, int arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/BitSet.html#set(int)"/>

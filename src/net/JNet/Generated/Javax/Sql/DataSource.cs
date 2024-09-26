@@ -174,7 +174,7 @@ namespace Javax.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Connection GetConnection(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Sql.Connection>("getConnection", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.Connection>("getConnection", "(Ljava/lang/String;Ljava/lang/String;)Ljava/sql/Connection;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html#createConnectionBuilder()"/>

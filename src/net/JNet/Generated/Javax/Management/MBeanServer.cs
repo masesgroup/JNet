@@ -440,7 +440,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public bool IsInstanceOf(Javax.Management.ObjectName arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("isInstanceOf", arg0, arg1);
+            return IExecuteWithSignature<bool>("isInstanceOf", "(Ljavax/management/ObjectName;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#isRegistered(javax.management.ObjectName)"/>
@@ -483,7 +483,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ReflectionException"/>
         public object GetAttribute(Javax.Management.ObjectName arg0, Java.Lang.String arg1)
         {
-            return IExecute("getAttribute", arg0, arg1);
+            return IExecuteWithSignature("getAttribute", "(Ljavax/management/ObjectName;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#instantiate(java.lang.String,java.lang.Object[],java.lang.String[])"/>
@@ -496,7 +496,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.MBeanException"/>
         public object Instantiate(Java.Lang.String arg0, object[] arg1, Java.Lang.String[] arg2)
         {
-            return IExecute("instantiate", arg0, arg1, arg2);
+            return IExecuteWithSignature("instantiate", "(Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#instantiate(java.lang.String,javax.management.ObjectName,java.lang.Object[],java.lang.String[])"/>
@@ -511,7 +511,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public object Instantiate(Java.Lang.String arg0, Javax.Management.ObjectName arg1, object[] arg2, Java.Lang.String[] arg3)
         {
-            return IExecute("instantiate", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature("instantiate", "(Ljava/lang/String;Ljavax/management/ObjectName;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#instantiate(java.lang.String,javax.management.ObjectName)"/>
@@ -524,7 +524,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public object Instantiate(Java.Lang.String arg0, Javax.Management.ObjectName arg1)
         {
-            return IExecute("instantiate", arg0, arg1);
+            return IExecuteWithSignature("instantiate", "(Ljava/lang/String;Ljavax/management/ObjectName;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#instantiate(java.lang.String)"/>
@@ -550,7 +550,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ReflectionException"/>
         public object Invoke(Javax.Management.ObjectName arg0, Java.Lang.String arg1, object[] arg2, Java.Lang.String[] arg3)
         {
-            return IExecute("invoke", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature("invoke", "(Ljavax/management/ObjectName;Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#queryMBeans(javax.management.ObjectName,javax.management.QueryExp)"/>
@@ -560,7 +560,7 @@ namespace Javax.Management
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Javax.Management.ObjectInstance> QueryMBeans(Javax.Management.ObjectName arg0, Javax.Management.QueryExp arg1)
         {
-            return IExecute<Java.Util.Set<Javax.Management.ObjectInstance>>("queryMBeans", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Set<Javax.Management.ObjectInstance>>("queryMBeans", "(Ljavax/management/ObjectName;Ljavax/management/QueryExp;)Ljava/util/Set;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#queryNames(javax.management.ObjectName,javax.management.QueryExp)"/>
@@ -570,7 +570,7 @@ namespace Javax.Management
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Javax.Management.ObjectName> QueryNames(Javax.Management.ObjectName arg0, Javax.Management.QueryExp arg1)
         {
-            return IExecute<Java.Util.Set<Javax.Management.ObjectName>>("queryNames", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Set<Javax.Management.ObjectName>>("queryNames", "(Ljavax/management/ObjectName;Ljavax/management/QueryExp;)Ljava/util/Set;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#getAttributes(javax.management.ObjectName,java.lang.String[])"/>
@@ -582,7 +582,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ReflectionException"/>
         public Javax.Management.AttributeList GetAttributes(Javax.Management.ObjectName arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<Javax.Management.AttributeList>("getAttributes", arg0, arg1);
+            return IExecuteWithSignature<Javax.Management.AttributeList>("getAttributes", "(Ljavax/management/ObjectName;[Ljava/lang/String;)Ljavax/management/AttributeList;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#setAttributes(javax.management.ObjectName,javax.management.AttributeList)"/>
@@ -594,7 +594,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ReflectionException"/>
         public Javax.Management.AttributeList SetAttributes(Javax.Management.ObjectName arg0, Javax.Management.AttributeList arg1)
         {
-            return IExecute<Javax.Management.AttributeList>("setAttributes", arg0, arg1);
+            return IExecuteWithSignature<Javax.Management.AttributeList>("setAttributes", "(Ljavax/management/ObjectName;Ljavax/management/AttributeList;)Ljavax/management/AttributeList;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#getMBeanInfo(javax.management.ObjectName)"/>
@@ -623,7 +623,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
         public Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, object[] arg2, Java.Lang.String[] arg3)
         {
-            return IExecute<Javax.Management.ObjectInstance>("createMBean", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Management.ObjectInstance>("createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;[Ljava/lang/Object;[Ljava/lang/String;)Ljavax/management/ObjectInstance;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName,java.lang.Object[],java.lang.String[])"/>
@@ -642,7 +642,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2, object[] arg3, Java.Lang.String[] arg4)
         {
-            return IExecute<Javax.Management.ObjectInstance>("createMBean", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Javax.Management.ObjectInstance>("createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;Ljavax/management/ObjectName;[Ljava/lang/Object;[Ljava/lang/String;)Ljavax/management/ObjectInstance;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#createMBean(java.lang.String,javax.management.ObjectName,javax.management.ObjectName)"/>
@@ -659,7 +659,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1, Javax.Management.ObjectName arg2)
         {
-            return IExecute<Javax.Management.ObjectInstance>("createMBean", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Management.ObjectInstance>("createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#createMBean(java.lang.String,javax.management.ObjectName)"/>
@@ -674,7 +674,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
         public Javax.Management.ObjectInstance CreateMBean(Java.Lang.String arg0, Javax.Management.ObjectName arg1)
         {
-            return IExecute<Javax.Management.ObjectInstance>("createMBean", arg0, arg1);
+            return IExecuteWithSignature<Javax.Management.ObjectInstance>("createMBean", "(Ljava/lang/String;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#getObjectInstance(javax.management.ObjectName)"/>
@@ -697,7 +697,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.NotCompliantMBeanException"/>
         public Javax.Management.ObjectInstance RegisterMBean(object arg0, Javax.Management.ObjectName arg1)
         {
-            return IExecute<Javax.Management.ObjectInstance>("registerMBean", arg0, arg1);
+            return IExecuteWithSignature<Javax.Management.ObjectInstance>("registerMBean", "(Ljava/lang/Object;Ljavax/management/ObjectName;)Ljavax/management/ObjectInstance;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#addNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
@@ -709,7 +709,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public void AddNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.NotificationListener arg1, Javax.Management.NotificationFilter arg2, object arg3)
         {
-            IExecute("addNotificationListener", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("addNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#addNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.management.NotificationFilter,java.lang.Object)"/>
@@ -721,7 +721,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.InstanceNotFoundException"/>
         public void AddNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.ObjectName arg1, Javax.Management.NotificationFilter arg2, object arg3)
         {
-            IExecute("addNotificationListener", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("addNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/ObjectName;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#removeNotificationListener(javax.management.ObjectName,javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
@@ -734,7 +734,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.NotificationListener arg1, Javax.Management.NotificationFilter arg2, object arg3)
         {
-            IExecute("removeNotificationListener", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("removeNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#removeNotificationListener(javax.management.ObjectName,javax.management.NotificationListener)"/>
@@ -745,7 +745,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.NotificationListener arg1)
         {
-            IExecute("removeNotificationListener", arg0, arg1);
+            IExecuteWithSignature("removeNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/NotificationListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName,javax.management.NotificationFilter,java.lang.Object)"/>
@@ -758,7 +758,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.ObjectName arg1, Javax.Management.NotificationFilter arg2, object arg3)
         {
-            IExecute("removeNotificationListener", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("removeNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/ObjectName;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#removeNotificationListener(javax.management.ObjectName,javax.management.ObjectName)"/>
@@ -769,7 +769,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.ObjectName arg0, Javax.Management.ObjectName arg1)
         {
-            IExecute("removeNotificationListener", arg0, arg1);
+            IExecuteWithSignature("removeNotificationListener", "(Ljavax/management/ObjectName;Ljavax/management/ObjectName;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#setAttribute(javax.management.ObjectName,javax.management.Attribute)"/>
@@ -783,7 +783,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ReflectionException"/>
         public void SetAttribute(Javax.Management.ObjectName arg0, Javax.Management.Attribute arg1)
         {
-            IExecute("setAttribute", arg0, arg1);
+            IExecuteWithSignature("setAttribute", "(Ljavax/management/ObjectName;Ljavax/management/Attribute;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html#unregisterMBean(javax.management.ObjectName)"/>

@@ -337,7 +337,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg2"><see cref="bool"/></param>
         public void PaintCurrentValue(Java.Awt.Graphics arg0, Java.Awt.Rectangle arg1, bool arg2)
         {
-            IExecute("paintCurrentValue", arg0, arg1, arg2);
+            IExecuteWithSignature("paintCurrentValue", "(Ljava/awt/Graphics;Ljava/awt/Rectangle;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.html#paintCurrentValueBackground(java.awt.Graphics,java.awt.Rectangle,boolean)"/>
@@ -347,7 +347,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <param name="arg2"><see cref="bool"/></param>
         public void PaintCurrentValueBackground(Java.Awt.Graphics arg0, Java.Awt.Rectangle arg1, bool arg2)
         {
-            IExecute("paintCurrentValueBackground", arg0, arg1, arg2);
+            IExecuteWithSignature("paintCurrentValueBackground", "(Ljava/awt/Graphics;Ljava/awt/Rectangle;Z)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.html#removeEditor()"/>
@@ -420,7 +420,7 @@ namespace Javax.Swing.Plaf.Basic
             /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
             public void AddLayoutComponent(Java.Lang.String arg0, Java.Awt.Component arg1)
             {
-                IExecute("addLayoutComponent", arg0, arg1);
+                IExecuteWithSignature("addLayoutComponent", "(Ljava/lang/String;Ljava/awt/Component;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicComboBoxUI.ComboBoxLayoutManager.html#layoutContainer(java.awt.Container)"/>

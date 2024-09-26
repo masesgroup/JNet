@@ -96,7 +96,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public static bool IsEqual(byte[] arg0, byte[] arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isEqual", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isEqual", "([B[B)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -108,7 +108,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Java.Security.MessageDigest GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Security.MessageDigest>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.MessageDigest>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljava/security/MessageDigest;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html#getInstance(java.lang.String,java.security.Provider)"/>
@@ -119,7 +119,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Java.Security.MessageDigest GetInstance(Java.Lang.String arg0, Java.Security.Provider arg1)
         {
-            return SExecute<Java.Security.MessageDigest>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Security.MessageDigest>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/MessageDigest;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html#getInstance(java.lang.String)"/>
@@ -191,7 +191,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.DigestException"/>
         public int Digest(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("digest", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("digest", "([BII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html#reset()"/>
@@ -216,7 +216,7 @@ namespace Java.Security
         /// <param name="arg2"><see cref="int"/></param>
         public void Update(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("update", arg0, arg1, arg2);
+            IExecuteWithSignature("update", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/MessageDigest.html#update(byte[])"/>

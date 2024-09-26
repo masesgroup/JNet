@@ -127,7 +127,7 @@ namespace Javax.Xml.Transform
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
         public Javax.Xml.Transform.Source Resolve(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Javax.Xml.Transform.Source>("resolve", arg0, arg1);
+            return IExecuteWithSignature<Javax.Xml.Transform.Source>("resolve", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", arg0, arg1);
         }
 
         #endregion

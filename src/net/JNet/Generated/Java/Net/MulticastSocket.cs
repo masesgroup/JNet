@@ -153,7 +153,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void JoinGroup(Java.Net.SocketAddress arg0, Java.Net.NetworkInterface arg1)
         {
-            IExecute("joinGroup", arg0, arg1);
+            IExecuteWithSignature("joinGroup", "(Ljava/net/SocketAddress;Ljava/net/NetworkInterface;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/MulticastSocket.html#leaveGroup(java.net.InetAddress)"/>
@@ -172,7 +172,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void LeaveGroup(Java.Net.SocketAddress arg0, Java.Net.NetworkInterface arg1)
         {
-            IExecute("leaveGroup", arg0, arg1);
+            IExecuteWithSignature("leaveGroup", "(Ljava/net/SocketAddress;Ljava/net/NetworkInterface;)V", arg0, arg1);
         }
 
         #endregion

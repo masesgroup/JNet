@@ -117,7 +117,7 @@ namespace Java.Awt
         /// <exception cref="Java.Awt.AWTException"/>
         public void CreateBufferStrategy(int arg0, Java.Awt.BufferCapabilities arg1)
         {
-            IExecute("createBufferStrategy", arg0, arg1);
+            IExecuteWithSignature("createBufferStrategy", "(ILjava/awt/BufferCapabilities;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Canvas.html#createBufferStrategy(int)"/>

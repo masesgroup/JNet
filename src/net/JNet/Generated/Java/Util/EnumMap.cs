@@ -185,7 +185,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Put(Java.Lang.Enum arg0, object arg1)
         {
-            return IExecute("put", arg0, arg1);
+            return IExecuteWithSignature("put", "(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
 
         #endregion
@@ -270,7 +270,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Put(K arg0, V arg1)
         {
-            return IExecute<V>("put", arg0, arg1);
+            return IExecuteWithSignature<V>("put", "(Ljava/lang/Enum;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
 
         #endregion

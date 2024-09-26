@@ -181,7 +181,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveMMFont(float[] arg0, float arg1, float arg2, float arg3, float arg4)
         {
-            return IExecute<Java.Awt.Font>("deriveMMFont", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Java.Awt.Font>("deriveMMFont", "([FFFFF)Ljava/awt/Font;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/MultipleMaster.html#deriveMMFont(float[])"/>

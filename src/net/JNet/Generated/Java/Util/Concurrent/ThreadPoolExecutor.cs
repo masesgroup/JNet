@@ -464,7 +464,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
         public void SetKeepAliveTime(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            IExecute("setKeepAliveTime", arg0, arg1);
+            IExecuteWithSignature("setKeepAliveTime", "(JLjava/util/concurrent/TimeUnit;)V", arg0, arg1);
         }
 
         #endregion
@@ -497,7 +497,7 @@ namespace Java.Util.Concurrent
             /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
             public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
             {
-                IExecute("rejectedExecution", arg0, arg1);
+                IExecuteWithSignature("rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V", arg0, arg1);
             }
 
             #endregion
@@ -537,7 +537,7 @@ namespace Java.Util.Concurrent
             /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
             public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
             {
-                IExecute("rejectedExecution", arg0, arg1);
+                IExecuteWithSignature("rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V", arg0, arg1);
             }
 
             #endregion
@@ -577,7 +577,7 @@ namespace Java.Util.Concurrent
             /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
             public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
             {
-                IExecute("rejectedExecution", arg0, arg1);
+                IExecuteWithSignature("rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V", arg0, arg1);
             }
 
             #endregion
@@ -617,7 +617,7 @@ namespace Java.Util.Concurrent
             /// <param name="arg1"><see cref="Java.Util.Concurrent.ThreadPoolExecutor"/></param>
             public void RejectedExecution(Java.Lang.Runnable arg0, Java.Util.Concurrent.ThreadPoolExecutor arg1)
             {
-                IExecute("rejectedExecution", arg0, arg1);
+                IExecuteWithSignature("rejectedExecution", "(Ljava/lang/Runnable;Ljava/util/concurrent/ThreadPoolExecutor;)V", arg0, arg1);
             }
 
             #endregion

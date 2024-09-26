@@ -138,7 +138,7 @@ namespace Java.Rmi.Dgc
         /// <exception cref="Java.Rmi.RemoteException"/>
         public Java.Rmi.Dgc.Lease Dirty(Java.Rmi.Server.ObjID[] arg0, long arg1, Java.Rmi.Dgc.Lease arg2)
         {
-            return IExecute<Java.Rmi.Dgc.Lease>("dirty", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Rmi.Dgc.Lease>("dirty", "([Ljava/rmi/server/ObjID;JLjava/rmi/dgc/Lease;)Ljava/rmi/dgc/Lease;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/dgc/DGC.html#clean(java.rmi.server.ObjID[],long,java.rmi.dgc.VMID,boolean)"/>
@@ -150,7 +150,7 @@ namespace Java.Rmi.Dgc
         /// <exception cref="Java.Rmi.RemoteException"/>
         public void Clean(Java.Rmi.Server.ObjID[] arg0, long arg1, Java.Rmi.Dgc.VMID arg2, bool arg3)
         {
-            IExecute("clean", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("clean", "([Ljava/rmi/server/ObjID;JLjava/rmi/dgc/VMID;Z)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion

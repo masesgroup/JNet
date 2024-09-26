@@ -181,7 +181,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool ImageUpdate(Java.Awt.Image arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
         {
-            return IExecute<bool>("imageUpdate", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<bool>("imageUpdate", "(Ljava/awt/Image;IIIII)Z", arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

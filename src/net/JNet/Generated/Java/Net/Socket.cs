@@ -288,7 +288,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket SetOption<T>(Java.Net.SocketOption<T> arg0, T arg1)
         {
-            return IExecute<Java.Net.Socket>("setOption", arg0, arg1);
+            return IExecuteWithSignature<Java.Net.Socket>("setOption", "(Ljava/net/SocketOption;Ljava/lang/Object;)Ljava/net/Socket;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#getOption(java.net.SocketOption)"/>
@@ -374,7 +374,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void Connect(Java.Net.SocketAddress arg0, int arg1)
         {
-            IExecute("connect", arg0, arg1);
+            IExecuteWithSignature("connect", "(Ljava/net/SocketAddress;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#connect(java.net.SocketAddress)"/>
@@ -402,7 +402,7 @@ namespace Java.Net
         /// <param name="arg2"><see cref="int"/></param>
         public void SetPerformancePreferences(int arg0, int arg1, int arg2)
         {
-            IExecute("setPerformancePreferences", arg0, arg1, arg2);
+            IExecuteWithSignature("setPerformancePreferences", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#setSoLinger(boolean,int)"/>
@@ -412,7 +412,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public void SetSoLinger(bool arg0, int arg1)
         {
-            IExecute("setSoLinger", arg0, arg1);
+            IExecuteWithSignature("setSoLinger", "(ZI)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Socket.html#shutdownInput()"/>

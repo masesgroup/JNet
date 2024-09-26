@@ -918,7 +918,7 @@ namespace Java.Lang
         /// <returns><see cref="bool"/></returns>
         public static bool IsSurrogatePair(char arg0, char arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isSurrogatePair", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isSurrogatePair", "(CC)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isTitleCase(char)"/>
@@ -1045,7 +1045,7 @@ namespace Java.Lang
         /// <returns><see cref="char"/></returns>
         public static char ForDigit(int arg0, int arg1)
         {
-            return SExecute<char>(LocalBridgeClazz, "forDigit", arg0, arg1);
+            return SExecuteWithSignature<char>(LocalBridgeClazz, "forDigit", "(II)C", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#highSurrogate(int)"/>
@@ -1128,7 +1128,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointAt(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointAt", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointAt", "([CII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#codePointAt(char[],int)"/>
@@ -1138,7 +1138,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointAt(char[] arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointAt", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointAt", "([CI)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#codePointAt(java.lang.CharSequence,int)"/>
@@ -1148,7 +1148,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointAt(Java.Lang.CharSequence arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointAt", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointAt", "(Ljava/lang/CharSequence;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#codePointBefore(char[],int,int)"/>
@@ -1159,7 +1159,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointBefore(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointBefore", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointBefore", "([CII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#codePointBefore(char[],int)"/>
@@ -1169,7 +1169,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointBefore(char[] arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointBefore", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointBefore", "([CI)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#codePointBefore(java.lang.CharSequence,int)"/>
@@ -1179,7 +1179,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointBefore(Java.Lang.CharSequence arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointBefore", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointBefore", "(Ljava/lang/CharSequence;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#codePointCount(char[],int,int)"/>
@@ -1190,7 +1190,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointCount(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointCount", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointCount", "([CII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#codePointCount(java.lang.CharSequence,int,int)"/>
@@ -1201,7 +1201,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int CodePointCount(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "codePointCount", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "codePointCount", "(Ljava/lang/CharSequence;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#codePointOf(java.lang.String)"/>
@@ -1220,7 +1220,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(char arg0, char arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(CC)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#digit(char,int)"/>
@@ -1230,7 +1230,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Digit(char arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "digit", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "digit", "(CI)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#digit(int,int)"/>
@@ -1240,7 +1240,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Digit(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "digit", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "digit", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#getNumericValue(char)"/>
@@ -1298,7 +1298,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int OffsetByCodePoints(char[] arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            return SExecute<int>(LocalBridgeClazz, "offsetByCodePoints", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "offsetByCodePoints", "([CIIII)I", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#offsetByCodePoints(java.lang.CharSequence,int,int)"/>
@@ -1309,7 +1309,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int OffsetByCodePoints(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "offsetByCodePoints", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "offsetByCodePoints", "(Ljava/lang/CharSequence;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toChars(int,char[],int)"/>
@@ -1320,7 +1320,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int ToChars(int arg0, char[] arg1, int arg2)
         {
-            return SExecute<int>(LocalBridgeClazz, "toChars", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "toChars", "(I[CI)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toCodePoint(char,char)"/>
@@ -1330,7 +1330,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int ToCodePoint(char arg0, char arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "toCodePoint", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "toCodePoint", "(CC)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#toLowerCase(int)"/>

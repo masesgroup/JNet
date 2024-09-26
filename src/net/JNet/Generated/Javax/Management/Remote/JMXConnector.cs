@@ -200,7 +200,7 @@ namespace Javax.Management.Remote
         /// <param name="arg2"><see cref="object"/></param>
         public void AddConnectionNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
-            IExecute("addConnectionNotificationListener", arg0, arg1, arg2);
+            IExecuteWithSignature("addConnectionNotificationListener", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#close()"/>
@@ -236,7 +236,7 @@ namespace Javax.Management.Remote
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveConnectionNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
-            IExecute("removeConnectionNotificationListener", arg0, arg1, arg2);
+            IExecuteWithSignature("removeConnectionNotificationListener", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnector.html#removeConnectionNotificationListener(javax.management.NotificationListener)"/>

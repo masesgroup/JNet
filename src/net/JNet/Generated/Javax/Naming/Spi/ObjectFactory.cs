@@ -131,7 +131,7 @@ namespace Javax.Naming.Spi
         /// <exception cref="Java.Lang.Exception"/>
         public object GetObjectInstance(object arg0, Javax.Naming.Name arg1, Javax.Naming.Context arg2, Java.Util.Hashtable<object, object> arg3)
         {
-            return IExecute("getObjectInstance", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature("getObjectInstance", "(Ljava/lang/Object;Ljavax/naming/Name;Ljavax/naming/Context;Ljava/util/Hashtable;)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

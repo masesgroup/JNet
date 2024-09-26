@@ -112,7 +112,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="Javax.Xml.Parsers.SAXParserFactory"/></returns>
         public static Javax.Xml.Parsers.SAXParserFactory NewInstance(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljavax/xml/parsers/SAXParserFactory;", arg0, arg1);
         }
 
         #endregion
@@ -157,7 +157,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Org.Xml.Sax.SAXNotSupportedException"/>
         public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setFeature", arg0, arg1);
+            IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/SAXParserFactory.html#isNamespaceAware()"/>

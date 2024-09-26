@@ -122,7 +122,7 @@ namespace Javax.Management
         /// <returns><see cref="bool"/></returns>
         public bool AddAll(int arg0, Javax.Management.AttributeList arg1)
         {
-            return IExecute<bool>("addAll", arg0, arg1);
+            return IExecuteWithSignature<bool>("addAll", "(ILjavax/management/AttributeList;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#addAll(javax.management.AttributeList)"/>
@@ -148,7 +148,7 @@ namespace Javax.Management
         /// <param name="arg1"><see cref="Javax.Management.Attribute"/></param>
         public void Add(int arg0, Javax.Management.Attribute arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(ILjavax/management/Attribute;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/AttributeList.html#add(javax.management.Attribute)"/>
@@ -165,7 +165,7 @@ namespace Javax.Management
         /// <param name="arg1"><see cref="Javax.Management.Attribute"/></param>
         public void Set(int arg0, Javax.Management.Attribute arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(ILjavax/management/Attribute;)V", arg0, arg1);
         }
 
         #endregion

@@ -182,7 +182,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public static Java.Util.Concurrent.ForkJoinTask Adapt(Java.Lang.Runnable arg0, object arg1)
         {
-            return SExecute<Java.Util.Concurrent.ForkJoinTask>(LocalBridgeClazz, "adapt", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Concurrent.ForkJoinTask>(LocalBridgeClazz, "adapt", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/ForkJoinTask;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.util.concurrent.Callable)"/>
@@ -224,7 +224,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public static void InvokeAll(Java.Util.Concurrent.ForkJoinTask arg0, Java.Util.Concurrent.ForkJoinTask arg1)
         {
-            SExecute(LocalBridgeClazz, "invokeAll", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "(Ljava/util/concurrent/ForkJoinTask;Ljava/util/concurrent/ForkJoinTask;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask[])"/>
@@ -284,7 +284,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSetForkJoinTaskTag(short arg0, short arg1)
         {
-            return IExecute<bool>("compareAndSetForkJoinTaskTag", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndSetForkJoinTaskTag", "(SS)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isCancelled()"/>
@@ -356,7 +356,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
         public object Get(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute("get", arg0, arg1);
+            return IExecuteWithSignature("get", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invoke()"/>
@@ -497,7 +497,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="Java.Util.Concurrent.ForkJoinTask"/></returns>
         public static Java.Util.Concurrent.ForkJoinTask<T> Adapt<T>(Java.Lang.Runnable arg0, T arg1)
         {
-            return SExecute<Java.Util.Concurrent.ForkJoinTask<T>>(LocalBridgeClazz, "adapt", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Concurrent.ForkJoinTask<T>>(LocalBridgeClazz, "adapt", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/ForkJoinTask;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#adapt(java.util.concurrent.Callable)"/>
@@ -541,7 +541,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg1"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public static void InvokeAll(Java.Util.Concurrent.ForkJoinTask<object> arg0, Java.Util.Concurrent.ForkJoinTask<object> arg1)
         {
-            SExecute(LocalBridgeClazz, "invokeAll", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "(Ljava/util/concurrent/ForkJoinTask;Ljava/util/concurrent/ForkJoinTask;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask[])"/>
@@ -601,7 +601,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSetForkJoinTaskTag(short arg0, short arg1)
         {
-            return IExecute<bool>("compareAndSetForkJoinTaskTag", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndSetForkJoinTaskTag", "(SS)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#isCancelled()"/>
@@ -673,7 +673,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
         public V Get(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<V>("get", arg0, arg1);
+            return IExecuteWithSignature<V>("get", "(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invoke()"/>

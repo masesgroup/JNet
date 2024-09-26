@@ -344,7 +344,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="bool"/></param>
             public void Put(Java.Lang.String arg0, bool arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;Z)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,byte)"/>
@@ -353,7 +353,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="byte"/></param>
             public void Put(Java.Lang.String arg0, byte arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;B)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,char)"/>
@@ -362,7 +362,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="char"/></param>
             public void Put(Java.Lang.String arg0, char arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;C)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,double)"/>
@@ -371,7 +371,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="double"/></param>
             public void Put(Java.Lang.String arg0, double arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;D)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,float)"/>
@@ -380,7 +380,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="float"/></param>
             public void Put(Java.Lang.String arg0, float arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;F)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,int)"/>
@@ -389,7 +389,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="int"/></param>
             public void Put(Java.Lang.String arg0, int arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,java.lang.Object)"/>
@@ -398,7 +398,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="object"/></param>
             public void Put(Java.Lang.String arg0, object arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,long)"/>
@@ -407,7 +407,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="long"/></param>
             public void Put(Java.Lang.String arg0, long arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;J)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,short)"/>
@@ -416,7 +416,7 @@ namespace Java.Io
             /// <param name="arg1"><see cref="short"/></param>
             public void Put(Java.Lang.String arg0, short arg1)
             {
-                IExecute("put", arg0, arg1);
+                IExecuteWithSignature("put", "(Ljava/lang/String;S)V", arg0, arg1);
             }
 
             #endregion

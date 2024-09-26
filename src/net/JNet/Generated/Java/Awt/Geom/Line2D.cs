@@ -200,7 +200,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public static bool LinesIntersect(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7)
         {
-            return SExecute<bool>(LocalBridgeClazz, "linesIntersect", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "linesIntersect", "(DDDDDDDD)Z", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptLineDist(double,double,double,double,double,double)"/>
@@ -214,7 +214,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double PtLineDist(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
-            return SExecute<double>(LocalBridgeClazz, "ptLineDist", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "ptLineDist", "(DDDDDD)D", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptLineDistSq(double,double,double,double,double,double)"/>
@@ -228,7 +228,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double PtLineDistSq(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
-            return SExecute<double>(LocalBridgeClazz, "ptLineDistSq", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "ptLineDistSq", "(DDDDDD)D", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptSegDist(double,double,double,double,double,double)"/>
@@ -242,7 +242,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double PtSegDist(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
-            return SExecute<double>(LocalBridgeClazz, "ptSegDist", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "ptSegDist", "(DDDDDD)D", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptSegDistSq(double,double,double,double,double,double)"/>
@@ -256,7 +256,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double PtSegDistSq(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
-            return SExecute<double>(LocalBridgeClazz, "ptSegDistSq", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "ptSegDistSq", "(DDDDDD)D", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#relativeCCW(double,double,double,double,double,double)"/>
@@ -270,7 +270,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="int"/></returns>
         public static int RelativeCCW(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)
         {
-            return SExecute<int>(LocalBridgeClazz, "relativeCCW", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "relativeCCW", "(DDDDDD)I", arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion
@@ -334,7 +334,7 @@ namespace Java.Awt.Geom
         /// <param name="arg3"><see cref="double"/></param>
         public void SetLine(double arg0, double arg1, double arg2, double arg3)
         {
-            IExecute("setLine", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setLine", "(DDDD)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#contains(double,double,double,double)"/>
@@ -346,7 +346,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(double arg0, double arg1, double arg2, double arg3)
         {
-            return IExecute<bool>("contains", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("contains", "(DDDD)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#contains(double,double)"/>
@@ -356,7 +356,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Contains(double arg0, double arg1)
         {
-            return IExecute<bool>("contains", arg0, arg1);
+            return IExecuteWithSignature<bool>("contains", "(DD)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#contains(java.awt.geom.Point2D)"/>
@@ -386,7 +386,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool Intersects(double arg0, double arg1, double arg2, double arg3)
         {
-            return IExecute<bool>("intersects", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("intersects", "(DDDD)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#intersects(java.awt.geom.Rectangle2D)"/>
@@ -407,7 +407,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="bool"/></returns>
         public bool IntersectsLine(double arg0, double arg1, double arg2, double arg3)
         {
-            return IExecute<bool>("intersectsLine", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("intersectsLine", "(DDDD)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#intersectsLine(java.awt.geom.Line2D)"/>
@@ -426,7 +426,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public double PtLineDist(double arg0, double arg1)
         {
-            return IExecute<double>("ptLineDist", arg0, arg1);
+            return IExecuteWithSignature<double>("ptLineDist", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptLineDist(java.awt.geom.Point2D)"/>
@@ -445,7 +445,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public double PtLineDistSq(double arg0, double arg1)
         {
-            return IExecute<double>("ptLineDistSq", arg0, arg1);
+            return IExecuteWithSignature<double>("ptLineDistSq", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptLineDistSq(java.awt.geom.Point2D)"/>
@@ -464,7 +464,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public double PtSegDist(double arg0, double arg1)
         {
-            return IExecute<double>("ptSegDist", arg0, arg1);
+            return IExecuteWithSignature<double>("ptSegDist", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptSegDist(java.awt.geom.Point2D)"/>
@@ -483,7 +483,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public double PtSegDistSq(double arg0, double arg1)
         {
-            return IExecute<double>("ptSegDistSq", arg0, arg1);
+            return IExecuteWithSignature<double>("ptSegDistSq", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#ptSegDistSq(java.awt.geom.Point2D)"/>
@@ -502,7 +502,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="int"/></returns>
         public int RelativeCCW(double arg0, double arg1)
         {
-            return IExecute<int>("relativeCCW", arg0, arg1);
+            return IExecuteWithSignature<int>("relativeCCW", "(DD)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#relativeCCW(java.awt.geom.Point2D)"/>
@@ -521,7 +521,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="Java.Awt.Geom.PathIterator"/></returns>
         public Java.Awt.Geom.PathIterator GetPathIterator(Java.Awt.Geom.AffineTransform arg0, double arg1)
         {
-            return IExecute<Java.Awt.Geom.PathIterator>("getPathIterator", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Geom.PathIterator>("getPathIterator", "(Ljava/awt/geom/AffineTransform;D)Ljava/awt/geom/PathIterator;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Line2D.html#getPathIterator(java.awt.geom.AffineTransform)"/>
@@ -547,7 +547,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="Java.Awt.Geom.Point2D"/></param>
         public void SetLine(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
-            IExecute("setLine", arg0, arg1);
+            IExecuteWithSignature("setLine", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)V", arg0, arg1);
         }
 
         #endregion
@@ -693,7 +693,7 @@ namespace Java.Awt.Geom
             /// <param name="arg3"><see cref="float"/></param>
             public void SetLine(float arg0, float arg1, float arg2, float arg3)
             {
-                IExecute("setLine", arg0, arg1, arg2, arg3);
+                IExecuteWithSignature("setLine", "(FFFF)V", arg0, arg1, arg2, arg3);
             }
 
             #endregion

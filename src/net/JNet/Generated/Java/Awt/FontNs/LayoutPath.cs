@@ -100,7 +100,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="bool"/></returns>
         public bool PointToPath(Java.Awt.Geom.Point2D arg0, Java.Awt.Geom.Point2D arg1)
         {
-            return IExecute<bool>("pointToPath", arg0, arg1);
+            return IExecuteWithSignature<bool>("pointToPath", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/LayoutPath.html#pathToPoint(java.awt.geom.Point2D,boolean,java.awt.geom.Point2D)"/>
@@ -110,7 +110,7 @@ namespace Java.Awt.FontNs
         /// <param name="arg2"><see cref="Java.Awt.Geom.Point2D"/></param>
         public void PathToPoint(Java.Awt.Geom.Point2D arg0, bool arg1, Java.Awt.Geom.Point2D arg2)
         {
-            IExecute("pathToPoint", arg0, arg1, arg2);
+            IExecuteWithSignature("pathToPoint", "(Ljava/awt/geom/Point2D;ZLjava/awt/geom/Point2D;)V", arg0, arg1, arg2);
         }
 
         #endregion

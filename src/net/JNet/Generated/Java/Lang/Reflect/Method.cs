@@ -138,7 +138,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.Reflect.InvocationTargetException"/>
         public object Invoke(object arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute("invoke", arg0); else return IExecute("invoke", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature("invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", arg0); else return IExecuteWithSignature("invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
 
         #endregion

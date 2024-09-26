@@ -110,7 +110,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public static Java.Nio.DoubleBuffer Wrap(double[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.DoubleBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Nio.DoubleBuffer>(LocalBridgeClazz, "wrap", "([DII)Ljava/nio/DoubleBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#wrap(double[])"/>
@@ -183,7 +183,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public Java.Nio.DoubleBuffer Put(int arg0, double arg1)
         {
-            return IExecute<Java.Nio.DoubleBuffer>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.DoubleBuffer>("put", "(ID)Ljava/nio/DoubleBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#put(double[])"/>
@@ -230,7 +230,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public Java.Nio.DoubleBuffer Get(double[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.DoubleBuffer>("get", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.DoubleBuffer>("get", "([DII)Ljava/nio/DoubleBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#get(double[])"/>
@@ -250,7 +250,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
         public Java.Nio.DoubleBuffer Put(double[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.DoubleBuffer>("put", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.DoubleBuffer>("put", "([DII)Ljava/nio/DoubleBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/DoubleBuffer.html#put(java.nio.DoubleBuffer)"/>

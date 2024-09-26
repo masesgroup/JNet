@@ -240,7 +240,7 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetClassAssertionStatus(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setClassAssertionStatus", arg0, arg1);
+            IExecuteWithSignature("setClassAssertionStatus", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ClassLoader.html#setDefaultAssertionStatus(boolean)"/>
@@ -257,7 +257,7 @@ namespace Java.Lang
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetPackageAssertionStatus(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setPackageAssertionStatus", arg0, arg1);
+            IExecuteWithSignature("setPackageAssertionStatus", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
 
         #endregion

@@ -305,7 +305,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void Insert(Java.Awt.Component arg0, int arg1)
         {
-            IExecute("insert", arg0, arg1);
+            IExecuteWithSignature("insert", "(Ljava/awt/Component;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#insert(javax.swing.Action,int)"/>
@@ -314,7 +314,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void Insert(Javax.Swing.Action arg0, int arg1)
         {
-            IExecute("insert", arg0, arg1);
+            IExecuteWithSignature("insert", "(Ljavax/swing/Action;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#menuSelectionChanged(boolean)"/>
@@ -339,7 +339,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="Javax.Swing.MenuSelectionManager"/></param>
         public void ProcessKeyEvent(Java.Awt.EventNs.KeyEvent arg0, Javax.Swing.MenuElement[] arg1, Javax.Swing.MenuSelectionManager arg2)
         {
-            IExecute("processKeyEvent", arg0, arg1, arg2);
+            IExecuteWithSignature("processKeyEvent", "(Ljava/awt/event/KeyEvent;[Ljavax/swing/MenuElement;Ljavax/swing/MenuSelectionManager;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#processMouseEvent(java.awt.event.MouseEvent,javax.swing.MenuElement[],javax.swing.MenuSelectionManager)"/>
@@ -349,7 +349,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="Javax.Swing.MenuSelectionManager"/></param>
         public void ProcessMouseEvent(Java.Awt.EventNs.MouseEvent arg0, Javax.Swing.MenuElement[] arg1, Javax.Swing.MenuSelectionManager arg2)
         {
-            IExecute("processMouseEvent", arg0, arg1, arg2);
+            IExecuteWithSignature("processMouseEvent", "(Ljava/awt/event/MouseEvent;[Ljavax/swing/MenuElement;Ljavax/swing/MenuSelectionManager;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#removeMenuKeyListener(javax.swing.event.MenuKeyListener)"/>
@@ -390,7 +390,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void SetPopupSize(int arg0, int arg1)
         {
-            IExecute("setPopupSize", arg0, arg1);
+            IExecuteWithSignature("setPopupSize", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JPopupMenu.html#setPopupSize(java.awt.Dimension)"/>
@@ -424,7 +424,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="int"/></param>
         public void Show(Java.Awt.Component arg0, int arg1, int arg2)
         {
-            IExecute("show", arg0, arg1, arg2);
+            IExecuteWithSignature("show", "(Ljava/awt/Component;II)V", arg0, arg1, arg2);
         }
 
         #endregion

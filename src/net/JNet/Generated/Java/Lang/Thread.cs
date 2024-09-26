@@ -312,7 +312,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.InterruptedException"/>
         public static void Sleep(long arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "sleep", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "sleep", "(JI)V", arg0, arg1);
         }
 
         #endregion
@@ -399,7 +399,7 @@ namespace Java.Lang
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Join(long arg0, int arg1)
         {
-            IExecute("join", arg0, arg1);
+            IExecuteWithSignature("join", "(JI)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#join(long)"/>

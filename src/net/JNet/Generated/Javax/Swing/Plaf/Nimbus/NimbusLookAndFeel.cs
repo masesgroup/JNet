@@ -102,7 +102,7 @@ namespace Javax.Swing.Plaf.Nimbus
         /// <returns><see cref="Java.Awt.Color"/></returns>
         public Java.Awt.Color GetDerivedColor(Java.Lang.String arg0, float arg1, float arg2, float arg3, int arg4, bool arg5)
         {
-            return IExecute<Java.Awt.Color>("getDerivedColor", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Java.Awt.Color>("getDerivedColor", "(Ljava/lang/String;FFFIZ)Ljava/awt/Color;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/nimbus/NimbusLookAndFeel.html#register(javax.swing.plaf.synth.Region,java.lang.String)"/>
@@ -111,7 +111,7 @@ namespace Javax.Swing.Plaf.Nimbus
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void Register(Javax.Swing.Plaf.Synth.Region arg0, Java.Lang.String arg1)
         {
-            IExecute("register", arg0, arg1);
+            IExecuteWithSignature("register", "(Ljavax/swing/plaf/synth/Region;Ljava/lang/String;)V", arg0, arg1);
         }
 
         #endregion

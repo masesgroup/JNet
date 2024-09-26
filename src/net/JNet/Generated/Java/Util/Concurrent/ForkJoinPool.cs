@@ -313,7 +313,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool AwaitQuiescence(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<bool>("awaitQuiescence", arg0, arg1);
+            return IExecuteWithSignature<bool>("awaitQuiescence", "(JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinPool.html#hasQueuedSubmissions()"/>

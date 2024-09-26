@@ -560,7 +560,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Execute(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<bool>("execute", arg0, arg1);
+            return IExecuteWithSignature<bool>("execute", "(Ljava/lang/String;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#execute(java.lang.String,int[])"/>
@@ -571,7 +571,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Execute(Java.Lang.String arg0, int[] arg1)
         {
-            return IExecute<bool>("execute", arg0, arg1);
+            return IExecuteWithSignature<bool>("execute", "(Ljava/lang/String;[I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#execute(java.lang.String,java.lang.String[])"/>
@@ -582,7 +582,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool Execute(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<bool>("execute", arg0, arg1);
+            return IExecuteWithSignature<bool>("execute", "(Ljava/lang/String;[Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#execute(java.lang.String)"/>
@@ -640,7 +640,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int ExecuteUpdate(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<int>("executeUpdate", arg0, arg1);
+            return IExecuteWithSignature<int>("executeUpdate", "(Ljava/lang/String;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeUpdate(java.lang.String,int[])"/>
@@ -651,7 +651,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int ExecuteUpdate(Java.Lang.String arg0, int[] arg1)
         {
-            return IExecute<int>("executeUpdate", arg0, arg1);
+            return IExecuteWithSignature<int>("executeUpdate", "(Ljava/lang/String;[I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeUpdate(java.lang.String,java.lang.String[])"/>
@@ -662,7 +662,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public int ExecuteUpdate(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<int>("executeUpdate", arg0, arg1);
+            return IExecuteWithSignature<int>("executeUpdate", "(Ljava/lang/String;[Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeUpdate(java.lang.String)"/>
@@ -788,7 +788,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Lang.String EnquoteIdentifier(Java.Lang.String arg0, bool arg1)
         {
-            return IExecute<Java.Lang.String>("enquoteIdentifier", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("enquoteIdentifier", "(Ljava/lang/String;Z)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#enquoteLiteral(java.lang.String)"/>
@@ -819,7 +819,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long ExecuteLargeUpdate(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<long>("executeLargeUpdate", arg0, arg1);
+            return IExecuteWithSignature<long>("executeLargeUpdate", "(Ljava/lang/String;I)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeLargeUpdate(java.lang.String,int[])"/>
@@ -830,7 +830,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long ExecuteLargeUpdate(Java.Lang.String arg0, int[] arg1)
         {
-            return IExecute<long>("executeLargeUpdate", arg0, arg1);
+            return IExecuteWithSignature<long>("executeLargeUpdate", "(Ljava/lang/String;[I)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeLargeUpdate(java.lang.String,java.lang.String[])"/>
@@ -841,7 +841,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public long ExecuteLargeUpdate(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<long>("executeLargeUpdate", arg0, arg1);
+            return IExecuteWithSignature<long>("executeLargeUpdate", "(Ljava/lang/String;[Ljava/lang/String;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Statement.html#executeLargeUpdate(java.lang.String)"/>

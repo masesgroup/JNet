@@ -240,7 +240,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map CopyOf(Java.Util.Map arg0)
         {
-            return SExecute<Java.Util.Map>(LocalBridgeClazz, "copyOf", arg0);
+            return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "copyOf", "(Ljava/util/Map;)Ljava/util/Map;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of()"/>
@@ -248,7 +248,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map Of()
         {
-            return SExecute<Java.Util.Map>(LocalBridgeClazz, "of");
+            return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -276,7 +276,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9, object arg10, object arg11, object arg12, object arg13, object arg14, object arg15, object arg16, object arg17, object arg18, object arg19)
         {
-            return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19);
+            return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -302,7 +302,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9, object arg10, object arg11, object arg12, object arg13, object arg14, object arg15, object arg16, object arg17)
         {
-            return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17);
+            return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -326,7 +326,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9, object arg10, object arg11, object arg12, object arg13, object arg14, object arg15)
         {
-            return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
+            return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -348,7 +348,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9, object arg10, object arg11, object arg12, object arg13)
         {
-            return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
+            return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -368,7 +368,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9, object arg10, object arg11)
         {
-            return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+            return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -386,7 +386,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7, object arg8, object arg9)
         {
-            return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -402,7 +402,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5, object arg6, object arg7)
         {
-            return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -416,7 +416,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3, object arg4, object arg5)
         {
-            return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -428,7 +428,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map Of(object arg0, object arg1, object arg2, object arg3)
         {
-            return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object)"/>
@@ -438,7 +438,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map Of(object arg0, object arg1)
         {
-            return SExecute<Java.Util.Map>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry[])"/>
@@ -447,7 +447,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map OfEntries(params Java.Util.Map.Entry[] arg0)
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Map>(LocalBridgeClazz, "ofEntries"); else return SExecute<Java.Util.Map>(LocalBridgeClazz, "ofEntries", arg0);
+            if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "ofEntries", "([Ljava/util/Map$Entry;)Ljava/util/Map;"); else return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "ofEntries", "([Ljava/util/Map$Entry;)Ljava/util/Map;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entry(java.lang.Object,java.lang.Object)"/>
@@ -457,7 +457,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public static Java.Util.Map.Entry EntryMethod(object arg0, object arg1)
         {
-            return SExecute<Java.Util.Map.Entry>(LocalBridgeClazz, "entry", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Map.Entry>(LocalBridgeClazz, "entry", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0, arg1);
         }
 
         #endregion
@@ -538,7 +538,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Put(object arg0, object arg1)
         {
-            return IExecute("put", arg0, arg1);
+            return IExecuteWithSignature("put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object)"/>
@@ -572,7 +572,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Remove(object arg0, object arg1)
         {
-            return IExecute<bool>("remove", arg0, arg1);
+            return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -583,7 +583,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Replace(object arg0, object arg1, object arg2)
         {
-            return IExecute<bool>("replace", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("replace", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
@@ -593,7 +593,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Compute(object arg0, Java.Util.Function.BiFunction arg1)
         {
-            return IExecute("compute", arg0, arg1);
+            return IExecuteWithSignature("compute", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
@@ -603,7 +603,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object ComputeIfAbsent(object arg0, Java.Util.Function.Function arg1)
         {
-            return IExecute("computeIfAbsent", arg0, arg1);
+            return IExecuteWithSignature("computeIfAbsent", "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
@@ -613,7 +613,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object ComputeIfPresent(object arg0, Java.Util.Function.BiFunction arg1)
         {
-            return IExecute("computeIfPresent", arg0, arg1);
+            return IExecuteWithSignature("computeIfPresent", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
@@ -623,7 +623,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object GetOrDefault(object arg0, object arg1)
         {
-            return IExecute("getOrDefault", arg0, arg1);
+            return IExecuteWithSignature("getOrDefault", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
@@ -634,7 +634,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Merge(object arg0, object arg1, Java.Util.Function.BiFunction arg2)
         {
-            return IExecute("merge", arg0, arg1, arg2);
+            return IExecuteWithSignature("merge", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
@@ -644,7 +644,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object PutIfAbsent(object arg0, object arg1)
         {
-            return IExecute("putIfAbsent", arg0, arg1);
+            return IExecuteWithSignature("putIfAbsent", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object)"/>
@@ -654,7 +654,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Replace(object arg0, object arg1)
         {
-            return IExecute("replace", arg0, arg1);
+            return IExecuteWithSignature("replace", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#forEach(java.util.function.BiConsumer)"/>
@@ -707,7 +707,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Comparator"/></returns>
             public static Java.Util.Comparator ComparingByKey(Java.Util.Comparator arg0)
             {
-                return SExecute<Java.Util.Comparator>(LocalBridgeClazz, "comparingByKey", arg0);
+                return SExecuteWithSignature<Java.Util.Comparator>(LocalBridgeClazz, "comparingByKey", "(Ljava/util/Comparator;)Ljava/util/Comparator;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByValue()"/>
@@ -724,7 +724,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Comparator"/></returns>
             public static Java.Util.Comparator ComparingByValue(Java.Util.Comparator arg0)
             {
-                return SExecute<Java.Util.Comparator>(LocalBridgeClazz, "comparingByValue", arg0);
+                return SExecuteWithSignature<Java.Util.Comparator>(LocalBridgeClazz, "comparingByValue", "(Ljava/util/Comparator;)Ljava/util/Comparator;", arg0);
             }
 
             #endregion
@@ -800,7 +800,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Comparator"/></returns>
             public static Java.Util.Comparator<Java.Util.Map.Entry<K, V>> ComparingByKey<Arg0objectSuperK>(Java.Util.Comparator<Arg0objectSuperK> arg0) where Arg0objectSuperK : K
             {
-                return SExecute<Java.Util.Comparator<Java.Util.Map.Entry<K, V>>>(LocalBridgeClazz, "comparingByKey", arg0);
+                return SExecuteWithSignature<Java.Util.Comparator<Java.Util.Map.Entry<K, V>>>(LocalBridgeClazz, "comparingByKey", "(Ljava/util/Comparator;)Ljava/util/Comparator;", arg0);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.Entry.html#comparingByValue()"/>
@@ -818,7 +818,7 @@ namespace Java.Util
             /// <returns><see cref="Java.Util.Comparator"/></returns>
             public static Java.Util.Comparator<Java.Util.Map.Entry<K, V>> ComparingByValue<Arg0objectSuperV>(Java.Util.Comparator<Arg0objectSuperV> arg0) where Arg0objectSuperV : V
             {
-                return SExecute<Java.Util.Comparator<Java.Util.Map.Entry<K, V>>>(LocalBridgeClazz, "comparingByValue", arg0);
+                return SExecuteWithSignature<Java.Util.Comparator<Java.Util.Map.Entry<K, V>>>(LocalBridgeClazz, "comparingByValue", "(Ljava/util/Comparator;)Ljava/util/Comparator;", arg0);
             }
 
             #endregion
@@ -1069,7 +1069,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> CopyOf<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "copyOf", arg0);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "copyOf", "(Ljava/util/Map;)Ljava/util/Map;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of()"/>
@@ -1077,7 +1077,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> Of()
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of");
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -1105,7 +1105,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9, K arg10, V arg11, K arg12, V arg13, K arg14, V arg15, K arg16, V arg17, K arg18, V arg19)
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -1131,7 +1131,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9, K arg10, V arg11, K arg12, V arg13, K arg14, V arg15, K arg16, V arg17)
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -1155,7 +1155,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9, K arg10, V arg11, K arg12, V arg13, K arg14, V arg15)
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -1177,7 +1177,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9, K arg10, V arg11, K arg12, V arg13)
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -1197,7 +1197,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9, K arg10, V arg11)
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -1215,7 +1215,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7, K arg8, V arg9)
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -1231,7 +1231,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5, K arg6, V arg7)
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -1245,7 +1245,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3, K arg4, V arg5)
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -1257,7 +1257,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> Of(K arg0, V arg1, K arg2, V arg3)
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object)"/>
@@ -1267,7 +1267,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> Of(K arg0, V arg1)
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry[])"/>
@@ -1278,7 +1278,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> OfEntries<Arg0ExtendsK, Arg0ExtendsV>(params Java.Util.Map.Entry<Arg0ExtendsK, Arg0ExtendsV>[] arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
-            if (arg0.Length == 0) return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "ofEntries"); else return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "ofEntries", arg0);
+            if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "ofEntries", "([Ljava/util/Map$Entry;)Ljava/util/Map;"); else return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "ofEntries", "([Ljava/util/Map$Entry;)Ljava/util/Map;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entry(java.lang.Object,java.lang.Object)"/>
@@ -1288,7 +1288,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map.Entry"/></returns>
         public static Java.Util.Map.Entry<K, V> EntryMethod(K arg0, V arg1)
         {
-            return SExecute<Java.Util.Map.Entry<K, V>>(LocalBridgeClazz, "entry", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Map.Entry<K, V>>(LocalBridgeClazz, "entry", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;", arg0, arg1);
         }
 
         #endregion
@@ -1369,7 +1369,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Put(K arg0, V arg1)
         {
-            return IExecute<V>("put", arg0, arg1);
+            return IExecuteWithSignature<V>("put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object)"/>
@@ -1405,7 +1405,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Remove(object arg0, object arg1)
         {
-            return IExecute<bool>("remove", arg0, arg1);
+            return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -1416,7 +1416,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Replace(K arg0, V arg1, V arg2)
         {
-            return IExecute<bool>("replace", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("replace", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
@@ -1429,7 +1429,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
         {
-            return IExecute<V>("compute", arg0, arg1);
+            return IExecuteWithSignature<V>("compute", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
@@ -1441,7 +1441,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1ExtendsV : V
         {
-            return IExecute<V>("computeIfAbsent", arg0, arg1);
+            return IExecuteWithSignature<V>("computeIfAbsent", "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
@@ -1454,7 +1454,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
         {
-            return IExecute<V>("computeIfPresent", arg0, arg1);
+            return IExecuteWithSignature<V>("computeIfPresent", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
@@ -1464,7 +1464,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V GetOrDefault(object arg0, V arg1)
         {
-            return IExecute<V>("getOrDefault", arg0, arg1);
+            return IExecuteWithSignature<V>("getOrDefault", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
@@ -1477,7 +1477,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Merge<Arg2objectSuperV, Arg2ExtendsV>(K arg0, V arg1, Java.Util.Function.BiFunction<Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV> arg2) where Arg2objectSuperV : V where Arg2ExtendsV : V
         {
-            return IExecute<V>("merge", arg0, arg1, arg2);
+            return IExecuteWithSignature<V>("merge", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
@@ -1487,7 +1487,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V PutIfAbsent(K arg0, V arg1)
         {
-            return IExecute<V>("putIfAbsent", arg0, arg1);
+            return IExecuteWithSignature<V>("putIfAbsent", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object)"/>
@@ -1497,7 +1497,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Replace(K arg0, V arg1)
         {
-            return IExecute<V>("replace", arg0, arg1);
+            return IExecuteWithSignature<V>("replace", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#forEach(java.util.function.BiConsumer)"/>

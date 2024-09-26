@@ -102,7 +102,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetDisplayName(Java.Lang.String arg0, bool arg1, int arg2, Java.Util.Locale arg3)
         {
-            return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Lang.String>("getDisplayName", "(Ljava/lang/String;ZILjava/util/Locale;)Ljava/lang/String;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/TimeZoneNameProvider.html#getGenericDisplayName(java.lang.String,int,java.util.Locale)"/>
@@ -113,7 +113,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetGenericDisplayName(Java.Lang.String arg0, int arg1, Java.Util.Locale arg2)
         {
-            return IExecute<Java.Lang.String>("getGenericDisplayName", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("getGenericDisplayName", "(Ljava/lang/String;ILjava/util/Locale;)Ljava/lang/String;", arg0, arg1, arg2);
         }
 
         #endregion

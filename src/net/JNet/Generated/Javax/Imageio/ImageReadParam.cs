@@ -147,7 +147,7 @@ namespace Javax.Imageio
         /// <param name="arg1"><see cref="int"/></param>
         public void SetSourceProgressivePasses(int arg0, int arg1)
         {
-            IExecute("setSourceProgressivePasses", arg0, arg1);
+            IExecuteWithSignature("setSourceProgressivePasses", "(II)V", arg0, arg1);
         }
 
         #endregion

@@ -186,7 +186,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetElem(int arg0, int arg1)
         {
-            return IExecute<int>("getElem", arg0, arg1);
+            return IExecuteWithSignature<int>("getElem", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#setElem(int,int,int)"/>
@@ -196,7 +196,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg2"><see cref="int"/></param>
         public void SetElem(int arg0, int arg1, int arg2)
         {
-            IExecute("setElem", arg0, arg1, arg2);
+            IExecuteWithSignature("setElem", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#getElemDouble(int,int)"/>
@@ -206,7 +206,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="double"/></returns>
         public double GetElemDouble(int arg0, int arg1)
         {
-            return IExecute<double>("getElemDouble", arg0, arg1);
+            return IExecuteWithSignature<double>("getElemDouble", "(II)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#getElemDouble(int)"/>
@@ -225,7 +225,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="float"/></returns>
         public float GetElemFloat(int arg0, int arg1)
         {
-            return IExecute<float>("getElemFloat", arg0, arg1);
+            return IExecuteWithSignature<float>("getElemFloat", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#getElemFloat(int)"/>
@@ -252,7 +252,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg1"><see cref="int"/></param>
         public void SetElem(int arg0, int arg1)
         {
-            IExecute("setElem", arg0, arg1);
+            IExecuteWithSignature("setElem", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#setElemDouble(int,double)"/>
@@ -261,7 +261,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg1"><see cref="double"/></param>
         public void SetElemDouble(int arg0, double arg1)
         {
-            IExecute("setElemDouble", arg0, arg1);
+            IExecuteWithSignature("setElemDouble", "(ID)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#setElemDouble(int,int,double)"/>
@@ -271,7 +271,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg2"><see cref="double"/></param>
         public void SetElemDouble(int arg0, int arg1, double arg2)
         {
-            IExecute("setElemDouble", arg0, arg1, arg2);
+            IExecuteWithSignature("setElemDouble", "(IID)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#setElemFloat(int,float)"/>
@@ -280,7 +280,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg1"><see cref="float"/></param>
         public void SetElemFloat(int arg0, float arg1)
         {
-            IExecute("setElemFloat", arg0, arg1);
+            IExecuteWithSignature("setElemFloat", "(IF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/DataBuffer.html#setElemFloat(int,int,float)"/>
@@ -290,7 +290,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg2"><see cref="float"/></param>
         public void SetElemFloat(int arg0, int arg1, float arg2)
         {
-            IExecute("setElemFloat", arg0, arg1, arg2);
+            IExecuteWithSignature("setElemFloat", "(IIF)V", arg0, arg1, arg2);
         }
 
         #endregion

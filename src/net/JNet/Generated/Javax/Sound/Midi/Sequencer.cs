@@ -476,7 +476,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="int"/></returns>
         public int[] AddControllerEventListener(Javax.Sound.Midi.ControllerEventListener arg0, int[] arg1)
         {
-            return IExecuteArray<int>("addControllerEventListener", arg0, arg1);
+            return IExecuteWithSignatureArray<int>("addControllerEventListener", "(Ljavax/sound/midi/ControllerEventListener;[I)[I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#removeControllerEventListener(javax.sound.midi.ControllerEventListener,int[])"/>
@@ -486,7 +486,7 @@ namespace Javax.Sound.Midi
         /// <returns><see cref="int"/></returns>
         public int[] RemoveControllerEventListener(Javax.Sound.Midi.ControllerEventListener arg0, int[] arg1)
         {
-            return IExecuteArray<int>("removeControllerEventListener", arg0, arg1);
+            return IExecuteWithSignatureArray<int>("removeControllerEventListener", "(Ljavax/sound/midi/ControllerEventListener;[I)[I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#recordDisable(javax.sound.midi.Track)"/>
@@ -503,7 +503,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg1"><see cref="int"/></param>
         public void RecordEnable(Javax.Sound.Midi.Track arg0, int arg1)
         {
-            IExecute("recordEnable", arg0, arg1);
+            IExecuteWithSignature("recordEnable", "(Ljavax/sound/midi/Track;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#removeMetaEventListener(javax.sound.midi.MetaEventListener)"/>
@@ -539,7 +539,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetTrackMute(int arg0, bool arg1)
         {
-            IExecute("setTrackMute", arg0, arg1);
+            IExecuteWithSignature("setTrackMute", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#setTrackSolo(int,boolean)"/>
@@ -548,7 +548,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetTrackSolo(int arg0, bool arg1)
         {
-            IExecute("setTrackSolo", arg0, arg1);
+            IExecuteWithSignature("setTrackSolo", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html#start()"/>

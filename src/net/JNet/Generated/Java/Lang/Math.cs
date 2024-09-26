@@ -142,7 +142,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Atan2(double arg0, double arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "atan2", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "atan2", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#cbrt(double)"/>
@@ -170,7 +170,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double CopySign(double arg0, double arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "copySign", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "copySign", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#cos(double)"/>
@@ -226,7 +226,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Fma(double arg0, double arg1, double arg2)
         {
-            return SExecute<double>(LocalBridgeClazz, "fma", arg0, arg1, arg2);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "fma", "(DDD)D", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#hypot(double,double)"/>
@@ -236,7 +236,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Hypot(double arg0, double arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "hypot", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "hypot", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#IEEEremainder(double,double)"/>
@@ -246,7 +246,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double IEEEremainder(double arg0, double arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "IEEEremainder", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "IEEEremainder", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#log(double)"/>
@@ -283,7 +283,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Max(double arg0, double arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "max", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "max", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#min(double,double)"/>
@@ -293,7 +293,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Min(double arg0, double arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "min", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "min", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#nextAfter(double,double)"/>
@@ -303,7 +303,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double NextAfter(double arg0, double arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "nextAfter", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "nextAfter", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#nextDown(double)"/>
@@ -331,7 +331,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Pow(double arg0, double arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "pow", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "pow", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#random()"/>
@@ -358,7 +358,7 @@ namespace Java.Lang
         /// <returns><see cref="double"/></returns>
         public static double Scalb(double arg0, int arg1)
         {
-            return SExecute<double>(LocalBridgeClazz, "scalb", arg0, arg1);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "scalb", "(DI)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#signum(double)"/>
@@ -458,7 +458,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float CopySign(float arg0, float arg1)
         {
-            return SExecute<float>(LocalBridgeClazz, "copySign", arg0, arg1);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "copySign", "(FF)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#fma(float,float,float)"/>
@@ -469,7 +469,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Fma(float arg0, float arg1, float arg2)
         {
-            return SExecute<float>(LocalBridgeClazz, "fma", arg0, arg1, arg2);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "fma", "(FFF)F", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#max(float,float)"/>
@@ -479,7 +479,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Max(float arg0, float arg1)
         {
-            return SExecute<float>(LocalBridgeClazz, "max", arg0, arg1);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "max", "(FF)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#min(float,float)"/>
@@ -489,7 +489,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Min(float arg0, float arg1)
         {
-            return SExecute<float>(LocalBridgeClazz, "min", arg0, arg1);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "min", "(FF)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#nextAfter(float,double)"/>
@@ -499,7 +499,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float NextAfter(float arg0, double arg1)
         {
-            return SExecute<float>(LocalBridgeClazz, "nextAfter", arg0, arg1);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "nextAfter", "(FD)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#nextDown(float)"/>
@@ -527,7 +527,7 @@ namespace Java.Lang
         /// <returns><see cref="float"/></returns>
         public static float Scalb(float arg0, int arg1)
         {
-            return SExecute<float>(LocalBridgeClazz, "scalb", arg0, arg1);
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "scalb", "(FI)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#signum(float)"/>
@@ -564,7 +564,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int AddExact(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "addExact", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "addExact", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#decrementExact(int)"/>
@@ -583,7 +583,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int FloorDiv(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "floorDiv", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "floorDiv", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#floorMod(int,int)"/>
@@ -593,7 +593,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int FloorMod(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "floorMod", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "floorMod", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#floorMod(long,int)"/>
@@ -603,7 +603,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int FloorMod(long arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "floorMod", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "floorMod", "(JI)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#getExponent(double)"/>
@@ -640,7 +640,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Max(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "max", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "max", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#min(int,int)"/>
@@ -650,7 +650,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Min(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "min", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "min", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#multiplyExact(int,int)"/>
@@ -660,7 +660,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int MultiplyExact(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "multiplyExact", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "multiplyExact", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#negateExact(int)"/>
@@ -688,7 +688,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int SubtractExact(int arg0, int arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "subtractExact", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "subtractExact", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#toIntExact(long)"/>
@@ -716,7 +716,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long AddExact(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "addExact", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "addExact", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#decrementExact(long)"/>
@@ -735,7 +735,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long FloorDiv(long arg0, int arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "floorDiv", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "floorDiv", "(JI)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#floorDiv(long,long)"/>
@@ -745,7 +745,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long FloorDiv(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "floorDiv", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "floorDiv", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#floorMod(long,long)"/>
@@ -755,7 +755,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long FloorMod(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "floorMod", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "floorMod", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#incrementExact(long)"/>
@@ -774,7 +774,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Max(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "max", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "max", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#min(long,long)"/>
@@ -784,7 +784,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long Min(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "min", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "min", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#multiplyExact(long,int)"/>
@@ -794,7 +794,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long MultiplyExact(long arg0, int arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "multiplyExact", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "multiplyExact", "(JI)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#multiplyExact(long,long)"/>
@@ -804,7 +804,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long MultiplyExact(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "multiplyExact", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "multiplyExact", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#multiplyFull(int,int)"/>
@@ -814,7 +814,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long MultiplyFull(int arg0, int arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "multiplyFull", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "multiplyFull", "(II)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#multiplyHigh(long,long)"/>
@@ -824,7 +824,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long MultiplyHigh(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "multiplyHigh", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "multiplyHigh", "(JJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Math.html#negateExact(long)"/>
@@ -852,7 +852,7 @@ namespace Java.Lang
         /// <returns><see cref="long"/></returns>
         public static long SubtractExact(long arg0, long arg1)
         {
-            return SExecute<long>(LocalBridgeClazz, "subtractExact", arg0, arg1);
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "subtractExact", "(JJ)J", arg0, arg1);
         }
 
         #endregion

@@ -2301,7 +2301,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsConvert(int arg0, int arg1)
         {
-            return IExecute<bool>("supportsConvert", arg0, arg1);
+            return IExecuteWithSignature<bool>("supportsConvert", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsCoreSQLGrammar()"/>
@@ -2591,7 +2591,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SupportsResultSetConcurrency(int arg0, int arg1)
         {
-            return IExecute<bool>("supportsResultSetConcurrency", arg0, arg1);
+            return IExecuteWithSignature<bool>("supportsResultSetConcurrency", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsResultSetHoldability(int)"/>
@@ -2824,7 +2824,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetAttributes(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            return IExecute<Java.Sql.ResultSet>("getAttributes", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getAttributes", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getBestRowIdentifier(java.lang.String,java.lang.String,java.lang.String,int,boolean)"/>
@@ -2838,7 +2838,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetBestRowIdentifier(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, int arg3, bool arg4)
         {
-            return IExecute<Java.Sql.ResultSet>("getBestRowIdentifier", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getBestRowIdentifier", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)Ljava/sql/ResultSet;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getColumnPrivileges(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -2851,7 +2851,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetColumnPrivileges(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            return IExecute<Java.Sql.ResultSet>("getColumnPrivileges", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getColumnPrivileges", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getColumns(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -2864,7 +2864,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetColumns(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            return IExecute<Java.Sql.ResultSet>("getColumns", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getCrossReference(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -2879,7 +2879,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetCrossReference(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5)
         {
-            return IExecute<Java.Sql.ResultSet>("getCrossReference", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getCrossReference", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getExportedKeys(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -2891,7 +2891,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetExportedKeys(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Sql.ResultSet>("getExportedKeys", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getExportedKeys", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getFunctionColumns(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -2904,7 +2904,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetFunctionColumns(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            return IExecute<Java.Sql.ResultSet>("getFunctionColumns", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getFunctionColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getFunctions(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -2916,7 +2916,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetFunctions(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Sql.ResultSet>("getFunctions", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getFunctions", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getImportedKeys(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -2928,7 +2928,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetImportedKeys(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Sql.ResultSet>("getImportedKeys", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getImportedKeys", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getIndexInfo(java.lang.String,java.lang.String,java.lang.String,boolean,boolean)"/>
@@ -2942,7 +2942,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetIndexInfo(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, bool arg3, bool arg4)
         {
-            return IExecute<Java.Sql.ResultSet>("getIndexInfo", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getIndexInfo", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/sql/ResultSet;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getPrimaryKeys(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -2954,7 +2954,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetPrimaryKeys(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Sql.ResultSet>("getPrimaryKeys", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getPrimaryKeys", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getProcedureColumns(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -2967,7 +2967,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetProcedureColumns(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            return IExecute<Java.Sql.ResultSet>("getProcedureColumns", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getProcedureColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getProcedures(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -2979,7 +2979,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetProcedures(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Sql.ResultSet>("getProcedures", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getProcedures", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getPseudoColumns(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -2992,7 +2992,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetPseudoColumns(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            return IExecute<Java.Sql.ResultSet>("getPseudoColumns", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getPseudoColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSchemas(java.lang.String,java.lang.String)"/>
@@ -3003,7 +3003,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetSchemas(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Sql.ResultSet>("getSchemas", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getSchemas", "(Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSuperTables(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -3015,7 +3015,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetSuperTables(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Sql.ResultSet>("getSuperTables", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getSuperTables", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getSuperTypes(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -3027,7 +3027,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetSuperTypes(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Sql.ResultSet>("getSuperTypes", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getSuperTypes", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getTablePrivileges(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -3039,7 +3039,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetTablePrivileges(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Sql.ResultSet>("getTablePrivileges", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getTablePrivileges", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getTables(java.lang.String,java.lang.String,java.lang.String,java.lang.String[])"/>
@@ -3052,7 +3052,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetTables(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String[] arg3)
         {
-            return IExecute<Java.Sql.ResultSet>("getTables", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getTables", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getUDTs(java.lang.String,java.lang.String,java.lang.String,int[])"/>
@@ -3065,7 +3065,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetUDTs(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, int[] arg3)
         {
-            return IExecute<Java.Sql.ResultSet>("getUDTs", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getUDTs", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[I)Ljava/sql/ResultSet;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#getVersionColumns(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -3077,7 +3077,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.ResultSet GetVersionColumns(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Java.Sql.ResultSet>("getVersionColumns", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getVersionColumns", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/sql/ResultSet;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/DatabaseMetaData.html#supportsRefCursors()"/>

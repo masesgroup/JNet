@@ -94,7 +94,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="Javax.Annotation.Processing.Completion"/></returns>
         public static Javax.Annotation.Processing.Completion Of(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Javax.Annotation.Processing.Completion>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Javax.Annotation.Processing.Completion>(LocalBridgeClazz, "of", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/annotation/processing/Completion;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Completions.html#of(java.lang.String)"/>

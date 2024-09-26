@@ -112,7 +112,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="Java.Time.Temporal.WeekFields"/></returns>
         public static Java.Time.Temporal.WeekFields Of(Java.Time.DayOfWeek arg0, int arg1)
         {
-            return SExecute<Java.Time.Temporal.WeekFields>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Temporal.WeekFields>(LocalBridgeClazz, "of", "(Ljava/time/DayOfWeek;I)Ljava/time/temporal/WeekFields;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/WeekFields.html#of(java.util.Locale)"/>

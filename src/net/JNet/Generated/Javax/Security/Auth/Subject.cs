@@ -106,7 +106,7 @@ namespace Javax.Security.Auth
         /// <returns><typeparamref name="T"/></returns>
         public static T DoAs<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction<T> arg1)
         {
-            return SExecute<T>(LocalBridgeClazz, "doAs", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doAs", "(Ljavax/security/auth/Subject;Ljava/security/PrivilegedAction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#doAs(javax.security.auth.Subject,java.security.PrivilegedExceptionAction)"/>
@@ -118,7 +118,7 @@ namespace Javax.Security.Auth
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static T DoAs<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction<T> arg1)
         {
-            return SExecute<T>(LocalBridgeClazz, "doAs", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doAs", "(Ljavax/security/auth/Subject;Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedAction,java.security.AccessControlContext)"/>
@@ -130,7 +130,7 @@ namespace Javax.Security.Auth
         /// <returns><typeparamref name="T"/></returns>
         public static T DoAsPrivileged<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction<T> arg1, Java.Security.AccessControlContext arg2)
         {
-            return SExecute<T>(LocalBridgeClazz, "doAsPrivileged", arg0, arg1, arg2);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doAsPrivileged", "(Ljavax/security/auth/Subject;Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#doAsPrivileged(javax.security.auth.Subject,java.security.PrivilegedExceptionAction,java.security.AccessControlContext)"/>
@@ -143,7 +143,7 @@ namespace Javax.Security.Auth
         /// <exception cref="Java.Security.PrivilegedActionException"/>
         public static T DoAsPrivileged<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction<T> arg1, Java.Security.AccessControlContext arg2)
         {
-            return SExecute<T>(LocalBridgeClazz, "doAsPrivileged", arg0, arg1, arg2);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doAsPrivileged", "(Ljavax/security/auth/Subject;Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/Subject.html#getSubject(java.security.AccessControlContext)"/>

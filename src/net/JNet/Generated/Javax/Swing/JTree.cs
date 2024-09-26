@@ -694,7 +694,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetClosestRowForLocation(int arg0, int arg1)
         {
-            return IExecute<int>("getClosestRowForLocation", arg0, arg1);
+            return IExecuteWithSignature<int>("getClosestRowForLocation", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowForLocation(int,int)"/>
@@ -704,7 +704,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetRowForLocation(int arg0, int arg1)
         {
-            return IExecute<int>("getRowForLocation", arg0, arg1);
+            return IExecuteWithSignature<int>("getRowForLocation", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getRowForPath(javax.swing.tree.TreePath)"/>
@@ -724,7 +724,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getScrollableBlockIncrement", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getScrollableBlockIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
@@ -735,7 +735,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getScrollableUnitIncrement", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getScrollableUnitIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPathBounds(javax.swing.tree.TreePath)"/>
@@ -767,7 +767,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ConvertValueToText(object arg0, bool arg1, bool arg2, bool arg3, int arg4, bool arg5)
         {
-            return IExecute<Java.Lang.String>("convertValueToText", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Java.Lang.String>("convertValueToText", "(Ljava/lang/Object;ZZZIZ)Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getExpandedDescendants(javax.swing.tree.TreePath)"/>
@@ -786,7 +786,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetClosestPathForLocation(int arg0, int arg1)
         {
-            return IExecute<Javax.Swing.Tree.TreePath>("getClosestPathForLocation", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getClosestPathForLocation", "(II)Ljavax/swing/tree/TreePath;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getNextMatch(java.lang.String,int,javax.swing.text.Position.Bias)"/>
@@ -797,7 +797,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetNextMatch(Java.Lang.String arg0, int arg1, Javax.Swing.Text.Position.Bias arg2)
         {
-            return IExecute<Javax.Swing.Tree.TreePath>("getNextMatch", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getNextMatch", "(Ljava/lang/String;ILjavax/swing/text/Position$Bias;)Ljavax/swing/tree/TreePath;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPathForLocation(int,int)"/>
@@ -807,7 +807,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Tree.TreePath"/></returns>
         public Javax.Swing.Tree.TreePath GetPathForLocation(int arg0, int arg1)
         {
-            return IExecute<Javax.Swing.Tree.TreePath>("getPathForLocation", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Tree.TreePath>("getPathForLocation", "(II)Ljavax/swing/tree/TreePath;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#getPathForRow(int)"/>
@@ -825,7 +825,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void AddSelectionInterval(int arg0, int arg1)
         {
-            IExecute("addSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("addSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#addSelectionPath(javax.swing.tree.TreePath)"/>
@@ -978,7 +978,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void RemoveSelectionInterval(int arg0, int arg1)
         {
-            IExecute("removeSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("removeSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#removeSelectionPath(javax.swing.tree.TreePath)"/>
@@ -1083,7 +1083,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void SetSelectionInterval(int arg0, int arg1)
         {
-            IExecute("setSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("setSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTree.html#setSelectionRow(int)"/>
@@ -1197,7 +1197,7 @@ namespace Javax.Swing
             /// <param name="arg1"><see cref="object"/></param>
             public static void CreateChildren(Javax.Swing.Tree.DefaultMutableTreeNode arg0, object arg1)
             {
-                SExecute(LocalBridgeClazz, "createChildren", arg0, arg1);
+                SExecuteWithSignature(LocalBridgeClazz, "createChildren", "(Ljavax/swing/tree/DefaultMutableTreeNode;Ljava/lang/Object;)V", arg0, arg1);
             }
 
             #endregion

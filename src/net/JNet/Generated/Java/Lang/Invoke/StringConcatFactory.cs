@@ -96,7 +96,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Invoke.StringConcatException"/>
         public static Java.Lang.Invoke.CallSite MakeConcat(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Invoke.MethodType arg2)
         {
-            return SExecute<Java.Lang.Invoke.CallSite>(LocalBridgeClazz, "makeConcat", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Lang.Invoke.CallSite>(LocalBridgeClazz, "makeConcat", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/StringConcatFactory.html#makeConcatWithConstants(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])"/>
@@ -110,7 +110,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Invoke.StringConcatException"/>
         public static Java.Lang.Invoke.CallSite MakeConcatWithConstants(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Invoke.MethodType arg2, Java.Lang.String arg3, params object[] arg4)
         {
-            if (arg4.Length == 0) return SExecute<Java.Lang.Invoke.CallSite>(LocalBridgeClazz, "makeConcatWithConstants", arg0, arg1, arg2, arg3); else return SExecute<Java.Lang.Invoke.CallSite>(LocalBridgeClazz, "makeConcatWithConstants", arg0, arg1, arg2, arg3, arg4);
+            if (arg4.Length == 0) return SExecuteWithSignature<Java.Lang.Invoke.CallSite>(LocalBridgeClazz, "makeConcatWithConstants", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;", arg0, arg1, arg2, arg3); else return SExecuteWithSignature<Java.Lang.Invoke.CallSite>(LocalBridgeClazz, "makeConcatWithConstants", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

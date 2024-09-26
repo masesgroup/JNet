@@ -116,7 +116,7 @@ namespace Javax.Management
         /// <returns><typeparamref name="T"/></returns>
         public static T NewProxyInstance<T>(Javax.Management.MBeanServerConnection arg0, Javax.Management.ObjectName arg1, Java.Lang.Class arg2, bool arg3)
         {
-            return SExecute<T>(LocalBridgeClazz, "newProxyInstance", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "newProxyInstance", "(Ljavax/management/MBeanServerConnection;Ljavax/management/ObjectName;Ljava/lang/Class;Z)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
 
         #endregion
@@ -154,7 +154,7 @@ namespace Javax.Management
         /// <exception cref="Java.Lang.Throwable"/>
         public object Invoke(object arg0, Java.Lang.Reflect.Method arg1, object[] arg2)
         {
-            return IExecute("invoke", arg0, arg1, arg2);
+            return IExecuteWithSignature("invoke", "(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
 
         #endregion

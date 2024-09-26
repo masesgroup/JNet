@@ -108,7 +108,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.CacheRequest Put(Java.Net.URI arg0, Java.Net.URLConnection arg1)
         {
-            return IExecute<Java.Net.CacheRequest>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Net.CacheRequest>("put", "(Ljava/net/URI;Ljava/net/URLConnection;)Ljava/net/CacheRequest;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ResponseCache.html#get(java.net.URI,java.lang.String,java.util.Map)"/>
@@ -120,7 +120,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.CacheResponse Get(Java.Net.URI arg0, Java.Lang.String arg1, Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> arg2)
         {
-            return IExecute<Java.Net.CacheResponse>("get", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Net.CacheResponse>("get", "(Ljava/net/URI;Ljava/lang/String;Ljava/util/Map;)Ljava/net/CacheResponse;", arg0, arg1, arg2);
         }
 
         #endregion

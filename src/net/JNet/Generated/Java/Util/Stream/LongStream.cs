@@ -318,7 +318,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Concat(Java.Util.Stream.LongStream arg0, Java.Util.Stream.LongStream arg1)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "concat", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "concat", "(Ljava/util/stream/LongStream;Ljava/util/stream/LongStream;)Ljava/util/stream/LongStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#empty()"/>
@@ -346,7 +346,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Iterate(long arg0, Java.Util.Function.LongPredicate arg1, Java.Util.Function.LongUnaryOperator arg2)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "iterate", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "iterate", "(JLjava/util/function/LongPredicate;Ljava/util/function/LongUnaryOperator;)Ljava/util/stream/LongStream;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#iterate(long,java.util.function.LongUnaryOperator)"/>
@@ -356,7 +356,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Iterate(long arg0, Java.Util.Function.LongUnaryOperator arg1)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "iterate", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "iterate", "(JLjava/util/function/LongUnaryOperator;)Ljava/util/stream/LongStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#of(long[])"/>
@@ -384,7 +384,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Range(long arg0, long arg1)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "range", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "range", "(JJ)Ljava/util/stream/LongStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#rangeClosed(long,long)"/>
@@ -394,7 +394,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream RangeClosed(long arg0, long arg1)
         {
-            return SExecute<Java.Util.Stream.LongStream>(LocalBridgeClazz, "rangeClosed", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "rangeClosed", "(JJ)Ljava/util/stream/LongStream;", arg0, arg1);
         }
 
         #endregion
@@ -410,7 +410,7 @@ namespace Java.Util.Stream
         /// <returns><typeparamref name="R"/></returns>
         public R Collect<R>(Java.Util.Function.Supplier<R> arg0, Java.Util.Function.ObjLongConsumer<R> arg1, Java.Util.Function.BiConsumer<R, R> arg2)
         {
-            return IExecute<R>("collect", arg0, arg1, arg2);
+            return IExecuteWithSignature<R>("collect", "(Ljava/util/function/Supplier;Ljava/util/function/ObjLongConsumer;Ljava/util/function/BiConsumer;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#mapToObj(java.util.function.LongFunction)"/>
@@ -628,7 +628,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="long"/></returns>
         public long Reduce(long arg0, Java.Util.Function.LongBinaryOperator arg1)
         {
-            return IExecute<long>("reduce", arg0, arg1);
+            return IExecuteWithSignature<long>("reduce", "(JLjava/util/function/LongBinaryOperator;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#sum()"/>

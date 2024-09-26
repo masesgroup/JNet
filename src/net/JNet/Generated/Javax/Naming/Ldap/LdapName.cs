@@ -219,7 +219,7 @@ namespace Javax.Naming.Ldap
         /// <exception cref="Javax.Naming.InvalidNameException"/>
         public Javax.Naming.Name Add(int arg0, Java.Lang.String arg1)
         {
-            return IExecute<Javax.Naming.Name>("add", arg0, arg1);
+            return IExecuteWithSignature<Javax.Naming.Name>("add", "(ILjava/lang/String;)Ljavax/naming/Name;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#add(int,javax.naming.ldap.Rdn)"/>
@@ -229,7 +229,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="Javax.Naming.Name"/></returns>
         public Javax.Naming.Name Add(int arg0, Javax.Naming.Ldap.Rdn arg1)
         {
-            return IExecute<Javax.Naming.Name>("add", arg0, arg1);
+            return IExecuteWithSignature<Javax.Naming.Name>("add", "(ILjavax/naming/ldap/Rdn;)Ljavax/naming/Name;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#add(java.lang.String)"/>
@@ -258,7 +258,7 @@ namespace Javax.Naming.Ldap
         /// <returns><see cref="Javax.Naming.Name"/></returns>
         public Javax.Naming.Name AddAll(int arg0, Java.Util.List<Javax.Naming.Ldap.Rdn> arg1)
         {
-            return IExecute<Javax.Naming.Name>("addAll", arg0, arg1);
+            return IExecuteWithSignature<Javax.Naming.Name>("addAll", "(ILjava/util/List;)Ljavax/naming/Name;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(int,javax.naming.Name)"/>
@@ -269,7 +269,7 @@ namespace Javax.Naming.Ldap
         /// <exception cref="Javax.Naming.InvalidNameException"/>
         public Javax.Naming.Name AddAll(int arg0, Javax.Naming.Name arg1)
         {
-            return IExecute<Javax.Naming.Name>("addAll", arg0, arg1);
+            return IExecuteWithSignature<Javax.Naming.Name>("addAll", "(ILjavax/naming/Name;)Ljavax/naming/Name;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/LdapName.html#addAll(java.util.List)"/>

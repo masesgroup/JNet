@@ -112,7 +112,7 @@ namespace Javax.Xml.Parsers
         /// <returns><see cref="Javax.Xml.Parsers.DocumentBuilderFactory"/></returns>
         public static Javax.Xml.Parsers.DocumentBuilderFactory NewInstance(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Javax.Xml.Parsers.DocumentBuilderFactory>(LocalBridgeClazz, "newInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Xml.Parsers.DocumentBuilderFactory>(LocalBridgeClazz, "newInstance", "(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljavax/xml/parsers/DocumentBuilderFactory;", arg0, arg1);
         }
 
         #endregion
@@ -162,7 +162,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void SetAttribute(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setAttribute", arg0, arg1);
+            IExecuteWithSignature("setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#setFeature(java.lang.String,boolean)"/>
@@ -172,7 +172,7 @@ namespace Javax.Xml.Parsers
         /// <exception cref="Javax.Xml.Parsers.ParserConfigurationException"/>
         public void SetFeature(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setFeature", arg0, arg1);
+            IExecuteWithSignature("setFeature", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/parsers/DocumentBuilderFactory.html#isCoalescing()"/>

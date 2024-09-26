@@ -143,7 +143,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool Permits(Java.Util.Set<Java.Security.CryptoPrimitive> arg0, Java.Lang.String arg1, Java.Security.AlgorithmParameters arg2)
         {
-            return IExecute<bool>("permits", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("permits", "(Ljava/util/Set;Ljava/lang/String;Ljava/security/AlgorithmParameters;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmConstraints.html#permits(java.util.Set,java.lang.String,java.security.Key,java.security.AlgorithmParameters)"/>
@@ -155,7 +155,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool Permits(Java.Util.Set<Java.Security.CryptoPrimitive> arg0, Java.Lang.String arg1, Java.Security.Key arg2, Java.Security.AlgorithmParameters arg3)
         {
-            return IExecute<bool>("permits", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<bool>("permits", "(Ljava/util/Set;Ljava/lang/String;Ljava/security/Key;Ljava/security/AlgorithmParameters;)Z", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AlgorithmConstraints.html#permits(java.util.Set,java.security.Key)"/>
@@ -165,7 +165,7 @@ namespace Java.Security
         /// <returns><see cref="bool"/></returns>
         public bool Permits(Java.Util.Set<Java.Security.CryptoPrimitive> arg0, Java.Security.Key arg1)
         {
-            return IExecute<bool>("permits", arg0, arg1);
+            return IExecuteWithSignature<bool>("permits", "(Ljava/util/Set;Ljava/security/Key;)Z", arg0, arg1);
         }
 
         #endregion

@@ -191,7 +191,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <param name="arg1"><see cref="Javax.Swing.Text.Html.Parser.DTD"/></param>
         public static void PutDTDHash(Java.Lang.String arg0, Javax.Swing.Text.Html.Parser.DTD arg1)
         {
-            SExecute(LocalBridgeClazz, "putDTDHash", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "putDTDHash", "(Ljava/lang/String;Ljavax/swing/text/html/parser/DTD;)V", arg0, arg1);
         }
 
         #endregion
@@ -218,7 +218,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="Javax.Swing.Text.Html.Parser.Element"/></returns>
         public Javax.Swing.Text.Html.Parser.Element DefineElement(Java.Lang.String arg0, int arg1, bool arg2, bool arg3, Javax.Swing.Text.Html.Parser.ContentModel arg4, Java.Util.BitSet arg5, Java.Util.BitSet arg6, Javax.Swing.Text.Html.Parser.AttributeList arg7)
         {
-            return IExecute<Javax.Swing.Text.Html.Parser.Element>("defineElement", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.Element>("defineElement", "(Ljava/lang/String;IZZLjavax/swing/text/html/parser/ContentModel;Ljava/util/BitSet;Ljava/util/BitSet;Ljavax/swing/text/html/parser/AttributeList;)Ljavax/swing/text/html/parser/Element;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getElement(int)"/>
@@ -247,7 +247,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="Javax.Swing.Text.Html.Parser.Entity"/></returns>
         public Javax.Swing.Text.Html.Parser.Entity DefEntity(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return IExecute<Javax.Swing.Text.Html.Parser.Entity>("defEntity", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.Entity>("defEntity", "(Ljava/lang/String;II)Ljavax/swing/text/html/parser/Entity;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#defineEntity(java.lang.String,int,char[])"/>
@@ -258,7 +258,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <returns><see cref="Javax.Swing.Text.Html.Parser.Entity"/></returns>
         public Javax.Swing.Text.Html.Parser.Entity DefineEntity(Java.Lang.String arg0, int arg1, char[] arg2)
         {
-            return IExecute<Javax.Swing.Text.Html.Parser.Entity>("defineEntity", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Swing.Text.Html.Parser.Entity>("defineEntity", "(Ljava/lang/String;I[C)Ljavax/swing/text/html/parser/Entity;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#getEntity(int)"/>
@@ -285,7 +285,7 @@ namespace Javax.Swing.Text.Html.Parser
         /// <param name="arg1"><see cref="Javax.Swing.Text.Html.Parser.AttributeList"/></param>
         public void DefineAttributes(Java.Lang.String arg0, Javax.Swing.Text.Html.Parser.AttributeList arg1)
         {
-            IExecute("defineAttributes", arg0, arg1);
+            IExecuteWithSignature("defineAttributes", "(Ljava/lang/String;Ljavax/swing/text/html/parser/AttributeList;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTD.html#read(java.io.DataInputStream)"/>

@@ -109,7 +109,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool ShouldYieldFocus(Javax.Swing.JComponent arg0, Javax.Swing.JComponent arg1)
         {
-            return IExecute<bool>("shouldYieldFocus", arg0, arg1);
+            return IExecuteWithSignature<bool>("shouldYieldFocus", "(Ljavax/swing/JComponent;Ljavax/swing/JComponent;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/InputVerifier.html#verifyTarget(javax.swing.JComponent)"/>

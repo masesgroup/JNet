@@ -808,7 +808,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="Java.Awt.Dimension"/></returns>
         public Java.Awt.Dimension GetPreferredSize(Javax.Swing.JComponent arg0, bool arg1)
         {
-            return IExecute<Java.Awt.Dimension>("getPreferredSize", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Dimension>("getPreferredSize", "(Ljavax/swing/JComponent;Z)Ljava/awt/Dimension;", arg0, arg1);
         }
 
         #endregion

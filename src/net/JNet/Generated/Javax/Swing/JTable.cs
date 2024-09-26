@@ -572,7 +572,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool EditCellAt(int arg0, int arg1, Java.Util.EventObject arg2)
         {
-            return IExecute<bool>("editCellAt", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("editCellAt", "(IILjava/util/EventObject;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#editCellAt(int,int)"/>
@@ -582,7 +582,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool EditCellAt(int arg0, int arg1)
         {
-            return IExecute<bool>("editCellAt", arg0, arg1);
+            return IExecuteWithSignature<bool>("editCellAt", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#isCellEditable(int,int)"/>
@@ -592,7 +592,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsCellEditable(int arg0, int arg1)
         {
-            return IExecute<bool>("isCellEditable", arg0, arg1);
+            return IExecuteWithSignature<bool>("isCellEditable", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#isCellSelected(int,int)"/>
@@ -602,7 +602,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public bool IsCellSelected(int arg0, int arg1)
         {
-            return IExecute<bool>("isCellSelected", arg0, arg1);
+            return IExecuteWithSignature<bool>("isCellSelected", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#isColumnSelected(int)"/>
@@ -654,7 +654,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool Print(Javax.Swing.JTable.PrintMode arg0, Java.Text.MessageFormat arg1, Java.Text.MessageFormat arg2, bool arg3, Javax.Print.Attribute.PrintRequestAttributeSet arg4, bool arg5, Javax.Print.PrintService arg6)
         {
-            return IExecute<bool>("print", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<bool>("print", "(Ljavax/swing/JTable$PrintMode;Ljava/text/MessageFormat;Ljava/text/MessageFormat;ZLjavax/print/attribute/PrintRequestAttributeSet;ZLjavax/print/PrintService;)Z", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#print(javax.swing.JTable.PrintMode,java.text.MessageFormat,java.text.MessageFormat,boolean,javax.print.attribute.PrintRequestAttributeSet,boolean)"/>
@@ -670,7 +670,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.HeadlessException"/>
         public bool Print(Javax.Swing.JTable.PrintMode arg0, Java.Text.MessageFormat arg1, Java.Text.MessageFormat arg2, bool arg3, Javax.Print.Attribute.PrintRequestAttributeSet arg4, bool arg5)
         {
-            return IExecute<bool>("print", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<bool>("print", "(Ljavax/swing/JTable$PrintMode;Ljava/text/MessageFormat;Ljava/text/MessageFormat;ZLjavax/print/attribute/PrintRequestAttributeSet;Z)Z", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#print(javax.swing.JTable.PrintMode,java.text.MessageFormat,java.text.MessageFormat)"/>
@@ -682,7 +682,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Awt.Print.PrinterException"/>
         public bool Print(Javax.Swing.JTable.PrintMode arg0, Java.Text.MessageFormat arg1, Java.Text.MessageFormat arg2)
         {
-            return IExecute<bool>("print", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("print", "(Ljavax/swing/JTable$PrintMode;Ljava/text/MessageFormat;Ljava/text/MessageFormat;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#print(javax.swing.JTable.PrintMode)"/>
@@ -757,7 +757,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getScrollableBlockIncrement", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getScrollableBlockIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
@@ -768,7 +768,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getScrollableUnitIncrement", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getScrollableUnitIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#rowAtPoint(java.awt.Point)"/>
@@ -788,7 +788,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component PrepareEditor(Javax.Swing.Table.TableCellEditor arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Awt.Component>("prepareEditor", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Component>("prepareEditor", "(Ljavax/swing/table/TableCellEditor;II)Ljava/awt/Component;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#prepareRenderer(javax.swing.table.TableCellRenderer,int,int)"/>
@@ -799,7 +799,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component PrepareRenderer(Javax.Swing.Table.TableCellRenderer arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Awt.Component>("prepareRenderer", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Component>("prepareRenderer", "(Ljavax/swing/table/TableCellRenderer;II)Ljava/awt/Component;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getPrintable(javax.swing.JTable.PrintMode,java.text.MessageFormat,java.text.MessageFormat)"/>
@@ -810,7 +810,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Print.Printable"/></returns>
         public Java.Awt.Print.Printable GetPrintable(Javax.Swing.JTable.PrintMode arg0, Java.Text.MessageFormat arg1, Java.Text.MessageFormat arg2)
         {
-            return IExecute<Java.Awt.Print.Printable>("getPrintable", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Print.Printable>("getPrintable", "(Ljavax/swing/JTable$PrintMode;Ljava/text/MessageFormat;Ljava/text/MessageFormat;)Ljava/awt/print/Printable;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getCellRect(int,int,boolean)"/>
@@ -821,7 +821,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public Java.Awt.Rectangle GetCellRect(int arg0, int arg1, bool arg2)
         {
-            return IExecute<Java.Awt.Rectangle>("getCellRect", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Rectangle>("getCellRect", "(IIZ)Ljava/awt/Rectangle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnClass(int)"/>
@@ -840,7 +840,7 @@ namespace Javax.Swing
         /// <returns><see cref="object"/></returns>
         public object GetValueAt(int arg0, int arg1)
         {
-            return IExecute("getValueAt", arg0, arg1);
+            return IExecuteWithSignature("getValueAt", "(II)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getColumnName(int)"/>
@@ -859,7 +859,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Table.TableCellEditor"/></returns>
         public Javax.Swing.Table.TableCellEditor GetCellEditor(int arg0, int arg1)
         {
-            return IExecute<Javax.Swing.Table.TableCellEditor>("getCellEditor", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Table.TableCellEditor>("getCellEditor", "(II)Ljavax/swing/table/TableCellEditor;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDefaultEditor(java.lang.Class)"/>
@@ -878,7 +878,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Table.TableCellRenderer"/></returns>
         public Javax.Swing.Table.TableCellRenderer GetCellRenderer(int arg0, int arg1)
         {
-            return IExecute<Javax.Swing.Table.TableCellRenderer>("getCellRenderer", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Table.TableCellRenderer>("getCellRenderer", "(II)Ljavax/swing/table/TableCellRenderer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#getDefaultRenderer(java.lang.Class)"/>
@@ -913,7 +913,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void AddColumnSelectionInterval(int arg0, int arg1)
         {
-            IExecute("addColumnSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("addColumnSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#addRowSelectionInterval(int,int)"/>
@@ -922,7 +922,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void AddRowSelectionInterval(int arg0, int arg1)
         {
-            IExecute("addRowSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("addRowSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#changeSelection(int,int,boolean,boolean)"/>
@@ -933,7 +933,7 @@ namespace Javax.Swing
         /// <param name="arg3"><see cref="bool"/></param>
         public void ChangeSelection(int arg0, int arg1, bool arg2, bool arg3)
         {
-            IExecute("changeSelection", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("changeSelection", "(IIZZ)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#clearSelection()"/>
@@ -1012,7 +1012,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void MoveColumn(int arg0, int arg1)
         {
-            IExecute("moveColumn", arg0, arg1);
+            IExecuteWithSignature("moveColumn", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#removeColumn(javax.swing.table.TableColumn)"/>
@@ -1029,7 +1029,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void RemoveColumnSelectionInterval(int arg0, int arg1)
         {
-            IExecute("removeColumnSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("removeColumnSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#removeEditor()"/>
@@ -1045,7 +1045,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void RemoveRowSelectionInterval(int arg0, int arg1)
         {
-            IExecute("removeRowSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("removeRowSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#selectAll()"/>
@@ -1061,7 +1061,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void SetColumnSelectionInterval(int arg0, int arg1)
         {
-            IExecute("setColumnSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("setColumnSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setDefaultEditor(java.lang.Class,javax.swing.table.TableCellEditor)"/>
@@ -1070,7 +1070,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Javax.Swing.Table.TableCellEditor"/></param>
         public void SetDefaultEditor(Java.Lang.Class arg0, Javax.Swing.Table.TableCellEditor arg1)
         {
-            IExecute("setDefaultEditor", arg0, arg1);
+            IExecuteWithSignature("setDefaultEditor", "(Ljava/lang/Class;Ljavax/swing/table/TableCellEditor;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setDefaultRenderer(java.lang.Class,javax.swing.table.TableCellRenderer)"/>
@@ -1079,7 +1079,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Javax.Swing.Table.TableCellRenderer"/></param>
         public void SetDefaultRenderer(Java.Lang.Class arg0, Javax.Swing.Table.TableCellRenderer arg1)
         {
-            IExecute("setDefaultRenderer", arg0, arg1);
+            IExecuteWithSignature("setDefaultRenderer", "(Ljava/lang/Class;Ljavax/swing/table/TableCellRenderer;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowHeight(int,int)"/>
@@ -1088,7 +1088,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void SetRowHeight(int arg0, int arg1)
         {
-            IExecute("setRowHeight", arg0, arg1);
+            IExecuteWithSignature("setRowHeight", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setRowSelectionInterval(int,int)"/>
@@ -1097,7 +1097,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="int"/></param>
         public void SetRowSelectionInterval(int arg0, int arg1)
         {
-            IExecute("setRowSelectionInterval", arg0, arg1);
+            IExecuteWithSignature("setRowSelectionInterval", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#setSelectionMode(int)"/>
@@ -1131,7 +1131,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="int"/></param>
         public void SetValueAt(object arg0, int arg1, int arg2)
         {
-            IExecute("setValueAt", arg0, arg1, arg2);
+            IExecuteWithSignature("setValueAt", "(Ljava/lang/Object;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JTable.html#sizeColumnsToFit(int)"/>

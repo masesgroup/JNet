@@ -95,7 +95,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.UnsupportedEncodingException"/>
         public static Java.Lang.String Encode(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "encode", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "encode", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLEncoder.html#encode(java.lang.String,java.nio.charset.Charset)"/>
@@ -105,7 +105,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Encode(Java.Lang.String arg0, Java.Nio.Charset.Charset arg1)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "encode", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "encode", "(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/lang/String;", arg0, arg1);
         }
 
         #endregion

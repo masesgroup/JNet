@@ -146,7 +146,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.URLClassLoader"/></returns>
         public static Java.Net.URLClassLoader NewInstance(Java.Net.URL[] arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Java.Net.URLClassLoader>(LocalBridgeClazz, "newInstance", arg0, arg1);
+            return SExecuteWithSignature<Java.Net.URLClassLoader>(LocalBridgeClazz, "newInstance", "([Ljava/net/URL;Ljava/lang/ClassLoader;)Ljava/net/URLClassLoader;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLClassLoader.html#newInstance(java.net.URL[])"/>

@@ -115,7 +115,7 @@ namespace Javax.Management.Openmbean
         /// <exception cref="Java.Lang.Throwable"/>
         public object Invoke(object arg0, Java.Lang.Reflect.Method arg1, object[] arg2)
         {
-            return IExecute("invoke", arg0, arg1, arg2);
+            return IExecuteWithSignature("invoke", "(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
 
         #endregion

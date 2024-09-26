@@ -125,7 +125,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="float"/></returns>
         public float NextTabStop(float arg0, int arg1)
         {
-            return IExecute<float>("nextTabStop", arg0, arg1);
+            return IExecuteWithSignature<float>("nextTabStop", "(FI)F", arg0, arg1);
         }
 
         #endregion

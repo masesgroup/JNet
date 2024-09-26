@@ -194,7 +194,7 @@ namespace Java.Nio.Charset
         /// <returns><see cref="Java.Nio.Charset.CoderResult"/></returns>
         public Java.Nio.Charset.CoderResult Decode(Java.Nio.ByteBuffer arg0, Java.Nio.CharBuffer arg1, bool arg2)
         {
-            return IExecute<Java.Nio.Charset.CoderResult>("decode", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.Charset.CoderResult>("decode", "(Ljava/nio/ByteBuffer;Ljava/nio/CharBuffer;Z)Ljava/nio/charset/CoderResult;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/charset/CharsetDecoder.html#flush(java.nio.CharBuffer)"/>

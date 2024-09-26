@@ -137,7 +137,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(char[] arg0, int arg1, int arg2)
         {
-            IExecute("write", arg0, arg1, arg2);
+            IExecuteWithSignature("write", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#append(char)"/>
@@ -159,7 +159,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Appendable Append(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Lang.Appendable>("append", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.Appendable>("append", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#append(java.lang.CharSequence)"/>
@@ -198,7 +198,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Write(Java.Lang.String arg0, int arg1, int arg2)
         {
-            IExecute("write", arg0, arg1, arg2);
+            IExecuteWithSignature("write", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Writer.html#write(java.lang.String)"/>

@@ -103,7 +103,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public Java.Lang.Class LoadClass(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.ClassLoader arg2)
         {
-            return IExecute<Java.Lang.Class>("loadClass", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.Class>("loadClass", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoaderSpi.html#loadProxyClass(java.lang.String,java.lang.String[],java.lang.ClassLoader)"/>
@@ -116,7 +116,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public Java.Lang.Class LoadProxyClass(Java.Lang.String arg0, Java.Lang.String[] arg1, Java.Lang.ClassLoader arg2)
         {
-            return IExecute<Java.Lang.Class>("loadProxyClass", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.Class>("loadProxyClass", "(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIClassLoaderSpi.html#getClassLoader(java.lang.String)"/>

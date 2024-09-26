@@ -182,7 +182,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.RenderContext"/></returns>
         public Java.Awt.ImageNs.Renderable.RenderContext MapRenderContext(int arg0, Java.Awt.ImageNs.Renderable.RenderContext arg1, Java.Awt.ImageNs.Renderable.ParameterBlock arg2, Java.Awt.ImageNs.Renderable.RenderableImage arg3)
         {
-            return IExecute<Java.Awt.ImageNs.Renderable.RenderContext>("mapRenderContext", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.RenderContext>("mapRenderContext", "(ILjava/awt/image/renderable/RenderContext;Ljava/awt/image/renderable/ParameterBlock;Ljava/awt/image/renderable/RenderableImage;)Ljava/awt/image/renderable/RenderContext;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#create(java.awt.image.renderable.RenderContext,java.awt.image.renderable.ParameterBlock)"/>
@@ -192,7 +192,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.RenderedImage"/></returns>
         public Java.Awt.ImageNs.RenderedImage Create(Java.Awt.ImageNs.Renderable.RenderContext arg0, Java.Awt.ImageNs.Renderable.ParameterBlock arg1)
         {
-            return IExecute<Java.Awt.ImageNs.RenderedImage>("create", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.RenderedImage>("create", "(Ljava/awt/image/renderable/RenderContext;Ljava/awt/image/renderable/ParameterBlock;)Ljava/awt/image/RenderedImage;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ContextualRenderedImageFactory.html#getProperty(java.awt.image.renderable.ParameterBlock,java.lang.String)"/>
@@ -202,7 +202,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="object"/></returns>
         public object GetProperty(Java.Awt.ImageNs.Renderable.ParameterBlock arg0, Java.Lang.String arg1)
         {
-            return IExecute("getProperty", arg0, arg1);
+            return IExecuteWithSignature("getProperty", "(Ljava/awt/image/renderable/ParameterBlock;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);
         }
 
         #endregion

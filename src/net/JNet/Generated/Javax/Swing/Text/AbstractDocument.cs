@@ -577,7 +577,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="object"/></param>
         public void PutProperty(object arg0, object arg1)
         {
-            IExecute("putProperty", arg0, arg1);
+            IExecuteWithSignature("putProperty", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#getText(int,int)"/>
@@ -588,7 +588,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public Java.Lang.String GetText(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.String>("getText", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getText", "(II)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#createPosition(int)"/>
@@ -633,7 +633,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void GetText(int arg0, int arg1, Javax.Swing.Text.Segment arg2)
         {
-            IExecute("getText", arg0, arg1, arg2);
+            IExecuteWithSignature("getText", "(IILjavax/swing/text/Segment;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#insertString(int,java.lang.String,javax.swing.text.AttributeSet)"/>
@@ -644,7 +644,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void InsertString(int arg0, Java.Lang.String arg1, Javax.Swing.Text.AttributeSet arg2)
         {
-            IExecute("insertString", arg0, arg1, arg2);
+            IExecuteWithSignature("insertString", "(ILjava/lang/String;Ljavax/swing/text/AttributeSet;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#remove(int,int)"/>
@@ -654,7 +654,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Remove(int arg0, int arg1)
         {
-            IExecute("remove", arg0, arg1);
+            IExecuteWithSignature("remove", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.html#removeDocumentListener(javax.swing.event.DocumentListener)"/>
@@ -690,7 +690,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void Replace(int arg0, int arg1, Java.Lang.String arg2, Javax.Swing.Text.AttributeSet arg3)
         {
-            IExecute("replace", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("replace", "(IILjava/lang/String;Ljavax/swing/text/AttributeSet;)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion
@@ -875,7 +875,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="bool"/></returns>
             public bool ContainsAttribute(object arg0, object arg1)
             {
-                return IExecute<bool>("containsAttribute", arg0, arg1);
+                return IExecuteWithSignature<bool>("containsAttribute", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#containsAttributes(javax.swing.text.AttributeSet)"/>
@@ -946,7 +946,7 @@ namespace Javax.Swing.Text
             /// <param name="arg1"><see cref="object"/></param>
             public void AddAttribute(object arg0, object arg1)
             {
-                IExecute("addAttribute", arg0, arg1);
+                IExecuteWithSignature("addAttribute", "(Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#addAttributes(javax.swing.text.AttributeSet)"/>
@@ -963,7 +963,7 @@ namespace Javax.Swing.Text
             /// <param name="arg1"><see cref="int"/></param>
             public void Dump(Java.Io.PrintStream arg0, int arg1)
             {
-                IExecute("dump", arg0, arg1);
+                IExecuteWithSignature("dump", "(Ljava/io/PrintStream;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AbstractElement.html#removeAttribute(java.lang.Object)"/>
@@ -1036,7 +1036,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
             public Javax.Swing.Text.AttributeSet AddAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1, object arg2)
             {
-                return IExecute<Javax.Swing.Text.AttributeSet>("addAttribute", arg0, arg1, arg2);
+                return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("addAttribute", "(Ljavax/swing/text/AttributeSet;Ljava/lang/Object;Ljava/lang/Object;)Ljavax/swing/text/AttributeSet;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#addAttributes(javax.swing.text.AttributeSet,javax.swing.text.AttributeSet)"/>
@@ -1046,7 +1046,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
             public Javax.Swing.Text.AttributeSet AddAttributes(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.AttributeSet arg1)
             {
-                return IExecute<Javax.Swing.Text.AttributeSet>("addAttributes", arg0, arg1);
+                return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("addAttributes", "(Ljavax/swing/text/AttributeSet;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttribute(javax.swing.text.AttributeSet,java.lang.Object)"/>
@@ -1056,7 +1056,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
             public Javax.Swing.Text.AttributeSet RemoveAttribute(Javax.Swing.Text.AttributeSet arg0, object arg1)
             {
-                return IExecute<Javax.Swing.Text.AttributeSet>("removeAttribute", arg0, arg1);
+                return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("removeAttribute", "(Ljavax/swing/text/AttributeSet;Ljava/lang/Object;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttributes(javax.swing.text.AttributeSet,java.util.Enumeration)"/>
@@ -1066,7 +1066,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
             public Javax.Swing.Text.AttributeSet RemoveAttributes(Javax.Swing.Text.AttributeSet arg0, Java.Util.Enumeration<object> arg1)
             {
-                return IExecute<Javax.Swing.Text.AttributeSet>("removeAttributes", arg0, arg1);
+                return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("removeAttributes", "(Ljavax/swing/text/AttributeSet;Ljava/util/Enumeration;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#removeAttributes(javax.swing.text.AttributeSet,javax.swing.text.AttributeSet)"/>
@@ -1076,7 +1076,7 @@ namespace Javax.Swing.Text
             /// <returns><see cref="Javax.Swing.Text.AttributeSet"/></returns>
             public Javax.Swing.Text.AttributeSet RemoveAttributes(Javax.Swing.Text.AttributeSet arg0, Javax.Swing.Text.AttributeSet arg1)
             {
-                return IExecute<Javax.Swing.Text.AttributeSet>("removeAttributes", arg0, arg1);
+                return IExecuteWithSignature<Javax.Swing.Text.AttributeSet>("removeAttributes", "(Ljavax/swing/text/AttributeSet;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/AttributeSet;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.AttributeContext.html#reclaim(javax.swing.text.AttributeSet)"/>
@@ -1144,7 +1144,7 @@ namespace Javax.Swing.Text
             /// <param name="arg2"><see cref="Javax.Swing.Text.Element"/></param>
             public void Replace(int arg0, int arg1, Javax.Swing.Text.Element[] arg2)
             {
-                IExecute("replace", arg0, arg1, arg2);
+                IExecuteWithSignature("replace", "(II[Ljavax/swing/text/Element;)V", arg0, arg1, arg2);
             }
 
             #endregion
@@ -1194,7 +1194,7 @@ namespace Javax.Swing.Text
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public Java.Lang.String GetString(int arg0, int arg1)
             {
-                return IExecute<Java.Lang.String>("getString", arg0, arg1);
+                return IExecuteWithSignature<Java.Lang.String>("getString", "(II)Ljava/lang/String;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#createPosition(int)"/>
@@ -1215,7 +1215,7 @@ namespace Javax.Swing.Text
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public Javax.Swing.Undo.UndoableEdit InsertString(int arg0, Java.Lang.String arg1)
             {
-                return IExecute<Javax.Swing.Undo.UndoableEdit>("insertString", arg0, arg1);
+                return IExecuteWithSignature<Javax.Swing.Undo.UndoableEdit>("insertString", "(ILjava/lang/String;)Ljavax/swing/undo/UndoableEdit;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#remove(int,int)"/>
@@ -1226,7 +1226,7 @@ namespace Javax.Swing.Text
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public Javax.Swing.Undo.UndoableEdit Remove(int arg0, int arg1)
             {
-                return IExecute<Javax.Swing.Undo.UndoableEdit>("remove", arg0, arg1);
+                return IExecuteWithSignature<Javax.Swing.Undo.UndoableEdit>("remove", "(II)Ljavax/swing/undo/UndoableEdit;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AbstractDocument.Content.html#getChars(int,int,javax.swing.text.Segment)"/>
@@ -1237,7 +1237,7 @@ namespace Javax.Swing.Text
             /// <exception cref="Javax.Swing.Text.BadLocationException"/>
             public void GetChars(int arg0, int arg1, Javax.Swing.Text.Segment arg2)
             {
-                IExecute("getChars", arg0, arg1, arg2);
+                IExecuteWithSignature("getChars", "(IILjavax/swing/text/Segment;)V", arg0, arg1, arg2);
             }
 
             #endregion

@@ -113,7 +113,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public static Java.Util.Collection<E> CheckedCollectionMethod<E>(Java.Util.Collection<E> arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Util.Collection<E>>(LocalBridgeClazz, "checkedCollection", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Collection<E>>(LocalBridgeClazz, "checkedCollection", "(Ljava/util/Collection;Ljava/lang/Class;)Ljava/util/Collection;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedList(java.util.List,java.lang.Class)"/>
@@ -124,7 +124,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<E> CheckedListMethod<E>(Java.Util.List<E> arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Util.List<E>>(LocalBridgeClazz, "checkedList", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.List<E>>(LocalBridgeClazz, "checkedList", "(Ljava/util/List;Ljava/lang/Class;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedNavigableSet(java.util.NavigableSet,java.lang.Class)"/>
@@ -135,7 +135,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public static Java.Util.NavigableSet<E> CheckedNavigableSetMethod<E>(Java.Util.NavigableSet<E> arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Util.NavigableSet<E>>(LocalBridgeClazz, "checkedNavigableSet", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.NavigableSet<E>>(LocalBridgeClazz, "checkedNavigableSet", "(Ljava/util/NavigableSet;Ljava/lang/Class;)Ljava/util/NavigableSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableSet()"/>
@@ -155,7 +155,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Queue"/></returns>
         public static Java.Util.Queue<E> CheckedQueueMethod<E>(Java.Util.Queue<E> arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Util.Queue<E>>(LocalBridgeClazz, "checkedQueue", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Queue<E>>(LocalBridgeClazz, "checkedQueue", "(Ljava/util/Queue;Ljava/lang/Class;)Ljava/util/Queue;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedSet(java.util.Set,java.lang.Class)"/>
@@ -166,7 +166,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Set"/></returns>
         public static Java.Util.Set<E> CheckedSetMethod<E>(Java.Util.Set<E> arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Util.Set<E>>(LocalBridgeClazz, "checkedSet", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "checkedSet", "(Ljava/util/Set;Ljava/lang/Class;)Ljava/util/Set;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#newSetFromMap(java.util.Map)"/>
@@ -187,7 +187,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public static Java.Util.SortedSet<E> CheckedSortedSetMethod<E>(Java.Util.SortedSet<E> arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Util.SortedSet<E>>(LocalBridgeClazz, "checkedSortedSet", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.SortedSet<E>>(LocalBridgeClazz, "checkedSortedSet", "(Ljava/util/SortedSet;Ljava/lang/Class;)Ljava/util/SortedSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedSet()"/>
@@ -209,7 +209,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> CheckedMapMethod<K, V>(Java.Util.Map<K, V> arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "checkedMap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "checkedMap", "(Ljava/util/Map;Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/Map;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonMap(java.lang.Object,java.lang.Object)"/>
@@ -221,7 +221,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> SingletonMapMethod<K, V>(K arg0, V arg1)
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "singletonMap", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "singletonMap", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedMap(java.util.Map)"/>
@@ -232,7 +232,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> SynchronizedMapMethod<K, V>(Java.Util.Map<K, V> arg0)
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "synchronizedMap", arg0);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "synchronizedMap", "(Ljava/util/Map;)Ljava/util/Map;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableMap(java.util.Map)"/>
@@ -245,7 +245,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> UnmodifiableMapMethod<K, V, Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "unmodifiableMap", arg0);
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "unmodifiableMap", "(Ljava/util/Map;)Ljava/util/Map;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedNavigableMap(java.util.NavigableMap,java.lang.Class,java.lang.Class)"/>
@@ -258,7 +258,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public static Java.Util.NavigableMap<K, V> CheckedNavigableMapMethod<K, V>(Java.Util.NavigableMap<K, V> arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
         {
-            return SExecute<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "checkedNavigableMap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "checkedNavigableMap", "(Ljava/util/NavigableMap;Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/NavigableMap;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedNavigableMap(java.util.NavigableMap)"/>
@@ -269,7 +269,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public static Java.Util.NavigableMap<K, V> SynchronizedNavigableMapMethod<K, V>(Java.Util.NavigableMap<K, V> arg0)
         {
-            return SExecute<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "synchronizedNavigableMap", arg0);
+            return SExecuteWithSignature<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "synchronizedNavigableMap", "(Ljava/util/NavigableMap;)Ljava/util/NavigableMap;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableNavigableMap(java.util.NavigableMap)"/>
@@ -281,7 +281,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public static Java.Util.NavigableMap<K, V> UnmodifiableNavigableMapMethod<K, V, Arg0ExtendsV>(Java.Util.NavigableMap<K, Arg0ExtendsV> arg0) where Arg0ExtendsV : V
         {
-            return SExecute<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "unmodifiableNavigableMap", arg0);
+            return SExecuteWithSignature<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "unmodifiableNavigableMap", "(Ljava/util/NavigableMap;)Ljava/util/NavigableMap;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#checkedSortedMap(java.util.SortedMap,java.lang.Class,java.lang.Class)"/>
@@ -294,7 +294,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public static Java.Util.SortedMap<K, V> CheckedSortedMapMethod<K, V>(Java.Util.SortedMap<K, V> arg0, Java.Lang.Class arg1, Java.Lang.Class arg2)
         {
-            return SExecute<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "checkedSortedMap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "checkedSortedMap", "(Ljava/util/SortedMap;Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/SortedMap;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#synchronizedSortedMap(java.util.SortedMap)"/>
@@ -305,7 +305,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public static Java.Util.SortedMap<K, V> SynchronizedSortedMapMethod<K, V>(Java.Util.SortedMap<K, V> arg0)
         {
-            return SExecute<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "synchronizedSortedMap", arg0);
+            return SExecuteWithSignature<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "synchronizedSortedMap", "(Ljava/util/SortedMap;)Ljava/util/SortedMap;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#unmodifiableSortedMap(java.util.SortedMap)"/>
@@ -317,7 +317,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public static Java.Util.SortedMap<K, V> UnmodifiableSortedMapMethod<K, V, Arg0ExtendsV>(Java.Util.SortedMap<K, Arg0ExtendsV> arg0) where Arg0ExtendsV : V
         {
-            return SExecute<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "unmodifiableSortedMap", arg0);
+            return SExecuteWithSignature<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "unmodifiableSortedMap", "(Ljava/util/SortedMap;)Ljava/util/SortedMap;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#addAll(java.util.Collection,java.lang.Object[])"/>
@@ -329,7 +329,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool AddAll<Arg0objectSuperT, T>(Java.Util.Collection<Arg0objectSuperT> arg0, params T[] arg1) where Arg0objectSuperT : T
         {
-            if (arg1.Length == 0) return SExecute<bool>(LocalBridgeClazz, "addAll", arg0); else return SExecute<bool>(LocalBridgeClazz, "addAll", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<bool>(LocalBridgeClazz, "addAll", "(Ljava/util/Collection;[Ljava/lang/Object;)Z", arg0); else return SExecuteWithSignature<bool>(LocalBridgeClazz, "addAll", "(Ljava/util/Collection;[Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#replaceAll(java.util.List,java.lang.Object,java.lang.Object)"/>
@@ -341,7 +341,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool ReplaceAll<T>(Java.Util.List<T> arg0, T arg1, T arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "replaceAll", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "replaceAll", "(Ljava/util/List;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#binarySearch(java.util.List,java.lang.Object)"/>
@@ -354,7 +354,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch<Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_, Arg0objectSuperT, T>(Java.Util.List<Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_> arg0, T arg1) where Arg0ExtendsJava_Lang_Comparable_Arg0objectSuperT_ : Java.Lang.Comparable<Arg0objectSuperT> where Arg0objectSuperT : T
         {
-            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "binarySearch", "(Ljava/util/List;Ljava/lang/Object;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#binarySearch(java.util.List,java.lang.Object,java.util.Comparator)"/>
@@ -368,7 +368,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int BinarySearch<Arg0ExtendsT, T, Arg2objectSuperT>(Java.Util.List<Arg0ExtendsT> arg0, T arg1, Java.Util.Comparator<Arg2objectSuperT> arg2) where Arg0ExtendsT : T where Arg2objectSuperT : T
         {
-            return SExecute<int>(LocalBridgeClazz, "binarySearch", arg0, arg1, arg2);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "binarySearch", "(Ljava/util/List;Ljava/lang/Object;Ljava/util/Comparator;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#list(java.util.Enumeration)"/>
@@ -457,7 +457,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<T> NCopies<T>(int arg0, T arg1)
         {
-            return SExecute<Java.Util.List<T>>(LocalBridgeClazz, "nCopies", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.List<T>>(LocalBridgeClazz, "nCopies", "(ILjava/lang/Object;)Ljava/util/List;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#singletonList(java.lang.Object)"/>
@@ -591,7 +591,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public static T Max<T, Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Collection<Arg0ExtendsT> arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T
         {
-            return SExecute<T>(LocalBridgeClazz, "max", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "max", "(Ljava/util/Collection;Ljava/util/Comparator;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#max(java.util.Collection)"/>
@@ -615,7 +615,7 @@ namespace Java.Util
         /// <returns><typeparamref name="T"/></returns>
         public static T Min<T, Arg0ExtendsT, Arg1objectSuperT>(Java.Util.Collection<Arg0ExtendsT> arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg0ExtendsT : T where Arg1objectSuperT : T
         {
-            return SExecute<T>(LocalBridgeClazz, "min", arg0, arg1);
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "min", "(Ljava/util/Collection;Ljava/util/Comparator;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#min(java.util.Collection)"/>
@@ -638,7 +638,7 @@ namespace Java.Util
         /// <typeparam name="Arg1ExtendsT"><typeparamref name="T"/></typeparam>
         public static void Copy<Arg0objectSuperT, T, Arg1ExtendsT>(Java.Util.List<Arg0objectSuperT> arg0, Java.Util.List<Arg1ExtendsT> arg1) where Arg0objectSuperT : T where Arg1ExtendsT : T
         {
-            SExecute(LocalBridgeClazz, "copy", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "copy", "(Ljava/util/List;Ljava/util/List;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#fill(java.util.List,java.lang.Object)"/>
@@ -649,7 +649,7 @@ namespace Java.Util
         /// <typeparam name="T"></typeparam>
         public static void Fill<Arg0objectSuperT, T>(Java.Util.List<Arg0objectSuperT> arg0, T arg1) where Arg0objectSuperT : T
         {
-            SExecute(LocalBridgeClazz, "fill", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "fill", "(Ljava/util/List;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#sort(java.util.List,java.util.Comparator)"/>
@@ -660,7 +660,7 @@ namespace Java.Util
         /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
         public static void Sort<T, Arg1objectSuperT>(Java.Util.List<T> arg0, Java.Util.Comparator<Arg1objectSuperT> arg1) where Arg1objectSuperT : T
         {
-            SExecute(LocalBridgeClazz, "sort", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "sort", "(Ljava/util/List;Ljava/util/Comparator;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#sort(java.util.List)"/>
@@ -679,7 +679,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public static bool Disjoint(Java.Util.Collection<object> arg0, Java.Util.Collection<object> arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "disjoint", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "disjoint", "(Ljava/util/Collection;Ljava/util/Collection;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyMap()"/>
@@ -689,7 +689,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.Map"/></returns>
         public static Java.Util.Map<K, V> EmptyMapMethod<K, V>()
         {
-            return SExecute<Java.Util.Map<K, V>>(LocalBridgeClazz, "emptyMap");
+            return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "emptyMap", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyNavigableMap()"/>
@@ -699,7 +699,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableMap"/></returns>
         public static Java.Util.NavigableMap<K, V> EmptyNavigableMap<K, V>()
         {
-            return SExecute<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "emptyNavigableMap");
+            return SExecuteWithSignature<Java.Util.NavigableMap<K, V>>(LocalBridgeClazz, "emptyNavigableMap", "()Ljava/util/NavigableMap;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptySortedMap()"/>
@@ -709,7 +709,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedMap"/></returns>
         public static Java.Util.SortedMap<K, V> EmptySortedMap<K, V>()
         {
-            return SExecute<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "emptySortedMap");
+            return SExecuteWithSignature<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "emptySortedMap", "()Ljava/util/SortedMap;");
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#emptyList()"/>
@@ -737,7 +737,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int Frequency(Java.Util.Collection<object> arg0, object arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "frequency", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "frequency", "(Ljava/util/Collection;Ljava/lang/Object;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#indexOfSubList(java.util.List,java.util.List)"/>
@@ -747,7 +747,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int IndexOfSubList(Java.Util.List<object> arg0, Java.Util.List<object> arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "indexOfSubList", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "indexOfSubList", "(Ljava/util/List;Ljava/util/List;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#lastIndexOfSubList(java.util.List,java.util.List)"/>
@@ -757,7 +757,7 @@ namespace Java.Util
         /// <returns><see cref="int"/></returns>
         public static int LastIndexOfSubList(Java.Util.List<object> arg0, Java.Util.List<object> arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "lastIndexOfSubList", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "lastIndexOfSubList", "(Ljava/util/List;Ljava/util/List;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#reverse(java.util.List)"/>
@@ -774,7 +774,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="int"/></param>
         public static void Rotate(Java.Util.List<object> arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "rotate", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "rotate", "(Ljava/util/List;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List,java.util.Random)"/>
@@ -783,7 +783,7 @@ namespace Java.Util
         /// <param name="arg1"><see cref="Java.Util.Random"/></param>
         public static void Shuffle(Java.Util.List<object> arg0, Java.Util.Random arg1)
         {
-            SExecute(LocalBridgeClazz, "shuffle", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "shuffle", "(Ljava/util/List;Ljava/util/Random;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#shuffle(java.util.List)"/>
@@ -801,7 +801,7 @@ namespace Java.Util
         /// <param name="arg2"><see cref="int"/></param>
         public static void Swap(Java.Util.List<object> arg0, int arg1, int arg2)
         {
-            SExecute(LocalBridgeClazz, "swap", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "swap", "(Ljava/util/List;II)V", arg0, arg1, arg2);
         }
 
         #endregion

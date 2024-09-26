@@ -141,7 +141,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSet(int arg0, int arg1)
         {
-            return IExecute<bool>("compareAndSet", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndSet", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#weakCompareAndSetAcquire(int,int)"/>
@@ -151,7 +151,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetAcquire(int arg0, int arg1)
         {
-            return IExecute<bool>("weakCompareAndSetAcquire", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetAcquire", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#weakCompareAndSetPlain(int,int)"/>
@@ -161,7 +161,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetPlain(int arg0, int arg1)
         {
-            return IExecute<bool>("weakCompareAndSetPlain", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetPlain", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#weakCompareAndSetRelease(int,int)"/>
@@ -171,7 +171,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetRelease(int arg0, int arg1)
         {
-            return IExecute<bool>("weakCompareAndSetRelease", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetRelease", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#weakCompareAndSetVolatile(int,int)"/>
@@ -181,7 +181,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="bool"/></returns>
         public bool WeakCompareAndSetVolatile(int arg0, int arg1)
         {
-            return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1);
+            return IExecuteWithSignature<bool>("weakCompareAndSetVolatile", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#accumulateAndGet(int,java.util.function.IntBinaryOperator)"/>
@@ -191,7 +191,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int AccumulateAndGet(int arg0, Java.Util.Function.IntBinaryOperator arg1)
         {
-            return IExecute<int>("accumulateAndGet", arg0, arg1);
+            return IExecuteWithSignature<int>("accumulateAndGet", "(ILjava/util/function/IntBinaryOperator;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#addAndGet(int)"/>
@@ -210,7 +210,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int CompareAndExchange(int arg0, int arg1)
         {
-            return IExecute<int>("compareAndExchange", arg0, arg1);
+            return IExecuteWithSignature<int>("compareAndExchange", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#compareAndExchangeAcquire(int,int)"/>
@@ -220,7 +220,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int CompareAndExchangeAcquire(int arg0, int arg1)
         {
-            return IExecute<int>("compareAndExchangeAcquire", arg0, arg1);
+            return IExecuteWithSignature<int>("compareAndExchangeAcquire", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#compareAndExchangeRelease(int,int)"/>
@@ -230,7 +230,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int CompareAndExchangeRelease(int arg0, int arg1)
         {
-            return IExecute<int>("compareAndExchangeRelease", arg0, arg1);
+            return IExecuteWithSignature<int>("compareAndExchangeRelease", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#decrementAndGet()"/>
@@ -256,7 +256,7 @@ namespace Java.Util.Concurrent.Atomic
         /// <returns><see cref="int"/></returns>
         public int GetAndAccumulate(int arg0, Java.Util.Function.IntBinaryOperator arg1)
         {
-            return IExecute<int>("getAndAccumulate", arg0, arg1);
+            return IExecuteWithSignature<int>("getAndAccumulate", "(ILjava/util/function/IntBinaryOperator;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html#getAndAdd(int)"/>

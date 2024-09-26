@@ -168,7 +168,7 @@ namespace Javax.Xml.Catalog
         /// <returns><see cref="Javax.Xml.Transform.Source"/></returns>
         public Javax.Xml.Transform.Source Resolve(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Javax.Xml.Transform.Source>("resolve", arg0, arg1);
+            return IExecuteWithSignature<Javax.Xml.Transform.Source>("resolve", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/transform/Source;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogResolver.html#resolveResource(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -181,7 +181,7 @@ namespace Javax.Xml.Catalog
         /// <returns><see cref="Org.W3c.Dom.Ls.LSInput"/></returns>
         public Org.W3c.Dom.Ls.LSInput ResolveResource(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            return IExecute<Org.W3c.Dom.Ls.LSInput>("resolveResource", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSInput>("resolveResource", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/ls/LSInput;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogResolver.html#resolveEntity(java.lang.String,java.lang.String)"/>
@@ -191,7 +191,7 @@ namespace Javax.Xml.Catalog
         /// <returns><see cref="Org.Xml.Sax.InputSource"/></returns>
         public Org.Xml.Sax.InputSource ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.Xml.Sax.InputSource>("resolveEntity", arg0, arg1);
+            return IExecuteWithSignature<Org.Xml.Sax.InputSource>("resolveEntity", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogResolver.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -204,7 +204,7 @@ namespace Javax.Xml.Catalog
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public object ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            return IExecute("resolveEntity", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature("resolveEntity", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

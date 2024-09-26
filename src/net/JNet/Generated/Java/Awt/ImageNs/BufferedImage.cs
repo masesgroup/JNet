@@ -392,7 +392,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="bool"/></returns>
         public bool IsTileWritable(int arg0, int arg1)
         {
-            return IExecute<bool>("isTileWritable", arg0, arg1);
+            return IExecuteWithSignature<bool>("isTileWritable", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getRGB(int,int)"/>
@@ -402,7 +402,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int GetRGB(int arg0, int arg1)
         {
-            return IExecute<int>("getRGB", arg0, arg1);
+            return IExecuteWithSignature<int>("getRGB", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getRGB(int,int,int,int,int[],int,int)"/>
@@ -417,7 +417,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="int"/></returns>
         public int[] GetRGB(int arg0, int arg1, int arg2, int arg3, int[] arg4, int arg5, int arg6)
         {
-            return IExecuteArray<int>("getRGB", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignatureArray<int>("getRGB", "(IIII[III)[I", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#createGraphics()"/>
@@ -437,7 +437,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.BufferedImage"/></returns>
         public Java.Awt.ImageNs.BufferedImage GetSubimage(int arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Awt.ImageNs.BufferedImage>("getSubimage", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.ImageNs.BufferedImage>("getSubimage", "(IIII)Ljava/awt/image/BufferedImage;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getData(java.awt.Rectangle)"/>
@@ -456,7 +456,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.Raster"/></returns>
         public Java.Awt.ImageNs.Raster GetTile(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.Raster>("getTile", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Raster>("getTile", "(II)Ljava/awt/image/Raster;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#copyData(java.awt.image.WritableRaster)"/>
@@ -475,7 +475,7 @@ namespace Java.Awt.ImageNs
         /// <returns><see cref="Java.Awt.ImageNs.WritableRaster"/></returns>
         public Java.Awt.ImageNs.WritableRaster GetWritableTile(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.WritableRaster>("getWritableTile", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.WritableRaster>("getWritableTile", "(II)Ljava/awt/image/WritableRaster;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#getProperty(java.lang.String)"/>
@@ -509,7 +509,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg1"><see cref="int"/></param>
         public void ReleaseWritableTile(int arg0, int arg1)
         {
-            IExecute("releaseWritableTile", arg0, arg1);
+            IExecuteWithSignature("releaseWritableTile", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#removeTileObserver(java.awt.image.TileObserver)"/>
@@ -531,7 +531,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg6"><see cref="int"/></param>
         public void SetRGB(int arg0, int arg1, int arg2, int arg3, int[] arg4, int arg5, int arg6)
         {
-            IExecute("setRGB", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("setRGB", "(IIII[III)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferedImage.html#setRGB(int,int,int)"/>
@@ -541,7 +541,7 @@ namespace Java.Awt.ImageNs
         /// <param name="arg2"><see cref="int"/></param>
         public void SetRGB(int arg0, int arg1, int arg2)
         {
-            IExecute("setRGB", arg0, arg1, arg2);
+            IExecuteWithSignature("setRGB", "(III)V", arg0, arg1, arg2);
         }
 
         #endregion

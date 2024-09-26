@@ -162,7 +162,7 @@ namespace Java.Lang.Ref
         /// <returns><see cref="Java.Lang.Ref.Cleaner.Cleanable"/></returns>
         public Java.Lang.Ref.Cleaner.Cleanable Register(object arg0, Java.Lang.Runnable arg1)
         {
-            return IExecute<Java.Lang.Ref.Cleaner.Cleanable>("register", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Ref.Cleaner.Cleanable>("register", "(Ljava/lang/Object;Ljava/lang/Runnable;)Ljava/lang/ref/Cleaner$Cleanable;", arg0, arg1);
         }
 
         #endregion

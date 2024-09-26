@@ -129,7 +129,7 @@ namespace Java.Time.Chrono
         /// <returns><see cref="Java.Time.Chrono.HijrahDate"/></returns>
         public static Java.Time.Chrono.HijrahDate Of(int arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Time.Chrono.HijrahDate>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.Chrono.HijrahDate>(LocalBridgeClazz, "of", "(III)Ljava/time/chrono/HijrahDate;", arg0, arg1, arg2);
         }
 
         #endregion

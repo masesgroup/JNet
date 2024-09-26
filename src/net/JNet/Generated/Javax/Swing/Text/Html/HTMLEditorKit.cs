@@ -450,7 +450,7 @@ namespace Javax.Swing.Text.Html
         /// <exception cref="Java.Io.IOException"/>
         public void InsertHTML(Javax.Swing.Text.Html.HTMLDocument arg0, int arg1, Java.Lang.String arg2, int arg3, int arg4, Javax.Swing.Text.Html.HTML.Tag arg5)
         {
-            IExecute("insertHTML", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("insertHTML", "(Ljavax/swing/text/html/HTMLDocument;ILjava/lang/String;IILjavax/swing/text/html/HTML$Tag;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.html#setAutoFormSubmission(boolean)"/>
@@ -627,7 +627,7 @@ namespace Javax.Swing.Text.Html
             /// <exception cref="Java.Io.IOException"/>
             public void Parse(Java.Io.Reader arg0, Javax.Swing.Text.Html.HTMLEditorKit.ParserCallback arg1, bool arg2)
             {
-                IExecute("parse", arg0, arg1, arg2);
+                IExecuteWithSignature("parse", "(Ljava/io/Reader;Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;Z)V", arg0, arg1, arg2);
             }
 
             #endregion
@@ -681,7 +681,7 @@ namespace Javax.Swing.Text.Html
             /// <param name="arg1"><see cref="int"/></param>
             public void HandleComment(char[] arg0, int arg1)
             {
-                IExecute("handleComment", arg0, arg1);
+                IExecuteWithSignature("handleComment", "([CI)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleEndOfLineString(java.lang.String)"/>
@@ -698,7 +698,7 @@ namespace Javax.Swing.Text.Html
             /// <param name="arg1"><see cref="int"/></param>
             public void HandleEndTag(Javax.Swing.Text.Html.HTML.Tag arg0, int arg1)
             {
-                IExecute("handleEndTag", arg0, arg1);
+                IExecuteWithSignature("handleEndTag", "(Ljavax/swing/text/html/HTML$Tag;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleError(java.lang.String,int)"/>
@@ -707,7 +707,7 @@ namespace Javax.Swing.Text.Html
             /// <param name="arg1"><see cref="int"/></param>
             public void HandleError(Java.Lang.String arg0, int arg1)
             {
-                IExecute("handleError", arg0, arg1);
+                IExecuteWithSignature("handleError", "(Ljava/lang/String;I)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleSimpleTag(javax.swing.text.html.HTML.Tag,javax.swing.text.MutableAttributeSet,int)"/>
@@ -717,7 +717,7 @@ namespace Javax.Swing.Text.Html
             /// <param name="arg2"><see cref="int"/></param>
             public void HandleSimpleTag(Javax.Swing.Text.Html.HTML.Tag arg0, Javax.Swing.Text.MutableAttributeSet arg1, int arg2)
             {
-                IExecute("handleSimpleTag", arg0, arg1, arg2);
+                IExecuteWithSignature("handleSimpleTag", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;I)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleStartTag(javax.swing.text.html.HTML.Tag,javax.swing.text.MutableAttributeSet,int)"/>
@@ -727,7 +727,7 @@ namespace Javax.Swing.Text.Html
             /// <param name="arg2"><see cref="int"/></param>
             public void HandleStartTag(Javax.Swing.Text.Html.HTML.Tag arg0, Javax.Swing.Text.MutableAttributeSet arg1, int arg2)
             {
-                IExecute("handleStartTag", arg0, arg1, arg2);
+                IExecuteWithSignature("handleStartTag", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;I)V", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLEditorKit.ParserCallback.html#handleText(char[],int)"/>
@@ -736,7 +736,7 @@ namespace Javax.Swing.Text.Html
             /// <param name="arg1"><see cref="int"/></param>
             public void HandleText(char[] arg0, int arg1)
             {
-                IExecute("handleText", arg0, arg1);
+                IExecuteWithSignature("handleText", "([CI)V", arg0, arg1);
             }
 
             #endregion

@@ -197,7 +197,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Point"/></returns>
         public Java.Awt.Point Location(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.Point>("location", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Point>("location", "(II)Ljava/awt/Point;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#addLayoutComponent(java.awt.Component,java.lang.Object)"/>
@@ -206,7 +206,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="object"/></param>
         public void AddLayoutComponent(Java.Awt.Component arg0, object arg1)
         {
-            IExecute("addLayoutComponent", arg0, arg1);
+            IExecuteWithSignature("addLayoutComponent", "(Ljava/awt/Component;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
@@ -215,7 +215,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public void AddLayoutComponent(Java.Lang.String arg0, Java.Awt.Component arg1)
         {
-            IExecute("addLayoutComponent", arg0, arg1);
+            IExecuteWithSignature("addLayoutComponent", "(Ljava/lang/String;Ljava/awt/Component;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/GridBagLayout.html#invalidateLayout(java.awt.Container)"/>
@@ -248,7 +248,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Awt.GridBagConstraints"/></param>
         public void SetConstraints(Java.Awt.Component arg0, Java.Awt.GridBagConstraints arg1)
         {
-            IExecute("setConstraints", arg0, arg1);
+            IExecuteWithSignature("setConstraints", "(Ljava/awt/Component;Ljava/awt/GridBagConstraints;)V", arg0, arg1);
         }
 
         #endregion

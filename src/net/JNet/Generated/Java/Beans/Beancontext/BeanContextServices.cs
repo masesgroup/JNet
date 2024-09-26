@@ -191,7 +191,7 @@ namespace Java.Beans.Beancontext
         /// <returns><see cref="bool"/></returns>
         public bool AddService(Java.Lang.Class arg0, Java.Beans.Beancontext.BeanContextServiceProvider arg1)
         {
-            return IExecute<bool>("addService", arg0, arg1);
+            return IExecuteWithSignature<bool>("addService", "(Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#hasService(java.lang.Class)"/>
@@ -214,7 +214,7 @@ namespace Java.Beans.Beancontext
         /// <exception cref="Java.Util.TooManyListenersException"/>
         public object GetService(Java.Beans.Beancontext.BeanContextChild arg0, object arg1, Java.Lang.Class arg2, object arg3, Java.Beans.Beancontext.BeanContextServiceRevokedListener arg4)
         {
-            return IExecute("getService", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature("getService", "(Ljava/beans/beancontext/BeanContextChild;Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/Object;Ljava/beans/beancontext/BeanContextServiceRevokedListener;)Ljava/lang/Object;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#getCurrentServiceSelectors(java.lang.Class)"/>
@@ -241,7 +241,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg2"><see cref="object"/></param>
         public void ReleaseService(Java.Beans.Beancontext.BeanContextChild arg0, object arg1, object arg2)
         {
-            IExecute("releaseService", arg0, arg1, arg2);
+            IExecuteWithSignature("releaseService", "(Ljava/beans/beancontext/BeanContextChild;Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServices.html#removeBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)"/>
@@ -259,7 +259,7 @@ namespace Java.Beans.Beancontext
         /// <param name="arg2"><see cref="bool"/></param>
         public void RevokeService(Java.Lang.Class arg0, Java.Beans.Beancontext.BeanContextServiceProvider arg1, bool arg2)
         {
-            IExecute("revokeService", arg0, arg1, arg2);
+            IExecuteWithSignature("revokeService", "(Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;Z)V", arg0, arg1, arg2);
         }
 
         #endregion

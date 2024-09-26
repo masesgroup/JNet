@@ -150,7 +150,7 @@ namespace Javax.Security.Sasl
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
         public Javax.Security.Sasl.SaslClient CreateSaslClient(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Util.Map<Java.Lang.String, object> arg4, Javax.Security.Auth.Callback.CallbackHandler arg5)
         {
-            return IExecute<Javax.Security.Sasl.SaslClient>("createSaslClient", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Javax.Security.Sasl.SaslClient>("createSaslClient", "([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljavax/security/auth/callback/CallbackHandler;)Ljavax/security/sasl/SaslClient;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

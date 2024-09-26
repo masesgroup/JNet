@@ -150,7 +150,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="bool"/></returns>
         public bool HasFeature(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<bool>("hasFeature", arg0, arg1);
+            return IExecuteWithSignature<bool>("hasFeature", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#getFeature(java.lang.String,java.lang.String)"/>
@@ -160,7 +160,7 @@ namespace Org.W3c.Dom
         /// <returns><see cref="object"/></returns>
         public object GetFeature(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute("getFeature", arg0, arg1);
+            return IExecuteWithSignature("getFeature", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#createDocument(java.lang.String,java.lang.String,org.w3c.dom.DocumentType)"/>
@@ -172,7 +172,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Document CreateDocument(Java.Lang.String arg0, Java.Lang.String arg1, Org.W3c.Dom.DocumentType arg2)
         {
-            return IExecute<Org.W3c.Dom.Document>("createDocument", arg0, arg1, arg2);
+            return IExecuteWithSignature<Org.W3c.Dom.Document>("createDocument", "(Ljava/lang/String;Ljava/lang/String;Lorg/w3c/dom/DocumentType;)Lorg/w3c/dom/Document;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html#createDocumentType(java.lang.String,java.lang.String,java.lang.String)"/>
@@ -184,7 +184,7 @@ namespace Org.W3c.Dom
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.DocumentType CreateDocumentType(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return IExecute<Org.W3c.Dom.DocumentType>("createDocumentType", arg0, arg1, arg2);
+            return IExecuteWithSignature<Org.W3c.Dom.DocumentType>("createDocumentType", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/DocumentType;", arg0, arg1, arg2);
         }
 
         #endregion

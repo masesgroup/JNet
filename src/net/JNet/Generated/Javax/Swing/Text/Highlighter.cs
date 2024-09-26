@@ -266,7 +266,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public object AddHighlight(int arg0, int arg1, Javax.Swing.Text.Highlighter.HighlightPainter arg2)
         {
-            return IExecute("addHighlight", arg0, arg1, arg2);
+            return IExecuteWithSignature("addHighlight", "(IILjavax/swing/text/Highlighter$HighlightPainter;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#changeHighlight(java.lang.Object,int,int)"/>
@@ -277,7 +277,7 @@ namespace Javax.Swing.Text
         /// <exception cref="Javax.Swing.Text.BadLocationException"/>
         public void ChangeHighlight(object arg0, int arg1, int arg2)
         {
-            IExecute("changeHighlight", arg0, arg1, arg2);
+            IExecuteWithSignature("changeHighlight", "(Ljava/lang/Object;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Highlighter.html#deinstall(javax.swing.text.JTextComponent)"/>
@@ -404,7 +404,7 @@ namespace Javax.Swing.Text
             /// <param name="arg4"><see cref="Javax.Swing.Text.JTextComponent"/></param>
             public void Paint(Java.Awt.Graphics arg0, int arg1, int arg2, Java.Awt.Shape arg3, Javax.Swing.Text.JTextComponent arg4)
             {
-                IExecute("paint", arg0, arg1, arg2, arg3, arg4);
+                IExecuteWithSignature("paint", "(Ljava/awt/Graphics;IILjava/awt/Shape;Ljavax/swing/text/JTextComponent;)V", arg0, arg1, arg2, arg3, arg4);
             }
 
             #endregion

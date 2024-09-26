@@ -200,7 +200,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Java.Lang.Exception"/>
         public Javax.Management.ObjectName PreRegister(Javax.Management.MBeanServer arg0, Javax.Management.ObjectName arg1)
         {
-            return IExecute<Javax.Management.ObjectName>("preRegister", arg0, arg1);
+            return IExecuteWithSignature<Javax.Management.ObjectName>("preRegister", "(Ljavax/management/MBeanServer;Ljavax/management/ObjectName;)Ljavax/management/ObjectName;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#retrieveAllRoles()"/>
@@ -247,7 +247,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Javax.Management.Relation.RelationNotFoundException"/>
         public void HandleMBeanUnregistration(Javax.Management.ObjectName arg0, Java.Lang.String arg1)
         {
-            IExecute("handleMBeanUnregistration", arg0, arg1);
+            IExecuteWithSignature("handleMBeanUnregistration", "(Ljavax/management/ObjectName;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationSupport.html#postDeregister()"/>

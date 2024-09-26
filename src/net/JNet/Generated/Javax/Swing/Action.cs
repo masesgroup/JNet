@@ -465,7 +465,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="object"/></param>
         public override void PutValue(Java.Lang.String arg0, object arg1)
         {
-            IExecute("putValue", arg0, arg1);
+            IExecuteWithSignature("putValue", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/Action.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>

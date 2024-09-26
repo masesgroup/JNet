@@ -134,7 +134,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.SignatureException"/>
         public bool Verify(Java.Security.PublicKey arg0, Java.Security.Signature arg1)
         {
-            return IExecute<bool>("verify", arg0, arg1);
+            return IExecuteWithSignature<bool>("verify", "(Ljava/security/PublicKey;Ljava/security/Signature;)Z", arg0, arg1);
         }
 
         #endregion

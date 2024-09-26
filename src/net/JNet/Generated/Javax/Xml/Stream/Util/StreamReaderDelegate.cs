@@ -331,7 +331,7 @@ namespace Javax.Xml.Stream.Util
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public int GetTextCharacters(int arg0, char[] arg1, int arg2, int arg3)
         {
-            return IExecute<int>("getTextCharacters", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("getTextCharacters", "(I[CII)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#next()"/>
@@ -413,7 +413,7 @@ namespace Javax.Xml.Stream.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetAttributeValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getAttributeValue", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getAttributeValue", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/StreamReaderDelegate.html#getNamespacePrefix(int)"/>
@@ -468,7 +468,7 @@ namespace Javax.Xml.Stream.Util
         /// <exception cref="Javax.Xml.Stream.XMLStreamException"/>
         public void Require(int arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("require", arg0, arg1, arg2);
+            IExecuteWithSignature("require", "(ILjava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
 
         #endregion

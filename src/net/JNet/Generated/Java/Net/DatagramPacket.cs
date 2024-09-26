@@ -203,7 +203,7 @@ namespace Java.Net
         /// <param name="arg2"><see cref="int"/></param>
         public void SetData(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("setData", arg0, arg1, arg2);
+            IExecuteWithSignature("setData", "([BII)V", arg0, arg1, arg2);
         }
 
         #endregion

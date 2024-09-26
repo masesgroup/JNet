@@ -210,7 +210,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintWriter"/></returns>
         public Java.Io.PrintWriter Format(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Io.PrintWriter>("format", arg0); else return IExecute<Java.Io.PrintWriter>("format", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Io.PrintWriter>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0); else return IExecuteWithSignature<Java.Io.PrintWriter>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#format(java.util.Locale,java.lang.String,java.lang.Object[])"/>
@@ -221,7 +221,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintWriter"/></returns>
         public Java.Io.PrintWriter Format(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Io.PrintWriter>("format", arg0, arg1); else return IExecute<Java.Io.PrintWriter>("format", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Io.PrintWriter>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0, arg1); else return IExecuteWithSignature<Java.Io.PrintWriter>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#printf(java.lang.String,java.lang.Object[])"/>
@@ -231,7 +231,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintWriter"/></returns>
         public Java.Io.PrintWriter Printf(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Io.PrintWriter>("printf", arg0); else return IExecute<Java.Io.PrintWriter>("printf", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Io.PrintWriter>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0); else return IExecuteWithSignature<Java.Io.PrintWriter>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#printf(java.util.Locale,java.lang.String,java.lang.Object[])"/>
@@ -242,7 +242,7 @@ namespace Java.Io
         /// <returns><see cref="Java.Io.PrintWriter"/></returns>
         public Java.Io.PrintWriter Printf(Java.Util.Locale arg0, Java.Lang.String arg1, params object[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Io.PrintWriter>("printf", arg0, arg1); else return IExecute<Java.Io.PrintWriter>("printf", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Io.PrintWriter>("printf", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0, arg1); else return IExecuteWithSignature<Java.Io.PrintWriter>("printf", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintWriter;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintWriter.html#print(boolean)"/>

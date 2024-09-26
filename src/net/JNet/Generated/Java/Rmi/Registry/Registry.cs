@@ -189,7 +189,7 @@ namespace Java.Rmi.Registry
         /// <exception cref="Java.Rmi.AccessException"/>
         public void Bind(Java.Lang.String arg0, Java.Rmi.Remote arg1)
         {
-            IExecute("bind", arg0, arg1);
+            IExecuteWithSignature("bind", "(Ljava/lang/String;Ljava/rmi/Remote;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#rebind(java.lang.String,java.rmi.Remote)"/>
@@ -200,7 +200,7 @@ namespace Java.Rmi.Registry
         /// <exception cref="Java.Rmi.AccessException"/>
         public void Rebind(Java.Lang.String arg0, Java.Rmi.Remote arg1)
         {
-            IExecute("rebind", arg0, arg1);
+            IExecuteWithSignature("rebind", "(Ljava/lang/String;Ljava/rmi/Remote;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/Registry.html#unbind(java.lang.String)"/>

@@ -110,7 +110,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="bool"/></returns>
         public bool Contains(Javax.Swing.JComponent arg0, int arg1, int arg2)
         {
-            return IExecute<bool>("contains", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("contains", "(Ljavax/swing/JComponent;II)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#getAccessibleChildrenCount(javax.swing.JComponent)"/>
@@ -130,7 +130,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="int"/></returns>
         public int GetBaseline(Javax.Swing.JComponent arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getBaseline", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getBaseline", "(Ljavax/swing/JComponent;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#getBaselineResizeBehavior(javax.swing.JComponent)"/>
@@ -176,7 +176,7 @@ namespace Javax.Swing.Plaf
         /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
         public Javax.Accessibility.Accessible GetAccessibleChild(Javax.Swing.JComponent arg0, int arg1)
         {
-            return IExecute<Javax.Accessibility.Accessible>("getAccessibleChild", arg0, arg1);
+            return IExecuteWithSignature<Javax.Accessibility.Accessible>("getAccessibleChild", "(Ljavax/swing/JComponent;I)Ljavax/accessibility/Accessible;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#installUI(javax.swing.JComponent)"/>
@@ -193,7 +193,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
         public void Paint(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
         {
-            IExecute("paint", arg0, arg1);
+            IExecuteWithSignature("paint", "(Ljava/awt/Graphics;Ljavax/swing/JComponent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/ComponentUI.html#uninstallUI(javax.swing.JComponent)"/>
@@ -210,7 +210,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
         public void Update(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
         {
-            IExecute("update", arg0, arg1);
+            IExecuteWithSignature("update", "(Ljava/awt/Graphics;Ljavax/swing/JComponent;)V", arg0, arg1);
         }
 
         #endregion

@@ -132,7 +132,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="float"/></returns>
         public float GetPartialSpan(int arg0, int arg1)
         {
-            return IExecute<float>("getPartialSpan", arg0, arg1);
+            return IExecuteWithSignature<float>("getPartialSpan", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/TabableView.html#getTabbedSpan(float,javax.swing.text.TabExpander)"/>
@@ -142,7 +142,7 @@ namespace Javax.Swing.Text
         /// <returns><see cref="float"/></returns>
         public float GetTabbedSpan(float arg0, Javax.Swing.Text.TabExpander arg1)
         {
-            return IExecute<float>("getTabbedSpan", arg0, arg1);
+            return IExecuteWithSignature<float>("getTabbedSpan", "(FLjavax/swing/text/TabExpander;)F", arg0, arg1);
         }
 
         #endregion

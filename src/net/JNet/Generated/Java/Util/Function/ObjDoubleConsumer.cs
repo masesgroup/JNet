@@ -251,7 +251,7 @@ namespace Java.Util.Function
         /// <param name="arg1"><see cref="double"/></param>
         public override void Accept(object arg0, double arg1)
         {
-            IExecute("accept", arg0, arg1);
+            IExecuteWithSignature("accept", "(Ljava/lang/Object;D)V", arg0, arg1);
         }
 
         #endregion
@@ -379,7 +379,7 @@ namespace Java.Util.Function
         /// <param name="arg1"><see cref="double"/></param>
         public override void Accept(T arg0, double arg1)
         {
-            IExecute("accept", arg0, arg1);
+            IExecuteWithSignature("accept", "(Ljava/lang/Object;D)V", arg0, arg1);
         }
 
         #endregion

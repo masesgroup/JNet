@@ -184,7 +184,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ReflectionException"/>
         public object Invoke(Java.Lang.String arg0, object[] arg1, Java.Lang.String[] arg2)
         {
-            return IExecute("invoke", arg0, arg1, arg2);
+            return IExecuteWithSignature("invoke", "(Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/DynamicMBean.html#getAttributes(java.lang.String[])"/>

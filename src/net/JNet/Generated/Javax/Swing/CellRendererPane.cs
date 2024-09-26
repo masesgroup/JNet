@@ -107,7 +107,7 @@ namespace Javax.Swing
         /// <param name="arg7"><see cref="bool"/></param>
         public void PaintComponent(Java.Awt.Graphics arg0, Java.Awt.Component arg1, Java.Awt.Container arg2, int arg3, int arg4, int arg5, int arg6, bool arg7)
         {
-            IExecute("paintComponent", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            IExecuteWithSignature("paintComponent", "(Ljava/awt/Graphics;Ljava/awt/Component;Ljava/awt/Container;IIIIZ)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/CellRendererPane.html#paintComponent(java.awt.Graphics,java.awt.Component,java.awt.Container,int,int,int,int)"/>
@@ -121,7 +121,7 @@ namespace Javax.Swing
         /// <param name="arg6"><see cref="int"/></param>
         public void PaintComponent(Java.Awt.Graphics arg0, Java.Awt.Component arg1, Java.Awt.Container arg2, int arg3, int arg4, int arg5, int arg6)
         {
-            IExecute("paintComponent", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            IExecuteWithSignature("paintComponent", "(Ljava/awt/Graphics;Ljava/awt/Component;Ljava/awt/Container;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/CellRendererPane.html#paintComponent(java.awt.Graphics,java.awt.Component,java.awt.Container,java.awt.Rectangle)"/>
@@ -132,7 +132,7 @@ namespace Javax.Swing
         /// <param name="arg3"><see cref="Java.Awt.Rectangle"/></param>
         public void PaintComponent(Java.Awt.Graphics arg0, Java.Awt.Component arg1, Java.Awt.Container arg2, Java.Awt.Rectangle arg3)
         {
-            IExecute("paintComponent", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("paintComponent", "(Ljava/awt/Graphics;Ljava/awt/Component;Ljava/awt/Container;Ljava/awt/Rectangle;)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion

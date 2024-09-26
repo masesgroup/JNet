@@ -131,7 +131,7 @@ namespace Javax.Swing.Table
         /// <param name="arg1"><see cref="object"/></param>
         public void AddColumn(object arg0, object[] arg1)
         {
-            IExecute("addColumn", arg0, arg1);
+            IExecuteWithSignature("addColumn", "(Ljava/lang/Object;[Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#addColumn(java.lang.Object,java.util.Vector)"/>
@@ -140,7 +140,7 @@ namespace Javax.Swing.Table
         /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
         public void AddColumn(object arg0, Java.Util.Vector<object> arg1)
         {
-            IExecute("addColumn", arg0, arg1);
+            IExecuteWithSignature("addColumn", "(Ljava/lang/Object;Ljava/util/Vector;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#addColumn(java.lang.Object)"/>
@@ -173,7 +173,7 @@ namespace Javax.Swing.Table
         /// <param name="arg1"><see cref="object"/></param>
         public void InsertRow(int arg0, object[] arg1)
         {
-            IExecute("insertRow", arg0, arg1);
+            IExecuteWithSignature("insertRow", "(I[Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#insertRow(int,java.util.Vector)"/>
@@ -182,7 +182,7 @@ namespace Javax.Swing.Table
         /// <param name="arg1"><see cref="Java.Util.Vector"/></param>
         public void InsertRow(int arg0, Java.Util.Vector<object> arg1)
         {
-            IExecute("insertRow", arg0, arg1);
+            IExecuteWithSignature("insertRow", "(ILjava/util/Vector;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#moveRow(int,int,int)"/>
@@ -192,7 +192,7 @@ namespace Javax.Swing.Table
         /// <param name="arg2"><see cref="int"/></param>
         public void MoveRow(int arg0, int arg1, int arg2)
         {
-            IExecute("moveRow", arg0, arg1, arg2);
+            IExecuteWithSignature("moveRow", "(III)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#newDataAvailable(javax.swing.event.TableModelEvent)"/>
@@ -257,7 +257,7 @@ namespace Javax.Swing.Table
         /// <param name="arg1"><see cref="object"/></param>
         public void SetDataVector(object[][] arg0, object[] arg1)
         {
-            IExecute("setDataVector", arg0, arg1);
+            IExecuteWithSignature("setDataVector", "([[Ljava/lang/Object;[Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setDataVector(java.util.Vector,java.util.Vector)"/>
@@ -267,7 +267,7 @@ namespace Javax.Swing.Table
         /// <typeparam name="Arg0ExtendsJava_Util_Vector"><see cref="Java.Util.Vector"/></typeparam>
         public void SetDataVector<Arg0ExtendsJava_Util_Vector>(Java.Util.Vector<Arg0ExtendsJava_Util_Vector> arg0, Java.Util.Vector<object> arg1) where Arg0ExtendsJava_Util_Vector : Java.Util.Vector
         {
-            IExecute("setDataVector", arg0, arg1);
+            IExecuteWithSignature("setDataVector", "(Ljava/util/Vector;Ljava/util/Vector;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/DefaultTableModel.html#setNumRows(int)"/>

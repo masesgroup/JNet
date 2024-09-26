@@ -169,7 +169,7 @@ namespace Java.Lang
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Process Exec(Java.Lang.String arg0, Java.Lang.String[] arg1, Java.Io.File arg2)
         {
-            return IExecute<Java.Lang.Process>("exec", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.Process>("exec", "(Ljava/lang/String;[Ljava/lang/String;Ljava/io/File;)Ljava/lang/Process;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String,java.lang.String[])"/>
@@ -180,7 +180,7 @@ namespace Java.Lang
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Process Exec(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<Java.Lang.Process>("exec", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Process>("exec", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/Process;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String)"/>
@@ -202,7 +202,7 @@ namespace Java.Lang
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Process Exec(Java.Lang.String[] arg0, Java.Lang.String[] arg1, Java.Io.File arg2)
         {
-            return IExecute<Java.Lang.Process>("exec", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.Process>("exec", "([Ljava/lang/String;[Ljava/lang/String;Ljava/io/File;)Ljava/lang/Process;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String[],java.lang.String[])"/>
@@ -213,7 +213,7 @@ namespace Java.Lang
         /// <exception cref="Java.Io.IOException"/>
         public Java.Lang.Process Exec(Java.Lang.String[] arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<Java.Lang.Process>("exec", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Process>("exec", "([Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/Process;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runtime.html#exec(java.lang.String[])"/>

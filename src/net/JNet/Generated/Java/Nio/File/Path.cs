@@ -275,7 +275,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public static Java.Nio.File.Path Of(Java.Lang.String arg0, params Java.Lang.String[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "of", arg0); else return SExecute<Java.Nio.File.Path>(LocalBridgeClazz, "of", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Java.Nio.File.Path>(LocalBridgeClazz, "of", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;", arg0); else return SExecuteWithSignature<Java.Nio.File.Path>(LocalBridgeClazz, "of", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#of(java.net.URI)"/>
@@ -411,7 +411,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public Java.Nio.File.Path Subpath(int arg0, int arg1)
         {
-            return IExecute<Java.Nio.File.Path>("subpath", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.File.Path>("subpath", "(II)Ljava/nio/file/Path;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toAbsolutePath()"/>
@@ -441,7 +441,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, Java.Nio.File.WatchEvent.Kind<object>[] arg1, params Java.Nio.File.WatchEvent.Modifier[] arg2)
         {
-            if (arg2.Length == 0) return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1); else return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1, arg2);
+            if (arg2.Length == 0) return IExecuteWithSignature<Java.Nio.File.WatchKey>("register", "(Ljava/nio/file/WatchService;[Ljava/nio/file/WatchEvent$Kind;[Ljava/nio/file/WatchEvent$Modifier;)Ljava/nio/file/WatchKey;", arg0, arg1); else return IExecuteWithSignature<Java.Nio.File.WatchKey>("register", "(Ljava/nio/file/WatchService;[Ljava/nio/file/WatchEvent$Kind;[Ljava/nio/file/WatchEvent$Modifier;)Ljava/nio/file/WatchKey;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#endsWith(java.lang.String)"/>
@@ -514,7 +514,7 @@ namespace Java.Nio.File
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.File.WatchKey Register(Java.Nio.File.WatchService arg0, params Java.Nio.File.WatchEvent.Kind<object>[] arg1)
         {
-            if (arg1.Length == 0) return IExecute<Java.Nio.File.WatchKey>("register", arg0); else return IExecute<Java.Nio.File.WatchKey>("register", arg0, arg1);
+            if (arg1.Length == 0) return IExecuteWithSignature<Java.Nio.File.WatchKey>("register", "(Ljava/nio/file/WatchService;[Ljava/nio/file/WatchEvent$Kind;)Ljava/nio/file/WatchKey;", arg0); else return IExecuteWithSignature<Java.Nio.File.WatchKey>("register", "(Ljava/nio/file/WatchService;[Ljava/nio/file/WatchEvent$Kind;)Ljava/nio/file/WatchKey;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#iterator()"/>

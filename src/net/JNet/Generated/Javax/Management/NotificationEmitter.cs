@@ -127,7 +127,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
-            IExecute("removeNotificationListener", arg0, arg1, arg2);
+            IExecuteWithSignature("removeNotificationListener", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
 
         #endregion

@@ -176,7 +176,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool OnExceptionalCompletion(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, Java.Util.Concurrent.CountedCompleter arg1)
         {
-            return IExecute<bool>("onExceptionalCompletion", arg0, arg1);
+            return IExecuteWithSignature<bool>("onExceptionalCompletion", "(Ljava/lang/Throwable;Ljava/util/concurrent/CountedCompleter;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#compareAndSetPendingCount(int,int)"/>
@@ -186,7 +186,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSetPendingCount(int arg0, int arg1)
         {
-            return IExecute<bool>("compareAndSetPendingCount", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndSetPendingCount", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()"/>
@@ -328,7 +328,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool OnExceptionalCompletion(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0, Java.Util.Concurrent.CountedCompleter<object> arg1)
         {
-            return IExecute<bool>("onExceptionalCompletion", arg0, arg1);
+            return IExecuteWithSignature<bool>("onExceptionalCompletion", "(Ljava/lang/Throwable;Ljava/util/concurrent/CountedCompleter;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#compareAndSetPendingCount(int,int)"/>
@@ -338,7 +338,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="bool"/></returns>
         public bool CompareAndSetPendingCount(int arg0, int arg1)
         {
-            return IExecute<bool>("compareAndSetPendingCount", arg0, arg1);
+            return IExecuteWithSignature<bool>("compareAndSetPendingCount", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()"/>

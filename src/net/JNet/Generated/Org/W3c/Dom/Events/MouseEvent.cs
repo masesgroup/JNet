@@ -259,7 +259,7 @@ namespace Org.W3c.Dom.Events
         /// <param name="arg14"><see cref="Org.W3c.Dom.Events.EventTarget"/></param>
         public void InitMouseEvent(Java.Lang.String arg0, bool arg1, bool arg2, Org.W3c.Dom.Views.AbstractView arg3, int arg4, int arg5, int arg6, int arg7, int arg8, bool arg9, bool arg10, bool arg11, bool arg12, short arg13, Org.W3c.Dom.Events.EventTarget arg14)
         {
-            IExecute("initMouseEvent", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14);
+            IExecuteWithSignature("initMouseEvent", "(Ljava/lang/String;ZZLorg/w3c/dom/views/AbstractView;IIIIIZZZZSLorg/w3c/dom/events/EventTarget;)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14);
         }
 
         #endregion

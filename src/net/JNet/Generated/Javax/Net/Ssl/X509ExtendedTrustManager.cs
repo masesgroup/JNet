@@ -101,7 +101,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void CheckClientTrusted(Java.Security.Cert.X509Certificate[] arg0, Java.Lang.String arg1, Java.Net.Socket arg2)
         {
-            IExecute("checkClientTrusted", arg0, arg1, arg2);
+            IExecuteWithSignature("checkClientTrusted", "([Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljava/net/Socket;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509ExtendedTrustManager.html#checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String,javax.net.ssl.SSLEngine)"/>
@@ -112,7 +112,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void CheckClientTrusted(Java.Security.Cert.X509Certificate[] arg0, Java.Lang.String arg1, Javax.Net.Ssl.SSLEngine arg2)
         {
-            IExecute("checkClientTrusted", arg0, arg1, arg2);
+            IExecuteWithSignature("checkClientTrusted", "([Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljavax/net/ssl/SSLEngine;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509ExtendedTrustManager.html#checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String,java.net.Socket)"/>
@@ -123,7 +123,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void CheckServerTrusted(Java.Security.Cert.X509Certificate[] arg0, Java.Lang.String arg1, Java.Net.Socket arg2)
         {
-            IExecute("checkServerTrusted", arg0, arg1, arg2);
+            IExecuteWithSignature("checkServerTrusted", "([Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljava/net/Socket;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509ExtendedTrustManager.html#checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String,javax.net.ssl.SSLEngine)"/>
@@ -134,7 +134,7 @@ namespace Javax.Net.Ssl
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public void CheckServerTrusted(Java.Security.Cert.X509Certificate[] arg0, Java.Lang.String arg1, Javax.Net.Ssl.SSLEngine arg2)
         {
-            IExecute("checkServerTrusted", arg0, arg1, arg2);
+            IExecuteWithSignature("checkServerTrusted", "([Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljavax/net/ssl/SSLEngine;)V", arg0, arg1, arg2);
         }
 
         #endregion

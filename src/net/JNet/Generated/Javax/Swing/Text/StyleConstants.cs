@@ -666,7 +666,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="int"/></param>
         public static void SetAlignment(Javax.Swing.Text.MutableAttributeSet arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "setAlignment", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setAlignment", "(Ljavax/swing/text/MutableAttributeSet;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setBackground(javax.swing.text.MutableAttributeSet,java.awt.Color)"/>
@@ -675,7 +675,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
         public static void SetBackground(Javax.Swing.Text.MutableAttributeSet arg0, Java.Awt.Color arg1)
         {
-            SExecute(LocalBridgeClazz, "setBackground", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setBackground", "(Ljavax/swing/text/MutableAttributeSet;Ljava/awt/Color;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setBidiLevel(javax.swing.text.MutableAttributeSet,int)"/>
@@ -684,7 +684,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="int"/></param>
         public static void SetBidiLevel(Javax.Swing.Text.MutableAttributeSet arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "setBidiLevel", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setBidiLevel", "(Ljavax/swing/text/MutableAttributeSet;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setBold(javax.swing.text.MutableAttributeSet,boolean)"/>
@@ -693,7 +693,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="bool"/></param>
         public static void SetBold(Javax.Swing.Text.MutableAttributeSet arg0, bool arg1)
         {
-            SExecute(LocalBridgeClazz, "setBold", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setBold", "(Ljavax/swing/text/MutableAttributeSet;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setComponent(javax.swing.text.MutableAttributeSet,java.awt.Component)"/>
@@ -702,7 +702,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public static void SetComponent(Javax.Swing.Text.MutableAttributeSet arg0, Java.Awt.Component arg1)
         {
-            SExecute(LocalBridgeClazz, "setComponent", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setComponent", "(Ljavax/swing/text/MutableAttributeSet;Ljava/awt/Component;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setFirstLineIndent(javax.swing.text.MutableAttributeSet,float)"/>
@@ -711,7 +711,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="float"/></param>
         public static void SetFirstLineIndent(Javax.Swing.Text.MutableAttributeSet arg0, float arg1)
         {
-            SExecute(LocalBridgeClazz, "setFirstLineIndent", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setFirstLineIndent", "(Ljavax/swing/text/MutableAttributeSet;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setFontFamily(javax.swing.text.MutableAttributeSet,java.lang.String)"/>
@@ -720,7 +720,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public static void SetFontFamily(Javax.Swing.Text.MutableAttributeSet arg0, Java.Lang.String arg1)
         {
-            SExecute(LocalBridgeClazz, "setFontFamily", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setFontFamily", "(Ljavax/swing/text/MutableAttributeSet;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setFontSize(javax.swing.text.MutableAttributeSet,int)"/>
@@ -729,7 +729,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="int"/></param>
         public static void SetFontSize(Javax.Swing.Text.MutableAttributeSet arg0, int arg1)
         {
-            SExecute(LocalBridgeClazz, "setFontSize", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setFontSize", "(Ljavax/swing/text/MutableAttributeSet;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setForeground(javax.swing.text.MutableAttributeSet,java.awt.Color)"/>
@@ -738,7 +738,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="Java.Awt.Color"/></param>
         public static void SetForeground(Javax.Swing.Text.MutableAttributeSet arg0, Java.Awt.Color arg1)
         {
-            SExecute(LocalBridgeClazz, "setForeground", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setForeground", "(Ljavax/swing/text/MutableAttributeSet;Ljava/awt/Color;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setIcon(javax.swing.text.MutableAttributeSet,javax.swing.Icon)"/>
@@ -747,7 +747,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="Javax.Swing.Icon"/></param>
         public static void SetIcon(Javax.Swing.Text.MutableAttributeSet arg0, Javax.Swing.Icon arg1)
         {
-            SExecute(LocalBridgeClazz, "setIcon", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setIcon", "(Ljavax/swing/text/MutableAttributeSet;Ljavax/swing/Icon;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setItalic(javax.swing.text.MutableAttributeSet,boolean)"/>
@@ -756,7 +756,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="bool"/></param>
         public static void SetItalic(Javax.Swing.Text.MutableAttributeSet arg0, bool arg1)
         {
-            SExecute(LocalBridgeClazz, "setItalic", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setItalic", "(Ljavax/swing/text/MutableAttributeSet;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setLeftIndent(javax.swing.text.MutableAttributeSet,float)"/>
@@ -765,7 +765,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="float"/></param>
         public static void SetLeftIndent(Javax.Swing.Text.MutableAttributeSet arg0, float arg1)
         {
-            SExecute(LocalBridgeClazz, "setLeftIndent", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setLeftIndent", "(Ljavax/swing/text/MutableAttributeSet;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setLineSpacing(javax.swing.text.MutableAttributeSet,float)"/>
@@ -774,7 +774,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="float"/></param>
         public static void SetLineSpacing(Javax.Swing.Text.MutableAttributeSet arg0, float arg1)
         {
-            SExecute(LocalBridgeClazz, "setLineSpacing", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setLineSpacing", "(Ljavax/swing/text/MutableAttributeSet;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setRightIndent(javax.swing.text.MutableAttributeSet,float)"/>
@@ -783,7 +783,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="float"/></param>
         public static void SetRightIndent(Javax.Swing.Text.MutableAttributeSet arg0, float arg1)
         {
-            SExecute(LocalBridgeClazz, "setRightIndent", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setRightIndent", "(Ljavax/swing/text/MutableAttributeSet;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setSpaceAbove(javax.swing.text.MutableAttributeSet,float)"/>
@@ -792,7 +792,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="float"/></param>
         public static void SetSpaceAbove(Javax.Swing.Text.MutableAttributeSet arg0, float arg1)
         {
-            SExecute(LocalBridgeClazz, "setSpaceAbove", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setSpaceAbove", "(Ljavax/swing/text/MutableAttributeSet;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setSpaceBelow(javax.swing.text.MutableAttributeSet,float)"/>
@@ -801,7 +801,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="float"/></param>
         public static void SetSpaceBelow(Javax.Swing.Text.MutableAttributeSet arg0, float arg1)
         {
-            SExecute(LocalBridgeClazz, "setSpaceBelow", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setSpaceBelow", "(Ljavax/swing/text/MutableAttributeSet;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setStrikeThrough(javax.swing.text.MutableAttributeSet,boolean)"/>
@@ -810,7 +810,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="bool"/></param>
         public static void SetStrikeThrough(Javax.Swing.Text.MutableAttributeSet arg0, bool arg1)
         {
-            SExecute(LocalBridgeClazz, "setStrikeThrough", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setStrikeThrough", "(Ljavax/swing/text/MutableAttributeSet;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setSubscript(javax.swing.text.MutableAttributeSet,boolean)"/>
@@ -819,7 +819,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="bool"/></param>
         public static void SetSubscript(Javax.Swing.Text.MutableAttributeSet arg0, bool arg1)
         {
-            SExecute(LocalBridgeClazz, "setSubscript", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setSubscript", "(Ljavax/swing/text/MutableAttributeSet;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setSuperscript(javax.swing.text.MutableAttributeSet,boolean)"/>
@@ -828,7 +828,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="bool"/></param>
         public static void SetSuperscript(Javax.Swing.Text.MutableAttributeSet arg0, bool arg1)
         {
-            SExecute(LocalBridgeClazz, "setSuperscript", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setSuperscript", "(Ljavax/swing/text/MutableAttributeSet;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setTabSet(javax.swing.text.MutableAttributeSet,javax.swing.text.TabSet)"/>
@@ -837,7 +837,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="Javax.Swing.Text.TabSet"/></param>
         public static void SetTabSet(Javax.Swing.Text.MutableAttributeSet arg0, Javax.Swing.Text.TabSet arg1)
         {
-            SExecute(LocalBridgeClazz, "setTabSet", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setTabSet", "(Ljavax/swing/text/MutableAttributeSet;Ljavax/swing/text/TabSet;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/StyleConstants.html#setUnderline(javax.swing.text.MutableAttributeSet,boolean)"/>
@@ -846,7 +846,7 @@ namespace Javax.Swing.Text
         /// <param name="arg1"><see cref="bool"/></param>
         public static void SetUnderline(Javax.Swing.Text.MutableAttributeSet arg0, bool arg1)
         {
-            SExecute(LocalBridgeClazz, "setUnderline", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "setUnderline", "(Ljavax/swing/text/MutableAttributeSet;Z)V", arg0, arg1);
         }
 
         #endregion

@@ -266,7 +266,7 @@ namespace Java.Time.Temporal
         /// <returns><see cref="long"/></returns>
         public long Between(Java.Time.Temporal.Temporal arg0, Java.Time.Temporal.Temporal arg1)
         {
-            return IExecute<long>("between", arg0, arg1);
+            return IExecuteWithSignature<long>("between", "(Ljava/time/temporal/Temporal;Ljava/time/temporal/Temporal;)J", arg0, arg1);
         }
 
         #endregion

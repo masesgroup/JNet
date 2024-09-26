@@ -216,7 +216,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getScrollableBlockIncrement", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getScrollableBlockIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
@@ -227,7 +227,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getScrollableUnitIncrement", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getScrollableUnitIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#createGlassPane()"/>
@@ -368,7 +368,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetScrollableBlockIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getScrollableBlockIncrement", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getScrollableBlockIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#getScrollableUnitIncrement(java.awt.Rectangle,int,int)"/>
@@ -379,7 +379,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public int GetScrollableUnitIncrement(Java.Awt.Rectangle arg0, int arg1, int arg2)
         {
-            return IExecute<int>("getScrollableUnitIncrement", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("getScrollableUnitIncrement", "(Ljava/awt/Rectangle;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLayer.html#createGlassPane()"/>

@@ -171,7 +171,7 @@ namespace Javax.Security.Auth.X500
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetName(Java.Lang.String arg0, Java.Util.Map<Java.Lang.String, Java.Lang.String> arg1)
         {
-            return IExecute<Java.Lang.String>("getName", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getName", "(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/x500/X500Principal.html#getName(java.lang.String)"/>

@@ -116,7 +116,7 @@ namespace Javax.Script
         /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(Java.Io.Reader arg0, Javax.Script.Bindings arg1)
         {
-            return IExecute("eval", arg0, arg1);
+            return IExecuteWithSignature("eval", "(Ljava/io/Reader;Ljavax/script/Bindings;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/AbstractScriptEngine.html#eval(java.io.Reader)"/>
@@ -137,7 +137,7 @@ namespace Javax.Script
         /// <exception cref="Javax.Script.ScriptException"/>
         public object Eval(Java.Lang.String arg0, Javax.Script.Bindings arg1)
         {
-            return IExecute("eval", arg0, arg1);
+            return IExecuteWithSignature("eval", "(Ljava/lang/String;Ljavax/script/Bindings;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/AbstractScriptEngine.html#eval(java.lang.String)"/>
@@ -174,7 +174,7 @@ namespace Javax.Script
         /// <param name="arg1"><see cref="object"/></param>
         public void Put(Java.Lang.String arg0, object arg1)
         {
-            IExecute("put", arg0, arg1);
+            IExecuteWithSignature("put", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/AbstractScriptEngine.html#setBindings(javax.script.Bindings,int)"/>
@@ -183,7 +183,7 @@ namespace Javax.Script
         /// <param name="arg1"><see cref="int"/></param>
         public void SetBindings(Javax.Script.Bindings arg0, int arg1)
         {
-            IExecute("setBindings", arg0, arg1);
+            IExecuteWithSignature("setBindings", "(Ljavax/script/Bindings;I)V", arg0, arg1);
         }
 
         #endregion

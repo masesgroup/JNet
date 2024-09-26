@@ -234,7 +234,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public object Evaluate(Java.Lang.String arg0, object arg1, Javax.Xml.Namespace.QName arg2)
         {
-            return IExecute("evaluate", arg0, arg1, arg2);
+            return IExecuteWithSignature("evaluate", "(Ljava/lang/String;Ljava/lang/Object;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPath.html#evaluate(java.lang.String,org.xml.sax.InputSource,javax.xml.namespace.QName)"/>
@@ -246,7 +246,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public object Evaluate(Java.Lang.String arg0, Org.Xml.Sax.InputSource arg1, Javax.Xml.Namespace.QName arg2)
         {
-            return IExecute("evaluate", arg0, arg1, arg2);
+            return IExecuteWithSignature("evaluate", "(Ljava/lang/String;Lorg/xml/sax/InputSource;Ljavax/xml/namespace/QName;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPath.html#evaluate(java.lang.String,java.lang.Object)"/>
@@ -257,7 +257,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public Java.Lang.String Evaluate(Java.Lang.String arg0, object arg1)
         {
-            return IExecute<Java.Lang.String>("evaluate", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("evaluate", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPath.html#evaluate(java.lang.String,org.xml.sax.InputSource)"/>
@@ -268,7 +268,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public Java.Lang.String Evaluate(Java.Lang.String arg0, Org.Xml.Sax.InputSource arg1)
         {
-            return IExecute<Java.Lang.String>("evaluate", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("evaluate", "(Ljava/lang/String;Lorg/xml/sax/InputSource;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPath.html#compile(java.lang.String)"/>
@@ -298,7 +298,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public T EvaluateExpression<T>(Java.Lang.String arg0, object arg1, Java.Lang.Class arg2)
         {
-            return IExecute<T>("evaluateExpression", arg0, arg1, arg2);
+            return IExecuteWithSignature<T>("evaluateExpression", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPath.html#evaluateExpression(java.lang.String,org.xml.sax.InputSource,java.lang.Class)"/>
@@ -311,7 +311,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public T EvaluateExpression<T>(Java.Lang.String arg0, Org.Xml.Sax.InputSource arg1, Java.Lang.Class arg2)
         {
-            return IExecute<T>("evaluateExpression", arg0, arg1, arg2);
+            return IExecuteWithSignature<T>("evaluateExpression", "(Ljava/lang/String;Lorg/xml/sax/InputSource;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPath.html#evaluateExpression(java.lang.String,java.lang.Object)"/>
@@ -322,7 +322,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public Javax.Xml.Xpath.XPathEvaluationResult<object> EvaluateExpression(Java.Lang.String arg0, object arg1)
         {
-            return IExecute<Javax.Xml.Xpath.XPathEvaluationResult<object>>("evaluateExpression", arg0, arg1);
+            return IExecuteWithSignature<Javax.Xml.Xpath.XPathEvaluationResult<object>>("evaluateExpression", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/xml/xpath/XPathEvaluationResult;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/xpath/XPath.html#evaluateExpression(java.lang.String,org.xml.sax.InputSource)"/>
@@ -333,7 +333,7 @@ namespace Javax.Xml.Xpath
         /// <exception cref="Javax.Xml.Xpath.XPathExpressionException"/>
         public Javax.Xml.Xpath.XPathEvaluationResult<object> EvaluateExpression(Java.Lang.String arg0, Org.Xml.Sax.InputSource arg1)
         {
-            return IExecute<Javax.Xml.Xpath.XPathEvaluationResult<object>>("evaluateExpression", arg0, arg1);
+            return IExecuteWithSignature<Javax.Xml.Xpath.XPathEvaluationResult<object>>("evaluateExpression", "(Ljava/lang/String;Lorg/xml/sax/InputSource;)Ljavax/xml/xpath/XPathEvaluationResult;", arg0, arg1);
         }
 
         #endregion

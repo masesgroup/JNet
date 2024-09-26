@@ -125,7 +125,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="bool"/></returns>
         public bool Verify(Java.Lang.String arg0, Javax.Net.Ssl.SSLSession arg1)
         {
-            return IExecute<bool>("verify", arg0, arg1);
+            return IExecuteWithSignature<bool>("verify", "(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z", arg0, arg1);
         }
 
         #endregion

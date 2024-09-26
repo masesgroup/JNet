@@ -233,7 +233,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Remove(object arg0, object arg1)
         {
-            return IExecute<bool>("remove", arg0, arg1);
+            return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -244,7 +244,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Replace(object arg0, object arg1, object arg2)
         {
-            return IExecute<bool>("replace", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("replace", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
@@ -254,7 +254,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Compute(object arg0, Java.Util.Function.BiFunction arg1)
         {
-            return IExecute("compute", arg0, arg1);
+            return IExecuteWithSignature("compute", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
@@ -264,7 +264,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object ComputeIfAbsent(object arg0, Java.Util.Function.Function arg1)
         {
-            return IExecute("computeIfAbsent", arg0, arg1);
+            return IExecuteWithSignature("computeIfAbsent", "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
@@ -274,7 +274,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object ComputeIfPresent(object arg0, Java.Util.Function.BiFunction arg1)
         {
-            return IExecute("computeIfPresent", arg0, arg1);
+            return IExecuteWithSignature("computeIfPresent", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
@@ -284,7 +284,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object GetOrDefault(object arg0, object arg1)
         {
-            return IExecute("getOrDefault", arg0, arg1);
+            return IExecuteWithSignature("getOrDefault", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
@@ -295,7 +295,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Merge(object arg0, object arg1, Java.Util.Function.BiFunction arg2)
         {
-            return IExecute("merge", arg0, arg1, arg2);
+            return IExecuteWithSignature("merge", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
@@ -305,7 +305,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object PutIfAbsent(object arg0, object arg1)
         {
-            return IExecute("putIfAbsent", arg0, arg1);
+            return IExecuteWithSignature("putIfAbsent", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object)"/>
@@ -315,7 +315,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object Replace(object arg0, object arg1)
         {
-            return IExecute("replace", arg0, arg1);
+            return IExecuteWithSignature("replace", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#clear()"/>
@@ -479,7 +479,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Remove(object arg0, object arg1)
         {
-            return IExecute<bool>("remove", arg0, arg1);
+            return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
@@ -490,7 +490,7 @@ namespace Java.Util
         /// <returns><see cref="bool"/></returns>
         public bool Replace(K arg0, V arg1, V arg2)
         {
-            return IExecute<bool>("replace", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("replace", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
@@ -503,7 +503,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
         {
-            return IExecute<V>("compute", arg0, arg1);
+            return IExecuteWithSignature<V>("compute", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
@@ -515,7 +515,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1ExtendsV : V
         {
-            return IExecute<V>("computeIfAbsent", arg0, arg1);
+            return IExecuteWithSignature<V>("computeIfAbsent", "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
@@ -528,7 +528,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
         {
-            return IExecute<V>("computeIfPresent", arg0, arg1);
+            return IExecuteWithSignature<V>("computeIfPresent", "(Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
@@ -538,7 +538,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V GetOrDefault(object arg0, V arg1)
         {
-            return IExecute<V>("getOrDefault", arg0, arg1);
+            return IExecuteWithSignature<V>("getOrDefault", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
@@ -551,7 +551,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Merge<Arg2objectSuperV, Arg2ExtendsV>(K arg0, V arg1, Java.Util.Function.BiFunction<Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV> arg2) where Arg2objectSuperV : V where Arg2ExtendsV : V
         {
-            return IExecute<V>("merge", arg0, arg1, arg2);
+            return IExecuteWithSignature<V>("merge", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
@@ -561,7 +561,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V PutIfAbsent(K arg0, V arg1)
         {
-            return IExecute<V>("putIfAbsent", arg0, arg1);
+            return IExecuteWithSignature<V>("putIfAbsent", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object)"/>
@@ -571,7 +571,7 @@ namespace Java.Util
         /// <returns><typeparamref name="V"/></returns>
         public V Replace(K arg0, V arg1)
         {
-            return IExecute<V>("replace", arg0, arg1);
+            return IExecuteWithSignature<V>("replace", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Hashtable.html#clear()"/>

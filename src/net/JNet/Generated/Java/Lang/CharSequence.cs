@@ -142,7 +142,7 @@ namespace Java.Lang
         /// <returns><see cref="int"/></returns>
         public static int Compare(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "compare", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)I", arg0, arg1);
         }
 
         #endregion
@@ -173,7 +173,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
         public Java.Lang.CharSequence SubSequence(int arg0, int arg1)
         {
-            return IExecute<Java.Lang.CharSequence>("subSequence", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.CharSequence>("subSequence", "(II)Ljava/lang/CharSequence;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/CharSequence.html#chars()"/>

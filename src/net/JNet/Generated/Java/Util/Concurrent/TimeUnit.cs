@@ -183,7 +183,7 @@ namespace Java.Util.Concurrent
         /// <returns><see cref="long"/></returns>
         public long Convert(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<long>("convert", arg0, arg1);
+            return IExecuteWithSignature<long>("convert", "(JLjava/util/concurrent/TimeUnit;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#toDays(long)"/>
@@ -265,7 +265,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void TimedJoin(Java.Lang.Thread arg0, long arg1)
         {
-            IExecute("timedJoin", arg0, arg1);
+            IExecuteWithSignature("timedJoin", "(Ljava/lang/Thread;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TimeUnit.html#timedWait(java.lang.Object,long)"/>
@@ -275,7 +275,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void TimedWait(object arg0, long arg1)
         {
-            IExecute("timedWait", arg0, arg1);
+            IExecuteWithSignature("timedWait", "(Ljava/lang/Object;J)V", arg0, arg1);
         }
 
         #endregion

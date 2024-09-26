@@ -134,7 +134,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="bool"/></param>
         public void SetValue(object arg0, bool arg1)
         {
-            IExecute("setValue", arg0, arg1);
+            IExecuteWithSignature("setValue", "(Ljava/lang/Object;Z)V", arg0, arg1);
         }
 
         #endregion

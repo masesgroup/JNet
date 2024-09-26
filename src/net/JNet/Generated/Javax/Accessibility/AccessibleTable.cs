@@ -288,7 +288,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="bool"/></returns>
         public bool IsAccessibleSelected(int arg0, int arg1)
         {
-            return IExecute<bool>("isAccessibleSelected", arg0, arg1);
+            return IExecuteWithSignature<bool>("isAccessibleSelected", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTable.html#getAccessibleColumnExtentAt(int,int)"/>
@@ -298,7 +298,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="int"/></returns>
         public int GetAccessibleColumnExtentAt(int arg0, int arg1)
         {
-            return IExecute<int>("getAccessibleColumnExtentAt", arg0, arg1);
+            return IExecuteWithSignature<int>("getAccessibleColumnExtentAt", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTable.html#getAccessibleRowExtentAt(int,int)"/>
@@ -308,7 +308,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="int"/></returns>
         public int GetAccessibleRowExtentAt(int arg0, int arg1)
         {
-            return IExecute<int>("getAccessibleRowExtentAt", arg0, arg1);
+            return IExecuteWithSignature<int>("getAccessibleRowExtentAt", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTable.html#getAccessibleAt(int,int)"/>
@@ -318,7 +318,7 @@ namespace Javax.Accessibility
         /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
         public Javax.Accessibility.Accessible GetAccessibleAt(int arg0, int arg1)
         {
-            return IExecute<Javax.Accessibility.Accessible>("getAccessibleAt", arg0, arg1);
+            return IExecuteWithSignature<Javax.Accessibility.Accessible>("getAccessibleAt", "(II)Ljavax/accessibility/Accessible;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTable.html#getAccessibleColumnDescription(int)"/>
@@ -345,7 +345,7 @@ namespace Javax.Accessibility
         /// <param name="arg1"><see cref="Javax.Accessibility.Accessible"/></param>
         public void SetAccessibleColumnDescription(int arg0, Javax.Accessibility.Accessible arg1)
         {
-            IExecute("setAccessibleColumnDescription", arg0, arg1);
+            IExecuteWithSignature("setAccessibleColumnDescription", "(ILjavax/accessibility/Accessible;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleTable.html#setAccessibleRowDescription(int,javax.accessibility.Accessible)"/>
@@ -354,7 +354,7 @@ namespace Javax.Accessibility
         /// <param name="arg1"><see cref="Javax.Accessibility.Accessible"/></param>
         public void SetAccessibleRowDescription(int arg0, Javax.Accessibility.Accessible arg1)
         {
-            IExecute("setAccessibleRowDescription", arg0, arg1);
+            IExecuteWithSignature("setAccessibleRowDescription", "(ILjavax/accessibility/Accessible;)V", arg0, arg1);
         }
 
         #endregion

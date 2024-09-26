@@ -278,7 +278,7 @@ namespace Org.Ietf.Jgss
         /// <exception cref="Org.Ietf.Jgss.GSSException"/>
         public void Add(Org.Ietf.Jgss.GSSName arg0, int arg1, int arg2, Org.Ietf.Jgss.Oid arg3, int arg4)
         {
-            IExecute("add", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("add", "(Lorg/ietf/jgss/GSSName;IILorg/ietf/jgss/Oid;I)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.jgss/org/ietf/jgss/GSSCredential.html#dispose()"/>

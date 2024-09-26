@@ -99,7 +99,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <exception cref="Java.Security.NoSuchProviderException"/>
         public static Javax.Xml.Crypto.Dsig.TransformService GetInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            return SExecute<Javax.Xml.Crypto.Dsig.TransformService>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Xml.Crypto.Dsig.TransformService>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/crypto/dsig/TransformService;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getInstance(java.lang.String,java.lang.String,java.security.Provider)"/>
@@ -111,7 +111,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Xml.Crypto.Dsig.TransformService GetInstance(Java.Lang.String arg0, Java.Lang.String arg1, Java.Security.Provider arg2)
         {
-            return SExecute<Javax.Xml.Crypto.Dsig.TransformService>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Xml.Crypto.Dsig.TransformService>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;Ljava/security/Provider;)Ljavax/xml/crypto/dsig/TransformService;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#getInstance(java.lang.String,java.lang.String)"/>
@@ -122,7 +122,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Xml.Crypto.Dsig.TransformService GetInstance(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<Javax.Xml.Crypto.Dsig.TransformService>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Xml.Crypto.Dsig.TransformService>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljava/lang/String;)Ljavax/xml/crypto/dsig/TransformService;", arg0, arg1);
         }
 
         #endregion
@@ -166,7 +166,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Init(Javax.Xml.Crypto.XMLStructure arg0, Javax.Xml.Crypto.XMLCryptoContext arg1)
         {
-            IExecute("init", arg0, arg1);
+            IExecuteWithSignature("init", "(Ljavax/xml/crypto/XMLStructure;Ljavax/xml/crypto/XMLCryptoContext;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/TransformService.html#marshalParams(javax.xml.crypto.XMLStructure,javax.xml.crypto.XMLCryptoContext)"/>
@@ -176,7 +176,7 @@ namespace Javax.Xml.Crypto.Dsig
         /// <exception cref="Javax.Xml.Crypto.MarshalException"/>
         public void MarshalParams(Javax.Xml.Crypto.XMLStructure arg0, Javax.Xml.Crypto.XMLCryptoContext arg1)
         {
-            IExecute("marshalParams", arg0, arg1);
+            IExecuteWithSignature("marshalParams", "(Ljavax/xml/crypto/XMLStructure;Ljavax/xml/crypto/XMLCryptoContext;)V", arg0, arg1);
         }
 
         #endregion

@@ -188,7 +188,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.ServerSocket SetOption<T>(Java.Net.SocketOption<T> arg0, T arg1)
         {
-            return IExecute<Java.Net.ServerSocket>("setOption", arg0, arg1);
+            return IExecuteWithSignature<Java.Net.ServerSocket>("setOption", "(Ljava/net/SocketOption;Ljava/lang/Object;)Ljava/net/ServerSocket;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#getOption(java.net.SocketOption)"/>
@@ -242,7 +242,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public void Bind(Java.Net.SocketAddress arg0, int arg1)
         {
-            IExecute("bind", arg0, arg1);
+            IExecuteWithSignature("bind", "(Ljava/net/SocketAddress;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/ServerSocket.html#bind(java.net.SocketAddress)"/>
@@ -269,7 +269,7 @@ namespace Java.Net
         /// <param name="arg2"><see cref="int"/></param>
         public void SetPerformancePreferences(int arg0, int arg1, int arg2)
         {
-            IExecute("setPerformancePreferences", arg0, arg1, arg2);
+            IExecuteWithSignature("setPerformancePreferences", "(III)V", arg0, arg1, arg2);
         }
 
         #endregion

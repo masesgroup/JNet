@@ -94,7 +94,7 @@ namespace Javax.Xml.Catalog
         /// <returns><see cref="Javax.Xml.Catalog.Catalog"/></returns>
         public static Javax.Xml.Catalog.Catalog Catalog(Javax.Xml.Catalog.CatalogFeatures arg0, params Java.Net.URI[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Javax.Xml.Catalog.Catalog>(LocalBridgeClazz, "catalog", arg0); else return SExecute<Javax.Xml.Catalog.Catalog>(LocalBridgeClazz, "catalog", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Javax.Xml.Catalog.Catalog>(LocalBridgeClazz, "catalog", "(Ljavax/xml/catalog/CatalogFeatures;[Ljava/net/URI;)Ljavax/xml/catalog/Catalog;", arg0); else return SExecuteWithSignature<Javax.Xml.Catalog.Catalog>(LocalBridgeClazz, "catalog", "(Ljavax/xml/catalog/CatalogFeatures;[Ljava/net/URI;)Ljavax/xml/catalog/Catalog;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogManager.html#catalogResolver(javax.xml.catalog.Catalog)"/>
@@ -113,7 +113,7 @@ namespace Javax.Xml.Catalog
         /// <returns><see cref="Javax.Xml.Catalog.CatalogResolver"/></returns>
         public static Javax.Xml.Catalog.CatalogResolver CatalogResolver(Javax.Xml.Catalog.CatalogFeatures arg0, params Java.Net.URI[] arg1)
         {
-            if (arg1.Length == 0) return SExecute<Javax.Xml.Catalog.CatalogResolver>(LocalBridgeClazz, "catalogResolver", arg0); else return SExecute<Javax.Xml.Catalog.CatalogResolver>(LocalBridgeClazz, "catalogResolver", arg0, arg1);
+            if (arg1.Length == 0) return SExecuteWithSignature<Javax.Xml.Catalog.CatalogResolver>(LocalBridgeClazz, "catalogResolver", "(Ljavax/xml/catalog/CatalogFeatures;[Ljava/net/URI;)Ljavax/xml/catalog/CatalogResolver;", arg0); else return SExecuteWithSignature<Javax.Xml.Catalog.CatalogResolver>(LocalBridgeClazz, "catalogResolver", "(Ljavax/xml/catalog/CatalogFeatures;[Ljava/net/URI;)Ljavax/xml/catalog/CatalogResolver;", arg0, arg1);
         }
 
         #endregion

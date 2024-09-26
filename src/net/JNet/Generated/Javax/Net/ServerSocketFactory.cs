@@ -109,7 +109,7 @@ namespace Javax.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.ServerSocket CreateServerSocket(int arg0, int arg1, Java.Net.InetAddress arg2)
         {
-            return IExecute<Java.Net.ServerSocket>("createServerSocket", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Net.ServerSocket>("createServerSocket", "(IILjava/net/InetAddress;)Ljava/net/ServerSocket;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ServerSocketFactory.html#createServerSocket(int,int)"/>
@@ -120,7 +120,7 @@ namespace Javax.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.ServerSocket CreateServerSocket(int arg0, int arg1)
         {
-            return IExecute<Java.Net.ServerSocket>("createServerSocket", arg0, arg1);
+            return IExecuteWithSignature<Java.Net.ServerSocket>("createServerSocket", "(II)Ljava/net/ServerSocket;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ServerSocketFactory.html#createServerSocket(int)"/>

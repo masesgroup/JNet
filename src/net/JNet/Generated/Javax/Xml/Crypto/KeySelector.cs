@@ -157,7 +157,7 @@ namespace Javax.Xml.Crypto
         /// <exception cref="Javax.Xml.Crypto.KeySelectorException"/>
         public Javax.Xml.Crypto.KeySelectorResult Select(Javax.Xml.Crypto.Dsig.Keyinfo.KeyInfo arg0, Javax.Xml.Crypto.KeySelector.Purpose arg1, Javax.Xml.Crypto.AlgorithmMethod arg2, Javax.Xml.Crypto.XMLCryptoContext arg3)
         {
-            return IExecute<Javax.Xml.Crypto.KeySelectorResult>("select", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Xml.Crypto.KeySelectorResult>("select", "(Ljavax/xml/crypto/dsig/keyinfo/KeyInfo;Ljavax/xml/crypto/KeySelector$Purpose;Ljavax/xml/crypto/AlgorithmMethod;Ljavax/xml/crypto/XMLCryptoContext;)Ljavax/xml/crypto/KeySelectorResult;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

@@ -173,7 +173,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="object"/></param>
         public void AddLayoutComponent(Java.Awt.Component arg0, object arg1)
         {
-            IExecute("addLayoutComponent", arg0, arg1);
+            IExecuteWithSignature("addLayoutComponent", "(Ljava/awt/Component;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/CardLayout.html#first(java.awt.Container)"/>
@@ -238,7 +238,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void Show(Java.Awt.Container arg0, Java.Lang.String arg1)
         {
-            IExecute("show", arg0, arg1);
+            IExecuteWithSignature("show", "(Ljava/awt/Container;Ljava/lang/String;)V", arg0, arg1);
         }
 
         #endregion

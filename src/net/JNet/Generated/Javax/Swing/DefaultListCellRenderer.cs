@@ -154,7 +154,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public Java.Awt.Component GetListCellRendererComponent(Javax.Swing.JList<object> arg0, object arg1, int arg2, bool arg3, bool arg4)
         {
-            return IExecute<Java.Awt.Component>("getListCellRendererComponent", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Java.Awt.Component>("getListCellRendererComponent", "(Ljavax/swing/JList;Ljava/lang/Object;IZZ)Ljava/awt/Component;", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

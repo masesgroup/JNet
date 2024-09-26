@@ -149,7 +149,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image GetOffscreenBuffer(Java.Awt.Component arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Awt.Image>("getOffscreenBuffer", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Image>("getOffscreenBuffer", "(Ljava/awt/Component;II)Ljava/awt/Image;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#getVolatileOffscreenBuffer(java.awt.Component,int,int)"/>
@@ -160,7 +160,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Image"/></returns>
         public Java.Awt.Image GetVolatileOffscreenBuffer(Java.Awt.Component arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Awt.Image>("getVolatileOffscreenBuffer", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Awt.Image>("getVolatileOffscreenBuffer", "(Ljava/awt/Component;II)Ljava/awt/Image;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#getDirtyRegion(javax.swing.JComponent)"/>
@@ -197,7 +197,7 @@ namespace Javax.Swing
         /// <param name="arg4"><see cref="int"/></param>
         public void AddDirtyRegion(Java.Awt.Window arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("addDirtyRegion", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("addDirtyRegion", "(Ljava/awt/Window;IIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#addDirtyRegion(javax.swing.JComponent,int,int,int,int)"/>
@@ -209,7 +209,7 @@ namespace Javax.Swing
         /// <param name="arg4"><see cref="int"/></param>
         public void AddDirtyRegion(Javax.Swing.JComponent arg0, int arg1, int arg2, int arg3, int arg4)
         {
-            IExecute("addDirtyRegion", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("addDirtyRegion", "(Ljavax/swing/JComponent;IIII)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RepaintManager.html#markCompletelyClean(javax.swing.JComponent)"/>

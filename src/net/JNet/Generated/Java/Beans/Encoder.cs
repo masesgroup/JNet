@@ -131,7 +131,7 @@ namespace Java.Beans
         /// <param name="arg1"><see cref="Java.Beans.PersistenceDelegate"/></param>
         public void SetPersistenceDelegate(Java.Lang.Class arg0, Java.Beans.PersistenceDelegate arg1)
         {
-            IExecute("setPersistenceDelegate", arg0, arg1);
+            IExecuteWithSignature("setPersistenceDelegate", "(Ljava/lang/Class;Ljava/beans/PersistenceDelegate;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Encoder.html#writeExpression(java.beans.Expression)"/>

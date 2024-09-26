@@ -195,7 +195,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="Javax.Swing.Text.View"/></returns>
         public Javax.Swing.Text.View Create(Javax.Swing.Text.Element arg0, int arg1, int arg2)
         {
-            return IExecute<Javax.Swing.Text.View>("create", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Swing.Text.View>("create", "(Ljavax/swing/text/Element;II)Ljavax/swing/text/View;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicTextUI.html#create(javax.swing.text.Element)"/>

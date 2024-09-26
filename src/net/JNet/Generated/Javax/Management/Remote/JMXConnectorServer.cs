@@ -150,7 +150,7 @@ namespace Javax.Management.Remote
         /// <returns><see cref="Javax.Management.ObjectName"/></returns>
         public Javax.Management.ObjectName PreRegister(Javax.Management.MBeanServer arg0, Javax.Management.ObjectName arg1)
         {
-            return IExecute<Javax.Management.ObjectName>("preRegister", arg0, arg1);
+            return IExecuteWithSignature<Javax.Management.ObjectName>("preRegister", "(Ljavax/management/MBeanServer;Ljavax/management/ObjectName;)Ljavax/management/ObjectName;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/remote/JMXConnectorServer.html#preDeregister()"/>

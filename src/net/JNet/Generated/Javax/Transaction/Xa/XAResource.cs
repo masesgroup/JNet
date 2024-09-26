@@ -296,7 +296,7 @@ namespace Javax.Transaction.Xa
         /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public void Commit(Javax.Transaction.Xa.Xid arg0, bool arg1)
         {
-            IExecute("commit", arg0, arg1);
+            IExecuteWithSignature("commit", "(Ljavax/transaction/xa/Xid;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#end(javax.transaction.xa.Xid,int)"/>
@@ -306,7 +306,7 @@ namespace Javax.Transaction.Xa
         /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public void End(Javax.Transaction.Xa.Xid arg0, int arg1)
         {
-            IExecute("end", arg0, arg1);
+            IExecuteWithSignature("end", "(Ljavax/transaction/xa/Xid;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.transaction.xa/javax/transaction/xa/XAResource.html#forget(javax.transaction.xa.Xid)"/>
@@ -334,7 +334,7 @@ namespace Javax.Transaction.Xa
         /// <exception cref="Javax.Transaction.Xa.XAException"/>
         public void Start(Javax.Transaction.Xa.Xid arg0, int arg1)
         {
-            IExecute("start", arg0, arg1);
+            IExecuteWithSignature("start", "(Ljavax/transaction/xa/Xid;I)V", arg0, arg1);
         }
 
         #endregion

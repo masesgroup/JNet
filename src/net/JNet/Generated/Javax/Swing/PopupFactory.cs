@@ -108,7 +108,7 @@ namespace Javax.Swing
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public Javax.Swing.Popup GetPopup(Java.Awt.Component arg0, Java.Awt.Component arg1, int arg2, int arg3)
         {
-            return IExecute<Javax.Swing.Popup>("getPopup", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Javax.Swing.Popup>("getPopup", "(Ljava/awt/Component;Ljava/awt/Component;II)Ljavax/swing/Popup;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

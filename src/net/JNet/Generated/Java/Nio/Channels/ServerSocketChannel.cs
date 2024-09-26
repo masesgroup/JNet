@@ -129,7 +129,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.ServerSocketChannel Bind(Java.Net.SocketAddress arg0, int arg1)
         {
-            return IExecute<Java.Nio.Channels.ServerSocketChannel>("bind", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.Channels.ServerSocketChannel>("bind", "(Ljava/net/SocketAddress;I)Ljava/nio/channels/ServerSocketChannel;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ServerSocketChannel.html#accept()"/>
@@ -159,7 +159,7 @@ namespace Java.Nio.Channels
         /// <exception cref="Java.Io.IOException"/>
         public Java.Nio.Channels.NetworkChannel SetOption(Java.Net.SocketOption arg0, object arg1)
         {
-            return IExecute<Java.Nio.Channels.NetworkChannel>("setOption", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("setOption", "(Ljava/net/SocketOption;Ljava/lang/Object;)Ljava/nio/channels/NetworkChannel;", arg0, arg1);
         }
 
         #endregion

@@ -114,7 +114,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getProperty", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#getProperty(java.lang.String)"/>
@@ -149,7 +149,7 @@ namespace Java.Util
         /// <returns><see cref="object"/></returns>
         public object SetProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute("setProperty", arg0, arg1);
+            return IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#load(java.io.InputStream)"/>
@@ -203,7 +203,7 @@ namespace Java.Util
         /// <exception cref="Java.Io.IOException"/>
         public void Store(Java.Io.OutputStream arg0, Java.Lang.String arg1)
         {
-            IExecute("store", arg0, arg1);
+            IExecuteWithSignature("store", "(Ljava/io/OutputStream;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#store(java.io.Writer,java.lang.String)"/>
@@ -213,7 +213,7 @@ namespace Java.Util
         /// <exception cref="Java.Io.IOException"/>
         public void Store(Java.Io.Writer arg0, Java.Lang.String arg1)
         {
-            IExecute("store", arg0, arg1);
+            IExecuteWithSignature("store", "(Ljava/io/Writer;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String,java.lang.String)"/>
@@ -224,7 +224,7 @@ namespace Java.Util
         /// <exception cref="Java.Io.IOException"/>
         public void StoreToXML(Java.Io.OutputStream arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("storeToXML", arg0, arg1, arg2);
+            IExecuteWithSignature("storeToXML", "(Ljava/io/OutputStream;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String,java.nio.charset.Charset)"/>
@@ -235,7 +235,7 @@ namespace Java.Util
         /// <exception cref="Java.Io.IOException"/>
         public void StoreToXML(Java.Io.OutputStream arg0, Java.Lang.String arg1, Java.Nio.Charset.Charset arg2)
         {
-            IExecute("storeToXML", arg0, arg1, arg2);
+            IExecuteWithSignature("storeToXML", "(Ljava/io/OutputStream;Ljava/lang/String;Ljava/nio/charset/Charset;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Properties.html#storeToXML(java.io.OutputStream,java.lang.String)"/>
@@ -245,7 +245,7 @@ namespace Java.Util
         /// <exception cref="Java.Io.IOException"/>
         public void StoreToXML(Java.Io.OutputStream arg0, Java.Lang.String arg1)
         {
-            IExecute("storeToXML", arg0, arg1);
+            IExecuteWithSignature("storeToXML", "(Ljava/io/OutputStream;Ljava/lang/String;)V", arg0, arg1);
         }
 
         #endregion

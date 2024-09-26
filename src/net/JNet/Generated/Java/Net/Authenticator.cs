@@ -154,7 +154,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Lang.String arg0, Java.Net.InetAddress arg1, int arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Net.URL arg6, Java.Net.Authenticator.RequestorType arg7)
         {
-            return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return SExecuteWithSignature<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", "(Ljava/lang/String;Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;Ljava/net/Authenticator$RequestorType;)Ljava/net/PasswordAuthentication;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -168,7 +168,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Lang.String arg0, Java.Net.InetAddress arg1, int arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5)
         {
-            return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5);
+            return SExecuteWithSignature<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", "(Ljava/lang/String;Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/net/PasswordAuthentication;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.net.Authenticator,java.lang.String,java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String,java.net.URL,java.net.Authenticator.RequestorType)"/>
@@ -185,7 +185,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Net.Authenticator arg0, Java.Lang.String arg1, Java.Net.InetAddress arg2, int arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6, Java.Net.URL arg7, Java.Net.Authenticator.RequestorType arg8)
         {
-            return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return SExecuteWithSignature<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", "(Ljava/net/Authenticator;Ljava/lang/String;Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;Ljava/net/Authenticator$RequestorType;)Ljava/net/PasswordAuthentication;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/Authenticator.html#requestPasswordAuthentication(java.net.InetAddress,int,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -198,7 +198,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public static Java.Net.PasswordAuthentication RequestPasswordAuthentication(Java.Net.InetAddress arg0, int arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            return SExecute<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Net.PasswordAuthentication>(LocalBridgeClazz, "requestPasswordAuthentication", "(Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/net/PasswordAuthentication;", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion
@@ -218,7 +218,7 @@ namespace Java.Net
         /// <returns><see cref="Java.Net.PasswordAuthentication"/></returns>
         public Java.Net.PasswordAuthentication RequestPasswordAuthenticationInstance(Java.Lang.String arg0, Java.Net.InetAddress arg1, int arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Net.URL arg6, Java.Net.Authenticator.RequestorType arg7)
         {
-            return IExecute<Java.Net.PasswordAuthentication>("requestPasswordAuthenticationInstance", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+            return IExecuteWithSignature<Java.Net.PasswordAuthentication>("requestPasswordAuthenticationInstance", "(Ljava/lang/String;Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/net/URL;Ljava/net/Authenticator$RequestorType;)Ljava/net/PasswordAuthentication;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
 
         #endregion

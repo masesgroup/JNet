@@ -215,7 +215,7 @@ namespace Java.Awt
         /// <returns><see cref="bool"/></returns>
         public static bool TextRequiresLayout(char[] arg0, int arg1, int arg2)
         {
-            return SExecute<bool>(LocalBridgeClazz, "textRequiresLayout", arg0, arg1, arg2);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "textRequiresLayout", "([CII)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFont(int,java.io.File)"/>
@@ -227,7 +227,7 @@ namespace Java.Awt
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.Font CreateFont(int arg0, Java.Io.File arg1)
         {
-            return SExecute<Java.Awt.Font>(LocalBridgeClazz, "createFont", arg0, arg1);
+            return SExecuteWithSignature<Java.Awt.Font>(LocalBridgeClazz, "createFont", "(ILjava/io/File;)Ljava/awt/Font;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createFont(int,java.io.InputStream)"/>
@@ -239,7 +239,7 @@ namespace Java.Awt
         /// <exception cref="Java.Io.IOException"/>
         public static Java.Awt.Font CreateFont(int arg0, Java.Io.InputStream arg1)
         {
-            return SExecute<Java.Awt.Font>(LocalBridgeClazz, "createFont", arg0, arg1);
+            return SExecuteWithSignature<Java.Awt.Font>(LocalBridgeClazz, "createFont", "(ILjava/io/InputStream;)Ljava/awt/Font;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#decode(java.lang.String)"/>
@@ -258,7 +258,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public static Java.Awt.Font GetFont(Java.Lang.String arg0, Java.Awt.Font arg1)
         {
-            return SExecute<Java.Awt.Font>(LocalBridgeClazz, "getFont", arg0, arg1);
+            return SExecuteWithSignature<Java.Awt.Font>(LocalBridgeClazz, "getFont", "(Ljava/lang/String;Ljava/awt/Font;)Ljava/awt/Font;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFont(java.lang.String)"/>
@@ -480,7 +480,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public int CanDisplayUpTo(char[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("canDisplayUpTo", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("canDisplayUpTo", "([CII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#canDisplayUpTo(java.lang.String)"/>
@@ -500,7 +500,7 @@ namespace Java.Awt
         /// <returns><see cref="int"/></returns>
         public int CanDisplayUpTo(Java.Text.CharacterIterator arg0, int arg1, int arg2)
         {
-            return IExecute<int>("canDisplayUpTo", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("canDisplayUpTo", "(Ljava/text/CharacterIterator;II)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(float)"/>
@@ -519,7 +519,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveFont(int arg0, float arg1)
         {
-            return IExecute<Java.Awt.Font>("deriveFont", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Font>("deriveFont", "(IF)Ljava/awt/Font;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(int,java.awt.geom.AffineTransform)"/>
@@ -529,7 +529,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Font"/></returns>
         public Java.Awt.Font DeriveFont(int arg0, Java.Awt.Geom.AffineTransform arg1)
         {
-            return IExecute<Java.Awt.Font>("deriveFont", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Font>("deriveFont", "(ILjava/awt/geom/AffineTransform;)Ljava/awt/Font;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#deriveFont(int)"/>
@@ -567,7 +567,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.FontNs.GlyphVector"/></returns>
         public Java.Awt.FontNs.GlyphVector CreateGlyphVector(Java.Awt.FontNs.FontRenderContext arg0, char[] arg1)
         {
-            return IExecute<Java.Awt.FontNs.GlyphVector>("createGlyphVector", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.FontNs.GlyphVector>("createGlyphVector", "(Ljava/awt/font/FontRenderContext;[C)Ljava/awt/font/GlyphVector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createGlyphVector(java.awt.font.FontRenderContext,int[])"/>
@@ -577,7 +577,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.FontNs.GlyphVector"/></returns>
         public Java.Awt.FontNs.GlyphVector CreateGlyphVector(Java.Awt.FontNs.FontRenderContext arg0, int[] arg1)
         {
-            return IExecute<Java.Awt.FontNs.GlyphVector>("createGlyphVector", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.FontNs.GlyphVector>("createGlyphVector", "(Ljava/awt/font/FontRenderContext;[I)Ljava/awt/font/GlyphVector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createGlyphVector(java.awt.font.FontRenderContext,java.lang.String)"/>
@@ -587,7 +587,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.FontNs.GlyphVector"/></returns>
         public Java.Awt.FontNs.GlyphVector CreateGlyphVector(Java.Awt.FontNs.FontRenderContext arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Awt.FontNs.GlyphVector>("createGlyphVector", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.FontNs.GlyphVector>("createGlyphVector", "(Ljava/awt/font/FontRenderContext;Ljava/lang/String;)Ljava/awt/font/GlyphVector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#createGlyphVector(java.awt.font.FontRenderContext,java.text.CharacterIterator)"/>
@@ -597,7 +597,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.FontNs.GlyphVector"/></returns>
         public Java.Awt.FontNs.GlyphVector CreateGlyphVector(Java.Awt.FontNs.FontRenderContext arg0, Java.Text.CharacterIterator arg1)
         {
-            return IExecute<Java.Awt.FontNs.GlyphVector>("createGlyphVector", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.FontNs.GlyphVector>("createGlyphVector", "(Ljava/awt/font/FontRenderContext;Ljava/text/CharacterIterator;)Ljava/awt/font/GlyphVector;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#layoutGlyphVector(java.awt.font.FontRenderContext,char[],int,int,int)"/>
@@ -610,7 +610,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.FontNs.GlyphVector"/></returns>
         public Java.Awt.FontNs.GlyphVector LayoutGlyphVector(Java.Awt.FontNs.FontRenderContext arg0, char[] arg1, int arg2, int arg3, int arg4)
         {
-            return IExecute<Java.Awt.FontNs.GlyphVector>("layoutGlyphVector", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Java.Awt.FontNs.GlyphVector>("layoutGlyphVector", "(Ljava/awt/font/FontRenderContext;[CIII)Ljava/awt/font/GlyphVector;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(char[],int,int,java.awt.font.FontRenderContext)"/>
@@ -622,7 +622,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(char[] arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
         {
-            return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.FontNs.LineMetrics>("getLineMetrics", "([CIILjava/awt/font/FontRenderContext;)Ljava/awt/font/LineMetrics;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(java.lang.String,int,int,java.awt.font.FontRenderContext)"/>
@@ -634,7 +634,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(Java.Lang.String arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
         {
-            return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.FontNs.LineMetrics>("getLineMetrics", "(Ljava/lang/String;IILjava/awt/font/FontRenderContext;)Ljava/awt/font/LineMetrics;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(java.lang.String,java.awt.font.FontRenderContext)"/>
@@ -644,7 +644,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(Java.Lang.String arg0, Java.Awt.FontNs.FontRenderContext arg1)
         {
-            return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.FontNs.LineMetrics>("getLineMetrics", "(Ljava/lang/String;Ljava/awt/font/FontRenderContext;)Ljava/awt/font/LineMetrics;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getLineMetrics(java.text.CharacterIterator,int,int,java.awt.font.FontRenderContext)"/>
@@ -656,7 +656,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.FontNs.LineMetrics"/></returns>
         public Java.Awt.FontNs.LineMetrics GetLineMetrics(Java.Text.CharacterIterator arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
         {
-            return IExecute<Java.Awt.FontNs.LineMetrics>("getLineMetrics", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.FontNs.LineMetrics>("getLineMetrics", "(Ljava/text/CharacterIterator;IILjava/awt/font/FontRenderContext;)Ljava/awt/font/LineMetrics;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getMaxCharBounds(java.awt.font.FontRenderContext)"/>
@@ -677,7 +677,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(char[] arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
         {
-            return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getStringBounds", "([CIILjava/awt/font/FontRenderContext;)Ljava/awt/geom/Rectangle2D;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStringBounds(java.lang.String,int,int,java.awt.font.FontRenderContext)"/>
@@ -689,7 +689,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(Java.Lang.String arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
         {
-            return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getStringBounds", "(Ljava/lang/String;IILjava/awt/font/FontRenderContext;)Ljava/awt/geom/Rectangle2D;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStringBounds(java.lang.String,java.awt.font.FontRenderContext)"/>
@@ -699,7 +699,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(Java.Lang.String arg0, Java.Awt.FontNs.FontRenderContext arg1)
         {
-            return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getStringBounds", "(Ljava/lang/String;Ljava/awt/font/FontRenderContext;)Ljava/awt/geom/Rectangle2D;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getStringBounds(java.text.CharacterIterator,int,int,java.awt.font.FontRenderContext)"/>
@@ -711,7 +711,7 @@ namespace Java.Awt
         /// <returns><see cref="Java.Awt.Geom.Rectangle2D"/></returns>
         public Java.Awt.Geom.Rectangle2D GetStringBounds(Java.Text.CharacterIterator arg0, int arg1, int arg2, Java.Awt.FontNs.FontRenderContext arg3)
         {
-            return IExecute<Java.Awt.Geom.Rectangle2D>("getStringBounds", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Awt.Geom.Rectangle2D>("getStringBounds", "(Ljava/text/CharacterIterator;IILjava/awt/font/FontRenderContext;)Ljava/awt/geom/Rectangle2D;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Font.html#getFamily(java.util.Locale)"/>

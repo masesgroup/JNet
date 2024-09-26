@@ -107,7 +107,7 @@ namespace Java.Security
         /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>
         public void Initialize(int arg0, Java.Security.SecureRandom arg1)
         {
-            IExecute("initialize", arg0, arg1);
+            IExecuteWithSignature("initialize", "(ILjava/security/SecureRandom;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/KeyPairGeneratorSpi.html#initialize(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)"/>
@@ -117,7 +117,7 @@ namespace Java.Security
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
         public void Initialize(Java.Security.Spec.AlgorithmParameterSpec arg0, Java.Security.SecureRandom arg1)
         {
-            IExecute("initialize", arg0, arg1);
+            IExecuteWithSignature("initialize", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V", arg0, arg1);
         }
 
         #endregion

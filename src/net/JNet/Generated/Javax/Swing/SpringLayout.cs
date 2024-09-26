@@ -242,7 +242,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.Spring"/></returns>
         public Javax.Swing.Spring GetConstraint(Java.Lang.String arg0, Java.Awt.Component arg1)
         {
-            return IExecute<Javax.Swing.Spring>("getConstraint", arg0, arg1);
+            return IExecuteWithSignature<Javax.Swing.Spring>("getConstraint", "(Ljava/lang/String;Ljava/awt/Component;)Ljavax/swing/Spring;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#getConstraints(java.awt.Component)"/>
@@ -260,7 +260,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="object"/></param>
         public void AddLayoutComponent(Java.Awt.Component arg0, object arg1)
         {
-            IExecute("addLayoutComponent", arg0, arg1);
+            IExecuteWithSignature("addLayoutComponent", "(Ljava/awt/Component;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#addLayoutComponent(java.lang.String,java.awt.Component)"/>
@@ -269,7 +269,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public void AddLayoutComponent(Java.Lang.String arg0, Java.Awt.Component arg1)
         {
-            IExecute("addLayoutComponent", arg0, arg1);
+            IExecuteWithSignature("addLayoutComponent", "(Ljava/lang/String;Ljava/awt/Component;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#invalidateLayout(java.awt.Container)"/>
@@ -297,7 +297,7 @@ namespace Javax.Swing
         /// <param name="arg4"><see cref="Java.Awt.Component"/></param>
         public void PutConstraint(Java.Lang.String arg0, Java.Awt.Component arg1, int arg2, Java.Lang.String arg3, Java.Awt.Component arg4)
         {
-            IExecute("putConstraint", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("putConstraint", "(Ljava/lang/String;Ljava/awt/Component;ILjava/lang/String;Ljava/awt/Component;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#putConstraint(java.lang.String,java.awt.Component,javax.swing.Spring,java.lang.String,java.awt.Component)"/>
@@ -309,7 +309,7 @@ namespace Javax.Swing
         /// <param name="arg4"><see cref="Java.Awt.Component"/></param>
         public void PutConstraint(Java.Lang.String arg0, Java.Awt.Component arg1, Javax.Swing.Spring arg2, Java.Lang.String arg3, Java.Awt.Component arg4)
         {
-            IExecute("putConstraint", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("putConstraint", "(Ljava/lang/String;Ljava/awt/Component;Ljavax/swing/Spring;Ljava/lang/String;Ljava/awt/Component;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SpringLayout.html#removeLayoutComponent(java.awt.Component)"/>
@@ -415,7 +415,7 @@ namespace Javax.Swing
             /// <param name="arg1"><see cref="Javax.Swing.Spring"/></param>
             public void SetConstraint(Java.Lang.String arg0, Javax.Swing.Spring arg1)
             {
-                IExecute("setConstraint", arg0, arg1);
+                IExecuteWithSignature("setConstraint", "(Ljava/lang/String;Ljavax/swing/Spring;)V", arg0, arg1);
             }
 
             #endregion

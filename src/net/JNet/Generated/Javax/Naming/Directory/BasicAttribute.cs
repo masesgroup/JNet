@@ -233,7 +233,7 @@ namespace Javax.Naming.Directory
         /// <returns><see cref="object"/></returns>
         public object Set(int arg0, object arg1)
         {
-            return IExecute("set", arg0, arg1);
+            return IExecuteWithSignature("set", "(ILjava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#add(int,java.lang.Object)"/>
@@ -242,7 +242,7 @@ namespace Javax.Naming.Directory
         /// <param name="arg1"><see cref="object"/></param>
         public void Add(int arg0, object arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(ILjava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/BasicAttribute.html#clear()"/>

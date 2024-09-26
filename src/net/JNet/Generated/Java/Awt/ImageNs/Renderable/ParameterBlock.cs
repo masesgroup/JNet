@@ -284,7 +284,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(byte arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(BI)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(char,int)"/>
@@ -294,7 +294,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(char arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(CI)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(double,int)"/>
@@ -304,7 +304,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(double arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(DI)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(float,int)"/>
@@ -314,7 +314,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(float arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(FI)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(int,int)"/>
@@ -324,7 +324,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(II)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(java.lang.Object,int)"/>
@@ -334,7 +334,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(object arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(Ljava/lang/Object;I)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(long,int)"/>
@@ -344,7 +344,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(long arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(JI)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#set(short,int)"/>
@@ -354,7 +354,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock Set(short arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("set", "(SI)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#setSource(java.lang.Object,int)"/>
@@ -364,7 +364,7 @@ namespace Java.Awt.ImageNs.Renderable
         /// <returns><see cref="Java.Awt.ImageNs.Renderable.ParameterBlock"/></returns>
         public Java.Awt.ImageNs.Renderable.ParameterBlock SetSource(object arg0, int arg1)
         {
-            return IExecute<Java.Awt.ImageNs.Renderable.ParameterBlock>("setSource", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.ImageNs.Renderable.ParameterBlock>("setSource", "(Ljava/lang/Object;I)Ljava/awt/image/renderable/ParameterBlock;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/ParameterBlock.html#getRenderableSource(int)"/>

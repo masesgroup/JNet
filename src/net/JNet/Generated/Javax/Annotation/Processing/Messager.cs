@@ -150,7 +150,7 @@ namespace Javax.Annotation.Processing
         /// <param name="arg4"><see cref="Javax.Lang.Model.Element.AnnotationValue"/></param>
         public void PrintMessage(Javax.Tools.Diagnostic.Kind arg0, Java.Lang.CharSequence arg1, Javax.Lang.Model.Element.Element arg2, Javax.Lang.Model.Element.AnnotationMirror arg3, Javax.Lang.Model.Element.AnnotationValue arg4)
         {
-            IExecute("printMessage", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("printMessage", "(Ljavax/tools/Diagnostic$Kind;Ljava/lang/CharSequence;Ljavax/lang/model/element/Element;Ljavax/lang/model/element/AnnotationMirror;Ljavax/lang/model/element/AnnotationValue;)V", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Messager.html#printMessage(javax.tools.Diagnostic.Kind,java.lang.CharSequence,javax.lang.model.element.Element,javax.lang.model.element.AnnotationMirror)"/>
@@ -161,7 +161,7 @@ namespace Javax.Annotation.Processing
         /// <param name="arg3"><see cref="Javax.Lang.Model.Element.AnnotationMirror"/></param>
         public void PrintMessage(Javax.Tools.Diagnostic.Kind arg0, Java.Lang.CharSequence arg1, Javax.Lang.Model.Element.Element arg2, Javax.Lang.Model.Element.AnnotationMirror arg3)
         {
-            IExecute("printMessage", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("printMessage", "(Ljavax/tools/Diagnostic$Kind;Ljava/lang/CharSequence;Ljavax/lang/model/element/Element;Ljavax/lang/model/element/AnnotationMirror;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Messager.html#printMessage(javax.tools.Diagnostic.Kind,java.lang.CharSequence,javax.lang.model.element.Element)"/>
@@ -171,7 +171,7 @@ namespace Javax.Annotation.Processing
         /// <param name="arg2"><see cref="Javax.Lang.Model.Element.Element"/></param>
         public void PrintMessage(Javax.Tools.Diagnostic.Kind arg0, Java.Lang.CharSequence arg1, Javax.Lang.Model.Element.Element arg2)
         {
-            IExecute("printMessage", arg0, arg1, arg2);
+            IExecuteWithSignature("printMessage", "(Ljavax/tools/Diagnostic$Kind;Ljava/lang/CharSequence;Ljavax/lang/model/element/Element;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Messager.html#printMessage(javax.tools.Diagnostic.Kind,java.lang.CharSequence)"/>
@@ -180,7 +180,7 @@ namespace Javax.Annotation.Processing
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         public void PrintMessage(Javax.Tools.Diagnostic.Kind arg0, Java.Lang.CharSequence arg1)
         {
-            IExecute("printMessage", arg0, arg1);
+            IExecuteWithSignature("printMessage", "(Ljavax/tools/Diagnostic$Kind;Ljava/lang/CharSequence;)V", arg0, arg1);
         }
 
         #endregion

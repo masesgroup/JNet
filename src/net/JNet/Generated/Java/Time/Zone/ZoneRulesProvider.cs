@@ -111,7 +111,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="Java.Time.Zone.ZoneRules"/></returns>
         public static Java.Time.Zone.ZoneRules GetRules(Java.Lang.String arg0, bool arg1)
         {
-            return SExecute<Java.Time.Zone.ZoneRules>(LocalBridgeClazz, "getRules", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.Zone.ZoneRules>(LocalBridgeClazz, "getRules", "(Ljava/lang/String;Z)Ljava/time/zone/ZoneRules;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/zone/ZoneRulesProvider.html#getVersions(java.lang.String)"/>

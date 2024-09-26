@@ -179,7 +179,7 @@ namespace Java.Awt.Im.Spi
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetInputMethodDisplayName(Java.Util.Locale arg0, Java.Util.Locale arg1)
         {
-            return IExecute<Java.Lang.String>("getInputMethodDisplayName", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getInputMethodDisplayName", "(Ljava/util/Locale;Ljava/util/Locale;)Ljava/lang/String;", arg0, arg1);
         }
 
         #endregion

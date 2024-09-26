@@ -277,7 +277,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetArray(int arg0, Java.Sql.Array arg1)
         {
-            IExecute("setArray", arg0, arg1);
+            IExecuteWithSignature("setArray", "(ILjava/sql/Array;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setAsciiStream(int,java.io.InputStream,int)"/>
@@ -288,7 +288,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetAsciiStream(int arg0, Java.Io.InputStream arg1, int arg2)
         {
-            IExecute("setAsciiStream", arg0, arg1, arg2);
+            IExecuteWithSignature("setAsciiStream", "(ILjava/io/InputStream;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setAsciiStream(int,java.io.InputStream)"/>
@@ -298,7 +298,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetAsciiStream(int arg0, Java.Io.InputStream arg1)
         {
-            IExecute("setAsciiStream", arg0, arg1);
+            IExecuteWithSignature("setAsciiStream", "(ILjava/io/InputStream;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setAsciiStream(java.lang.String,java.io.InputStream,int)"/>
@@ -309,7 +309,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetAsciiStream(Java.Lang.String arg0, Java.Io.InputStream arg1, int arg2)
         {
-            IExecute("setAsciiStream", arg0, arg1, arg2);
+            IExecuteWithSignature("setAsciiStream", "(Ljava/lang/String;Ljava/io/InputStream;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setAsciiStream(java.lang.String,java.io.InputStream)"/>
@@ -319,7 +319,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetAsciiStream(Java.Lang.String arg0, Java.Io.InputStream arg1)
         {
-            IExecute("setAsciiStream", arg0, arg1);
+            IExecuteWithSignature("setAsciiStream", "(Ljava/lang/String;Ljava/io/InputStream;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBigDecimal(int,java.math.BigDecimal)"/>
@@ -329,7 +329,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBigDecimal(int arg0, Java.Math.BigDecimal arg1)
         {
-            IExecute("setBigDecimal", arg0, arg1);
+            IExecuteWithSignature("setBigDecimal", "(ILjava/math/BigDecimal;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBigDecimal(java.lang.String,java.math.BigDecimal)"/>
@@ -339,7 +339,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBigDecimal(Java.Lang.String arg0, Java.Math.BigDecimal arg1)
         {
-            IExecute("setBigDecimal", arg0, arg1);
+            IExecuteWithSignature("setBigDecimal", "(Ljava/lang/String;Ljava/math/BigDecimal;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBinaryStream(int,java.io.InputStream,int)"/>
@@ -350,7 +350,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBinaryStream(int arg0, Java.Io.InputStream arg1, int arg2)
         {
-            IExecute("setBinaryStream", arg0, arg1, arg2);
+            IExecuteWithSignature("setBinaryStream", "(ILjava/io/InputStream;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBinaryStream(int,java.io.InputStream)"/>
@@ -360,7 +360,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBinaryStream(int arg0, Java.Io.InputStream arg1)
         {
-            IExecute("setBinaryStream", arg0, arg1);
+            IExecuteWithSignature("setBinaryStream", "(ILjava/io/InputStream;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBinaryStream(java.lang.String,java.io.InputStream,int)"/>
@@ -371,7 +371,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBinaryStream(Java.Lang.String arg0, Java.Io.InputStream arg1, int arg2)
         {
-            IExecute("setBinaryStream", arg0, arg1, arg2);
+            IExecuteWithSignature("setBinaryStream", "(Ljava/lang/String;Ljava/io/InputStream;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBinaryStream(java.lang.String,java.io.InputStream)"/>
@@ -381,7 +381,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBinaryStream(Java.Lang.String arg0, Java.Io.InputStream arg1)
         {
-            IExecute("setBinaryStream", arg0, arg1);
+            IExecuteWithSignature("setBinaryStream", "(Ljava/lang/String;Ljava/io/InputStream;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBlob(int,java.io.InputStream,long)"/>
@@ -392,7 +392,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBlob(int arg0, Java.Io.InputStream arg1, long arg2)
         {
-            IExecute("setBlob", arg0, arg1, arg2);
+            IExecuteWithSignature("setBlob", "(ILjava/io/InputStream;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBlob(int,java.io.InputStream)"/>
@@ -402,7 +402,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBlob(int arg0, Java.Io.InputStream arg1)
         {
-            IExecute("setBlob", arg0, arg1);
+            IExecuteWithSignature("setBlob", "(ILjava/io/InputStream;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBlob(int,java.sql.Blob)"/>
@@ -412,7 +412,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBlob(int arg0, Java.Sql.Blob arg1)
         {
-            IExecute("setBlob", arg0, arg1);
+            IExecuteWithSignature("setBlob", "(ILjava/sql/Blob;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBlob(java.lang.String,java.io.InputStream,long)"/>
@@ -423,7 +423,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBlob(Java.Lang.String arg0, Java.Io.InputStream arg1, long arg2)
         {
-            IExecute("setBlob", arg0, arg1, arg2);
+            IExecuteWithSignature("setBlob", "(Ljava/lang/String;Ljava/io/InputStream;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBlob(java.lang.String,java.io.InputStream)"/>
@@ -433,7 +433,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBlob(Java.Lang.String arg0, Java.Io.InputStream arg1)
         {
-            IExecute("setBlob", arg0, arg1);
+            IExecuteWithSignature("setBlob", "(Ljava/lang/String;Ljava/io/InputStream;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBlob(java.lang.String,java.sql.Blob)"/>
@@ -443,7 +443,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBlob(Java.Lang.String arg0, Java.Sql.Blob arg1)
         {
-            IExecute("setBlob", arg0, arg1);
+            IExecuteWithSignature("setBlob", "(Ljava/lang/String;Ljava/sql/Blob;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBoolean(int,boolean)"/>
@@ -453,7 +453,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBoolean(int arg0, bool arg1)
         {
-            IExecute("setBoolean", arg0, arg1);
+            IExecuteWithSignature("setBoolean", "(IZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBoolean(java.lang.String,boolean)"/>
@@ -463,7 +463,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBoolean(Java.Lang.String arg0, bool arg1)
         {
-            IExecute("setBoolean", arg0, arg1);
+            IExecuteWithSignature("setBoolean", "(Ljava/lang/String;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setByte(int,byte)"/>
@@ -473,7 +473,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetByte(int arg0, byte arg1)
         {
-            IExecute("setByte", arg0, arg1);
+            IExecuteWithSignature("setByte", "(IB)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setByte(java.lang.String,byte)"/>
@@ -483,7 +483,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetByte(Java.Lang.String arg0, byte arg1)
         {
-            IExecute("setByte", arg0, arg1);
+            IExecuteWithSignature("setByte", "(Ljava/lang/String;B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBytes(int,byte[])"/>
@@ -493,7 +493,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBytes(int arg0, byte[] arg1)
         {
-            IExecute("setBytes", arg0, arg1);
+            IExecuteWithSignature("setBytes", "(I[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setBytes(java.lang.String,byte[])"/>
@@ -503,7 +503,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetBytes(Java.Lang.String arg0, byte[] arg1)
         {
-            IExecute("setBytes", arg0, arg1);
+            IExecuteWithSignature("setBytes", "(Ljava/lang/String;[B)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setCharacterStream(int,java.io.Reader,int)"/>
@@ -514,7 +514,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCharacterStream(int arg0, Java.Io.Reader arg1, int arg2)
         {
-            IExecute("setCharacterStream", arg0, arg1, arg2);
+            IExecuteWithSignature("setCharacterStream", "(ILjava/io/Reader;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setCharacterStream(int,java.io.Reader)"/>
@@ -524,7 +524,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCharacterStream(int arg0, Java.Io.Reader arg1)
         {
-            IExecute("setCharacterStream", arg0, arg1);
+            IExecuteWithSignature("setCharacterStream", "(ILjava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setCharacterStream(java.lang.String,java.io.Reader,int)"/>
@@ -535,7 +535,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1, int arg2)
         {
-            IExecute("setCharacterStream", arg0, arg1, arg2);
+            IExecuteWithSignature("setCharacterStream", "(Ljava/lang/String;Ljava/io/Reader;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setCharacterStream(java.lang.String,java.io.Reader)"/>
@@ -545,7 +545,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1)
         {
-            IExecute("setCharacterStream", arg0, arg1);
+            IExecuteWithSignature("setCharacterStream", "(Ljava/lang/String;Ljava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setClob(int,java.io.Reader,long)"/>
@@ -556,7 +556,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetClob(int arg0, Java.Io.Reader arg1, long arg2)
         {
-            IExecute("setClob", arg0, arg1, arg2);
+            IExecuteWithSignature("setClob", "(ILjava/io/Reader;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setClob(int,java.io.Reader)"/>
@@ -566,7 +566,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetClob(int arg0, Java.Io.Reader arg1)
         {
-            IExecute("setClob", arg0, arg1);
+            IExecuteWithSignature("setClob", "(ILjava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setClob(int,java.sql.Clob)"/>
@@ -576,7 +576,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetClob(int arg0, Java.Sql.Clob arg1)
         {
-            IExecute("setClob", arg0, arg1);
+            IExecuteWithSignature("setClob", "(ILjava/sql/Clob;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setClob(java.lang.String,java.io.Reader,long)"/>
@@ -587,7 +587,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetClob(Java.Lang.String arg0, Java.Io.Reader arg1, long arg2)
         {
-            IExecute("setClob", arg0, arg1, arg2);
+            IExecuteWithSignature("setClob", "(Ljava/lang/String;Ljava/io/Reader;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setClob(java.lang.String,java.io.Reader)"/>
@@ -597,7 +597,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetClob(Java.Lang.String arg0, Java.Io.Reader arg1)
         {
-            IExecute("setClob", arg0, arg1);
+            IExecuteWithSignature("setClob", "(Ljava/lang/String;Ljava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setClob(java.lang.String,java.sql.Clob)"/>
@@ -607,7 +607,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetClob(Java.Lang.String arg0, Java.Sql.Clob arg1)
         {
-            IExecute("setClob", arg0, arg1);
+            IExecuteWithSignature("setClob", "(Ljava/lang/String;Ljava/sql/Clob;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setDate(int,java.sql.Date,java.util.Calendar)"/>
@@ -618,7 +618,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetDate(int arg0, Java.Sql.Date arg1, Java.Util.Calendar arg2)
         {
-            IExecute("setDate", arg0, arg1, arg2);
+            IExecuteWithSignature("setDate", "(ILjava/sql/Date;Ljava/util/Calendar;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setDate(int,java.sql.Date)"/>
@@ -628,7 +628,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetDate(int arg0, Java.Sql.Date arg1)
         {
-            IExecute("setDate", arg0, arg1);
+            IExecuteWithSignature("setDate", "(ILjava/sql/Date;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setDate(java.lang.String,java.sql.Date,java.util.Calendar)"/>
@@ -639,7 +639,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetDate(Java.Lang.String arg0, Java.Sql.Date arg1, Java.Util.Calendar arg2)
         {
-            IExecute("setDate", arg0, arg1, arg2);
+            IExecuteWithSignature("setDate", "(Ljava/lang/String;Ljava/sql/Date;Ljava/util/Calendar;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setDate(java.lang.String,java.sql.Date)"/>
@@ -649,7 +649,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetDate(Java.Lang.String arg0, Java.Sql.Date arg1)
         {
-            IExecute("setDate", arg0, arg1);
+            IExecuteWithSignature("setDate", "(Ljava/lang/String;Ljava/sql/Date;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setDouble(int,double)"/>
@@ -659,7 +659,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetDouble(int arg0, double arg1)
         {
-            IExecute("setDouble", arg0, arg1);
+            IExecuteWithSignature("setDouble", "(ID)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setDouble(java.lang.String,double)"/>
@@ -669,7 +669,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetDouble(Java.Lang.String arg0, double arg1)
         {
-            IExecute("setDouble", arg0, arg1);
+            IExecuteWithSignature("setDouble", "(Ljava/lang/String;D)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setFloat(int,float)"/>
@@ -679,7 +679,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetFloat(int arg0, float arg1)
         {
-            IExecute("setFloat", arg0, arg1);
+            IExecuteWithSignature("setFloat", "(IF)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setFloat(java.lang.String,float)"/>
@@ -689,7 +689,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetFloat(Java.Lang.String arg0, float arg1)
         {
-            IExecute("setFloat", arg0, arg1);
+            IExecuteWithSignature("setFloat", "(Ljava/lang/String;F)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setInt(int,int)"/>
@@ -699,7 +699,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetInt(int arg0, int arg1)
         {
-            IExecute("setInt", arg0, arg1);
+            IExecuteWithSignature("setInt", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setInt(java.lang.String,int)"/>
@@ -709,7 +709,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetInt(Java.Lang.String arg0, int arg1)
         {
-            IExecute("setInt", arg0, arg1);
+            IExecuteWithSignature("setInt", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setLong(int,long)"/>
@@ -719,7 +719,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetLong(int arg0, long arg1)
         {
-            IExecute("setLong", arg0, arg1);
+            IExecuteWithSignature("setLong", "(IJ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setLong(java.lang.String,long)"/>
@@ -729,7 +729,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetLong(Java.Lang.String arg0, long arg1)
         {
-            IExecute("setLong", arg0, arg1);
+            IExecuteWithSignature("setLong", "(Ljava/lang/String;J)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNCharacterStream(int,java.io.Reader,long)"/>
@@ -740,7 +740,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNCharacterStream(int arg0, Java.Io.Reader arg1, long arg2)
         {
-            IExecute("setNCharacterStream", arg0, arg1, arg2);
+            IExecuteWithSignature("setNCharacterStream", "(ILjava/io/Reader;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNCharacterStream(int,java.io.Reader)"/>
@@ -750,7 +750,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNCharacterStream(int arg0, Java.Io.Reader arg1)
         {
-            IExecute("setNCharacterStream", arg0, arg1);
+            IExecuteWithSignature("setNCharacterStream", "(ILjava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNCharacterStream(java.lang.String,java.io.Reader,long)"/>
@@ -761,7 +761,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1, long arg2)
         {
-            IExecute("setNCharacterStream", arg0, arg1, arg2);
+            IExecuteWithSignature("setNCharacterStream", "(Ljava/lang/String;Ljava/io/Reader;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNCharacterStream(java.lang.String,java.io.Reader)"/>
@@ -771,7 +771,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNCharacterStream(Java.Lang.String arg0, Java.Io.Reader arg1)
         {
-            IExecute("setNCharacterStream", arg0, arg1);
+            IExecuteWithSignature("setNCharacterStream", "(Ljava/lang/String;Ljava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNClob(int,java.io.Reader,long)"/>
@@ -782,7 +782,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNClob(int arg0, Java.Io.Reader arg1, long arg2)
         {
-            IExecute("setNClob", arg0, arg1, arg2);
+            IExecuteWithSignature("setNClob", "(ILjava/io/Reader;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNClob(int,java.io.Reader)"/>
@@ -792,7 +792,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNClob(int arg0, Java.Io.Reader arg1)
         {
-            IExecute("setNClob", arg0, arg1);
+            IExecuteWithSignature("setNClob", "(ILjava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNClob(int,java.sql.NClob)"/>
@@ -802,7 +802,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNClob(int arg0, Java.Sql.NClob arg1)
         {
-            IExecute("setNClob", arg0, arg1);
+            IExecuteWithSignature("setNClob", "(ILjava/sql/NClob;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNClob(java.lang.String,java.io.Reader,long)"/>
@@ -813,7 +813,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNClob(Java.Lang.String arg0, Java.Io.Reader arg1, long arg2)
         {
-            IExecute("setNClob", arg0, arg1, arg2);
+            IExecuteWithSignature("setNClob", "(Ljava/lang/String;Ljava/io/Reader;J)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNClob(java.lang.String,java.io.Reader)"/>
@@ -823,7 +823,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNClob(Java.Lang.String arg0, Java.Io.Reader arg1)
         {
-            IExecute("setNClob", arg0, arg1);
+            IExecuteWithSignature("setNClob", "(Ljava/lang/String;Ljava/io/Reader;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNClob(java.lang.String,java.sql.NClob)"/>
@@ -833,7 +833,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNClob(Java.Lang.String arg0, Java.Sql.NClob arg1)
         {
-            IExecute("setNClob", arg0, arg1);
+            IExecuteWithSignature("setNClob", "(Ljava/lang/String;Ljava/sql/NClob;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNString(int,java.lang.String)"/>
@@ -843,7 +843,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNString(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setNString", arg0, arg1);
+            IExecuteWithSignature("setNString", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNString(java.lang.String,java.lang.String)"/>
@@ -853,7 +853,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNString(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setNString", arg0, arg1);
+            IExecuteWithSignature("setNString", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNull(int,int,java.lang.String)"/>
@@ -864,7 +864,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNull(int arg0, int arg1, Java.Lang.String arg2)
         {
-            IExecute("setNull", arg0, arg1, arg2);
+            IExecuteWithSignature("setNull", "(IILjava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNull(int,int)"/>
@@ -874,7 +874,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNull(int arg0, int arg1)
         {
-            IExecute("setNull", arg0, arg1);
+            IExecuteWithSignature("setNull", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNull(java.lang.String,int,java.lang.String)"/>
@@ -885,7 +885,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNull(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
-            IExecute("setNull", arg0, arg1, arg2);
+            IExecuteWithSignature("setNull", "(Ljava/lang/String;ILjava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setNull(java.lang.String,int)"/>
@@ -895,7 +895,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNull(Java.Lang.String arg0, int arg1)
         {
-            IExecute("setNull", arg0, arg1);
+            IExecuteWithSignature("setNull", "(Ljava/lang/String;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setObject(int,java.lang.Object,int,int)"/>
@@ -907,7 +907,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetObject(int arg0, object arg1, int arg2, int arg3)
         {
-            IExecute("setObject", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setObject", "(ILjava/lang/Object;II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setObject(int,java.lang.Object,int)"/>
@@ -918,7 +918,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetObject(int arg0, object arg1, int arg2)
         {
-            IExecute("setObject", arg0, arg1, arg2);
+            IExecuteWithSignature("setObject", "(ILjava/lang/Object;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setObject(int,java.lang.Object)"/>
@@ -928,7 +928,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetObject(int arg0, object arg1)
         {
-            IExecute("setObject", arg0, arg1);
+            IExecuteWithSignature("setObject", "(ILjava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setObject(java.lang.String,java.lang.Object,int,int)"/>
@@ -940,7 +940,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetObject(Java.Lang.String arg0, object arg1, int arg2, int arg3)
         {
-            IExecute("setObject", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("setObject", "(Ljava/lang/String;Ljava/lang/Object;II)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setObject(java.lang.String,java.lang.Object,int)"/>
@@ -951,7 +951,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetObject(Java.Lang.String arg0, object arg1, int arg2)
         {
-            IExecute("setObject", arg0, arg1, arg2);
+            IExecuteWithSignature("setObject", "(Ljava/lang/String;Ljava/lang/Object;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setObject(java.lang.String,java.lang.Object)"/>
@@ -961,7 +961,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetObject(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setObject", arg0, arg1);
+            IExecuteWithSignature("setObject", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setReadOnly(boolean)"/>
@@ -979,7 +979,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetRef(int arg0, Java.Sql.Ref arg1)
         {
-            IExecute("setRef", arg0, arg1);
+            IExecuteWithSignature("setRef", "(ILjava/sql/Ref;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setRowId(int,java.sql.RowId)"/>
@@ -989,7 +989,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetRowId(int arg0, Java.Sql.RowId arg1)
         {
-            IExecute("setRowId", arg0, arg1);
+            IExecuteWithSignature("setRowId", "(ILjava/sql/RowId;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setRowId(java.lang.String,java.sql.RowId)"/>
@@ -999,7 +999,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetRowId(Java.Lang.String arg0, Java.Sql.RowId arg1)
         {
-            IExecute("setRowId", arg0, arg1);
+            IExecuteWithSignature("setRowId", "(Ljava/lang/String;Ljava/sql/RowId;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setShort(int,short)"/>
@@ -1009,7 +1009,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetShort(int arg0, short arg1)
         {
-            IExecute("setShort", arg0, arg1);
+            IExecuteWithSignature("setShort", "(IS)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setShort(java.lang.String,short)"/>
@@ -1019,7 +1019,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetShort(Java.Lang.String arg0, short arg1)
         {
-            IExecute("setShort", arg0, arg1);
+            IExecuteWithSignature("setShort", "(Ljava/lang/String;S)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setSQLXML(int,java.sql.SQLXML)"/>
@@ -1029,7 +1029,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetSQLXML(int arg0, Java.Sql.SQLXML arg1)
         {
-            IExecute("setSQLXML", arg0, arg1);
+            IExecuteWithSignature("setSQLXML", "(ILjava/sql/SQLXML;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setSQLXML(java.lang.String,java.sql.SQLXML)"/>
@@ -1039,7 +1039,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetSQLXML(Java.Lang.String arg0, Java.Sql.SQLXML arg1)
         {
-            IExecute("setSQLXML", arg0, arg1);
+            IExecuteWithSignature("setSQLXML", "(Ljava/lang/String;Ljava/sql/SQLXML;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setString(int,java.lang.String)"/>
@@ -1049,7 +1049,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetString(int arg0, Java.Lang.String arg1)
         {
-            IExecute("setString", arg0, arg1);
+            IExecuteWithSignature("setString", "(ILjava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setString(java.lang.String,java.lang.String)"/>
@@ -1059,7 +1059,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetString(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setString", arg0, arg1);
+            IExecuteWithSignature("setString", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setTime(int,java.sql.Time,java.util.Calendar)"/>
@@ -1070,7 +1070,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetTime(int arg0, Java.Sql.Time arg1, Java.Util.Calendar arg2)
         {
-            IExecute("setTime", arg0, arg1, arg2);
+            IExecuteWithSignature("setTime", "(ILjava/sql/Time;Ljava/util/Calendar;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setTime(int,java.sql.Time)"/>
@@ -1080,7 +1080,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetTime(int arg0, Java.Sql.Time arg1)
         {
-            IExecute("setTime", arg0, arg1);
+            IExecuteWithSignature("setTime", "(ILjava/sql/Time;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setTime(java.lang.String,java.sql.Time,java.util.Calendar)"/>
@@ -1091,7 +1091,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetTime(Java.Lang.String arg0, Java.Sql.Time arg1, Java.Util.Calendar arg2)
         {
-            IExecute("setTime", arg0, arg1, arg2);
+            IExecuteWithSignature("setTime", "(Ljava/lang/String;Ljava/sql/Time;Ljava/util/Calendar;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setTime(java.lang.String,java.sql.Time)"/>
@@ -1101,7 +1101,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetTime(Java.Lang.String arg0, Java.Sql.Time arg1)
         {
-            IExecute("setTime", arg0, arg1);
+            IExecuteWithSignature("setTime", "(Ljava/lang/String;Ljava/sql/Time;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setTimestamp(int,java.sql.Timestamp,java.util.Calendar)"/>
@@ -1112,7 +1112,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetTimestamp(int arg0, Java.Sql.Timestamp arg1, Java.Util.Calendar arg2)
         {
-            IExecute("setTimestamp", arg0, arg1, arg2);
+            IExecuteWithSignature("setTimestamp", "(ILjava/sql/Timestamp;Ljava/util/Calendar;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setTimestamp(int,java.sql.Timestamp)"/>
@@ -1122,7 +1122,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetTimestamp(int arg0, Java.Sql.Timestamp arg1)
         {
-            IExecute("setTimestamp", arg0, arg1);
+            IExecuteWithSignature("setTimestamp", "(ILjava/sql/Timestamp;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setTimestamp(java.lang.String,java.sql.Timestamp,java.util.Calendar)"/>
@@ -1133,7 +1133,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetTimestamp(Java.Lang.String arg0, Java.Sql.Timestamp arg1, Java.Util.Calendar arg2)
         {
-            IExecute("setTimestamp", arg0, arg1, arg2);
+            IExecuteWithSignature("setTimestamp", "(Ljava/lang/String;Ljava/sql/Timestamp;Ljava/util/Calendar;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setTimestamp(java.lang.String,java.sql.Timestamp)"/>
@@ -1143,7 +1143,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetTimestamp(Java.Lang.String arg0, Java.Sql.Timestamp arg1)
         {
-            IExecute("setTimestamp", arg0, arg1);
+            IExecuteWithSignature("setTimestamp", "(Ljava/lang/String;Ljava/sql/Timestamp;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/BaseRowSet.html#setURL(int,java.net.URL)"/>
@@ -1153,7 +1153,7 @@ namespace Javax.Sql.Rowset
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetURL(int arg0, Java.Net.URL arg1)
         {
-            IExecute("setURL", arg0, arg1);
+            IExecuteWithSignature("setURL", "(ILjava/net/URL;)V", arg0, arg1);
         }
 
         #endregion

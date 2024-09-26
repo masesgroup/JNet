@@ -133,7 +133,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void Move(int arg0, int arg1)
         {
-            IExecute("move", arg0, arg1);
+            IExecuteWithSignature("move", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#setLocation(int,int)"/>
@@ -142,7 +142,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void SetLocation(int arg0, int arg1)
         {
-            IExecute("setLocation", arg0, arg1);
+            IExecuteWithSignature("setLocation", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Point.html#translate(int,int)"/>
@@ -151,7 +151,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void Translate(int arg0, int arg1)
         {
-            IExecute("translate", arg0, arg1);
+            IExecuteWithSignature("translate", "(II)V", arg0, arg1);
         }
 
         #endregion

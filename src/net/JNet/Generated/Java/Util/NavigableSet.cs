@@ -224,7 +224,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet HeadSet(object arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableSet>("headSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableSet>("headSet", "(Ljava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#subSet(java.lang.Object,boolean,java.lang.Object,boolean)"/>
@@ -236,7 +236,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet SubSet(object arg0, bool arg1, object arg2, bool arg3)
         {
-            return IExecute<Java.Util.NavigableSet>("subSet", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.NavigableSet>("subSet", "(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#tailSet(java.lang.Object,boolean)"/>
@@ -246,7 +246,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet TailSet(object arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableSet>("tailSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableSet>("tailSet", "(Ljava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#headSet(java.lang.Object)"/>
@@ -265,7 +265,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet SubSet(object arg0, object arg1)
         {
-            return IExecute<Java.Util.SortedSet>("subSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.SortedSet>("subSet", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#tailSet(java.lang.Object)"/>
@@ -504,7 +504,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<E> HeadSet(E arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableSet<E>>("headSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableSet<E>>("headSet", "(Ljava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#subSet(java.lang.Object,boolean,java.lang.Object,boolean)"/>
@@ -516,7 +516,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<E> SubSet(E arg0, bool arg1, E arg2, bool arg3)
         {
-            return IExecute<Java.Util.NavigableSet<E>>("subSet", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Util.NavigableSet<E>>("subSet", "(Ljava/lang/Object;ZLjava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#tailSet(java.lang.Object,boolean)"/>
@@ -526,7 +526,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<E> TailSet(E arg0, bool arg1)
         {
-            return IExecute<Java.Util.NavigableSet<E>>("tailSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.NavigableSet<E>>("tailSet", "(Ljava/lang/Object;Z)Ljava/util/NavigableSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#headSet(java.lang.Object)"/>
@@ -545,7 +545,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet<E> SubSet(E arg0, E arg1)
         {
-            return IExecute<Java.Util.SortedSet<E>>("subSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.SortedSet<E>>("subSet", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html#tailSet(java.lang.Object)"/>

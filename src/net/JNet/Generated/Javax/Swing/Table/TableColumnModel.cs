@@ -292,7 +292,7 @@ namespace Javax.Swing.Table
         /// <param name="arg1"><see cref="int"/></param>
         public void MoveColumn(int arg0, int arg1)
         {
-            IExecute("moveColumn", arg0, arg1);
+            IExecuteWithSignature("moveColumn", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/TableColumnModel.html#removeColumn(javax.swing.table.TableColumn)"/>

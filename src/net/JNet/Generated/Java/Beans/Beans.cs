@@ -110,7 +110,7 @@ namespace Java.Beans
         /// <returns><see cref="bool"/></returns>
         public static bool IsInstanceOf(object arg0, Java.Lang.Class arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isInstanceOf", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isInstanceOf", "(Ljava/lang/Object;Ljava/lang/Class;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#getInstanceOf(java.lang.Object,java.lang.Class)"/>
@@ -120,7 +120,7 @@ namespace Java.Beans
         /// <returns><see cref="object"/></returns>
         public static object GetInstanceOf(object arg0, Java.Lang.Class arg1)
         {
-            return SExecute(LocalBridgeClazz, "getInstanceOf", arg0, arg1);
+            return SExecuteWithSignature(LocalBridgeClazz, "getInstanceOf", "(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String,java.beans.beancontext.BeanContext)"/>
@@ -133,7 +133,7 @@ namespace Java.Beans
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static object Instantiate(Java.Lang.ClassLoader arg0, Java.Lang.String arg1, Java.Beans.Beancontext.BeanContext arg2)
         {
-            return SExecute(LocalBridgeClazz, "instantiate", arg0, arg1, arg2);
+            return SExecuteWithSignature(LocalBridgeClazz, "instantiate", "(Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/beans/beancontext/BeanContext;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#instantiate(java.lang.ClassLoader,java.lang.String)"/>
@@ -145,7 +145,7 @@ namespace Java.Beans
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public static object Instantiate(Java.Lang.ClassLoader arg0, Java.Lang.String arg1)
         {
-            return SExecute(LocalBridgeClazz, "instantiate", arg0, arg1);
+            return SExecuteWithSignature(LocalBridgeClazz, "instantiate", "(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Beans.html#setDesignTime(boolean)"/>

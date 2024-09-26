@@ -103,7 +103,7 @@ namespace Java.Rmi.Registry
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Registry.Registry CreateRegistry(int arg0, Java.Rmi.Server.RMIClientSocketFactory arg1, Java.Rmi.Server.RMIServerSocketFactory arg2)
         {
-            return SExecute<Java.Rmi.Registry.Registry>(LocalBridgeClazz, "createRegistry", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Rmi.Registry.Registry>(LocalBridgeClazz, "createRegistry", "(ILjava/rmi/server/RMIClientSocketFactory;Ljava/rmi/server/RMIServerSocketFactory;)Ljava/rmi/registry/Registry;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#createRegistry(int)"/>
@@ -135,7 +135,7 @@ namespace Java.Rmi.Registry
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Registry.Registry GetRegistry(Java.Lang.String arg0, int arg1, Java.Rmi.Server.RMIClientSocketFactory arg2)
         {
-            return SExecute<Java.Rmi.Registry.Registry>(LocalBridgeClazz, "getRegistry", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Rmi.Registry.Registry>(LocalBridgeClazz, "getRegistry", "(Ljava/lang/String;ILjava/rmi/server/RMIClientSocketFactory;)Ljava/rmi/registry/Registry;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(java.lang.String,int)"/>
@@ -146,7 +146,7 @@ namespace Java.Rmi.Registry
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Registry.Registry GetRegistry(Java.Lang.String arg0, int arg1)
         {
-            return SExecute<Java.Rmi.Registry.Registry>(LocalBridgeClazz, "getRegistry", arg0, arg1);
+            return SExecuteWithSignature<Java.Rmi.Registry.Registry>(LocalBridgeClazz, "getRegistry", "(Ljava/lang/String;I)Ljava/rmi/registry/Registry;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/registry/LocateRegistry.html#getRegistry(java.lang.String)"/>

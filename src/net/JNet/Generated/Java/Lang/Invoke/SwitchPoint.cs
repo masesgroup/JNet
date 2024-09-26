@@ -114,7 +114,7 @@ namespace Java.Lang.Invoke
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
         public Java.Lang.Invoke.MethodHandle GuardWithTest(Java.Lang.Invoke.MethodHandle arg0, Java.Lang.Invoke.MethodHandle arg1)
         {
-            return IExecute<Java.Lang.Invoke.MethodHandle>("guardWithTest", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("guardWithTest", "(Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;", arg0, arg1);
         }
 
         #endregion

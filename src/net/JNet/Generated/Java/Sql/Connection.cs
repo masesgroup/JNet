@@ -598,7 +598,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Array CreateArrayOf(Java.Lang.String arg0, object[] arg1)
         {
-            return IExecute<Java.Sql.Array>("createArrayOf", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.Array>("createArrayOf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/sql/Array;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createBlob()"/>
@@ -620,7 +620,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Sql.CallableStatement>("prepareCall", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Sql.CallableStatement>("prepareCall", "(Ljava/lang/String;III)Ljava/sql/CallableStatement;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareCall(java.lang.String,int,int)"/>
@@ -632,7 +632,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.CallableStatement PrepareCall(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Sql.CallableStatement>("prepareCall", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.CallableStatement>("prepareCall", "(Ljava/lang/String;II)Ljava/sql/CallableStatement;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareCall(java.lang.String)"/>
@@ -673,7 +673,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;III)Ljava/sql/PreparedStatement;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int,int)"/>
@@ -685,7 +685,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;II)Ljava/sql/PreparedStatement;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int)"/>
@@ -696,7 +696,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;I)Ljava/sql/PreparedStatement;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int[])"/>
@@ -707,7 +707,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, int[] arg1)
         {
-            return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;[I)Ljava/sql/PreparedStatement;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,java.lang.String[])"/>
@@ -718,7 +718,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.PreparedStatement PrepareStatement(Java.Lang.String arg0, Java.Lang.String[] arg1)
         {
-            return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/sql/PreparedStatement;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String)"/>
@@ -777,7 +777,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Statement CreateStatement(int arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Sql.Statement>("createStatement", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Sql.Statement>("createStatement", "(III)Ljava/sql/Statement;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStatement(int,int)"/>
@@ -788,7 +788,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Statement CreateStatement(int arg0, int arg1)
         {
-            return IExecute<Java.Sql.Statement>("createStatement", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.Statement>("createStatement", "(II)Ljava/sql/Statement;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#createStruct(java.lang.String,java.lang.Object[])"/>
@@ -799,7 +799,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Sql.Struct CreateStruct(Java.Lang.String arg0, object[] arg1)
         {
-            return IExecute<Java.Sql.Struct>("createStruct", arg0, arg1);
+            return IExecuteWithSignature<Java.Sql.Struct>("createStruct", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/sql/Struct;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#abort(java.util.concurrent.Executor)"/>
@@ -868,7 +868,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLClientInfoException"/>
         public void SetClientInfo(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("setClientInfo", arg0, arg1);
+            IExecuteWithSignature("setClientInfo", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setNetworkTimeout(java.util.concurrent.Executor,int)"/>
@@ -878,7 +878,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetNetworkTimeout(Java.Util.Concurrent.Executor arg0, int arg1)
         {
-            IExecute("setNetworkTimeout", arg0, arg1);
+            IExecuteWithSignature("setNetworkTimeout", "(Ljava/util/concurrent/Executor;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setReadOnly(boolean)"/>
@@ -898,7 +898,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SetShardingKeyIfValid(Java.Sql.ShardingKey arg0, int arg1)
         {
-            return IExecute<bool>("setShardingKeyIfValid", arg0, arg1);
+            return IExecuteWithSignature<bool>("setShardingKeyIfValid", "(Ljava/sql/ShardingKey;I)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setShardingKeyIfValid(java.sql.ShardingKey,java.sql.ShardingKey,int)"/>
@@ -910,7 +910,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public bool SetShardingKeyIfValid(Java.Sql.ShardingKey arg0, Java.Sql.ShardingKey arg1, int arg2)
         {
-            return IExecute<bool>("setShardingKeyIfValid", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("setShardingKeyIfValid", "(Ljava/sql/ShardingKey;Ljava/sql/ShardingKey;I)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#beginRequest()"/>
@@ -936,7 +936,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetShardingKey(Java.Sql.ShardingKey arg0, Java.Sql.ShardingKey arg1)
         {
-            IExecute("setShardingKey", arg0, arg1);
+            IExecuteWithSignature("setShardingKey", "(Ljava/sql/ShardingKey;Ljava/sql/ShardingKey;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Connection.html#setShardingKey(java.sql.ShardingKey)"/>

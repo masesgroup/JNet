@@ -117,7 +117,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public bool AddAll(int arg0, Javax.Management.Relation.RoleUnresolvedList arg1)
         {
-            return IExecute<bool>("addAll", arg0, arg1);
+            return IExecuteWithSignature<bool>("addAll", "(ILjavax/management/relation/RoleUnresolvedList;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#addAll(javax.management.relation.RoleUnresolvedList)"/>
@@ -146,7 +146,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public void Add(int arg0, Javax.Management.Relation.RoleUnresolved arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(ILjavax/management/relation/RoleUnresolved;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RoleUnresolvedList.html#add(javax.management.relation.RoleUnresolved)"/>
@@ -166,7 +166,7 @@ namespace Javax.Management.Relation
         /// <exception cref="Java.Lang.IndexOutOfBoundsException"/>
         public void Set(int arg0, Javax.Management.Relation.RoleUnresolved arg1)
         {
-            IExecute("set", arg0, arg1);
+            IExecuteWithSignature("set", "(ILjavax/management/relation/RoleUnresolved;)V", arg0, arg1);
         }
 
         #endregion

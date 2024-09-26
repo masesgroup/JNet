@@ -127,7 +127,7 @@ namespace Java.Util
         /// <param name="arg3"><see cref="int"/></param>
         public void FormatTo(Java.Util.Formatter arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("formatTo", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("formatTo", "(Ljava/util/Formatter;III)V", arg0, arg1, arg2, arg3);
         }
 
         #endregion

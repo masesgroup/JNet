@@ -363,7 +363,7 @@ namespace Java.Util.Function
         /// <returns><see cref="bool"/></returns>
         public override bool Test(object arg0, object arg1)
         {
-            return IExecute<bool>("test", arg0, arg1);
+            return IExecuteWithSignature<bool>("test", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
@@ -658,7 +658,7 @@ namespace Java.Util.Function
         /// <returns><see cref="bool"/></returns>
         public override bool Test(T arg0, U arg1)
         {
-            return IExecute<bool>("test", arg0, arg1);
+            return IExecuteWithSignature<bool>("test", "(Ljava/lang/Object;Ljava/lang/Object;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>

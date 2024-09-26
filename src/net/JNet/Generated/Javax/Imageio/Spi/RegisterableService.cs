@@ -129,7 +129,7 @@ namespace Javax.Imageio.Spi
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         public void OnDeregistration(Javax.Imageio.Spi.ServiceRegistry arg0, Java.Lang.Class arg1)
         {
-            IExecute("onDeregistration", arg0, arg1);
+            IExecuteWithSignature("onDeregistration", "(Ljavax/imageio/spi/ServiceRegistry;Ljava/lang/Class;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/spi/RegisterableService.html#onRegistration(javax.imageio.spi.ServiceRegistry,java.lang.Class)"/>
@@ -138,7 +138,7 @@ namespace Javax.Imageio.Spi
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         public void OnRegistration(Javax.Imageio.Spi.ServiceRegistry arg0, Java.Lang.Class arg1)
         {
-            IExecute("onRegistration", arg0, arg1);
+            IExecuteWithSignature("onRegistration", "(Ljavax/imageio/spi/ServiceRegistry;Ljava/lang/Class;)V", arg0, arg1);
         }
 
         #endregion

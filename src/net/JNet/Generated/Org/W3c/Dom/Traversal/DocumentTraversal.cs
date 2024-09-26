@@ -141,7 +141,7 @@ namespace Org.W3c.Dom.Traversal
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Traversal.NodeIterator CreateNodeIterator(Org.W3c.Dom.Node arg0, int arg1, Org.W3c.Dom.Traversal.NodeFilter arg2, bool arg3)
         {
-            return IExecute<Org.W3c.Dom.Traversal.NodeIterator>("createNodeIterator", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Org.W3c.Dom.Traversal.NodeIterator>("createNodeIterator", "(Lorg/w3c/dom/Node;ILorg/w3c/dom/traversal/NodeFilter;Z)Lorg/w3c/dom/traversal/NodeIterator;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/traversal/DocumentTraversal.html#createTreeWalker(org.w3c.dom.Node,int,org.w3c.dom.traversal.NodeFilter,boolean)"/>
@@ -154,7 +154,7 @@ namespace Org.W3c.Dom.Traversal
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public Org.W3c.Dom.Traversal.TreeWalker CreateTreeWalker(Org.W3c.Dom.Node arg0, int arg1, Org.W3c.Dom.Traversal.NodeFilter arg2, bool arg3)
         {
-            return IExecute<Org.W3c.Dom.Traversal.TreeWalker>("createTreeWalker", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Org.W3c.Dom.Traversal.TreeWalker>("createTreeWalker", "(Lorg/w3c/dom/Node;ILorg/w3c/dom/traversal/NodeFilter;Z)Lorg/w3c/dom/traversal/TreeWalker;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

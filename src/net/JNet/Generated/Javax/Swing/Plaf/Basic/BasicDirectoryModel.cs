@@ -140,7 +140,7 @@ namespace Javax.Swing.Plaf.Basic
         /// <returns><see cref="bool"/></returns>
         public bool RenameFile(Java.Io.File arg0, Java.Io.File arg1)
         {
-            return IExecute<bool>("renameFile", arg0, arg1);
+            return IExecuteWithSignature<bool>("renameFile", "(Ljava/io/File;Ljava/io/File;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/basic/BasicDirectoryModel.html#indexOf(java.lang.Object)"/>

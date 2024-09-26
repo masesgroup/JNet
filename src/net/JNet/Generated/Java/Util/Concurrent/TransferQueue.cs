@@ -165,7 +165,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool TryTransfer(object arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<bool>("tryTransfer", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("tryTransfer", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object)"/>
@@ -293,7 +293,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool TryTransfer(E arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<bool>("tryTransfer", arg0, arg1, arg2);
+            return IExecuteWithSignature<bool>("tryTransfer", "(Ljava/lang/Object;JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/TransferQueue.html#tryTransfer(java.lang.Object)"/>

@@ -138,7 +138,7 @@ namespace Java.Beans
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void AddPropertyChangeListener(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         {
-            IExecute("addPropertyChangeListener", arg0, arg1);
+            IExecuteWithSignature("addPropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html#fireIndexedPropertyChange(java.lang.String,int,boolean,boolean)"/>
@@ -149,7 +149,7 @@ namespace Java.Beans
         /// <param name="arg3"><see cref="bool"/></param>
         public void FireIndexedPropertyChange(Java.Lang.String arg0, int arg1, bool arg2, bool arg3)
         {
-            IExecute("fireIndexedPropertyChange", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("fireIndexedPropertyChange", "(Ljava/lang/String;IZZ)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html#fireIndexedPropertyChange(java.lang.String,int,int,int)"/>
@@ -160,7 +160,7 @@ namespace Java.Beans
         /// <param name="arg3"><see cref="int"/></param>
         public void FireIndexedPropertyChange(Java.Lang.String arg0, int arg1, int arg2, int arg3)
         {
-            IExecute("fireIndexedPropertyChange", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("fireIndexedPropertyChange", "(Ljava/lang/String;III)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html#fireIndexedPropertyChange(java.lang.String,int,java.lang.Object,java.lang.Object)"/>
@@ -171,7 +171,7 @@ namespace Java.Beans
         /// <param name="arg3"><see cref="object"/></param>
         public void FireIndexedPropertyChange(Java.Lang.String arg0, int arg1, object arg2, object arg3)
         {
-            IExecute("fireIndexedPropertyChange", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("fireIndexedPropertyChange", "(Ljava/lang/String;ILjava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html#firePropertyChange(java.beans.PropertyChangeEvent)"/>
@@ -189,7 +189,7 @@ namespace Java.Beans
         /// <param name="arg2"><see cref="bool"/></param>
         public void FirePropertyChange(Java.Lang.String arg0, bool arg1, bool arg2)
         {
-            IExecute("firePropertyChange", arg0, arg1, arg2);
+            IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;ZZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html#firePropertyChange(java.lang.String,int,int)"/>
@@ -199,7 +199,7 @@ namespace Java.Beans
         /// <param name="arg2"><see cref="int"/></param>
         public void FirePropertyChange(Java.Lang.String arg0, int arg1, int arg2)
         {
-            IExecute("firePropertyChange", arg0, arg1, arg2);
+            IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html#firePropertyChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
@@ -209,7 +209,7 @@ namespace Java.Beans
         /// <param name="arg2"><see cref="object"/></param>
         public void FirePropertyChange(Java.Lang.String arg0, object arg1, object arg2)
         {
-            IExecute("firePropertyChange", arg0, arg1, arg2);
+            IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyChangeSupport.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>
@@ -226,7 +226,7 @@ namespace Java.Beans
         /// <param name="arg1"><see cref="Java.Beans.PropertyChangeListener"/></param>
         public void RemovePropertyChangeListener(Java.Lang.String arg0, Java.Beans.PropertyChangeListener arg1)
         {
-            IExecute("removePropertyChangeListener", arg0, arg1);
+            IExecuteWithSignature("removePropertyChangeListener", "(Ljava/lang/String;Ljava/beans/PropertyChangeListener;)V", arg0, arg1);
         }
 
         #endregion

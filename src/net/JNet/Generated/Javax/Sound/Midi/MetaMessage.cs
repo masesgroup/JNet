@@ -130,7 +130,7 @@ namespace Javax.Sound.Midi
         /// <exception cref="Javax.Sound.Midi.InvalidMidiDataException"/>
         public void SetMessage(int arg0, byte[] arg1, int arg2)
         {
-            IExecute("setMessage", arg0, arg1, arg2);
+            IExecuteWithSignature("setMessage", "(I[BI)V", arg0, arg1, arg2);
         }
 
         #endregion

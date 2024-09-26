@@ -201,7 +201,7 @@ namespace Javax.Security.Sasl
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
         public byte[] Unwrap(byte[] arg0, int arg1, int arg2)
         {
-            return IExecuteArray<byte>("unwrap", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<byte>("unwrap", "([BII)[B", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#wrap(byte[],int,int)"/>
@@ -213,7 +213,7 @@ namespace Javax.Security.Sasl
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
         public byte[] Wrap(byte[] arg0, int arg1, int arg2)
         {
-            return IExecuteArray<byte>("wrap", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<byte>("wrap", "([BII)[B", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslServer.html#getNegotiatedProperty(java.lang.String)"/>

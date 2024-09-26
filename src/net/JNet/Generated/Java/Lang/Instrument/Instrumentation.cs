@@ -292,7 +292,7 @@ namespace Java.Lang.Instrument
         /// <param name="arg1"><see cref="bool"/></param>
         public void AddTransformer(Java.Lang.Instrument.ClassFileTransformer arg0, bool arg1)
         {
-            IExecute("addTransformer", arg0, arg1);
+            IExecuteWithSignature("addTransformer", "(Ljava/lang/instrument/ClassFileTransformer;Z)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#addTransformer(java.lang.instrument.ClassFileTransformer)"/>
@@ -339,7 +339,7 @@ namespace Java.Lang.Instrument
         /// <param name="arg5"><see cref="Java.Util.Map"/></param>
         public void RedefineModule(Java.Lang.Module arg0, Java.Util.Set<Java.Lang.Module> arg1, Java.Util.Map<Java.Lang.String, Java.Util.Set<Java.Lang.Module>> arg2, Java.Util.Map<Java.Lang.String, Java.Util.Set<Java.Lang.Module>> arg3, Java.Util.Set<Java.Lang.Class> arg4, Java.Util.Map<Java.Lang.Class, Java.Util.List<Java.Lang.Class>> arg5)
         {
-            IExecute("redefineModule", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("redefineModule", "(Ljava/lang/Module;Ljava/util/Set;Ljava/util/Map;Ljava/util/Map;Ljava/util/Set;Ljava/util/Map;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#retransformClasses(java.lang.Class[])"/>
@@ -357,7 +357,7 @@ namespace Java.Lang.Instrument
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetNativeMethodPrefix(Java.Lang.Instrument.ClassFileTransformer arg0, Java.Lang.String arg1)
         {
-            IExecute("setNativeMethodPrefix", arg0, arg1);
+            IExecuteWithSignature("setNativeMethodPrefix", "(Ljava/lang/instrument/ClassFileTransformer;Ljava/lang/String;)V", arg0, arg1);
         }
 
         #endregion

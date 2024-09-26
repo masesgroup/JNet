@@ -107,7 +107,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="float"/></returns>
         public float GetAdvanceBetween(int arg0, int arg1)
         {
-            return IExecute<float>("getAdvanceBetween", arg0, arg1);
+            return IExecuteWithSignature<float>("getAdvanceBetween", "(II)F", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextMeasurer.html#getLineBreakIndex(int,float)"/>
@@ -117,7 +117,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="int"/></returns>
         public int GetLineBreakIndex(int arg0, float arg1)
         {
-            return IExecute<int>("getLineBreakIndex", arg0, arg1);
+            return IExecuteWithSignature<int>("getLineBreakIndex", "(IF)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextMeasurer.html#getLayout(int,int)"/>
@@ -127,7 +127,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="Java.Awt.FontNs.TextLayout"/></returns>
         public Java.Awt.FontNs.TextLayout GetLayout(int arg0, int arg1)
         {
-            return IExecute<Java.Awt.FontNs.TextLayout>("getLayout", arg0, arg1);
+            return IExecuteWithSignature<Java.Awt.FontNs.TextLayout>("getLayout", "(II)Ljava/awt/font/TextLayout;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextMeasurer.html#deleteChar(java.text.AttributedCharacterIterator,int)"/>
@@ -136,7 +136,7 @@ namespace Java.Awt.FontNs
         /// <param name="arg1"><see cref="int"/></param>
         public void DeleteChar(Java.Text.AttributedCharacterIterator arg0, int arg1)
         {
-            IExecute("deleteChar", arg0, arg1);
+            IExecuteWithSignature("deleteChar", "(Ljava/text/AttributedCharacterIterator;I)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/TextMeasurer.html#insertChar(java.text.AttributedCharacterIterator,int)"/>
@@ -145,7 +145,7 @@ namespace Java.Awt.FontNs
         /// <param name="arg1"><see cref="int"/></param>
         public void InsertChar(Java.Text.AttributedCharacterIterator arg0, int arg1)
         {
-            IExecute("insertChar", arg0, arg1);
+            IExecuteWithSignature("insertChar", "(Ljava/text/AttributedCharacterIterator;I)V", arg0, arg1);
         }
 
         #endregion

@@ -169,7 +169,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.ReflectionException"/>
         public object Invoke(Java.Lang.String arg0, object[] arg1, Java.Lang.String[] arg2)
         {
-            return IExecute("invoke", arg0, arg1, arg2);
+            return IExecuteWithSignature("invoke", "(Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#getAttributes(java.lang.String[])"/>
@@ -198,7 +198,7 @@ namespace Javax.Management
         /// <exception cref="Java.Lang.Exception"/>
         public Javax.Management.ObjectName PreRegister(Javax.Management.MBeanServer arg0, Javax.Management.ObjectName arg1)
         {
-            return IExecute<Javax.Management.ObjectName>("preRegister", arg0, arg1);
+            return IExecuteWithSignature<Javax.Management.ObjectName>("preRegister", "(Ljavax/management/MBeanServer;Ljavax/management/ObjectName;)Ljavax/management/ObjectName;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/StandardMBean.html#postDeregister()"/>

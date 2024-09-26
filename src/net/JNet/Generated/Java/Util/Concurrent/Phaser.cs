@@ -209,7 +209,7 @@ namespace Java.Util.Concurrent
         /// <exception cref="Java.Util.Concurrent.TimeoutException"/>
         public int AwaitAdvanceInterruptibly(int arg0, long arg1, Java.Util.Concurrent.TimeUnit arg2)
         {
-            return IExecute<int>("awaitAdvanceInterruptibly", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("awaitAdvanceInterruptibly", "(IJLjava/util/concurrent/TimeUnit;)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Phaser.html#awaitAdvanceInterruptibly(int)"/>

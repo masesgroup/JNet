@@ -317,7 +317,7 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendBinary(Java.Nio.ByteBuffer arg0, bool arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendBinary", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendBinary", "(Ljava/nio/ByteBuffer;Z)Ljava/util/concurrent/CompletableFuture;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendClose(int,java.lang.String)"/>
@@ -327,7 +327,7 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendClose(int arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendClose", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendClose", "(ILjava/lang/String;)Ljava/util/concurrent/CompletableFuture;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#sendPing(java.nio.ByteBuffer)"/>
@@ -355,7 +355,7 @@ namespace Java.Net.Http
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> SendText(Java.Lang.CharSequence arg0, bool arg1)
         {
-            return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendText", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("sendText", "(Ljava/lang/CharSequence;Z)Ljava/util/concurrent/CompletableFuture;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html#abort()"/>
@@ -413,7 +413,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.WebSocket.Builder"/></returns>
             public Java.Net.Http.WebSocket.Builder Header(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecute<Java.Net.Http.WebSocket.Builder>("header", arg0, arg1);
+                return IExecuteWithSignature<Java.Net.Http.WebSocket.Builder>("header", "(Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/WebSocket$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#subprotocols(java.lang.String,java.lang.String[])"/>
@@ -423,7 +423,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.WebSocket.Builder"/></returns>
             public Java.Net.Http.WebSocket.Builder Subprotocols(Java.Lang.String arg0, params Java.Lang.String[] arg1)
             {
-                if (arg1.Length == 0) return IExecute<Java.Net.Http.WebSocket.Builder>("subprotocols", arg0); else return IExecute<Java.Net.Http.WebSocket.Builder>("subprotocols", arg0, arg1);
+                if (arg1.Length == 0) return IExecuteWithSignature<Java.Net.Http.WebSocket.Builder>("subprotocols", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/net/http/WebSocket$Builder;", arg0); else return IExecuteWithSignature<Java.Net.Http.WebSocket.Builder>("subprotocols", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/net/http/WebSocket$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#buildAsync(java.net.URI,java.net.http.WebSocket.Listener)"/>
@@ -433,7 +433,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
             public Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket> BuildAsync(Java.Net.URI arg0, Java.Net.Http.WebSocket.Listener arg1)
             {
-                return IExecute<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("buildAsync", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Net.Http.WebSocket>>("buildAsync", "(Ljava/net/URI;Ljava/net/http/WebSocket$Listener;)Ljava/util/concurrent/CompletableFuture;", arg0, arg1);
             }
 
             #endregion
@@ -490,7 +490,7 @@ namespace Java.Net.Http
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public Java.Util.Concurrent.CompletionStage<object> OnBinaryDefault(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1, bool arg2)
             {
-                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onBinaryDefault", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onBinaryDefault", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;Z)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
             }
 
             /// <summary>
@@ -530,7 +530,7 @@ namespace Java.Net.Http
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public Java.Util.Concurrent.CompletionStage<object> OnCloseDefault(Java.Net.Http.WebSocket arg0, int arg1, Java.Lang.String arg2)
             {
-                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onCloseDefault", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onCloseDefault", "(Ljava/net/http/WebSocket;ILjava/lang/String;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
             }
 
             /// <summary>
@@ -569,7 +569,7 @@ namespace Java.Net.Http
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public Java.Util.Concurrent.CompletionStage<object> OnPingDefault(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
-                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onPingDefault", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onPingDefault", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
             }
 
             /// <summary>
@@ -607,7 +607,7 @@ namespace Java.Net.Http
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public Java.Util.Concurrent.CompletionStage<object> OnPongDefault(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
-                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onPongDefault", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onPongDefault", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
             }
 
             /// <summary>
@@ -646,7 +646,7 @@ namespace Java.Net.Http
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public Java.Util.Concurrent.CompletionStage<object> OnTextDefault(Java.Net.Http.WebSocket arg0, Java.Lang.CharSequence arg1, bool arg2)
             {
-                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onTextDefault", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onTextDefault", "(Ljava/net/http/WebSocket;Ljava/lang/CharSequence;Z)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
             }
 
             /// <summary>
@@ -684,7 +684,7 @@ namespace Java.Net.Http
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public void OnErrorDefault(Java.Net.Http.WebSocket arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
             {
-                IExecute("onErrorDefault", arg0, arg1);
+                IExecuteWithSignature("onErrorDefault", "(Ljava/net/http/WebSocket;Ljava/lang/Throwable;)V", arg0, arg1);
             }
 
             /// <summary>
@@ -786,7 +786,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
             public override Java.Util.Concurrent.CompletionStage<object> OnBinary(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1, bool arg2)
             {
-                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onBinary", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onBinary", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;Z)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onClose(java.net.http.WebSocket,int,java.lang.String)"/>
@@ -797,7 +797,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
             public override Java.Util.Concurrent.CompletionStage<object> OnClose(Java.Net.Http.WebSocket arg0, int arg1, Java.Lang.String arg2)
             {
-                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onClose", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onClose", "(Ljava/net/http/WebSocket;ILjava/lang/String;)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPing(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
@@ -807,7 +807,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
             public override Java.Util.Concurrent.CompletionStage<object> OnPing(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
-                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onPing", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onPing", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onPong(java.net.http.WebSocket,java.nio.ByteBuffer)"/>
@@ -817,7 +817,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
             public override Java.Util.Concurrent.CompletionStage<object> OnPong(Java.Net.Http.WebSocket arg0, Java.Nio.ByteBuffer arg1)
             {
-                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onPong", arg0, arg1);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onPong", "(Ljava/net/http/WebSocket;Ljava/nio/ByteBuffer;)Ljava/util/concurrent/CompletionStage;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onText(java.net.http.WebSocket,java.lang.CharSequence,boolean)"/>
@@ -828,7 +828,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
             public override Java.Util.Concurrent.CompletionStage<object> OnText(Java.Net.Http.WebSocket arg0, Java.Lang.CharSequence arg1, bool arg2)
             {
-                return IExecute<Java.Util.Concurrent.CompletionStage<object>>("onText", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<object>>("onText", "(Ljava/net/http/WebSocket;Ljava/lang/CharSequence;Z)Ljava/util/concurrent/CompletionStage;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onError(java.net.http.WebSocket,java.lang.Throwable)"/>
@@ -837,7 +837,7 @@ namespace Java.Net.Http
             /// <param name="arg1"><see cref="Java.Lang.Throwable"/></param>
             public override void OnError(Java.Net.Http.WebSocket arg0, MASES.JCOBridge.C2JBridge.JVMBridgeException arg1)
             {
-                IExecute("onError", arg0, arg1);
+                IExecuteWithSignature("onError", "(Ljava/net/http/WebSocket;Ljava/lang/Throwable;)V", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Listener.html#onOpen(java.net.http.WebSocket)"/>

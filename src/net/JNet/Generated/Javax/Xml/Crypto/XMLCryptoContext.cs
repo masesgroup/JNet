@@ -220,7 +220,7 @@ namespace Javax.Xml.Crypto
         /// <returns><see cref="object"/></returns>
         public object Put(object arg0, object arg1)
         {
-            return IExecute("put", arg0, arg1);
+            return IExecuteWithSignature("put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#setProperty(java.lang.String,java.lang.Object)"/>
@@ -230,7 +230,7 @@ namespace Javax.Xml.Crypto
         /// <returns><see cref="object"/></returns>
         public object SetProperty(Java.Lang.String arg0, object arg1)
         {
-            return IExecute("setProperty", arg0, arg1);
+            return IExecuteWithSignature("setProperty", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#getNamespacePrefix(java.lang.String,java.lang.String)"/>
@@ -240,7 +240,7 @@ namespace Javax.Xml.Crypto
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String GetNamespacePrefix(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("getNamespacePrefix", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("getNamespacePrefix", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/XMLCryptoContext.html#putNamespacePrefix(java.lang.String,java.lang.String)"/>
@@ -250,7 +250,7 @@ namespace Javax.Xml.Crypto
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String PutNamespacePrefix(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.String>("putNamespacePrefix", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.String>("putNamespacePrefix", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", arg0, arg1);
         }
 
         #endregion

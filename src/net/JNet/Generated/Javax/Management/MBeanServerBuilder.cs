@@ -99,7 +99,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.MBeanServer"/></returns>
         public Javax.Management.MBeanServer NewMBeanServer(Java.Lang.String arg0, Javax.Management.MBeanServer arg1, Javax.Management.MBeanServerDelegate arg2)
         {
-            return IExecute<Javax.Management.MBeanServer>("newMBeanServer", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Management.MBeanServer>("newMBeanServer", "(Ljava/lang/String;Ljavax/management/MBeanServer;Ljavax/management/MBeanServerDelegate;)Ljavax/management/MBeanServer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServerBuilder.html#newMBeanServerDelegate()"/>

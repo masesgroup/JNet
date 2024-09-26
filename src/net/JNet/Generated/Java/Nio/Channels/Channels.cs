@@ -130,7 +130,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.Reader"/></returns>
         public static Java.Io.Reader NewReader(Java.Nio.Channels.ReadableByteChannel arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Io.Reader>(LocalBridgeClazz, "newReader", arg0, arg1);
+            return SExecuteWithSignature<Java.Io.Reader>(LocalBridgeClazz, "newReader", "(Ljava/nio/channels/ReadableByteChannel;Ljava/lang/String;)Ljava/io/Reader;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.nio.charset.Charset)"/>
@@ -140,7 +140,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.Reader"/></returns>
         public static Java.Io.Reader NewReader(Java.Nio.Channels.ReadableByteChannel arg0, Java.Nio.Charset.Charset arg1)
         {
-            return SExecute<Java.Io.Reader>(LocalBridgeClazz, "newReader", arg0, arg1);
+            return SExecuteWithSignature<Java.Io.Reader>(LocalBridgeClazz, "newReader", "(Ljava/nio/channels/ReadableByteChannel;Ljava/nio/charset/Charset;)Ljava/io/Reader;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newReader(java.nio.channels.ReadableByteChannel,java.nio.charset.CharsetDecoder,int)"/>
@@ -151,7 +151,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.Reader"/></returns>
         public static Java.Io.Reader NewReader(Java.Nio.Channels.ReadableByteChannel arg0, Java.Nio.Charset.CharsetDecoder arg1, int arg2)
         {
-            return SExecute<Java.Io.Reader>(LocalBridgeClazz, "newReader", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Io.Reader>(LocalBridgeClazz, "newReader", "(Ljava/nio/channels/ReadableByteChannel;Ljava/nio/charset/CharsetDecoder;I)Ljava/io/Reader;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.lang.String)"/>
@@ -161,7 +161,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.Writer"/></returns>
         public static Java.Io.Writer NewWriter(Java.Nio.Channels.WritableByteChannel arg0, Java.Lang.String arg1)
         {
-            return SExecute<Java.Io.Writer>(LocalBridgeClazz, "newWriter", arg0, arg1);
+            return SExecuteWithSignature<Java.Io.Writer>(LocalBridgeClazz, "newWriter", "(Ljava/nio/channels/WritableByteChannel;Ljava/lang/String;)Ljava/io/Writer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.nio.charset.Charset)"/>
@@ -171,7 +171,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.Writer"/></returns>
         public static Java.Io.Writer NewWriter(Java.Nio.Channels.WritableByteChannel arg0, Java.Nio.Charset.Charset arg1)
         {
-            return SExecute<Java.Io.Writer>(LocalBridgeClazz, "newWriter", arg0, arg1);
+            return SExecuteWithSignature<Java.Io.Writer>(LocalBridgeClazz, "newWriter", "(Ljava/nio/channels/WritableByteChannel;Ljava/nio/charset/Charset;)Ljava/io/Writer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newWriter(java.nio.channels.WritableByteChannel,java.nio.charset.CharsetEncoder,int)"/>
@@ -182,7 +182,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="Java.Io.Writer"/></returns>
         public static Java.Io.Writer NewWriter(Java.Nio.Channels.WritableByteChannel arg0, Java.Nio.Charset.CharsetEncoder arg1, int arg2)
         {
-            return SExecute<Java.Io.Writer>(LocalBridgeClazz, "newWriter", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Io.Writer>(LocalBridgeClazz, "newWriter", "(Ljava/nio/channels/WritableByteChannel;Ljava/nio/charset/CharsetEncoder;I)Ljava/io/Writer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/Channels.html#newChannel(java.io.InputStream)"/>

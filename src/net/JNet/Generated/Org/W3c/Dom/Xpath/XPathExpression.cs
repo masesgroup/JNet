@@ -131,7 +131,7 @@ namespace Org.W3c.Dom.Xpath
         /// <exception cref="Org.W3c.Dom.DOMException"/>
         public object Evaluate(Org.W3c.Dom.Node arg0, short arg1, object arg2)
         {
-            return IExecute("evaluate", arg0, arg1, arg2);
+            return IExecuteWithSignature("evaluate", "(Lorg/w3c/dom/Node;SLjava/lang/Object;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
 
         #endregion

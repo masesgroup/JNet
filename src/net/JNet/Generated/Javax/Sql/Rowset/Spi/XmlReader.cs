@@ -125,7 +125,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <exception cref="Java.Sql.SQLException"/>
         public void ReadXML(Javax.Sql.Rowset.WebRowSet arg0, Java.Io.Reader arg1)
         {
-            IExecute("readXML", arg0, arg1);
+            IExecuteWithSignature("readXML", "(Ljavax/sql/rowset/WebRowSet;Ljava/io/Reader;)V", arg0, arg1);
         }
 
         #endregion

@@ -194,7 +194,7 @@ namespace Java.Awt.Datatransfer
         /// <param name="arg1"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
         public void AddFlavorForUnencodedNative(Java.Lang.String arg0, Java.Awt.Datatransfer.DataFlavor arg1)
         {
-            IExecute("addFlavorForUnencodedNative", arg0, arg1);
+            IExecuteWithSignature("addFlavorForUnencodedNative", "(Ljava/lang/String;Ljava/awt/datatransfer/DataFlavor;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#addUnencodedNativeForFlavor(java.awt.datatransfer.DataFlavor,java.lang.String)"/>
@@ -203,7 +203,7 @@ namespace Java.Awt.Datatransfer
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void AddUnencodedNativeForFlavor(Java.Awt.Datatransfer.DataFlavor arg0, Java.Lang.String arg1)
         {
-            IExecute("addUnencodedNativeForFlavor", arg0, arg1);
+            IExecuteWithSignature("addUnencodedNativeForFlavor", "(Ljava/awt/datatransfer/DataFlavor;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#setFlavorsForNative(java.lang.String,java.awt.datatransfer.DataFlavor[])"/>
@@ -212,7 +212,7 @@ namespace Java.Awt.Datatransfer
         /// <param name="arg1"><see cref="Java.Awt.Datatransfer.DataFlavor"/></param>
         public void SetFlavorsForNative(Java.Lang.String arg0, Java.Awt.Datatransfer.DataFlavor[] arg1)
         {
-            IExecute("setFlavorsForNative", arg0, arg1);
+            IExecuteWithSignature("setFlavorsForNative", "(Ljava/lang/String;[Ljava/awt/datatransfer/DataFlavor;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/SystemFlavorMap.html#setNativesForFlavor(java.awt.datatransfer.DataFlavor,java.lang.String[])"/>
@@ -221,7 +221,7 @@ namespace Java.Awt.Datatransfer
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         public void SetNativesForFlavor(Java.Awt.Datatransfer.DataFlavor arg0, Java.Lang.String[] arg1)
         {
-            IExecute("setNativesForFlavor", arg0, arg1);
+            IExecuteWithSignature("setNativesForFlavor", "(Ljava/awt/datatransfer/DataFlavor;[Ljava/lang/String;)V", arg0, arg1);
         }
 
         #endregion

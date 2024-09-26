@@ -375,7 +375,7 @@ namespace Javax.Print.Attribute.Standard
         /// <returns><see cref="Javax.Print.Attribute.Standard.MediaSizeName"/></returns>
         public static Javax.Print.Attribute.Standard.MediaSizeName FindMedia(float arg0, float arg1, int arg2)
         {
-            return SExecute<Javax.Print.Attribute.Standard.MediaSizeName>(LocalBridgeClazz, "findMedia", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Print.Attribute.Standard.MediaSizeName>(LocalBridgeClazz, "findMedia", "(FFI)Ljavax/print/attribute/standard/MediaSizeName;", arg0, arg1, arg2);
         }
 
         #endregion

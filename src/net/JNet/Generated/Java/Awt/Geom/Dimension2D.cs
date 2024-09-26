@@ -113,7 +113,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="double"/></param>
         public void SetSize(double arg0, double arg1)
         {
-            IExecute("setSize", arg0, arg1);
+            IExecuteWithSignature("setSize", "(DD)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Dimension2D.html#setSize(java.awt.geom.Dimension2D)"/>

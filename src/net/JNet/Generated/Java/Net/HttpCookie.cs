@@ -103,7 +103,7 @@ namespace Java.Net
         /// <returns><see cref="bool"/></returns>
         public static bool DomainMatches(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "domainMatches", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "domainMatches", "(Ljava/lang/String;Ljava/lang/String;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/HttpCookie.html#parse(java.lang.String)"/>

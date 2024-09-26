@@ -234,7 +234,7 @@ namespace Java.Util.Zip
         /// <returns><see cref="int"/></returns>
         public int Deflate(byte[] arg0, int arg1, int arg2, int arg3)
         {
-            return IExecute<int>("deflate", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("deflate", "([BIII)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#deflate(byte[],int,int)"/>
@@ -245,7 +245,7 @@ namespace Java.Util.Zip
         /// <returns><see cref="int"/></returns>
         public int Deflate(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("deflate", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("deflate", "([BII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#deflate(byte[])"/>
@@ -264,7 +264,7 @@ namespace Java.Util.Zip
         /// <returns><see cref="int"/></returns>
         public int Deflate(Java.Nio.ByteBuffer arg0, int arg1)
         {
-            return IExecute<int>("deflate", arg0, arg1);
+            return IExecuteWithSignature<int>("deflate", "(Ljava/nio/ByteBuffer;I)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#deflate(java.nio.ByteBuffer)"/>
@@ -304,7 +304,7 @@ namespace Java.Util.Zip
         /// <param name="arg2"><see cref="int"/></param>
         public void SetDictionary(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("setDictionary", arg0, arg1, arg2);
+            IExecuteWithSignature("setDictionary", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setDictionary(byte[])"/>
@@ -330,7 +330,7 @@ namespace Java.Util.Zip
         /// <param name="arg2"><see cref="int"/></param>
         public void SetInput(byte[] arg0, int arg1, int arg2)
         {
-            IExecute("setInput", arg0, arg1, arg2);
+            IExecuteWithSignature("setInput", "([BII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/zip/Deflater.html#setInput(byte[])"/>

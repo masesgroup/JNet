@@ -310,7 +310,7 @@ namespace Javax.Management.Timer
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public Java.Lang.Integer AddNotification(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5, bool arg6)
         {
-            return IExecute<Java.Lang.Integer>("addNotification", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return IExecuteWithSignature<Java.Lang.Integer>("addNotification", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/util/Date;JJZ)Ljava/lang/Integer;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long,long)"/>
@@ -325,7 +325,7 @@ namespace Javax.Management.Timer
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public Java.Lang.Integer AddNotification(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Java.Util.Date arg3, long arg4, long arg5)
         {
-            return IExecute<Java.Lang.Integer>("addNotification", arg0, arg1, arg2, arg3, arg4, arg5);
+            return IExecuteWithSignature<Java.Lang.Integer>("addNotification", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/util/Date;JJ)Ljava/lang/Integer;", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date,long)"/>
@@ -339,7 +339,7 @@ namespace Javax.Management.Timer
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public Java.Lang.Integer AddNotification(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Java.Util.Date arg3, long arg4)
         {
-            return IExecute<Java.Lang.Integer>("addNotification", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Java.Lang.Integer>("addNotification", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/util/Date;J)Ljava/lang/Integer;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#addNotification(java.lang.String,java.lang.String,java.lang.Object,java.util.Date)"/>
@@ -352,7 +352,7 @@ namespace Javax.Management.Timer
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public Java.Lang.Integer AddNotification(Java.Lang.String arg0, Java.Lang.String arg1, object arg2, Java.Util.Date arg3)
         {
-            return IExecute<Java.Lang.Integer>("addNotification", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Lang.Integer>("addNotification", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;Ljava/util/Date;)Ljava/lang/Integer;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/timer/TimerMBean.html#getNbOccurences(java.lang.Integer)"/>

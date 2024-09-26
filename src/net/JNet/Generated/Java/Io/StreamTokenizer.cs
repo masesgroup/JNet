@@ -190,7 +190,7 @@ namespace Java.Io
         /// <param name="arg1"><see cref="int"/></param>
         public void OrdinaryChars(int arg0, int arg1)
         {
-            IExecute("ordinaryChars", arg0, arg1);
+            IExecuteWithSignature("ordinaryChars", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#parseNumbers()"/>
@@ -244,7 +244,7 @@ namespace Java.Io
         /// <param name="arg1"><see cref="int"/></param>
         public void WhitespaceChars(int arg0, int arg1)
         {
-            IExecute("whitespaceChars", arg0, arg1);
+            IExecuteWithSignature("whitespaceChars", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/StreamTokenizer.html#wordChars(int,int)"/>
@@ -253,7 +253,7 @@ namespace Java.Io
         /// <param name="arg1"><see cref="int"/></param>
         public void WordChars(int arg0, int arg1)
         {
-            IExecute("wordChars", arg0, arg1);
+            IExecuteWithSignature("wordChars", "(II)V", arg0, arg1);
         }
 
         #endregion

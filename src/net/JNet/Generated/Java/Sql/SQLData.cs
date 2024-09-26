@@ -142,7 +142,7 @@ namespace Java.Sql
         /// <exception cref="Java.Sql.SQLException"/>
         public void ReadSQL(Java.Sql.SQLInput arg0, Java.Lang.String arg1)
         {
-            IExecute("readSQL", arg0, arg1);
+            IExecuteWithSignature("readSQL", "(Ljava/sql/SQLInput;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/SQLData.html#writeSQL(java.sql.SQLOutput)"/>

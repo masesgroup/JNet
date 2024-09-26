@@ -120,7 +120,7 @@ namespace Java.Beans
         /// <exception cref="Java.Beans.IntrospectionException"/>
         public static Java.Beans.BeanInfo GetBeanInfo(Java.Lang.Class arg0, int arg1)
         {
-            return SExecute<Java.Beans.BeanInfo>(LocalBridgeClazz, "getBeanInfo", arg0, arg1);
+            return SExecuteWithSignature<Java.Beans.BeanInfo>(LocalBridgeClazz, "getBeanInfo", "(Ljava/lang/Class;I)Ljava/beans/BeanInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfo(java.lang.Class,java.lang.Class,int)"/>
@@ -132,7 +132,7 @@ namespace Java.Beans
         /// <exception cref="Java.Beans.IntrospectionException"/>
         public static Java.Beans.BeanInfo GetBeanInfo(Java.Lang.Class arg0, Java.Lang.Class arg1, int arg2)
         {
-            return SExecute<Java.Beans.BeanInfo>(LocalBridgeClazz, "getBeanInfo", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Beans.BeanInfo>(LocalBridgeClazz, "getBeanInfo", "(Ljava/lang/Class;Ljava/lang/Class;I)Ljava/beans/BeanInfo;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfo(java.lang.Class,java.lang.Class)"/>
@@ -143,7 +143,7 @@ namespace Java.Beans
         /// <exception cref="Java.Beans.IntrospectionException"/>
         public static Java.Beans.BeanInfo GetBeanInfo(Java.Lang.Class arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Beans.BeanInfo>(LocalBridgeClazz, "getBeanInfo", arg0, arg1);
+            return SExecuteWithSignature<Java.Beans.BeanInfo>(LocalBridgeClazz, "getBeanInfo", "(Ljava/lang/Class;Ljava/lang/Class;)Ljava/beans/BeanInfo;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Introspector.html#getBeanInfo(java.lang.Class)"/>

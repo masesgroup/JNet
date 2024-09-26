@@ -94,7 +94,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public static bool IsDescendingFrom(Java.Awt.Component arg0, Java.Awt.Component arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isDescendingFrom", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isDescendingFrom", "(Ljava/awt/Component;Ljava/awt/Component;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#isEventDispatchThread()"/>
@@ -142,7 +142,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public static bool NotifyAction(Javax.Swing.Action arg0, Javax.Swing.KeyStroke arg1, Java.Awt.EventNs.KeyEvent arg2, object arg3, int arg4)
         {
-            return SExecute<bool>(LocalBridgeClazz, "notifyAction", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "notifyAction", "(Ljavax/swing/Action;Ljavax/swing/KeyStroke;Ljava/awt/event/KeyEvent;Ljava/lang/Object;I)Z", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#processKeyBindings(java.awt.event.KeyEvent)"/>
@@ -161,7 +161,7 @@ namespace Javax.Swing
         /// <returns><see cref="bool"/></returns>
         public static bool IsRectangleContainingRectangle(Java.Awt.Rectangle arg0, Java.Awt.Rectangle arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "isRectangleContainingRectangle", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "isRectangleContainingRectangle", "(Ljava/awt/Rectangle;Ljava/awt/Rectangle;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#computeStringWidth(java.awt.FontMetrics,java.lang.String)"/>
@@ -171,7 +171,7 @@ namespace Javax.Swing
         /// <returns><see cref="int"/></returns>
         public static int ComputeStringWidth(Java.Awt.FontMetrics arg0, Java.Lang.String arg1)
         {
-            return SExecute<int>(LocalBridgeClazz, "computeStringWidth", arg0, arg1);
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "computeStringWidth", "(Ljava/awt/FontMetrics;Ljava/lang/String;)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleChildrenCount(java.awt.Component)"/>
@@ -200,7 +200,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Component"/></returns>
         public static Java.Awt.Component GetDeepestComponentAt(Java.Awt.Component arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Awt.Component>(LocalBridgeClazz, "getDeepestComponentAt", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Awt.Component>(LocalBridgeClazz, "getDeepestComponentAt", "(Ljava/awt/Component;II)Ljava/awt/Component;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getRoot(java.awt.Component)"/>
@@ -228,7 +228,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Container"/></returns>
         public static Java.Awt.Container GetAncestorNamed(Java.Lang.String arg0, Java.Awt.Component arg1)
         {
-            return SExecute<Java.Awt.Container>(LocalBridgeClazz, "getAncestorNamed", arg0, arg1);
+            return SExecuteWithSignature<Java.Awt.Container>(LocalBridgeClazz, "getAncestorNamed", "(Ljava/lang/String;Ljava/awt/Component;)Ljava/awt/Container;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAncestorOfClass(java.lang.Class,java.awt.Component)"/>
@@ -238,7 +238,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Container"/></returns>
         public static Java.Awt.Container GetAncestorOfClass(Java.Lang.Class arg0, Java.Awt.Component arg1)
         {
-            return SExecute<Java.Awt.Container>(LocalBridgeClazz, "getAncestorOfClass", arg0, arg1);
+            return SExecuteWithSignature<Java.Awt.Container>(LocalBridgeClazz, "getAncestorOfClass", "(Ljava/lang/Class;Ljava/awt/Component;)Ljava/awt/Container;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getUnwrappedParent(java.awt.Component)"/>
@@ -258,7 +258,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.EventNs.MouseEvent"/></returns>
         public static Java.Awt.EventNs.MouseEvent ConvertMouseEvent(Java.Awt.Component arg0, Java.Awt.EventNs.MouseEvent arg1, Java.Awt.Component arg2)
         {
-            return SExecute<Java.Awt.EventNs.MouseEvent>(LocalBridgeClazz, "convertMouseEvent", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Awt.EventNs.MouseEvent>(LocalBridgeClazz, "convertMouseEvent", "(Ljava/awt/Component;Ljava/awt/event/MouseEvent;Ljava/awt/Component;)Ljava/awt/event/MouseEvent;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertPoint(java.awt.Component,int,int,java.awt.Component)"/>
@@ -270,7 +270,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Point"/></returns>
         public static Java.Awt.Point ConvertPoint(Java.Awt.Component arg0, int arg1, int arg2, Java.Awt.Component arg3)
         {
-            return SExecute<Java.Awt.Point>(LocalBridgeClazz, "convertPoint", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Awt.Point>(LocalBridgeClazz, "convertPoint", "(Ljava/awt/Component;IILjava/awt/Component;)Ljava/awt/Point;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertPoint(java.awt.Component,java.awt.Point,java.awt.Component)"/>
@@ -281,7 +281,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Point"/></returns>
         public static Java.Awt.Point ConvertPoint(Java.Awt.Component arg0, Java.Awt.Point arg1, Java.Awt.Component arg2)
         {
-            return SExecute<Java.Awt.Point>(LocalBridgeClazz, "convertPoint", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Awt.Point>(LocalBridgeClazz, "convertPoint", "(Ljava/awt/Component;Ljava/awt/Point;Ljava/awt/Component;)Ljava/awt/Point;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#calculateInnerArea(javax.swing.JComponent,java.awt.Rectangle)"/>
@@ -291,7 +291,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public static Java.Awt.Rectangle CalculateInnerArea(Javax.Swing.JComponent arg0, Java.Awt.Rectangle arg1)
         {
-            return SExecute<Java.Awt.Rectangle>(LocalBridgeClazz, "calculateInnerArea", arg0, arg1);
+            return SExecuteWithSignature<Java.Awt.Rectangle>(LocalBridgeClazz, "calculateInnerArea", "(Ljavax/swing/JComponent;Ljava/awt/Rectangle;)Ljava/awt/Rectangle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#computeIntersection(int,int,int,int,java.awt.Rectangle)"/>
@@ -304,7 +304,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public static Java.Awt.Rectangle ComputeIntersection(int arg0, int arg1, int arg2, int arg3, Java.Awt.Rectangle arg4)
         {
-            return SExecute<Java.Awt.Rectangle>(LocalBridgeClazz, "computeIntersection", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Awt.Rectangle>(LocalBridgeClazz, "computeIntersection", "(IIIILjava/awt/Rectangle;)Ljava/awt/Rectangle;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#computeUnion(int,int,int,int,java.awt.Rectangle)"/>
@@ -317,7 +317,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public static Java.Awt.Rectangle ComputeUnion(int arg0, int arg1, int arg2, int arg3, Java.Awt.Rectangle arg4)
         {
-            return SExecute<Java.Awt.Rectangle>(LocalBridgeClazz, "computeUnion", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Awt.Rectangle>(LocalBridgeClazz, "computeUnion", "(IIIILjava/awt/Rectangle;)Ljava/awt/Rectangle;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertRectangle(java.awt.Component,java.awt.Rectangle,java.awt.Component)"/>
@@ -328,7 +328,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public static Java.Awt.Rectangle ConvertRectangle(Java.Awt.Component arg0, Java.Awt.Rectangle arg1, Java.Awt.Component arg2)
         {
-            return SExecute<Java.Awt.Rectangle>(LocalBridgeClazz, "convertRectangle", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Awt.Rectangle>(LocalBridgeClazz, "convertRectangle", "(Ljava/awt/Component;Ljava/awt/Rectangle;Ljava/awt/Component;)Ljava/awt/Rectangle;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getLocalBounds(java.awt.Component)"/>
@@ -347,7 +347,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Awt.Rectangle"/></returns>
         public static Java.Awt.Rectangle[] ComputeDifference(Java.Awt.Rectangle arg0, Java.Awt.Rectangle arg1)
         {
-            return SExecuteArray<Java.Awt.Rectangle>(LocalBridgeClazz, "computeDifference", arg0, arg1);
+            return SExecuteWithSignatureArray<Java.Awt.Rectangle>(LocalBridgeClazz, "computeDifference", "(Ljava/awt/Rectangle;Ljava/awt/Rectangle;)[Ljava/awt/Rectangle;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getWindowAncestor(java.awt.Component)"/>
@@ -384,7 +384,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String LayoutCompoundLabel(Java.Awt.FontMetrics arg0, Java.Lang.String arg1, Javax.Swing.Icon arg2, int arg3, int arg4, int arg5, int arg6, Java.Awt.Rectangle arg7, Java.Awt.Rectangle arg8, Java.Awt.Rectangle arg9, int arg10)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "layoutCompoundLabel", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "layoutCompoundLabel", "(Ljava/awt/FontMetrics;Ljava/lang/String;Ljavax/swing/Icon;IIIILjava/awt/Rectangle;Ljava/awt/Rectangle;Ljava/awt/Rectangle;I)Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#layoutCompoundLabel(javax.swing.JComponent,java.awt.FontMetrics,java.lang.String,javax.swing.Icon,int,int,int,int,java.awt.Rectangle,java.awt.Rectangle,java.awt.Rectangle,int)"/>
@@ -404,7 +404,7 @@ namespace Javax.Swing
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String LayoutCompoundLabel(Javax.Swing.JComponent arg0, Java.Awt.FontMetrics arg1, Java.Lang.String arg2, Javax.Swing.Icon arg3, int arg4, int arg5, int arg6, int arg7, Java.Awt.Rectangle arg8, Java.Awt.Rectangle arg9, Java.Awt.Rectangle arg10, int arg11)
         {
-            return SExecute<Java.Lang.String>(LocalBridgeClazz, "layoutCompoundLabel", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "layoutCompoundLabel", "(Ljavax/swing/JComponent;Ljava/awt/FontMetrics;Ljava/lang/String;Ljavax/swing/Icon;IIIILjava/awt/Rectangle;Ljava/awt/Rectangle;Ljava/awt/Rectangle;I)Ljava/lang/String;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleAt(java.awt.Component,java.awt.Point)"/>
@@ -414,7 +414,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
         public static Javax.Accessibility.Accessible GetAccessibleAt(Java.Awt.Component arg0, Java.Awt.Point arg1)
         {
-            return SExecute<Javax.Accessibility.Accessible>(LocalBridgeClazz, "getAccessibleAt", arg0, arg1);
+            return SExecuteWithSignature<Javax.Accessibility.Accessible>(LocalBridgeClazz, "getAccessibleAt", "(Ljava/awt/Component;Ljava/awt/Point;)Ljavax/accessibility/Accessible;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleChild(java.awt.Component,int)"/>
@@ -424,7 +424,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Accessibility.Accessible"/></returns>
         public static Javax.Accessibility.Accessible GetAccessibleChild(Java.Awt.Component arg0, int arg1)
         {
-            return SExecute<Javax.Accessibility.Accessible>(LocalBridgeClazz, "getAccessibleChild", arg0, arg1);
+            return SExecuteWithSignature<Javax.Accessibility.Accessible>(LocalBridgeClazz, "getAccessibleChild", "(Ljava/awt/Component;I)Ljavax/accessibility/Accessible;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getAccessibleStateSet(java.awt.Component)"/>
@@ -452,7 +452,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.InputMap"/></returns>
         public static Javax.Swing.InputMap GetUIInputMap(Javax.Swing.JComponent arg0, int arg1)
         {
-            return SExecute<Javax.Swing.InputMap>(LocalBridgeClazz, "getUIInputMap", arg0, arg1);
+            return SExecuteWithSignature<Javax.Swing.InputMap>(LocalBridgeClazz, "getUIInputMap", "(Ljavax/swing/JComponent;I)Ljavax/swing/InputMap;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#getRootPane(java.awt.Component)"/>
@@ -470,7 +470,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public static void ConvertPointFromScreen(Java.Awt.Point arg0, Java.Awt.Component arg1)
         {
-            SExecute(LocalBridgeClazz, "convertPointFromScreen", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "convertPointFromScreen", "(Ljava/awt/Point;Ljava/awt/Component;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#convertPointToScreen(java.awt.Point,java.awt.Component)"/>
@@ -479,7 +479,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public static void ConvertPointToScreen(Java.Awt.Point arg0, Java.Awt.Component arg1)
         {
-            SExecute(LocalBridgeClazz, "convertPointToScreen", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "convertPointToScreen", "(Ljava/awt/Point;Ljava/awt/Component;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#invokeAndWait(java.lang.Runnable)"/>
@@ -511,7 +511,7 @@ namespace Javax.Swing
         /// <param name="arg6"><see cref="int"/></param>
         public static void PaintComponent(Java.Awt.Graphics arg0, Java.Awt.Component arg1, Java.Awt.Container arg2, int arg3, int arg4, int arg5, int arg6)
         {
-            SExecute(LocalBridgeClazz, "paintComponent", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            SExecuteWithSignature(LocalBridgeClazz, "paintComponent", "(Ljava/awt/Graphics;Ljava/awt/Component;Ljava/awt/Container;IIII)V", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#paintComponent(java.awt.Graphics,java.awt.Component,java.awt.Container,java.awt.Rectangle)"/>
@@ -522,7 +522,7 @@ namespace Javax.Swing
         /// <param name="arg3"><see cref="Java.Awt.Rectangle"/></param>
         public static void PaintComponent(Java.Awt.Graphics arg0, Java.Awt.Component arg1, Java.Awt.Container arg2, Java.Awt.Rectangle arg3)
         {
-            SExecute(LocalBridgeClazz, "paintComponent", arg0, arg1, arg2, arg3);
+            SExecuteWithSignature(LocalBridgeClazz, "paintComponent", "(Ljava/awt/Graphics;Ljava/awt/Component;Ljava/awt/Container;Ljava/awt/Rectangle;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#replaceUIActionMap(javax.swing.JComponent,javax.swing.ActionMap)"/>
@@ -531,7 +531,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Javax.Swing.ActionMap"/></param>
         public static void ReplaceUIActionMap(Javax.Swing.JComponent arg0, Javax.Swing.ActionMap arg1)
         {
-            SExecute(LocalBridgeClazz, "replaceUIActionMap", arg0, arg1);
+            SExecuteWithSignature(LocalBridgeClazz, "replaceUIActionMap", "(Ljavax/swing/JComponent;Ljavax/swing/ActionMap;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#replaceUIInputMap(javax.swing.JComponent,int,javax.swing.InputMap)"/>
@@ -541,7 +541,7 @@ namespace Javax.Swing
         /// <param name="arg2"><see cref="Javax.Swing.InputMap"/></param>
         public static void ReplaceUIInputMap(Javax.Swing.JComponent arg0, int arg1, Javax.Swing.InputMap arg2)
         {
-            SExecute(LocalBridgeClazz, "replaceUIInputMap", arg0, arg1, arg2);
+            SExecuteWithSignature(LocalBridgeClazz, "replaceUIInputMap", "(Ljavax/swing/JComponent;ILjavax/swing/InputMap;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/SwingUtilities.html#updateComponentTreeUI(java.awt.Component)"/>

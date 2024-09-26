@@ -99,7 +99,7 @@ namespace Java.Beans
         /// <param name="arg1"><see cref="Java.Beans.Encoder"/></param>
         public void WriteObject(object arg0, Java.Beans.Encoder arg1)
         {
-            IExecute("writeObject", arg0, arg1);
+            IExecuteWithSignature("writeObject", "(Ljava/lang/Object;Ljava/beans/Encoder;)V", arg0, arg1);
         }
 
         #endregion

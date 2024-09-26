@@ -372,7 +372,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher FromPublisher<Arg0ExtendsJava_Nio_ByteBuffer>(Java.Util.Concurrent.Flow.Publisher<Arg0ExtendsJava_Nio_ByteBuffer> arg0, long arg1) where Arg0ExtendsJava_Nio_ByteBuffer : Java.Nio.ByteBuffer
             {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalBridgeClazz, "fromPublisher", arg0, arg1);
+                return SExecuteWithSignature<Java.Net.Http.HttpRequest.BodyPublisher>(LocalBridgeClazz, "fromPublisher", "(Ljava/util/concurrent/Flow$Publisher;J)Ljava/net/http/HttpRequest$BodyPublisher;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#fromPublisher(java.util.concurrent.Flow.Publisher)"/>
@@ -401,7 +401,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfByteArray(byte[] arg0, int arg1, int arg2)
             {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalBridgeClazz, "ofByteArray", arg0, arg1, arg2);
+                return SExecuteWithSignature<Java.Net.Http.HttpRequest.BodyPublisher>(LocalBridgeClazz, "ofByteArray", "([BII)Ljava/net/http/HttpRequest$BodyPublisher;", arg0, arg1, arg2);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofByteArray(byte[])"/>
@@ -449,7 +449,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.BodyPublisher"/></returns>
             public static Java.Net.Http.HttpRequest.BodyPublisher OfString(Java.Lang.String arg0, Java.Nio.Charset.Charset arg1)
             {
-                return SExecute<Java.Net.Http.HttpRequest.BodyPublisher>(LocalBridgeClazz, "ofString", arg0, arg1);
+                return SExecuteWithSignature<Java.Net.Http.HttpRequest.BodyPublisher>(LocalBridgeClazz, "ofString", "(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/net/http/HttpRequest$BodyPublisher;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.BodyPublishers.html#ofString(java.lang.String)"/>
@@ -544,7 +544,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder Header(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecute<Java.Net.Http.HttpRequest.Builder>("header", arg0, arg1);
+                return IExecuteWithSignature<Java.Net.Http.HttpRequest.Builder>("header", "(Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/HttpRequest$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#headers(java.lang.String[])"/>
@@ -563,7 +563,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder Method(Java.Lang.String arg0, Java.Net.Http.HttpRequest.BodyPublisher arg1)
             {
-                return IExecute<Java.Net.Http.HttpRequest.Builder>("method", arg0, arg1);
+                return IExecuteWithSignature<Java.Net.Http.HttpRequest.Builder>("method", "(Ljava/lang/String;Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#POST(java.net.http.HttpRequest.BodyPublisher)"/>
@@ -591,7 +591,7 @@ namespace Java.Net.Http
             /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>
             public Java.Net.Http.HttpRequest.Builder SetHeader(Java.Lang.String arg0, Java.Lang.String arg1)
             {
-                return IExecute<Java.Net.Http.HttpRequest.Builder>("setHeader", arg0, arg1);
+                return IExecuteWithSignature<Java.Net.Http.HttpRequest.Builder>("setHeader", "(Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/HttpRequest$Builder;", arg0, arg1);
             }
             /// <summary>
             /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#timeout(java.time.Duration)"/>

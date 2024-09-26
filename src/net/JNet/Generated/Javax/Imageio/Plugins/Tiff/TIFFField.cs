@@ -144,7 +144,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="object"/></returns>
         public static object CreateArrayForType(int arg0, int arg1)
         {
-            return SExecute(LocalBridgeClazz, "createArrayForType", arg0, arg1);
+            return SExecuteWithSignature(LocalBridgeClazz, "createArrayForType", "(II)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/plugins/tiff/TIFFField.html#getTypeName(int)"/>
@@ -163,7 +163,7 @@ namespace Javax.Imageio.Plugins.Tiff
         /// <returns><see cref="Javax.Imageio.Plugins.Tiff.TIFFField"/></returns>
         public static Javax.Imageio.Plugins.Tiff.TIFFField CreateFromMetadataNode(Javax.Imageio.Plugins.Tiff.TIFFTagSet arg0, Org.W3c.Dom.Node arg1)
         {
-            return SExecute<Javax.Imageio.Plugins.Tiff.TIFFField>(LocalBridgeClazz, "createFromMetadataNode", arg0, arg1);
+            return SExecuteWithSignature<Javax.Imageio.Plugins.Tiff.TIFFField>(LocalBridgeClazz, "createFromMetadataNode", "(Ljavax/imageio/plugins/tiff/TIFFTagSet;Lorg/w3c/dom/Node;)Ljavax/imageio/plugins/tiff/TIFFField;", arg0, arg1);
         }
 
         #endregion

@@ -140,7 +140,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader Load(Java.Lang.Class arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", "(Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/ServiceLoader;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.Class)"/>
@@ -159,7 +159,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader Load(Java.Lang.ModuleLayer arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.ServiceLoader>(LocalBridgeClazz, "load", "(Ljava/lang/ModuleLayer;Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#loadInstalled(java.lang.Class)"/>
@@ -236,7 +236,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader<S> Load(Java.Lang.Class arg0, Java.Lang.ClassLoader arg1)
         {
-            return SExecute<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "load", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "load", "(Ljava/lang/Class;Ljava/lang/ClassLoader;)Ljava/util/ServiceLoader;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.Class)"/>
@@ -255,7 +255,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.ServiceLoader"/></returns>
         public static Java.Util.ServiceLoader<S> Load(Java.Lang.ModuleLayer arg0, Java.Lang.Class arg1)
         {
-            return SExecute<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "load", arg0, arg1);
+            return SExecuteWithSignature<Java.Util.ServiceLoader<S>>(LocalBridgeClazz, "load", "(Ljava/lang/ModuleLayer;Ljava/lang/Class;)Ljava/util/ServiceLoader;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ServiceLoader.html#loadInstalled(java.lang.Class)"/>

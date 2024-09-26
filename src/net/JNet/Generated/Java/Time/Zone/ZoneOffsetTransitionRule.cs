@@ -146,7 +146,7 @@ namespace Java.Time.Zone
         /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransitionRule"/></returns>
         public static Java.Time.Zone.ZoneOffsetTransitionRule Of(Java.Time.Month arg0, int arg1, Java.Time.DayOfWeek arg2, Java.Time.LocalTime arg3, bool arg4, Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition arg5, Java.Time.ZoneOffset arg6, Java.Time.ZoneOffset arg7, Java.Time.ZoneOffset arg8)
         {
-            return SExecute<Java.Time.Zone.ZoneOffsetTransitionRule>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+            return SExecuteWithSignature<Java.Time.Zone.ZoneOffsetTransitionRule>(LocalBridgeClazz, "of", "(Ljava/time/Month;ILjava/time/DayOfWeek;Ljava/time/LocalTime;ZLjava/time/zone/ZoneOffsetTransitionRule$TimeDefinition;Ljava/time/ZoneOffset;Ljava/time/ZoneOffset;Ljava/time/ZoneOffset;)Ljava/time/zone/ZoneOffsetTransitionRule;", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
         }
 
         #endregion
@@ -293,7 +293,7 @@ namespace Java.Time.Zone
             /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
             public Java.Time.LocalDateTime CreateDateTime(Java.Time.LocalDateTime arg0, Java.Time.ZoneOffset arg1, Java.Time.ZoneOffset arg2)
             {
-                return IExecute<Java.Time.LocalDateTime>("createDateTime", arg0, arg1, arg2);
+                return IExecuteWithSignature<Java.Time.LocalDateTime>("createDateTime", "(Ljava/time/LocalDateTime;Ljava/time/ZoneOffset;Ljava/time/ZoneOffset;)Ljava/time/LocalDateTime;", arg0, arg1, arg2);
             }
 
             #endregion

@@ -138,7 +138,7 @@ namespace Java.Beans
         /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
         public void AddVetoableChangeListener(Java.Lang.String arg0, Java.Beans.VetoableChangeListener arg1)
         {
-            IExecute("addVetoableChangeListener", arg0, arg1);
+            IExecuteWithSignature("addVetoableChangeListener", "(Ljava/lang/String;Ljava/beans/VetoableChangeListener;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeSupport.html#fireVetoableChange(java.beans.PropertyChangeEvent)"/>
@@ -158,7 +158,7 @@ namespace Java.Beans
         /// <exception cref="Java.Beans.PropertyVetoException"/>
         public void FireVetoableChange(Java.Lang.String arg0, bool arg1, bool arg2)
         {
-            IExecute("fireVetoableChange", arg0, arg1, arg2);
+            IExecuteWithSignature("fireVetoableChange", "(Ljava/lang/String;ZZ)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeSupport.html#fireVetoableChange(java.lang.String,int,int)"/>
@@ -169,7 +169,7 @@ namespace Java.Beans
         /// <exception cref="Java.Beans.PropertyVetoException"/>
         public void FireVetoableChange(Java.Lang.String arg0, int arg1, int arg2)
         {
-            IExecute("fireVetoableChange", arg0, arg1, arg2);
+            IExecuteWithSignature("fireVetoableChange", "(Ljava/lang/String;II)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeSupport.html#fireVetoableChange(java.lang.String,java.lang.Object,java.lang.Object)"/>
@@ -180,7 +180,7 @@ namespace Java.Beans
         /// <exception cref="Java.Beans.PropertyVetoException"/>
         public void FireVetoableChange(Java.Lang.String arg0, object arg1, object arg2)
         {
-            IExecute("fireVetoableChange", arg0, arg1, arg2);
+            IExecuteWithSignature("fireVetoableChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/VetoableChangeSupport.html#removeVetoableChangeListener(java.beans.VetoableChangeListener)"/>
@@ -197,7 +197,7 @@ namespace Java.Beans
         /// <param name="arg1"><see cref="Java.Beans.VetoableChangeListener"/></param>
         public void RemoveVetoableChangeListener(Java.Lang.String arg0, Java.Beans.VetoableChangeListener arg1)
         {
-            IExecute("removeVetoableChangeListener", arg0, arg1);
+            IExecuteWithSignature("removeVetoableChangeListener", "(Ljava/lang/String;Ljava/beans/VetoableChangeListener;)V", arg0, arg1);
         }
 
         #endregion

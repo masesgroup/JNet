@@ -193,7 +193,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void Characters(char[] arg0, int arg1, int arg2)
         {
-            IExecute("characters", arg0, arg1, arg2);
+            IExecuteWithSignature("characters", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ContentHandler.html#endDocument()"/>
@@ -212,7 +212,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
-            IExecute("endElement", arg0, arg1, arg2);
+            IExecuteWithSignature("endElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ContentHandler.html#endPrefixMapping(java.lang.String)"/>
@@ -232,7 +232,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void IgnorableWhitespace(char[] arg0, int arg1, int arg2)
         {
-            IExecute("ignorableWhitespace", arg0, arg1, arg2);
+            IExecuteWithSignature("ignorableWhitespace", "([CII)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ContentHandler.html#processingInstruction(java.lang.String,java.lang.String)"/>
@@ -242,7 +242,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void ProcessingInstruction(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("processingInstruction", arg0, arg1);
+            IExecuteWithSignature("processingInstruction", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ContentHandler.html#setDocumentLocator(org.xml.sax.Locator)"/>
@@ -279,7 +279,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartElement(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Org.Xml.Sax.Attributes arg3)
         {
-            IExecute("startElement", arg0, arg1, arg2, arg3);
+            IExecuteWithSignature("startElement", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ContentHandler.html#startPrefixMapping(java.lang.String,java.lang.String)"/>
@@ -289,7 +289,7 @@ namespace Org.Xml.Sax
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartPrefixMapping(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            IExecute("startPrefixMapping", arg0, arg1);
+            IExecuteWithSignature("startPrefixMapping", "(Ljava/lang/String;Ljava/lang/String;)V", arg0, arg1);
         }
 
         #endregion

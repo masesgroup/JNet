@@ -282,7 +282,7 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="Java.Awt.TrayIcon.MessageType"/></param>
         public void DisplayMessage(Java.Lang.String arg0, Java.Lang.String arg1, Java.Awt.TrayIcon.MessageType arg2)
         {
-            IExecute("displayMessage", arg0, arg1, arg2);
+            IExecuteWithSignature("displayMessage", "(Ljava/lang/String;Ljava/lang/String;Ljava/awt/TrayIcon$MessageType;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/TrayIcon.html#setImageAutoSize(boolean)"/>

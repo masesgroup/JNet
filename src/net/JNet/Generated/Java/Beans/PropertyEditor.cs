@@ -222,7 +222,7 @@ namespace Java.Beans
         /// <param name="arg1"><see cref="Java.Awt.Rectangle"/></param>
         public void PaintValue(Java.Awt.Graphics arg0, Java.Awt.Rectangle arg1)
         {
-            IExecute("paintValue", arg0, arg1);
+            IExecuteWithSignature("paintValue", "(Ljava/awt/Graphics;Ljava/awt/Rectangle;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>

@@ -119,7 +119,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public static Java.Nio.ByteBuffer Wrap(byte[] arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Nio.ByteBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Nio.ByteBuffer>(LocalBridgeClazz, "wrap", "([BII)Ljava/nio/ByteBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#wrap(byte[])"/>
@@ -262,7 +262,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer Put(int arg0, byte arg1)
         {
-            return IExecute<Java.Nio.ByteBuffer>("put", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.ByteBuffer>("put", "(IB)Ljava/nio/ByteBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putChar(char)"/>
@@ -281,7 +281,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer PutChar(int arg0, char arg1)
         {
-            return IExecute<Java.Nio.ByteBuffer>("putChar", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.ByteBuffer>("putChar", "(IC)Ljava/nio/ByteBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putDouble(double)"/>
@@ -300,7 +300,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer PutDouble(int arg0, double arg1)
         {
-            return IExecute<Java.Nio.ByteBuffer>("putDouble", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.ByteBuffer>("putDouble", "(ID)Ljava/nio/ByteBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putFloat(float)"/>
@@ -319,7 +319,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer PutFloat(int arg0, float arg1)
         {
-            return IExecute<Java.Nio.ByteBuffer>("putFloat", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.ByteBuffer>("putFloat", "(IF)Ljava/nio/ByteBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putInt(int,int)"/>
@@ -329,7 +329,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer PutInt(int arg0, int arg1)
         {
-            return IExecute<Java.Nio.ByteBuffer>("putInt", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.ByteBuffer>("putInt", "(II)Ljava/nio/ByteBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putInt(int)"/>
@@ -348,7 +348,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer PutLong(int arg0, long arg1)
         {
-            return IExecute<Java.Nio.ByteBuffer>("putLong", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.ByteBuffer>("putLong", "(IJ)Ljava/nio/ByteBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putLong(long)"/>
@@ -367,7 +367,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer PutShort(int arg0, short arg1)
         {
-            return IExecute<Java.Nio.ByteBuffer>("putShort", arg0, arg1);
+            return IExecuteWithSignature<Java.Nio.ByteBuffer>("putShort", "(IS)Ljava/nio/ByteBuffer;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putShort(short)"/>
@@ -452,7 +452,7 @@ namespace Java.Nio
         /// <returns><see cref="int"/></returns>
         public int AlignmentOffset(int arg0, int arg1)
         {
-            return IExecute<int>("alignmentOffset", arg0, arg1);
+            return IExecuteWithSignature<int>("alignmentOffset", "(II)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#alignedSlice(int)"/>
@@ -525,7 +525,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer Get(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.ByteBuffer>("get", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.ByteBuffer>("get", "([BII)Ljava/nio/ByteBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#get(byte[])"/>
@@ -545,7 +545,7 @@ namespace Java.Nio
         /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
         public Java.Nio.ByteBuffer Put(byte[] arg0, int arg1, int arg2)
         {
-            return IExecute<Java.Nio.ByteBuffer>("put", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Nio.ByteBuffer>("put", "([BII)Ljava/nio/ByteBuffer;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#put(java.nio.ByteBuffer)"/>

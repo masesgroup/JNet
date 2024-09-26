@@ -181,7 +181,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet SubSet(object arg0, object arg1)
         {
-            return IExecute<Java.Util.SortedSet>("subSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.SortedSet>("subSet", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#tailSet(java.lang.Object)"/>
@@ -335,7 +335,7 @@ namespace Java.Util
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
         public Java.Util.SortedSet<E> SubSet(E arg0, E arg1)
         {
-            return IExecute<Java.Util.SortedSet<E>>("subSet", arg0, arg1);
+            return IExecuteWithSignature<Java.Util.SortedSet<E>>("subSet", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html#tailSet(java.lang.Object)"/>

@@ -125,7 +125,7 @@ namespace Javax.Swing.Table
         /// <returns><see cref="bool"/></returns>
         public bool IsCellEditable(int arg0, int arg1)
         {
-            return IExecute<bool>("isCellEditable", arg0, arg1);
+            return IExecuteWithSignature<bool>("isCellEditable", "(II)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#findColumn(java.lang.String)"/>
@@ -169,7 +169,7 @@ namespace Javax.Swing.Table
         /// <param name="arg1"><see cref="int"/></param>
         public void FireTableCellUpdated(int arg0, int arg1)
         {
-            IExecute("fireTableCellUpdated", arg0, arg1);
+            IExecuteWithSignature("fireTableCellUpdated", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableChanged(javax.swing.event.TableModelEvent)"/>
@@ -193,7 +193,7 @@ namespace Javax.Swing.Table
         /// <param name="arg1"><see cref="int"/></param>
         public void FireTableRowsDeleted(int arg0, int arg1)
         {
-            IExecute("fireTableRowsDeleted", arg0, arg1);
+            IExecuteWithSignature("fireTableRowsDeleted", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableRowsInserted(int,int)"/>
@@ -202,7 +202,7 @@ namespace Javax.Swing.Table
         /// <param name="arg1"><see cref="int"/></param>
         public void FireTableRowsInserted(int arg0, int arg1)
         {
-            IExecute("fireTableRowsInserted", arg0, arg1);
+            IExecuteWithSignature("fireTableRowsInserted", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableRowsUpdated(int,int)"/>
@@ -211,7 +211,7 @@ namespace Javax.Swing.Table
         /// <param name="arg1"><see cref="int"/></param>
         public void FireTableRowsUpdated(int arg0, int arg1)
         {
-            IExecute("fireTableRowsUpdated", arg0, arg1);
+            IExecuteWithSignature("fireTableRowsUpdated", "(II)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/table/AbstractTableModel.html#fireTableStructureChanged()"/>
@@ -236,7 +236,7 @@ namespace Javax.Swing.Table
         /// <param name="arg2"><see cref="int"/></param>
         public void SetValueAt(object arg0, int arg1, int arg2)
         {
-            IExecute("setValueAt", arg0, arg1, arg2);
+            IExecuteWithSignature("setValueAt", "(Ljava/lang/Object;II)V", arg0, arg1, arg2);
         }
 
         #endregion

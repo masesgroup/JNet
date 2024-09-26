@@ -162,7 +162,7 @@ namespace Java.Util.Concurrent.Locks
         /// <exception cref="Java.Lang.InterruptedException"/>
         public bool TryLock(long arg0, Java.Util.Concurrent.TimeUnit arg1)
         {
-            return IExecute<bool>("tryLock", arg0, arg1);
+            return IExecuteWithSignature<bool>("tryLock", "(JLjava/util/concurrent/TimeUnit;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReentrantLock.html#hasQueuedThread(java.lang.Thread)"/>

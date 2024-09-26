@@ -175,7 +175,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="bool"/></returns>
         public bool Process<Arg0ExtendsJavax_Lang_Model_Element_TypeElement>(Java.Util.Set<Arg0ExtendsJavax_Lang_Model_Element_TypeElement> arg0, Javax.Annotation.Processing.RoundEnvironment arg1) where Arg0ExtendsJavax_Lang_Model_Element_TypeElement : Javax.Lang.Model.Element.TypeElement
         {
-            return IExecute<bool>("process", arg0, arg1);
+            return IExecuteWithSignature<bool>("process", "(Ljava/util/Set;Ljavax/annotation/processing/RoundEnvironment;)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#getCompletions(javax.lang.model.element.Element,javax.lang.model.element.AnnotationMirror,javax.lang.model.element.ExecutableElement,java.lang.String)"/>
@@ -188,7 +188,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="Java.Lang.Iterable"/></returns>
         public Java.Lang.Iterable<ReturnExtendsJavax_Annotation_Processing_Completion> GetCompletions<ReturnExtendsJavax_Annotation_Processing_Completion>(Javax.Lang.Model.Element.Element arg0, Javax.Lang.Model.Element.AnnotationMirror arg1, Javax.Lang.Model.Element.ExecutableElement arg2, Java.Lang.String arg3) where ReturnExtendsJavax_Annotation_Processing_Completion : Javax.Annotation.Processing.Completion
         {
-            return IExecute<Java.Lang.Iterable<ReturnExtendsJavax_Annotation_Processing_Completion>>("getCompletions", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Lang.Iterable<ReturnExtendsJavax_Annotation_Processing_Completion>>("getCompletions", "(Ljavax/lang/model/element/Element;Ljavax/lang/model/element/AnnotationMirror;Ljavax/lang/model/element/ExecutableElement;Ljava/lang/String;)Ljava/lang/Iterable;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/Processor.html#init(javax.annotation.processing.ProcessingEnvironment)"/>

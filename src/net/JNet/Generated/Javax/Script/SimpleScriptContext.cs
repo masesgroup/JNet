@@ -135,7 +135,7 @@ namespace Javax.Script
         /// <returns><see cref="object"/></returns>
         public object GetAttribute(Java.Lang.String arg0, int arg1)
         {
-            return IExecute("getAttribute", arg0, arg1);
+            return IExecuteWithSignature("getAttribute", "(Ljava/lang/String;I)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html#getAttribute(java.lang.String)"/>
@@ -154,7 +154,7 @@ namespace Javax.Script
         /// <returns><see cref="object"/></returns>
         public object RemoveAttribute(Java.Lang.String arg0, int arg1)
         {
-            return IExecute("removeAttribute", arg0, arg1);
+            return IExecuteWithSignature("removeAttribute", "(Ljava/lang/String;I)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html#getBindings(int)"/>
@@ -173,7 +173,7 @@ namespace Javax.Script
         /// <param name="arg2"><see cref="int"/></param>
         public void SetAttribute(Java.Lang.String arg0, object arg1, int arg2)
         {
-            IExecute("setAttribute", arg0, arg1, arg2);
+            IExecuteWithSignature("setAttribute", "(Ljava/lang/String;Ljava/lang/Object;I)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/SimpleScriptContext.html#setBindings(javax.script.Bindings,int)"/>
@@ -182,7 +182,7 @@ namespace Javax.Script
         /// <param name="arg1"><see cref="int"/></param>
         public void SetBindings(Javax.Script.Bindings arg0, int arg1)
         {
-            IExecute("setBindings", arg0, arg1);
+            IExecuteWithSignature("setBindings", "(Ljavax/script/Bindings;I)V", arg0, arg1);
         }
 
         #endregion

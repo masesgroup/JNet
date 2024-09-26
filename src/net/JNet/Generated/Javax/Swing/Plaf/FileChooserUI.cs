@@ -135,7 +135,7 @@ namespace Javax.Swing.Plaf
         /// <param name="arg1"><see cref="Java.Io.File"/></param>
         public void EnsureFileIsVisible(Javax.Swing.JFileChooser arg0, Java.Io.File arg1)
         {
-            IExecute("ensureFileIsVisible", arg0, arg1);
+            IExecuteWithSignature("ensureFileIsVisible", "(Ljavax/swing/JFileChooser;Ljava/io/File;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/FileChooserUI.html#rescanCurrentDirectory(javax.swing.JFileChooser)"/>

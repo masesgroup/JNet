@@ -188,7 +188,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double Distance(double arg0, double arg1, double arg2, double arg3)
         {
-            return SExecute<double>(LocalBridgeClazz, "distance", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "distance", "(DDDD)D", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#distanceSq(double,double,double,double)"/>
@@ -200,7 +200,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public static double DistanceSq(double arg0, double arg1, double arg2, double arg3)
         {
-            return SExecute<double>(LocalBridgeClazz, "distanceSq", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<double>(LocalBridgeClazz, "distanceSq", "(DDDD)D", arg0, arg1, arg2, arg3);
         }
 
         #endregion
@@ -227,7 +227,7 @@ namespace Java.Awt.Geom
         /// <param name="arg1"><see cref="double"/></param>
         public void SetLocation(double arg0, double arg1)
         {
-            IExecute("setLocation", arg0, arg1);
+            IExecuteWithSignature("setLocation", "(DD)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#distance(double,double)"/>
@@ -237,7 +237,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public double Distance(double arg0, double arg1)
         {
-            return IExecute<double>("distance", arg0, arg1);
+            return IExecuteWithSignature<double>("distance", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#distance(java.awt.geom.Point2D)"/>
@@ -256,7 +256,7 @@ namespace Java.Awt.Geom
         /// <returns><see cref="double"/></returns>
         public double DistanceSq(double arg0, double arg1)
         {
-            return IExecute<double>("distanceSq", arg0, arg1);
+            return IExecuteWithSignature<double>("distanceSq", "(DD)D", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/geom/Point2D.html#distanceSq(java.awt.geom.Point2D)"/>
@@ -379,7 +379,7 @@ namespace Java.Awt.Geom
             /// <param name="arg1"><see cref="float"/></param>
             public void SetLocation(float arg0, float arg1)
             {
-                IExecute("setLocation", arg0, arg1);
+                IExecuteWithSignature("setLocation", "(FF)V", arg0, arg1);
             }
 
             #endregion

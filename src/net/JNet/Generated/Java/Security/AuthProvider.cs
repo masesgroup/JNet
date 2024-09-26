@@ -100,7 +100,7 @@ namespace Java.Security
         /// <exception cref="Javax.Security.Auth.Login.LoginException"/>
         public void Login(Javax.Security.Auth.Subject arg0, Javax.Security.Auth.Callback.CallbackHandler arg1)
         {
-            IExecute("login", arg0, arg1);
+            IExecuteWithSignature("login", "(Ljavax/security/auth/Subject;Ljavax/security/auth/callback/CallbackHandler;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AuthProvider.html#logout()"/>

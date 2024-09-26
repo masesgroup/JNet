@@ -225,7 +225,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="bool"/></param>
         public void RequestUserAttention(bool arg0, bool arg1)
         {
-            IExecute("requestUserAttention", arg0, arg1);
+            IExecuteWithSignature("requestUserAttention", "(ZZ)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#requestWindowUserAttention(java.awt.Window)"/>
@@ -258,7 +258,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Awt.Image"/></param>
         public void SetWindowIconBadge(Java.Awt.Window arg0, Java.Awt.Image arg1)
         {
-            IExecute("setWindowIconBadge", arg0, arg1);
+            IExecuteWithSignature("setWindowIconBadge", "(Ljava/awt/Window;Ljava/awt/Image;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setWindowProgressState(java.awt.Window,java.awt.Taskbar.State)"/>
@@ -267,7 +267,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="Java.Awt.Taskbar.State"/></param>
         public void SetWindowProgressState(Java.Awt.Window arg0, Java.Awt.Taskbar.State arg1)
         {
-            IExecute("setWindowProgressState", arg0, arg1);
+            IExecuteWithSignature("setWindowProgressState", "(Ljava/awt/Window;Ljava/awt/Taskbar$State;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/Taskbar.html#setWindowProgressValue(java.awt.Window,int)"/>
@@ -276,7 +276,7 @@ namespace Java.Awt
         /// <param name="arg1"><see cref="int"/></param>
         public void SetWindowProgressValue(Java.Awt.Window arg0, int arg1)
         {
-            IExecute("setWindowProgressValue", arg0, arg1);
+            IExecuteWithSignature("setWindowProgressValue", "(Ljava/awt/Window;I)V", arg0, arg1);
         }
 
         #endregion

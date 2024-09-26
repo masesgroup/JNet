@@ -109,7 +109,7 @@ namespace Java.Rmi.Activation
         /// <exception cref="Java.Rmi.NoSuchObjectException"/>
         public static bool UnexportObject(Java.Rmi.Remote arg0, bool arg1)
         {
-            return SExecute<bool>(LocalBridgeClazz, "unexportObject", arg0, arg1);
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "unexportObject", "(Ljava/rmi/Remote;Z)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#exportObject(java.rmi.Remote,java.lang.String,java.rmi.MarshalledObject,boolean,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)"/>
@@ -126,7 +126,7 @@ namespace Java.Rmi.Activation
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Activation.ActivationID ExportObject(Java.Rmi.Remote arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject<object> arg2, bool arg3, int arg4, Java.Rmi.Server.RMIClientSocketFactory arg5, Java.Rmi.Server.RMIServerSocketFactory arg6)
         {
-            return SExecute<Java.Rmi.Activation.ActivationID>(LocalBridgeClazz, "exportObject", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+            return SExecuteWithSignature<Java.Rmi.Activation.ActivationID>(LocalBridgeClazz, "exportObject", "(Ljava/rmi/Remote;Ljava/lang/String;Ljava/rmi/MarshalledObject;ZILjava/rmi/server/RMIClientSocketFactory;Ljava/rmi/server/RMIServerSocketFactory;)Ljava/rmi/activation/ActivationID;", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#exportObject(java.rmi.Remote,java.lang.String,java.rmi.MarshalledObject,boolean,int)"/>
@@ -141,7 +141,7 @@ namespace Java.Rmi.Activation
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Activation.ActivationID ExportObject(Java.Rmi.Remote arg0, Java.Lang.String arg1, Java.Rmi.MarshalledObject<object> arg2, bool arg3, int arg4)
         {
-            return SExecute<Java.Rmi.Activation.ActivationID>(LocalBridgeClazz, "exportObject", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Rmi.Activation.ActivationID>(LocalBridgeClazz, "exportObject", "(Ljava/rmi/Remote;Ljava/lang/String;Ljava/rmi/MarshalledObject;ZI)Ljava/rmi/activation/ActivationID;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#exportObject(java.rmi.Remote,java.rmi.activation.ActivationID,int,java.rmi.server.RMIClientSocketFactory,java.rmi.server.RMIServerSocketFactory)"/>
@@ -155,7 +155,7 @@ namespace Java.Rmi.Activation
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Remote ExportObject(Java.Rmi.Remote arg0, Java.Rmi.Activation.ActivationID arg1, int arg2, Java.Rmi.Server.RMIClientSocketFactory arg3, Java.Rmi.Server.RMIServerSocketFactory arg4)
         {
-            return SExecute<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", arg0, arg1, arg2, arg3, arg4);
+            return SExecuteWithSignature<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", "(Ljava/rmi/Remote;Ljava/rmi/activation/ActivationID;ILjava/rmi/server/RMIClientSocketFactory;Ljava/rmi/server/RMIServerSocketFactory;)Ljava/rmi/Remote;", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#exportObject(java.rmi.Remote,java.rmi.activation.ActivationID,int)"/>
@@ -167,7 +167,7 @@ namespace Java.Rmi.Activation
         /// <exception cref="Java.Rmi.RemoteException"/>
         public static Java.Rmi.Remote ExportObject(Java.Rmi.Remote arg0, Java.Rmi.Activation.ActivationID arg1, int arg2)
         {
-            return SExecute<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Rmi.Remote>(LocalBridgeClazz, "exportObject", "(Ljava/rmi/Remote;Ljava/rmi/activation/ActivationID;I)Ljava/rmi/Remote;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/Activatable.html#register(java.rmi.activation.ActivationDesc)"/>

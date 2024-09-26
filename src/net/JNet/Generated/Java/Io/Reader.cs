@@ -118,7 +118,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public int Read(char[] arg0, int arg1, int arg2)
         {
-            return IExecute<int>("read", arg0, arg1, arg2);
+            return IExecuteWithSignature<int>("read", "([CII)I", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Reader.html#close()"/>

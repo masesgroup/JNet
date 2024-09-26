@@ -152,7 +152,7 @@ namespace Javax.Management.Loading
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public Java.Lang.Class LoadClassBefore(Java.Lang.ClassLoader arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.Class>("loadClassBefore", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Class>("loadClassBefore", "(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/loading/ClassLoaderRepository.html#loadClassWithout(java.lang.ClassLoader,java.lang.String)"/>
@@ -163,7 +163,7 @@ namespace Javax.Management.Loading
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
         public Java.Lang.Class LoadClassWithout(Java.Lang.ClassLoader arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Lang.Class>("loadClassWithout", arg0, arg1);
+            return IExecuteWithSignature<Java.Lang.Class>("loadClassWithout", "(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class;", arg0, arg1);
         }
 
         #endregion

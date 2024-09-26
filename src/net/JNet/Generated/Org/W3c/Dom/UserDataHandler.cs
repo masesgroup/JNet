@@ -159,7 +159,7 @@ namespace Org.W3c.Dom
         /// <param name="arg4"><see cref="Org.W3c.Dom.Node"/></param>
         public void Handle(short arg0, Java.Lang.String arg1, object arg2, Org.W3c.Dom.Node arg3, Org.W3c.Dom.Node arg4)
         {
-            IExecute("handle", arg0, arg1, arg2, arg3, arg4);
+            IExecuteWithSignature("handle", "(SLjava/lang/String;Ljava/lang/Object;Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)V", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

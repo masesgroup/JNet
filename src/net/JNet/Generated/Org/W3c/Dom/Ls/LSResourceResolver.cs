@@ -131,7 +131,7 @@ namespace Org.W3c.Dom.Ls
         /// <returns><see cref="Org.W3c.Dom.Ls.LSInput"/></returns>
         public Org.W3c.Dom.Ls.LSInput ResolveResource(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3, Java.Lang.String arg4)
         {
-            return IExecute<Org.W3c.Dom.Ls.LSInput>("resolveResource", arg0, arg1, arg2, arg3, arg4);
+            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSInput>("resolveResource", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/ls/LSInput;", arg0, arg1, arg2, arg3, arg4);
         }
 
         #endregion

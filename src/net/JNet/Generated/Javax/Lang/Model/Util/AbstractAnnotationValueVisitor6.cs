@@ -149,7 +149,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="object"/></returns>
         public object Visit(Javax.Lang.Model.Element.AnnotationValue arg0, object arg1)
         {
-            return IExecute("visit", arg0, arg1);
+            return IExecuteWithSignature("visit", "(Ljavax/lang/model/element/AnnotationValue;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html#visit(javax.lang.model.element.AnnotationValue)"/>
@@ -168,7 +168,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="object"/></returns>
         public object VisitUnknown(Javax.Lang.Model.Element.AnnotationValue arg0, object arg1)
         {
-            return IExecute("visitUnknown", arg0, arg1);
+            return IExecuteWithSignature("visitUnknown", "(Ljavax/lang/model/element/AnnotationValue;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
 
         #endregion
@@ -213,7 +213,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><typeparamref name="R"/></returns>
         public R Visit(Javax.Lang.Model.Element.AnnotationValue arg0, P arg1)
         {
-            return IExecute<R>("visit", arg0, arg1);
+            return IExecuteWithSignature<R>("visit", "(Ljavax/lang/model/element/AnnotationValue;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/AbstractAnnotationValueVisitor6.html#visit(javax.lang.model.element.AnnotationValue)"/>
@@ -232,7 +232,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><typeparamref name="R"/></returns>
         public R VisitUnknown(Javax.Lang.Model.Element.AnnotationValue arg0, P arg1)
         {
-            return IExecute<R>("visitUnknown", arg0, arg1);
+            return IExecuteWithSignature<R>("visitUnknown", "(Ljavax/lang/model/element/AnnotationValue;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
 
         #endregion

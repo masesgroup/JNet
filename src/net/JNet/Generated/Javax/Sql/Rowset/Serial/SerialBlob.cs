@@ -138,7 +138,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <exception cref="Javax.Sql.Rowset.Serial.SerialException"/>
         public byte[] GetBytes(long arg0, int arg1)
         {
-            return IExecuteArray<byte>("getBytes", arg0, arg1);
+            return IExecuteWithSignatureArray<byte>("getBytes", "(JI)[B", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#setBytes(long,byte[],int,int)"/>
@@ -152,7 +152,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <exception cref="Java.Sql.SQLException"/>
         public int SetBytes(long arg0, byte[] arg1, int arg2, int arg3)
         {
-            return IExecute<int>("setBytes", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<int>("setBytes", "(J[BII)I", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#setBytes(long,byte[])"/>
@@ -164,7 +164,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <exception cref="Java.Sql.SQLException"/>
         public int SetBytes(long arg0, byte[] arg1)
         {
-            return IExecute<int>("setBytes", arg0, arg1);
+            return IExecuteWithSignature<int>("setBytes", "(J[B)I", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#getBinaryStream(long,long)"/>
@@ -175,7 +175,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <exception cref="Java.Sql.SQLException"/>
         public Java.Io.InputStream GetBinaryStream(long arg0, long arg1)
         {
-            return IExecute<Java.Io.InputStream>("getBinaryStream", arg0, arg1);
+            return IExecuteWithSignature<Java.Io.InputStream>("getBinaryStream", "(JJ)Ljava/io/InputStream;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#setBinaryStream(long)"/>
@@ -207,7 +207,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <exception cref="Java.Sql.SQLException"/>
         public long Position(byte[] arg0, long arg1)
         {
-            return IExecute<long>("position", arg0, arg1);
+            return IExecuteWithSignature<long>("position", "([BJ)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#position(java.sql.Blob,long)"/>
@@ -219,7 +219,7 @@ namespace Javax.Sql.Rowset.Serial
         /// <exception cref="Java.Sql.SQLException"/>
         public long Position(Java.Sql.Blob arg0, long arg1)
         {
-            return IExecute<long>("position", arg0, arg1);
+            return IExecuteWithSignature<long>("position", "(Ljava/sql/Blob;J)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/serial/SerialBlob.html#free()"/>

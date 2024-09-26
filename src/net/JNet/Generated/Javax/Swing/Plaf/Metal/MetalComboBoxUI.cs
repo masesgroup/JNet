@@ -165,7 +165,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <param name="arg1"><see cref="Javax.Swing.Plaf.Metal.MetalComboBoxUI.MetalComboBoxLayoutManager"/></param>
         public void LayoutComboBox(Java.Awt.Container arg0, Javax.Swing.Plaf.Metal.MetalComboBoxUI.MetalComboBoxLayoutManager arg1)
         {
-            IExecute("layoutComboBox", arg0, arg1);
+            IExecuteWithSignature("layoutComboBox", "(Ljava/awt/Container;Ljavax/swing/plaf/metal/MetalComboBoxUI$MetalComboBoxLayoutManager;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalComboBoxUI.html#unconfigureEditor()"/>

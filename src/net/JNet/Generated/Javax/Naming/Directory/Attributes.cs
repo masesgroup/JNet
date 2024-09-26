@@ -208,7 +208,7 @@ namespace Javax.Naming.Directory
         /// <returns><see cref="Javax.Naming.Directory.Attribute"/></returns>
         public Javax.Naming.Directory.Attribute Put(Java.Lang.String arg0, object arg1)
         {
-            return IExecute<Javax.Naming.Directory.Attribute>("put", arg0, arg1);
+            return IExecuteWithSignature<Javax.Naming.Directory.Attribute>("put", "(Ljava/lang/String;Ljava/lang/Object;)Ljavax/naming/directory/Attribute;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html#put(javax.naming.directory.Attribute)"/>

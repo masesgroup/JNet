@@ -140,7 +140,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Java.Io.IOException"/>
         public Org.Xml.Sax.InputSource GetExternalSubset(Java.Lang.String arg0, Java.Lang.String arg1)
         {
-            return IExecute<Org.Xml.Sax.InputSource>("getExternalSubset", arg0, arg1);
+            return IExecuteWithSignature<Org.Xml.Sax.InputSource>("getExternalSubset", "(Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/EntityResolver2.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
@@ -154,7 +154,7 @@ namespace Org.Xml.Sax.Ext
         /// <exception cref="Java.Io.IOException"/>
         public Org.Xml.Sax.InputSource ResolveEntity(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Lang.String arg3)
         {
-            return IExecute<Org.Xml.Sax.InputSource>("resolveEntity", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Org.Xml.Sax.InputSource>("resolveEntity", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xml/sax/InputSource;", arg0, arg1, arg2, arg3);
         }
 
         #endregion

@@ -97,7 +97,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
         public void PaintDeterminate(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
         {
-            IExecute("paintDeterminate", arg0, arg1);
+            IExecuteWithSignature("paintDeterminate", "(Ljava/awt/Graphics;Ljavax/swing/JComponent;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/plaf/metal/MetalProgressBarUI.html#paintIndeterminate(java.awt.Graphics,javax.swing.JComponent)"/>
@@ -106,7 +106,7 @@ namespace Javax.Swing.Plaf.Metal
         /// <param name="arg1"><see cref="Javax.Swing.JComponent"/></param>
         public void PaintIndeterminate(Java.Awt.Graphics arg0, Javax.Swing.JComponent arg1)
         {
-            IExecute("paintIndeterminate", arg0, arg1);
+            IExecuteWithSignature("paintIndeterminate", "(Ljava/awt/Graphics;Ljavax/swing/JComponent;)V", arg0, arg1);
         }
 
         #endregion

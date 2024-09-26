@@ -245,7 +245,7 @@ namespace Javax.Xml.Catalog
             /// <returns><see cref="Javax.Xml.Catalog.CatalogFeatures.Builder"/></returns>
             public Javax.Xml.Catalog.CatalogFeatures.Builder With(Javax.Xml.Catalog.CatalogFeatures.Feature arg0, Java.Lang.String arg1)
             {
-                return IExecute<Javax.Xml.Catalog.CatalogFeatures.Builder>("with", arg0, arg1);
+                return IExecuteWithSignature<Javax.Xml.Catalog.CatalogFeatures.Builder>("with", "(Ljavax/xml/catalog/CatalogFeatures$Feature;Ljava/lang/String;)Ljavax/xml/catalog/CatalogFeatures$Builder;", arg0, arg1);
             }
 
             #endregion

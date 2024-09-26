@@ -111,7 +111,7 @@ namespace Javax.Net
         /// <exception cref="Java.Net.UnknownHostException"/>
         public Java.Net.Socket CreateSocket(Java.Lang.String arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
         {
-            return IExecute<Java.Net.Socket>("createSocket", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Net.Socket>("createSocket", "(Ljava/lang/String;ILjava/net/InetAddress;I)Ljava/net/Socket;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#createSocket(java.lang.String,int)"/>
@@ -123,7 +123,7 @@ namespace Javax.Net
         /// <exception cref="Java.Net.UnknownHostException"/>
         public Java.Net.Socket CreateSocket(Java.Lang.String arg0, int arg1)
         {
-            return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);
+            return IExecuteWithSignature<Java.Net.Socket>("createSocket", "(Ljava/lang/String;I)Ljava/net/Socket;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#createSocket(java.net.InetAddress,int,java.net.InetAddress,int)"/>
@@ -136,7 +136,7 @@ namespace Javax.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket(Java.Net.InetAddress arg0, int arg1, Java.Net.InetAddress arg2, int arg3)
         {
-            return IExecute<Java.Net.Socket>("createSocket", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature<Java.Net.Socket>("createSocket", "(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#createSocket(java.net.InetAddress,int)"/>
@@ -147,7 +147,7 @@ namespace Javax.Net
         /// <exception cref="Java.Io.IOException"/>
         public Java.Net.Socket CreateSocket(Java.Net.InetAddress arg0, int arg1)
         {
-            return IExecute<Java.Net.Socket>("createSocket", arg0, arg1);
+            return IExecuteWithSignature<Java.Net.Socket>("createSocket", "(Ljava/net/InetAddress;I)Ljava/net/Socket;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/SocketFactory.html#createSocket()"/>

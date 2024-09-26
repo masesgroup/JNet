@@ -231,7 +231,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetResolvedValue(int arg0, object arg1)
         {
-            IExecute("setResolvedValue", arg0, arg1);
+            IExecuteWithSignature("setResolvedValue", "(ILjava/lang/Object;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql.rowset/javax/sql/rowset/spi/SyncResolver.html#setResolvedValue(java.lang.String,java.lang.Object)"/>
@@ -241,7 +241,7 @@ namespace Javax.Sql.Rowset.Spi
         /// <exception cref="Java.Sql.SQLException"/>
         public void SetResolvedValue(Java.Lang.String arg0, object arg1)
         {
-            IExecute("setResolvedValue", arg0, arg1);
+            IExecuteWithSignature("setResolvedValue", "(Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1);
         }
 
         #endregion

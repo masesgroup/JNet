@@ -153,7 +153,7 @@ namespace Javax.Security.Auth.Login
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Security.Auth.Login.Configuration GetInstance(Java.Lang.String arg0, Javax.Security.Auth.Login.Configuration.Parameters arg1, Java.Lang.String arg2)
         {
-            return SExecute<Javax.Security.Auth.Login.Configuration>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Security.Auth.Login.Configuration>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljavax/security/auth/login/Configuration$Parameters;Ljava/lang/String;)Ljavax/security/auth/login/Configuration;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getInstance(java.lang.String,javax.security.auth.login.Configuration.Parameters,java.security.Provider)"/>
@@ -165,7 +165,7 @@ namespace Javax.Security.Auth.Login
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Security.Auth.Login.Configuration GetInstance(Java.Lang.String arg0, Javax.Security.Auth.Login.Configuration.Parameters arg1, Java.Security.Provider arg2)
         {
-            return SExecute<Javax.Security.Auth.Login.Configuration>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Security.Auth.Login.Configuration>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljavax/security/auth/login/Configuration$Parameters;Ljava/security/Provider;)Ljavax/security/auth/login/Configuration;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#getInstance(java.lang.String,javax.security.auth.login.Configuration.Parameters)"/>
@@ -176,7 +176,7 @@ namespace Javax.Security.Auth.Login
         /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
         public static Javax.Security.Auth.Login.Configuration GetInstance(Java.Lang.String arg0, Javax.Security.Auth.Login.Configuration.Parameters arg1)
         {
-            return SExecute<Javax.Security.Auth.Login.Configuration>(LocalBridgeClazz, "getInstance", arg0, arg1);
+            return SExecuteWithSignature<Javax.Security.Auth.Login.Configuration>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;Ljavax/security/auth/login/Configuration$Parameters;)Ljavax/security/auth/login/Configuration;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/security/auth/login/Configuration.html#setConfiguration(javax.security.auth.login.Configuration)"/>

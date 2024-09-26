@@ -124,7 +124,7 @@ namespace Java.Nio.Channels
         /// <returns><see cref="bool"/></returns>
         public bool Overlaps(long arg0, long arg1)
         {
-            return IExecute<bool>("overlaps", arg0, arg1);
+            return IExecuteWithSignature<bool>("overlaps", "(JJ)Z", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/FileLock.html#channel()"/>

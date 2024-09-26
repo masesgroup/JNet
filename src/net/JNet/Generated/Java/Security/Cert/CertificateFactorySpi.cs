@@ -143,7 +143,7 @@ namespace Java.Security.Cert
         /// <exception cref="Java.Security.Cert.CertificateException"/>
         public Java.Security.Cert.CertPath EngineGenerateCertPath(Java.Io.InputStream arg0, Java.Lang.String arg1)
         {
-            return IExecute<Java.Security.Cert.CertPath>("engineGenerateCertPath", arg0, arg1);
+            return IExecuteWithSignature<Java.Security.Cert.CertPath>("engineGenerateCertPath", "(Ljava/io/InputStream;Ljava/lang/String;)Ljava/security/cert/CertPath;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CertificateFactorySpi.html#engineGenerateCertPath(java.io.InputStream)"/>

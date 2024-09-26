@@ -149,7 +149,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.ReflectionException"/>
         public object Invoke(Java.Lang.String arg0, object[] arg1, Java.Lang.String[] arg2)
         {
-            return IExecute("invoke", arg0, arg1, arg2);
+            return IExecuteWithSignature("invoke", "(Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/String;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#getAttributes(java.lang.String[])"/>
@@ -178,7 +178,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Java.Lang.Exception"/>
         public Javax.Management.ObjectName PreRegister(Javax.Management.MBeanServer arg0, Javax.Management.ObjectName arg1)
         {
-            return IExecute<Javax.Management.ObjectName>("preRegister", arg0, arg1);
+            return IExecuteWithSignature<Javax.Management.ObjectName>("preRegister", "(Ljavax/management/MBeanServer;Ljavax/management/ObjectName;)Ljavax/management/ObjectName;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#addAttributeChangeNotificationListener(javax.management.NotificationListener,java.lang.String,java.lang.Object)"/>
@@ -191,7 +191,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void AddAttributeChangeNotificationListener(Javax.Management.NotificationListener arg0, Java.Lang.String arg1, object arg2)
         {
-            IExecute("addAttributeChangeNotificationListener", arg0, arg1, arg2);
+            IExecuteWithSignature("addAttributeChangeNotificationListener", "(Ljavax/management/NotificationListener;Ljava/lang/String;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#addNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
@@ -202,7 +202,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         public void AddNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
-            IExecute("addNotificationListener", arg0, arg1, arg2);
+            IExecuteWithSignature("addNotificationListener", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#load()"/>
@@ -247,7 +247,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveAttributeChangeNotificationListener(Javax.Management.NotificationListener arg0, Java.Lang.String arg1)
         {
-            IExecute("removeAttributeChangeNotificationListener", arg0, arg1);
+            IExecuteWithSignature("removeAttributeChangeNotificationListener", "(Ljavax/management/NotificationListener;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#removeNotificationListener(javax.management.NotificationListener,javax.management.NotificationFilter,java.lang.Object)"/>
@@ -258,7 +258,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.ListenerNotFoundException"/>
         public void RemoveNotificationListener(Javax.Management.NotificationListener arg0, Javax.Management.NotificationFilter arg1, object arg2)
         {
-            IExecute("removeNotificationListener", arg0, arg1, arg2);
+            IExecuteWithSignature("removeNotificationListener", "(Ljavax/management/NotificationListener;Ljavax/management/NotificationFilter;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#removeNotificationListener(javax.management.NotificationListener)"/>
@@ -278,7 +278,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         public void SendAttributeChangeNotification(Javax.Management.Attribute arg0, Javax.Management.Attribute arg1)
         {
-            IExecute("sendAttributeChangeNotification", arg0, arg1);
+            IExecuteWithSignature("sendAttributeChangeNotification", "(Ljavax/management/Attribute;Ljavax/management/Attribute;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#sendAttributeChangeNotification(javax.management.AttributeChangeNotification)"/>
@@ -333,7 +333,7 @@ namespace Javax.Management.Modelmbean
         /// <exception cref="Javax.Management.Modelmbean.InvalidTargetObjectTypeException"/>
         public void SetManagedResource(object arg0, Java.Lang.String arg1)
         {
-            IExecute("setManagedResource", arg0, arg1);
+            IExecuteWithSignature("setManagedResource", "(Ljava/lang/Object;Ljava/lang/String;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/RequiredModelMBean.html#setModelMBeanInfo(javax.management.modelmbean.ModelMBeanInfo)"/>

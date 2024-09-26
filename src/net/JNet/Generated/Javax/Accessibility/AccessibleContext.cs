@@ -368,7 +368,7 @@ namespace Javax.Accessibility
         /// <param name="arg2"><see cref="object"/></param>
         public void FirePropertyChange(Java.Lang.String arg0, object arg1, object arg2)
         {
-            IExecute("firePropertyChange", arg0, arg1, arg2);
+            IExecuteWithSignature("firePropertyChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleContext.html#removePropertyChangeListener(java.beans.PropertyChangeListener)"/>

@@ -140,7 +140,7 @@ namespace Javax.Lang.Model.Element
         /// <returns><typeparamref name="R"/></returns>
         public R Accept<R, P>(Javax.Lang.Model.Element.AnnotationValueVisitor<R, P> arg0, P arg1)
         {
-            return IExecute<R>("accept", arg0, arg1);
+            return IExecuteWithSignature<R>("accept", "(Ljavax/lang/model/element/AnnotationValueVisitor;Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
 
         #endregion

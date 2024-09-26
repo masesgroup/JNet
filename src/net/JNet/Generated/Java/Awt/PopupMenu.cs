@@ -107,7 +107,7 @@ namespace Java.Awt
         /// <param name="arg2"><see cref="int"/></param>
         public void Show(Java.Awt.Component arg0, int arg1, int arg2)
         {
-            IExecute("show", arg0, arg1, arg2);
+            IExecuteWithSignature("show", "(Ljava/awt/Component;II)V", arg0, arg1, arg2);
         }
 
         #endregion

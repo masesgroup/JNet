@@ -476,7 +476,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="byte"/></returns>
         public byte[] GetFontTable(int arg0, int arg1, int arg2)
         {
-            return IExecuteArray<byte>("getFontTable", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<byte>("getFontTable", "(III)[B", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTable(int)"/>
@@ -496,7 +496,7 @@ namespace Java.Awt.FontNs
         /// <returns><see cref="byte"/></returns>
         public byte[] GetFontTable(Java.Lang.String arg0, int arg1, int arg2)
         {
-            return IExecuteArray<byte>("getFontTable", arg0, arg1, arg2);
+            return IExecuteWithSignatureArray<byte>("getFontTable", "(Ljava/lang/String;II)[B", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/font/OpenType.html#getFontTable(java.lang.String)"/>

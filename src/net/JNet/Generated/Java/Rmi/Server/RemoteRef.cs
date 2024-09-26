@@ -182,7 +182,7 @@ namespace Java.Rmi.Server
         /// <exception cref="Java.Lang.Exception"/>
         public object Invoke(Java.Rmi.Remote arg0, Java.Lang.Reflect.Method arg1, object[] arg2, long arg3)
         {
-            return IExecute("invoke", arg0, arg1, arg2, arg3);
+            return IExecuteWithSignature("invoke", "(Ljava/rmi/Remote;Ljava/lang/reflect/Method;[Ljava/lang/Object;J)Ljava/lang/Object;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RemoteRef.html#getRefClass(java.io.ObjectOutput)"/>

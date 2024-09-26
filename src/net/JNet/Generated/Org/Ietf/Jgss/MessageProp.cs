@@ -178,7 +178,7 @@ namespace Org.Ietf.Jgss
         /// <param name="arg5"><see cref="Java.Lang.String"/></param>
         public void SetSupplementaryStates(bool arg0, bool arg1, bool arg2, bool arg3, int arg4, Java.Lang.String arg5)
         {
-            IExecute("setSupplementaryStates", arg0, arg1, arg2, arg3, arg4, arg5);
+            IExecuteWithSignature("setSupplementaryStates", "(ZZZZILjava/lang/String;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
 
         #endregion

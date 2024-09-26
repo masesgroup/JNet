@@ -134,7 +134,7 @@ namespace Javax.Sound.Midi
         /// <param name="arg1"><see cref="long"/></param>
         public void Send(Javax.Sound.Midi.MidiMessage arg0, long arg1)
         {
-            IExecute("send", arg0, arg1);
+            IExecuteWithSignature("send", "(Ljavax/sound/midi/MidiMessage;J)V", arg0, arg1);
         }
 
         #endregion

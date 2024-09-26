@@ -206,7 +206,7 @@ namespace Javax.Naming
         /// <param name="arg1"><see cref="Javax.Naming.RefAddr"/></param>
         public void Add(int arg0, Javax.Naming.RefAddr arg1)
         {
-            IExecute("add", arg0, arg1);
+            IExecuteWithSignature("add", "(ILjavax/naming/RefAddr;)V", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/Reference.html#add(javax.naming.RefAddr)"/>

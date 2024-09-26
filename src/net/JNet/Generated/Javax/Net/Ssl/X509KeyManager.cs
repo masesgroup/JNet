@@ -161,7 +161,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ChooseClientAlias(Java.Lang.String[] arg0, Java.Security.Principal[] arg1, Java.Net.Socket arg2)
         {
-            return IExecute<Java.Lang.String>("chooseClientAlias", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("chooseClientAlias", "([Ljava/lang/String;[Ljava/security/Principal;Ljava/net/Socket;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#chooseServerAlias(java.lang.String,java.security.Principal[],java.net.Socket)"/>
@@ -172,7 +172,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ChooseServerAlias(Java.Lang.String arg0, Java.Security.Principal[] arg1, Java.Net.Socket arg2)
         {
-            return IExecute<Java.Lang.String>("chooseServerAlias", arg0, arg1, arg2);
+            return IExecuteWithSignature<Java.Lang.String>("chooseServerAlias", "(Ljava/lang/String;[Ljava/security/Principal;Ljava/net/Socket;)Ljava/lang/String;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#getClientAliases(java.lang.String,java.security.Principal[])"/>
@@ -182,7 +182,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetClientAliases(Java.Lang.String arg0, Java.Security.Principal[] arg1)
         {
-            return IExecuteArray<Java.Lang.String>("getClientAliases", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("getClientAliases", "(Ljava/lang/String;[Ljava/security/Principal;)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#getServerAliases(java.lang.String,java.security.Principal[])"/>
@@ -192,7 +192,7 @@ namespace Javax.Net.Ssl
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] GetServerAliases(Java.Lang.String arg0, Java.Security.Principal[] arg1)
         {
-            return IExecuteArray<Java.Lang.String>("getServerAliases", arg0, arg1);
+            return IExecuteWithSignatureArray<Java.Lang.String>("getServerAliases", "(Ljava/lang/String;[Ljava/security/Principal;)[Ljava/lang/String;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509KeyManager.html#getCertificateChain(java.lang.String)"/>

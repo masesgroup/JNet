@@ -171,7 +171,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime Of(int arg0, int arg1, int arg2, int arg3)
         {
-            return SExecute<Java.Time.LocalTime>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3);
+            return SExecuteWithSignature<Java.Time.LocalTime>(LocalBridgeClazz, "of", "(IIII)Ljava/time/LocalTime;", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#of(int,int,int)"/>
@@ -182,7 +182,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime Of(int arg0, int arg1, int arg2)
         {
-            return SExecute<Java.Time.LocalTime>(LocalBridgeClazz, "of", arg0, arg1, arg2);
+            return SExecuteWithSignature<Java.Time.LocalTime>(LocalBridgeClazz, "of", "(III)Ljava/time/LocalTime;", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#of(int,int)"/>
@@ -192,7 +192,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime Of(int arg0, int arg1)
         {
-            return SExecute<Java.Time.LocalTime>(LocalBridgeClazz, "of", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.LocalTime>(LocalBridgeClazz, "of", "(II)Ljava/time/LocalTime;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#ofInstant(java.time.Instant,java.time.ZoneId)"/>
@@ -202,7 +202,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime OfInstant(Java.Time.Instant arg0, Java.Time.ZoneId arg1)
         {
-            return SExecute<Java.Time.LocalTime>(LocalBridgeClazz, "ofInstant", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.LocalTime>(LocalBridgeClazz, "ofInstant", "(Ljava/time/Instant;Ljava/time/ZoneId;)Ljava/time/LocalTime;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#ofNanoOfDay(long)"/>
@@ -230,7 +230,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public static Java.Time.LocalTime Parse(Java.Lang.CharSequence arg0, Java.Time.Format.DateTimeFormatter arg1)
         {
-            return SExecute<Java.Time.LocalTime>(LocalBridgeClazz, "parse", arg0, arg1);
+            return SExecuteWithSignature<Java.Time.LocalTime>(LocalBridgeClazz, "parse", "(Ljava/lang/CharSequence;Ljava/time/format/DateTimeFormatter;)Ljava/time/LocalTime;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#parse(java.lang.CharSequence)"/>
@@ -524,7 +524,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Minus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("minus", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("minus", "(JLjava/time/temporal/TemporalUnit;)Ljava/time/temporal/Temporal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#plus(java.time.temporal.TemporalAmount)"/>
@@ -543,7 +543,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal Plus(long arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("plus", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("plus", "(JLjava/time/temporal/TemporalUnit;)Ljava/time/temporal/Temporal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#with(java.time.temporal.TemporalAdjuster)"/>
@@ -562,7 +562,7 @@ namespace Java.Time
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
         public Java.Time.Temporal.Temporal With(Java.Time.Temporal.TemporalField arg0, long arg1)
         {
-            return IExecute<Java.Time.Temporal.Temporal>("with", arg0, arg1);
+            return IExecuteWithSignature<Java.Time.Temporal.Temporal>("with", "(Ljava/time/temporal/TemporalField;J)Ljava/time/temporal/Temporal;", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#range(java.time.temporal.TemporalField)"/>
@@ -590,7 +590,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long ToEpochSecond(Java.Time.LocalDate arg0, Java.Time.ZoneOffset arg1)
         {
-            return IExecute<long>("toEpochSecond", arg0, arg1);
+            return IExecuteWithSignature<long>("toEpochSecond", "(Ljava/time/LocalDate;Ljava/time/ZoneOffset;)J", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalTime.html#toNanoOfDay()"/>
@@ -608,7 +608,7 @@ namespace Java.Time
         /// <returns><see cref="long"/></returns>
         public long Until(Java.Time.Temporal.Temporal arg0, Java.Time.Temporal.TemporalUnit arg1)
         {
-            return IExecute<long>("until", arg0, arg1);
+            return IExecuteWithSignature<long>("until", "(Ljava/time/temporal/Temporal;Ljava/time/temporal/TemporalUnit;)J", arg0, arg1);
         }
 
         #endregion
