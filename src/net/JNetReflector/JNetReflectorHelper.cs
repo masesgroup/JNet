@@ -109,7 +109,7 @@ namespace Org.Mases.Jnet
 
                     Dictionary<string, string> map = new Dictionary<string, string>();
                     int classCounter = -1;
-                    int endCounter = -1;
+                    int endCounter = 0;
                     string methodName = string.Empty;
                     string className = string.Empty;
                     bool nextLineIsDescriptor = false;
