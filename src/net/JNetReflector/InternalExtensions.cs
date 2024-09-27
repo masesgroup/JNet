@@ -31,6 +31,7 @@ using System.Reflection.Emit;
 using System.Text.RegularExpressions;
 using Org.Mases.Jnet;
 using System.Diagnostics;
+using MASES.JCOBridge.C2JBridge;
 
 namespace MASES.JNetReflector
 {
@@ -432,10 +433,15 @@ namespace MASES.JNetReflector
 
         public static Class JVMClass(this ZipArchiveEntry entry)
         {
+            var cName = entry.JVMFullQualifiedClassName();
             try
             {
-                var cName = entry.JVMFullQualifiedClassName();
                 return Class.ForName(cName, true, Class.SystemClassLoader);
+            }
+            catch (JVMBridgeException cnfe)
+            {
+                ReflectionUtils.ReportTrace(ReflectionUtils.ReflectionTraceLevel.Error, $"JVMClass: {cnfe.GetType().Name} loading {cName} with message: {cnfe.Message}");
+                return null;
             }
             catch
             {

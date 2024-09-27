@@ -54,10 +54,15 @@
   <ItemGroup>
     <Compile Include="..\JNet\Developed\Java\Lang\Annotation\Annotation.cs" Link="Java\Lang\Annotation\Annotation.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Class.cs" Link="Java\Lang\Class.cs" />
+    <Compile Include="..\JNet\Developed\Java\Lang\ClassFormatError.cs" Link="Java\Lang\ClassFormatError.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\ClassLoader.cs" Link="Java\Lang\ClassLoader.cs" />
+    <Compile Include="..\JNet\Developed\Java\Lang\ClassNotFoundException.cs" Link="Java\Lang\ClassNotFoundException.cs" />
+    <Compile Include="..\JNet\Developed\Java\Lang\Error.cs" Link="Java\Lang\Error.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Exception.cs" Link="Java\Lang\Exception.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Iterable.cs" Link="Java\Lang\Iterable.cs" />
+    <Compile Include="..\JNet\Developed\Java\Lang\LinkageError.cs" Link="Java\Lang\LinkageError.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Module.cs" Link="Java\Lang\Module.cs" />
+    <Compile Include="..\JNet\Developed\Java\Lang\NoClassDefFoundError.cs" Link="Java\Lang\NoClassDefFoundError.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\NoSuchMethodException.cs" Link="Java\Lang\NoSuchMethodException.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Object.cs" Link="Java\Lang\Object.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Package.cs" Link="Java\Lang\Package.cs" />
@@ -77,8 +82,11 @@
     <Compile Include="..\JNet\Developed\Java\Lang\Reflect\Type.cs" Link="Java\Lang\Reflect\Type.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Reflect\TypeVariable.cs" Link="Java\Lang\Reflect\TypeVariable.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Reflect\WildcardType.cs" Link="Java\Lang\Reflect\WildcardType.cs" />
+    <Compile Include="..\JNet\Developed\Java\Lang\RuntimeException.cs" Link="Java\Lang\RuntimeException.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\SecurityManager.cs" Link="Java\Lang\SecurityManager.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Throwable.cs" Link="Java\Lang\Throwable.cs" />
+    <Compile Include="..\JNet\Developed\Java\Lang\UnsupportedClassVersionError.cs" Link="Java\Lang\UnsupportedClassVersionError.cs" />
+    <Compile Include="..\JNet\Developed\Java\Lang\UnsupportedOperationException.cs" Link="Java\Lang\UnsupportedOperationException.cs" />
     <Compile Include="..\JNet\Developed\Java\Util\Collection.cs" Link="Java\Util\Collection.cs" />
     <Compile Include="..\JNet\Developed\Java\Util\Iterator.cs" Link="Java\Util\Iterator.cs" />
     <Compile Include="..\JNet\JNetCoreBase.cs" Link="JNetCoreBase.cs" />
