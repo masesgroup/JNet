@@ -870,7 +870,7 @@ namespace MASES.JNetReflector
                 var clsName = jClass.JVMListenerClassName();
                 var fullInterfaces = jClass.Name.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
 
-                var javaClassMethodBlock = jClass.AnalyzeJavaMethods(fullInterfaces, isInterfaceJavaListener, isGeneric).AddTabLevel(1);
+                var javaClassMethodBlock = jClass.AnalyzeJavaMethods(isInterfaceJavaListener, isGeneric).AddTabLevel(1);
                 string singleJavaListenerTemplate = Template.GetTemplate(Template.SingleListenerJavaFileTemplate);
 
                 string constructorExceptions = string.Empty;
@@ -2127,7 +2127,7 @@ namespace MASES.JNetReflector
             return returnStr;
         }
 
-        static string AnalyzeJavaMethods(this Class classDefinition, string extendingInterface, bool isInterfaceJavaListener, bool isGeneric)
+        static string AnalyzeJavaMethods(this Class classDefinition, bool isInterfaceJavaListener, bool isGeneric)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Java Methods of {0} *******************", classDefinition.GenericString);
 
@@ -2281,6 +2281,7 @@ namespace MASES.JNetReflector
                 {
                     if (method.IsDefault)
                     {
+                        var extendingInterface = method.DeclaringClass.Name.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
                         execStub = string.Format(AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_DEFAULT_EXECUTION_FORMAT,
                                                  eventHandlerName, executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString,
                                                  extendingInterface, methodNameOrigin, executionParamsString);
@@ -2307,6 +2308,7 @@ namespace MASES.JNetReflector
                 {
                     if (method.IsDefault)
                     {
+                        var extendingInterface = method.DeclaringClass.Name.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
                         execStub = string.Format(AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_DEFAULT_EXECUTION_FORMAT,
                                                  eventHandlerName, executionParamsString.Length == 0 ? string.Empty : ", " + executionParamsString, returnType,
                                                  extendingInterface, methodNameOrigin, executionParamsString);
@@ -2342,6 +2344,7 @@ namespace MASES.JNetReflector
 
                 if (method.IsDefault)
                 {
+                    var extendingInterface = method.DeclaringClass.Name.Replace(SpecialNames.NestedClassSeparator, SpecialNames.NamespaceSeparator);
                     execStub = string.Format(isVoidMethod ? AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_LISTENER_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_LISTENER_EXECUTION_FORMAT,
                                              extendingInterface, methodNameOrigin, executionParamsString.Length == 0 ? string.Empty : executionParamsString);
 
