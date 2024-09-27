@@ -31,6 +31,7 @@ using System.Reflection.Emit;
 using System.Text.RegularExpressions;
 using Org.Mases.Jnet;
 using System.Diagnostics;
+using MASES.JCOBridge.C2JBridge;
 
 namespace MASES.JNetReflector
 {
@@ -437,9 +438,9 @@ namespace MASES.JNetReflector
             {
                 return Class.ForName(cName, true, Class.SystemClassLoader);
             }
-            catch (ClassNotFoundException cnfe)
+            catch (JVMBridgeException cnfe)
             {
-                ReflectionUtils.ReportTrace(ReflectionUtils.ReflectionTraceLevel.Error, $"JVMClass: ClassNotFoundException loading {cName} with error: {cnfe.Message}");
+                ReflectionUtils.ReportTrace(ReflectionUtils.ReflectionTraceLevel.Error, $"JVMClass: {cnfe.GetType().Name} loading {cName} with message: {cnfe.Message}");
                 return null;
             }
             catch
