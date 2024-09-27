@@ -66,7 +66,7 @@ jobs:
         shell: cmd
         run: |
           cd binReflector\net8.0
-          MASES.JNetReflector.exe -TraceLevel 1 -TraceTo .\JNetReflector.txt -DestinationRootPath ..\..\src\ -ConfigurationFile ..\..\src\configuration.json
+          MASES.JNetReflector.exe -TraceTo %GITHUB_WORKSPACE%\JNetReflector.txt -DestinationRootPath %GITHUB_WORKSPACE%\src\ -ConfigurationFile %GITHUB_WORKSPACE%\src\configuration.json
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
 
