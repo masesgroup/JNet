@@ -1967,6 +1967,36 @@ namespace MASES.JNetReflector
                 string baseHandlerName = methodIndexer == 0 ? methodName : (methodIndexer == 1 ? methodName + paramCount : methodName + paramCount + $"_{methodIndexer}");
                 if (implementMethodAsListener)
                 {
+                    if (classDefinition.IsJVMClassWithCallbacks())
+                    {
+                        // add base method
+                        jDecoration.AppendLine();
+                        jDecoration.Append(AllPackageClasses.ClassStub.MethodStub.HELP_REMARK_DEFAULT_METHOD);
+
+                        string methodNameDefault = methodName + SpecialNames.BaseMethodSuffix;
+                        template = Template.GetTemplate(Template.SingleMethodTemplate);
+                        singleMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.DECORATION, jDecoration.ToString())
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_EXECUTION, listenerHandlerType)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_HANDLER_NAME, baseHandlerName)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.MODIFIER, modifier)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameDefault)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.WHERECLAUSES, genericClauses.ConvertClauses(isGeneric))
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, executionStub.Replace(methodNameOrigin, methodNameOrigin + SpecialNames.BaseMethodSuffix))
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION_TYPE, executionPropertyParams)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.LISTENER_EXECUTION, listenerExecutionParamsString)
+                                               .Replace(AllPackageClasses.ClassStub.MethodStub.HELP, method.JavadocHrefUrl(JNetReflectorCore.UseCamel));
+
+                        jDecoration = new StringBuilder(jDecorationTemporary);
+                        if (!forInterface)
+                        {
+                            subClassBlock.AppendLine(singleMethod);
+                            jDecoration.AppendLine();
+                            jDecoration.AppendFormat(AllPackageClasses.ClassStub.MethodStub.HELP_REMARK_HANDLER_WITH_DEFAULT, methodNameDefault);
+                        }
+                    }
+
                     if (method.IsDefault)
                     {
                         jDecoration.AppendLine();
@@ -2339,6 +2369,20 @@ namespace MASES.JNetReflector
                                            .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, execStub.AddTabLevel(1));
 
                 subClassBlock.AppendLine(singleMethod);
+
+                if (classDefinition.IsJVMClassWithCallbacks())
+                {
+                    execStub = string.Format(isVoidMethod ? AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_VOID_LISTENER_BASE_EXECUTION_FORMAT : AllPackageClasses.ClassStub.MethodStub.SUPERINTERFACE_TYPED_LISTENER_BASE_EXECUTION_FORMAT,
+                                             methodNameOrigin, executionParamsString.Length == 0 ? string.Empty : executionParamsString);
+
+                    var singleBaseMethod = template.Replace(AllPackageClasses.ClassStub.MethodStub.RETURNTYPE, returnType)
+                                                   .Replace(AllPackageClasses.ClassStub.MethodStub.NAME, methodNameOrigin + SpecialNames.BaseMethodSuffix)
+                                                   .Replace(AllPackageClasses.ClassStub.MethodStub.PARAMETERS, paramsString)
+                                                   .Replace(AllPackageClasses.ClassStub.MethodStub.EXTEND_EXCEPTIONS, exceptionsThrowed)
+                                                   .Replace(AllPackageClasses.ClassStub.MethodStub.EXECUTION, execStub.AddTabLevel(1));
+
+                    subClassBlock.AppendLine(singleBaseMethod);
+                }
 
                 if (method.IsDefault && isInterfaceJavaListener)
                 {
