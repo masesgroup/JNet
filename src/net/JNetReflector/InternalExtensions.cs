@@ -339,7 +339,7 @@ namespace MASES.JNetReflector
             if (checkClass == null || checkClass.TypeName == "java.lang.Object") return null;
             var methodSignatures = JNetReflectorHelper.SignatureForClass(checkClass);
             string signature = null;
-            if (methodSignatures.TryGetValue(filteredGenString, out signature))
+            if (methodSignatures != null && methodSignatures.TryGetValue(filteredGenString, out signature))
             {
                 return signature;
             }
