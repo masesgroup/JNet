@@ -109,6 +109,7 @@ namespace MASES.JNetReflector
         public const string ClassSuffix = "Class";
         public const string FieldSuffix = "Field";
         public const string MethodSuffix = "Method";
+        public const string BaseMethodSuffix = "Base";
         public const string DefaultMethodSuffix = "Default";
         public const string DirectMethodSuffix = "Direct";
         public const string NamespaceSuffix = "Ns";
