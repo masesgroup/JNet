@@ -329,7 +329,7 @@ namespace MASES.JNetReflector
             string signature = SignatureFromGenericString(filteredGenString, entry.DeclaringClass);
             if (signature == null)
             {
-                ReflectionUtils.ReportTrace(ReflectionUtils.ReflectionTraceLevel.Critical, $"SignatureFromGenericString: signature not found for method {entry.Name} (Generic string: {entry.GenericString}) of class {entry.DeclaringClass.TypeName} using {filteredGenString} not found.");
+                ReflectionUtils.ReportTrace(ReflectionUtils.ReflectionTraceLevel.Error, $"SignatureFromGenericString: signature not found for method {entry.Name} (Generic string: {entry.GenericString}) of class {entry.DeclaringClass.TypeName} using {filteredGenString} not found.");
             }
             return signature;
         }
