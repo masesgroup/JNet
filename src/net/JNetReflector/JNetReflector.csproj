@@ -55,6 +55,7 @@
     <Compile Include="..\JNet\Developed\Java\Lang\Annotation\Annotation.cs" Link="Java\Lang\Annotation\Annotation.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Class.cs" Link="Java\Lang\Class.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\ClassLoader.cs" Link="Java\Lang\ClassLoader.cs" />
+    <Compile Include="..\JNet\Developed\Java\Lang\ClassNotFoundException.cs" Link="Java\Lang\ClassNotFoundException.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Exception.cs" Link="Java\Lang\Exception.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Iterable.cs" Link="Java\Lang\Iterable.cs" />
     <Compile Include="..\JNet\Developed\Java\Lang\Module.cs" Link="Java\Lang\Module.cs" />

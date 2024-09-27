@@ -432,10 +432,15 @@ namespace MASES.JNetReflector
 
         public static Class JVMClass(this ZipArchiveEntry entry)
         {
+            var cName = entry.JVMFullQualifiedClassName();
             try
             {
-                var cName = entry.JVMFullQualifiedClassName();
                 return Class.ForName(cName, true, Class.SystemClassLoader);
+            }
+            catch (ClassNotFoundException cnfe)
+            {
+                ReflectionUtils.ReportTrace(ReflectionUtils.ReflectionTraceLevel.Error, $"JVMClass: ClassNotFoundException loading {cName} with error: {cnfe.Message}");
+                return null;
             }
             catch
             {
