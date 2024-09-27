@@ -66,12 +66,19 @@ namespace Org.Mases.Jnet
         /// <returns><see langword="true"/> if <see cref="Method"/> comes from super interface</returns>
         public static bool IsFromSuperInterface(Method entry) => SExecute<bool>("isFromSuperInterface", entry);
 
-        public static IDictionary<Class, IReadOnlyDictionary<string, string>> ExtractJavaInfo(IEnumerable<Class> classes, string classPath, string javapFullPath = null)
+        static ConcurrentDictionary<string, IReadOnlyDictionary<string, string>> signatureDict = new ConcurrentDictionary<string, IReadOnlyDictionary<string, string>>();
+
+        public static IReadOnlyDictionary<string, string> SignatureForClass(Class entry)
+        {
+            signatureDict.TryGetValue(entry.TypeName, out var signature);
+            return signature;
+        }
+
+        public static void ExtractJavaInfo(IEnumerable<Class> classes, string classPath, string javapFullPath = null)
         {
             const int argumentLengthLimit = 32699; // from MSDN
 
             List<Class> localList = new List<Class>(classes);
-            var dict = new ConcurrentDictionary<Class, IReadOnlyDictionary<string, string>>();
             string baseArgumentStr = string.IsNullOrWhiteSpace(classPath) ? string.Empty : $"-cp {classPath} " + "-s ";
             if (baseArgumentStr.Length > argumentLengthLimit)
             {
@@ -174,7 +181,7 @@ namespace Org.Mases.Jnet
                         {
                             if (line.Contains("Compiled from"))
                             {
-                                if (classCounter != -1) { dict.TryAdd(toBeAnalyzed[classCounter], map); }
+                                if (classCounter != -1) { signatureDict.TryAdd(toBeAnalyzed[classCounter].TypeName, map); }
                                 classCounter++;
                                 className = toBeAnalyzed[classCounter].Name;
                                 map = new Dictionary<string, string>();
@@ -206,7 +213,7 @@ namespace Org.Mases.Jnet
                     }
                     while (cycleCounter < 100);
 #endif
-                    dict.TryAdd(toBeAnalyzed[classCounter], map);
+                    signatureDict.TryAdd(toBeAnalyzed[classCounter].TypeName, map);
                 }
                 catch { }
                 finally
@@ -214,8 +221,6 @@ namespace Org.Mases.Jnet
                     if (!exited && !process.HasExited) try { process?.Kill(); } catch { }
                 }
             }
-
-            return dict;
         }
 
         public static IReadOnlyDictionary<string, string> ExtractJavaInfo(Class clazz, string classPath, string javapFullPath = null)

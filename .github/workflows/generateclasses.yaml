@@ -66,9 +66,14 @@ jobs:
         shell: cmd
         run: |
           cd binReflector\net8.0
-          MASES.JNetReflector.exe -TraceLevel 0 -DestinationRootPath ..\..\src\ -ConfigurationFile ..\..\src\configuration.json
+          MASES.JNetReflector.exe -TraceLevel 1 -TraceTo .\JNetReflector.txt -DestinationRootPath ..\..\src\ -ConfigurationFile ..\..\src\configuration.json
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: JNetReflector report
+          path: .\JNetReflector.txt
 
       - name: Try Java compilation
         continue-on-error: true

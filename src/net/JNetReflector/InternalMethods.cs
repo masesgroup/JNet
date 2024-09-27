@@ -201,6 +201,7 @@ namespace MASES.JNetReflector
                     ReportTrace(ReflectionTraceLevel.Debug, "Entry {0}", entry.ToString());
                     if (entry.IsSpecialFolder()) continue; // do not reflect this folders
                     if (entry.IsFolder()) continue; // do not reflect this folders
+                    if (!entry.IsClass()) continue; // reflect only Java classes, this speed up next line avoiding too many excpetions
 
                     var jClass = entry.JVMClass();
                     if (jClass != null && (jClass.IsJVMClass() || jClass.IsJVMNestedClass()))
@@ -248,6 +249,25 @@ namespace MASES.JNetReflector
 
         static void AnalyzeItems(this IDictionary<string, IDictionary<string, IDictionary<string, Class>>> items)
         {
+            if (JNetReflectorCore.PreferMethodWithSignature)
+            {
+                try
+                {
+                    ParallelOptions po = new ParallelOptions();
+                    Console.CancelKeyPress += Console_CancelKeyPress;
+                    CancellationTokenSource = new CancellationTokenSource();
+                    CancellationTokenSource.Token.ThrowIfCancellationRequested();
+                    po.CancellationToken = CancellationTokenSource.Token;
+                    po.MaxDegreeOfParallelism = System.Environment.ProcessorCount;
+                    Parallel.ForEach(items, po, ExtractSignatureParallel);
+                }
+                finally
+                {
+                    CancellationTokenSource = null;
+                    Console.CancelKeyPress -= Console_CancelKeyPress;
+                }
+            }
+
             if (!JNetReflectorCore.AvoidParallelBuild)
             {
                 try
@@ -292,7 +312,29 @@ namespace MASES.JNetReflector
             }
             catch (System.Exception e)
             {
-                ReportTrace(ReflectionTraceLevel.Error, "Error in parallel for package {0}: {1}", items.Key, e.Message);
+                ReportTrace(ReflectionTraceLevel.Error, "Error in AnalyzeSubItemsParallel for package {0}: {1}", items.Key, e.Message);
+                throw;
+            }
+        }
+
+        static void ExtractSignatureParallel(KeyValuePair<string, IDictionary<string, IDictionary<string, Class>>> items)
+        {
+            try
+            {
+                List<Class> classes = new List<Class>();
+                foreach (var entry in items.Value)
+                {
+                    classes.AddRange(entry.Value.Values);
+                }
+                JNetReflectorHelper.ExtractJavaInfo(classes, JNetReflectorCore.CurrentClassPath, JNetReflectorCore.JavaPLocationPath);
+            }
+            catch (OperationCanceledException)
+            {
+                throw;
+            }
+            catch (System.Exception e)
+            {
+                ReportTrace(ReflectionTraceLevel.Error, "Error in ExtractSignatureParallel for package {0}: {1}", items.Key, e.Message);
                 throw;
             }
         }
@@ -304,21 +346,9 @@ namespace MASES.JNetReflector
             ReportTrace(ReflectionTraceLevel.Info, "Starting analysis for package {0}", package);
             StringBuilder sb = new StringBuilder();
 
-            IDictionary<Class, IReadOnlyDictionary<string, string>> signaturesForClasses = null;
-            if (JNetReflectorCore.PreferMethodWithSignature)
-            {
-                List<Class> classes = new List<Class>();
-                foreach (var entry in items)
-                {
-                    classes.AddRange(entry.Value.Values);
-                }
-
-                signaturesForClasses = JNetReflectorHelper.ExtractJavaInfo(classes, JNetReflectorCore.CurrentClassPath, JNetReflectorCore.JavaPLocationPath);
-            }
-
             foreach (var entry in items)
             {
-                var classContent = AnalyzeClasses(jarOrModuleName, entry.Value.Values, signaturesForClasses);
+                var classContent = AnalyzeClasses(jarOrModuleName, entry.Value.Values);
                 if (!string.IsNullOrEmpty(classContent))
                 {
                     sb.AppendLine(classContent);
@@ -364,7 +394,7 @@ namespace MASES.JNetReflector
             }
         }
 
-        static string AnalyzeClasses(string jarOrModuleName, IEnumerable<Class> classDefinitions, IDictionary<Class, IReadOnlyDictionary<string, string>> signaturesForClasses)
+        static string AnalyzeClasses(string jarOrModuleName, IEnumerable<Class> classDefinitions)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* AnalyzeClass {0} *******************", jarOrModuleName);
 
@@ -441,12 +471,10 @@ namespace MASES.JNetReflector
             string subInterfaceStr;
             AnalyzeNestedClasses(nestedClasses, classDefinitions, out subClassStr, out nestedBlock, out subInterfaceStr);
 
-            IReadOnlyDictionary<string, string> signatures = null;
-            signaturesForClasses?.TryGetValue(jClass, out signatures);
             string classBlock;
             string singleClassStr;
             string singleInterfaceStr;
-            jClass.PrepareSingleClass(signatures, classDefinitions, false, out classBlock, out singleClassStr, out singleInterfaceStr);
+            jClass.PrepareSingleClass(classDefinitions, false, out classBlock, out singleClassStr, out singleInterfaceStr);
 
             singleInterfaceStr = singleInterfaceStr.Replace(AllPackageClasses.ClassStub.NESTED_INTERFACES, string.IsNullOrWhiteSpace(subInterfaceStr) ? string.Empty : subInterfaceStr);
             singleInterfaceStr = singleInterfaceStr.AddTabLevel(1);
@@ -475,7 +503,7 @@ namespace MASES.JNetReflector
             string singleInterfaceGenericStr;
             if (!JNetReflectorCore.AvoidCSharpGenericDefinition && jClass.IsJVMGenericClass() && !jClass.IsClassToAvoidInGenerics())
             {
-                jClass.PrepareSingleClass(signatures, classDefinitions, true, out classGenericBlock, out singleClassGenericStr, out singleInterfaceGenericStr);
+                jClass.PrepareSingleClass(classDefinitions, true, out classGenericBlock, out singleClassGenericStr, out singleInterfaceGenericStr);
                 singleClassGenericStr = singleClassGenericStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.Empty);
                 singleInterfaceGenericStr = singleInterfaceGenericStr.Replace(AllPackageClasses.ClassStub.NESTED_INTERFACES, string.Empty);
                 classGenericBlock = classGenericBlock.AddTabLevel(1);
@@ -526,12 +554,6 @@ namespace MASES.JNetReflector
             StringBuilder subClassAutonoumous = new StringBuilder();
             StringBuilder subInterfaceAutonoumous = new StringBuilder();
 
-            IDictionary<Class, IReadOnlyDictionary<string, string>> signaturesForNestedClasses = null;
-            if (JNetReflectorCore.PreferMethodWithSignature)
-            {
-                signaturesForNestedClasses = JNetReflectorHelper.ExtractJavaInfo(nestedClasses, JNetReflectorCore.CurrentClassPath, JNetReflectorCore.JavaPLocationPath);
-            }
-
             foreach (var entry in nestedClasses)
             {
                 string innerNestedClassBlock = string.Empty;
@@ -550,9 +572,7 @@ namespace MASES.JNetReflector
                 string nestedClassBlock;
                 string singleNestedClassStr;
                 string singleNestedInterfaceStr;
-                IReadOnlyDictionary<string, string> signatures = null;
-                signaturesForNestedClasses?.TryGetValue(entry, out signatures);
-                entry.PrepareSingleClass(signatures, classDefinitions, false, out nestedClassBlock, out singleNestedClassStr, out singleNestedInterfaceStr);
+                entry.PrepareSingleClass(classDefinitions, false, out nestedClassBlock, out singleNestedClassStr, out singleNestedInterfaceStr);
                 nestedClassBlock = nestedClassBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(innerNestedClassBlock) ? string.Empty : innerNestedClassBlock);
                 singleNestedClassStr = singleNestedClassStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(innerSingleNestedClassStr) ? string.Empty : innerSingleNestedClassStr);
                 singleNestedInterfaceStr = singleNestedInterfaceStr.Replace(AllPackageClasses.ClassStub.NESTED_INTERFACES, string.IsNullOrWhiteSpace(innerSingleNestedInterfaceStr) ? string.Empty : innerSingleNestedInterfaceStr);
@@ -593,7 +613,7 @@ namespace MASES.JNetReflector
                     {
                         AnalyzeNestedClasses(nesting, classDefinitions.Concat(nesting), out innerNestedClassBlock, out innerSingleNestedClassStr, out innerSingleNestedInterfaceStr);
                     }
-                    entry.PrepareSingleClass(signatures, classDefinitions, true, out nestedClassBlock, out singleNestedClassStr, out singleNestedInterfaceStr);
+                    entry.PrepareSingleClass(classDefinitions, true, out nestedClassBlock, out singleNestedClassStr, out singleNestedInterfaceStr);
                     nestedClassBlock = nestedClassBlock.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(innerNestedClassBlock) ? string.Empty : innerNestedClassBlock);
                     singleNestedClassStr = singleNestedClassStr.Replace(AllPackageClasses.ClassStub.NESTED_CLASSES, string.IsNullOrWhiteSpace(innerSingleNestedClassStr) ? string.Empty : innerSingleNestedClassStr);
                     singleNestedInterfaceStr = singleNestedInterfaceStr.Replace(AllPackageClasses.ClassStub.NESTED_INTERFACES, string.IsNullOrWhiteSpace(innerSingleNestedInterfaceStr) ? string.Empty : innerSingleNestedInterfaceStr);
@@ -626,7 +646,7 @@ namespace MASES.JNetReflector
             singleInterfaceNestedBlock = subInterfaceAutonoumous.ToString();
         }
 
-        static void PrepareSingleClass(this Class jClass, IReadOnlyDictionary<string, string> signatures, IEnumerable<Class> classDefinitions, bool isGeneric, out string allPackagesClassBlock, out string singleClassStr, out string singleInterfaceStr)
+        static void PrepareSingleClass(this Class jClass, IEnumerable<Class> classDefinitions, bool isGeneric, out string allPackagesClassBlock, out string singleClassStr, out string singleInterfaceStr)
         {
             if (jClass.IsJNetInternalOrManuallyDeveloped())
             {
@@ -748,8 +768,8 @@ namespace MASES.JNetReflector
                     constructorClassBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true).AddTabLevel(1);
                     operatorClassBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(1);
                     fieldClassBlock = jClass.AnalyzeFields(classDefinitions, isGeneric).AddTabLevel(1);
-                    staticMethodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, true).AddTabLevel(1);
-                    methodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, false).AddTabLevel(1);
+                    staticMethodClassBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, true).AddTabLevel(1);
+                    methodClassBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, false).AddTabLevel(1);
                 }
                 else
                 {
@@ -758,16 +778,16 @@ namespace MASES.JNetReflector
                         operatorClassBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(1);
                     }
                     fieldClassBlock = jClass.AnalyzeFields(classDefinitions, isGeneric).AddTabLevel(1);
-                    staticMethodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, true).AddTabLevel(1);
-                    methodClassBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, false).AddTabLevel(1);
+                    staticMethodClassBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, true).AddTabLevel(1);
+                    methodClassBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, false).AddTabLevel(1);
                     if (!jClass.IsJVMClassWithCallbacks())
                     {
-                        methodClassBlockDirect = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, false, false, true, false).AddTabLevel(1);
+                        methodClassBlockDirect = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, false, true, false).AddTabLevel(1);
                     }
                 }
                 if (!JNetReflectorCore.DisableInterfaceMethodGeneration && createInterfaceData)
                 {
-                    methodInterfaceBlock = jClass.AnalyzeMethods(signatures, classDefinitions, methodPrefilter, isGeneric, true, jClassIsListener, false, false).AddTabLevel(1);
+                    methodInterfaceBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, true, jClassIsListener, false, false).AddTabLevel(1);
                 }
             }
 
@@ -1243,7 +1263,7 @@ namespace MASES.JNetReflector
             return prefilteredMethods;
         }
 
-        static string AnalyzeMethods(this Class classDefinition, IReadOnlyDictionary<string, string> methodsToSignature, IEnumerable<Class> classDefinitions, IList<Method> prefilteredMethods, bool isGeneric, bool forInterface, bool forListener, bool isDirectListener, bool staticMethods)
+        static string AnalyzeMethods(this Class classDefinition, IEnumerable<Class> classDefinitions, IList<Method> prefilteredMethods, bool isGeneric, bool forInterface, bool forListener, bool isDirectListener, bool staticMethods)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Methods of {0} with static {1} *******************", classDefinition.GenericString, staticMethods);
 
@@ -1423,7 +1443,7 @@ namespace MASES.JNetReflector
                 StringBuilder executionStub = new StringBuilder();
                 if (getMethod != null)
                 {
-                    string getSignature = methodsToSignature?.SignatureFromGenericString(getMethod);
+                    string getSignature = getMethod.SignatureFromGenericString();
                     string execStub = getMethod.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTE : AllPackageClasses.ClassStub.MethodStub.INSTANCE_EXECUTE;
                     if (!string.IsNullOrWhiteSpace(getSignature))
                     {
@@ -1448,7 +1468,7 @@ namespace MASES.JNetReflector
 
                 if (setMethod != null)
                 {
-                    string setSignature = methodsToSignature?.SignatureFromGenericString(setMethod);
+                    string setSignature = setMethod.SignatureFromGenericString();
                     if (JNetReflectorCore.ReflectDeprecated) isSetDeprecated = setMethod.IsDeprecated();
                     string setExecStub = setMethod.IsStatic() ? AllPackageClasses.ClassStub.PropertyStub.STATIC_SET_EXECUTION_FORMAT : AllPackageClasses.ClassStub.PropertyStub.SET_EXECUTION_FORMAT;
                     var methodToCall = setMethod.IsStatic() ? AllPackageClasses.ClassStub.MethodStub.STATIC_EXECUTE : AllPackageClasses.ClassStub.MethodStub.INSTANCE_EXECUTE;
@@ -1509,7 +1529,7 @@ namespace MASES.JNetReflector
                 var method = item.Value;
                 bool implementMethodAsListener = isDirectListener ? forListener : method.ToBeCallback(classDefinition, forListener);
                 var genString = method.GenericString;
-                string signature = methodsToSignature?.SignatureFromGenericString(method);
+                string signature = method.SignatureFromGenericString();
                 var paramCount = method.ParameterCount;
                 var methodNameOrigin = method.Name;
                 var eventHandlerName = methodNameOrigin;

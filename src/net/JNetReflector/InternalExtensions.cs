@@ -323,15 +323,34 @@ namespace MASES.JNetReflector
             return methodSignature;
         }
 
-        public static string SignatureFromGenericString(this IReadOnlyDictionary<string, string> methodSignatures, Method entry)
+        public static string SignatureFromGenericString(this Method entry)
         {
             var filteredGenString = entry.GenericString.RemoveThrowsAndCleanupSignature();
-            string signature = null;
-            if (!methodSignatures.TryGetValue(filteredGenString, out signature))
+            string signature = SignatureFromGenericString(filteredGenString, entry.DeclaringClass);
+            if (signature == null)
             {
                 ReflectionUtils.ReportTrace(ReflectionUtils.ReflectionTraceLevel.Critical, $"SignatureFromGenericString: signature not found for method {entry.Name} (Generic string: {entry.GenericString}) of class {entry.DeclaringClass.TypeName} using {filteredGenString} not found.");
             }
             return signature;
+        }
+
+        static string SignatureFromGenericString(string filteredGenString, Class checkClass)
+        {
+            if (checkClass == null || checkClass.TypeName == "java.lang.Object") return null;
+            var methodSignatures = JNetReflectorHelper.SignatureForClass(checkClass);
+            string signature = null;
+            if (methodSignatures != null && methodSignatures.TryGetValue(filteredGenString, out signature))
+            {
+                return signature;
+            }
+            try
+            {
+                return SignatureFromGenericString(filteredGenString, checkClass.SuperClass);
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         #endregion
@@ -361,6 +380,12 @@ namespace MASES.JNetReflector
         public static bool IsFolder(this ZipArchiveEntry entry)
         {
             if (entry.Length == 0) return true;
+            return false;
+        }
+
+        public static bool IsClass(this ZipArchiveEntry entry)
+        {
+            if (entry.Name.Contains(SpecialNames.ClassExtension)) return true;
             return false;
         }
 
@@ -1632,7 +1657,7 @@ namespace MASES.JNetReflector
                 return true;
             }
 
-            string className = entry.JVMNestedClassName(entry.JVMNestingLevels(), null, true, false);
+            string className = entry.JVMNestedClassName(entry.JVMNestingLevels(), null, true, false, true);
 
             if (entry.IsJVMNestedClass()
                 && SpecialNames.SpecialNumberedNames.Any((o) => className.StartsWith(o))) return true;
