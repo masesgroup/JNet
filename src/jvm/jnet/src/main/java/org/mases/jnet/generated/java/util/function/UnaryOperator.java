@@ -78,20 +78,20 @@ public final class UnaryOperator implements org.mases.jcobridge.IJCListener, jav
     //@Override
     public java.util.function.Function andThen(java.util.function.Function arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("andThen", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.UnaryOperator.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Function)retVal;
+        raiseEvent("andThen", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Function.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Function)retVal;
     }
     //@Override
     public java.util.function.Function andThenDefault(java.util.function.Function arg0) {
-        return java.util.function.UnaryOperator.super.andThen(arg0);
+        return java.util.function.Function.super.andThen(arg0);
     }
     //@Override
     public java.util.function.Function compose(java.util.function.Function arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("compose", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.UnaryOperator.super.compose(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Function)retVal;
+        raiseEvent("compose", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.Function.super.compose(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.Function)retVal;
     }
     //@Override
     public java.util.function.Function composeDefault(java.util.function.Function arg0) {
-        return java.util.function.UnaryOperator.super.compose(arg0);
+        return java.util.function.Function.super.compose(arg0);
     }
 
 }

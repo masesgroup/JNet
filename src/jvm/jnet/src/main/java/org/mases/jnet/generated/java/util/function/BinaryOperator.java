@@ -78,11 +78,11 @@ public final class BinaryOperator implements org.mases.jcobridge.IJCListener, ja
     //@Override
     public java.util.function.BiFunction andThen(java.util.function.Function arg0) {
         org.mases.jnet.developed.JNetEventResult eventDataExchange = new org.mases.jnet.developed.JNetEventResult();
-        raiseEvent("andThen", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BinaryOperator.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiFunction)retVal;
+        raiseEvent("andThen", eventDataExchange, arg0); Object retVal; if (!eventDataExchange.getHasOverride()) retVal = java.util.function.BiFunction.super.andThen(arg0); else retVal = eventDataExchange.getReturnData(); return (java.util.function.BiFunction)retVal;
     }
     //@Override
     public java.util.function.BiFunction andThenDefault(java.util.function.Function arg0) {
-        return java.util.function.BinaryOperator.super.andThen(arg0);
+        return java.util.function.BiFunction.super.andThen(arg0);
     }
 
 }
