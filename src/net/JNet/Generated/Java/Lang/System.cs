@@ -655,7 +655,7 @@ namespace Java.Lang
                 /// <returns><see cref="Java.Lang.System.Logger.Level"/></returns>
                 public static Java.Lang.System.Logger.Level ValueOf(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Java.Lang.System.Logger.Level>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/System$Logger$Level;", arg0);
+                    return SExecute<Java.Lang.System.Logger.Level>(LocalBridgeClazz, "valueOf", arg0);
                 }
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#values()"/>
@@ -663,7 +663,7 @@ namespace Java.Lang
                 /// <returns><see cref="Java.Lang.System.Logger.Level"/></returns>
                 public static Java.Lang.System.Logger.Level[] Values()
                 {
-                    return SExecuteWithSignatureArray<Java.Lang.System.Logger.Level>(LocalBridgeClazz, "values", "()[Ljava/lang/System$Logger$Level;");
+                    return SExecuteArray<Java.Lang.System.Logger.Level>(LocalBridgeClazz, "values");
                 }
 
                 #endregion
@@ -674,14 +674,14 @@ namespace Java.Lang
                 /// </summary>
                 public Java.Lang.String Name
                 {
-                    get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                    get { return IExecute<Java.Lang.String>("getName"); }
                 }
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.Level.html#getSeverity()"/> 
                 /// </summary>
                 public int Severity
                 {
-                    get { return IExecuteWithSignature<int>("getSeverity", "()I"); }
+                    get { return IExecute<int>("getSeverity"); }
                 }
 
                 #endregion

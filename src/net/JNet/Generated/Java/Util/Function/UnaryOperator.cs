@@ -223,7 +223,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Function AndThenDefault(Java.Util.Function.Function arg0)
         {
-            return IExecute<Java.Util.Function.Function>("andThenDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Function>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         /// <summary>
@@ -259,7 +259,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Function ComposeDefault(Java.Util.Function.Function arg0)
         {
-            return IExecute<Java.Util.Function.Function>("composeDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Function>("composeDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         /// <summary>
@@ -325,7 +325,7 @@ namespace Java.Util.Function
         /// <returns><see cref="object"/></returns>
         public override object Apply(object arg0)
         {
-            return IExecute("apply", arg0);
+            return IExecuteWithSignature("apply", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
@@ -334,7 +334,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public override Java.Util.Function.Function AndThen(Java.Util.Function.Function arg0)
         {
-            return IExecute<Java.Util.Function.FunctionDirect, Java.Util.Function.Function>("andThen", arg0);
+            return IExecuteWithSignature<Java.Util.Function.FunctionDirect, Java.Util.Function.Function>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
@@ -343,7 +343,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public override Java.Util.Function.Function Compose(Java.Util.Function.Function arg0)
         {
-            return IExecute<Java.Util.Function.FunctionDirect, Java.Util.Function.Function>("compose", arg0);
+            return IExecuteWithSignature<Java.Util.Function.FunctionDirect, Java.Util.Function.Function>("compose", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         #endregion
@@ -469,7 +469,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>Default(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            return IExecute<Java.Util.Function.Function<T, V>>("andThenDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Function<T, V>>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         /// <summary>
@@ -513,7 +513,7 @@ namespace Java.Util.Function
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
         public Java.Util.Function.Function<V, R> Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>Default(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV : V where Arg0ExtendsT : T
         {
-            return IExecute<Java.Util.Function.Function<V, R>>("composeDefault", arg0);
+            return IExecuteWithSignature<Java.Util.Function.Function<V, R>>("composeDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         /// <summary>
@@ -584,7 +584,7 @@ namespace Java.Util.Function
         /// <returns><typeparamref name="R"/></returns>
         public override R Apply<R>(T arg0)
         {
-            return IExecute<R>("apply", arg0);
+            return IExecuteWithSignature<R>("apply", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
@@ -597,7 +597,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public override Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, R, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
-            return IExecute<Java.Util.Function.FunctionDirect<T, V>, Java.Util.Function.Function<T, V>>("andThen", arg0);
+            return IExecuteWithSignature<Java.Util.Function.FunctionDirect<T, V>, Java.Util.Function.Function<T, V>>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
@@ -610,7 +610,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         public override Java.Util.Function.Function<V, R> Compose<V, R, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV : V where Arg0ExtendsT : T
         {
-            return IExecute<Java.Util.Function.FunctionDirect<V, R>, Java.Util.Function.Function<V, R>>("compose", arg0);
+            return IExecuteWithSignature<Java.Util.Function.FunctionDirect<V, R>, Java.Util.Function.Function<V, R>>("compose", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         #endregion

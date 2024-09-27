@@ -1100,7 +1100,7 @@ namespace Java.Lang.ModuleNs
                 /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier"/></returns>
                 public static Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier ValueOf(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Exports$Modifier;", arg0);
+                    return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier>(LocalBridgeClazz, "valueOf", arg0);
                 }
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Exports.Modifier.html#values()"/>
@@ -1108,7 +1108,7 @@ namespace Java.Lang.ModuleNs
                 /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier"/></returns>
                 public static Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier[] Values()
                 {
-                    return SExecuteWithSignatureArray<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier>(LocalBridgeClazz, "values", "()[Ljava/lang/module/ModuleDescriptor$Exports$Modifier;");
+                    return SExecuteArray<Java.Lang.ModuleNs.ModuleDescriptor.Exports.Modifier>(LocalBridgeClazz, "values");
                 }
 
                 #endregion
@@ -1313,7 +1313,7 @@ namespace Java.Lang.ModuleNs
                 /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier"/></returns>
                 public static Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier ValueOf(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Opens$Modifier;", arg0);
+                    return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier>(LocalBridgeClazz, "valueOf", arg0);
                 }
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Opens.Modifier.html#values()"/>
@@ -1321,7 +1321,7 @@ namespace Java.Lang.ModuleNs
                 /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier"/></returns>
                 public static Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier[] Values()
                 {
-                    return SExecuteWithSignatureArray<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier>(LocalBridgeClazz, "values", "()[Ljava/lang/module/ModuleDescriptor$Opens$Modifier;");
+                    return SExecuteArray<Java.Lang.ModuleNs.ModuleDescriptor.Opens.Modifier>(LocalBridgeClazz, "values");
                 }
 
                 #endregion
@@ -1531,7 +1531,7 @@ namespace Java.Lang.ModuleNs
                 /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier"/></returns>
                 public static Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier ValueOf(Java.Lang.String arg0)
                 {
-                    return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/module/ModuleDescriptor$Requires$Modifier;", arg0);
+                    return SExecute<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>(LocalBridgeClazz, "valueOf", arg0);
                 }
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleDescriptor.Requires.Modifier.html#values()"/>
@@ -1539,7 +1539,7 @@ namespace Java.Lang.ModuleNs
                 /// <returns><see cref="Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier"/></returns>
                 public static Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier[] Values()
                 {
-                    return SExecuteWithSignatureArray<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>(LocalBridgeClazz, "values", "()[Ljava/lang/module/ModuleDescriptor$Requires$Modifier;");
+                    return SExecuteArray<Java.Lang.ModuleNs.ModuleDescriptor.Requires.Modifier>(LocalBridgeClazz, "values");
                 }
 
                 #endregion

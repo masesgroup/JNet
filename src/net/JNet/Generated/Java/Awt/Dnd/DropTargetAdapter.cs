@@ -281,7 +281,7 @@ namespace Java.Awt.Dnd
         /// <param name="arg0"><see cref="Java.Awt.Dnd.DropTargetDropEvent"/></param>
         public override void Drop(Java.Awt.Dnd.DropTargetDropEvent arg0)
         {
-            IExecute("drop", arg0);
+            IExecuteWithSignature("drop", "(Ljava/awt/dnd/DropTargetDropEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetAdapter.html#dragEnter(java.awt.dnd.DropTargetDragEvent)"/>
