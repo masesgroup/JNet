@@ -234,7 +234,7 @@ namespace Javax.Naming.Ldap
         /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
         public override void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
         {
-            IExecute("namingExceptionThrown", arg0);
+            IExecuteWithSignature("namingExceptionThrown", "(Ljavax/naming/event/NamingExceptionEvent;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/UnsolicitedNotificationListener.html#notificationReceived(javax.naming.ldap.UnsolicitedNotificationEvent)"/>

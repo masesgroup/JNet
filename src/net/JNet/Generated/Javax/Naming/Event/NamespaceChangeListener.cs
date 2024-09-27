@@ -318,7 +318,7 @@ namespace Javax.Naming.Event
         /// <param name="arg0"><see cref="Javax.Naming.Event.NamingExceptionEvent"/></param>
         public override void NamingExceptionThrown(Javax.Naming.Event.NamingExceptionEvent arg0)
         {
-            IExecute("namingExceptionThrown", arg0);
+            IExecuteWithSignature("namingExceptionThrown", "(Ljavax/naming/event/NamingExceptionEvent;)V", arg0);
         }
 
         #endregion

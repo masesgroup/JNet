@@ -1295,7 +1295,7 @@ namespace Javax.Swing.Text.Html
                 /// <param name="arg0"><see cref="Javax.Swing.Text.Html.HTML.Tag"/></param>
                 public void End(Javax.Swing.Text.Html.HTML.Tag arg0)
                 {
-                    IExecuteWithSignature("end", "(Ljavax/swing/text/html/HTML$Tag;)V", arg0);
+                    IExecute("end", arg0);
                 }
                 /// <summary>
                 /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/HTMLDocument.HTMLReader.TagAction.html#start(javax.swing.text.html.HTML.Tag,javax.swing.text.MutableAttributeSet)"/>
@@ -1304,7 +1304,7 @@ namespace Javax.Swing.Text.Html
                 /// <param name="arg1"><see cref="Javax.Swing.Text.MutableAttributeSet"/></param>
                 public void Start(Javax.Swing.Text.Html.HTML.Tag arg0, Javax.Swing.Text.MutableAttributeSet arg1)
                 {
-                    IExecuteWithSignature("start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", arg0, arg1);
+                    IExecute("start", arg0, arg1);
                 }
 
                 #endregion
