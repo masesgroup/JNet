@@ -29,7 +29,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html"/>
     /// </summary>
-    public partial class Thread : Java.Lang.Runnable
+    public partial class Thread : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Thread>
     {
         const string _bridgeClassName = "java.lang.Thread";
         /// <summary>
@@ -199,6 +199,10 @@ namespace Java.Lang
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Thread"/> to <see cref="Java.Lang.Runnable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Runnable(Java.Lang.Thread t) => t.Cast<Java.Lang.Runnable>();
 
         #endregion
 
