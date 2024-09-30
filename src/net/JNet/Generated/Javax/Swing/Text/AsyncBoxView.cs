@@ -115,7 +115,7 @@ namespace Javax.Swing.Text
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/AsyncBoxView.ChildState.html"/>
         /// </summary>
-        public partial class ChildState : Java.Lang.Runnable
+        public partial class ChildState : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ChildState>
         {
             const string _bridgeClassName = "javax.swing.text.AsyncBoxView$ChildState";
             /// <summary>
@@ -328,6 +328,10 @@ namespace Javax.Swing.Text
             #endregion
 
             #region Class/Interface conversion operators
+            /// <summary>
+            /// Converter from <see cref="Javax.Swing.Text.AsyncBoxView.ChildState"/> to <see cref="Java.Lang.Runnable"/>
+            /// </summary>
+            public static implicit operator Java.Lang.Runnable(Javax.Swing.Text.AsyncBoxView.ChildState t) => t.Cast<Java.Lang.Runnable>();
 
             #endregion
 

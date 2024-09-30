@@ -29,7 +29,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/TimerTask.html"/>
     /// </summary>
-    public partial class TimerTask : Java.Lang.Runnable
+    public partial class TimerTask : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TimerTask>
     {
         const string _bridgeClassName = "java.util.TimerTask";
         /// <summary>
@@ -80,6 +80,10 @@ namespace Java.Util
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Util.TimerTask"/> to <see cref="Java.Lang.Runnable"/>
+        /// </summary>
+        public static implicit operator Java.Lang.Runnable(Java.Util.TimerTask t) => t.Cast<Java.Lang.Runnable>();
 
         #endregion
 

@@ -29,25 +29,48 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html"/>
     /// </summary>
-    public partial class Runnable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Runnable>
+    public partial class Runnable : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-        const string _bridgeClassName = "java.lang.Runnable";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [global::System.Obsolete("Runnable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public Runnable() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        [global::System.Obsolete("Runnable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public Runnable(params object[] args) : base(args) { }
+        public Runnable() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.java.lang.Runnable";
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+    
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region RunnableDirect declaration
+    /// <summary>
+    /// Direct override of <see cref="Runnable"/> or its generic type if there is one
+    /// </summary>
+    public partial class RunnableDirect : Runnable
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
+
+        const string _bridgeClassName = "java.lang.Runnable";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
         /// <summary>
@@ -66,15 +89,12 @@ namespace Java.Lang
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
-        // TODO: complete the class
-
     }
     #endregion
 
     #region IRunnable
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for org.mases.jnet.generated.java.lang.Runnable implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html"/>
     /// </summary>
     public partial interface IRunnable
     {
@@ -115,9 +135,71 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="Runnable"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("run", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(RunEventHandler));
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html#run()"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnRun"/> has a value it takes precedence over corresponding class method</remarks>
+        public global::System.Action OnRun { get; set; } = null;
+
+        bool hasOverrideRun = true;
+        void RunEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+        {
+            hasOverrideRun = true;
+            var methodToExecute = (OnRun != null) ? OnRun : Run;
+            methodToExecute.Invoke();
+            data.EventData.TypedEventData.HasOverride = hasOverrideRun;
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html#run()"/>
         /// </summary>
-        public void Run()
+        public virtual void Run()
+        {
+            hasOverrideRun = false;
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region RunnableDirect implementation
+    public partial class RunnableDirect : Java.Lang.IRunnable
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Runnable.html#run()"/>
+        /// </summary>
+        public override void Run()
         {
             IExecuteWithSignature("run", "()V");
         }
