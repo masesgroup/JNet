@@ -6,7 +6,9 @@ on:
     # * is a special character in YAML so you have to quote this string
     # https://crontab.cronhub.io/
     - cron: '0 0 * * SAT'
-
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
 jobs:
   indexing:
     runs-on: ubuntu-latest
