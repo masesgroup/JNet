@@ -22,7 +22,7 @@
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(JNET_DOCKER_BUILD_ACTIONS)' != 'true'">
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<TargetFrameworks>net462;net6.0;net8.0</TargetFrameworks>
+		<TargetFrameworks>net462;net8.0;net9.0</TargetFrameworks>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(JNET_DOCKER_BUILD_ACTIONS)' == 'true'">
 		<DefineConstants>$(DefineConstants);JNET_DOCKER_BUILD_ACTIONS</DefineConstants>
@@ -37,7 +37,7 @@
 		<None Include="..\Common\JNet.snk" Link="JNet.snk" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
-		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="8.0.0"/>
+		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="9.0.0"/>
 		<Reference Include="Microsoft.CSharp" />
 	</ItemGroup>
 	<!-- Fix start https://github.com/dotnet/sourcelink/issues/572 -->
