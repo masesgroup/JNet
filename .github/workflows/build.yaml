@@ -271,8 +271,6 @@ jobs:
             framework: net462
           - os: macos-latest
             framework: net462
-          - os: macos-latest
-            framework: net6.0
           - os: macos-13
             framework: net462
           - jdk_vendor: oracle

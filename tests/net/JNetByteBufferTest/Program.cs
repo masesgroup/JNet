@@ -32,9 +32,13 @@ namespace MASES.JNetByteBufferTest
         const int iterations = 100;
         static void Main(string[] args)
         {
+            global::System.Console.WriteLine("Starting JNetByteBufferTest");
+
             JNetTestCore.ApplicationHeapSize = "4G";
             JNetTestCore.CreateGlobalInstance();
             var appArgs = JNetTestCore.FilteredArgs;
+
+            global::System.Console.WriteLine($"Initialized JNetTestCore, remaining arguments are {string.Join(" ", appArgs)}");
 
             Console.WriteLine("Start insert from CLR to JVM");
 
