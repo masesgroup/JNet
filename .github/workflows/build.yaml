@@ -332,9 +332,15 @@ jobs:
         exclude:
           - jdk_vendor: oracle
             jdk_version: 11
-        
+     
     runs-on: ${{ matrix.os }}
     steps:
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            6.x
+            9.x
+    
       - name: Restore JNet bin from cache
         uses: actions/cache/restore@v4
         with:
