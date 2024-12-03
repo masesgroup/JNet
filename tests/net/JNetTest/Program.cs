@@ -33,12 +33,9 @@ namespace MASES.JNetTest
     {
         static void Main(string[] args)
         {
-            global::System.Console.WriteLine("Starting JNetTest");
+            System.Console.WriteLine("Starting JNetTest");
 
-            JNetTestCore.CreateGlobalInstance();
-            var appArgs = JNetTestCore.FilteredArgs;
-
-            global::System.Console.WriteLine($"Initialized JNetTestCore, remaining arguments are {string.Join(" ", appArgs)}");
+            Initialize();
 
             TestExtensions();
 
@@ -59,6 +56,22 @@ namespace MASES.JNetTest
             TestIterator();
 
             TestAsyncIterator().Wait();
+        }
+
+        static void Initialize()
+        {
+            try
+            {
+                JNetTestCore.CreateGlobalInstance();
+                var appArgs = JNetTestCore.FilteredArgs;
+
+                System.Console.WriteLine($"Initialized JNetTestCore, remaining arguments are {string.Join(" ", appArgs)}");
+            }
+            catch (Exception ex)
+            {
+                System.Console.WriteLine(ex);
+                throw;
+            }
         }
 
         static void TestSingleton()
