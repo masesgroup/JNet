@@ -32,9 +32,9 @@ namespace MASES.JNetByteBufferTest
         const int iterations = 100;
         static void Main(string[] args)
         {
-            JNetTestCore.ApplicationHeapSize = "4G";
-            JNetTestCore.CreateGlobalInstance();
-            var appArgs = JNetTestCore.FilteredArgs;
+            Console.WriteLine("Starting JNetByteBufferTest");
+
+            Initialize();
 
             Console.WriteLine("Start insert from CLR to JVM");
 
@@ -48,6 +48,23 @@ namespace MASES.JNetByteBufferTest
             for (int i = MinValue; i < MaxValue; i *= 10)
             {
                 TestGetByteBuffers(iterations, i);
+            }
+        }
+
+        static void Initialize()
+        {
+            try
+            {
+                JNetTestCore.ApplicationHeapSize = "4G";
+                JNetTestCore.CreateGlobalInstance();
+                var appArgs = JNetTestCore.FilteredArgs;
+
+                System.Console.WriteLine($"Initialized JNetTestCore, remaining arguments are {string.Join(" ", appArgs)}");
+            }
+            catch (Exception ex)
+            {
+                System.Console.WriteLine(ex);
+                throw;
             }
         }
 

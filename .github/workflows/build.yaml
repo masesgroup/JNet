@@ -257,6 +257,11 @@ jobs:
           path: ./bin/
           key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
           
+      - uses: actions/upload-artifact@v4
+        with:
+          name: JNetBin
+          path: .\bin\
+          
   execute_tests:
     needs: build_windows
     strategy:
@@ -271,14 +276,15 @@ jobs:
             framework: net462
           - os: macos-latest
             framework: net462
-          - os: macos-latest
-            framework: net6.0
           - os: macos-13
             framework: net462
           - jdk_vendor: oracle
             jdk_version: 11
         
     runs-on: ${{ matrix.os }}
+    env:
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_19 }}
+    
     steps:
       - name: Restore JNet bin from cache
         uses: actions/cache/restore@v4
@@ -289,6 +295,7 @@ jobs:
           key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
 
       - uses: actions/setup-dotnet@v4
+        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' }}
         with:
           dotnet-version: |
             6.x
@@ -305,16 +312,13 @@ jobs:
         run: |
           dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
           dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
-        env:
-          JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_19 }}
+
 
       - name: WINDOWS ONLY - Execute tests on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: ${{ matrix.os == 'windows-latest' }}
         run: |
           .\bin\${{ matrix.framework }}\JNetTest.exe
           .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
-        env:
-          JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_19 }}
 
       - uses: actions/upload-artifact@v4
         if: failure()
@@ -334,9 +338,15 @@ jobs:
         exclude:
           - jdk_vendor: oracle
             jdk_version: 11
-        
+     
     runs-on: ${{ matrix.os }}
     steps:
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            6.x
+            9.x
+    
       - name: Restore JNet bin from cache
         uses: actions/cache/restore@v4
         with:
@@ -359,8 +369,6 @@ jobs:
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}/bin/JNetPSTest.ps1
-        env:
-          JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_19 }}
 
       - name: Execute PowerShell test on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: ${{ matrix.os == 'windows-latest' }}
@@ -370,8 +378,6 @@ jobs:
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1
-        env:
-          JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_19 }}
 
       - name: Execute PowerShell 5.1 test on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: ${{ matrix.os == 'windows-latest' }}
@@ -380,8 +386,6 @@ jobs:
           $env:DOTNET_CLI_UI_LANGUAGE="en_US"
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1
-        env:
-          JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_19 }}
 
       - uses: actions/upload-artifact@v4
         if: failure()

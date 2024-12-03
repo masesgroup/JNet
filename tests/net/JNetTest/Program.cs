@@ -25,7 +25,6 @@ using MASES.JCOBridge.C2JBridge;
 using System.Threading.Tasks;
 using System.Linq;
 using Java.Nio;
-using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNet.Specific;
 
 namespace MASES.JNetTest
@@ -34,8 +33,9 @@ namespace MASES.JNetTest
     {
         static void Main(string[] args)
         {
-            JNetTestCore.CreateGlobalInstance();
-            var appArgs = JNetTestCore.FilteredArgs;
+            System.Console.WriteLine("Starting JNetTest");
+
+            Initialize();
 
             TestExtensions();
 
@@ -56,6 +56,22 @@ namespace MASES.JNetTest
             TestIterator();
 
             TestAsyncIterator().Wait();
+        }
+
+        static void Initialize()
+        {
+            try
+            {
+                JNetTestCore.CreateGlobalInstance();
+                var appArgs = JNetTestCore.FilteredArgs;
+
+                System.Console.WriteLine($"Initialized JNetTestCore, remaining arguments are {string.Join(" ", appArgs)}");
+            }
+            catch (Exception ex)
+            {
+                System.Console.WriteLine(ex);
+                throw;
+            }
         }
 
         static void TestSingleton()
