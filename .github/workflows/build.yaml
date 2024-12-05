@@ -313,7 +313,7 @@ jobs:
         run: |
           export DOTNET_DbgEnableMiniDump=1
           export DOTNET_DbgMiniDumpType=3
-          export DOTNET_DbgMiniDumpName=${{ github.workspace }}/bin/coredump.*
+          export DOTNET_DbgMiniDumpName=${{ github.workspace }}/bin/coredump.<pid>
           export DOTNET_CreateDumpDiagnostics=1
           export DOTNET_CreateDumpVerboseDiagnostics=1
           export DOTNET_EnableCrashReport=1
@@ -337,7 +337,7 @@ jobs:
         run: |
           set DOTNET_DbgEnableMiniDump=1
           set DOTNET_DbgMiniDumpType=3
-          set DOTNET_DbgMiniDumpName=${{ github.workspace }}\bin\coredump.*
+          set DOTNET_DbgMiniDumpName=${{ github.workspace }}\bin\coredump.<pid>
           set DOTNET_CreateDumpDiagnostics=1
           set DOTNET_CreateDumpVerboseDiagnostics=1
           set DOTNET_EnableCrashReport=1
@@ -406,6 +406,7 @@ jobs:
           $env:DOTNET_CLI_UI_LANGUAGE="en_US"
           $env:DOTNET_DbgEnableMiniDump="1"
           $env:DOTNET_DbgMiniDumpType="3"
+          $env:DOTNET_DbgMiniDumpName=${{ github.workspace }}/bin/coredump.<pid>
           $env:DOTNET_CreateDumpDiagnostics="1"
           $env:DOTNET_EnableCrashReport="1"
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
@@ -413,13 +414,13 @@ jobs:
           ${{ github.workspace }}/bin/JNetPSTest.ps1
           
       - if: ${{ matrix.os == 'macos-13' }}
-        run: ls -las /tmp/coredump.*
+        run: ls -las ${{ github.workspace }}/bin/coredump.*
         
       - uses: actions/upload-artifact@v4
         if: ${{ matrix.os == 'macos-13' }}
         with:
           name: Crash_powershell_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
-          path: /tmp/coredump.*
+          path: ${{ github.workspace }}/bin/coredump.*
           retention-days: 7
 
       - name: Execute PowerShell test on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
@@ -430,6 +431,7 @@ jobs:
           $env:DOTNET_CLI_UI_LANGUAGE="en_US"
           $env:DOTNET_DbgEnableMiniDump="1"
           $env:DOTNET_DbgMiniDumpType="3"
+          $env:DOTNET_DbgMiniDumpName=${{ github.workspace }}\bin\coredump.<pid>
           $env:DOTNET_CreateDumpDiagnostics="1"
           $env:DOTNET_EnableCrashReport="1"
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
@@ -444,6 +446,7 @@ jobs:
           $env:DOTNET_CLI_UI_LANGUAGE="en_US"
           $env:DOTNET_DbgEnableMiniDump="1"
           $env:DOTNET_DbgMiniDumpType="3"
+          $env:DOTNET_DbgMiniDumpName=${{ github.workspace }}\bin\coredump.<pid>
           $env:DOTNET_CreateDumpDiagnostics="1"
           $env:DOTNET_EnableCrashReport="1"
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
@@ -451,6 +454,9 @@ jobs:
           
       - if: ${{ matrix.os == 'windows-latest' }}
         run: (Get-EventLog -LogName Application -Newest 5).Message
+
+      - if: ${{ matrix.os == 'windows-latest' }}
+        run: ls -las ${{ github.workspace }}\bin\coredump.*
 
       - uses: actions/upload-artifact@v4
         if: failure()
