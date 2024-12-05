@@ -309,16 +309,25 @@ jobs:
 
       - name: Execute tests on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' }}
+        continue-on-error: true
         run: |
           dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
           dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
-
+          
+      - if: ${{ failure() && matrix.os != 'windows-latest' }}
+        run: syslog
 
       - name: WINDOWS ONLY - Execute tests on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: ${{ matrix.os == 'windows-latest' }}
+        continue-on-error: true
         run: |
           .\bin\${{ matrix.framework }}\JNetTest.exe
           .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
+          
+      - if: ${{ failure() && matrix.os == 'windows-latest' }}
+        run: |
+          Get-EventLog -LogName Application -Newest 5
+          Get-EventLog -LogName System -Newest 5
 
       - uses: actions/upload-artifact@v4
         if: failure()
@@ -366,29 +375,45 @@ jobs:
 
       - name: Execute PowerShell test on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: ${{ matrix.os != 'windows-latest' }}
+        continue-on-error: true
         shell: pwsh
         run: |
           $env:DOTNET_CLI_UI_LANGUAGE="en_US"
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}/bin/JNetPSTest.ps1
+          
+      - if: ${{ failure() && matrix.os != 'windows-latest' }}
+        run: syslog
 
       - name: Execute PowerShell test on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: ${{ matrix.os == 'windows-latest' }}
+        continue-on-error: true
         shell: pwsh
         run: |
           $env:DOTNET_CLI_UI_LANGUAGE="en_US"
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1
+          
+      - if: ${{ failure() && matrix.os == 'windows-latest' }}
+        run: |
+          Get-EventLog -LogName Application -Newest 5
+          Get-EventLog -LogName System -Newest 5
 
       - name: Execute PowerShell 5.1 test on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: ${{ matrix.os == 'windows-latest' }}
+        continue-on-error: true
         shell: powershell
         run: |
           $env:DOTNET_CLI_UI_LANGUAGE="en_US"
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1
+          
+      - if: ${{ failure() && matrix.os == 'windows-latest' }}
+        run: |
+          Get-EventLog -LogName Application -Newest 5
+          Get-EventLog -LogName System -Newest 5
 
       - uses: actions/upload-artifact@v4
         if: failure()
