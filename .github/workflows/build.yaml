@@ -283,6 +283,12 @@ jobs:
         
     runs-on: ${{ matrix.os }}
     env:
+      DOTNET_DbgEnableMiniDump: 1
+      DOTNET_DbgMiniDumpType: 3
+      DOTNET_DbgMiniDumpName: ${{ github.workspace }}/coredump.%p
+      DOTNET_CreateDumpDiagnostics: 1
+      DOTNET_CreateDumpVerboseDiagnostics: 1
+      DOTNET_EnableCrashReport: 1
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_19 }}
     
     steps:
@@ -301,6 +307,10 @@ jobs:
             6.x
             9.x
 
+      - if: ${{ matrix.os == 'windows-latest' }}
+        continue-on-error: true
+        run: set
+
       - name: Set up JDK distribution
         uses: actions/setup-java@v4
         with: # running setup-java again overwrites the settings.xml
@@ -311,47 +321,31 @@ jobs:
         if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' }}
         continue-on-error: ${{ matrix.os == 'macos-13' }}
         run: |
-          export DOTNET_DbgEnableMiniDump=1
-          export DOTNET_DbgMiniDumpType=3
-          export DOTNET_DbgMiniDumpName=${{ github.workspace }}/bin/coredump.%p
-          export DOTNET_CreateDumpDiagnostics=1
-          export DOTNET_CreateDumpVerboseDiagnostics=1
-          export DOTNET_EnableCrashReport=1
           dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
           dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
           
-      - if: ${{ matrix.os == 'macos-13' }}
-        continue-on-error: true
-        run: ls -las ${{ github.workspace }}/bin/coredump.*
-        
-      - uses: actions/upload-artifact@v4
-        if: ${{ matrix.os == 'macos-13' }}
-        with:
-          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
-          path: ${{ github.workspace }}/bin/coredump.*
-          retention-days: 7
-
       - name: WINDOWS ONLY - Execute tests on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: ${{ matrix.os == 'windows-latest' }}
         continue-on-error: ${{ matrix.os == 'windows-latest' && matrix.framework == 'net9.0' }}
         run: |
-          set DOTNET_DbgEnableMiniDump=1
-          set DOTNET_DbgMiniDumpType=3
-          set DOTNET_DbgMiniDumpName=${{ github.workspace }}\bin\coredump.%p
-          set DOTNET_CreateDumpDiagnostics=1
-          set DOTNET_CreateDumpVerboseDiagnostics=1
-          set DOTNET_EnableCrashReport=1
           .\bin\${{ matrix.framework }}\JNetTest.exe
           .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
           
       - if: ${{ matrix.os == 'windows-latest' && matrix.framework == 'net9.0' }}
         run: (Get-EventLog -LogName Application -Newest 5).Message
 
+      - if: ${{ matrix.os != 'windows-latest' }}
+        continue-on-error: true
+        run: ls -las ${{ github.workspace }}/coredump.*
+        
+      - if: ${{ matrix.os == 'windows-latest' }}
+        continue-on-error: true
+        run: dir ${{ github.workspace }}\coredump.*
+
       - uses: actions/upload-artifact@v4
-        if: ${{ matrix.os == 'windows-latest' }}
         with:
           name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
-          path: ${{ github.workspace }}\bin\coredump.*
+          path: ${{ github.workspace }}/coredump.*
           retention-days: 7
 
       - uses: actions/upload-artifact@v4
@@ -375,6 +369,13 @@ jobs:
      
     runs-on: ${{ matrix.os }}
     env:
+      DOTNET_CLI_UI_LANGUAGE: en_US
+      DOTNET_DbgEnableMiniDump: 1
+      DOTNET_DbgMiniDumpType: 3
+      DOTNET_DbgMiniDumpName: ${{ github.workspace }}/coredump.%p
+      DOTNET_CreateDumpDiagnostics: 1
+      DOTNET_CreateDumpVerboseDiagnostics: 1
+      DOTNET_EnableCrashReport: 1
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_19 }}
 
     steps:
@@ -383,7 +384,11 @@ jobs:
           dotnet-version: |
             6.x
             9.x
-    
+
+      - if: ${{ matrix.os == 'windows-latest' }}
+        continue-on-error: true
+        run: set
+
       - name: Restore JNet bin from cache
         uses: actions/cache/restore@v4
         with:
@@ -403,12 +408,6 @@ jobs:
         continue-on-error: ${{ matrix.os == 'macos-13' }}
         shell: pwsh
         run: |
-          $env:DOTNET_CLI_UI_LANGUAGE="en_US"
-          $env:DOTNET_DbgEnableMiniDump="1"
-          $env:DOTNET_DbgMiniDumpType="3"
-          $env:DOTNET_DbgMiniDumpName=${{ github.workspace }}/bin/coredump.%p
-          $env:DOTNET_CreateDumpDiagnostics="1"
-          $env:DOTNET_EnableCrashReport="1"
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}/bin/JNetPSTest.ps1
@@ -428,12 +427,6 @@ jobs:
         continue-on-error: true
         shell: pwsh
         run: |
-          $env:DOTNET_CLI_UI_LANGUAGE="en_US"
-          $env:DOTNET_DbgEnableMiniDump="1"
-          $env:DOTNET_DbgMiniDumpType="3"
-          $env:DOTNET_DbgMiniDumpName=${{ github.workspace }}\bin\coredump.%p
-          $env:DOTNET_CreateDumpDiagnostics="1"
-          $env:DOTNET_EnableCrashReport="1"
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1
@@ -443,20 +436,26 @@ jobs:
         continue-on-error: true
         shell: powershell
         run: |
-          $env:DOTNET_CLI_UI_LANGUAGE="en_US"
-          $env:DOTNET_DbgEnableMiniDump="1"
-          $env:DOTNET_DbgMiniDumpType="3"
-          $env:DOTNET_DbgMiniDumpName=${{ github.workspace }}\bin\coredump.%p
-          $env:DOTNET_CreateDumpDiagnostics="1"
-          $env:DOTNET_EnableCrashReport="1"
+          Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1
           
       - if: ${{ matrix.os == 'windows-latest' }}
         run: (Get-EventLog -LogName Application -Newest 5).Message
 
+      - if: ${{ matrix.os != 'windows-latest' }}
+        continue-on-error: true
+        run: ls -las ${{ github.workspace }}/coredump.*
+        
       - if: ${{ matrix.os == 'windows-latest' }}
-        run: ls -las ${{ github.workspace }}\bin\coredump.*
+        continue-on-error: true
+        run: dir ${{ github.workspace }}\coredump.*
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: ${{ github.workspace }}/coredump.*
+          retention-days: 7
 
       - uses: actions/upload-artifact@v4
         if: failure()
