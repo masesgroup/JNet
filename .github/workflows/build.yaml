@@ -311,21 +311,24 @@ jobs:
         if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' }}
         continue-on-error: ${{ matrix.os == 'macos-13' }}
         run: |
-          set DOTNET_DbgEnableMiniDump=1
-          set DOTNET_DbgMiniDumpType=3
-          set DOTNET_CreateDumpDiagnostics=1
-          set DOTNET_EnableCrashReport=1
+          export DOTNET_DbgEnableMiniDump=1
+          export DOTNET_DbgMiniDumpType=3
+          export DOTNET_DbgMiniDumpName=${{ github.workspace }}/bin/coredump.*
+          export DOTNET_CreateDumpDiagnostics=1
+          export DOTNET_CreateDumpVerboseDiagnostics=1
+          export DOTNET_EnableCrashReport=1
           dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
           dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
           
       - if: ${{ matrix.os == 'macos-13' }}
-        run: ls -las /tmp/coredump.*
+        continue-on-error: true
+        run: ls -las ${{ github.workspace }}/bin/coredump.*
         
       - uses: actions/upload-artifact@v4
         if: ${{ matrix.os == 'macos-13' }}
         with:
           name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
-          path: /tmp/coredump.*
+          path: ${{ github.workspace }}/bin/coredump.*
           retention-days: 7
 
       - name: WINDOWS ONLY - Execute tests on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
@@ -334,13 +337,22 @@ jobs:
         run: |
           set DOTNET_DbgEnableMiniDump=1
           set DOTNET_DbgMiniDumpType=3
+          set DOTNET_DbgMiniDumpName=${{ github.workspace }}\bin\coredump.*
           set DOTNET_CreateDumpDiagnostics=1
+          set DOTNET_CreateDumpVerboseDiagnostics=1
           set DOTNET_EnableCrashReport=1
           .\bin\${{ matrix.framework }}\JNetTest.exe
           .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
           
       - if: ${{ matrix.os == 'windows-latest' && matrix.framework == 'net9.0' }}
         run: (Get-EventLog -LogName Application -Newest 5).Message
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ matrix.os == 'windows-latest' }}
+        with:
+          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: ${{ github.workspace }}\bin\coredump.*
+          retention-days: 7
 
       - uses: actions/upload-artifact@v4
         if: failure()
