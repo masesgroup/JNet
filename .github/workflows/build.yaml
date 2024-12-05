@@ -313,7 +313,7 @@ jobs:
         run: |
           export DOTNET_DbgEnableMiniDump=1
           export DOTNET_DbgMiniDumpType=3
-          export DOTNET_DbgMiniDumpName=${{ github.workspace }}/bin/coredump.<pid>
+          export DOTNET_DbgMiniDumpName=${{ github.workspace }}/bin/coredump.%p
           export DOTNET_CreateDumpDiagnostics=1
           export DOTNET_CreateDumpVerboseDiagnostics=1
           export DOTNET_EnableCrashReport=1
@@ -337,7 +337,7 @@ jobs:
         run: |
           set DOTNET_DbgEnableMiniDump=1
           set DOTNET_DbgMiniDumpType=3
-          set DOTNET_DbgMiniDumpName=${{ github.workspace }}\bin\coredump.<pid>
+          set DOTNET_DbgMiniDumpName=${{ github.workspace }}\bin\coredump.%p
           set DOTNET_CreateDumpDiagnostics=1
           set DOTNET_CreateDumpVerboseDiagnostics=1
           set DOTNET_EnableCrashReport=1
@@ -406,7 +406,7 @@ jobs:
           $env:DOTNET_CLI_UI_LANGUAGE="en_US"
           $env:DOTNET_DbgEnableMiniDump="1"
           $env:DOTNET_DbgMiniDumpType="3"
-          $env:DOTNET_DbgMiniDumpName=${{ github.workspace }}/bin/coredump.<pid>
+          $env:DOTNET_DbgMiniDumpName=${{ github.workspace }}/bin/coredump.%p
           $env:DOTNET_CreateDumpDiagnostics="1"
           $env:DOTNET_EnableCrashReport="1"
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
@@ -431,7 +431,7 @@ jobs:
           $env:DOTNET_CLI_UI_LANGUAGE="en_US"
           $env:DOTNET_DbgEnableMiniDump="1"
           $env:DOTNET_DbgMiniDumpType="3"
-          $env:DOTNET_DbgMiniDumpName=${{ github.workspace }}\bin\coredump.<pid>
+          $env:DOTNET_DbgMiniDumpName=${{ github.workspace }}\bin\coredump.%p
           $env:DOTNET_CreateDumpDiagnostics="1"
           $env:DOTNET_EnableCrashReport="1"
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
@@ -446,7 +446,7 @@ jobs:
           $env:DOTNET_CLI_UI_LANGUAGE="en_US"
           $env:DOTNET_DbgEnableMiniDump="1"
           $env:DOTNET_DbgMiniDumpType="3"
-          $env:DOTNET_DbgMiniDumpName=${{ github.workspace }}\bin\coredump.<pid>
+          $env:DOTNET_DbgMiniDumpName=${{ github.workspace }}\bin\coredump.%p
           $env:DOTNET_CreateDumpDiagnostics="1"
           $env:DOTNET_EnableCrashReport="1"
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
