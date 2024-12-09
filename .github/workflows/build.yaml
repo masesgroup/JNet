@@ -143,7 +143,7 @@ jobs:
           sbom: true
           
       - name: Attest Docker Hub
-        uses: actions/attest-build-provenance@v1
+        uses: actions/attest-build-provenance@v2
         id: attest
         with:
           subject-name: ghcr.io/${{ github.repository_owner }}/jnet
