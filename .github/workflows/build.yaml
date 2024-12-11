@@ -411,10 +411,7 @@ jobs:
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}/bin/JNetPSTest.ps1
-          
-      - if: ${{ matrix.os == 'macos-13' }}
-        run: ls -las ${{ github.workspace }}/bin/coredump.*
-        
+
       - uses: actions/upload-artifact@v4
         if: ${{ matrix.os == 'macos-13' }}
         with:
