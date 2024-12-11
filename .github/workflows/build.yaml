@@ -369,7 +369,7 @@ jobs:
       DOTNET_CreateDumpVerboseDiagnostics: 1
       DOTNET_EnableCrashReport: 1
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_19 }}
-      JAVA_HOME: ${{ env.JAVA_HOME_${{ matrix.jdk_version }}_X64 }}
+      JAVA_HOME: JAVA_HOME_${{ matrix.jdk_version }}_X64
 
     steps:
       - uses: actions/setup-dotnet@v4
