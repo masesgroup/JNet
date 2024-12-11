@@ -312,6 +312,7 @@ jobs:
         run: set
 
       - name: Set up JDK distribution
+        if: ${{ matrix.os != 'macos-13' }}
         uses: actions/setup-java@v4
         with: # running setup-java again overwrites the settings.xml
           distribution: ${{ matrix.jdk_vendor }}
@@ -369,7 +370,6 @@ jobs:
       DOTNET_CreateDumpVerboseDiagnostics: 1
       DOTNET_EnableCrashReport: 1
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_5_19 }}
-      JAVA_HOME: JAVA_HOME_${{ matrix.jdk_version }}_X64
 
     steps:
       - uses: actions/setup-dotnet@v4
