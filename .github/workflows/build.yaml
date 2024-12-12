@@ -82,7 +82,9 @@ jobs:
 
       - name: Execute CreateVM
         run: |
-          echo "LD_LIBRARY_PATH=$(echo $JAVA_HOME/lib/server)" >> $GITHUB_ENV
+          echo "GITHUB_ENV_LD_LIBRARY_PATH=$(echo $JAVA_HOME/lib/server)" >> $GITHUB_ENV
+          export LD_LIBRARY_PATH=${{ env.GITHUB_ENV_LD_LIBRARY_PATH }}
+          export
           ${{ github.workspace }}/tests/native/CreateVM.out
     
   build_container_jnet:
