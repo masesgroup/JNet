@@ -35,8 +35,8 @@ int main()
 	
 	if (numVms >= 0)
 	{
-		std::cout << "JNI_GetCreatedJavaVMs returned with an already created JVM"; << std::endl;
-		return;
+		std::cout << "JNI_GetCreatedJavaVMs returned with an already created JVM" << std::endl;
+		return 1;
 	}
 	
     JavaVMInitArgs vm_args; /* JDK/JRE 6 VM initialization arguments */
