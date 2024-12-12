@@ -40,6 +40,7 @@ int main()
 	}
 	
     JavaVMInitArgs vm_args; /* JDK/JRE 6 VM initialization arguments */
+    vm_args.version = JNI_VERSION_1_6;
     std::cout << "Starting JNI_GetDefaultJavaVMInitArgs test" << std::endl;
 	ret = JNI_GetDefaultJavaVMInitArgs(&vm_args);
 	if (ret != JNI_OK)
