@@ -24,7 +24,7 @@ int main()
     JavaVM *jvm;       /* denotes a Java VM */
     JNIEnv *env;       /* pointer to native method interface */
 	
-	int numVms;
+	int numVms = 0;
 	
 	jint ret = JNI_GetCreatedJavaVMs(&jvm, 1, &numVms);
 	if (ret != JNI_OK)
