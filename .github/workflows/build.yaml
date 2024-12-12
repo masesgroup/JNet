@@ -78,12 +78,12 @@ jobs:
       - name: Compile CreateVM
         run: |
           cd ${{ github.workspace }}/tests/native
-          g++ -I $JAVA_HOME/include CreateVM.cpp -o CreateVM.out
+          g++ -I $JAVA_HOME/include -I $JAVA_HOME/include/darwin -L JAVA_HOME/lib/server -ljvm CreateVM.cpp -o CreateVM.out
 
       - name: Execute CreateVM
         run: |
           cd ${{ github.workspace }}/tests/native
-          chmod +x ./CreateVM.out
+          export LD_LIBRARY_PATH=$JAVA_HOME/lib/server
           ./CreateVM.out
     
   build_container_jnet:

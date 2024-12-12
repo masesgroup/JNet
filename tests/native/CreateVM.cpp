@@ -19,11 +19,13 @@ int main()
     /* load and initialize a Java VM, return a JNI interface
      * pointer in env */
     JNI_CreateJavaVM(&jvm, (void**)&env, &vm_args);
-    delete options;
+    delete[] options;
     /* invoke the Main.test method using the JNI */
     // jclass cls = env->FindClass("Main");
     // jmethodID mid = env->GetStaticMethodID(cls, "test", "(I)V");
     // env->CallStaticVoidMethod(cls, mid, 100);
     /* We are done. */
     jvm->DestroyJavaVM();
+	
+    std::cout << "Ending JNI_CreateJavaVM test" << std::endl;
 }
