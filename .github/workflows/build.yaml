@@ -80,11 +80,15 @@ jobs:
           cd ${{ github.workspace }}/tests/native
           g++ -I $JAVA_HOME/include -I $JAVA_HOME/include/darwin -L $JAVA_HOME/lib/server -ljvm CreateVM.cpp -o CreateVM.out
 
+      - name: Export location
+        shell: bash
+        run: echo "DYLD_LIBRARY_PATH=$(echo $JAVA_HOME/lib/server)" >> $GITHUB_ENV
+
       - name: Execute CreateVM
         shell: bash
         run: |
+          export
           echo "GITHUB_ENV_LD_LIBRARY_PATH=$(echo $JAVA_HOME/lib/server)" >> $GITHUB_ENV
-          export LD_LIBRARY_PATH=/Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.13-11/x64/Contents/Home/lib/server
           export DYLD_LIBRARY_PATH=/Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.13-11/x64/Contents/Home/lib/server
           export
           ${{ github.workspace }}/tests/native/CreateVM.out
