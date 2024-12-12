@@ -18,13 +18,13 @@ void print_error(jint ret)
 int main()
 {
 	const int arguments = 4;
-	
-    std::cout << "Starting JNI_CreateJavaVM test" << std::endl;
-	
+
     JavaVM *jvm;       /* denotes a Java VM */
     JNIEnv *env;       /* pointer to native method interface */
 	
 	int numVms = 0;
+	
+    std::cout << "Starting JNI_GetCreatedJavaVMs test" << std::endl;
 	
 	jint ret = JNI_GetCreatedJavaVMs(&jvm, 1, &numVms);
 	if (ret != JNI_OK)
@@ -40,7 +40,7 @@ int main()
 	}
 	
     JavaVMInitArgs vm_args; /* JDK/JRE 6 VM initialization arguments */
-	
+    std::cout << "Starting JNI_GetDefaultJavaVMInitArgs test" << std::endl;
 	ret = JNI_GetDefaultJavaVMInitArgs(&vm_args);
 	if (ret != JNI_OK)
 	{
@@ -59,14 +59,14 @@ int main()
     vm_args.ignoreUnrecognized = true;
     /* load and initialize a Java VM, return a JNI interface
      * pointer in env */
+    std::cout << "Starting JNI_CreateJavaVM test" << std::endl;
     ret = JNI_CreateJavaVM(&jvm, (void**)&env, &vm_args);
+    delete[] options;
 	if (ret != JNI_OK)
 	{
 		print_error(ret);
 		return 1;
 	}
-	
-    delete[] options;
     /* invoke the Main.test method using the JNI */
     // jclass cls = env->FindClass("Main");
     // jmethodID mid = env->GetStaticMethodID(cls, "test", "(I)V");
