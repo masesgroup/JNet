@@ -78,7 +78,7 @@ jobs:
       - name: Compile CreateVM
         run: |
           cd ${{ github.workspace }}/tests/native
-          g++ -I $JAVA_HOME/include -I $JAVA_HOME/include/darwin -L JAVA_HOME/lib/server -ljvm CreateVM.cpp -o CreateVM.out
+          g++ -I $JAVA_HOME/include -I $JAVA_HOME/include/darwin -L $JAVA_HOME/lib/server -ljvm CreateVM.cpp -o CreateVM.out
 
       - name: Execute CreateVM
         run: |
