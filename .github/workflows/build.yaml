@@ -94,7 +94,7 @@ jobs:
           ${{ github.workspace }}/tests/native/CreateVM.out
     
   build_container_jnet:
-    needs: check_changes
+    needs: [check_changes, build_macos_native]
     if: "always() && needs.check_changes.outputs.run_build_windows == 'true'"
     runs-on: ubuntu-latest
     permissions:
@@ -183,7 +183,7 @@ jobs:
         
   # Now run "build_windows"
   build_windows:
-    needs: check_changes
+    needs: [check_changes, build_macos_native]
     if: "always() && needs.check_changes.outputs.run_build_windows == 'true'"
     # The type of runner that the job will run on
     runs-on: windows-2022

@@ -1,6 +1,20 @@
 #include <iostream>
 #include "jni.h"
 
+void print_error(jint ret)
+{
+	switch (ret)
+	{
+		case -1: std::cout << "failed - unknown error" << std::endl; return;
+		case -2: std::cout << "failed - thread detached from the VM" << std::endl; return;
+		case -3: std::cout << "failed - JNI version error" << std::endl; return;
+		case -4: std::cout << "failed - not enough memory" << std::endl; return;
+		case -5: std::cout << "failed - VM already created" << std::endl; return;
+		case -6: std::cout << "failed - invalid arguments" << std::endl; return;
+		default: break;
+	}	
+}
+
 int main()
 {
 	const int arguments = 4;
@@ -15,16 +29,8 @@ int main()
 	jint ret = JNI_GetCreatedJavaVMs(&jvm, 1, &numVms);
 	if (ret != JNI_OK)
 	{
-		switch (ret)
-		{
-			case -1: std::cout << "failed - unknown error"; << std::endl; return;
-			case -2: std::cout << "failed - thread detached from the VM"; << std::endl; return;
-			case -3: std::cout << "failed - JNI version error"; << std::endl; return;
-			case -4: std::cout << "failed - not enough memory"; << std::endl; return;
-			case -5: std::cout << "failed - VM already created"; << std::endl; return;
-			case -6: std::cout << "failed - invalid arguments"; << std::endl; return;
-			default: break;
-		}
+		print_error(ret);
+		return 1;
 	}
 	
 	if (numVms >= 0)
@@ -38,16 +44,8 @@ int main()
 	ret = JNI_GetDefaultJavaVMInitArgs(&vm_args);
 	if (ret != JNI_OK)
 	{
-		switch (ret)
-		{
-			case -1: std::cout << "failed - unknown error"; << std::endl; return;
-			case -2: std::cout << "failed - thread detached from the VM"; << std::endl; return;
-			case -3: std::cout << "failed - JNI version error"; << std::endl; return;
-			case -4: std::cout << "failed - not enough memory"; << std::endl; return;
-			case -5: std::cout << "failed - VM already created"; << std::endl; return;
-			case -6: std::cout << "failed - invalid arguments"; << std::endl; return;
-			default: break;
-		}
+		print_error(ret);
+		return 1;
 	}
 	
     JavaVMOption* options = new JavaVMOption[arguments];
@@ -64,16 +62,8 @@ int main()
     ret = JNI_CreateJavaVM(&jvm, (void**)&env, &vm_args);
 	if (ret != JNI_OK)
 	{
-		switch (ret)
-		{
-			case -1: std::cout << "failed - unknown error"; << std::endl; return;
-			case -2: std::cout << "failed - thread detached from the VM"; << std::endl; return;
-			case -3: std::cout << "failed - JNI version error"; << std::endl; return;
-			case -4: std::cout << "failed - not enough memory"; << std::endl; return;
-			case -5: std::cout << "failed - VM already created"; << std::endl; return;
-			case -6: std::cout << "failed - invalid arguments"; << std::endl; return;
-			default: break;
-		}
+		print_error(ret);
+		return 1;
 	}
 	
     delete[] options;
