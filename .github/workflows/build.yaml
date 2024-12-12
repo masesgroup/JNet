@@ -62,6 +62,30 @@ jobs:
       - name: Get run_build_windows
         run: echo "The selected run_build_windows is ${{ steps.check_files.outputs.run_build_windows }}"
 
+  # Now run "build_windows"
+  build_macos_native:
+    needs: check_changes
+    if: "always() && needs.check_changes.outputs.run_build_windows == 'true'"
+    runs-on: macos-13
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:    
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: '1'
+          submodules: 'true'
+
+      - name: Compile CreateVM
+        run: |
+          cd ${{ github.workspace }}/tests/native
+          g++ -I $JAVA_HOME/include CreateVM.cpp -o CreateVM.out
+
+      - name: Execute CreateVM
+        run: |
+          cd ${{ github.workspace }}/tests/native
+          chmod +x ./CreateVM.out
+          ./CreateVM.out
+    
   build_container_jnet:
     needs: check_changes
     if: "always() && needs.check_changes.outputs.run_build_windows == 'true'"
@@ -149,7 +173,7 @@ jobs:
           subject-name: ghcr.io/${{ github.repository_owner }}/jnet
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
-          
+        
   # Now run "build_windows"
   build_windows:
     needs: check_changes
