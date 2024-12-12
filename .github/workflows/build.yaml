@@ -18,8 +18,39 @@ concurrency:
 
 # This workflow contains two jobs called "check_changes", "build_windows"
 jobs:
+  # Now run "build_windows"
+  build_macos_native:
+    if: "always() && needs.check_changes.outputs.run_build_windows == 'true'"
+    runs-on: macos-13
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:    
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: '1'
+          submodules: 'true'
+
+      - name: Compile CreateVM
+        run: |
+          cd ${{ github.workspace }}/tests/native
+          g++ -I $JAVA_HOME/include -I $JAVA_HOME/include/darwin -L $JAVA_HOME/lib/server -ljvm CreateVM.cpp -o CreateVM.out
+
+      - name: Export location
+        shell: bash
+        run: echo "DYLD_LIBRARY_PATH=$(echo $JAVA_HOME/lib/server)" >> $GITHUB_ENV
+
+      - name: Execute CreateVM
+        shell: bash
+        run: |
+          export
+          echo "GITHUB_ENV_LD_LIBRARY_PATH=$(echo $JAVA_HOME/lib/server)" >> $GITHUB_ENV
+          export DYLD_LIBRARY_PATH=/Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.13-11/x64/Contents/Home/lib/server
+          export
+          ${{ github.workspace }}/tests/native/CreateVM.out
+
   # Verify if a build is needed
   check_changes:
+    needs: build_macos_native
     name: Check changed files
     outputs:
       run_build_windows: ${{ steps.check_files.outputs.run_build_windows }}
@@ -62,37 +93,6 @@ jobs:
       - name: Get run_build_windows
         run: echo "The selected run_build_windows is ${{ steps.check_files.outputs.run_build_windows }}"
 
-  # Now run "build_windows"
-  build_macos_native:
-    needs: check_changes
-    if: "always() && needs.check_changes.outputs.run_build_windows == 'true'"
-    runs-on: macos-13
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:    
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: '1'
-          submodules: 'true'
-
-      - name: Compile CreateVM
-        run: |
-          cd ${{ github.workspace }}/tests/native
-          g++ -I $JAVA_HOME/include -I $JAVA_HOME/include/darwin -L $JAVA_HOME/lib/server -ljvm CreateVM.cpp -o CreateVM.out
-
-      - name: Export location
-        shell: bash
-        run: echo "DYLD_LIBRARY_PATH=$(echo $JAVA_HOME/lib/server)" >> $GITHUB_ENV
-
-      - name: Execute CreateVM
-        shell: bash
-        run: |
-          export
-          echo "GITHUB_ENV_LD_LIBRARY_PATH=$(echo $JAVA_HOME/lib/server)" >> $GITHUB_ENV
-          export DYLD_LIBRARY_PATH=/Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.13-11/x64/Contents/Home/lib/server
-          export
-          ${{ github.workspace }}/tests/native/CreateVM.out
-    
   build_container_jnet:
     needs: check_changes
     if: "always() && needs.check_changes.outputs.run_build_windows == 'true'"
