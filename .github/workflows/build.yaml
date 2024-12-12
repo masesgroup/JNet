@@ -81,9 +81,9 @@ jobs:
           g++ -I $JAVA_HOME/include -I $JAVA_HOME/include/darwin -L $JAVA_HOME/lib/server -ljvm CreateVM.cpp -o CreateVM.out
 
       - name: Execute CreateVM
-        run: ${{ github.workspace }}/tests/native/CreateVM.out
-        env:
-          LD_LIBRARY_PATH: $JAVA_HOME/lib/server
+        run: |
+          echo "LD_LIBRARY_PATH=$(echo $JAVA_HOME/lib/server)" >> $GITHUB_ENV
+          ${{ github.workspace }}/tests/native/CreateVM.out
     
   build_container_jnet:
     needs: check_changes
