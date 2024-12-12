@@ -40,6 +40,7 @@ int main()
 	}
 	
     JavaVMInitArgs vm_args; /* JDK/JRE 6 VM initialization arguments */
+	memset(&vm_args, 0, sizeof(JavaVMInitArgs));
     vm_args.version = JNI_VERSION_1_6;
     std::cout << "Starting JNI_GetDefaultJavaVMInitArgs test" << std::endl;
 	ret = JNI_GetDefaultJavaVMInitArgs(&vm_args);
@@ -58,8 +59,7 @@ int main()
     vm_args.nOptions = arguments;
     vm_args.options = options;
     vm_args.ignoreUnrecognized = true;
-    /* load and initialize a Java VM, return a JNI interface
-     * pointer in env */
+    /* load and initialize a Java VM, return a JNI interface pointer in env */
     std::cout << "Starting JNI_CreateJavaVM test" << std::endl;
     ret = JNI_CreateJavaVM(&jvm, (void**)&env, &vm_args);
     delete[] options;
