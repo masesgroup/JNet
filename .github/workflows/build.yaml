@@ -85,6 +85,7 @@ jobs:
         run: |
           echo "GITHUB_ENV_LD_LIBRARY_PATH=$(echo $JAVA_HOME/lib/server)" >> $GITHUB_ENV
           export LD_LIBRARY_PATH=/Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.13-11/x64/Contents/Home/lib/server
+          export DYLD_LIBRARY_PATH=/Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.13-11/x64/Contents/Home/lib/server
           export
           ${{ github.workspace }}/tests/native/CreateVM.out
     
