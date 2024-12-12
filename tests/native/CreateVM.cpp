@@ -33,7 +33,7 @@ int main()
 		return 1;
 	}
 	
-	if (numVms >= 0)
+	if (numVms >= 1)
 	{
 		std::cout << "JNI_GetCreatedJavaVMs returned with an already created JVM" << std::endl;
 		return 1;
