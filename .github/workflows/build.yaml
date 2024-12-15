@@ -337,6 +337,16 @@ jobs:
             6.x
             9.x
 
+      - name: Download Procdump and prepare
+        if: ${{ matrix.os == 'windows-latest' }}
+        continue-on-error: true
+        run: |
+          C:\msys64\usr\bin\wget.exe https://download.sysinternals.com/files/Procdump.zip
+          Expand-Archive -LiteralPath '.\Procdump.zip' -DestinationPath .\Procdump -Force
+          dir .\Procdump
+          .\Procdump\procdump.exe -accepteula
+          mkdir CrashDumpsDir
+
       - if: ${{ matrix.os == 'windows-latest' }}
         continue-on-error: true
         run: set
@@ -362,14 +372,26 @@ jobs:
       - name: WINDOWS ONLY - Execute tests on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: ${{ matrix.os == 'windows-latest' }}
         continue-on-error: ${{ matrix.os == 'windows-latest' && matrix.framework == 'net9.0' }}
+        # See https://learn.microsoft.com/en-us/sysinternals/downloads/procdump for documentation of the parameters.
+        # Flags: -mp creates a mini dump with most memory available
+        #        -t creates the dump when the executable terminates
+        #        -x DumpFolder Executable Arguments: Executes the "Executable" with the specified arguments, and places all dumps in the "DumpFolder".
         run: |
-          .\bin\${{ matrix.framework }}\JNetTest.exe
-          .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
+          & ".\Procdump\procdump.exe" -accepteula -mp -t -x .\CrashDumpsDir ".\bin\${{ matrix.framework }}\JNetTest.exe"
+          & ".\Procdump\procdump.exe" -accepteula -mp -t -x .\CrashDumpsDir ".\bin\${{ matrix.framework }}\JNetByteBufferTest.exe"
           
       - if: ${{ matrix.os == 'windows-latest' && matrix.framework == 'net9.0' }}
         run: (Get-EventLog -LogName Application -Newest 5).Message
 
       - uses: actions/upload-artifact@v4
+        if: ${{ matrix.os == 'windows-latest' }}
+        with:
+          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: .\CrashDumpsDir\*
+          retention-days: 7
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ matrix.os != 'windows-latest' }}
         with:
           name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: ${{ github.workspace }}/coredump.*
