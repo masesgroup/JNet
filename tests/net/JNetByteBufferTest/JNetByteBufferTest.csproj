@@ -7,9 +7,6 @@
 		<Title>JNetByteBufferTest - a test tool for JNet</Title>
 		<Description>JNetByteBufferTest - a test tool for JNet</Description>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(TargetFramework)' == 'net9.0'">
-		<CETCompat>false</CETCompat>
-	</PropertyGroup>
 	<ItemGroup>
 		<Compile Include="..\Common\Initializer.cs" Link="Initializer.cs" />
 	</ItemGroup>
