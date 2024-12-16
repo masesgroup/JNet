@@ -342,15 +342,11 @@ jobs:
         continue-on-error: true
         run: |
           C:\msys64\usr\bin\wget.exe https://download.sysinternals.com/files/Procdump.zip
-          Expand-Archive -LiteralPath '.\Procdump.zip' -DestinationPath .\Procdump -Force
+          Expand-Archive -LiteralPath '${{ github.workspace }}\Procdump.zip' -DestinationPath ${{ github.workspace }}\Procdump -Force
           dir .\Procdump
-          .\Procdump\procdump.exe -accepteula
+          ${{ github.workspace }}\Procdump\procdump.exe -accepteula
           mkdir CrashDumpsDir
-          .\Procdump\procdump.exe -ma -i ${{ github.workspace }}\CrashDumpsDir
-
-      - if: ${{ matrix.os == 'windows-latest' }}
-        continue-on-error: true
-        run: set
+          ${{ github.workspace }}\Procdump\procdump.exe -ma -i ${{ github.workspace }}\CrashDumpsDir
 
       - name: Set up JDK distribution
         uses: actions/setup-java@v4
