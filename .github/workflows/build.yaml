@@ -362,14 +362,14 @@ jobs:
         run: java -cp ${{ github.workspace }}/bin/${{ matrix.framework }}/jars/jnet-test-1.0.0.0.jar org.mases.jnet.TestHelloWorld
 
       - name: Execute tests on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
-        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' }}
+        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' || (matrix.os == 'windows-latest' && matrix.framework != 'net462') }}
         continue-on-error: ${{ matrix.os == 'macos-13' }}
         run: |
           dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
           dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
           
       - name: WINDOWS ONLY - Execute tests on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
-        if: ${{ matrix.os == 'windows-latest' }}
+        if: ${{ matrix.os == 'windows-latest' && matrix.framework == 'net462' }}
         continue-on-error: ${{ matrix.os == 'windows-latest' && matrix.framework == 'net9.0' }}
         run: |
           .\bin\${{ matrix.framework }}\JNetTest.exe
