@@ -3,6 +3,10 @@
 		<OutputType>Exe</OutputType>
 		<TargetFrameworks>net462;net8.0;net9.0</TargetFrameworks>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net9.0'">
+		<!--see https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support-->
+		<CETCompat>false</CETCompat>
+	</PropertyGroup>
 	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
 		<Reference Include="Microsoft.CSharp" />
 	</ItemGroup>
