@@ -16,40 +16,40 @@ concurrency:
   group: '${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}'
   cancel-in-progress: true
 
-# This workflow contains two jobs called "check_changes", "build_windows"
+# This workflow contains multiple jobs
 jobs:
-  # Now run "build_windows"
-  build_macos_native:
-    runs-on: macos-13
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:    
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: '1'
-          submodules: 'true'
-
-      - name: Compile CreateVM
-        run: |
-          cd ${{ github.workspace }}/tests/native
-          g++ -I $JAVA_HOME/include -I $JAVA_HOME/include/darwin -L $JAVA_HOME/lib/server -ljvm CreateVM.cpp -o CreateVM.out
-
-      - name: Export location
-        shell: bash
-        run: echo "DYLD_LIBRARY_PATH=$(echo $JAVA_HOME/lib/server)" >> $GITHUB_ENV
-
-      - name: Execute CreateVM
-        shell: bash
-        run: |
-          export
-          echo "GITHUB_ENV_LD_LIBRARY_PATH=$(echo $JAVA_HOME/lib/server)" >> $GITHUB_ENV
-          export DYLD_LIBRARY_PATH=/Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.13-11/x64/Contents/Home/lib/server
-          export
-          ${{ github.workspace }}/tests/native/CreateVM.out
+  ## Now run "build_macos_native"
+  #build_macos_native:
+  #  runs-on: macos-13
+  #  # Steps represent a sequence of tasks that will be executed as part of the job
+  #  steps:    
+  #    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+  #    - uses: actions/checkout@v4
+  #      with:
+  #        fetch-depth: '1'
+  #        submodules: 'true'
+  #
+  #    - name: Compile CreateVM
+  #      run: |
+  #        cd ${{ github.workspace }}/tests/native
+  #        g++ -I $JAVA_HOME/include -I $JAVA_HOME/include/darwin -L $JAVA_HOME/lib/server -ljvm CreateVM.cpp -o CreateVM.out
+  #
+  #    - name: Export location
+  #      shell: bash
+  #      run: echo "DYLD_LIBRARY_PATH=$(echo $JAVA_HOME/lib/server)" >> $GITHUB_ENV
+  #
+  #    - name: Execute CreateVM
+  #      shell: bash
+  #      run: |
+  #        export
+  #        echo "GITHUB_ENV_LD_LIBRARY_PATH=$(echo $JAVA_HOME/lib/server)" >> $GITHUB_ENV
+  #        export DYLD_LIBRARY_PATH=/Users/runner/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.13-11/x64/Contents/Home/lib/server
+  #        export
+  #        ${{ github.workspace }}/tests/native/CreateVM.out
 
   # Verify if a build is needed
   check_changes:
-    needs: build_macos_native
+    #needs: build_macos_native
     name: Check changed files
     outputs:
       run_build_windows: ${{ steps.check_files.outputs.run_build_windows }}
@@ -297,7 +297,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-latest', 'windows-latest', 'macos-latest', 'macos-13' ]
+        os: [ 'ubuntu-latest', 'windows-latest', 'macos-latest' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
         framework: [ 'net462', 'net8.0', 'net9.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle']
         jdk_version: [ '11', '17', '21' ] # only LTS versions
@@ -391,9 +391,8 @@ jobs:
           retention-days: 7
 
       - uses: actions/upload-artifact@v4
-        if: failure()
         with:
-          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          name: Crash_tests_hs_err__${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: ${{ github.workspace }}/**/hs_err_*
           retention-days: 7
 
@@ -402,7 +401,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-latest', 'windows-latest', 'macos-latest', 'macos-13' ]
+        os: [ 'ubuntu-latest', 'windows-latest', 'macos-latest' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle']
         jdk_version: [ '11', '17', '21' ] # only LTS versions
         exclude:
@@ -427,9 +426,16 @@ jobs:
             6.x
             9.x
 
-      - if: ${{ matrix.os == 'windows-latest' }}
+      - name: Download Procdump and prepare
+        if: ${{ matrix.os == 'windows-latest' }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
         continue-on-error: true
-        run: set
+        run: |
+          C:\msys64\usr\bin\wget.exe https://download.sysinternals.com/files/Procdump.zip
+          Expand-Archive -LiteralPath '${{ github.workspace }}\Procdump.zip' -DestinationPath ${{ github.workspace }}\Procdump -Force
+          dir .\Procdump
+          ${{ github.workspace }}\Procdump\procdump.exe -accepteula
+          mkdir CrashDumpsDir
+          ${{ github.workspace }}\Procdump\procdump.exe -ma -i ${{ github.workspace }}\CrashDumpsDir
 
       - name: Restore JNet bin from cache
         uses: actions/cache/restore@v4
@@ -447,19 +453,12 @@ jobs:
 
       - name: Execute PowerShell test on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: ${{ matrix.os != 'windows-latest' }}
-        continue-on-error: ${{ matrix.os == 'macos-13' }}
+        continue-on-error: true
         shell: pwsh
         run: |
           Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}/bin/JNetPSTest.ps1
-
-      - uses: actions/upload-artifact@v4
-        if: ${{ matrix.os == 'macos-13' }}
-        with:
-          name: Crash_powershell_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
-          path: ${{ github.workspace }}/bin/coredump.*
-          retention-days: 7
 
       - name: Execute PowerShell test on ${{ matrix.os }} with ${{ matrix.jdk_vendor }} ${{ matrix.jdk_version }}
         if: ${{ matrix.os == 'windows-latest' }}
@@ -483,15 +482,22 @@ jobs:
         run: (Get-EventLog -LogName Application -Newest 5).Message
 
       - uses: actions/upload-artifact@v4
+        if: ${{ matrix.os == 'windows-latest' }}
         with:
-          name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          name: Crash_powershell_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          path: .\CrashDumpsDir\*
+          retention-days: 7
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ matrix.os != 'windows-latest' }}
+        with:
+          name: Crash_powershell_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: ${{ github.workspace }}/coredump.*
           retention-days: 7
 
       - uses: actions/upload-artifact@v4
-        if: failure()
         with:
-          name: Crash_powershell_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          name: Crash_powershell_hs_err_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: ${{ github.workspace }}/**/hs_err_*
           retention-days: 7
 
