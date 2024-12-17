@@ -261,6 +261,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
+          if-no-files-found: ignore
           name: JNetNuGet
           path: .\bin\*nupkg
 
@@ -289,6 +290,7 @@ jobs:
           
       - uses: actions/upload-artifact@v4
         with:
+          if-no-files-found: ignore
           name: JNetBin
           path: .\bin\
           
@@ -379,6 +381,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: ${{ matrix.os == 'windows-latest' }}
         with:
+          if-no-files-found: ignore
           name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: .\CrashDumpsDir\*
           retention-days: 7
@@ -386,12 +389,14 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: ${{ matrix.os != 'windows-latest' }}
         with:
+          if-no-files-found: ignore
           name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: ${{ github.workspace }}/coredump.*
           retention-days: 7
 
       - uses: actions/upload-artifact@v4
         with:
+          if-no-files-found: ignore
           name: Crash_tests_hs_err__${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: ${{ github.workspace }}/**/hs_err_*
           retention-days: 7
@@ -484,6 +489,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: ${{ matrix.os == 'windows-latest' }}
         with:
+          if-no-files-found: ignore
           name: Crash_powershell_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: .\CrashDumpsDir\*
           retention-days: 7
@@ -491,12 +497,14 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: ${{ matrix.os != 'windows-latest' }}
         with:
+          if-no-files-found: ignore
           name: Crash_powershell_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: ${{ github.workspace }}/coredump.*
           retention-days: 7
 
       - uses: actions/upload-artifact@v4
         with:
+          if-no-files-found: ignore
           name: Crash_powershell_hs_err_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: ${{ github.workspace }}/**/hs_err_*
           retention-days: 7
