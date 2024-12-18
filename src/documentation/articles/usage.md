@@ -54,12 +54,15 @@ If the developer/user encounter this condition can do the following steps:
 
 ### Intel CET and JNet
 
-JNet uses an embedded JVM through JCOBridge, however JVM initialization is incompatible with [CET](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) because the code used to identify CPU try to modify the return address and this is considered from CET a violation: see [comment](https://github.com/masesgroup/JNet/issues/573#issuecomment-2544249107)
+JNet uses an embedded JVM through JCOBridge, however JVM initialization is incompatible with [CET](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) because the code used to identify CPU try to modify the return address and this is considered from CET a violation: see [this comment](https://github.com/masesgroup/JNet/issues/573#issuecomment-2544249107).
+
 From .NET 9 preview 6, [CET is enabled by default on supported hardware](https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support) when the final stage produce an executable artifact, i.e. the csproj file contains `<OutputType>Exe</OutputType>`.
-If the application, upon startup, fails with the error 0xc0000409 (subcode 0x30) it was compiled with CET enabled and fails during JVM initialization.
+
+If the application, upon startup, fails with the error 0xc0000409 (subcode 0x30) it was compiled with CET enabled and it fails during JVM initialization.
+
 To solve the issue there are three possible solutions:
 1. use a .NET version, e.g. 8, that does not enable CET by default
-2. Add the following snippet to disable CET on executable (templates available for JNet are ready made to solve this issue): 
+2. Add the following snippet to disable CET on executable (templates available for JNet are ready made and solve this issue): 
 
 ```xml
 	<PropertyGroup Condition="'$(TargetFramework)' == 'net9.0'">
@@ -68,7 +71,7 @@ To solve the issue there are three possible solutions:
 	</PropertyGroup>
 ```
 
-3. Use the `dotnet` app host as reported in https://github.com/masesgroup/JCOBridgePublic/issues/7#issuecomment-2550031946 with a syntax like:
+3. Use the `dotnet` app host, as reported in https://github.com/masesgroup/JCOBridgePublic/issues/7#issuecomment-2550031946, with a syntax like:
 
 ```sh
 	dotnet MyApplication.dll
