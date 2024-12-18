@@ -449,11 +449,13 @@ jobs:
           distribution: ${{ matrix.jdk_vendor }}
           java-version: ${{ matrix.jdk_version }}
 
+      - shell: pwsh
+        run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
+
       - if: ${{ matrix.os != 'windows-latest' }}
         continue-on-error: true
         shell: pwsh
         run: |
-          Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}/bin/JNetPSTest.ps1
 
@@ -461,7 +463,6 @@ jobs:
         continue-on-error: true
         shell: pwsh
         run: |
-          Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1
 
@@ -469,7 +470,6 @@ jobs:
         continue-on-error: true
         shell: powershell
         run: |
-          Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1
           
