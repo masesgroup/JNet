@@ -362,7 +362,7 @@ jobs:
           dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
           dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
           
-      - if: ${{ matrix.os == 'windows-latest' && matrix.framework == 'net462' }}
+      - if: ${{ matrix.os == 'windows-latest' }} # && matrix.framework == 'net462' }}
         continue-on-error: true
         run: |
           .\bin\${{ matrix.framework }}\JNetTest.exe
