@@ -62,6 +62,8 @@ namespace MASES.JNetTest
         {
             try
             {
+                JNetTestCore.ApplicationHeapSize = "4G";
+                JNetTestCore.ApplicationInitialHeapSize = "1G";
                 JNetTestCore.CreateGlobalInstance();
                 var appArgs = JNetTestCore.FilteredArgs;
 

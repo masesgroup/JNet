@@ -20,6 +20,10 @@
 		<AssemblyOriginatorKeyFile>..\Common\JNet.snk</AssemblyOriginatorKeyFile>
 		<NoWarn>$(NoWarn);0618</NoWarn>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net9.0'">
+		<!--see https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support-->
+		<CETCompat>false</CETCompat>
+	</PropertyGroup>
 	<PropertyGroup Condition="'$(JNET_DOCKER_BUILD_ACTIONS)' != 'true'">
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<TargetFrameworks>net462;net8.0;net9.0</TargetFrameworks>

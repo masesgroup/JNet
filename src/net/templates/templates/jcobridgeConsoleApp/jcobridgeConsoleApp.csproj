@@ -1,12 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFrameworks>net462;net8.0;net9.0</TargetFrameworks>
-  </PropertyGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'net462'">
-    <Reference Include="Microsoft.CSharp" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="MASES.JCOBridge" Version="2.5.19" IncludeAssets="All" PrivateAssets="None" />
-  </ItemGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFrameworks>net462;net8.0;net9.0</TargetFrameworks>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net9.0'">
+		<!--see https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support-->
+		<CETCompat>false</CETCompat>
+	</PropertyGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+		<Reference Include="Microsoft.CSharp" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="MASES.JCOBridge" Version="2.5.19" IncludeAssets="All" PrivateAssets="None" />
+	</ItemGroup>
 </Project>
