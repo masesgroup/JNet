@@ -18,7 +18,9 @@
 		<DefineConstants>$(DefineConstants);JNET_SIMPLIFIED_GENERATION</DefineConstants>
 	</PropertyGroup>
 	<ItemGroup Condition="True">
-		<jnet_jars Include="$(ProjectDir)\..\..\..\jars\jnet-*" />
+		<jnet_jars Include="$(ProjectDir)\..\..\..\jars\jnet-*">
+			<InProject>false</InProject>
+		</jnet_jars>
 	</ItemGroup>
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild" Condition="'$(GITHUB_ACTIONS)' != 'true' Or '$(GITHUB_TEST_PREPARATION)' == 'true'">
 		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(OutDir)\jars" />
@@ -52,7 +54,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="MASES.CLIParser" Version="3.2.1" />
-		<PackageReference Include="MASES.JCOBridge" Version="2.5.19">
+		<PackageReference Include="MASES.JCOBridge" Version="2.5.20">
 			<IncludeAssets>All</IncludeAssets>
 			<PrivateAssets>None</PrivateAssets>
 		</PackageReference>
