@@ -94,7 +94,7 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
     * review of classes based on latest updates of JNetReflector
     * enhanced ByteBuffer management
     * speed-up array/list conversion
-* V2.5.11: updates to JCOBridge 2.5.20 and adds management of [CET](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) on recent Intel CPU due to [latest change on .NET 9](https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support): usage explanation on [this](src/documentation/articles/usage.md#intel-cet-and-jnet)
+* V2.5.11: updates to JCOBridge 2.5.21 and adds management of [CET](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) on recent Intel CPU due to [latest change on .NET 9](https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support): usage explanation on [this](src/documentation/articles/usage.md#intel-cet-and-jnet)
 
 ---
 
