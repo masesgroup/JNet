@@ -1,136 +1,136 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="..\Common\Common.props" />
-  <PropertyGroup>
-	<TargetFrameworks>net8.0</TargetFrameworks>
-	<PackageType>DotnetTool</PackageType>
-    <OutputType>Exe</OutputType>
-    <AssemblyName>MASES.JNetReflector</AssemblyName>
-    <RootNamespace>MASES.JNetReflector</RootNamespace>
-    <Title>JNetReflector - JNet (Java/JVM suite for .NET) class reflection utility command line interface</Title>
-    <Description>JNetReflector - JNet (Java/JVM suite for .NET) class reflection utility command line interface</Description>
-    <Product>JNetReflector</Product>
-    <OutputPath>..\..\..\binReflector\</OutputPath>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <PackageTags>jnet cli reflection utility dotnet clr netcore net6 java jvm</PackageTags>
-    <PackageId>MASES.JNetReflector</PackageId>
-    <DefineConstants>$(DefineConstants)TRACE;JNETREFLECTOR</DefineConstants>
-    <PackageReadmeFile>usageReflector.md</PackageReadmeFile>
-    <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
-    <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
-  </PropertyGroup>
-  <ItemGroup>
-    <jnetreflector_jars Include="$(ProjectDir)\..\..\..\jars\*.*" />
-    <None Include="..\..\documentation\articles\usageReflector.md" Pack="true" PackagePath="\" />
-  </ItemGroup>
-  <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
-    <Copy SourceFiles="@(jnetreflector_jars)" DestinationFolder="$(OutDir)\jars" />
-  </Target>
-  <Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
-    <Copy SourceFiles="@(jnetreflector_jars)" DestinationFolder="$(PublishDir)\jars" />
-  </Target>
-  <ItemGroup>
-    <None Remove="AllPackageClasses.template" />
-    <None Remove="AllPackageClassesStubClass.template" />
-    <None Remove="AllPackageClassesStubNestedClass.template" />
-    <None Remove="copyright.txt" />
-    <None Remove="SingleClass.template" />
-    <None Remove="Templates\AllPackageClassesStubClassInterfaceOrAbstract.template" />
-    <None Remove="Templates\AllPackageClassesStubClassListener.template" />
-    <None Remove="Templates\AllPackageClassesStubClassMainClass.template" />
-    <None Remove="Templates\AllPackageClassesStubException.template" />
-    <None Remove="Templates\SingleClassFile.template" />
-    <None Remove="Templates\SingleConstructor.template" />
-    <None Remove="Templates\SingleField.template" />
-    <None Remove="Templates\SingleFieldFinal.template" />
-    <None Remove="Templates\SingleInterface.template" />
-    <None Remove="Templates\SingleInterfaceMethod.template" />
-    <None Remove="Templates\SingleInterfaceProperty.template" />
-    <None Remove="Templates\SingleListenerJavaFile.template" />
-    <None Remove="Templates\SingleListenerJavaMethod.template" />
-    <None Remove="Templates\SingleListenerMethod.template" />
-    <None Remove="Templates\SingleMethod.template" />
-    <None Remove="Templates\SingleProperty.template" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\JNet\Developed\Java\Lang\Annotation\Annotation.cs" Link="Java\Lang\Annotation\Annotation.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Class.cs" Link="Java\Lang\Class.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\ClassFormatError.cs" Link="Java\Lang\ClassFormatError.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\ClassLoader.cs" Link="Java\Lang\ClassLoader.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\ClassNotFoundException.cs" Link="Java\Lang\ClassNotFoundException.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Error.cs" Link="Java\Lang\Error.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Exception.cs" Link="Java\Lang\Exception.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Iterable.cs" Link="Java\Lang\Iterable.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\LinkageError.cs" Link="Java\Lang\LinkageError.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Module.cs" Link="Java\Lang\Module.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\NoClassDefFoundError.cs" Link="Java\Lang\NoClassDefFoundError.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\NoSuchMethodException.cs" Link="Java\Lang\NoSuchMethodException.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Object.cs" Link="Java\Lang\Object.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Package.cs" Link="Java\Lang\Package.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\ReflectiveOperationException.cs" Link="Java\Lang\ReflectiveOperationException.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Reflect\AccessibleObject.cs" Link="Java\Lang\Reflect\AccessibleObject.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Reflect\AnnotatedElement.cs" Link="Java\Lang\Reflect\AnnotatedElement.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Reflect\AnnotatedType.cs" Link="Java\Lang\Reflect\AnnotatedType.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Reflect\Constructor.cs" Link="Java\Lang\Reflect\Constructor.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Reflect\Executable.cs" Link="Java\Lang\Reflect\Executable.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Reflect\Field.cs" Link="Java\Lang\Reflect\Field.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Reflect\GenericArrayType.cs" Link="Java\Lang\Reflect\GenericArrayType.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Reflect\GenericDeclaration.cs" Link="Java\Lang\Reflect\GenericDeclaration.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Reflect\Method.cs" Link="Java\Lang\Reflect\Method.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Reflect\Modifier.cs" Link="Java\Lang\Reflect\Modifier.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Reflect\Parameter.cs" Link="Java\Lang\Reflect\Parameter.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Reflect\ParameterizedType.cs" Link="Java\Lang\Reflect\ParameterizedType.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Reflect\Type.cs" Link="Java\Lang\Reflect\Type.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Reflect\TypeVariable.cs" Link="Java\Lang\Reflect\TypeVariable.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Reflect\WildcardType.cs" Link="Java\Lang\Reflect\WildcardType.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\RuntimeException.cs" Link="Java\Lang\RuntimeException.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\SecurityManager.cs" Link="Java\Lang\SecurityManager.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\Throwable.cs" Link="Java\Lang\Throwable.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\UnsupportedClassVersionError.cs" Link="Java\Lang\UnsupportedClassVersionError.cs" />
-    <Compile Include="..\JNet\Developed\Java\Lang\UnsupportedOperationException.cs" Link="Java\Lang\UnsupportedOperationException.cs" />
-    <Compile Include="..\JNet\Developed\Java\Util\Collection.cs" Link="Java\Util\Collection.cs" />
-    <Compile Include="..\JNet\Developed\Java\Util\Iterator.cs" Link="Java\Util\Iterator.cs" />
-    <Compile Include="..\JNet\JNetCoreBase.cs" Link="JNetCoreBase.cs" />
-    <Compile Include="..\JNet\Specific\AsyncEnumerable.cs" Link="Specific\AsyncEnumerable.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="copyright.txt" />
-    <EmbeddedResource Include="Templates\AllPackageClassesStubClassInterfaceOrAbstract.template" />
-    <EmbeddedResource Include="Templates\AllPackageClassesStubClassMainClass.template" />
-    <EmbeddedResource Include="Templates\AllPackageClassesStubClassListener.template" />
-    <EmbeddedResource Include="Templates\AllPackageClassesStubException.template" />
-    <EmbeddedResource Include="Templates\SingleFieldFinal.template" />
-    <EmbeddedResource Include="Templates\SingleListenerJavaFile.template" />
-    <EmbeddedResource Include="Templates\SingleInterface.template" />
-    <EmbeddedResource Include="Templates\SingleClassFile.template" />
-    <EmbeddedResource Include="Templates\SingleConstructor.template" />
-    <EmbeddedResource Include="Templates\SingleField.template" />
-    <EmbeddedResource Include="Templates\SingleInterfaceProperty.template" />
-    <EmbeddedResource Include="Templates\SingleInterfaceMethod.template" />
-    <EmbeddedResource Include="Templates\SingleListenerMethod.template" />
-    <EmbeddedResource Include="Templates\SingleListenerJavaMethod.template" />
-    <EmbeddedResource Include="Templates\SingleProperty.template" />
-    <EmbeddedResource Include="Templates\SingleMethod.template" />
-    <EmbeddedResource Include="Templates\SingleClass.template" />
-    <EmbeddedResource Include="Templates\AllPackageClassesStubClass.template" />
-    <EmbeddedResource Include="Templates\AllPackageClasses.template" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="MASES.CLIParser" Version="3.2.1" />
-	<PackageReference Include="MASES.JCOBridge" Version="2.5.21">
-		<IncludeAssets>All</IncludeAssets>
-		<PrivateAssets>None</PrivateAssets>
-	</PackageReference>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Java\Lang\Annotation\" />
-    <Folder Include="Java\Lang\Reflect\" />
-    <Folder Include="Java\Util\" />
-    <Folder Include="Specific\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="DotnetToolSettings.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
+	<Import Project="..\Common\Common.props" />
+	<PropertyGroup>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+		<PackageType>DotnetTool</PackageType>
+		<OutputType>Exe</OutputType>
+		<AssemblyName>MASES.JNetReflector</AssemblyName>
+		<RootNamespace>MASES.JNetReflector</RootNamespace>
+		<Title>JNetReflector - JNet (Java/JVM suite for .NET) class reflection utility command line interface</Title>
+		<Description>JNetReflector - JNet (Java/JVM suite for .NET) class reflection utility command line interface</Description>
+		<Product>JNetReflector</Product>
+		<OutputPath>..\..\..\binReflector\</OutputPath>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<PackageTags>jnet cli reflection utility dotnet clr netcore net8 java jvm</PackageTags>
+		<PackageId>MASES.JNetReflector</PackageId>
+		<DefineConstants>$(DefineConstants)TRACE;JNETREFLECTOR</DefineConstants>
+		<PackageReadmeFile>usageReflector.md</PackageReadmeFile>
+		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+	</PropertyGroup>
+	<ItemGroup>
+		<jnetreflector_jars Include="$(ProjectDir)\..\..\..\jars\*.*" />
+		<None Include="..\..\documentation\articles\usageReflector.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+	<Target Name="CopyCustomContent" AfterTargets="AfterBuild">
+		<Copy SourceFiles="@(jnetreflector_jars)" DestinationFolder="$(OutDir)\jars" />
+	</Target>
+	<Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
+		<Copy SourceFiles="@(jnetreflector_jars)" DestinationFolder="$(PublishDir)\jars" />
+	</Target>
+	<ItemGroup>
+		<None Remove="AllPackageClasses.template" />
+		<None Remove="AllPackageClassesStubClass.template" />
+		<None Remove="AllPackageClassesStubNestedClass.template" />
+		<None Remove="copyright.txt" />
+		<None Remove="SingleClass.template" />
+		<None Remove="Templates\AllPackageClassesStubClassInterfaceOrAbstract.template" />
+		<None Remove="Templates\AllPackageClassesStubClassListener.template" />
+		<None Remove="Templates\AllPackageClassesStubClassMainClass.template" />
+		<None Remove="Templates\AllPackageClassesStubException.template" />
+		<None Remove="Templates\SingleClassFile.template" />
+		<None Remove="Templates\SingleConstructor.template" />
+		<None Remove="Templates\SingleField.template" />
+		<None Remove="Templates\SingleFieldFinal.template" />
+		<None Remove="Templates\SingleInterface.template" />
+		<None Remove="Templates\SingleInterfaceMethod.template" />
+		<None Remove="Templates\SingleInterfaceProperty.template" />
+		<None Remove="Templates\SingleListenerJavaFile.template" />
+		<None Remove="Templates\SingleListenerJavaMethod.template" />
+		<None Remove="Templates\SingleListenerMethod.template" />
+		<None Remove="Templates\SingleMethod.template" />
+		<None Remove="Templates\SingleProperty.template" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="..\JNet\Developed\Java\Lang\Annotation\Annotation.cs" Link="Java\Lang\Annotation\Annotation.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Class.cs" Link="Java\Lang\Class.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\ClassFormatError.cs" Link="Java\Lang\ClassFormatError.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\ClassLoader.cs" Link="Java\Lang\ClassLoader.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\ClassNotFoundException.cs" Link="Java\Lang\ClassNotFoundException.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Error.cs" Link="Java\Lang\Error.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Exception.cs" Link="Java\Lang\Exception.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Iterable.cs" Link="Java\Lang\Iterable.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\LinkageError.cs" Link="Java\Lang\LinkageError.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Module.cs" Link="Java\Lang\Module.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\NoClassDefFoundError.cs" Link="Java\Lang\NoClassDefFoundError.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\NoSuchMethodException.cs" Link="Java\Lang\NoSuchMethodException.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Object.cs" Link="Java\Lang\Object.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Package.cs" Link="Java\Lang\Package.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\ReflectiveOperationException.cs" Link="Java\Lang\ReflectiveOperationException.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Reflect\AccessibleObject.cs" Link="Java\Lang\Reflect\AccessibleObject.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Reflect\AnnotatedElement.cs" Link="Java\Lang\Reflect\AnnotatedElement.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Reflect\AnnotatedType.cs" Link="Java\Lang\Reflect\AnnotatedType.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Reflect\Constructor.cs" Link="Java\Lang\Reflect\Constructor.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Reflect\Executable.cs" Link="Java\Lang\Reflect\Executable.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Reflect\Field.cs" Link="Java\Lang\Reflect\Field.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Reflect\GenericArrayType.cs" Link="Java\Lang\Reflect\GenericArrayType.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Reflect\GenericDeclaration.cs" Link="Java\Lang\Reflect\GenericDeclaration.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Reflect\Method.cs" Link="Java\Lang\Reflect\Method.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Reflect\Modifier.cs" Link="Java\Lang\Reflect\Modifier.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Reflect\Parameter.cs" Link="Java\Lang\Reflect\Parameter.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Reflect\ParameterizedType.cs" Link="Java\Lang\Reflect\ParameterizedType.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Reflect\Type.cs" Link="Java\Lang\Reflect\Type.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Reflect\TypeVariable.cs" Link="Java\Lang\Reflect\TypeVariable.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Reflect\WildcardType.cs" Link="Java\Lang\Reflect\WildcardType.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\RuntimeException.cs" Link="Java\Lang\RuntimeException.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\SecurityManager.cs" Link="Java\Lang\SecurityManager.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\Throwable.cs" Link="Java\Lang\Throwable.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\UnsupportedClassVersionError.cs" Link="Java\Lang\UnsupportedClassVersionError.cs" />
+		<Compile Include="..\JNet\Developed\Java\Lang\UnsupportedOperationException.cs" Link="Java\Lang\UnsupportedOperationException.cs" />
+		<Compile Include="..\JNet\Developed\Java\Util\Collection.cs" Link="Java\Util\Collection.cs" />
+		<Compile Include="..\JNet\Developed\Java\Util\Iterator.cs" Link="Java\Util\Iterator.cs" />
+		<Compile Include="..\JNet\JNetCoreBase.cs" Link="JNetCoreBase.cs" />
+		<Compile Include="..\JNet\Specific\AsyncEnumerable.cs" Link="Specific\AsyncEnumerable.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="copyright.txt" />
+		<EmbeddedResource Include="Templates\AllPackageClassesStubClassInterfaceOrAbstract.template" />
+		<EmbeddedResource Include="Templates\AllPackageClassesStubClassMainClass.template" />
+		<EmbeddedResource Include="Templates\AllPackageClassesStubClassListener.template" />
+		<EmbeddedResource Include="Templates\AllPackageClassesStubException.template" />
+		<EmbeddedResource Include="Templates\SingleFieldFinal.template" />
+		<EmbeddedResource Include="Templates\SingleListenerJavaFile.template" />
+		<EmbeddedResource Include="Templates\SingleInterface.template" />
+		<EmbeddedResource Include="Templates\SingleClassFile.template" />
+		<EmbeddedResource Include="Templates\SingleConstructor.template" />
+		<EmbeddedResource Include="Templates\SingleField.template" />
+		<EmbeddedResource Include="Templates\SingleInterfaceProperty.template" />
+		<EmbeddedResource Include="Templates\SingleInterfaceMethod.template" />
+		<EmbeddedResource Include="Templates\SingleListenerMethod.template" />
+		<EmbeddedResource Include="Templates\SingleListenerJavaMethod.template" />
+		<EmbeddedResource Include="Templates\SingleProperty.template" />
+		<EmbeddedResource Include="Templates\SingleMethod.template" />
+		<EmbeddedResource Include="Templates\SingleClass.template" />
+		<EmbeddedResource Include="Templates\AllPackageClassesStubClass.template" />
+		<EmbeddedResource Include="Templates\AllPackageClasses.template" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="MASES.CLIParser" Version="3.2.1" />
+		<PackageReference Include="MASES.JCOBridge" Version="2.5.21">
+			<IncludeAssets>All</IncludeAssets>
+			<PrivateAssets>None</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Java\Lang\Annotation\" />
+		<Folder Include="Java\Lang\Reflect\" />
+		<Folder Include="Java\Util\" />
+		<Folder Include="Specific\" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="DotnetToolSettings.xml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 </Project>
