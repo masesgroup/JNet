@@ -1,20 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="..\Common\Common.props" />
-  <PropertyGroup>
-	<PackageType>DotnetTool</PackageType>
-    <OutputType>Exe</OutputType>
-    <AssemblyName>MASES.JNetCLI</AssemblyName>
-    <RootNamespace>MASES.JNetCLI</RootNamespace>
-    <Title>JNetCLI - JNet (Java/JVM suite for .NET) command line interface</Title>
-    <Description>JNetCLI - JNet (Java/JVM suite for .NET) command line interface</Description>
-    <Product>JNetCLI</Product>
-    <OutputPath>..\..\..\binCLI\</OutputPath>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <PackageTags>jnet cli dotnet clr netcore net6</PackageTags>
-    <PackageId>MASES.JNetCLI</PackageId>
-    <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
-    <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
-  </PropertyGroup>
+	<Import Project="..\Common\Common.props" />
+	<PropertyGroup>
+		<PackageType>DotnetTool</PackageType>
+		<OutputType>Exe</OutputType>
+		<AssemblyName>MASES.JNetCLI</AssemblyName>
+		<RootNamespace>MASES.JNetCLI</RootNamespace>
+		<Title>JNetCLI - JNet (Java/JVM suite for .NET) command line interface</Title>
+		<Description>JNetCLI - JNet (Java/JVM suite for .NET) command line interface</Description>
+		<Product>JNetCLI</Product>
+		<OutputPath>..\..\..\binCLI\</OutputPath>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<PackageTags>jnet cli dotnet clr netcore net6</PackageTags>
+		<PackageId>MASES.JNetCLI</PackageId>
+		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+	</PropertyGroup>
 	<ItemGroup>
 		<jnetcli_jars Include="$(ProjectDir)\..\..\..\jars\jnet-*" />
 		<None Include="..\..\documentation\articles\usageReflector.md" Pack="true" PackagePath="\" />
@@ -25,17 +25,17 @@
 	<Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
 		<Copy SourceFiles="@(jnetcli_jars)" DestinationFolder="$(PublishDir)\jars" />
 	</Target>
-  <ItemGroup>
-    <ProjectReference Include="..\JNet\JNet.csproj">
-		<IncludeAssets>All</IncludeAssets>
-        <PrivateAssets>None</PrivateAssets>
-    </ProjectReference>
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.12.0" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="DotnetToolSettings.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\JNet\JNet.csproj">
+			<IncludeAssets>All</IncludeAssets>
+			<PrivateAssets>None</PrivateAssets>
+		</ProjectReference>
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.12.0" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="DotnetToolSettings.xml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 </Project>

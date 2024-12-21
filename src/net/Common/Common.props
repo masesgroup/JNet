@@ -19,8 +19,6 @@
 		<SignAssembly>true</SignAssembly>
 		<AssemblyOriginatorKeyFile>..\Common\JNet.snk</AssemblyOriginatorKeyFile>
 		<NoWarn>$(NoWarn);0618</NoWarn>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(TargetFramework)' == 'net9.0'">
 		<!--see https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support-->
 		<CETCompat>false</CETCompat>
 	</PropertyGroup>

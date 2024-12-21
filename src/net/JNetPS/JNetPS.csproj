@@ -16,11 +16,11 @@
 	<PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
 		<OutputType>Exe</OutputType>
 	</PropertyGroup>
-	
+
 	<ItemGroup Condition="True">
 		<jnetps_jars Include="$(ProjectDir)\..\..\..\jars\jnet-*" />
 	</ItemGroup>
-	
+
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild">
 		<Copy SourceFiles="@(jnetps_jars)" DestinationFolder="$(OutDir)\jars" />
 	</Target>
@@ -39,11 +39,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="MASES.JNetPSFramework.psd1" Condition="'$(TargetFramework)' == 'net462'">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </None>
-	  <None Update="MASES.JNetPSCore.psd1" Condition="'$(TargetFramework)' == 'net8.0'">
-	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </None>
+		<None Update="MASES.JNetPSFramework.psd1" Condition="'$(TargetFramework)' == 'net462'">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="MASES.JNetPSCore.psd1" Condition="'$(TargetFramework)' == 'net8.0'">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 </Project>
