@@ -21,9 +21,15 @@ To use JNetReflector runs a command like the following:
 jnetreflector -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/javadoc/\" -JavadocVersion 11 -DestinationRootPath C:\\ReflectionDestination
 ```
 
+> [!IMPORTANT]
+> If the previous command raises the error described in [Intel CET and KNet](usage.md#intel-cet-and-knet) the only solution is to apply the following workaround and disable CET:
+> ```sh
+> 	reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\jnetreflector.exe" /v MitigationOptions /t REG_BINARY /d "0000000000000000000000000000002000" /f
+> ```
+
 ## Command switches available
 
-_jnr_ accepts the following command-line switch:
+_jnetreflector_ accepts the following command-line switch:
 
 * **ConfigurationFile**: The path where is stored a JSON file containing the tool configuration properties; the JSON items shall be written using the same command-line property names
 * **CopyrightFile**: The path where the tool will locate copyright info
@@ -107,14 +113,17 @@ The options used are:
     "java.awt.peer"
   ],
   "ClassesToBeListener": [
+    "java.lang.Runnable",
     "javax.swing.Action",
     "javax.management.NotificationFilter"
+  ],
+  "ClassesManuallyDeveloped": [
+    "java.util.Comparator",
+    "java.util.EventListener"
   ],
   "ClassesToAvoid": [
     "java.lang.ProcessBuilder$Redirect$Type",
     "java.lang.Thread$UncaughtExceptionHandler",
-    "java.util.Comparator",
-    "java.util.EventListener",
     "java.util.stream.DoubleStream$Builder",
     "java.util.stream.IntStream$Builder",
     "java.util.stream.LongStream$Builder",
