@@ -93,8 +93,14 @@
 </ul>
 <pre><code class="lang-sh">jnetreflector -OriginRootPath C:\\myJars -OriginJavadocUrl \&quot;https://thehost/javadoc/\&quot; -JavadocVersion 11 -DestinationRootPath C:\\ReflectionDestination
 </code></pre>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>If the previous command raises the error described in <a href="usage.html#intel-cet-and-jnet">Intel CET and JNet</a>, the only solution is to apply the following workaround (within an <strong>elevated shell</strong>) and disable CET:</p>
+<pre><code class="lang-sh">  reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\jnetreflector.exe&quot; /v MitigationOptions /t REG_BINARY /d &quot;0000000000000000000000000000002000&quot; /f
+</code></pre>
+</div>
 <h2 id="command-switches-available">Command switches available</h2>
-<p><em>jnr</em> accepts the following command-line switch:</p>
+<p><em>jnetreflector</em> accepts the following command-line switch:</p>
 <ul>
 <li><strong>ConfigurationFile</strong>: The path where is stored a JSON file containing the tool configuration properties; the JSON items shall be written using the same command-line property names</li>
 <li><strong>CopyrightFile</strong>: The path where the tool will locate copyright info</li>
@@ -172,14 +178,17 @@ The command line interface uses the following command line:</p>
     &quot;java.awt.peer&quot;
   ],
   &quot;ClassesToBeListener&quot;: [
+    &quot;java.lang.Runnable&quot;,
     &quot;javax.swing.Action&quot;,
     &quot;javax.management.NotificationFilter&quot;
+  ],
+  &quot;ClassesManuallyDeveloped&quot;: [
+    &quot;java.util.Comparator&quot;,
+    &quot;java.util.EventListener&quot;
   ],
   &quot;ClassesToAvoid&quot;: [
     &quot;java.lang.ProcessBuilder$Redirect$Type&quot;,
     &quot;java.lang.Thread$UncaughtExceptionHandler&quot;,
-    &quot;java.util.Comparator&quot;,
-    &quot;java.util.EventListener&quot;,
     &quot;java.util.stream.DoubleStream$Builder&quot;,
     &quot;java.util.stream.IntStream$Builder&quot;,
     &quot;java.util.stream.LongStream$Builder&quot;,
