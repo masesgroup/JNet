@@ -103,6 +103,12 @@
 </ul>
 <pre><code class="lang-sh">jnet -i
 </code></pre>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<p>If the previous command raises the error described in <a href="usage.html#intel-cet-and-jnet">Intel CET and JNet</a>, the only solution is to apply the following workaround (within an <strong>elevated shell</strong>) and disable CET:</p>
+<pre><code class="lang-sh">  reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\jnet.exe&quot; /v MitigationOptions /t REG_BINARY /d &quot;0000000000000000000000000000002000&quot; /f
+</code></pre>
+</div>
 <ul>
 <li><strong>Docker image</strong></li>
 </ul>
