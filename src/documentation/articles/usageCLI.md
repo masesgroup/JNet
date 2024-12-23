@@ -24,6 +24,12 @@ To use the CLI interface (JNetCLI) runs a command like the following:
 jnet -i
 ```
 
+> [!IMPORTANT]
+> If the previous command raises the error described in [Intel CET and KNet](usage.md#intel-cet-and-knet) the only solution is to apply the following workaround and disable CET:
+> ```sh
+> 	reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\jnet.exe" /v MitigationOptions /t REG_BINARY /d "0000000000000000000000000000002000" /f
+> ```
+
 - **Docker image**
 
 ```sh

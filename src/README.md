@@ -36,6 +36,7 @@ The configuration is:
     "java.awt.peer"
   ],
   "ClassesToBeListener": [
+    "java.lang.Runnable",
     "javax.swing.Action",
     "javax.management.NotificationFilter"
   ],

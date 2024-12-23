@@ -60,7 +60,7 @@ From .NET 9 preview 6, [CET is enabled by default on supported hardware](https:/
 
 If the application, upon startup, fails with the error 0xc0000409 (subcode 0x30) it was compiled with CET enabled and it fails during JVM initialization.
 
-To solve the issue there are three possible solutions:
+To solve the issue there are four possible solutions:
 1. use a .NET version, e.g. 8, that does not enable CET by default
 2. Add the following snippet to disable CET on executable (templates available for JNet are ready made and solve this issue): 
 
@@ -77,6 +77,16 @@ To solve the issue there are three possible solutions:
 	dotnet MyApplication.dll
 ```
  instead of the classic:
+ ```sh
+	MyApplication.exe
+```
+
+4. If you want to run the classic application execute the following command:
+
+ ```sh
+	reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MyApplication.exe" /v MitigationOptions /t REG_BINARY /d "0000000000000000000000000000002000" /f
+```
+then run:
  ```sh
 	MyApplication.exe
 ```
