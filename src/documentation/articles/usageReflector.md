@@ -22,7 +22,7 @@ jnetreflector -OriginRootPath C:\\myJars -OriginJavadocUrl \"https://thehost/jav
 ```
 
 > [!IMPORTANT]
-> If the previous command raises the error described in [Intel CET and KNet](usage.md#intel-cet-and-knet) the only solution is to apply the following workaround and disable CET:
+> If the previous command raises the error described in [Intel CET and JNet](usage.md#intel-cet-and-jnet), the only solution is to apply the following workaround (within an **elevated shell**) and disable CET:
 > ```sh
 > 	reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\jnetreflector.exe" /v MitigationOptions /t REG_BINARY /d "0000000000000000000000000000002000" /f
 > ```
