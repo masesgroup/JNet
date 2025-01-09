@@ -1828,7 +1828,7 @@ namespace MASES.JNetReflector
             if (entry == null) throw new ArgumentNullException(nameof(entry));
             foreach (var interfaceToCheck in entry.Interfaces)
             {
-                if (interfaceToCheck.TypeName == "java.lang.Closeable") return true;
+                if (interfaceToCheck.TypeName == "java.lang.AutoCloseable") return true;
             }
             return false;
         }
