@@ -1825,10 +1825,13 @@ namespace MASES.JNetReflector
 
         public static bool IsCloseable(this Class entry)
         {
+            const string autoCloseable = "java.lang.AutoCloseable";
+
             if (entry == null) throw new ArgumentNullException(nameof(entry));
+            if (entry.TypeName == autoCloseable) return true;
             foreach (var interfaceToCheck in entry.Interfaces)
             {
-                if (interfaceToCheck.TypeName == "java.lang.Closeable") return true;
+                if (interfaceToCheck.TypeName == autoCloseable) return true;
             }
             return false;
         }
