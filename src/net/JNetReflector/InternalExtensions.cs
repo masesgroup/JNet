@@ -1831,7 +1831,7 @@ namespace MASES.JNetReflector
             if (entry.TypeName == autoCloseable) return true;
             foreach (var interfaceToCheck in entry.Interfaces)
             {
-                if (interfaceToCheck.TypeName == autoCloseable) return true;
+                if (IsCloseable(interfaceToCheck)) return true;
             }
             return false;
         }
