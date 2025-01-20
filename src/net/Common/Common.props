@@ -39,7 +39,7 @@
 		<None Include="..\Common\JNet.snk" Link="JNet.snk" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(TargetFramework)' == 'net462'">
-		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="9.0.0"/>
+		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="9.0.1"/>
 		<Reference Include="Microsoft.CSharp" />
 	</ItemGroup>
 	<!-- Fix start https://github.com/dotnet/sourcelink/issues/572 -->
