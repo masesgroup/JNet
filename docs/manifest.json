@@ -50714,6 +50714,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.JVMOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.JVMOption.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.VersionUrl.yml",
       "output": {
         ".html": {
