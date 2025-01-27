@@ -69,11 +69,11 @@ namespace MASES.JNetReflector
             {
                 public JVMOption(string optionName, string optionValue)
                 {
-                    OptionName = optionName;
-                    OptionValue = optionValue;
+                    Name = optionName;
+                    Value = optionValue;
                 }
-                public string OptionName { get; set; }
-                public string OptionValue { get; set; }
+                public string Name { get; set; }
+                public string Value { get; set; }
             }
 
             public IEnumerable<JVMOption> JVMOptions { get; set; }
@@ -844,7 +844,7 @@ namespace MASES.JNetReflector
                     Dictionary<string, string> dict = new();
                     foreach (var item in _ConfigurationFromFile.JVMOptions)
                     {
-                        dict.Add(item.OptionName, item.OptionValue);
+                        dict.Add(item.Name, item.Value);
                     }
                     return dict;
                 }

@@ -179,6 +179,36 @@ namespace MASES.JNet
         /// Adds options to the JVM
         /// </summary>
         protected abstract IDictionary<string, string> Options { get; }
+        /// <summary>
+        /// Replace environment variable in <paramref name="item"/>
+        /// </summary>
+        /// <param name="item">The string where the environemnt variables shall be replaced</param>
+        /// <returns>The string with replaced environment varibales</returns>
+        /// <remarks>Each environment variable is expected in the form $(ENV_VAR)</remarks>
+        public static string ReplaceEnvironmentVariable(string item)
+        {
+            const string startTemplate = "$(";
+            const string endTemplate = ")";
+
+            if (!string.IsNullOrWhiteSpace(item))
+            {
+                int firstIndex = 0;
+                while ((firstIndex = item.IndexOf(startTemplate, firstIndex)) != -1)
+                {
+                    var secondIndex = item.IndexOf(endTemplate, firstIndex);
+                    if (secondIndex != -1)
+                    {
+                        var envVar = item.Substring(firstIndex + startTemplate.Length, secondIndex - (firstIndex + startTemplate.Length));
+                        if (Environment.GetEnvironmentVariable(envVar) != null)
+                        {
+                            item.Replace($"{startTemplate}{envVar}{endTemplate}", Environment.GetEnvironmentVariable(envVar));
+                        }
+                    }
+                    firstIndex = secondIndex;
+                }
+            }
+            return item;
+        }
 
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JVMOptions.htm"/>
         public sealed override IEnumerable<KeyValuePair<string, string>> JVMOptions
@@ -190,7 +220,7 @@ namespace MASES.JNet
                 {
                     foreach (var item in base.JVMOptions)
                     {
-                        opt.Add(item);
+                        opt.Add(new KeyValuePair<string, string>(ReplaceEnvironmentVariable(item.Key), ReplaceEnvironmentVariable(item.Value)));
                     }
                 }
                 if (Options != null)
@@ -199,7 +229,7 @@ namespace MASES.JNet
                     {
                         try
                         {
-                            opt.Add(item);
+                            opt.Add(new KeyValuePair<string, string>(ReplaceEnvironmentVariable(item.Key), ReplaceEnvironmentVariable(item.Value)));
                         }
                         catch (Exception e)
                         {
