@@ -199,9 +199,10 @@ namespace MASES.JNet
                     if (secondIndex != -1)
                     {
                         var envVar = item.Substring(firstIndex + startTemplate.Length, secondIndex - (firstIndex + startTemplate.Length));
-                        if (Environment.GetEnvironmentVariable(envVar) != null)
+                        var envVal = Environment.GetEnvironmentVariable(envVar);
+                        if (envVal != null)
                         {
-                            item.Replace($"{startTemplate}{envVar}{endTemplate}", Environment.GetEnvironmentVariable(envVar));
+                            item = item.Replace($"{startTemplate}{envVar}{endTemplate}", envVal);
                         }
                     }
                     firstIndex = secondIndex;
