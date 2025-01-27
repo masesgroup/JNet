@@ -65,6 +65,19 @@ namespace MASES.JNetReflector
                 public IEnumerable<string> Patterns { get; set; }
             }
 
+            public struct JVMOption
+            {
+                public JVMOption(string optionName, string optionValue)
+                {
+                    OptionName = optionName;
+                    OptionValue = optionValue;
+                }
+                public string OptionName { get; set; }
+                public string OptionValue { get; set; }
+            }
+
+            public IEnumerable<JVMOption> JVMOptions { get; set; }
+
             public string CopyrightFile { get; set; }
 
             public string JavaPLocationPath { get; set; }
@@ -822,7 +835,22 @@ namespace MASES.JNetReflector
             return result;
         }
 
-        protected override IDictionary<string, string> Options => new Dictionary<string, string>();
+        protected override IDictionary<string, string> Options
+        {
+            get
+            {
+                if (_ConfigurationFromFile.JVMOptions != null)
+                {
+                    Dictionary<string, string> dict = new();
+                    foreach (var item in _ConfigurationFromFile.JVMOptions)
+                    {
+                        dict.Add(item.OptionName, item.OptionValue);
+                    }
+                    return dict;
+                }
+                return null;
+            }
+        }
 
         /// <inheritdoc cref="JNetCoreBase{T}.PathToParse"/>
         protected override IList<string> PathToParse
