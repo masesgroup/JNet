@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0-jammy AS build-env
+FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0-noble AS build-env
 ARG TARGETARCH
 WORKDIR /app
 
@@ -11,7 +11,7 @@ RUN dotnet restore JNetDocker.sln -a $TARGETARCH
 RUN dotnet publish ./JNetCLI/JNetCLI.csproj --framework net8.0 -c Release -o out -a $TARGETARCH
 
 # Build runtime image
-FROM mcr.microsoft.com/dotnet/runtime:8.0-jammy
+FROM mcr.microsoft.com/dotnet/runtime:8.0-noble
 ARG TARGETARCH
 
 # Add JRE
