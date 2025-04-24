@@ -1,6 +1,6 @@
 ---
-title: Command-line switch of Java/JVM suite for .NET
-_description: Describes the command-line switch of Java/JVM suite for .NET
+title: Command-line switch of .NET suite for Java™/JVM™
+_description: Describes the command-line switch of .NET suite for Java™/JVM™
 ---
 
 # JNet: Command line switches available

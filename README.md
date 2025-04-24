@@ -1,6 +1,6 @@
-# JNet: Java/JVM suite for .NET
+# JNet: .NET suite for Java™/JVM™
 
-JNet is a comprehensive suite of libraries and tools to use Java/JVM APIs (Java, Scala, Kotlin, ...) and .NET side-by-side.
+JNet is a comprehensive suite of libraries and tools to use Java™/JVM™ APIs (Java, Scala, Kotlin, ...) and .NET side-by-side.
 
 ### Libraries and Tools
 

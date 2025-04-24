@@ -1,6 +1,6 @@
 ---
-title: JNet CLI tool of Java/JVM suite for .NET
-_description: Describes the CLI tool to use Java/JVM classes from any command-line shell
+title: JNet CLI tool of .NET suite for Java™/JVM™
+_description: Describes the CLI tool to use Java™/JVM™ classes from any command-line shell
 ---
 
 # JNet: CLI

@@ -1,6 +1,6 @@
 ---
-title: Performance tips of Java/JVM suite for .NET
-_description: Describes some tips about performance of Java/JVM suite for .NET
+title: Performance tips of .NET suite for Java™/JVM™
+_description: Describes some tips about performance of .NET suite for Java™/JVM™
 ---
 
 # JNet performance tips

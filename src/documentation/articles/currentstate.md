@@ -1,6 +1,6 @@
 ---
-title: Current state of Java/JVM suite for .NET
-_description: Describes the current development state of Java/JVM suite for .NET
+title: Current state of .NET suite for Java™/JVM™
+_description: Describes the current development state of .NET suite for Java™/JVM™
 ---
 
 # JNet development state

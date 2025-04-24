@@ -5,8 +5,8 @@
 		<OutputType>Exe</OutputType>
 		<AssemblyName>MASES.JNetCLI</AssemblyName>
 		<RootNamespace>MASES.JNetCLI</RootNamespace>
-		<Title>JNetCLI - JNet (Java/JVM suite for .NET) command line interface</Title>
-		<Description>JNetCLI - JNet (Java/JVM suite for .NET) command line interface</Description>
+		<Title>JNetCLI - JNet (.NET suite for Java™/JVM™) command line interface</Title>
+		<Description>JNetCLI - JNet (.NET suite for Java™/JVM™) command line interface</Description>
 		<Product>JNetCLI</Product>
 		<OutputPath>..\..\..\binCLI\</OutputPath>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>

@@ -1,6 +1,6 @@
 ---
 title: JVM callbacks within JNet powered code
-_description: Describes how to manage callbacks from JVM using the Java/JVM suite for .NET
+_description: Describes how to manage callbacks from JVM using the .NET suite for Java™/JVM™
 ---
 
 # JNet: JVM callbacks

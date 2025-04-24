@@ -3,8 +3,8 @@
 	<PropertyGroup>
 		<AssemblyName>MASES.JNetPSCore</AssemblyName>
 		<RootNamespace>MASES.JNetPSCore</RootNamespace>
-		<Title>JNetPSCore - JNet (Java/JVM suite for .NET) PowerShell base library</Title>
-		<Description>JNetPSCore - JNet (Java/JVM suite for .NET) PowerShell base library</Description>
+		<Title>JNetPSCore - JNet (.NET suite for Java™/JVM™) PowerShell base library</Title>
+		<Description>JNetPSCore - JNet (.NET suite for Java™/JVM™) PowerShell base library</Description>
 		<Product>JNetPSCore</Product>
 		<OutputPath>..\..\..\bin\</OutputPath>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>

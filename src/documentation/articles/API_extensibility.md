@@ -1,6 +1,6 @@
 ---
-title: APIs extendibility of Java/JVM suite for .NET
-_description: Describes how to extend available APIs with Java/JVM suite for .NET
+title: APIs extendibility of .NET suite for Java™/JVM™
+_description: Describes how to extend available APIs with .NET suite for Java™/JVM™
 ---
 
 # JNet: APIs extendibility

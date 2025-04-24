@@ -1,5 +1,5 @@
 ---
-title: Usage Java/JVM suite for .NET
+title: Usage .NET suite for Java™/JVM™
 _description: Describes how to use JNet, set-up environment, identify the JVM and write good code
 ---
 

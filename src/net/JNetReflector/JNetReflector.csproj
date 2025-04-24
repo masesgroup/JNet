@@ -6,8 +6,8 @@
 		<OutputType>Exe</OutputType>
 		<AssemblyName>MASES.JNetReflector</AssemblyName>
 		<RootNamespace>MASES.JNetReflector</RootNamespace>
-		<Title>JNetReflector - JNet (Java/JVM suite for .NET) class reflection utility command line interface</Title>
-		<Description>JNetReflector - JNet (Java/JVM suite for .NET) class reflection utility command line interface</Description>
+		<Title>JNetReflector - JNet (.NET suite for Java™/JVM™) class reflection utility command line interface</Title>
+		<Description>JNetReflector - JNet (.NET suite for Java™/JVM™) class reflection utility command line interface</Description>
 		<Product>JNetReflector</Product>
 		<OutputPath>..\..\..\binReflector\</OutputPath>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
