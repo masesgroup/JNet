@@ -280,7 +280,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Set>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
@@ -433,7 +433,7 @@ namespace Java.Util
 
     #region ISet<E>
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html"/>
     /// </summary>
     public partial interface ISet<E> : Java.Util.ICollection<E>
     {
@@ -693,7 +693,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Set<E>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Set;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html#of(java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>

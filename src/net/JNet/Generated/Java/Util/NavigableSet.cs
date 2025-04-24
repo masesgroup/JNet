@@ -289,7 +289,7 @@ namespace Java.Util
 
     #region INavigableSet<E>
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/NavigableSet.html"/>
     /// </summary>
     public partial interface INavigableSet<E> : Java.Util.ISortedSet<E>
     {

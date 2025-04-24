@@ -258,7 +258,7 @@ namespace Java.Util
             return SExecuteWithSignature<int>(LocalBridgeClazz, "mismatch", "([Ljava/lang/Object;[Ljava/lang/Object;Ljava/util/Comparator;)I", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#asList(java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Arrays.html#asList(java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"></typeparam>

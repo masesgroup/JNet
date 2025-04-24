@@ -94,7 +94,7 @@ namespace Java.Security
             get { return SExecuteWithSignature<Java.Security.AccessControlContext>(LocalBridgeClazz, "getContext", "()Ljava/security/AccessControlContext;"); }
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction,java.security.AccessControlContext,java.security.Permission[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction,java.security.AccessControlContext,java.security.Permission...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
         /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
@@ -106,7 +106,7 @@ namespace Java.Security
             if (arg2.Length == 0) return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", arg0, arg1); else return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction,java.security.AccessControlContext,java.security.Permission[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction,java.security.AccessControlContext,java.security.Permission...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
         /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
@@ -119,7 +119,7 @@ namespace Java.Security
             if (arg2.Length == 0) return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", arg0, arg1); else return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;[Ljava/security/Permission;)Ljava/lang/Object;", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedAction,java.security.AccessControlContext,java.security.Permission[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedAction,java.security.AccessControlContext,java.security.Permission...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
         /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
@@ -141,7 +141,7 @@ namespace Java.Security
             return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivilegedWithCombiner", "(Ljava/security/PrivilegedAction;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedExceptionAction,java.security.AccessControlContext,java.security.Permission[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedExceptionAction,java.security.AccessControlContext,java.security.Permission...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
         /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>

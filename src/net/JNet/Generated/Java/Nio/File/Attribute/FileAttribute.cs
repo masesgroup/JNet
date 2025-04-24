@@ -169,7 +169,7 @@ namespace Java.Nio.File.Attribute
 
     #region IFileAttribute<T>
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/FileAttribute.html"/>
     /// </summary>
     public partial interface IFileAttribute<T>
     {

@@ -74,7 +74,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
 
     #region IC14NMethodParameterSpec
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/C14NMethodParameterSpec.html"/>
     /// </summary>
     public partial interface IC14NMethodParameterSpec : Javax.Xml.Crypto.Dsig.Spec.ITransformParameterSpec
     {

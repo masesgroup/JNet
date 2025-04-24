@@ -74,7 +74,7 @@ namespace Javax.Management
 
     #region IDescriptor
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html"/>
     /// </summary>
     public partial interface IDescriptor
     {
@@ -101,7 +101,7 @@ namespace Javax.Management
         /// <exception cref="Javax.Management.RuntimeOperationsException"/>
         object GetFieldValue(Java.Lang.String arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldValues(java.lang.String[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldValues(java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
@@ -198,7 +198,7 @@ namespace Javax.Management
             return IExecuteWithSignature("getFieldValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldValues(java.lang.String[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/Descriptor.html#getFieldValues(java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>

@@ -441,7 +441,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Map>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
         /// <returns><see cref="Java.Util.Map"/></returns>
@@ -867,7 +867,7 @@ namespace Java.Util
 
     #region IMap<K, V>
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html"/>
     /// </summary>
     public partial interface IMap<K, V>
     {
@@ -1270,7 +1270,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.Map<K, V>>(LocalBridgeClazz, "of", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
         /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>

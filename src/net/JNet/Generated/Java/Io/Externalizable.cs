@@ -74,7 +74,7 @@ namespace Java.Io
 
     #region IExternalizable
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Externalizable.html"/>
     /// </summary>
     public partial interface IExternalizable : Java.Io.ISerializable
     {

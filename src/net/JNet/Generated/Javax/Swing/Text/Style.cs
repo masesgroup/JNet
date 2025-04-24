@@ -74,7 +74,7 @@ namespace Javax.Swing.Text
 
     #region IStyle
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/Style.html"/>
     /// </summary>
     public partial interface IStyle : Javax.Swing.Text.IMutableAttributeSet
     {

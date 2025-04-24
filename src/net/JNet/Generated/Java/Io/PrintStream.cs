@@ -205,7 +205,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("checkError", "()Z");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#format(java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#format(java.lang.String,java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -215,7 +215,7 @@ namespace Java.Io
             if (arg1.Length == 0) return IExecuteWithSignature<Java.Io.PrintStream>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0); else return IExecuteWithSignature<Java.Io.PrintStream>("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#format(java.util.Locale,java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#format(java.util.Locale,java.lang.String,java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -226,7 +226,7 @@ namespace Java.Io
             if (arg2.Length == 0) return IExecuteWithSignature<Java.Io.PrintStream>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1); else return IExecuteWithSignature<Java.Io.PrintStream>("format", "(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#printf(java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#printf(java.lang.String,java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -236,7 +236,7 @@ namespace Java.Io
             if (arg1.Length == 0) return IExecuteWithSignature<Java.Io.PrintStream>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0); else return IExecuteWithSignature<Java.Io.PrintStream>("printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#printf(java.util.Locale,java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/PrintStream.html#printf(java.util.Locale,java.lang.String,java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>

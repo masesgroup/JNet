@@ -188,7 +188,7 @@ namespace Java.Net.Http
 
     #region IWebSocket
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.html"/>
     /// </summary>
     public partial interface IWebSocket
     {
@@ -416,7 +416,7 @@ namespace Java.Net.Http
                 return IExecuteWithSignature<Java.Net.Http.WebSocket.Builder>("header", "(Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/WebSocket$Builder;", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#subprotocols(java.lang.String,java.lang.String[])"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/WebSocket.Builder.html#subprotocols(java.lang.String,java.lang.String...)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>

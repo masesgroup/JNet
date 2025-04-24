@@ -227,7 +227,7 @@ namespace Java.Util.Concurrent
             SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "(Ljava/util/concurrent/ForkJoinTask;Ljava/util/concurrent/ForkJoinTask;)V", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public static void InvokeAll(params Java.Util.Concurrent.ForkJoinTask[] arg0)
@@ -544,7 +544,7 @@ namespace Java.Util.Concurrent
             SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "(Ljava/util/concurrent/ForkJoinTask;Ljava/util/concurrent/ForkJoinTask;)V", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ForkJoinTask.html#invokeAll(java.util.concurrent.ForkJoinTask...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public static void InvokeAll(params Java.Util.Concurrent.ForkJoinTask<object>[] arg0)

@@ -320,7 +320,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.SortedMap<K, V>>(LocalBridgeClazz, "unmodifiableSortedMap", "(Ljava/util/SortedMap;)Ljava/util/SortedMap;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#addAll(java.util.Collection,java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Collections.html#addAll(java.util.Collection,java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><typeparamref name="T"/></param>

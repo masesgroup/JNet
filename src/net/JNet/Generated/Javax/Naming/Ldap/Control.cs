@@ -74,7 +74,7 @@ namespace Javax.Naming.Ldap
 
     #region IControl
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/Control.html"/>
     /// </summary>
     public partial interface IControl : Java.Io.ISerializable
     {

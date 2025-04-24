@@ -74,7 +74,7 @@ namespace Javax.Annotation.Processing
 
     #region ISupportedSourceVersion
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/SupportedSourceVersion.html"/>
     /// </summary>
     public partial interface ISupportedSourceVersion : Java.Lang.Annotation.IAnnotation
     {

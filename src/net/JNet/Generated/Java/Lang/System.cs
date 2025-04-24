@@ -508,7 +508,7 @@ namespace Java.Lang
                 return IExecuteWithSignature<bool>("isLoggable", "(Ljava/lang/System$Logger$Level;)Z", arg0);
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.util.ResourceBundle,java.lang.String,java.lang.Object[])"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.util.ResourceBundle,java.lang.String,java.lang.Object...)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
             /// <param name="arg1"><see cref="Java.Util.ResourceBundle"/></param>
@@ -539,7 +539,7 @@ namespace Java.Lang
                 IExecuteWithSignature("log", "(Ljava/lang/System$Logger$Level;Ljava/lang/Object;)V", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.lang.String,java.lang.Object[])"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/System.Logger.html#log(java.lang.System.Logger.Level,java.lang.String,java.lang.Object...)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.System.Logger.Level"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>

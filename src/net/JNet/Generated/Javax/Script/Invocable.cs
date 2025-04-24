@@ -74,7 +74,7 @@ namespace Javax.Script
 
     #region IInvocable
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html"/>
     /// </summary>
     public partial interface IInvocable
     {
@@ -95,7 +95,7 @@ namespace Javax.Script
         /// <returns><typeparamref name="T"/></returns>
         T GetInterface<T>(object arg0, Java.Lang.Class arg1);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeFunction(java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeFunction(java.lang.String,java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -104,7 +104,7 @@ namespace Javax.Script
         /// <exception cref="Java.Lang.NoSuchMethodException"/>
         object InvokeFunction(Java.Lang.String arg0, params object[] arg1);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeMethod(java.lang.Object,java.lang.String,java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -166,7 +166,7 @@ namespace Javax.Script
             return IExecuteWithSignature<T>("getInterface", "(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeFunction(java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeFunction(java.lang.String,java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -178,7 +178,7 @@ namespace Javax.Script
             if (arg1.Length == 0) return IExecuteWithSignature("invokeFunction", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;", arg0); else return IExecuteWithSignature("invokeFunction", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeMethod(java.lang.Object,java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/Invocable.html#invokeMethod(java.lang.Object,java.lang.String,java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>

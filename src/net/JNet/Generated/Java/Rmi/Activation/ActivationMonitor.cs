@@ -74,7 +74,7 @@ namespace Java.Rmi.Activation
 
     #region IActivationMonitor
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/activation/ActivationMonitor.html"/>
     /// </summary>
     public partial interface IActivationMonitor : Java.Rmi.IRemote
     {

@@ -74,7 +74,7 @@ namespace Org.W3c.Dom.Html
 
     #region IHTMLPreElement
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLPreElement.html"/>
     /// </summary>
     public partial interface IHTMLPreElement : Org.W3c.Dom.Html.IHTMLElement
     {

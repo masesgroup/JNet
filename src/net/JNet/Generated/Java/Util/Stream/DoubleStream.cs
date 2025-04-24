@@ -74,7 +74,7 @@ namespace Java.Util.Stream
 
     #region IDoubleStream
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html"/>
     /// </summary>
     public partial interface IDoubleStream : Java.Util.Stream.IBaseStream<Java.Lang.Double, Java.Util.Stream.DoubleStream>
     {
@@ -354,7 +354,7 @@ namespace Java.Util.Stream
             return SExecuteWithSignature<Java.Util.Stream.DoubleStream>(LocalBridgeClazz, "iterate", "(DLjava/util/function/DoubleUnaryOperator;)Ljava/util/stream/DoubleStream;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#of(double[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html#of(double...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>

@@ -875,7 +875,7 @@ namespace Java.Util
                 return IExecuteWithSignature<Java.Util.Calendar.Builder>("setDate", "(III)Ljava/util/Calendar$Builder;", arg0, arg1, arg2);
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setFields(int[])"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Calendar.Builder.html#setFields(int...)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Java.Util.Calendar.Builder"/></returns>

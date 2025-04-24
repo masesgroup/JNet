@@ -74,7 +74,7 @@ namespace Org.W3c.Dom.Views
 
     #region IAbstractView
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/views/AbstractView.html"/>
     /// </summary>
     public partial interface IAbstractView
     {

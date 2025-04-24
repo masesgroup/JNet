@@ -74,7 +74,7 @@ namespace Javax.Lang.Model.Type
 
     #region INoType
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/NoType.html"/>
     /// </summary>
     public partial interface INoType : Javax.Lang.Model.Type.ITypeMirror
     {

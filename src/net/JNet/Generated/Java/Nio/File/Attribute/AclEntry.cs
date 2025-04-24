@@ -217,7 +217,7 @@ namespace Java.Nio.File.Attribute
                 return IExecuteWithSignature<Java.Nio.File.Attribute.AclEntry>("build", "()Ljava/nio/file/attribute/AclEntry;");
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setFlags(java.nio.file.attribute.AclEntryFlag[])"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setFlags(java.nio.file.attribute.AclEntryFlag...)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Nio.File.Attribute.AclEntryFlag"/></param>
             /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>
@@ -235,7 +235,7 @@ namespace Java.Nio.File.Attribute
                 return IExecuteWithSignature<Java.Nio.File.Attribute.AclEntry.Builder>("setFlags", "(Ljava/util/Set;)Ljava/nio/file/attribute/AclEntry$Builder;", arg0);
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setPermissions(java.nio.file.attribute.AclEntryPermission[])"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclEntry.Builder.html#setPermissions(java.nio.file.attribute.AclEntryPermission...)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Nio.File.Attribute.AclEntryPermission"/></param>
             /// <returns><see cref="Java.Nio.File.Attribute.AclEntry.Builder"/></returns>

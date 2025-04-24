@@ -74,7 +74,7 @@ namespace Javax.Management
 
     #region IMBeanServer
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MBeanServer.html"/>
     /// </summary>
     public partial interface IMBeanServer : Javax.Management.IMBeanServerConnection
     {

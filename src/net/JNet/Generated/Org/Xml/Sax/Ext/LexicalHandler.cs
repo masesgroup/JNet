@@ -74,7 +74,7 @@ namespace Org.Xml.Sax.Ext
 
     #region ILexicalHandler
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/ext/LexicalHandler.html"/>
     /// </summary>
     public partial interface ILexicalHandler
     {

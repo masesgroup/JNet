@@ -74,7 +74,7 @@ namespace Java.Util.Stream
 
     #region IIntStream
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html"/>
     /// </summary>
     public partial interface IIntStream : Java.Util.Stream.IBaseStream<Java.Lang.Integer, Java.Util.Stream.IntStream>
     {
@@ -364,7 +364,7 @@ namespace Java.Util.Stream
             return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "iterate", "(ILjava/util/function/IntUnaryOperator;)Ljava/util/stream/IntStream;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#of(int[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html#of(int...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>

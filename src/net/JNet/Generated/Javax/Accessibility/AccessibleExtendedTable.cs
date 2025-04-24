@@ -74,7 +74,7 @@ namespace Javax.Accessibility
 
     #region IAccessibleExtendedTable
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedTable.html"/>
     /// </summary>
     public partial interface IAccessibleExtendedTable : Javax.Accessibility.IAccessibleTable
     {

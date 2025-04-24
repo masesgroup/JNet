@@ -75,7 +75,7 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationBroadcasterSupport.html#%3Cinit%3E(java.util.concurrent.Executor,javax.management.MBeanNotificationInfo[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationBroadcasterSupport.html#%3Cinit%3E(java.util.concurrent.Executor,javax.management.MBeanNotificationInfo...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg1"><see cref="Javax.Management.MBeanNotificationInfo"/></param>
@@ -92,7 +92,7 @@ namespace Javax.Management
         {
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationBroadcasterSupport.html#%3Cinit%3E(javax.management.MBeanNotificationInfo[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/NotificationBroadcasterSupport.html#%3Cinit%3E(javax.management.MBeanNotificationInfo...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.MBeanNotificationInfo"/></param>
         public NotificationBroadcasterSupport(params Javax.Management.MBeanNotificationInfo[] arg0)

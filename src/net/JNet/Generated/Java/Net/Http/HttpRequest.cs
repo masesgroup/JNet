@@ -547,7 +547,7 @@ namespace Java.Net.Http
                 return IExecuteWithSignature<Java.Net.Http.HttpRequest.Builder>("header", "(Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/HttpRequest$Builder;", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#headers(java.lang.String[])"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpRequest.Builder.html#headers(java.lang.String...)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Net.Http.HttpRequest.Builder"/></returns>

@@ -119,7 +119,7 @@ namespace Javax.Lang.Model.Util
 
     #region IElements
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html"/>
     /// </summary>
     public partial interface IElements
     {
@@ -220,7 +220,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Javax.Lang.Model.Element.TypeElement"/></returns>
         Javax.Lang.Model.Element.TypeElement GetTypeElement(Java.Lang.CharSequence arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#printElements(java.io.Writer,javax.lang.model.element.Element[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#printElements(java.io.Writer,javax.lang.model.element.Element...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         /// <param name="arg1"><see cref="Javax.Lang.Model.Element.Element"/></param>
@@ -463,7 +463,7 @@ namespace Javax.Lang.Model.Util
             return IExecuteWithSignature<Javax.Lang.Model.Element.TypeElement>("getTypeElement", "(Ljava/lang/CharSequence;)Ljavax/lang/model/element/TypeElement;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#printElements(java.io.Writer,javax.lang.model.element.Element[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Elements.html#printElements(java.io.Writer,javax.lang.model.element.Element...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         /// <param name="arg1"><see cref="Javax.Lang.Model.Element.Element"/></param>

@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute
 
     #region ISupportedValuesAttribute
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/SupportedValuesAttribute.html"/>
     /// </summary>
     public partial interface ISupportedValuesAttribute : Javax.Print.Attribute.IAttribute
     {

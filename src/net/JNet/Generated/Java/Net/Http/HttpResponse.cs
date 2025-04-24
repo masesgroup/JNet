@@ -851,7 +851,7 @@ namespace Java.Net.Http
                 return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Lang.Void>>(LocalBridgeClazz, "ofByteArrayConsumer", "(Ljava/util/function/Consumer;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFile(java.nio.file.Path,java.nio.file.OpenOption[])"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFile(java.nio.file.Path,java.nio.file.OpenOption...)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
             /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
@@ -870,7 +870,7 @@ namespace Java.Net.Http
                 return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodyHandler<Java.Nio.File.Path>>(LocalBridgeClazz, "ofFile", "(Ljava/nio/file/Path;)Ljava/net/http/HttpResponse$BodyHandler;", arg0);
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFileDownload(java.nio.file.Path,java.nio.file.OpenOption[])"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodyHandlers.html#ofFileDownload(java.nio.file.Path,java.nio.file.OpenOption...)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
             /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
@@ -1134,7 +1134,7 @@ namespace Java.Net.Http
                 return SExecuteWithSignature<Java.Net.Http.HttpResponse.BodySubscriber<Java.Lang.Void>>(LocalBridgeClazz, "ofByteArrayConsumer", "(Ljava/util/function/Consumer;)Ljava/net/http/HttpResponse$BodySubscriber;", arg0);
             }
             /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofFile(java.nio.file.Path,java.nio.file.OpenOption[])"/>
+            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.BodySubscribers.html#ofFile(java.nio.file.Path,java.nio.file.OpenOption...)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
             /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
@@ -1354,7 +1354,7 @@ namespace Java.Net.Http
 
     #region IHttpResponse<T>
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpResponse.html"/>
     /// </summary>
     public partial interface IHttpResponse<T>
     {

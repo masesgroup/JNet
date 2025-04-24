@@ -74,7 +74,7 @@ namespace Javax.Script
 
     #region IScriptEngineFactory
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html"/>
     /// </summary>
     public partial interface IScriptEngineFactory
     {
@@ -118,7 +118,7 @@ namespace Javax.Script
         /// <returns><see cref="object"/></returns>
         object GetParameter(Java.Lang.String arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getMethodCallSyntax(java.lang.String,java.lang.String,java.lang.String[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getMethodCallSyntax(java.lang.String,java.lang.String,java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -132,7 +132,7 @@ namespace Javax.Script
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String GetOutputStatement(Java.Lang.String arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getProgram(java.lang.String[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getProgram(java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -234,7 +234,7 @@ namespace Javax.Script
             return IExecuteWithSignature("getParameter", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getMethodCallSyntax(java.lang.String,java.lang.String,java.lang.String[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getMethodCallSyntax(java.lang.String,java.lang.String,java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -254,7 +254,7 @@ namespace Javax.Script
             return IExecuteWithSignature<Java.Lang.String>("getOutputStatement", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getProgram(java.lang.String[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptEngineFactory.html#getProgram(java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
