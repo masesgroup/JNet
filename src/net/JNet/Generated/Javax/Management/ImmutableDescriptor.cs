@@ -75,7 +75,7 @@ namespace Javax.Management
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#%3Cinit%3E(java.lang.String[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#%3Cinit%3E(java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public ImmutableDescriptor(params Java.Lang.String[] arg0)
@@ -109,7 +109,7 @@ namespace Javax.Management
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#union(javax.management.Descriptor[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#union(javax.management.Descriptor...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Management.Descriptor"/></param>
         /// <returns><see cref="Javax.Management.ImmutableDescriptor"/></returns>
@@ -153,7 +153,7 @@ namespace Javax.Management
             return IExecuteWithSignature("getFieldValue", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#getFieldValues(java.lang.String[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#getFieldValues(java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>

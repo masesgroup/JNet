@@ -74,7 +74,7 @@ namespace Java.Security.Cert
 
     #region IPolicyNode
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/PolicyNode.html"/>
     /// </summary>
     public partial interface IPolicyNode
     {

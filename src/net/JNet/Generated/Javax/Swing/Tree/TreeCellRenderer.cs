@@ -74,7 +74,7 @@ namespace Javax.Swing.Tree
 
     #region ITreeCellRenderer
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeCellRenderer.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeCellRenderer.html"/>
     /// </summary>
     public partial interface ITreeCellRenderer
     {

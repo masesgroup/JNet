@@ -74,7 +74,7 @@ namespace Javax.Lang.Model.Type
 
     #region ITypeMirror
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/type/TypeMirror.html"/>
     /// </summary>
     public partial interface ITypeMirror : Javax.Lang.Model.IAnnotatedConstruct
     {

@@ -74,7 +74,7 @@ namespace Javax.Management.Relation
 
     #region IRelationServiceMBean
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/relation/RelationServiceMBean.html"/>
     /// </summary>
     public partial interface IRelationServiceMBean
     {

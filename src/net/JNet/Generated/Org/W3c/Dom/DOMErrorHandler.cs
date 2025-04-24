@@ -74,7 +74,7 @@ namespace Org.W3c.Dom
 
     #region IDOMErrorHandler
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMErrorHandler.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMErrorHandler.html"/>
     /// </summary>
     public partial interface IDOMErrorHandler
     {

@@ -74,7 +74,7 @@ namespace Javax.Lang.Model.Element
 
     #region ITypeParameterElement
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/TypeParameterElement.html"/>
     /// </summary>
     public partial interface ITypeParameterElement : Javax.Lang.Model.Element.IElement
     {

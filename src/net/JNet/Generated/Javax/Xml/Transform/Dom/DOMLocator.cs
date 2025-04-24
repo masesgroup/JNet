@@ -74,7 +74,7 @@ namespace Javax.Xml.Transform.Dom
 
     #region IDOMLocator
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMLocator.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/transform/dom/DOMLocator.html"/>
     /// </summary>
     public partial interface IDOMLocator : Javax.Xml.Transform.ISourceLocator
     {

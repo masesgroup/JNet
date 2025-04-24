@@ -165,7 +165,7 @@ namespace Javax.Xml.Crypto
 
     #region INodeSetData<T>
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/NodeSetData.html"/>
     /// </summary>
     public partial interface INodeSetData<T>
     {

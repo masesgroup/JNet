@@ -74,7 +74,7 @@ namespace Java.Security.Cert
 
     #region ICRLSelector
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLSelector.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/CRLSelector.html"/>
     /// </summary>
     public partial interface ICRLSelector : Java.Lang.ICloneable
     {

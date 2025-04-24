@@ -213,7 +213,7 @@ namespace Java.Util
 
     #region ISortedSet<E>
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/SortedSet.html"/>
     /// </summary>
     public partial interface ISortedSet<E> : Java.Util.ISet<E>
     {

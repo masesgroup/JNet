@@ -74,7 +74,7 @@ namespace Javax.Lang.Model.Element
 
     #region IAnnotationMirror
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationMirror.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationMirror.html"/>
     /// </summary>
     public partial interface IAnnotationMirror
     {

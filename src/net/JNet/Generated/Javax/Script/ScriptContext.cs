@@ -74,7 +74,7 @@ namespace Javax.Script
 
     #region IScriptContext
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.scripting/javax/script/ScriptContext.html"/>
     /// </summary>
     public partial interface IScriptContext
     {

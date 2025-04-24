@@ -74,7 +74,7 @@ namespace Javax.Swing.Text.Html.Parser
 
     #region IDTDConstants
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/text/html/parser/DTDConstants.html"/>
     /// </summary>
     public partial interface IDTDConstants
     {

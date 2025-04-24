@@ -74,7 +74,7 @@ namespace Javax.Xml.Crypto.Dsig
 
     #region IXMLSignContext
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignContext.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLSignContext.html"/>
     /// </summary>
     public partial interface IXMLSignContext : Javax.Xml.Crypto.IXMLCryptoContext
     {

@@ -74,13 +74,13 @@ namespace Java.Util.Spi
 
     #region IToolProvider
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html"/>
     /// </summary>
     public partial interface IToolProvider
     {
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintWriter,java.io.PrintWriter,java.lang.String[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintWriter,java.io.PrintWriter,java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
         /// <param name="arg1"><see cref="Java.Io.PrintWriter"/></param>
@@ -93,7 +93,7 @@ namespace Java.Util.Spi
         /// <returns><see cref="Java.Lang.String"/></returns>
         Java.Lang.String Name();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintStream,java.io.PrintStream,java.lang.String[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintStream,java.io.PrintStream,java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         /// <param name="arg1"><see cref="Java.Io.PrintStream"/></param>
@@ -141,7 +141,7 @@ namespace Java.Util.Spi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintWriter,java.io.PrintWriter,java.lang.String[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintWriter,java.io.PrintWriter,java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
         /// <param name="arg1"><see cref="Java.Io.PrintWriter"/></param>
@@ -160,7 +160,7 @@ namespace Java.Util.Spi
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintStream,java.io.PrintStream,java.lang.String[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/spi/ToolProvider.html#run(java.io.PrintStream,java.io.PrintStream,java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         /// <param name="arg1"><see cref="Java.Io.PrintStream"/></param>

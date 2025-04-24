@@ -74,7 +74,7 @@ namespace Java.Nio.File.Attribute
 
     #region IAclFileAttributeView
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/AclFileAttributeView.html"/>
     /// </summary>
     public partial interface IAclFileAttributeView : Java.Nio.File.Attribute.IFileOwnerAttributeView
     {

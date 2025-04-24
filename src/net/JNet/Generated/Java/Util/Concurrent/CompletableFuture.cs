@@ -243,7 +243,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.CompletionStage>(LocalBridgeClazz, "failedStage", "(Ljava/lang/Throwable;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#anyOf(java.util.concurrent.CompletableFuture[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#anyOf(java.util.concurrent.CompletableFuture...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletableFuture"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -252,7 +252,7 @@ namespace Java.Util.Concurrent
             if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "anyOf", "([Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;"); else return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "anyOf", "([Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#allOf(java.util.concurrent.CompletableFuture[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#allOf(java.util.concurrent.CompletableFuture...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletableFuture"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -993,7 +993,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.CompletionStage<U>>(LocalBridgeClazz, "failedStage", "(Ljava/lang/Throwable;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#anyOf(java.util.concurrent.CompletableFuture[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#anyOf(java.util.concurrent.CompletableFuture...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletableFuture"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -1002,7 +1002,7 @@ namespace Java.Util.Concurrent
             if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<object>>(LocalBridgeClazz, "anyOf", "([Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;"); else return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<object>>(LocalBridgeClazz, "anyOf", "([Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#allOf(java.util.concurrent.CompletableFuture[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/CompletableFuture.html#allOf(java.util.concurrent.CompletableFuture...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletableFuture"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>

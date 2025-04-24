@@ -74,7 +74,7 @@ namespace Javax.Management.Openmbean
 
     #region ICompositeDataView
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataView.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/openmbean/CompositeDataView.html"/>
     /// </summary>
     public partial interface ICompositeDataView
     {

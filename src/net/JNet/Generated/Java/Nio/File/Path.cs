@@ -74,7 +74,7 @@ namespace Java.Nio.File
 
     #region IPath
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html"/>
     /// </summary>
     public partial interface IPath
     {
@@ -163,14 +163,14 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         Java.Nio.File.Path ToAbsolutePath();
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toRealPath(java.nio.file.LinkOption[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toRealPath(java.nio.file.LinkOption...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.LinkOption"/></param>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         Java.Nio.File.Path ToRealPath(params Java.Nio.File.LinkOption[] arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[],java.nio.file.WatchEvent.Modifier[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[],java.nio.file.WatchEvent.Modifier...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
@@ -220,7 +220,7 @@ namespace Java.Nio.File
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         Java.Nio.File.Path ResolveSibling(Java.Nio.File.Path arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
@@ -268,7 +268,7 @@ namespace Java.Nio.File
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#of(java.lang.String,java.lang.String[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#of(java.lang.String,java.lang.String...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -422,7 +422,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<Java.Nio.File.Path>("toAbsolutePath", "()Ljava/nio/file/Path;");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toRealPath(java.nio.file.LinkOption[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#toRealPath(java.nio.file.LinkOption...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.LinkOption"/></param>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
@@ -432,7 +432,7 @@ namespace Java.Nio.File
             if (arg0.Length == 0) return IExecuteWithSignature<Java.Nio.File.Path>("toRealPath", "([Ljava/nio/file/LinkOption;)Ljava/nio/file/Path;"); else return IExecuteWithSignature<Java.Nio.File.Path>("toRealPath", "([Ljava/nio/file/LinkOption;)Ljava/nio/file/Path;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[],java.nio.file.WatchEvent.Modifier[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[],java.nio.file.WatchEvent.Modifier...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>
@@ -506,7 +506,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<Java.Nio.File.Path>("resolveSibling", "(Ljava/nio/file/Path;)Ljava/nio/file/Path;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Path.html#register(java.nio.file.WatchService,java.nio.file.WatchEvent.Kind...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.WatchService"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.WatchEvent.Kind"/></param>

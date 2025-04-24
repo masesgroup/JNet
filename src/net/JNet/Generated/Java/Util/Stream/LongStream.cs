@@ -74,7 +74,7 @@ namespace Java.Util.Stream
 
     #region ILongStream
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html"/>
     /// </summary>
     public partial interface ILongStream : Java.Util.Stream.IBaseStream<Java.Lang.Long, Java.Util.Stream.LongStream>
     {
@@ -359,7 +359,7 @@ namespace Java.Util.Stream
             return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "iterate", "(JLjava/util/function/LongUnaryOperator;)Ljava/util/stream/LongStream;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#of(long[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#of(long...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>

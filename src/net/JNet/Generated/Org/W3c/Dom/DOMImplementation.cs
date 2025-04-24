@@ -74,7 +74,7 @@ namespace Org.W3c.Dom
 
     #region IDOMImplementation
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DOMImplementation.html"/>
     /// </summary>
     public partial interface IDOMImplementation
     {

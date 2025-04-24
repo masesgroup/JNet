@@ -226,7 +226,7 @@ namespace Java.Util
             return SExecute<Java.Util.EnumSet>(LocalBridgeClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Enum"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Enum"/></param>
@@ -397,7 +397,7 @@ namespace Java.Util
             return SExecute<Java.Util.EnumSet<E>>(LocalBridgeClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/EnumSet.html#of(java.lang.Enum,java.lang.Enum...)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>

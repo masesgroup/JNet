@@ -74,7 +74,7 @@ namespace Java.Beans.Beancontext
 
     #region IBeanContext
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContext.html"/>
     /// </summary>
     public partial interface IBeanContext
     {

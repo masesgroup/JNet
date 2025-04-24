@@ -74,7 +74,7 @@ namespace Java.Lang.ModuleNs
 
     #region IModuleFinder
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html"/>
     /// </summary>
     public partial interface IModuleFinder
     {
@@ -118,7 +118,7 @@ namespace Java.Lang.ModuleNs
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#compose(java.lang.module.ModuleFinder[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#compose(java.lang.module.ModuleFinder...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ModuleNs.ModuleFinder"/></param>
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>
@@ -127,7 +127,7 @@ namespace Java.Lang.ModuleNs
             if (arg0.Length == 0) return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "compose", "([Ljava/lang/module/ModuleFinder;)Ljava/lang/module/ModuleFinder;"); else return SExecuteWithSignature<Java.Lang.ModuleNs.ModuleFinder>(LocalBridgeClazz, "compose", "([Ljava/lang/module/ModuleFinder;)Ljava/lang/module/ModuleFinder;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#of(java.nio.file.Path[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/module/ModuleFinder.html#of(java.nio.file.Path...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="Java.Lang.ModuleNs.ModuleFinder"/></returns>

@@ -74,7 +74,7 @@ namespace Java.Lang.Management
 
     #region IPlatformManagedObject
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformManagedObject.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/PlatformManagedObject.html"/>
     /// </summary>
     public partial interface IPlatformManagedObject
     {

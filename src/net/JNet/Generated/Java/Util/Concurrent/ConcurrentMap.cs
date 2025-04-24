@@ -262,7 +262,7 @@ namespace Java.Util.Concurrent
 
     #region IConcurrentMap<K, V>
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/ConcurrentMap.html"/>
     /// </summary>
     public partial interface IConcurrentMap<K, V> : Java.Util.IMap<K, V>
     {

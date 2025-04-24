@@ -74,7 +74,7 @@ namespace Javax.Net.Ssl
 
     #region IX509TrustManager
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509TrustManager.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/javax/net/ssl/X509TrustManager.html"/>
     /// </summary>
     public partial interface IX509TrustManager : Javax.Net.Ssl.ITrustManager
     {

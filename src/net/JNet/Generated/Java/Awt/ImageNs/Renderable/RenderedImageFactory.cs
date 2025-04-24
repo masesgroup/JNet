@@ -74,7 +74,7 @@ namespace Java.Awt.ImageNs.Renderable
 
     #region IRenderedImageFactory
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderedImageFactory.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/renderable/RenderedImageFactory.html"/>
     /// </summary>
     public partial interface IRenderedImageFactory
     {

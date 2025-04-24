@@ -74,7 +74,7 @@ namespace Javax.Print
 
     #region IDoc
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/Doc.html"/>
     /// </summary>
     public partial interface IDoc
     {

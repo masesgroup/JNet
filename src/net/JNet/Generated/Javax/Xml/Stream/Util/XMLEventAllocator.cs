@@ -74,7 +74,7 @@ namespace Javax.Xml.Stream.Util
 
     #region IXMLEventAllocator
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/util/XMLEventAllocator.html"/>
     /// </summary>
     public partial interface IXMLEventAllocator
     {

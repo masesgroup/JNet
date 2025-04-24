@@ -74,7 +74,7 @@ namespace Java.Awt.DesktopNs
 
     #region IOpenURIHandler
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenURIHandler.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/desktop/OpenURIHandler.html"/>
     /// </summary>
     public partial interface IOpenURIHandler
     {

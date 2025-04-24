@@ -74,7 +74,7 @@ namespace Java.Lang.Instrument
 
     #region IInstrumentation
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html"/>
     /// </summary>
     public partial interface IInstrumentation
     {
@@ -150,7 +150,7 @@ namespace Java.Lang.Instrument
         /// <param name="arg0"><see cref="Java.Util.Jar.JarFile"/></param>
         void AppendToSystemClassLoaderSearch(Java.Util.Jar.JarFile arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineClasses(java.lang.instrument.ClassDefinition[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineClasses(java.lang.instrument.ClassDefinition...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Instrument.ClassDefinition"/></param>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
@@ -167,7 +167,7 @@ namespace Java.Lang.Instrument
         /// <param name="arg5"><see cref="Java.Util.Map"/></param>
         void RedefineModule(Java.Lang.Module arg0, Java.Util.Set<Java.Lang.Module> arg1, Java.Util.Map<Java.Lang.String, Java.Util.Set<Java.Lang.Module>> arg2, Java.Util.Map<Java.Lang.String, Java.Util.Set<Java.Lang.Module>> arg3, Java.Util.Set<Java.Lang.Class> arg4, Java.Util.Map<Java.Lang.Class, Java.Util.List<Java.Lang.Class>> arg5);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#retransformClasses(java.lang.Class[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#retransformClasses(java.lang.Class...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <exception cref="Java.Lang.Instrument.UnmodifiableClassException"/>
@@ -319,7 +319,7 @@ namespace Java.Lang.Instrument
             IExecuteWithSignature("appendToSystemClassLoaderSearch", "(Ljava/util/jar/JarFile;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineClasses(java.lang.instrument.ClassDefinition[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineClasses(java.lang.instrument.ClassDefinition...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Instrument.ClassDefinition"/></param>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
@@ -342,7 +342,7 @@ namespace Java.Lang.Instrument
             IExecuteWithSignature("redefineModule", "(Ljava/lang/Module;Ljava/util/Set;Ljava/util/Map;Ljava/util/Map;Ljava/util/Set;Ljava/util/Map;)V", arg0, arg1, arg2, arg3, arg4, arg5);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#retransformClasses(java.lang.Class[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#retransformClasses(java.lang.Class...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <exception cref="Java.Lang.Instrument.UnmodifiableClassException"/>

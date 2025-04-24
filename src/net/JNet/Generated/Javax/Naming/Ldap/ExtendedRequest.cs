@@ -74,7 +74,7 @@ namespace Javax.Naming.Ldap
 
     #region IExtendedRequest
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedRequest.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/ldap/ExtendedRequest.html"/>
     /// </summary>
     public partial interface IExtendedRequest : Java.Io.ISerializable
     {

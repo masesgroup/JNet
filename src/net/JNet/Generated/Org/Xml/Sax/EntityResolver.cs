@@ -74,7 +74,7 @@ namespace Org.Xml.Sax
 
     #region IEntityResolver
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/EntityResolver.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/xml/sax/EntityResolver.html"/>
     /// </summary>
     public partial interface IEntityResolver
     {

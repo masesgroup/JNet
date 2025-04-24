@@ -74,7 +74,7 @@ namespace Java.Lang.Management
 
     #region IBufferPoolMXBean
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/BufferPoolMXBean.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/BufferPoolMXBean.html"/>
     /// </summary>
     public partial interface IBufferPoolMXBean : Java.Lang.Management.IPlatformManagedObject
     {
