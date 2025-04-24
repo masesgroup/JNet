@@ -801,11 +801,9 @@ namespace MASES.JNetReflector
                     baseInterface = " : " + baseInterface;
                 }
 
-                var help = "TO BE DEFINED FROM USER";
-                if (bPrepareJavaListener)
-                {
-                    help = javaClassListenerName + " implementing " + jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel);
-                }
+                var help = javaClassListenerName 
+                           + (bPrepareJavaListener ? " implementing " : " to be manually developed following ")
+                           + jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel);
 
                 singleInterfaceStr = singleInterface.Replace(AllPackageClasses.ClassStub.HELP, help)
                                                     .Replace(AllPackageClasses.ClassStub.INTERFACE, jClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), isGeneric, false))
