@@ -74,7 +74,7 @@ namespace Javax.Xml.Crypto.Dsig
 
     #region ISignedInfo
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/SignedInfo.html"/>
     /// </summary>
     public partial interface ISignedInfo : Javax.Xml.Crypto.IXMLStructure
     {

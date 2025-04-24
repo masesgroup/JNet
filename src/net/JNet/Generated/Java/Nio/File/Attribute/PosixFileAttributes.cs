@@ -74,7 +74,7 @@ namespace Java.Nio.File.Attribute
 
     #region IPosixFileAttributes
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/attribute/PosixFileAttributes.html"/>
     /// </summary>
     public partial interface IPosixFileAttributes : Java.Nio.File.Attribute.IBasicFileAttributes
     {

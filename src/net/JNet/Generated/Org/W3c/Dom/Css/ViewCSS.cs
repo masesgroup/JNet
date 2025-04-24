@@ -74,7 +74,7 @@ namespace Org.W3c.Dom.Css
 
     #region IViewCSS
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/css/ViewCSS.html"/>
     /// </summary>
     public partial interface IViewCSS : Org.W3c.Dom.Views.IAbstractView
     {

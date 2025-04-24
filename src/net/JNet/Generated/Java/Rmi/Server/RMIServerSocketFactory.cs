@@ -74,7 +74,7 @@ namespace Java.Rmi.Server
 
     #region IRMIServerSocketFactory
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.rmi/java/rmi/server/RMIServerSocketFactory.html"/>
     /// </summary>
     public partial interface IRMIServerSocketFactory
     {

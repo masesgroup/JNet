@@ -433,7 +433,7 @@ namespace Java.Util
 
     #region ISet<E>
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html"/>
     /// </summary>
     public partial interface ISet<E> : Java.Util.ICollection<E>
     {

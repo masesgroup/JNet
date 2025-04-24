@@ -74,7 +74,7 @@ namespace Javax.Swing.Tree
 
     #region ITreeModel
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/TreeModel.html"/>
     /// </summary>
     public partial interface ITreeModel
     {

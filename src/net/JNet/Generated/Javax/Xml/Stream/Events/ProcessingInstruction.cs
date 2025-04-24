@@ -74,7 +74,7 @@ namespace Javax.Xml.Stream.Events
 
     #region IProcessingInstruction
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/stream/events/ProcessingInstruction.html"/>
     /// </summary>
     public partial interface IProcessingInstruction : Javax.Xml.Stream.Events.IXMLEvent
     {

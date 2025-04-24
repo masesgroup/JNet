@@ -497,7 +497,7 @@ namespace Javax.Lang.Model.Element
 
     #region IModuleElement
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/ModuleElement.html"/>
     /// </summary>
     public partial interface IModuleElement
     {

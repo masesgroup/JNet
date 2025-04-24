@@ -74,7 +74,7 @@ namespace Org.W3c.Dom
 
     #region IDocumentType
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/org/w3c/dom/DocumentType.html"/>
     /// </summary>
     public partial interface IDocumentType : Org.W3c.Dom.INode
     {

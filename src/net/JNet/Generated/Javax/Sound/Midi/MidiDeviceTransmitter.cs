@@ -74,7 +74,7 @@ namespace Javax.Sound.Midi
 
     #region IMidiDeviceTransmitter
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDeviceTransmitter.html"/>
     /// </summary>
     public partial interface IMidiDeviceTransmitter : Javax.Sound.Midi.ITransmitter
     {

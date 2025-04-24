@@ -74,7 +74,7 @@ namespace Java.Util.Stream
 
     #region IDoubleStream
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/DoubleStream.html"/>
     /// </summary>
     public partial interface IDoubleStream : Java.Util.Stream.IBaseStream<Java.Lang.Double, Java.Util.Stream.DoubleStream>
     {

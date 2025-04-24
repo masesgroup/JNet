@@ -74,7 +74,7 @@ namespace Javax.Sql
 
     #region IRowSetMetaData
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/RowSetMetaData.html"/>
     /// </summary>
     public partial interface IRowSetMetaData : Java.Sql.IResultSetMetaData
     {

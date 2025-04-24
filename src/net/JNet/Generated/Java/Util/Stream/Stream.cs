@@ -531,7 +531,7 @@ namespace Java.Util.Stream
 
     #region IStream<T>
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html"/>
     /// </summary>
     public partial interface IStream<T> : Java.Util.Stream.IBaseStream<T, Java.Util.Stream.Stream<T>>
     {

@@ -119,7 +119,7 @@ namespace Javax.Sound.Midi
 
     #region ISequencer
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Sequencer.html"/>
     /// </summary>
     public partial interface ISequencer : Javax.Sound.Midi.IMidiDevice
     {

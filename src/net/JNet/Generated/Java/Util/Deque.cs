@@ -384,7 +384,7 @@ namespace Java.Util
 
     #region IDeque<E>
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Deque.html"/>
     /// </summary>
     public partial interface IDeque<E> : Java.Util.IQueue<E>
     {

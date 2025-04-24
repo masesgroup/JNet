@@ -74,7 +74,7 @@ namespace Java.Awt.Datatransfer
 
     #region IClipboardOwner
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.datatransfer/java/awt/datatransfer/ClipboardOwner.html"/>
     /// </summary>
     public partial interface IClipboardOwner
     {

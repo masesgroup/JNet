@@ -74,7 +74,7 @@ namespace Javax.Management
 
     #region IMXBean
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/MXBean.html"/>
     /// </summary>
     public partial interface IMXBean : Java.Lang.Annotation.IAnnotation
     {

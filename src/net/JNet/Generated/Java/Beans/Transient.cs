@@ -74,7 +74,7 @@ namespace Java.Beans
 
     #region ITransient
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/Transient.html"/>
     /// </summary>
     public partial interface ITransient : Java.Lang.Annotation.IAnnotation
     {

@@ -519,7 +519,7 @@ namespace Java.Util
 
     #region IPrimitiveIterator<T, T_CONS>
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/PrimitiveIterator.html"/>
     /// </summary>
     public partial interface IPrimitiveIterator<T, T_CONS>
     {

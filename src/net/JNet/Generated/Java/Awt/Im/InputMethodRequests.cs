@@ -74,7 +74,7 @@ namespace Java.Awt.Im
 
     #region IInputMethodRequests
     /// <summary>
-    /// .NET interface for TO BE DEFINED FROM USER
+    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/InputMethodRequests.html"/>
     /// </summary>
     public partial interface IInputMethodRequests
     {
