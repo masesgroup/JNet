@@ -74,7 +74,7 @@ namespace Javax.Naming.Directory
 
     #region IAttributes
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.naming/javax/naming/directory/Attributes.html"/>
     /// </summary>
     public partial interface IAttributes
     {

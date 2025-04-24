@@ -74,7 +74,7 @@ namespace Javax.Xml.Crypto
 
     #region IURIDereferencer
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/URIDereferencer.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/URIDereferencer.html"/>
     /// </summary>
     public partial interface IURIDereferencer
     {

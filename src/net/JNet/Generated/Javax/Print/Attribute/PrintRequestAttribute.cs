@@ -74,7 +74,7 @@ namespace Javax.Print.Attribute
 
     #region IPrintRequestAttribute
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/PrintRequestAttribute.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/print/attribute/PrintRequestAttribute.html"/>
     /// </summary>
     public partial interface IPrintRequestAttribute : Javax.Print.Attribute.IAttribute
     {

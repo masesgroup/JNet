@@ -74,7 +74,7 @@ namespace Java.Security
 
     #region IDomainCombiner
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainCombiner.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/DomainCombiner.html"/>
     /// </summary>
     public partial interface IDomainCombiner
     {

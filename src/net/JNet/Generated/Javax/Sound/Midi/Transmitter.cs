@@ -74,7 +74,7 @@ namespace Javax.Sound.Midi
 
     #region ITransmitter
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Transmitter.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/Transmitter.html"/>
     /// </summary>
     public partial interface ITransmitter : Java.Lang.IAutoCloseable
     {

@@ -74,7 +74,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
 
     #region ISignatureMethodParameterSpec
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.html"/>
     /// </summary>
     public partial interface ISignatureMethodParameterSpec : Java.Security.Spec.IAlgorithmParameterSpec
     {

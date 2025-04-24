@@ -74,7 +74,7 @@ namespace Javax.Sql
 
     #region IDataSource
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/DataSource.html"/>
     /// </summary>
     public partial interface IDataSource
     {

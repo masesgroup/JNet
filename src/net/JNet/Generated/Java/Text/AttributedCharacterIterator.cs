@@ -119,7 +119,7 @@ namespace Java.Text
 
     #region IAttributedCharacterIterator
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/AttributedCharacterIterator.html"/>
     /// </summary>
     public partial interface IAttributedCharacterIterator : Java.Text.ICharacterIterator
     {

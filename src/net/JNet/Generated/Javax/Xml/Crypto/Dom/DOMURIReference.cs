@@ -74,7 +74,7 @@ namespace Javax.Xml.Crypto.Dom
 
     #region IDOMURIReference
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMURIReference.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dom/DOMURIReference.html"/>
     /// </summary>
     public partial interface IDOMURIReference : Javax.Xml.Crypto.IURIReference
     {

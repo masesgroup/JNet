@@ -74,7 +74,7 @@ namespace Java.Beans
 
     #region IPropertyEditor
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/PropertyEditor.html"/>
     /// </summary>
     public partial interface IPropertyEditor
     {

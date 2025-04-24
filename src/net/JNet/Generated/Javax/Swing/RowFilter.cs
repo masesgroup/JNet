@@ -288,7 +288,7 @@ namespace Javax.Swing
             return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "andFilter", "(Ljava/lang/Iterable;)Ljavax/swing/RowFilter;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#dateFilter(javax.swing.RowFilter.ComparisonType,java.util.Date,int[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#dateFilter(javax.swing.RowFilter.ComparisonType,java.util.Date,int...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.RowFilter.ComparisonType"/></param>
         /// <param name="arg1"><see cref="Java.Util.Date"/></param>
@@ -308,7 +308,7 @@ namespace Javax.Swing
             return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "notFilter", "(Ljavax/swing/RowFilter;)Ljavax/swing/RowFilter;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#numberFilter(javax.swing.RowFilter.ComparisonType,java.lang.Number,int[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#numberFilter(javax.swing.RowFilter.ComparisonType,java.lang.Number,int...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.RowFilter.ComparisonType"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Number"/></param>
@@ -328,7 +328,7 @@ namespace Javax.Swing
             return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "orFilter", "(Ljava/lang/Iterable;)Ljavax/swing/RowFilter;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#regexFilter(java.lang.String,int[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#regexFilter(java.lang.String,int...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -610,7 +610,7 @@ namespace Javax.Swing
             return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "andFilter", "(Ljava/lang/Iterable;)Ljavax/swing/RowFilter;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#dateFilter(javax.swing.RowFilter.ComparisonType,java.util.Date,int[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#dateFilter(javax.swing.RowFilter.ComparisonType,java.util.Date,int...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.RowFilter.ComparisonType"/></param>
         /// <param name="arg1"><see cref="Java.Util.Date"/></param>
@@ -630,7 +630,7 @@ namespace Javax.Swing
             return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "notFilter", "(Ljavax/swing/RowFilter;)Ljavax/swing/RowFilter;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#numberFilter(javax.swing.RowFilter.ComparisonType,java.lang.Number,int[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#numberFilter(javax.swing.RowFilter.ComparisonType,java.lang.Number,int...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Swing.RowFilter.ComparisonType"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Number"/></param>
@@ -653,7 +653,7 @@ namespace Javax.Swing
             return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "orFilter", "(Ljava/lang/Iterable;)Ljavax/swing/RowFilter;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#regexFilter(java.lang.String,int[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#regexFilter(java.lang.String,int...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>

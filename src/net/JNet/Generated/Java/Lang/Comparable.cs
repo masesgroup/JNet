@@ -162,7 +162,7 @@ namespace Java.Lang
 
     #region IComparable<T>
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html"/>
     /// </summary>
     public partial interface IComparable<T>
     {

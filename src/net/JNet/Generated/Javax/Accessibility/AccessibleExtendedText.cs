@@ -74,7 +74,7 @@ namespace Javax.Accessibility
 
     #region IAccessibleExtendedText
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/accessibility/AccessibleExtendedText.html"/>
     /// </summary>
     public partial interface IAccessibleExtendedText
     {

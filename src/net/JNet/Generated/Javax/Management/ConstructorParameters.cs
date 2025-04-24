@@ -74,7 +74,7 @@ namespace Javax.Management
 
     #region IConstructorParameters
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ConstructorParameters.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ConstructorParameters.html"/>
     /// </summary>
     public partial interface IConstructorParameters : Java.Lang.Annotation.IAnnotation
     {

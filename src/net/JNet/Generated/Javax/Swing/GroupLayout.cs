@@ -445,7 +445,7 @@ namespace Javax.Swing
             IExecuteWithSignature("layoutContainer", "(Ljava/awt/Container;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#linkSize(int,java.awt.Component[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#linkSize(int,java.awt.Component...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
@@ -454,7 +454,7 @@ namespace Javax.Swing
             if (arg1.Length == 0) IExecuteWithSignature("linkSize", "(I[Ljava/awt/Component;)V", arg0); else IExecuteWithSignature("linkSize", "(I[Ljava/awt/Component;)V", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#linkSize(java.awt.Component[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#linkSize(java.awt.Component...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void LinkSize(params Java.Awt.Component[] arg0)

@@ -74,7 +74,7 @@ namespace Javax.Lang.Model.Util
 
     #region ITypes
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html"/>
     /// </summary>
     public partial interface ITypes
     {
@@ -144,14 +144,14 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Javax.Lang.Model.Type.ArrayType"/></returns>
         Javax.Lang.Model.Type.ArrayType GetArrayType(Javax.Lang.Model.Type.TypeMirror arg0);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getDeclaredType(javax.lang.model.element.TypeElement,javax.lang.model.type.TypeMirror[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getDeclaredType(javax.lang.model.element.TypeElement,javax.lang.model.type.TypeMirror...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
         /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
         /// <returns><see cref="Javax.Lang.Model.Type.DeclaredType"/></returns>
         Javax.Lang.Model.Type.DeclaredType GetDeclaredType(Javax.Lang.Model.Element.TypeElement arg0, params Javax.Lang.Model.Type.TypeMirror[] arg1);
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getDeclaredType(javax.lang.model.type.DeclaredType,javax.lang.model.element.TypeElement,javax.lang.model.type.TypeMirror[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getDeclaredType(javax.lang.model.type.DeclaredType,javax.lang.model.element.TypeElement,javax.lang.model.type.TypeMirror...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.DeclaredType"/></param>
         /// <param name="arg1"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
@@ -328,7 +328,7 @@ namespace Javax.Lang.Model.Util
             return IExecuteWithSignature<Javax.Lang.Model.Type.ArrayType>("getArrayType", "(Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/ArrayType;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getDeclaredType(javax.lang.model.element.TypeElement,javax.lang.model.type.TypeMirror[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getDeclaredType(javax.lang.model.element.TypeElement,javax.lang.model.type.TypeMirror...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
         /// <param name="arg1"><see cref="Javax.Lang.Model.Type.TypeMirror"/></param>
@@ -338,7 +338,7 @@ namespace Javax.Lang.Model.Util
             if (arg1.Length == 0) return IExecuteWithSignature<Javax.Lang.Model.Type.DeclaredType>("getDeclaredType", "(Ljavax/lang/model/element/TypeElement;[Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/DeclaredType;", arg0); else return IExecuteWithSignature<Javax.Lang.Model.Type.DeclaredType>("getDeclaredType", "(Ljavax/lang/model/element/TypeElement;[Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/DeclaredType;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getDeclaredType(javax.lang.model.type.DeclaredType,javax.lang.model.element.TypeElement,javax.lang.model.type.TypeMirror[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getDeclaredType(javax.lang.model.type.DeclaredType,javax.lang.model.element.TypeElement,javax.lang.model.type.TypeMirror...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Type.DeclaredType"/></param>
         /// <param name="arg1"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>

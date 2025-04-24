@@ -74,7 +74,7 @@ namespace Javax.Security.Sasl
 
     #region ISaslClient
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html"/>
     /// </summary>
     public partial interface ISaslClient
     {

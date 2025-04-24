@@ -74,7 +74,7 @@ namespace Java.Lang.Invoke
 
     #region IMethodHandleInfo
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html"/>
     /// </summary>
     public partial interface IMethodHandleInfo
     {

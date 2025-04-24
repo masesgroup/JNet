@@ -74,7 +74,7 @@ namespace Javax.Swing.Tree
 
     #region IMutableTreeNode
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/tree/MutableTreeNode.html"/>
     /// </summary>
     public partial interface IMutableTreeNode : Javax.Swing.Tree.ITreeNode
     {

@@ -74,7 +74,7 @@ namespace Javax.Annotation.Processing
 
     #region IRoundEnvironment
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html"/>
     /// </summary>
     public partial interface IRoundEnvironment
     {
@@ -116,7 +116,7 @@ namespace Javax.Annotation.Processing
         /// <returns><see cref="Java.Util.Set"/></returns>
         Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element> GetElementsAnnotatedWithAny<ReturnExtendsJavax_Lang_Model_Element_Element, Arg0ExtendsJava_Lang_Annotation_Annotation>(Java.Util.Set<Java.Lang.Class> arg0) where ReturnExtendsJavax_Lang_Model_Element_Element : Javax.Lang.Model.Element.Element where Arg0ExtendsJava_Lang_Annotation_Annotation : Java.Lang.Annotation.Annotation;
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWithAny(javax.lang.model.element.TypeElement[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWithAny(javax.lang.model.element.TypeElement...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
         /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>
@@ -208,7 +208,7 @@ namespace Javax.Annotation.Processing
             return IExecuteWithSignature<Java.Util.Set<ReturnExtendsJavax_Lang_Model_Element_Element>>("getElementsAnnotatedWithAny", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWithAny(javax.lang.model.element.TypeElement[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/annotation/processing/RoundEnvironment.html#getElementsAnnotatedWithAny(javax.lang.model.element.TypeElement...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Lang.Model.Element.TypeElement"/></param>
         /// <typeparam name="ReturnExtendsJavax_Lang_Model_Element_Element"><see cref="Javax.Lang.Model.Element.Element"/></typeparam>

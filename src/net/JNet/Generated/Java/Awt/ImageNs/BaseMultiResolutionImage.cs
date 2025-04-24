@@ -75,7 +75,7 @@ namespace Java.Awt.ImageNs
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BaseMultiResolutionImage.html#%3Cinit%3E(int,java.awt.Image[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BaseMultiResolutionImage.html#%3Cinit%3E(int,java.awt.Image...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Awt.Image"/></param>
@@ -84,7 +84,7 @@ namespace Java.Awt.ImageNs
         {
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BaseMultiResolutionImage.html#%3Cinit%3E(java.awt.Image[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BaseMultiResolutionImage.html#%3Cinit%3E(java.awt.Image...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Awt.Image"/></param>
         public BaseMultiResolutionImage(params Java.Awt.Image[] arg0)

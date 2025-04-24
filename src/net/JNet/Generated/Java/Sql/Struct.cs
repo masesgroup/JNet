@@ -74,7 +74,7 @@ namespace Java.Sql
 
     #region IStruct
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Struct.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/java/sql/Struct.html"/>
     /// </summary>
     public partial interface IStruct
     {

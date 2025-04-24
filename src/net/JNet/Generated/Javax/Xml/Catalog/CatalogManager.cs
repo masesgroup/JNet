@@ -87,7 +87,7 @@ namespace Javax.Xml.Catalog
 
         #region Static methods
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogManager.html#catalog(javax.xml.catalog.CatalogFeatures,java.net.URI[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogManager.html#catalog(javax.xml.catalog.CatalogFeatures,java.net.URI...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Catalog.CatalogFeatures"/></param>
         /// <param name="arg1"><see cref="Java.Net.URI"/></param>
@@ -106,7 +106,7 @@ namespace Javax.Xml.Catalog
             return SExecuteWithSignature<Javax.Xml.Catalog.CatalogResolver>(LocalBridgeClazz, "catalogResolver", "(Ljavax/xml/catalog/Catalog;)Ljavax/xml/catalog/CatalogResolver;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogManager.html#catalogResolver(javax.xml.catalog.CatalogFeatures,java.net.URI[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml/javax/xml/catalog/CatalogManager.html#catalogResolver(javax.xml.catalog.CatalogFeatures,java.net.URI...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Catalog.CatalogFeatures"/></param>
         /// <param name="arg1"><see cref="Java.Net.URI"/></param>

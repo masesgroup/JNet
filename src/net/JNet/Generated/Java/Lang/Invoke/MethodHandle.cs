@@ -101,7 +101,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<bool>("isVarargsCollector", "()Z");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invoke(java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invoke(java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -111,7 +111,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return IExecuteWithSignature("invoke", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("invoke", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invokeExact(java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invokeExact(java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -215,7 +215,7 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("type", "()Ljava/lang/invoke/MethodType;");
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invokeWithArguments(java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invokeWithArguments(java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>

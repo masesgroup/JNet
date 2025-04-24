@@ -74,7 +74,7 @@ namespace Org.W3c.Dom.Html
 
     #region IHTMLDivElement
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDivElement.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/jdk.xml.dom/org/w3c/dom/html/HTMLDivElement.html"/>
     /// </summary>
     public partial interface IHTMLDivElement : Org.W3c.Dom.Html.IHTMLElement
     {

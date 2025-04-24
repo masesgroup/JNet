@@ -74,7 +74,7 @@ namespace Java.Nio.File
 
     #region IWatchKey
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/WatchKey.html"/>
     /// </summary>
     public partial interface IWatchKey
     {

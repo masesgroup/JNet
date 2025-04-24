@@ -565,7 +565,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Io.InputStream>("getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getConstructor(java.lang.Class[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getConstructor(java.lang.Class...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
@@ -576,7 +576,7 @@ namespace Java.Lang
             if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"); else return IExecuteWithSignature<Java.Lang.Reflect.Constructor>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
@@ -609,7 +609,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Reflect.Field>("getField", "(Ljava/lang/String;)Ljava/lang/reflect/Field;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredMethod(java.lang.String,java.lang.Class[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredMethod(java.lang.String,java.lang.Class...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -621,7 +621,7 @@ namespace Java.Lang
             if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Method>("getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0); else return IExecuteWithSignature<Java.Lang.Reflect.Method>("getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -1170,7 +1170,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Io.InputStream>("getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getConstructor(java.lang.Class[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getConstructor(java.lang.Class...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
@@ -1181,7 +1181,7 @@ namespace Java.Lang
             if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"); else return IExecuteWithSignature<Java.Lang.Reflect.Constructor<T>>("getConstructor", "([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredConstructor(java.lang.Class...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Reflect.Constructor"/></returns>
@@ -1214,7 +1214,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Reflect.Field>("getField", "(Ljava/lang/String;)Ljava/lang/reflect/Field;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredMethod(java.lang.String,java.lang.Class[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getDeclaredMethod(java.lang.String,java.lang.Class...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -1226,7 +1226,7 @@ namespace Java.Lang
             if (arg1.Length == 0) return IExecuteWithSignature<Java.Lang.Reflect.Method>("getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0); else return IExecuteWithSignature<Java.Lang.Reflect.Method>("getDeclaredMethod", "(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Class.html#getMethod(java.lang.String,java.lang.Class...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>

@@ -249,7 +249,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "doWhileLoop", "(Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropArguments(java.lang.invoke.MethodHandle,int,java.lang.Class[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#dropArguments(java.lang.invoke.MethodHandle,int,java.lang.Class...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -311,7 +311,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "explicitCastArguments", "(Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#filterArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -373,7 +373,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "identity", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#insertArguments(java.lang.invoke.MethodHandle,int,java.lang.Object[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#insertArguments(java.lang.invoke.MethodHandle,int,java.lang.Object...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -404,7 +404,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "iteratedLoop", "(Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#loop(java.lang.invoke.MethodHandle[][])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#loop(java.lang.invoke.MethodHandle[]...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -413,7 +413,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "loop", "([[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;"); else return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "loop", "([[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;", arg0);
         }
         /// <summary>
-        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#permuteArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodType,int[])"/>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.html#permuteArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodType,int...)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodType"/></param>

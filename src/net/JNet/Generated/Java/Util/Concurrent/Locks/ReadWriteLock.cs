@@ -74,7 +74,7 @@ namespace Java.Util.Concurrent.Locks
 
     #region IReadWriteLock
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/locks/ReadWriteLock.html"/>
     /// </summary>
     public partial interface IReadWriteLock
     {

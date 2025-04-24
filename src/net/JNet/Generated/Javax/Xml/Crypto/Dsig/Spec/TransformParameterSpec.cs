@@ -74,7 +74,7 @@ namespace Javax.Xml.Crypto.Dsig.Spec
 
     #region ITransformParameterSpec
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/TransformParameterSpec.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/spec/TransformParameterSpec.html"/>
     /// </summary>
     public partial interface ITransformParameterSpec : Java.Security.Spec.IAlgorithmParameterSpec
     {

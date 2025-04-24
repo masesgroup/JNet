@@ -74,7 +74,7 @@ namespace Java.Lang.Management
 
     #region IThreadMXBean
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/java/lang/management/ThreadMXBean.html"/>
     /// </summary>
     public partial interface IThreadMXBean : Java.Lang.Management.IPlatformManagedObject
     {

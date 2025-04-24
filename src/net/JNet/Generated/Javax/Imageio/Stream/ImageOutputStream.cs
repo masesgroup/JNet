@@ -74,7 +74,7 @@ namespace Javax.Imageio.Stream
 
     #region IImageOutputStream
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/imageio/stream/ImageOutputStream.html"/>
     /// </summary>
     public partial interface IImageOutputStream
     {

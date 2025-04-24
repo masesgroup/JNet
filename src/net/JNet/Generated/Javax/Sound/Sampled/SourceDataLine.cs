@@ -74,7 +74,7 @@ namespace Javax.Sound.Sampled
 
     #region ISourceDataLine
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/SourceDataLine.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/sampled/SourceDataLine.html"/>
     /// </summary>
     public partial interface ISourceDataLine : Javax.Sound.Sampled.IDataLine
     {

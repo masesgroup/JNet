@@ -74,7 +74,7 @@ namespace Javax.Sound.Midi
 
     #region IMidiDeviceReceiver
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDeviceReceiver.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/sound/midi/MidiDeviceReceiver.html"/>
     /// </summary>
     public partial interface IMidiDeviceReceiver : Javax.Sound.Midi.IReceiver
     {

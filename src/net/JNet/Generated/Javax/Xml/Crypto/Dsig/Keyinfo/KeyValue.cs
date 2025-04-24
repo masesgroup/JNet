@@ -74,7 +74,7 @@ namespace Javax.Xml.Crypto.Dsig.Keyinfo
 
     #region IKeyValue
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/keyinfo/KeyValue.html"/>
     /// </summary>
     public partial interface IKeyValue : Javax.Xml.Crypto.IXMLStructure
     {

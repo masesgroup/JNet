@@ -74,7 +74,7 @@ namespace Javax.Xml.Crypto.Dsig
 
     #region IXMLValidateContext
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLValidateContext.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.xml.crypto/javax/xml/crypto/dsig/XMLValidateContext.html"/>
     /// </summary>
     public partial interface IXMLValidateContext : Javax.Xml.Crypto.IXMLCryptoContext
     {

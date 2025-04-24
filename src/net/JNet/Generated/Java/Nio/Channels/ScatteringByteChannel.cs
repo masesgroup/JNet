@@ -74,7 +74,7 @@ namespace Java.Nio.Channels
 
     #region IScatteringByteChannel
     /// <summary>
-    /// .NET interface for  to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ScatteringByteChannel.html"/>
+    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/channels/ScatteringByteChannel.html"/>
     /// </summary>
     public partial interface IScatteringByteChannel : Java.Nio.Channels.IReadableByteChannel
     {
