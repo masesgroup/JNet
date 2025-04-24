@@ -2277,6 +2277,18 @@ namespace MASES.JNetReflector
                     genString = genString.Replace(",", ", ");
                 }
 
+                if (entry.IsVarArgs)
+                {
+                    const string wrongUrlSnippet = "[]";
+                    const string rightUrlSnippet = "...";
+                    var endPosVarArgs = genString.LastIndexOf(wrongUrlSnippet);
+                    if (endPosVarArgs > 0)
+                    {
+                        genString = genString.Remove(endPosVarArgs, wrongUrlSnippet.Length);
+                        genString = genString.Insert(endPosVarArgs, rightUrlSnippet);
+                    }
+                }
+
                 newURl += "#" + genString;
                 return newURl;
             }
@@ -2624,6 +2636,18 @@ namespace MASES.JNetReflector
                 else if (_CurrentJavadocVersion > 7 && _CurrentJavadocVersion < 10)
                 {
                     genString = genString.Replace(",", "-").Replace('(', '-').Replace(')', '-');
+                }
+
+                if (entry.IsVarArgs)
+                {
+                    const string wrongUrlSnippet = "[]";
+                    const string rightUrlSnippet = "...";
+                    var endPosVarArgs = genString.LastIndexOf(wrongUrlSnippet);
+                    if (endPosVarArgs > 0)
+                    {
+                        genString = genString.Remove(endPosVarArgs, wrongUrlSnippet.Length);
+                        genString = genString.Insert(endPosVarArgs, rightUrlSnippet);
+                    }
                 }
 
                 newURl += "#" + genString;
