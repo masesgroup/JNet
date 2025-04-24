@@ -1,11 +1,11 @@
 ---
-title: Docker images of Java/JVM suite for .NET
-_description: Describes the Docker images of Java/JVM suite for .NET
+title: Docker images of .NET suite for Java™/JVM™
+_description: Describes the Docker images of .NET suite for Java™/JVM™
 ---
 
 # JNet: Docker images
 
-Java/JVM suite for .NET comes with a ready made Docker image:
+.NET suite for Java™/JVM™ comes with a ready made Docker image:
 - JNet CLI: see [JNet CLI usage](usageCLI.md)
 
 > [!IMPORTANT]

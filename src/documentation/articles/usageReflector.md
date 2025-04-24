@@ -1,5 +1,5 @@
 ---
-title: JNetReflector tool of Java/JVM suite for .NET
+title: JNetReflector tool of .NET suite for Java™/JVM™
 _description: Describes the tool which builds .NET classes analyzing JVM Jar or modules
 ---
 

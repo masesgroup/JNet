@@ -3,8 +3,8 @@
 	<PropertyGroup>
 		<AssemblyName>MASES.JNet</AssemblyName>
 		<RootNamespace>MASES.JNet</RootNamespace>
-		<Title>Java/JVM suite for .NET - a comprehensive suite of libraries and tools to use Java/JVM APIs (Java, Scala, Kotlin, ...) and .NET side-by-side</Title>
-		<Description>Java/JVM suite for .NET - a comprehensive suite of libraries and tools to use Java/JVM APIs (Java, Scala, Kotlin, ...) and .NET side-by-side</Description>
+		<Title>.NET suite for Java™/JVM™ - a comprehensive suite of libraries and tools to use Java™/JVM™ APIs (Java, Scala, Kotlin, ...) and .NET side-by-side</Title>
+		<Description>.NET suite for Java™/JVM™ - a comprehensive suite of libraries and tools to use Java™/JVM™ APIs (Java, Scala, Kotlin, ...) and .NET side-by-side</Description>
 		<Product>JNet</Product>
 		<OutputPath>..\..\..\bin\</OutputPath>
 		<PackageTags>jnet dotnet clr jvm dotnetcore netcore dotnet6 net6 dotnet8 net8 java bridge gateway</PackageTags>
