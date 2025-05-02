@@ -35,6 +35,7 @@ _jnetreflector_ accepts the following command-line switch:
 * **CopyrightFile**: The path where the tool will locate copyright info
 * **JavaPLocationPath**: The path where the tool will locate javap, default is to use system available
 * **OriginRootPath**: The origin path where Jars to be analyzed, and dependencies, are stored
+* **ExtraClassPaths**: Extra paths, in CSV format, where dependencies are stored
 * **OriginJavadocUrl**: The base URL of the Javadoc to be associated to the classes
 * **JavadocVersion**: The version of the Javadoc to be associated to the classes, it means the Javadoc tool version used
 * **JavadocNoModule**: Do not add module in the Javadoc generated Url
