@@ -31,6 +31,7 @@ namespace MASES.JNetReflector
         public const string CopyrightFile = "CopyrightFile";
         public const string JavaPLocationPath = "JavaPLocationPath";
         public const string OriginRootPath = "OriginRootPath";
+        public const string ExtraClassPaths = "ExtraClassPaths";
         public const string OriginJavadocUrl = "OriginJavadocUrl";
         public const string JavadocVersion = "JavadocVersion";
         public const string JavadocNoModule = "JavadocNoModule";

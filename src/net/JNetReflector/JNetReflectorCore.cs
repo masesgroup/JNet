@@ -16,6 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
+using Java.Lang;
 using MASES.CLIParser;
 using MASES.JNet;
 using MASES.JNetReflector.Templates;
@@ -197,6 +198,12 @@ namespace MASES.JNetReflector
                         Name = CLIParam.OriginRootPath,
                         Type = ArgumentType.Double,
                         Help = "The origin path where Jars to be analyzed, and dependencies, are stored",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.ExtraClassPaths,
+                        Type = ArgumentType.Double,
+                        Help = "Extra paths, in CSV format, where dependencies are stored",
                     },
                     new ArgumentMetadata<string>()
                     {
@@ -628,6 +635,19 @@ namespace MASES.JNetReflector
                 _OriginRootPath = Path.GetFullPath(originalRootPath);
                 if (!Directory.Exists(_OriginRootPath)) throw new DirectoryNotFoundException($"{_OriginRootPath} not exist.");
                 _JarsToAddInClassPath = new List<string>(Directory.EnumerateFiles(originalRootPath, "*.jar"));
+            }
+
+            if (ParsedArgs.Exist(CLIParam.ExtraClassPaths))
+            {
+                var extraClassPaths = ParsedArgs.Get<string>(CLIParam.ExtraClassPaths).Split(',', ';');
+                foreach (var extraClassPath in extraClassPaths)
+                {
+                    var classPath = Path.GetFullPath(extraClassPath);
+                    if (Directory.Exists(classPath))
+                    {
+                        _JarsToAddInClassPath = new List<string>(Directory.EnumerateFiles(classPath, "*.jar"));
+                    }
+                }
             }
 
             if (ParsedArgs.Exist(CLIParam.JarList))

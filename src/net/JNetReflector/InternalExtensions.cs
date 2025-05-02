@@ -294,7 +294,7 @@ namespace MASES.JNetReflector
         public static string ConvertToJavadoc(this string result)
         {
             if (result.EndsWith(SpecialNames.JavaLangAnyType)) result = result.Substring(0, result.IndexOf(SpecialNames.JavaLangAnyType));
-            if (result.EndsWith(", new()")) result = result.Substring(0, result.IndexOf(", new()"));
+            if (result.EndsWith(AllPackageClasses.WHERE_CLAUSE_NEW)) result = result.Substring(0, result.IndexOf(AllPackageClasses.WHERE_CLAUSE_NEW));
             if (result.Contains(SpecialNames.ArrayTypeTrailer)) result = result.Substring(0, result.IndexOf(SpecialNames.ArrayTypeTrailer));
             return result.Replace(SpecialNames.BeginGenericDeclaration, "{").Replace(SpecialNames.EndGenericDeclaration, "}");
         }
