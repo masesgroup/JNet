@@ -511,7 +511,7 @@ namespace MASES.JNetReflector
         static IEnumerable<string> _ClassesToAnalyze;
         public static IEnumerable<string> ClassesToAnalyze => _ClassesToAnalyze ?? _ConfigurationFromFile.ClassesToAnalyze;
 
-        static IEnumerable<string> _JarsToAddInClassPath;
+        static List<string> _JarsToAddInClassPath;
         static IEnumerable<string> _JarsToAnalyze;
         public static IEnumerable<string> JarsToAnalyze => _JarsToAnalyze ?? _ConfigurationFromFile.JarList;
 
@@ -634,18 +634,20 @@ namespace MASES.JNetReflector
                 var originalRootPath = ParsedArgs.Get<string>(CLIParam.OriginRootPath);
                 _OriginRootPath = Path.GetFullPath(originalRootPath);
                 if (!Directory.Exists(_OriginRootPath)) throw new DirectoryNotFoundException($"{_OriginRootPath} not exist.");
-                _JarsToAddInClassPath = new List<string>(Directory.EnumerateFiles(originalRootPath, "*.jar"));
+                if (_JarsToAddInClassPath == null) _JarsToAddInClassPath = new List<string>();
+                _JarsToAddInClassPath.AddRange(Directory.EnumerateFiles(originalRootPath, "*.jar"));
             }
 
             if (ParsedArgs.Exist(CLIParam.ExtraClassPaths))
             {
+                if (_JarsToAddInClassPath == null) _JarsToAddInClassPath = new List<string>();
                 var extraClassPaths = ParsedArgs.Get<string>(CLIParam.ExtraClassPaths).Split(',', ';');
                 foreach (var extraClassPath in extraClassPaths)
                 {
                     var classPath = Path.GetFullPath(extraClassPath);
                     if (Directory.Exists(classPath))
                     {
-                        _JarsToAddInClassPath = new List<string>(Directory.EnumerateFiles(classPath, "*.jar"));
+                        _JarsToAddInClassPath?.AddRange(Directory.EnumerateFiles(classPath, "*.jar"));
                     }
                 }
             }
