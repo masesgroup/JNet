@@ -17,15 +17,11 @@
 		<OutputType>Exe</OutputType>
 	</PropertyGroup>
 
-	<ItemGroup Condition="True">
-		<jnetps_jars Include="$(ProjectDir)\..\..\..\jars\jnet-*" />
-	</ItemGroup>
-
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild">
-		<Copy SourceFiles="@(jnetps_jars)" DestinationFolder="$(OutDir)\jars" />
+		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(OutDir)\jars" />
 	</Target>
 	<Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
-		<Copy SourceFiles="@(jnetps_jars)" DestinationFolder="$(PublishDir)\jars" />
+		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(PublishDir)\jars" />
 	</Target>
 
 	<ItemGroup>
