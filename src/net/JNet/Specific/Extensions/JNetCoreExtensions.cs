@@ -19,6 +19,8 @@
 using Java.Nio;
 using MASES.JCOBridge.C2JBridge;
 using System;
+using System.Collections.Generic;
+using System.Reflection;
 
 namespace MASES.JNet.Specific.Extensions
 {
@@ -69,6 +71,130 @@ namespace MASES.JNet.Specific.Extensions
                 else throw new System.InvalidCastException($"{typeof(TData)} does not have a ready made counter part, try use the converter to return {typeof(TWrap)}");
                 return JVMBridgeBase.WrapsDirect<TWrap>(ibb.BridgeInstance);
             }
+        }
+
+        static Type CheckOn(Type source, Type t)
+        {
+            if (t.IsGenericTypeDefinition)
+            {
+                if (source.IsGenericType)
+                {
+                    return source.GetGenericTypeDefinition();
+                }
+                else
+                {
+                    return source;
+                }
+            }
+            return source;
+        }
+        /// <summary>
+        /// Traverse the class chain from <paramref name="source"/> until <paramref name="t"/>
+        /// </summary>
+        /// <param name="source">The source</param>
+        /// <param name="t">The target</param>
+        /// <returns>The <see cref="Type"/> found</returns>
+        public static Type TraverseUntil(this Type source, Type t)
+        {
+            var baseType = source;
+            while (baseType != null && CheckOn(baseType, t) != t)
+            {
+                baseType = baseType.BaseType;
+            }
+
+            return baseType;
+        }
+        /// <summary>
+        /// Generic static property getter
+        /// </summary>
+        /// <param name="origin">The origin</param>
+        /// <param name="target">The target <see cref="Type"/> where the static property was defined</param>
+        /// <param name="propertyName">The property name</param>
+        /// <returns>The property value</returns>
+        public static object GetStaticPropertyOn(this Type origin, Type target, string propertyName)
+        {
+            PropertyInfo prop = origin.TraverseUntil(target).GetProperty(propertyName);
+            return prop.GetValue(null);
+        }
+        /// <summary>
+        /// Generic static property getter
+        /// </summary>
+        /// <typeparam name="TContainingClass">The target <see cref="Type"/> where the static property was defined</typeparam>
+        /// <param name="origin">The origin</param>
+        /// <param name="propertyName">The property name</param>
+        /// <returns>The property value</returns>
+        public static object GetStaticPropertyOn<TContainingClass>(this Type origin, string propertyName)
+        {
+            return GetStaticPropertyOn(origin, typeof(TContainingClass), propertyName);
+        }
+        /// <summary>
+        /// Generic static property setter
+        /// </summary>
+        /// <param name="origin">The origin</param>
+        /// <param name="destination">The target <see cref="Type"/> where the static property was defined</param>
+        /// <param name="propertyName">The property name</param>
+        /// <param name="value">The property value</param>
+        public static void SetStaticPropertyOn(this Type origin, Type destination, string propertyName, object value)
+        {
+            PropertyInfo prop = origin.TraverseUntil(destination).GetProperty(propertyName);
+            prop.SetValue(null, value);
+        }
+        /// <summary>
+        /// Generic static property setter
+        /// </summary>
+        /// <typeparam name="TContainingClass">The target <see cref="Type"/> where the static property was defined</typeparam>
+        /// <param name="origin">The origin</param>
+        /// <param name="propertyName">The property name</param>
+        /// <param name="value">The property value</param>
+        public static void SetStaticPropertyOn<TContainingClass>(this Type origin, string propertyName, object value)
+        {
+            SetStaticPropertyOn(origin, typeof(TContainingClass), propertyName, value);
+        }
+        /// <summary>
+        /// Executes a static method defined in <paramref name="destination"/>
+        /// </summary>
+        /// <param name="origin">The origin</param>
+        /// <param name="destination">The target <see cref="Type"/> where the static method was defined</param>
+        /// <param name="methodName">The method name</param>
+        /// <param name="types">The <see cref="Type"/> of the arguments</param>
+        /// <param name="args">The method arguments</param>
+        /// <returns>The method result</returns>
+        public static object RunStaticMethodOn(this Type origin, Type destination, string methodName, Type[] types, params object[] args)
+        {
+            MethodInfo method = origin.TraverseUntil(destination).GetMethod(methodName, types);
+            if (method == null) throw new ArgumentException($"Not found method {methodName} with supplied arguments.");
+            return method.Invoke(null, args);
+        }
+        /// <summary>
+        /// Executes a static method defined in <paramref name="destination"/>
+        /// </summary>
+        /// <param name="origin">The origin</param>
+        /// <param name="destination">The target <see cref="Type"/> where the static method was defined</param>
+        /// <param name="methodName">The method name</param>
+        /// <param name="args">The method arguments</param>
+        /// <returns>The method result</returns>
+        public static object RunStaticMethodOn(this Type origin, Type destination, string methodName, params object[] args)
+        {
+            List<Type> lst = new List<Type>();
+            foreach (var item in args)
+            {
+                if (item == null) throw new ArgumentNullException("Cannot infer Type from a null value.");
+                lst.Add(item.GetType());
+            }
+
+            return RunStaticMethodOn(origin, destination, methodName, lst.ToArray(), args);
+        }
+        /// <summary>
+        /// Executes a static method defined in <paramref name="source"/>
+        /// </summary>
+        /// <typeparam name="TContainingClass">The target <see cref="Type"/> where the static method was defined</typeparam>
+        /// <param name="source">The origin</param>
+        /// <param name="methodName">The method name</param>
+        /// <param name="args">The method arguments</param>
+        /// <returns>The method result</returns>
+        public static object RunStaticMethodOn<TContainingClass>(this Type source, string methodName, params object[] args)
+        {
+            return RunStaticMethodOn(source, typeof(TContainingClass), methodName, args);
         }
     }
 }

@@ -21,7 +21,7 @@ using System;
 using System.Management.Automation;
 using System.Reflection;
 
-namespace MASES.JNetPSCore.Cmdlet
+namespace MASES.JNet.PowerShell.Cmdlet
 {
     /// <summary>
     /// Set to indicate the class need to run externally

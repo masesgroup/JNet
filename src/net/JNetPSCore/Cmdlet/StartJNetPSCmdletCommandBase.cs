@@ -20,7 +20,7 @@ using MASES.JCOBridge.C2JBridge;
 using MASES.JNet;
 using System.Management.Automation;
 
-namespace MASES.JNetPSCore.Cmdlet
+namespace MASES.JNet.PowerShell.Cmdlet
 {
     /// <summary>
     /// Base class to be extended in derived projects to add other parameters

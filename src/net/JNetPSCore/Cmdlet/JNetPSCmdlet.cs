@@ -21,7 +21,7 @@ using MASES.JNet;
 using System.Management.Automation;
 using System.Reflection;
 
-namespace MASES.JNetPSCore.Cmdlet
+namespace MASES.JNet.PowerShell.Cmdlet
 {
     /// <summary>
     /// Base class to be extended in derived projects for all PS cmdlet which needs the core active

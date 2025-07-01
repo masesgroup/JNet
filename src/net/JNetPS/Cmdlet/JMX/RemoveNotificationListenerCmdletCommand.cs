@@ -18,7 +18,7 @@
 
 using Javax.Management;
 using Javax.Management.Remote;
-using MASES.JNetPSCore.Cmdlet;
+using MASES.JNet.PowerShell.Cmdlet;
 using System.Management.Automation;
 
 namespace MASES.JNetPS.Cmdlet.JMX

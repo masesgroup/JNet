@@ -22,7 +22,7 @@ using Javax.Management.Relation;
 using Javax.Management.Remote;
 using Javax.Management.Timer;
 using MASES.JCOBridge.C2JBridge;
-using MASES.JNetPSCore.Cmdlet;
+using MASES.JNet.PowerShell.Cmdlet;
 using System;
 using System.Management.Automation;
 

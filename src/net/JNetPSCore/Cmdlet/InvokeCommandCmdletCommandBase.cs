@@ -21,7 +21,7 @@ using MASES.JNet.Specific;
 using System;
 using System.Management.Automation;
 
-namespace MASES.JNetPSCore.Cmdlet
+namespace MASES.JNet.PowerShell.Cmdlet
 {
     public abstract class InvokeCommandCmdletCommandBase<TCmdlet, TCore> : StartJNetPSCmdletCommandBase<TCmdlet, TCore>
         where TCmdlet : InvokeCommandCmdletCommandBase<TCmdlet, TCore>
