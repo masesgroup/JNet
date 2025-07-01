@@ -20,7 +20,7 @@ using Java.Lang;
 using Java.Util;
 using Javax.Management.Remote;
 using MASES.JNet.Specific.Extensions;
-using MASES.JNetPSCore.Cmdlet;
+using MASES.JNet.PowerShell.Cmdlet;
 using System.Collections.Generic;
 using System.Management.Automation;
 

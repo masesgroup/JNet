@@ -20,7 +20,7 @@ using MASES.JNet;
 using System.Collections.Generic;
 using System.Management.Automation;
 
-namespace MASES.JNetPSCore.Cmdlet
+namespace MASES.JNet.PowerShell.Cmdlet
 {
     public abstract class NewObjectCmdletCommandBase<TCmdlet, TCore> : JNetPSCmdlet<TCore>
         where TCmdlet : NewObjectCmdletCommandBase<TCmdlet, TCore>

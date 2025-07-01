@@ -16,24 +16,22 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-using MASES.JNet;
-using MASES.JNet.Specific;
-using Microsoft.CodeAnalysis.CSharp.Scripting;
-using Microsoft.CodeAnalysis.Scripting;
-using System;
-using System.IO;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace MASES.JNet.CLI
 {
-    class Program : ProgramBase<JNetCLICore, Program>
+    class CLIParam
     {
-        static async Task Main(string[] args)
-        {
-            await InternalMain(args);
-        }
+        // ReflectorArgs
+        public static string[] ClassToRun = new string[] { "ClassToRun", "c" };
+        public static string[] Interactive = new string[] { "Interactive", "i" };
+        public static string[] RunCommand = new string[] { "RunCommand", "r" };
+        public static string[] Script = new string[] { "Script", "s" };
+        public static string[] JarList = new string[] { "JarList", "jl" };
+        public static string[] NamespaceList = new string[] { "NamespaceList", "nl" };
+        public static string[] ImportList = new string[] { "ImportList", "il" };
+    }
+
+    class InternalConst
+    {
+
     }
 }

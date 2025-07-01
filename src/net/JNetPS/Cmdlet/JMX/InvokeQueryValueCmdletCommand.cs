@@ -17,7 +17,7 @@
 */
 
 using Javax.Management;
-using MASES.JNetPSCore.Cmdlet;
+using MASES.JNet.PowerShell.Cmdlet;
 using System;
 using System.Management.Automation;
 

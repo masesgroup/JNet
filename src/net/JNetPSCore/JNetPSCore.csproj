@@ -2,7 +2,7 @@
 	<Import Project="..\Common\Common.props" />
 	<PropertyGroup>
 		<AssemblyName>MASES.JNetPSCore</AssemblyName>
-		<RootNamespace>MASES.JNetPSCore</RootNamespace>
+		<RootNamespace>MASES.JNet.PowerShell</RootNamespace>
 		<Title>JNetPSCore - JNet (.NET suite for Java™/JVM™) PowerShell base library</Title>
 		<Description>JNetPSCore - JNet (.NET suite for Java™/JVM™) PowerShell base library</Description>
 		<Product>JNetPSCore</Product>
