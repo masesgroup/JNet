@@ -18,6 +18,7 @@
 
 using MASES.CLIParser;
 using MASES.JNet;
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -49,7 +50,7 @@ namespace MASES.JNet.CLI
                 switch(className)
                 {
                     default:
-                        ApplicationHeapSize ??= "256M";
+                        ApplicationInitialHeapSize = ApplicationHeapSize = Environment.Is64BitOperatingSystem ? "1G" : "512M";
                         break;
                 }
             });
