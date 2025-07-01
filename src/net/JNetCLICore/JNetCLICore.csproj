@@ -2,16 +2,15 @@
 	<Import Project="..\Common\Common.props" />
 	<PropertyGroup>
 		<PackageType>DotnetTool</PackageType>
-		<OutputType>Exe</OutputType>
-		<AssemblyName>MASES.JNetCLI</AssemblyName>
+		<AssemblyName>MASES.JNetCLICore</AssemblyName>
 		<RootNamespace>MASES.JNet.CLI</RootNamespace>
-		<Title>JNetCLI - JNet (.NET suite for Java™/JVM™) command line interface</Title>
-		<Description>JNetCLI - JNet (.NET suite for Java™/JVM™) command line interface</Description>
-		<Product>JNetCLI</Product>
-		<OutputPath>..\..\..\binCLI\</OutputPath>
-		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+		<Title>JNetCLI - JNet (.NET suite for Java™/JVM™) command line base library</Title>
+		<Description>JNetCLI - JNet (.NET suite for Java™/JVM™) command line base library</Description>
+		<Product>JNetCLICore</Product>
+		<OutputPath>..\..\..\bin\</OutputPath>
 		<PackageTags>jnet cli dotnet clr netcore net8</PackageTags>
-		<PackageId>MASES.JNetCLI</PackageId>
+		<PackageId>MASES.JNetCLICore</PackageId>
+		<PackageReadmeFile>usagecli.md</PackageReadmeFile>
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
 		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 	</PropertyGroup>
@@ -25,10 +24,11 @@
 		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(PublishDir)\jars" />
 	</Target>
 	<ItemGroup>
-		<ProjectReference Include="..\JNetCLICore\JNetCLICore.csproj">
+		<ProjectReference Include="..\JNet\JNet.csproj">
 			<IncludeAssets>All</IncludeAssets>
 			<PrivateAssets>None</PrivateAssets>
 		</ProjectReference>
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.12.0" />
 		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
 	</ItemGroup>
 	<ItemGroup>
