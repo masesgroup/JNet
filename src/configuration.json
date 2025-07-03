@@ -24,6 +24,7 @@
   ],
   "ClassesToBeListener": [
     "java.lang.Runnable",
+    "java.util.concurrent.Callable",
     "javax.swing.Action",
     "javax.management.NotificationFilter"
   ],
