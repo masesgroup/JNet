@@ -98,6 +98,17 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "callable", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Callable;", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.lang.Runnable,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <param name="arg1"><typeparamref name="T"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
+        public static Java.Util.Concurrent.Callable<T> CallableDirect<T>(Java.Lang.Runnable arg0, T arg1)
+        {
+            return SExecuteWithSignature<Java.Util.Concurrent.CallableDirect<T>, Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "callable", "(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Callable;", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallable(java.util.concurrent.Callable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
@@ -106,6 +117,16 @@ namespace Java.Util.Concurrent
         public static Java.Util.Concurrent.Callable<T> PrivilegedCallableMethod<T>(Java.Util.Concurrent.Callable<T> arg0)
         {
             return SExecuteWithSignature<Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "privilegedCallable", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Callable;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallable(java.util.concurrent.Callable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
+        public static Java.Util.Concurrent.Callable<T> PrivilegedCallableMethodDirect<T>(Java.Util.Concurrent.Callable<T> arg0)
+        {
+            return SExecuteWithSignature<Java.Util.Concurrent.CallableDirect<T>, Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "privilegedCallable", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Callable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallableUsingCurrentClassLoader(java.util.concurrent.Callable)"/>
@@ -118,6 +139,16 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "privilegedCallableUsingCurrentClassLoader", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Callable;", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#privilegedCallableUsingCurrentClassLoader(java.util.concurrent.Callable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
+        public static Java.Util.Concurrent.Callable<T> PrivilegedCallableUsingCurrentClassLoaderMethodDirect<T>(Java.Util.Concurrent.Callable<T> arg0)
+        {
+            return SExecuteWithSignature<Java.Util.Concurrent.CallableDirect<T>, Java.Util.Concurrent.Callable<T>>(LocalBridgeClazz, "privilegedCallableUsingCurrentClassLoader", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Callable;", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
@@ -125,6 +156,15 @@ namespace Java.Util.Concurrent
         public static Java.Util.Concurrent.Callable<object> Callable(Java.Lang.Runnable arg0)
         {
             return SExecuteWithSignature<Java.Util.Concurrent.Callable<object>>(LocalBridgeClazz, "callable", "(Ljava/lang/Runnable;)Ljava/util/concurrent/Callable;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.lang.Runnable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
+        public static Java.Util.Concurrent.Callable<object> CallableDirect(Java.Lang.Runnable arg0)
+        {
+            return SExecuteWithSignature<Java.Util.Concurrent.CallableDirect<object>, Java.Util.Concurrent.Callable<object>>(LocalBridgeClazz, "callable", "(Ljava/lang/Runnable;)Ljava/util/concurrent/Callable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.security.PrivilegedAction)"/>
@@ -136,6 +176,15 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.Callable<object>>(LocalBridgeClazz, "callable", "(Ljava/security/PrivilegedAction;)Ljava/util/concurrent/Callable;", arg0);
         }
         /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.security.PrivilegedAction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
+        public static Java.Util.Concurrent.Callable<object> CallableDirect(Java.Security.PrivilegedAction<object> arg0)
+        {
+            return SExecuteWithSignature<Java.Util.Concurrent.CallableDirect<object>, Java.Util.Concurrent.Callable<object>>(LocalBridgeClazz, "callable", "(Ljava/security/PrivilegedAction;)Ljava/util/concurrent/Callable;", arg0);
+        }
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.security.PrivilegedExceptionAction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
@@ -143,6 +192,15 @@ namespace Java.Util.Concurrent
         public static Java.Util.Concurrent.Callable<object> Callable(Java.Security.PrivilegedExceptionAction<object> arg0)
         {
             return SExecuteWithSignature<Java.Util.Concurrent.Callable<object>>(LocalBridgeClazz, "callable", "(Ljava/security/PrivilegedExceptionAction;)Ljava/util/concurrent/Callable;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#callable(java.security.PrivilegedExceptionAction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.Callable"/></returns>
+        public static Java.Util.Concurrent.Callable<object> CallableDirect(Java.Security.PrivilegedExceptionAction<object> arg0)
+        {
+            return SExecuteWithSignature<Java.Util.Concurrent.CallableDirect<object>, Java.Util.Concurrent.Callable<object>>(LocalBridgeClazz, "callable", "(Ljava/security/PrivilegedExceptionAction;)Ljava/util/concurrent/Callable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Executors.html#newCachedThreadPool()"/>

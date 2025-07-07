@@ -29,25 +29,48 @@ namespace Java.Util.Concurrent
     /// <summary>
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html"/>
     /// </summary>
-    public partial class Callable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Callable>
+    public partial class Callable : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-        const string _bridgeClassName = "java.util.concurrent.Callable";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [global::System.Obsolete("Callable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public Callable() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        [global::System.Obsolete("Callable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public Callable(params object[] args) : base(args) { }
+        public Callable() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.java.util.concurrent.Callable";
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+    
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region CallableDirect declaration
+    /// <summary>
+    /// Direct override of <see cref="Callable"/> or its generic type if there is one
+    /// </summary>
+    public partial class CallableDirect : Callable
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
+
+        const string _bridgeClassName = "java.util.concurrent.Callable";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
         /// <summary>
@@ -66,9 +89,6 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
-        // TODO: complete the class
-
     }
     #endregion
 
@@ -77,25 +97,48 @@ namespace Java.Util.Concurrent
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
-    public partial class Callable<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Callable<V>>
+    public partial class Callable<V> : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-        const string _bridgeClassName = "java.util.concurrent.Callable";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [global::System.Obsolete("Callable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public Callable() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        [global::System.Obsolete("Callable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public Callable(params object[] args) : base(args) { }
+        public Callable() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.jnet.generated.java.util.concurrent.Callable";
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+    
+        // TODO: complete the class
+    
+    }
+    #endregion
+
+    #region CallableDirect<V> declaration
+    /// <summary>
+    /// Direct override of <see cref="Callable"/> or its generic type if there is one
+    /// </summary>
+    public partial class CallableDirect<V> : Callable<V>
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
+
+        const string _bridgeClassName = "java.util.concurrent.Callable";
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
         private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
         /// <summary>
@@ -114,9 +157,6 @@ namespace Java.Util.Concurrent
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
-        // TODO: complete the class
-    
     }
     #endregion
 
@@ -141,11 +181,75 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
+        /// Handlers initializer for <see cref="Callable"/>
+        /// </summary>
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("call", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(CallEventHandler));
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnCall"/> has a value it takes precedence over corresponding class method</remarks>
+        public global::System.Func<object> OnCall { get; set; } = null;
+
+        bool hasOverrideCall = true;
+        void CallEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+        {
+            hasOverrideCall = true;
+            var methodToExecute = (OnCall != null) ? OnCall : Call;
+            var executionResult = methodToExecute.Invoke();
+            data.EventData.TypedEventData.SetReturnData(hasOverrideCall, executionResult);
+        }
+
+        /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Exception"/>
-        public object Call()
+        public virtual object Call()
+        {
+            hasOverrideCall = false; return default;
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region CallableDirect implementation
+    public partial class CallableDirect
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
+        public override object Call()
         {
             return IExecuteWithSignature("call", "()Ljava/lang/Object;");
         }
@@ -162,7 +266,7 @@ namespace Java.Util.Concurrent
 
     #region ICallable<V>
     /// <summary>
-    /// .NET interface skeleton to be manually developed following <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html"/>
+    /// .NET interface for org.mases.jnet.generated.java.util.concurrent.Callable implementing <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html"/>
     /// </summary>
     public partial interface ICallable<V>
     {
@@ -192,10 +296,70 @@ namespace Java.Util.Concurrent
         #endregion
 
         #region Class/Interface conversion operators
+
+        #endregion
+
+        #region Fields
+
+        #endregion
+
+        #region Static methods
+
+        #endregion
+
+        #region Instance methods
         /// <summary>
-        /// Converter from <see cref="Java.Util.Concurrent.Callable{V}"/> to <see cref="Java.Util.Concurrent.Callable"/>
+        /// Handlers initializer for <see cref="Callable"/>
         /// </summary>
-        public static implicit operator Java.Util.Concurrent.Callable(Java.Util.Concurrent.Callable<V> t) => t.Cast<Java.Util.Concurrent.Callable>();
+        protected virtual void InitializeHandlers()
+        {
+            AddEventHandler("call", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>>>(CallEventHandler));
+
+        }
+
+        /// <summary>
+        /// Handler for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/>
+        /// </summary>
+        /// <remarks>If <see cref="OnCall"/> has a value it takes precedence over corresponding class method</remarks>
+        public global::System.Func<V> OnCall { get; set; } = null;
+
+        bool hasOverrideCall = true;
+        void CallEventHandler(object sender, CLRListenerEventArgs<CLREventData<MASES.JNet.Specific.JNetEventResult>> data)
+        {
+            hasOverrideCall = true;
+            var methodToExecute = (OnCall != null) ? OnCall : Call;
+            var executionResult = methodToExecute.Invoke();
+            data.EventData.TypedEventData.SetReturnData(hasOverrideCall, executionResult);
+        }
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html#call()"/>
+        /// </summary>
+        /// <returns><typeparamref name="V"/></returns>
+        /// <exception cref="Java.Lang.Exception"/>
+        public virtual V Call()
+        {
+            hasOverrideCall = false; return default;
+        }
+
+        #endregion
+
+        #region Nested classes
+
+        #endregion
+
+        // TODO: complete the class
+    }
+    #endregion
+
+    #region CallableDirect<V> implementation
+    public partial class CallableDirect<V> : Java.Util.Concurrent.ICallable<V>
+    {
+        #region Constructors
+
+        #endregion
+
+        #region Class/Interface conversion operators
 
         #endregion
 
@@ -213,7 +377,7 @@ namespace Java.Util.Concurrent
         /// </summary>
         /// <returns><typeparamref name="V"/></returns>
         /// <exception cref="Java.Lang.Exception"/>
-        public V Call()
+        public override V Call()
         {
             return IExecuteWithSignature<V>("call", "()Ljava/lang/Object;");
         }
