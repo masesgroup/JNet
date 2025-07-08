@@ -19,7 +19,7 @@
 using MASES.JNet.PowerShell.Cmdlet;
 using System.Management.Automation;
 
-namespace MASES.JNetPS.Cmdlet
+namespace MASES.JNet.PowerShell.Cmdlet
 {
     [Cmdlet(VerbsLifecycle.Start, "JNetPS")]
     public class StartJNetPSCmdletCommand : StartJNetPSCmdletCommandBase<StartJNetPSCmdletCommand, JNetPSCore>

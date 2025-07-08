@@ -23,7 +23,7 @@ using MASES.JNet.PowerShell.Cmdlet;
 using System;
 using System.Management.Automation;
 
-namespace MASES.JNetPS.Cmdlet.JMX
+namespace MASES.JNet.PowerShell.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.New, "MXBeanProxy")]
     public class NewMXBeanProxyCmdletCommand : JNetPSCmdlet<JNetPSCore>

@@ -21,7 +21,7 @@ using Javax.Management.Remote;
 using MASES.JNet.PowerShell.Cmdlet;
 using System.Management.Automation;
 
-namespace MASES.JNetPS.Cmdlet.JMX
+namespace MASES.JNet.PowerShell.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.Add, "NotificationListener")]
     [OutputType(typeof(void))]

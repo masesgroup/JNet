@@ -20,7 +20,7 @@ using Java.Lang;
 using MASES.JNet.PowerShell.Cmdlet;
 using System.Management.Automation;
 
-namespace MASES.JNetPS.Cmdlet
+namespace MASES.JNet.PowerShell.Cmdlet
 {
     [Cmdlet(VerbsCommon.Get, "ClassForName")]
     [OutputType(typeof(Class))]
