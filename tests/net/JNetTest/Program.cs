@@ -16,16 +16,18 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Util;
-using MASES.JNetTest.Common;
-using MASES.JNet.Specific.Extensions;
-using System.Diagnostics;
 using Java.Lang;
-using MASES.JCOBridge.C2JBridge;
-using System.Threading.Tasks;
-using System.Linq;
 using Java.Nio;
+using Java.Util;
+using Java.Util.Concurrent;
+using MASES.JCOBridge.C2JBridge;
+using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNet.Specific;
+using MASES.JNet.Specific.Extensions;
+using MASES.JNetTest.Common;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace MASES.JNetTest
 {
@@ -56,6 +58,8 @@ namespace MASES.JNetTest
             TestIterator();
 
             TestAsyncIterator().Wait();
+
+            TestAsyncOperation().Wait();
         }
 
         static void Initialize()
@@ -113,7 +117,8 @@ namespace MASES.JNetTest
                 ms.WriteByte((byte)(i % byte.MaxValue));
             }
 
-            ByteBuffer bb = (ByteBuffer) ms;
+            ByteBuffer bb = (ByteBuffer)ms;
+            bb.IsDirect();
         }
 
         static void TestByteBuffers()
@@ -266,6 +271,49 @@ namespace MASES.JNetTest
                     System.Console.WriteLine($"Failed to parse: {item}");
                 }
             }
+        }
+
+        static async Task TestAsyncOperation()
+        {
+            System.Console.WriteLine("TestAsyncOperation");
+
+            var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestFuture") as IJavaObject;
+
+            CompletableFuture<String> completableFuture = jClass.Invoke<CompletableFuture<String>>("withComplete");
+
+            String result = await completableFuture.GetAsync();
+            if (result != "Hello")
+            {
+                System.Console.WriteLine($"Failed to compare: {result}");
+            }
+
+            completableFuture = jClass.Invoke<CompletableFuture<String>>("withException");
+
+            result = await completableFuture.GetAsync();
+            if (result != "Hello")
+            {
+                System.Console.WriteLine($"Failed to compare: {result}");
+            }
+
+            /*
+            CompletableFuture<String> completableFuture2 = new();
+
+            using var runnable2 = new Runnable()
+            {
+                OnRun = () =>
+                {
+                    Thread.Sleep(500);
+                    var b = completableFuture2.CompleteExceptionally<UnsupportedOperationException>();
+                    System.Console.WriteLine($"CompleteExceptionally with {b}");
+                }
+            };
+            service.Submit(runnable2);
+            result = await completableFuture2.GetAsync();
+            if (result != "Hello")
+            {
+                System.Console.WriteLine($"Failed to compare: {result}");
+            }
+            */
         }
 
         static void TestIterator()
