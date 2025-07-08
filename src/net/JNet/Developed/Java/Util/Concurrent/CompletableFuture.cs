@@ -17,6 +17,7 @@
 */
 
 using Java.Lang;
+using MASES.JCOBridge.C2JBridge;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -57,10 +58,26 @@ namespace Java.Util.Concurrent
                     }
                     throw;
                 }
-                finally
-                {
-                }
             }, token);
+        }
+
+        /// <summary>
+        /// Specific version of <see cref="CompleteExceptionally(JVMBridgeException)"/>
+        /// </summary>
+        /// <typeparam name="TException">The exception type extending <see cref="JVMBridgeException"/></typeparam>
+        /// <returns>The same value returned from <see cref="CompleteExceptionally(JVMBridgeException)"/></returns>
+        public bool CompleteExceptionally<TException>() where TException : JVMBridgeException
+        {
+            return this.CompleteExceptionally(JVMBridgeException<TException>.Create());
+        }
+
+        /// <summary>
+        /// Specific version of <see cref="ObtrudeException(JVMBridgeException)"/>
+        /// </summary>
+        /// <typeparam name="TException">The exception type extending <see cref="JVMBridgeException"/></typeparam>
+        public void ObtrudeException<TException>() where TException : JVMBridgeException
+        {
+            this.ObtrudeException(JVMBridgeException<TException>.Create());
         }
     }
 
@@ -78,8 +95,8 @@ namespace Java.Util.Concurrent
                 try
                 {
                     token.ThrowIfCancellationRequested();
-                    T result = this.Get();
-                    return Task<T>.FromResult<T>(result);
+                    T _result = this.Get();
+                    return Task<T>.FromResult<T>(_result);
                 }
                 catch (OperationCanceledException)
                 {
@@ -92,58 +109,27 @@ namespace Java.Util.Concurrent
                 }
                 catch (System.Exception e)
                 {
-                    if (e is CancellationException || e is InterruptedException)
-                    {
-                        return Task<T>.FromCanceled<T>(token);
-                    }
-                    throw;
-                }
-                finally
-                {
+                    return Task<T>.FromException<T>(e);
                 }
             }, token);
         }
+        /// <summary>
+        /// Specific version of <see cref="CompleteExceptionally(JVMBridgeException)"/>
+        /// </summary>
+        /// <typeparam name="TException">The exception type extending <see cref="JVMBridgeException"/></typeparam>
+        /// <returns>The same value returned from <see cref="CompleteExceptionally(JVMBridgeException)"/></returns>
+        public bool CompleteExceptionally<TException>() where TException : JVMBridgeException
+        {
+            return this.CompleteExceptionally(JVMBridgeException<TException>.Create());
+        }
 
         /// <summary>
-        /// Execute the <paramref name="process"/> on completion of <paramref name="cf"/> using the <see cref="CancellationToken"/> passed from <paramref name="token"/>
+        /// Specific version of <see cref="ObtrudeException(JVMBridgeException)"/>
         /// </summary>
-        /// <param name="process">The <see cref="Action{T}"/> to be executed on <see cref="CompletableFuture{T}.WhenComplete(Java.Util.Function.BiConsumer)"/> of <paramref name="cf"/></param>
-        /// <param name="token">The optional <see cref="CancellationToken"/> can be passed</param>
-        /// <returns>The <see cref="Task"/> of the <see langword="async"/> pattern</returns>
-        public async Task<T> CompleteAsync(Action<T> process, CancellationToken token = default)
+        /// <typeparam name="TException">The exception type extending <see cref="JVMBridgeException"/></typeparam>
+        public void ObtrudeException<TException>() where TException : JVMBridgeException
         {
-            return await Task<T>.Run(() =>
-            {
-                Java.Lang.Exception _exception = null;
-                ManualResetEvent _resetEvent = new(false);
-                try
-                {
-                    using Java.Util.Function.BiConsumer<T, Java.Lang.Exception> responseWaiter = new()
-                    {
-                        OnAccept = (r, e) =>
-                        {
-                            _exception = e;
-                            _resetEvent.Set();
-                            if (_exception == null)
-                            {
-                                process?.Invoke(r);
-                            }
-                        }
-                    };
-                    var cpStage = this.WhenCompleteAsync(responseWaiter);
-                    _resetEvent.WaitOne();
-                    if (_exception != null) return Task<T>.FromException<T>(_exception);
-                    return Task<T>.FromResult<T>(this.Get());
-                }
-                catch (OperationCanceledException)
-                {
-                    return Task<T>.FromCanceled<T>(token);
-                }
-                finally
-                {
-                    _resetEvent.Dispose();
-                }
-            }, token);
+            this.ObtrudeException(JVMBridgeException<TException>.Create());
         }
     }
 }

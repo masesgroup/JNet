@@ -57,9 +57,6 @@ namespace Java.Util.Concurrent
                     }
                     throw;
                 }
-                finally
-                {
-                }
             }, token);
         }
     }
@@ -97,9 +94,6 @@ namespace Java.Util.Concurrent
                         return Task<V>.FromCanceled<V>(token);
                     }
                     throw;
-                }
-                finally
-                {
                 }
             }, token);
         }
