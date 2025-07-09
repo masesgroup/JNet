@@ -61,7 +61,18 @@ namespace MASES.JNetTest
 
             TestAsyncOperation(false).Wait();
 
-            TestAsyncOperation(true).Wait();
+            try
+            {
+                TestAsyncOperation(true).Wait();
+            }
+            catch (System.AggregateException ae)
+            {
+                if (ae.InnerException is not UnsupportedOperationException)
+                {
+                    System.Console.WriteLine($"Not expected exception: {ae.InnerException.GetType()}");
+                    throw;
+                }
+            }
         }
 
         static void Initialize()
@@ -282,21 +293,11 @@ namespace MASES.JNetTest
             var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestFuture") as IJavaObject;
 
             CompletableFuture<String> completableFuture = jClass.Invoke<CompletableFuture<String>>(withEx ? "withException" : "withComplete");
-            try
+
+            String result = await completableFuture.GetAsync();
+            if (result != "Hello")
             {
-                String result = await completableFuture.GetAsync();
-                if (result != "Hello")
-                {
-                    System.Console.WriteLine($"Failed to compare: {result}");
-                }
-            }
-            catch (System.AggregateException ae)
-            {
-                if (ae.InnerException is not UnsupportedOperationException)
-                {
-                    System.Console.WriteLine($"Not expected exception: {ae.InnerException.GetType()}");
-                    throw;
-                }
+                System.Console.WriteLine($"Failed to compare: {result}");
             }
         }
 
