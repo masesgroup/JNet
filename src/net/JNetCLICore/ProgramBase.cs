@@ -20,6 +20,7 @@ using MASES.CLIParser;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JNet;
 using MASES.JNet.Specific;
+using MASES.JNet.Specific.CLI;
 using MASES.JNet.Specific.Extensions;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
 using Microsoft.CodeAnalysis.Scripting;
@@ -113,7 +114,7 @@ namespace MASES.JNet.CLI
             try
             {
                 JNetCLICoreHelper.DefaultClassToRun = main.DefaultClassToRun;
-                RunnerType.RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(JNetCoreBase<TRunner>.CreateGlobalInstance));
+                RunnerType.RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(SetupJVMWrapper<TRunner>.CreateGlobalInstance));
                 await main.Start();
             }
             catch (TargetInvocationException tie)

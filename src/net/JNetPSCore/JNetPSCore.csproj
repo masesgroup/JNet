@@ -14,7 +14,6 @@
 		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
 	</PropertyGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\JNetCLICore\JNetCLICore.csproj" />
 		<ProjectReference Include="..\JNet\JNet.csproj">
 			<IncludeAssets>All</IncludeAssets>
 			<PrivateAssets>None</PrivateAssets>

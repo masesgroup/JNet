@@ -23,13 +23,25 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 
-namespace MASES.JNet.CLI
+namespace MASES.JNet.Specific.CLI
 {
     /// <summary>
-    /// Public entry point of <see cref="JNetCLICore{T}"/>
+    /// Helper class for CLI operations
     /// </summary>
     public static class JNetCLICoreHelper
     {
+        class CLIParam
+        {
+            // ReflectorArgs
+            public static string[] ClassToRun = new string[] { "ClassToRun", "c" };
+            public static string[] Interactive = new string[] { "Interactive", "i" };
+            public static string[] RunCommand = new string[] { "RunCommand", "r" };
+            public static string[] Script = new string[] { "Script", "s" };
+            public static string[] JarList = new string[] { "JarList", "jl" };
+            public static string[] NamespaceList = new string[] { "NamespaceList", "nl" };
+            public static string[] ImportList = new string[] { "ImportList", "il" };
+        }
+
         #region Initialization
         /// <summary>
         /// Adds command line arguments on the set managed from <see cref="JNetCoreBase{T}.CommandLineArguments"/>
@@ -171,6 +183,7 @@ namespace MASES.JNet.CLI
         /// Sets the global value of class to run
         /// </summary>
         public static string ApplicationClassToRun { get; set; }
+
         /// <summary>
         /// value can be overridden in subclasses
         /// </summary>

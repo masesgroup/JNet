@@ -17,13 +17,11 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
-using MASES.JNet;
-using MASES.JNet.CLI;
 using MASES.JNet.PowerShell.Cmdlet;
+using MASES.JNet.Specific.CLI;
 using MASES.JNet.Specific.Extensions;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Management.Automation;

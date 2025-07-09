@@ -18,6 +18,7 @@
 
 using MASES.CLIParser;
 using MASES.JNet;
+using MASES.JNet.Specific.CLI;
 using System;
 using System.Collections.Generic;
 using System.IO;

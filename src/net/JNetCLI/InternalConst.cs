@@ -18,17 +18,6 @@
 
 namespace MASES.JNetCLI
 {
-    class CLIParam
-    {
-        // ReflectorArgs
-        public static string[] Interactive = new string[] { "Interactive", "i" };
-        public static string[] RunCommand = new string[] { "RunCommand", "r" };
-        public static string[] Script = new string[] { "Script", "s" };
-        public static string[] JarList = new string[] { "JarList", "jl" };
-        public static string[] NamespaceList = new string[] { "NamespaceList", "nl" };
-        public static string[] ImportList = new string[] { "ImportList", "il" };
-    }
-
     class InternalConst
     {
 
