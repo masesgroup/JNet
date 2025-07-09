@@ -59,7 +59,20 @@ namespace MASES.JNetTest
 
             TestAsyncIterator().Wait();
 
-            TestAsyncOperation().Wait();
+            TestAsyncOperation(false).Wait();
+
+            try
+            {
+                TestAsyncOperation(true).Wait();
+            }
+            catch (System.AggregateException ae)
+            {
+                if (ae.InnerException is not UnsupportedOperationException)
+                {
+                    System.Console.WriteLine($"Not expected exception: {ae.InnerException.GetType()}");
+                    throw;
+                }
+            }
         }
 
         static void Initialize()
@@ -273,47 +286,19 @@ namespace MASES.JNetTest
             }
         }
 
-        static async Task TestAsyncOperation()
+        static async Task TestAsyncOperation(bool withEx)
         {
             System.Console.WriteLine("TestAsyncOperation");
 
             var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestFuture") as IJavaObject;
 
-            CompletableFuture<String> completableFuture = jClass.Invoke<CompletableFuture<String>>("withComplete");
+            CompletableFuture<String> completableFuture = jClass.Invoke<CompletableFuture<String>>(withEx ? "withException" : "withComplete");
 
             String result = await completableFuture.GetAsync();
             if (result != "Hello")
             {
                 System.Console.WriteLine($"Failed to compare: {result}");
             }
-
-            completableFuture = jClass.Invoke<CompletableFuture<String>>("withException");
-
-            result = await completableFuture.GetAsync();
-            if (result != "Hello")
-            {
-                System.Console.WriteLine($"Failed to compare: {result}");
-            }
-
-            /*
-            CompletableFuture<String> completableFuture2 = new();
-
-            using var runnable2 = new Runnable()
-            {
-                OnRun = () =>
-                {
-                    Thread.Sleep(500);
-                    var b = completableFuture2.CompleteExceptionally<UnsupportedOperationException>();
-                    System.Console.WriteLine($"CompleteExceptionally with {b}");
-                }
-            };
-            service.Submit(runnable2);
-            result = await completableFuture2.GetAsync();
-            if (result != "Hello")
-            {
-                System.Console.WriteLine($"Failed to compare: {result}");
-            }
-            */
         }
 
         static void TestIterator()
