@@ -19,7 +19,7 @@
 using MASES.JNet;
 using System;
 
-namespace MASES.JNetPS
+namespace MASES.JNet.PowerShell
 {
     /// <summary>
     /// Concrete implementation of <see cref="JNetCore{T}"/>

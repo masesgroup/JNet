@@ -25,7 +25,7 @@ using System;
 using System.Collections.Generic;
 using System.Management.Automation;
 
-namespace MASES.JNetPS.Cmdlet.JMX
+namespace MASES.JNet.PowerShell.Cmdlet.JMX
 {
     [Cmdlet(VerbsCommon.New, "ObjectName")]
     [OutputType(typeof(ObjectName))]

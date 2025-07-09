@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
 		<AssemblyName>MASES.JNetPS</AssemblyName>
-		<RootNamespace>MASES.JNetPS</RootNamespace>
+		<RootNamespace>MASES.JNet.PowerShell</RootNamespace>
 		<Title>JNetPS - JNet (.NET suite for Java™/JVM™) PowerShell command line interface</Title>
 		<Description>JNetPS - JNet (.NET suite for Java™/JVM™) PowerShell command line interface</Description>
 		<Product>JNetPS</Product>
