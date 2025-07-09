@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<Import Project="..\Common\Common.props" />
 	<PropertyGroup>
-		<PackageType>DotnetTool</PackageType>
 		<AssemblyName>MASES.JNetCLICore</AssemblyName>
 		<RootNamespace>MASES.JNet.CLI</RootNamespace>
 		<Title>JNetCLI - JNet (.NET suite for Java™/JVM™) command line base library</Title>
