@@ -322,7 +322,9 @@ namespace MASES.JNet.Specific.CLI
             }
             _ImportList = importList;
 
-            if (!Interactive && Script == null && _classToRun != null) // set default to Launcher
+            if (!Interactive 
+                && Script == null 
+                && string.IsNullOrWhiteSpace(_classToRun)) // set default to DefaultClassToRun since nothing was set
             {
                 _classToRun = DefaultClassToRun;
             }

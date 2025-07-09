@@ -258,7 +258,9 @@ namespace MASES.JNet
         {
             ClassPathBuilder builder = new();
 
-            if (PathToParse != null) builder.Add(PathToParse.ToArray());
+            var pathToParse = PathToParse;
+
+            if (pathToParse != null) builder.Add(pathToParse.ToArray());
 
             classPath = builder.Build();
 
