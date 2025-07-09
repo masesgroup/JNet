@@ -33,6 +33,7 @@ namespace MASES.JNet.Specific.CLI
         class CLIParam
         {
             // ReflectorArgs
+            public static string[] NoLogo = new string[] { "NoLogo", "nl" };
             public static string[] ClassToRun = new string[] { "ClassToRun", "c" };
             public static string[] Interactive = new string[] { "Interactive", "i" };
             public static string[] RunCommand = new string[] { "RunCommand", "r" };
@@ -48,11 +49,18 @@ namespace MASES.JNet.Specific.CLI
         /// </summary>
         /// <param name="args">The base arguments to be integrated with command-line options</param>
         /// <returns>The new <see cref="IEnumerable{T}"/> of <see cref="IArgumentMetadata"/></returns>
-        public static IEnumerable<IArgumentMetadata> SetCommandLineArguments(this IEnumerable<IArgumentMetadata> args)
+        public static IEnumerable<IArgumentMetadata> SetCLICommandLineArguments(this IEnumerable<IArgumentMetadata> args)
         {
             var lst = new List<IArgumentMetadata>(args);
             lst.AddRange(new IArgumentMetadata[]
             {
+                new ArgumentMetadata<string>()
+                {
+                    Name = CLIParam.NoLogo[0],
+                    ShortName = CLIParam.NoLogo[1],
+                    Type = ArgumentType.Single,
+                    Help = "Do not display initial informative string",
+                },
                 new ArgumentMetadata<string>()
                 {
                     Name = CLIParam.ClassToRun[0],
@@ -104,7 +112,11 @@ namespace MASES.JNet.Specific.CLI
             });
             return lst;
         }
-
+        /// <summary>
+        /// Extract all <see cref="Assembly"/> associated to <typeparamref name="T"/>
+        /// </summary>
+        /// <typeparam name="T">The <see cref="Type"/> to parse</typeparam>
+        /// <returns>An <see cref="IEnumerable{T}"/> containing the <see cref="Assembly"/> found from <typeparamref name="T"/></returns>
         public static IEnumerable<Assembly> ReferencesOf<T>()
         {
             List<Assembly> assemblies = new List<Assembly>();
@@ -194,21 +206,45 @@ namespace MASES.JNet.Specific.CLI
         public static string ClassToRun { get { return ApplicationClassToRun ?? _classToRun; } }
 
         static bool _Interactive;
+        /// <summary>
+        /// <see langword="true"/> if the CLI was requested in interactive mode
+        /// </summary>
         public static bool Interactive => _Interactive;
 
         static string _RunCommand;
+        /// <summary>
+        /// The Java Main-Class to run
+        /// </summary>
         public static string RunCommand => _RunCommand;
 
+        static bool _NoLogo;
+        /// <summary>
+        /// <see langword="true"/> if the CLI shall not display initial informative string
+        /// </summary>
+        public static bool NoLogo => _NoLogo;
+
         static string _Script;
+        /// <summary>
+        /// The script to be executed
+        /// </summary>
         public static string Script => _Script;
 
         static IEnumerable<string> _JarList;
+        /// <summary>
+        /// The list of JARs to be added to the classpath
+        /// </summary>
         public static IEnumerable<string> JarList => _JarList;
 
         static IEnumerable<string> _NamespaceList;
+        /// <summary>
+        /// The set of namespaces to be associated to the execution
+        /// </summary>
         public static IEnumerable<string> NamespaceList => _NamespaceList;
 
         static IEnumerable<string> _ImportList;
+        /// <summary>
+        /// The set of imports to be associated to the execution
+        /// </summary>
         public static IEnumerable<string> ImportList => _ImportList;
 
         /// <summary>
@@ -218,7 +254,7 @@ namespace MASES.JNet.Specific.CLI
         /// <param name="runner">The instance extending <see cref="JNetCoreBase{T}"/></param>
         /// <param name="result">The list of remaining command-line arguments</param>
         /// <param name="settingsCallback">Callback invoked to setup parameters based on <see cref="ClassToRun"/></param>
-        public static string[] ProcessParsedArgs<T>(this JNetCoreBase<T> runner, string[] result, Action<string> settingsCallback = null) where T : JNetCoreBase<T>
+        public static string[] ProcessCLIParsedArgs<T>(this JNetCoreBase<T> runner, string[] result, Action<string> settingsCallback = null) where T : JNetCoreBase<T>
         {
             IEnumerable<IArgumentMetadataParsed> parsedArgs = runner.ParsedArgs;
 
@@ -227,6 +263,8 @@ namespace MASES.JNet.Specific.CLI
             _Interactive = parsedArgs.Exist(CLIParam.Interactive[0]);
 
             _RunCommand = parsedArgs.Get<string>(CLIParam.RunCommand[0]);
+
+            _NoLogo = parsedArgs.Exist(CLIParam.NoLogo[0]);
 
             _Script = parsedArgs.Get<string>(CLIParam.Script[0]);
 
@@ -301,7 +339,7 @@ namespace MASES.JNet.Specific.CLI
         /// </summary>
         /// <param name="args">The list of paths to be extended</param>
         /// <returns>The resulting paths</returns>
-        public static IList<string> SetPathToParse(this IList<string> args)
+        public static IList<string> SetCLIPathToParse(this IList<string> args)
         {
             foreach (var item in _JarList)
             {

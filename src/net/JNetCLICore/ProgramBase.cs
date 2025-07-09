@@ -99,9 +99,25 @@ namespace MASES.JNet.CLI
                 var result = await script.RunAsync();
                 if (result.ReturnValue != null) Console.WriteLine(result.ReturnValue);
             }
+            else if (JNetCLICoreHelper.MainClassToRun != null)
+            {
+                try
+                {
+                    var res = RunnerType.GetStaticPropertyOn(typeof(SetupJVMWrapper), nameof(SetupJVMWrapper.FilteredArgs));
+                    RunnerType.RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(SetupJVMWrapper<TRunner>.Launch), (object[])res);
+                }
+                catch (TargetInvocationException tie)
+                {
+                    throw tie.InnerException;
+                }
+                catch (JCOBridge.C2JBridge.JVMInterop.JavaException je)
+                {
+                    throw je.Convert();
+                }
+            }
             else if (!string.IsNullOrEmpty(JNetCLICoreHelper.RunCommand))
             {
-                var res = RunnerType.GetStaticPropertyOn(typeof(SetupJVMWrapper), nameof(JNetCoreBase<TRunner>.FilteredArgs));
+                var res = RunnerType.GetStaticPropertyOn(typeof(SetupJVMWrapper), nameof(SetupJVMWrapper.FilteredArgs));
                 GenericCommand.CreateAndLaunch(JNetCLICoreHelper.RunCommand, (object[])res);
             }
             else ShowHelp();
@@ -110,6 +126,8 @@ namespace MASES.JNet.CLI
         public static async Task InternalMain(string[] args)
         {
             var main = Activator.CreateInstance<TProgram>();
+
+            if (!JNetCLICoreHelper.NoLogo) Console.WriteLine(main.EntryLine);
 
             try
             {
@@ -160,7 +178,6 @@ namespace MASES.JNet.CLI
 
         public virtual void ShowHelp(string errorString = null)
         {
-            Console.WriteLine(EntryLine);
             Console.WriteLine();
             if (!string.IsNullOrEmpty(errorString))
             {
