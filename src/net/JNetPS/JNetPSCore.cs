@@ -16,15 +16,14 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JNet;
-using System;
+using MASES.JNet.CLI;
 
 namespace MASES.JNet.PowerShell
 {
     /// <summary>
     /// Concrete implementation of <see cref="JNetCore{T}"/>
     /// </summary>
-    public class JNetPSCore : JNetCore<JNetPSCore>
+    public class JNetPSCore : JNetCLICore<JNetPSCore>
     {
 #if NET6_0_OR_GREATER
         public static void Main(string[] args) { } // used in conjunction with project of executable type to produce artifacts with all needed assemblies

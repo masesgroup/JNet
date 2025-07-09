@@ -23,6 +23,9 @@
 	<Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
 		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(PublishDir)\jars" />
 	</Target>
+	<ItemGroup>
+	  <Compile Include="..\JNetCLI\JNetCLICore.cs" Link="JNetCLICore.cs" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<ProjectReference Include="..\JNetPSCore\JNetPSCore.csproj">

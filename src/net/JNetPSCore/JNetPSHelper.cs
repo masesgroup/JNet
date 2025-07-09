@@ -18,6 +18,7 @@
 
 using MASES.JCOBridge.C2JBridge;
 using MASES.JNet;
+using MASES.JNet.CLI;
 using MASES.JNet.PowerShell.Cmdlet;
 using MASES.JNet.Specific.Extensions;
 using System;
@@ -350,6 +351,11 @@ namespace MASES.JNet.PowerShell
         /// Sets <see cref="JNetCoreBase{T}.ApplicationLogClassPath"/>
         /// </summary>
         public static void SetLogClassPath(bool? logClassPath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationLogClassPath), logClassPath); }
+        /// <summary>
+        /// Sets <see cref="JNetCLICoreHelper.ApplicationClassToRun"/>
+        /// </summary>
+        public static void SetClassToRun(string classToRun) { JNetPSHelper<TClass>.Set(typeof(JNetCLICoreHelper), nameof(JNetCLICoreHelper.ApplicationClassToRun), classToRun); }
+
         /// <summary>
         /// Invokes <see cref="SetupJVMWrapper{T}.CreateGlobalInstance"/> to start engine
         /// </summary>
