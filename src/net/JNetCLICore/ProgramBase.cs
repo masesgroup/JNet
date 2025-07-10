@@ -108,8 +108,7 @@ namespace MASES.JNet.CLI
             {
                 try
                 {
-                    var res = RunnerType.GetStaticPropertyOn(typeof(SetupJVMWrapper), nameof(SetupJVMWrapper.FilteredArgs));
-                    RunnerType.RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(SetupJVMWrapper<TRunner>.Launch), (object[])res);
+                    RunnerType.RunStaticMethodOn(typeof(JNetCoreBase<>), nameof(JNetCoreBase<TRunner>.LaunchWithFilteredArgs), JNetCLICoreHelper.MainClassToRun);
                 }
                 catch (TargetInvocationException tie)
                 {

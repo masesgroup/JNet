@@ -303,6 +303,16 @@ namespace MASES.JNet
         }
 
         /// <summary>
+        /// Launch the <typeparamref name="TClass"/> class with the <see cref="SetupJVMWrapper.FilteredArgs"/> arguments
+        /// </summary>
+        /// <typeparam name="TClass">A type which is defined as Main-Class</typeparam>
+        public static void LaunchWithFilteredArgs<TClass>()
+            where TClass : IJVMBridgeMain
+        {
+            Launch<TClass>(FilteredArgs);
+        }
+
+        /// <summary>
         /// Launch the <typeparamref name="TClass"/> class with the <paramref name="args"/> arguments
         /// </summary>
         /// <typeparam name="TClass">A type which is defined as Main-Class</typeparam>
@@ -311,6 +321,15 @@ namespace MASES.JNet
             where TClass : IJVMBridgeMain
         {
             Launch(typeof(TClass), args);
+        }
+
+        /// <summary>
+        /// Launch the <paramref name="type"/> with the <see cref="SetupJVMWrapper.FilteredArgs"/> arguments
+        /// </summary>
+        /// <param name="type">The <see cref="Type"/> extending <see cref="IJVMBridgeMain"/></param>
+        public static void LaunchWithFilteredArgs(Type type)
+        {
+            Launch(type, FilteredArgs);
         }
 
         /// <summary>

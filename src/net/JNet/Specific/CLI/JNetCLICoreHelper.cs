@@ -297,7 +297,9 @@ namespace MASES.JNet.Specific.CLI
 
             _Script = parsedArgs.Get<string>(CLIParam.Script[0]);
 
-            if (string.IsNullOrWhiteSpace(_classToRun) && result != null && result.Length > 0)
+            if (string.IsNullOrWhiteSpace(_classToRun) 
+                && string.IsNullOrWhiteSpace(DefaultClassToRun)
+                && result != null && result.Length > 0)
             {
                 // try to use first argument as ClassToRun
                 _classToRun = result[0];
