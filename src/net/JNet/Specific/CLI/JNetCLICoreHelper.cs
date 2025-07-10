@@ -17,7 +17,9 @@
 */
 
 using MASES.CLIParser;
+using MASES.JCOBridge.C2JBridge;
 using MASES.JNet;
+using MASES.JNet.Specific.Extensions;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -143,6 +145,33 @@ namespace MASES.JNet.Specific.CLI
                 runner.ImportPackage(item);
             }
         }
+        /// <summary>
+        /// Retrieves the list of classes usable as Main-Class
+        /// </summary>
+        /// <typeparam name="TRunner">The class extending <see cref="JNetCoreBase{T}"/></typeparam>
+        /// <returns>A <see cref="IDictionary{TKey, TValue}"/> of class name and corresponding <see cref="Type"/></returns>
+        public static IDictionary<string, Type> MainClassesFrom<TRunner>() where TRunner : JNetCoreBase<TRunner>
+        {
+            Type RunnerType = typeof(TRunner);
+            Dictionary<string, Type> implementedClasses = new Dictionary<string, Type>();
+            foreach (var reference in JNetCLICoreHelper.ReferencesOf<TRunner>())
+            {
+                IDictionary<string, Type> classes = RunnerType.RunStaticMethodOn(typeof(SetupJVMWrapper), nameof(JNetCoreBase<TRunner>.GetMainClasses), reference) as IDictionary<string, Type>;
+                foreach (var cls in classes)
+                {
+                    if (!implementedClasses.ContainsKey(cls.Key))
+                    {
+                        implementedClasses.Add(cls.Key, cls.Value);
+                    }
+                    else if (implementedClasses[cls.Key].FullName != cls.Value.FullName)
+                    {
+                        implementedClasses.Add(cls.Value.FullName, cls.Value);
+                    }
+                }
+            }
+
+            return implementedClasses;
+        }
 
         /// <summary>
         /// Prepare <see cref="MainClassToRun"/> property
@@ -150,33 +179,33 @@ namespace MASES.JNet.Specific.CLI
         /// <typeparam name="T">A <see cref="Type"/> contained in the <see cref="Assembly"/> where <paramref name="className"/> shall be searched</typeparam>
         /// <param name="on">A <see cref="Type"/> contained in the <see cref="Assembly"/> where <paramref name="className"/> shall be searched</param>
         /// <param name="className">The class to search</param>
-        public static void PrepareMainClassToRun<T>(this T on, string className)
+        public static void PrepareMainClassToRun<T>(this JNetCoreBase<T> on, string className) where T : JNetCoreBase<T>
         {
-            PrepareMainClassToRun(typeof(T).Assembly, className);
+            PrepareMainClassToRun(MainClassesFrom<T>(), className);
         }
 
         /// <summary>
         /// Prepare <see cref="MainClassToRun"/> property
         /// </summary>
-        /// <param name="on">The <see cref="Assembly"/> to search the class in</param>
+        /// <param name="on">The <see cref="IDictionary{TKey, TValue}"/> of class name and corresponding <see cref="Type"/> to search the class in</param>
         /// <param name="className">The class to search</param>
         /// <exception cref="ArgumentNullException">If <paramref name="on"/> is <see langword="null"/></exception>
         /// <exception cref="ArgumentException"></exception>
-        public static void PrepareMainClassToRun(this Assembly on, string className)
+        public static void PrepareMainClassToRun(this IDictionary<string, Type> on, string className)
         {
             if (string.IsNullOrWhiteSpace(className)) return;
             if (on == null) throw new ArgumentNullException(nameof(on), $"Requested class {className} is not applicable.");
             var invariantLowClassName = className.ToLowerInvariant();
             Type type = null;
-            foreach (var item in on.ExportedTypes)
+            foreach (var item in on)
             {
-                if (item.Name.ToLowerInvariant() == invariantLowClassName
-                    || item.FullName.ToLowerInvariant() == invariantLowClassName)
+                if (item.Key.ToLowerInvariant() == invariantLowClassName)
                 {
-                    type = item;
+                    type = item.Value;
                     break;
                 }
             }
+
             _mainClassToRun = type ?? throw new ArgumentException($"Requested class {className} is not a valid class name.");
         }
 
@@ -322,8 +351,8 @@ namespace MASES.JNet.Specific.CLI
             }
             _ImportList = importList;
 
-            if (!Interactive 
-                && Script == null 
+            if (!Interactive
+                && Script == null
                 && string.IsNullOrWhiteSpace(_classToRun)) // set default to DefaultClassToRun since nothing was set
             {
                 _classToRun = DefaultClassToRun;

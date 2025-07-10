@@ -34,6 +34,11 @@ using System.Threading.Tasks;
 
 namespace MASES.JNet.CLI
 {
+    /// <summary>
+    /// A base classs to be used in CLI executable
+    /// </summary>
+    /// <typeparam name="TRunner">The class extending <see cref="JNetCoreBase{T}"/></typeparam>
+    /// <typeparam name="TProgram">The class extending <see cref="ProgramBase{TRunner, TProgram}"/></typeparam>
     public class ProgramBase<TRunner, TProgram>
         where TRunner : JNetCoreBase<TRunner>
         where TProgram : ProgramBase<TRunner, TProgram>
@@ -184,19 +189,11 @@ namespace MASES.JNet.CLI
                 Console.WriteLine("Error: {0}", errorString);
             }
 
-            Dictionary<string, Type> implementedClasses = new Dictionary<string, Type>();
+            IDictionary<string, Type> implementedClasses = JNetCLICoreHelper.MainClassesFrom<TRunner>();
             StringBuilder avTypes = new();
-            foreach (var reference in JNetCLICoreHelper.ReferencesOf<TRunner>())
+            foreach (var reference in implementedClasses)
             {
-                IDictionary<string, Type> classes = RunnerType.RunStaticMethodOn(typeof(SetupJVMWrapper), nameof(JNetCoreBase<TRunner>.GetMainClasses), reference) as IDictionary<string, Type>;
-                foreach (var cls in classes)
-                {
-                    if (!implementedClasses.ContainsKey(cls.Key))
-                    {
-                        implementedClasses.Add(cls.Key, cls.Value);
-                        avTypes.AppendFormat("{0}, ", cls.Key);
-                    }
-                }
+                avTypes.AppendFormat("{0}, ", reference.Key);
             }
 
             Console.WriteLine(ProgramName + " -ClassToRun classname <Specific arguments> <JCOBridgeArguments> <ClassArguments>");
