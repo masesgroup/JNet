@@ -217,16 +217,18 @@ namespace MASES.JNet
             get
             {
                 IDictionary<string, string> opt = new Dictionary<string, string>();
-                if (base.JVMOptions != null)
+                var jvmOptions = base.JVMOptions;
+                if (jvmOptions != null)
                 {
-                    foreach (var item in base.JVMOptions)
+                    foreach (var item in jvmOptions)
                     {
                         opt.Add(new KeyValuePair<string, string>(ReplaceEnvironmentVariable(item.Key), ReplaceEnvironmentVariable(item.Value)));
                     }
                 }
-                if (Options != null)
+                var options = Options;
+                if (options != null)
                 {
-                    foreach (var item in Options)
+                    foreach (var item in options)
                     {
                         try
                         {

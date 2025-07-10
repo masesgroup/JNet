@@ -50,6 +50,8 @@ namespace MASES.JNet.CLI
         {
             if (JNetCLICoreHelper.Interactive)
             {
+                ShowLogo("Interactive shell");
+
                 ScriptOptions options = ScriptOptions.Default.WithReferences(JNetCLICoreHelper.ReferencesOf<TRunner>())
                                                              .WithImports(JNetCLICoreHelper.NamespaceList);
                 ScriptState<object> state = null;
@@ -93,6 +95,8 @@ namespace MASES.JNet.CLI
             }
             else if (!string.IsNullOrEmpty(JNetCLICoreHelper.Script))
             {
+                ShowLogo("Script mode");
+
                 if (!File.Exists(JNetCLICoreHelper.Script)) throw new FileNotFoundException("A valid file must be provided", JNetCLICoreHelper.Script);
 
                 var scriptCode = File.ReadAllText(JNetCLICoreHelper.Script);
@@ -124,14 +128,16 @@ namespace MASES.JNet.CLI
                 var res = RunnerType.GetStaticPropertyOn(typeof(SetupJVMWrapper), nameof(SetupJVMWrapper.FilteredArgs));
                 GenericCommand.CreateAndLaunch(JNetCLICoreHelper.RunCommand, (object[])res);
             }
-            else ShowHelp();
+            else
+            {
+                ShowLogo();
+                ShowHelp();
+            }
         }
 
         public static async Task InternalMain(string[] args)
         {
             var main = Activator.CreateInstance<TProgram>();
-
-            if (!JNetCLICoreHelper.NoLogo) Console.WriteLine(main.EntryLine);
 
             try
             {
@@ -179,6 +185,14 @@ namespace MASES.JNet.CLI
         public virtual string ExampleLines => ProgramName;
 
         public virtual string DefaultClassToRun => null;
+
+        public virtual void ShowLogo(string logoTrailer = null)
+        {
+            if (!JNetCLICoreHelper.NoLogo)
+            {
+                Console.WriteLine(EntryLine + (string.IsNullOrWhiteSpace(logoTrailer) ? string.Empty : $" - {logoTrailer}"));
+            }
+        }
 
         public virtual void ShowHelp(string errorString = null)
         {
