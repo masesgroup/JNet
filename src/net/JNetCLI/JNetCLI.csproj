@@ -19,10 +19,10 @@
 		<None Include="..\..\documentation\articles\usagecli.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild">
-		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(OutDir)\jars" />
+		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(OutDir)\jars\%(RecursiveDir)" />
 	</Target>
 	<Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
-		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(PublishDir)\jars" />
+		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(PublishDir)\jars\%(RecursiveDir)" />
 	</Target>
 	<ItemGroup>
 		<ProjectReference Include="..\JNetCLICore\JNetCLICore.csproj">

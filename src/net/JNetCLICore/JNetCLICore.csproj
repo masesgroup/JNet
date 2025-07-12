@@ -16,12 +16,6 @@
 	<ItemGroup>
 		<None Include="..\..\documentation\articles\usagecli.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
-	<Target Name="CopyCustomContent" AfterTargets="AfterBuild">
-		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(OutDir)\jars" />
-	</Target>
-	<Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
-		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(PublishDir)\jars" />
-	</Target>
 	<ItemGroup>
 		<ProjectReference Include="..\JNet\JNet.csproj">
 			<IncludeAssets>All</IncludeAssets>
