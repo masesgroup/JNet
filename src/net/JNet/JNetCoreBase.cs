@@ -303,6 +303,7 @@ namespace MASES.JNet
         /// <param name="jvmOptionValue">The value of <paramref name="jvmOptionName"/> if it is an option like name=value</param>
         public static void AddJVMOption(string jvmOptionName, string jvmOptionValue = null)
         {
+            if (string.IsNullOrWhiteSpace(jvmOptionName)) return;
             ApplicationJVMExtraOptions.Add(jvmOptionName, jvmOptionValue);
         }
 

@@ -134,6 +134,22 @@ namespace MASES.JNet.PowerShell.Cmdlet
             HelpMessage = "Set to true to print ClassPath")]
         public bool? LogClassPath { get; set; }
 
+        /// <inheritdoc cref="JNetCoreBase{TCore}.ApplicationJVMExtraOptions" />
+        [Parameter(
+            // Mandatory = true,
+            ValueFromPipeline = true,
+            ValueFromPipelineByPropertyName = true,
+            HelpMessage = "Defines extra options to be passed to the starting JVM")]
+        public string[] ExtraJVMOptions { get; set; }
+
+        /// <inheritdoc cref="JNetCoreBase{TCore}.ApplicationJVMExtraOptions" />
+        [Parameter(
+            // Mandatory = true,
+            ValueFromPipeline = true,
+            ValueFromPipelineByPropertyName = true,
+            HelpMessage = "Defines extra options inkey=value format to be passed to the starting JVM")]
+        public string[] ExtraJVMKVOptions { get; set; }
+
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessCommand()
         {
@@ -149,10 +165,38 @@ namespace MASES.JNet.PowerShell.Cmdlet
             JNetPSHelper<TCore>.SetJavaDebugOpts(JavaDebugOpts);
             JNetPSHelper<TCore>.SetHeapSize(HeapSize);
             JNetPSHelper<TCore>.SetInitialHeapSize(InitialHeapSize);
+            JNetPSHelper<TCore>.SetLogClassPath(LogClassPath);
+            foreach (var item in ExtraJVMOptions)
+            {
+                if (string.IsNullOrWhiteSpace(item)) continue;
+                AddJVMOption(item);
+            }
+            foreach (var item in ExtraJVMKVOptions)
+            {
+                if (string.IsNullOrWhiteSpace(item)) continue;
+                var index = item.IndexOf("=");
+
+                if (index != -1)
+                {
+                    var key = item.Substring(index);
+                    var value = item.Substring(index + 1, item.Length);
+                    AddJVMOption(key, value);
+                }
+            }
 
             OnBeforeCreateGlobalInstance();
             CreateGlobalInstance();
             OnAfterCreateGlobalInstance();
+        }
+        /// <summary>
+        /// Adds <paramref name="jvmOptionName"/>, with optional <paramref name="jvmOptionValue"/>, to <see cref="ApplicationJVMExtraOptions"/>
+        /// </summary>
+        /// <param name="jvmOptionName">The JVM option name</param>
+        /// <param name="jvmOptionValue">The value of <paramref name="jvmOptionName"/> if it is an option like name=value</param>
+        protected void AddJVMOption(string jvmOptionName, string jvmOptionValue = null)
+        {
+            if (string.IsNullOrWhiteSpace(jvmOptionName)) return;
+            JNetPSHelper<TCore>.AddJVMOption(jvmOptionName, jvmOptionValue);
         }
         /// <summary>
         /// Executes the code before invoke <see cref="CreateGlobalInstance"/>
