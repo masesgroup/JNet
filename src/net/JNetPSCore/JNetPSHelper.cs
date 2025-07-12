@@ -401,5 +401,14 @@ namespace MASES.JNet.PowerShell
         {
             return typeof(TClass).RunStaticMethodOn(typeof(JNetCoreBase<>), nameof(JNetCoreBase<TClass>.New), className, args);
         }
+        /// <summary>
+        /// Adds <paramref name="jvmOptionName"/>, with optional <paramref name="jvmOptionValue"/>, to <see cref="ApplicationJVMExtraOptions"/>
+        /// </summary>
+        /// <param name="jvmOptionName">The JVM option name</param>
+        /// <param name="jvmOptionValue">The value of <paramref name="jvmOptionName"/> if it is an option like name=value</param>
+        public static void AddJVMOption(string jvmOptionName, string jvmOptionValue = null)
+        {
+            typeof(TClass).RunStaticMethodOn(typeof(JNetCoreBase<>), nameof(JNetCoreBase<TClass>.AddJVMOption), jvmOptionName, jvmOptionValue);
+        }
     }
 }

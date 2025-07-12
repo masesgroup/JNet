@@ -19,6 +19,7 @@
 using MASES.CLIParser;
 using MASES.JCOBridge.C2JBridge;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -96,6 +97,10 @@ namespace MASES.JNet
         /// Sets the global value of the log class path
         /// </summary>
         public static bool? ApplicationLogClassPath { get; set; }
+        /// <summary>
+        /// Generic extra options to be used from JVM
+        /// </summary>
+        public static IDictionary<string, string> ApplicationJVMExtraOptions { get; } = new ConcurrentDictionary<string, string>();
 
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_LicensePath.htm" />
         public override string LicensePath { get { return ApplicationLicensePath ?? base.LicensePath; } }
@@ -236,8 +241,19 @@ namespace MASES.JNet
                         }
                         catch (Exception e)
                         {
-                            throw new ArgumentException($"Cannot add option {item.Key}: {e.Message}");
+                            throw new ArgumentException($"Cannot add option {item.Key}: {e.Message}", e);
                         }
+                    }
+                }
+                foreach (var item in ApplicationJVMExtraOptions)
+                {
+                    try
+                    {
+                        opt.Add(new KeyValuePair<string, string>(ReplaceEnvironmentVariable(item.Key), ReplaceEnvironmentVariable(item.Value)));
+                    }
+                    catch (Exception e)
+                    {
+                        throw new ArgumentException($"Cannot add option {item.Key}: {e.Message}", e);
                     }
                 }
                 return opt;
@@ -280,6 +296,16 @@ namespace MASES.JNet
         #endregion
 
         #region Auxiliary Methods
+        /// <summary>
+        /// Adds <paramref name="jvmOptionName"/>, with optional <paramref name="jvmOptionValue"/>, to <see cref="ApplicationJVMExtraOptions"/>
+        /// </summary>
+        /// <param name="jvmOptionName">The JVM option name</param>
+        /// <param name="jvmOptionValue">The value of <paramref name="jvmOptionName"/> if it is an option like name=value</param>
+        public static void AddJVMOption(string jvmOptionName, string jvmOptionValue = null)
+        {
+            ApplicationJVMExtraOptions.Add(jvmOptionName, jvmOptionValue);
+        }
+
         /// <inheritdoc cref="Parser.HelpInfo(int?)"/>
         public static string HelpInfo(int? width = null) => Parser.HelpInfo(width);
 
