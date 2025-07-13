@@ -42,6 +42,7 @@
 		<classpathfile>${basedir}/classpathfile.classpath</classpathfile>
 		<jnetversion>2.5.13.0</jnetversion>
 		<jcobridgepath>${basedir}/../../../bin/net8.0/JCOBridge.jar</jcobridgepath>
+		<jarsDestination>${basedir}/../../../jars/</jarsDestination>
 	</properties>
 	<distributionManagement>
 		<snapshotRepository>
@@ -79,7 +80,7 @@
 							<goal>copy-dependencies</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${basedir}/../../../jars/</outputDirectory>
+							<outputDirectory>${jarsDestination}</outputDirectory>
 							<overWriteReleases>false</overWriteReleases>
 							<overWriteSnapshots>false</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>
@@ -100,7 +101,7 @@
 									<type>${project.packaging}</type>
 								</artifactItem>
 							</artifactItems>
-							<outputDirectory>${basedir}/../../../jars/</outputDirectory>
+							<outputDirectory>${jarsDestination}</outputDirectory>
 							<overWriteIfNewer>true</overWriteIfNewer>
 						</configuration>
 					</execution>
