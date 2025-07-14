@@ -502,7 +502,7 @@ jobs:
         if: ${{ matrix.os == 'windows-latest' }}
         with:
           if-no-files-found: ignore
-          name: Crash_powershell_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          name: Crash_powershell_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: .\CrashDumpsDir\*
           retention-days: 7
 
@@ -510,7 +510,7 @@ jobs:
         if: ${{ matrix.os != 'windows-latest' }}
         with:
           if-no-files-found: ignore
-          name: Crash_powershell_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
+          name: Crash_powershell_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
           path: ${{ github.workspace }}/coredump.*
           retention-days: 7
 
