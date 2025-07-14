@@ -84,7 +84,7 @@ namespace MASES.JNet.PowerShell.Cmdlet
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "Put in command line to enable JVM debug")]
-        public bool? EnableDebug { get; set; }
+        public SwitchParameter EnableDebug { get; set; }
 
         /// <inheritdoc cref="JNetCoreBase{TCore}.ApplicationJavaDebugPort" />
         [Parameter(
@@ -131,8 +131,8 @@ namespace MASES.JNet.PowerShell.Cmdlet
             // Mandatory = true,
             ValueFromPipeline = true,
             ValueFromPipelineByPropertyName = true,
-            HelpMessage = "Set to true to print ClassPath")]
-        public bool? LogClassPath { get; set; }
+            HelpMessage = "Set on command-line to print ClassPath")]
+        public SwitchParameter LogClassPath { get; set; }
 
         /// <inheritdoc cref="JNetCoreBase{TCore}.ApplicationJVMExtraOptions" />
         [Parameter(
@@ -159,13 +159,13 @@ namespace MASES.JNet.PowerShell.Cmdlet
             JNetPSHelper<TCore>.SetJNIVerbosity(JNIVerbosity);
             JNetPSHelper<TCore>.SetJNIOutputFile(JNIOutputFile);
             JNetPSHelper<TCore>.SetJmxPort(JmxPort);
-            JNetPSHelper<TCore>.SetEnableDebug(EnableDebug);
+            JNetPSHelper<TCore>.SetEnableDebug(EnableDebug.IsPresent);
             JNetPSHelper<TCore>.SetJavaDebugPort(JavaDebugPort);
             JNetPSHelper<TCore>.SetDebugSuspendFlag(DebugSuspendFlag);
             JNetPSHelper<TCore>.SetJavaDebugOpts(JavaDebugOpts);
             JNetPSHelper<TCore>.SetHeapSize(HeapSize);
             JNetPSHelper<TCore>.SetInitialHeapSize(InitialHeapSize);
-            JNetPSHelper<TCore>.SetLogClassPath(LogClassPath);
+            JNetPSHelper<TCore>.SetLogClassPath(LogClassPath.IsPresent);
             if (ExtraJVMOptions != null)
             {
                 foreach (var item in ExtraJVMOptions)
