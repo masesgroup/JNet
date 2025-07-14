@@ -20,6 +20,7 @@ using MASES.CLIParser;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JNet;
 using MASES.JNet.Specific;
+using MASES.JNet.Specific.CLI;
 using MASES.JNet.Specific.Extensions;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
 using Microsoft.CodeAnalysis.Scripting;
@@ -33,6 +34,11 @@ using System.Threading.Tasks;
 
 namespace MASES.JNet.CLI
 {
+    /// <summary>
+    /// A base classs to be used in CLI executable
+    /// </summary>
+    /// <typeparam name="TRunner">The class extending <see cref="JNetCoreBase{T}"/></typeparam>
+    /// <typeparam name="TProgram">The class extending <see cref="ProgramBase{TRunner, TProgram}"/></typeparam>
     public class ProgramBase<TRunner, TProgram>
         where TRunner : JNetCoreBase<TRunner>
         where TProgram : ProgramBase<TRunner, TProgram>
@@ -44,6 +50,8 @@ namespace MASES.JNet.CLI
         {
             if (JNetCLICoreHelper.Interactive)
             {
+                ShowLogo("Interactive shell");
+
                 ScriptOptions options = ScriptOptions.Default.WithReferences(JNetCLICoreHelper.ReferencesOf<TRunner>())
                                                              .WithImports(JNetCLICoreHelper.NamespaceList);
                 ScriptState<object> state = null;
@@ -87,6 +95,8 @@ namespace MASES.JNet.CLI
             }
             else if (!string.IsNullOrEmpty(JNetCLICoreHelper.Script))
             {
+                ShowLogo("Script mode");
+
                 if (!File.Exists(JNetCLICoreHelper.Script)) throw new FileNotFoundException("A valid file must be provided", JNetCLICoreHelper.Script);
 
                 var scriptCode = File.ReadAllText(JNetCLICoreHelper.Script);
@@ -98,12 +108,31 @@ namespace MASES.JNet.CLI
                 var result = await script.RunAsync();
                 if (result.ReturnValue != null) Console.WriteLine(result.ReturnValue);
             }
+            else if (JNetCLICoreHelper.MainClassToRun != null)
+            {
+                try
+                {
+                    RunnerType.RunStaticMethodOn(typeof(JNetCoreBase<>), nameof(JNetCoreBase<TRunner>.LaunchWithFilteredArgs), JNetCLICoreHelper.MainClassToRun);
+                }
+                catch (TargetInvocationException tie)
+                {
+                    throw tie.InnerException;
+                }
+                catch (JCOBridge.C2JBridge.JVMInterop.JavaException je)
+                {
+                    throw je.Convert();
+                }
+            }
             else if (!string.IsNullOrEmpty(JNetCLICoreHelper.RunCommand))
             {
-                var res = RunnerType.GetStaticPropertyOn(typeof(SetupJVMWrapper), nameof(JNetCoreBase<TRunner>.FilteredArgs));
+                var res = RunnerType.GetStaticPropertyOn(typeof(SetupJVMWrapper), nameof(SetupJVMWrapper.FilteredArgs));
                 GenericCommand.CreateAndLaunch(JNetCLICoreHelper.RunCommand, (object[])res);
             }
-            else ShowHelp();
+            else
+            {
+                ShowLogo();
+                ShowHelp();
+            }
         }
 
         public static async Task InternalMain(string[] args)
@@ -113,7 +142,7 @@ namespace MASES.JNet.CLI
             try
             {
                 JNetCLICoreHelper.DefaultClassToRun = main.DefaultClassToRun;
-                RunnerType.RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(JNetCoreBase<TRunner>.CreateGlobalInstance));
+                RunnerType.RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(SetupJVMWrapper<TRunner>.CreateGlobalInstance));
                 await main.Start();
             }
             catch (TargetInvocationException tie)
@@ -157,28 +186,27 @@ namespace MASES.JNet.CLI
 
         public virtual string DefaultClassToRun => null;
 
+        public virtual void ShowLogo(string logoTrailer = null)
+        {
+            if (!JNetCLICoreHelper.NoLogo)
+            {
+                Console.WriteLine(EntryLine + (string.IsNullOrWhiteSpace(logoTrailer) ? string.Empty : $" - {logoTrailer}"));
+            }
+        }
+
         public virtual void ShowHelp(string errorString = null)
         {
-            Console.WriteLine(EntryLine);
             Console.WriteLine();
             if (!string.IsNullOrEmpty(errorString))
             {
                 Console.WriteLine("Error: {0}", errorString);
             }
 
-            Dictionary<string, Type> implementedClasses = new Dictionary<string, Type>();
+            IDictionary<string, Type> implementedClasses = JNetCLICoreHelper.MainClassesFrom<TRunner>();
             StringBuilder avTypes = new();
-            foreach (var reference in JNetCLICoreHelper.ReferencesOf<TRunner>())
+            foreach (var reference in implementedClasses)
             {
-                IDictionary<string, Type> classes = RunnerType.RunStaticMethodOn(typeof(SetupJVMWrapper), nameof(JNetCoreBase<TRunner>.GetMainClasses), reference) as IDictionary<string, Type>;
-                foreach (var cls in classes)
-                {
-                    if (!implementedClasses.ContainsKey(cls.Key))
-                    {
-                        implementedClasses.Add(cls.Key, cls.Value);
-                        avTypes.AppendFormat("{0}, ", cls.Key);
-                    }
-                }
+                avTypes.AppendFormat("{0}, ", reference.Key);
             }
 
             Console.WriteLine(ProgramName + " -ClassToRun classname <Specific arguments> <JCOBridgeArguments> <ClassArguments>");

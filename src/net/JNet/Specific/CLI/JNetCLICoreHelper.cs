@@ -17,30 +17,52 @@
 */
 
 using MASES.CLIParser;
+using MASES.JCOBridge.C2JBridge;
 using MASES.JNet;
+using MASES.JNet.Specific.Extensions;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 
-namespace MASES.JNet.CLI
+namespace MASES.JNet.Specific.CLI
 {
     /// <summary>
-    /// Public entry point of <see cref="JNetCLICore{T}"/>
+    /// Helper class for CLI operations
     /// </summary>
     public static class JNetCLICoreHelper
     {
+        class CLIParam
+        {
+            // ReflectorArgs
+            public static string[] NoLogo = new string[] { "NoLogo", "nl" };
+            public static string[] ClassToRun = new string[] { "ClassToRun", "c" };
+            public static string[] Interactive = new string[] { "Interactive", "i" };
+            public static string[] RunCommand = new string[] { "RunCommand", "r" };
+            public static string[] Script = new string[] { "Script", "s" };
+            public static string[] JarList = new string[] { "JarList", "jl" };
+            public static string[] NamespaceList = new string[] { "NamespaceList", "nl" };
+            public static string[] ImportList = new string[] { "ImportList", "il" };
+        }
+
         #region Initialization
         /// <summary>
         /// Adds command line arguments on the set managed from <see cref="JNetCoreBase{T}.CommandLineArguments"/>
         /// </summary>
         /// <param name="args">The base arguments to be integrated with command-line options</param>
         /// <returns>The new <see cref="IEnumerable{T}"/> of <see cref="IArgumentMetadata"/></returns>
-        public static IEnumerable<IArgumentMetadata> SetCommandLineArguments(this IEnumerable<IArgumentMetadata> args)
+        public static IEnumerable<IArgumentMetadata> SetCLICommandLineArguments(this IEnumerable<IArgumentMetadata> args)
         {
             var lst = new List<IArgumentMetadata>(args);
             lst.AddRange(new IArgumentMetadata[]
             {
+                new ArgumentMetadata<string>()
+                {
+                    Name = CLIParam.NoLogo[0],
+                    ShortName = CLIParam.NoLogo[1],
+                    Type = ArgumentType.Single,
+                    Help = "Do not display initial informative string",
+                },
                 new ArgumentMetadata<string>()
                 {
                     Name = CLIParam.ClassToRun[0],
@@ -92,7 +114,11 @@ namespace MASES.JNet.CLI
             });
             return lst;
         }
-
+        /// <summary>
+        /// Extract all <see cref="Assembly"/> associated to <typeparamref name="T"/>
+        /// </summary>
+        /// <typeparam name="T">The <see cref="Type"/> to parse</typeparam>
+        /// <returns>An <see cref="IEnumerable{T}"/> containing the <see cref="Assembly"/> found from <typeparamref name="T"/></returns>
         public static IEnumerable<Assembly> ReferencesOf<T>()
         {
             List<Assembly> assemblies = new List<Assembly>();
@@ -119,6 +145,33 @@ namespace MASES.JNet.CLI
                 runner.ImportPackage(item);
             }
         }
+        /// <summary>
+        /// Retrieves the list of classes usable as Main-Class
+        /// </summary>
+        /// <typeparam name="TRunner">The class extending <see cref="JNetCoreBase{T}"/></typeparam>
+        /// <returns>A <see cref="IDictionary{TKey, TValue}"/> of class name and corresponding <see cref="Type"/></returns>
+        public static IDictionary<string, Type> MainClassesFrom<TRunner>() where TRunner : JNetCoreBase<TRunner>
+        {
+            Type RunnerType = typeof(TRunner);
+            Dictionary<string, Type> implementedClasses = new Dictionary<string, Type>();
+            foreach (var reference in JNetCLICoreHelper.ReferencesOf<TRunner>())
+            {
+                IDictionary<string, Type> classes = RunnerType.RunStaticMethodOn(typeof(SetupJVMWrapper), nameof(JNetCoreBase<TRunner>.GetMainClasses), reference) as IDictionary<string, Type>;
+                foreach (var cls in classes)
+                {
+                    if (!implementedClasses.ContainsKey(cls.Key))
+                    {
+                        implementedClasses.Add(cls.Key, cls.Value);
+                    }
+                    else if (implementedClasses[cls.Key].FullName != cls.Value.FullName)
+                    {
+                        implementedClasses.Add(cls.Value.FullName, cls.Value);
+                    }
+                }
+            }
+
+            return implementedClasses;
+        }
 
         /// <summary>
         /// Prepare <see cref="MainClassToRun"/> property
@@ -126,33 +179,33 @@ namespace MASES.JNet.CLI
         /// <typeparam name="T">A <see cref="Type"/> contained in the <see cref="Assembly"/> where <paramref name="className"/> shall be searched</typeparam>
         /// <param name="on">A <see cref="Type"/> contained in the <see cref="Assembly"/> where <paramref name="className"/> shall be searched</param>
         /// <param name="className">The class to search</param>
-        public static void PrepareMainClassToRun<T>(this T on, string className)
+        public static void PrepareMainClassToRun<T>(this JNetCoreBase<T> on, string className) where T : JNetCoreBase<T>
         {
-            PrepareMainClassToRun(typeof(T).Assembly, className);
+            PrepareMainClassToRun(MainClassesFrom<T>(), className);
         }
 
         /// <summary>
         /// Prepare <see cref="MainClassToRun"/> property
         /// </summary>
-        /// <param name="on">The <see cref="Assembly"/> to search the class in</param>
+        /// <param name="on">The <see cref="IDictionary{TKey, TValue}"/> of class name and corresponding <see cref="Type"/> to search the class in</param>
         /// <param name="className">The class to search</param>
         /// <exception cref="ArgumentNullException">If <paramref name="on"/> is <see langword="null"/></exception>
         /// <exception cref="ArgumentException"></exception>
-        public static void PrepareMainClassToRun(this Assembly on, string className)
+        public static void PrepareMainClassToRun(this IDictionary<string, Type> on, string className)
         {
             if (string.IsNullOrWhiteSpace(className)) return;
             if (on == null) throw new ArgumentNullException(nameof(on), $"Requested class {className} is not applicable.");
             var invariantLowClassName = className.ToLowerInvariant();
             Type type = null;
-            foreach (var item in on.ExportedTypes)
+            foreach (var item in on)
             {
-                if (item.Name.ToLowerInvariant() == invariantLowClassName
-                    || item.FullName.ToLowerInvariant() == invariantLowClassName)
+                if (item.Key.ToLowerInvariant() == invariantLowClassName)
                 {
-                    type = item;
+                    type = item.Value;
                     break;
                 }
             }
+
             _mainClassToRun = type ?? throw new ArgumentException($"Requested class {className} is not a valid class name.");
         }
 
@@ -171,6 +224,7 @@ namespace MASES.JNet.CLI
         /// Sets the global value of class to run
         /// </summary>
         public static string ApplicationClassToRun { get; set; }
+
         /// <summary>
         /// value can be overridden in subclasses
         /// </summary>
@@ -181,21 +235,45 @@ namespace MASES.JNet.CLI
         public static string ClassToRun { get { return ApplicationClassToRun ?? _classToRun; } }
 
         static bool _Interactive;
+        /// <summary>
+        /// <see langword="true"/> if the CLI was requested in interactive mode
+        /// </summary>
         public static bool Interactive => _Interactive;
 
         static string _RunCommand;
+        /// <summary>
+        /// The Java Main-Class to run
+        /// </summary>
         public static string RunCommand => _RunCommand;
 
+        static bool _NoLogo;
+        /// <summary>
+        /// <see langword="true"/> if the CLI shall not display initial informative string
+        /// </summary>
+        public static bool NoLogo => _NoLogo;
+
         static string _Script;
+        /// <summary>
+        /// The script to be executed
+        /// </summary>
         public static string Script => _Script;
 
         static IEnumerable<string> _JarList;
+        /// <summary>
+        /// The list of JARs to be added to the classpath
+        /// </summary>
         public static IEnumerable<string> JarList => _JarList;
 
         static IEnumerable<string> _NamespaceList;
+        /// <summary>
+        /// The set of namespaces to be associated to the execution
+        /// </summary>
         public static IEnumerable<string> NamespaceList => _NamespaceList;
 
         static IEnumerable<string> _ImportList;
+        /// <summary>
+        /// The set of imports to be associated to the execution
+        /// </summary>
         public static IEnumerable<string> ImportList => _ImportList;
 
         /// <summary>
@@ -205,7 +283,7 @@ namespace MASES.JNet.CLI
         /// <param name="runner">The instance extending <see cref="JNetCoreBase{T}"/></param>
         /// <param name="result">The list of remaining command-line arguments</param>
         /// <param name="settingsCallback">Callback invoked to setup parameters based on <see cref="ClassToRun"/></param>
-        public static string[] ProcessParsedArgs<T>(this JNetCoreBase<T> runner, string[] result, Action<string> settingsCallback = null) where T : JNetCoreBase<T>
+        public static string[] ProcessCLIParsedArgs<T>(this JNetCoreBase<T> runner, string[] result, Action<string> settingsCallback = null) where T : JNetCoreBase<T>
         {
             IEnumerable<IArgumentMetadataParsed> parsedArgs = runner.ParsedArgs;
 
@@ -215,9 +293,13 @@ namespace MASES.JNet.CLI
 
             _RunCommand = parsedArgs.Get<string>(CLIParam.RunCommand[0]);
 
+            _NoLogo = parsedArgs.Exist(CLIParam.NoLogo[0]);
+
             _Script = parsedArgs.Get<string>(CLIParam.Script[0]);
 
-            if (string.IsNullOrWhiteSpace(_classToRun) && result != null && result.Length > 0)
+            if (string.IsNullOrWhiteSpace(_classToRun) 
+                && string.IsNullOrWhiteSpace(DefaultClassToRun)
+                && result != null && result.Length > 0)
             {
                 // try to use first argument as ClassToRun
                 _classToRun = result[0];
@@ -271,7 +353,9 @@ namespace MASES.JNet.CLI
             }
             _ImportList = importList;
 
-            if (!Interactive && Script == null && _classToRun != null) // set default to Launcher
+            if (!Interactive
+                && Script == null
+                && string.IsNullOrWhiteSpace(_classToRun)) // set default to DefaultClassToRun since nothing was set
             {
                 _classToRun = DefaultClassToRun;
             }
@@ -288,7 +372,7 @@ namespace MASES.JNet.CLI
         /// </summary>
         /// <param name="args">The list of paths to be extended</param>
         /// <returns>The resulting paths</returns>
-        public static IList<string> SetPathToParse(this IList<string> args)
+        public static IList<string> SetCLIPathToParse(this IList<string> args)
         {
             foreach (var item in _JarList)
             {

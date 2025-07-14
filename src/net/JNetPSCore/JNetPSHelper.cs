@@ -17,12 +17,11 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
-using MASES.JNet;
 using MASES.JNet.PowerShell.Cmdlet;
+using MASES.JNet.Specific.CLI;
 using MASES.JNet.Specific.Extensions;
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Management.Automation;
@@ -351,6 +350,11 @@ namespace MASES.JNet.PowerShell
         /// </summary>
         public static void SetLogClassPath(bool? logClassPath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationLogClassPath), logClassPath); }
         /// <summary>
+        /// Sets <see cref="JNetCLICoreHelper.ApplicationClassToRun"/>
+        /// </summary>
+        public static void SetClassToRun(string classToRun) { JNetPSHelper<TClass>.Set(typeof(JNetCLICoreHelper), nameof(JNetCLICoreHelper.ApplicationClassToRun), classToRun); }
+
+        /// <summary>
         /// Invokes <see cref="SetupJVMWrapper{T}.CreateGlobalInstance"/> to start engine
         /// </summary>
         /// <remarks>All properties must be set prior to execute this command. Updates to the JVM environment cannot be done later.</remarks>
@@ -396,6 +400,15 @@ namespace MASES.JNet.PowerShell
         public static object New(string className, params object[] args)
         {
             return typeof(TClass).RunStaticMethodOn(typeof(JNetCoreBase<>), nameof(JNetCoreBase<TClass>.New), className, args);
+        }
+        /// <summary>
+        /// Adds <paramref name="jvmOptionName"/>, with optional <paramref name="jvmOptionValue"/>, to <see cref="ApplicationJVMExtraOptions"/>
+        /// </summary>
+        /// <param name="jvmOptionName">The JVM option name</param>
+        /// <param name="jvmOptionValue">The value of <paramref name="jvmOptionName"/> if it is an option like name=value</param>
+        public static void AddJVMOption(string jvmOptionName, string jvmOptionValue = null)
+        {
+            typeof(TClass).RunStaticMethodOn(typeof(JNetCoreBase<>), nameof(JNetCoreBase<TClass>.AddJVMOption), jvmOptionName, jvmOptionValue);
         }
     }
 }

@@ -41,7 +41,8 @@
 		<maven.compiler.target>11</maven.compiler.target>
 		<classpathfile>${basedir}/classpathfile.classpath</classpathfile>
 		<jnetversion>2.5.13.0</jnetversion>
-		<jcobridgepath>../../../bin/net8.0/JCOBridge.jar</jcobridgepath>
+		<jcobridgepath>${basedir}/../../../bin/net8.0/JCOBridge.jar</jcobridgepath>
+		<jarsDestination>${basedir}/../../../jars/</jarsDestination>
 	</properties>
 	<distributionManagement>
 		<snapshotRepository>
@@ -79,7 +80,7 @@
 							<goal>copy-dependencies</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${basedir}/../../../jars/</outputDirectory>
+							<outputDirectory>${jarsDestination}</outputDirectory>
 							<overWriteReleases>false</overWriteReleases>
 							<overWriteSnapshots>false</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>
@@ -100,7 +101,7 @@
 									<type>${project.packaging}</type>
 								</artifactItem>
 							</artifactItems>
-							<outputDirectory>${basedir}/../../../jars/</outputDirectory>
+							<outputDirectory>${jarsDestination}</outputDirectory>
 							<overWriteIfNewer>true</overWriteIfNewer>
 						</configuration>
 					</execution>
@@ -133,7 +134,7 @@
 				<configuration>
 					<compilerArgs>
 						<arg>-cp</arg>
-						<arg>${originalClassPath}${path.separator}${basedir}/${jcobridgepath}</arg>
+						<arg>${originalClassPath}${path.separator}${jcobridgepath}</arg>
 					</compilerArgs>
 					<source>11</source>
 					<target>11</target>

@@ -16,9 +16,6 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JNet;
-using System;
-
 namespace MASES.JNet.PowerShell
 {
     /// <summary>

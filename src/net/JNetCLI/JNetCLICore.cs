@@ -18,6 +18,7 @@
 
 using MASES.CLIParser;
 using MASES.JNet;
+using MASES.JNet.Specific.CLI;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -31,7 +32,7 @@ namespace MASES.JNet.CLI
     {
         #region Initialization
         /// <inheritdoc cref="JNetCoreBase{T}.CommandLineArguments"/>
-        public override IEnumerable<IArgumentMetadata> CommandLineArguments => base.CommandLineArguments.SetCommandLineArguments();
+        public override IEnumerable<IArgumentMetadata> CommandLineArguments => base.CommandLineArguments.SetCLICommandLineArguments();
 
         /// <summary>
         /// Public ctor
@@ -45,7 +46,7 @@ namespace MASES.JNet.CLI
         protected override string[] ProcessCommandLine()
         {
             var result = base.ProcessCommandLine(); 
-            return this.ProcessParsedArgs(result, settingsCallback: (className) =>
+            return this.ProcessCLIParsedArgs(result, settingsCallback: (className) =>
             {
                 switch(className)
                 {
@@ -57,7 +58,7 @@ namespace MASES.JNet.CLI
         }
 
         /// <inheritdoc cref="JNetCoreBase{T}.PathToParse"/>
-        protected override IList<string> PathToParse => base.PathToParse.SetPathToParse();
+        protected override IList<string> PathToParse => base.PathToParse.SetCLIPathToParse();
         #endregion
 
 #if DEBUG

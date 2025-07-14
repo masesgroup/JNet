@@ -23,10 +23,10 @@
 		<None Include="..\..\documentation\articles\usageReflector.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild">
-		<Copy SourceFiles="@(jnetreflector_jars)" DestinationFolder="$(OutDir)\jars" />
+		<Copy SourceFiles="@(jnetreflector_jars)" DestinationFolder="$(OutDir)\jars\%(RecursiveDir)" />
 	</Target>
 	<Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
-		<Copy SourceFiles="@(jnetreflector_jars)" DestinationFolder="$(PublishDir)\jars" />
+		<Copy SourceFiles="@(jnetreflector_jars)" DestinationFolder="$(PublishDir)\jars\%(RecursiveDir)" />
 	</Target>
 	<ItemGroup>
 		<None Remove="AllPackageClasses.template" />

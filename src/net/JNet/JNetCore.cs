@@ -46,9 +46,10 @@ namespace MASES.JNet
             get
             {
                 IDictionary<string, string> opt = new Dictionary<string, string>();
-                if (PerformanceOptions != null)
+                var performanceOptions = PerformanceOptions;
+                if (performanceOptions != null)
                 {
-                    foreach (var item in PerformanceOptions)
+                    foreach (var item in performanceOptions)
                     {
                         opt.Add(item, null);
                     }

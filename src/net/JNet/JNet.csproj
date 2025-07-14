@@ -19,10 +19,10 @@
 	</PropertyGroup>
 
 	<Target Name="CopyCustomContent" AfterTargets="AfterBuild" Condition="'$(GITHUB_ACTIONS)' != 'true' Or '$(GITHUB_TEST_PREPARATION)' == 'true'">
-		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(OutDir)\jars" />
+		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(OutDir)\jars\%(RecursiveDir)" />
 	</Target>
 	<Target Name="CopyCustomContentOnPublish" AfterTargets="Publish" Condition="'$(GITHUB_ACTIONS)' != 'true' Or '$(GITHUB_TEST_PREPARATION)' == 'true'">
-		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(OutDir)\jars" />
+		<Copy SourceFiles="@(jnet_jars)" DestinationFolder="$(OutDir)\jars\%(RecursiveDir)" />
 	</Target>
 	<ItemGroup>
 		<None Include="mases.jnet.targets" Pack="true" PackagePath="build" />

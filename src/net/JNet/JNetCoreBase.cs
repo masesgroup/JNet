@@ -19,6 +19,7 @@
 using MASES.CLIParser;
 using MASES.JCOBridge.C2JBridge;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -96,6 +97,10 @@ namespace MASES.JNet
         /// Sets the global value of the log class path
         /// </summary>
         public static bool? ApplicationLogClassPath { get; set; }
+        /// <summary>
+        /// Generic extra options to be used from JVM
+        /// </summary>
+        public static IDictionary<string, string> ApplicationJVMExtraOptions { get; } = new ConcurrentDictionary<string, string>();
 
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_LicensePath.htm" />
         public override string LicensePath { get { return ApplicationLicensePath ?? base.LicensePath; } }
@@ -217,16 +222,18 @@ namespace MASES.JNet
             get
             {
                 IDictionary<string, string> opt = new Dictionary<string, string>();
-                if (base.JVMOptions != null)
+                var jvmOptions = base.JVMOptions;
+                if (jvmOptions != null)
                 {
-                    foreach (var item in base.JVMOptions)
+                    foreach (var item in jvmOptions)
                     {
                         opt.Add(new KeyValuePair<string, string>(ReplaceEnvironmentVariable(item.Key), ReplaceEnvironmentVariable(item.Value)));
                     }
                 }
-                if (Options != null)
+                var options = Options;
+                if (options != null)
                 {
-                    foreach (var item in Options)
+                    foreach (var item in options)
                     {
                         try
                         {
@@ -234,8 +241,19 @@ namespace MASES.JNet
                         }
                         catch (Exception e)
                         {
-                            throw new ArgumentException($"Cannot add option {item.Key}: {e.Message}");
+                            throw new ArgumentException($"Cannot add option {item.Key}: {e.Message}", e);
                         }
+                    }
+                }
+                foreach (var item in ApplicationJVMExtraOptions)
+                {
+                    try
+                    {
+                        opt.Add(new KeyValuePair<string, string>(ReplaceEnvironmentVariable(item.Key), ReplaceEnvironmentVariable(item.Value)));
+                    }
+                    catch (Exception e)
+                    {
+                        throw new ArgumentException($"Cannot add option {item.Key}: {e.Message}", e);
                     }
                 }
                 return opt;
@@ -258,7 +276,9 @@ namespace MASES.JNet
         {
             ClassPathBuilder builder = new();
 
-            if (PathToParse != null) builder.Add(PathToParse.ToArray());
+            var pathToParse = PathToParse;
+
+            if (pathToParse != null) builder.Add(pathToParse.ToArray());
 
             classPath = builder.Build();
 
@@ -276,6 +296,17 @@ namespace MASES.JNet
         #endregion
 
         #region Auxiliary Methods
+        /// <summary>
+        /// Adds <paramref name="jvmOptionName"/>, with optional <paramref name="jvmOptionValue"/>, to <see cref="ApplicationJVMExtraOptions"/>
+        /// </summary>
+        /// <param name="jvmOptionName">The JVM option name</param>
+        /// <param name="jvmOptionValue">The value of <paramref name="jvmOptionName"/> if it is an option like name=value</param>
+        public static void AddJVMOption(string jvmOptionName, string jvmOptionValue = null)
+        {
+            if (string.IsNullOrWhiteSpace(jvmOptionName)) return;
+            ApplicationJVMExtraOptions.Add(jvmOptionName, jvmOptionValue);
+        }
+
         /// <inheritdoc cref="Parser.HelpInfo(int?)"/>
         public static string HelpInfo(int? width = null) => Parser.HelpInfo(width);
 
@@ -301,6 +332,16 @@ namespace MASES.JNet
         }
 
         /// <summary>
+        /// Launch the <typeparamref name="TClass"/> class with the <see cref="SetupJVMWrapper.FilteredArgs"/> arguments
+        /// </summary>
+        /// <typeparam name="TClass">A type which is defined as Main-Class</typeparam>
+        public static void LaunchWithFilteredArgs<TClass>()
+            where TClass : IJVMBridgeMain
+        {
+            Launch<TClass>(FilteredArgs);
+        }
+
+        /// <summary>
         /// Launch the <typeparamref name="TClass"/> class with the <paramref name="args"/> arguments
         /// </summary>
         /// <typeparam name="TClass">A type which is defined as Main-Class</typeparam>
@@ -309,6 +350,15 @@ namespace MASES.JNet
             where TClass : IJVMBridgeMain
         {
             Launch(typeof(TClass), args);
+        }
+
+        /// <summary>
+        /// Launch the <paramref name="type"/> with the <see cref="SetupJVMWrapper.FilteredArgs"/> arguments
+        /// </summary>
+        /// <param name="type">The <see cref="Type"/> extending <see cref="IJVMBridgeMain"/></param>
+        public static void LaunchWithFilteredArgs(Type type)
+        {
+            Launch(type, FilteredArgs);
         }
 
         /// <summary>
