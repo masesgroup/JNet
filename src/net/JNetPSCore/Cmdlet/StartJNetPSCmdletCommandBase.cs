@@ -166,21 +166,27 @@ namespace MASES.JNet.PowerShell.Cmdlet
             JNetPSHelper<TCore>.SetHeapSize(HeapSize);
             JNetPSHelper<TCore>.SetInitialHeapSize(InitialHeapSize);
             JNetPSHelper<TCore>.SetLogClassPath(LogClassPath);
-            foreach (var item in ExtraJVMOptions)
+            if (ExtraJVMOptions != null)
             {
-                if (string.IsNullOrWhiteSpace(item)) continue;
-                AddJVMOption(item);
-            }
-            foreach (var item in ExtraJVMKVOptions)
-            {
-                if (string.IsNullOrWhiteSpace(item)) continue;
-                var index = item.IndexOf("=");
-
-                if (index != -1)
+                foreach (var item in ExtraJVMOptions)
                 {
-                    var key = item.Substring(index);
-                    var value = item.Substring(index + 1, item.Length);
-                    AddJVMOption(key, value);
+                    if (string.IsNullOrWhiteSpace(item)) continue;
+                    AddJVMOption(item);
+                }
+            }
+            if (ExtraJVMKVOptions != null)
+            {
+                foreach (var item in ExtraJVMKVOptions)
+                {
+                    if (string.IsNullOrWhiteSpace(item)) continue;
+                    var index = item.IndexOf("=");
+
+                    if (index != -1)
+                    {
+                        var key = item.Substring(index);
+                        var value = item.Substring(index + 1, item.Length);
+                        AddJVMOption(key, value);
+                    }
                 }
             }
 
