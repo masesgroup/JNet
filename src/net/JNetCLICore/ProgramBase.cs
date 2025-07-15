@@ -176,29 +176,53 @@ namespace MASES.JNet.CLI
                 main.ShowHelp(sb.ToString());
             }
         }
-
+        /// <summary>
+        /// Set to <see langword="true"/> to use <see cref="JNetCLICoreHelper.Interactive"/>
+        /// </summary>
         public virtual bool EnableInteractive => true;
-
+        /// <summary>
+        /// Set to <see langword="true"/> to use <see cref="JNetCLICoreHelper.Script"/>
+        /// </summary>
         public virtual bool EnableScript => true;
-
+        /// <summary>
+        /// Set to <see langword="true"/> to use <see cref="JNetCLICoreHelper.MainClassToRun"/>
+        /// </summary>
         public virtual bool EnableMainClassToRun => true;
-
+        /// <summary>
+        /// Set to <see langword="true"/> to use <see cref="JNetCLICoreHelper.RunCommand"/>
+        /// </summary>
         public virtual bool EnableRunCommand => true;
-
+        /// <summary>
+        /// The project of the <see cref="ProgramName"/>
+        /// </summary>
         public virtual string ProjectName => "JNet";
-
+        /// <summary>
+        /// The program name
+        /// </summary>
         public virtual string ProgramName => ProgramType.Assembly.GetName().Name;
-
+        /// <summary>
+        /// The program version
+        /// </summary>
         public virtual Version ProgramVersion => ProgramType.Assembly.GetName().Version;
-
+        /// <summary>
+        /// The initial logo
+        /// </summary>
         public virtual string LogoLine => $"{ProgramName} (ver. {ProgramVersion}) - {ProjectName} command line interface";
-
+        /// <summary>
+        /// The line proposing info about using of the program
+        /// </summary>
         public virtual string EntryLine => $"{ProgramName} -ClassToRun classname <Specific arguments> <JCOBridgeArguments> <ClassArguments>";
-
+        /// <summary>
+        /// Arguments specific to the class extending <see cref="ProgramBase{TRunner, TProgram}"/>
+        /// </summary>
         public virtual string SpecificArguments => null;
-
+        /// <summary>
+        /// A set of <see cref="string"/> with examples
+        /// </summary>
         public virtual string ExampleLines => ProgramName;
-
+        /// <summary>
+        /// The default class to run in CLI version if neighter <see cref="JNetCLICoreHelper.ApplicationClassToRun"/> nor <see cref="JNetCLICoreHelper.ClassToRun"/> are set
+        /// </summary>
         public virtual string DefaultClassToRun => null;
 
         public virtual void ShowLogo(string logoTrailer = null)
