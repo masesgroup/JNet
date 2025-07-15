@@ -54,6 +54,7 @@ namespace MASES.JNet.Specific.CLI
         public static IEnumerable<IArgumentMetadata> SetCLICommandLineArguments(this IEnumerable<IArgumentMetadata> args)
         {
             var lst = new List<IArgumentMetadata>(args);
+
             lst.AddRange(new IArgumentMetadata[]
             {
                 new ArgumentMetadata<string>()
@@ -63,55 +64,90 @@ namespace MASES.JNet.Specific.CLI
                     Type = ArgumentType.Single,
                     Help = "Do not display initial informative string",
                 },
-                new ArgumentMetadata<string>()
-                {
-                    Name = CLIParam.ClassToRun[0],
-                    ShortName = CLIParam.ClassToRun[1],
-                    Help = "The class to be instantiated from CLI.",
-                },
-                new ArgumentMetadata<string>()
-                {
-                    Name = CLIParam.Interactive[0],
-                    ShortName = CLIParam.Interactive[1],
-                    Type = ArgumentType.Single,
-                    Help = "Activate an interactive shell",
-                },
-                new ArgumentMetadata<string>()
-                {
-                    Name = CLIParam.RunCommand[0],
-                    ShortName = CLIParam.RunCommand[1],
-                    Type = ArgumentType.Double,
-                    Help = "Run the Java Main-Class, remaining options are passed to the main method of the Java Main-Class",
-                },
-                new ArgumentMetadata<string>()
-                {
-                    Name = CLIParam.Script[0],
-                    ShortName = CLIParam.Script[1],
-                    Type = ArgumentType.Double,
-                    Help = "Run the script code and exit, the argument is the path to the file containing the script",
-                },
-                new ArgumentMetadata<string>()
-                {
-                    Name = CLIParam.JarList[0],
-                    ShortName = CLIParam.JarList[1],
-                    Type = ArgumentType.Double,
-                    Help = "A CSV list of JAR to be used or folders containing the JARs",
-                },
-                new ArgumentMetadata<string>()
-                {
-                    Name = CLIParam.NamespaceList[0],
-                    ShortName = CLIParam.NamespaceList[1],
-                    Type = ArgumentType.Double,
-                    Help = "A CSV list of namespace to be used for interactive shell, JNet namespace are added automatically",
-                },
-                new ArgumentMetadata<string>()
-                {
-                    Name = CLIParam.ImportList[0],
-                    ShortName = CLIParam.ImportList[1],
-                    Type = ArgumentType.Double,
-                    Help = "A CSV list of import to be used",
-                },
             });
+
+            if (EnableMainClassToRun)
+            {
+                lst.AddRange(new IArgumentMetadata[]
+                {
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.ClassToRun[0],
+                        ShortName = CLIParam.ClassToRun[1],
+                        Help = "The class to be instantiated from CLI.",
+                    },
+                });
+            }
+
+            if (EnableInteractive)
+            {
+                lst.AddRange(new IArgumentMetadata[]
+                {
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.Interactive[0],
+                        ShortName = CLIParam.Interactive[1],
+                        Type = ArgumentType.Single,
+                        Help = "Activate an interactive shell",
+                    },
+                });
+            }
+
+            if (EnableRunCommand)
+            {
+                lst.AddRange(new IArgumentMetadata[]
+                {
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.RunCommand[0],
+                        ShortName = CLIParam.RunCommand[1],
+                        Type = ArgumentType.Double,
+                        Help = "Run the Java Main-Class, remaining options are passed to the main method of the Java Main-Class",
+                    },  
+                });
+            }
+
+            if (EnableScript)
+            {
+                lst.AddRange(new IArgumentMetadata[]
+                {
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.Script[0],
+                        ShortName = CLIParam.Script[1],
+                        Type = ArgumentType.Double,
+                        Help = "Run the script code and exit, the argument is the path to the file containing the script",
+                    },
+                });
+            }
+
+            if (EnableScript || EnableInteractive)
+            {
+                lst.AddRange(new IArgumentMetadata[]
+                {
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.JarList[0],
+                        ShortName = CLIParam.JarList[1],
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of JAR to be used or folders containing the JARs",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.NamespaceList[0],
+                        ShortName = CLIParam.NamespaceList[1],
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of namespace to be used for interactive shell, JNet namespace are added automatically",
+                    },
+                    new ArgumentMetadata<string>()
+                    {
+                        Name = CLIParam.ImportList[0],
+                        ShortName = CLIParam.ImportList[1],
+                        Type = ArgumentType.Double,
+                        Help = "A CSV list of import to be used",
+                    },
+                });
+            }
             return lst;
         }
         /// <summary>
@@ -214,6 +250,11 @@ namespace MASES.JNet.Specific.CLI
         /// </summary>
         public static string DefaultClassToRun { get; set; }
 
+        /// <summary>
+        /// Set to <see langword="true"/> to use <see cref="MainClassToRun"/>
+        /// </summary>
+        public static bool EnableMainClassToRun { get; set; } = true;
+
         static Type _mainClassToRun;
         /// <summary>
         /// Sets the <see cref="Type"/> to be invoked at startup
@@ -234,11 +275,21 @@ namespace MASES.JNet.Specific.CLI
         /// </summary>
         public static string ClassToRun { get { return ApplicationClassToRun ?? _classToRun; } }
 
+        /// <summary>
+        /// Set to <see langword="true"/> to use <see cref="Interactive"/>
+        /// </summary>
+        public static bool EnableInteractive { get; set; } = true;
+
         static bool _Interactive;
         /// <summary>
         /// <see langword="true"/> if the CLI was requested in interactive mode
         /// </summary>
         public static bool Interactive => _Interactive;
+
+        /// <summary>
+        /// Set to <see langword="true"/> to use <see cref="RunCommand"/>
+        /// </summary>
+        public static bool EnableRunCommand { get; set; } = true;
 
         static string _RunCommand;
         /// <summary>
@@ -251,6 +302,11 @@ namespace MASES.JNet.Specific.CLI
         /// <see langword="true"/> if the CLI shall not display initial informative string
         /// </summary>
         public static bool NoLogo => _NoLogo;
+
+        /// <summary>
+        /// Set to <see langword="true"/> to use <see cref="Script"/>
+        /// </summary>
+        public static bool EnableScript { get; set; } = true;
 
         static string _Script;
         /// <summary>
@@ -297,7 +353,7 @@ namespace MASES.JNet.Specific.CLI
 
             _Script = parsedArgs.Get<string>(CLIParam.Script[0]);
 
-            if (string.IsNullOrWhiteSpace(_classToRun) 
+            if (string.IsNullOrWhiteSpace(_classToRun)
                 && string.IsNullOrWhiteSpace(DefaultClassToRun)
                 && result != null && result.Length > 0)
             {
