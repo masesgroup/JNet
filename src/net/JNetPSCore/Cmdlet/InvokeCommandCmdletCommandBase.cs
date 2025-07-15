@@ -19,6 +19,7 @@
 using MASES.JNet;
 using MASES.JNet.Specific;
 using System;
+using System.Linq;
 using System.Management.Automation;
 
 namespace MASES.JNet.PowerShell.Cmdlet
@@ -42,11 +43,7 @@ namespace MASES.JNet.PowerShell.Cmdlet
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void OnAfterCreateGlobalInstance()
         {
-            string[] arguments = Array.Empty<string>();
-            if (Arguments != null)
-            {
-                arguments = Arguments.Split(' ');
-            }
+            string[] arguments = JNetPSHelper.ExtractArguments(Arguments).ToArray();
 
             GenericCommand.CreateAndLaunch(MainClass, arguments);
         }

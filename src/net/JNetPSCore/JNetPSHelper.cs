@@ -22,6 +22,7 @@ using MASES.JNet.Specific.CLI;
 using MASES.JNet.Specific.Extensions;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Management.Automation;
@@ -192,6 +193,41 @@ namespace MASES.JNet.PowerShell
     /// </summary>
     public static class JNetPSHelper
     {
+        /// <summary>
+        /// Return an <see cref="IEnumerable{T}"/> of <see cref="string"> from the single <paramref name="arguments"/>
+        /// </summary>
+        /// <param name="arguments">The string to be splitted</param>
+        /// <returns>An <see cref="IEnumerable{T}"/> of <see cref="string"></returns>
+        public static IEnumerable<string> ExtractArguments(string arguments)
+        {
+            string[] tmp = string.IsNullOrWhiteSpace(arguments) ? Array.Empty<string>() : arguments.Split(' ');
+            return tmp.Where((arg) => !string.IsNullOrWhiteSpace(arg)).Select((arg) => arg.Trim());
+        }
+        /// <summary>
+        /// Convert <see cref="PSObject"/> from the <see cref="IEnumerable{T}"/> of <see cref="object"> in <paramref name="arguments"/>
+        /// </summary>
+        /// <param name="arguments">The <see cref="IEnumerable{T}"/> of <see cref="object"> to be converted</param>
+        /// <returns>An <see cref="IEnumerable{T}"/> of converted <see cref="object"></returns>
+        public static IEnumerable<object> ConvertArguments(IEnumerable<object> arguments)
+        {
+            if (arguments != null)
+            {
+                List<object> objects = new List<object>();
+                foreach (var item in arguments)
+                {
+                    if (item is PSObject psObject)
+                    {
+                        objects.Add(psObject.BaseObject);
+                    }
+                    else
+                    {
+                        objects.Add(item);
+                    }
+                }
+                return objects.ToArray();
+            }
+            return Array.Empty<object>();
+        }
         /// <summary>
         /// <see langword="true"/> if the <typeparamref name="T"/> needs to be executed externally
         /// </summary>

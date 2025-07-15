@@ -18,6 +18,7 @@
 
 using MASES.JNet;
 using System.Collections.Generic;
+using System.Linq;
 using System.Management.Automation;
 
 namespace MASES.JNet.PowerShell.Cmdlet
@@ -41,24 +42,7 @@ namespace MASES.JNet.PowerShell.Cmdlet
         // This method will be called for each input received from the pipeline to this cmdlet; if no input is received, this method is not called
         protected override void ProcessCommand()
         {
-            object[] args = Arguments;
-            if (Arguments != null)
-            {
-                List<object> objects = new List<object>();
-                foreach (var item in Arguments)
-                {
-                    if (item is PSObject psObject)
-                    {
-                        objects.Add(psObject.BaseObject);
-                    }
-                    else
-                    {
-                        objects.Add(item);
-                    }
-                }
-                args = objects.ToArray();
-            }
-
+            object[] args = JNetPSHelper.ConvertArguments(Arguments).ToArray();
             var result = JNetPSHelper<TCore>.New(Class, args);
             WriteObject(result);
         }
