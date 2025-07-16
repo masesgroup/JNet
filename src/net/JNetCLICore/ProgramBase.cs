@@ -48,7 +48,7 @@ namespace MASES.JNet.CLI
 
         async Task Start()
         {
-            if (JNetCLICoreHelper.Interactive)
+            if (EnableInteractive && JNetCLICoreHelper.Interactive)
             {
                 ShowLogo("Interactive shell");
 
@@ -93,7 +93,7 @@ namespace MASES.JNet.CLI
                     }
                 }
             }
-            else if (!string.IsNullOrEmpty(JNetCLICoreHelper.Script))
+            else if (EnableScript && !string.IsNullOrEmpty(JNetCLICoreHelper.Script))
             {
                 ShowLogo("Script mode");
 
@@ -108,7 +108,7 @@ namespace MASES.JNet.CLI
                 var result = await script.RunAsync();
                 if (result.ReturnValue != null) Console.WriteLine(result.ReturnValue);
             }
-            else if (JNetCLICoreHelper.MainClassToRun != null)
+            else if (EnableMainClassToRun && JNetCLICoreHelper.MainClassToRun != null)
             {
                 try
                 {
@@ -123,7 +123,7 @@ namespace MASES.JNet.CLI
                     throw je.Convert();
                 }
             }
-            else if (!string.IsNullOrEmpty(JNetCLICoreHelper.RunCommand))
+            else if (EnableRunCommand && !string.IsNullOrEmpty(JNetCLICoreHelper.RunCommand))
             {
                 var res = RunnerType.GetStaticPropertyOn(typeof(SetupJVMWrapper), nameof(SetupJVMWrapper.FilteredArgs));
                 GenericCommand.CreateAndLaunch(JNetCLICoreHelper.RunCommand, (object[])res);
@@ -142,6 +142,11 @@ namespace MASES.JNet.CLI
             try
             {
                 JNetCLICoreHelper.DefaultClassToRun = main.DefaultClassToRun;
+                JNetCLICoreHelper.EnableInteractive = main.EnableInteractive;
+                JNetCLICoreHelper.EnableScript = main.EnableScript;
+                JNetCLICoreHelper.EnableRunCommand = main.EnableRunCommand;
+                JNetCLICoreHelper.EnableMainClassToRun = main.EnableMainClassToRun;
+
                 RunnerType.RunStaticMethodOn(typeof(SetupJVMWrapper<>), nameof(SetupJVMWrapper<TRunner>.CreateGlobalInstance));
                 await main.Start();
             }
@@ -171,26 +176,60 @@ namespace MASES.JNet.CLI
                 main.ShowHelp(sb.ToString());
             }
         }
-
+        /// <summary>
+        /// Set to <see langword="true"/> to use <see cref="JNetCLICoreHelper.Interactive"/>
+        /// </summary>
+        public virtual bool EnableInteractive => true;
+        /// <summary>
+        /// Set to <see langword="true"/> to use <see cref="JNetCLICoreHelper.Script"/>
+        /// </summary>
+        public virtual bool EnableScript => true;
+        /// <summary>
+        /// Set to <see langword="true"/> to use <see cref="JNetCLICoreHelper.MainClassToRun"/>
+        /// </summary>
+        public virtual bool EnableMainClassToRun => true;
+        /// <summary>
+        /// Set to <see langword="true"/> to use <see cref="JNetCLICoreHelper.RunCommand"/>
+        /// </summary>
+        public virtual bool EnableRunCommand => true;
+        /// <summary>
+        /// The project of the <see cref="ProgramName"/>
+        /// </summary>
         public virtual string ProjectName => "JNet";
-
+        /// <summary>
+        /// The program name
+        /// </summary>
         public virtual string ProgramName => ProgramType.Assembly.GetName().Name;
-
+        /// <summary>
+        /// The program version
+        /// </summary>
         public virtual Version ProgramVersion => ProgramType.Assembly.GetName().Version;
-
-        public virtual string EntryLine => $"{ProgramName} (ver. {ProgramVersion}) - {ProjectName} command line interface";
-
+        /// <summary>
+        /// The initial logo
+        /// </summary>
+        public virtual string LogoLine => $"{ProgramName} (ver. {ProgramVersion}) - {ProjectName} command line interface";
+        /// <summary>
+        /// The line proposing info about using of the program
+        /// </summary>
+        public virtual string EntryLine => $"{ProgramName} -ClassToRun classname <Specific arguments> <JCOBridgeArguments> <ClassArguments>";
+        /// <summary>
+        /// Arguments specific to the class extending <see cref="ProgramBase{TRunner, TProgram}"/>
+        /// </summary>
         public virtual string SpecificArguments => null;
-
+        /// <summary>
+        /// A set of <see cref="string"/> with examples
+        /// </summary>
         public virtual string ExampleLines => ProgramName;
-
+        /// <summary>
+        /// The default class to run in CLI version if neighter <see cref="JNetCLICoreHelper.ApplicationClassToRun"/> nor <see cref="JNetCLICoreHelper.ClassToRun"/> are set
+        /// </summary>
         public virtual string DefaultClassToRun => null;
 
         public virtual void ShowLogo(string logoTrailer = null)
         {
             if (!JNetCLICoreHelper.NoLogo)
             {
-                Console.WriteLine(EntryLine + (string.IsNullOrWhiteSpace(logoTrailer) ? string.Empty : $" - {logoTrailer}"));
+                Console.WriteLine(LogoLine + (string.IsNullOrWhiteSpace(logoTrailer) ? string.Empty : $" - {logoTrailer}"));
             }
         }
 
@@ -209,7 +248,7 @@ namespace MASES.JNet.CLI
                 avTypes.AppendFormat("{0}, ", reference.Key);
             }
 
-            Console.WriteLine(ProgramName + " -ClassToRun classname <Specific arguments> <JCOBridgeArguments> <ClassArguments>");
+            if (EntryLine != null) Console.WriteLine(EntryLine);
             Console.WriteLine();
             Console.WriteLine(RunnerType.RunStaticMethodOn(typeof(JNetCoreBase<>), nameof(JNetCoreBase<TRunner>.HelpInfo), new Type[] { typeof(int?) }, new object[] { null }));
             if (!string.IsNullOrWhiteSpace(SpecificArguments))
