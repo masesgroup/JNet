@@ -339,6 +339,7 @@ namespace MASES.JNet.Specific.CLI
             public bool Equals(string x, string y)
             {
                 if (x == null && y == null) return true;
+                Console.WriteLine($"Comparing {x} to {y}");
                 return x?.ToLowerInvariant() == y?.ToLowerInvariant();
             }
 
