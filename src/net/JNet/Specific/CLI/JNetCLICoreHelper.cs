@@ -22,6 +22,7 @@ using MASES.JNet;
 using MASES.JNet.Specific.Extensions;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Reflection;
 
@@ -332,6 +333,21 @@ namespace MASES.JNet.Specific.CLI
         /// </summary>
         public static IEnumerable<string> ImportList => _ImportList;
 
+        class ClassComparer : IEqualityComparer<string>
+        {
+            public bool Equals(string x, string y)
+            {
+                if (x == null && y == null) return true;
+                return x?.ToLowerInvariant() == y?.ToLowerInvariant();
+            }
+
+            public int GetHashCode(string obj)
+            {
+                if (obj == null) return 0;
+                return obj.GetHashCode();
+            }
+        }
+
         /// <summary>
         /// Process parsed args
         /// </summary>
@@ -357,15 +373,19 @@ namespace MASES.JNet.Specific.CLI
                 && string.IsNullOrWhiteSpace(DefaultClassToRun)
                 && result != null && result.Length > 0)
             {
-                // try to use first argument as ClassToRun
-                _classToRun = result[0];
-                int remaining = result.Length - 1;
-                if (remaining != 0)
+                // search in remaining arguments
+                List<string> lst = new List<string>(result);
+                var implementedClasses = new Dictionary<string, Type>(JNetCLICoreHelper.MainClassesFrom<T>(), new ClassComparer());
+                foreach (var item in lst.ToArray())
                 {
-                    string[] tmp_result = new string[remaining];
-                    Array.Copy(result, 1, tmp_result, 0, remaining); // remove first argument
-                    result = tmp_result;
+                    if (implementedClasses.ContainsKey(item))
+                    {
+                        _classToRun = item;
+                        lst.Remove(item);
+                    }
                 }
+
+                result = lst.ToArray();
             }
 
             List<string> jarList = new List<string>();
