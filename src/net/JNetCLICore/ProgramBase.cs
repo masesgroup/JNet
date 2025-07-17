@@ -52,7 +52,7 @@ namespace MASES.JNet.CLI
             {
                 ShowLogo("Interactive shell");
 
-                ScriptOptions options = ScriptOptions.Default.WithReferences(JNetCLICoreHelper.ReferencesOf<TRunner>())
+                ScriptOptions options = ScriptOptions.Default.WithReferences(JNetCLICoreHelper.AssemblyReferencesOf<TRunner>())
                                                              .WithImports(JNetCLICoreHelper.NamespaceList);
                 ScriptState<object> state = null;
                 while (true)
@@ -93,7 +93,7 @@ namespace MASES.JNet.CLI
                     }
                 }
             }
-            else if (EnableScript && !string.IsNullOrEmpty(JNetCLICoreHelper.Script))
+            else if (EnableScript && !string.IsNullOrWhiteSpace(JNetCLICoreHelper.Script))
             {
                 ShowLogo("Script mode");
 
@@ -101,7 +101,7 @@ namespace MASES.JNet.CLI
 
                 var scriptCode = File.ReadAllText(JNetCLICoreHelper.Script);
 
-                ScriptOptions options = ScriptOptions.Default.WithReferences(JNetCLICoreHelper.ReferencesOf<TRunner>())
+                ScriptOptions options = ScriptOptions.Default.WithReferences(JNetCLICoreHelper.AssemblyReferencesOf<TRunner>())
                                                              .WithImports(JNetCLICoreHelper.NamespaceList);
 
                 var script = CSharpScript.Create(scriptCode, options);

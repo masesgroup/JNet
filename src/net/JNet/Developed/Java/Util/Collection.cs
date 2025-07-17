@@ -16,11 +16,9 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Lang;
 #if !JNETREFLECTOR
 using Java.Util.Function;
 #endif
-using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Util
 {

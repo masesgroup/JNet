@@ -18,7 +18,6 @@
 
 using MASES.CLIParser;
 using MASES.JCOBridge.C2JBridge;
-using MASES.JNet;
 using MASES.JNet.Specific.Extensions;
 using System;
 using System.Collections.Generic;
@@ -36,9 +35,9 @@ namespace MASES.JNet.Specific.CLI
         {
             // ReflectorArgs
             public static string[] NoLogo = new string[] { "NoLogo", "nl" };
-            public static string[] ClassToRun = new string[] { "ClassToRun", "c" };
+            public static string[] ClassToRun = new string[] { "ClassToRun", "ctr" };
             public static string[] Interactive = new string[] { "Interactive", "i" };
-            public static string[] RunCommand = new string[] { "RunCommand", "r" };
+            public static string[] RunCommand = new string[] { "RunCommand", "rc" };
             public static string[] Script = new string[] { "Script", "s" };
             public static string[] JarList = new string[] { "JarList", "jl" };
             public static string[] NamespaceList = new string[] { "NamespaceList", "nl" };
@@ -155,7 +154,7 @@ namespace MASES.JNet.Specific.CLI
         /// </summary>
         /// <typeparam name="T">The <see cref="Type"/> to parse</typeparam>
         /// <returns>An <see cref="IEnumerable{T}"/> containing the <see cref="Assembly"/> found from <typeparamref name="T"/></returns>
-        public static IEnumerable<Assembly> ReferencesOf<T>()
+        public static IEnumerable<Assembly> AssemblyReferencesOf<T>()
         {
             List<Assembly> assemblies = new List<Assembly>();
             var baseType = typeof(T);
@@ -190,7 +189,7 @@ namespace MASES.JNet.Specific.CLI
         {
             Type RunnerType = typeof(TRunner);
             Dictionary<string, Type> implementedClasses = new Dictionary<string, Type>();
-            foreach (var reference in JNetCLICoreHelper.ReferencesOf<TRunner>())
+            foreach (var reference in JNetCLICoreHelper.AssemblyReferencesOf<TRunner>())
             {
                 IDictionary<string, Type> classes = RunnerType.RunStaticMethodOn(typeof(SetupJVMWrapper), nameof(JNetCoreBase<TRunner>.GetMainClasses), reference) as IDictionary<string, Type>;
                 foreach (var cls in classes)
@@ -207,6 +206,21 @@ namespace MASES.JNet.Specific.CLI
             }
 
             return implementedClasses;
+        }
+
+        static Type SearchClassToRun(this IDictionary<string, Type> on, string className, out string className2)
+        {
+            className2 = null;
+            var invariantLowClassName = className.ToLowerInvariant();
+            foreach (var item in on)
+            {
+                if (item.Key.ToLowerInvariant() == invariantLowClassName)
+                {
+                    className2 = item.Key;
+                    return item.Value;
+                }
+            }
+            return null;
         }
 
         /// <summary>
@@ -230,18 +244,8 @@ namespace MASES.JNet.Specific.CLI
         public static void PrepareMainClassToRun(this IDictionary<string, Type> on, string className)
         {
             if (string.IsNullOrWhiteSpace(className)) return;
-            if (on == null) throw new ArgumentNullException(nameof(on), $"Requested class {className} is not applicable.");
-            var invariantLowClassName = className.ToLowerInvariant();
-            Type type = null;
-            foreach (var item in on)
-            {
-                if (item.Key.ToLowerInvariant() == invariantLowClassName)
-                {
-                    type = item.Value;
-                    break;
-                }
-            }
-
+            if (on == null) throw new ArgumentNullException(nameof(on), $"Requested class {className} is not applicable.");     
+            var type = SearchClassToRun(on, className, out _);
             _mainClassToRun = type ?? throw new ArgumentException($"Requested class {className} is not a valid class name.");
         }
 
@@ -357,15 +361,19 @@ namespace MASES.JNet.Specific.CLI
                 && string.IsNullOrWhiteSpace(DefaultClassToRun)
                 && result != null && result.Length > 0)
             {
-                // try to use first argument as ClassToRun
-                _classToRun = result[0];
-                int remaining = result.Length - 1;
-                if (remaining != 0)
+                // search in remaining arguments
+                List<string> lst = new List<string>(result);
+                var implementedClasses = JNetCLICoreHelper.MainClassesFrom<T>();
+                foreach (var item in lst.ToArray())
                 {
-                    string[] tmp_result = new string[remaining];
-                    Array.Copy(result, 1, tmp_result, 0, remaining); // remove first argument
-                    result = tmp_result;
+                    if (implementedClasses.SearchClassToRun(item, out _classToRun) != null)
+                    {
+                        lst.Remove(item);
+                        break;
+                    }
                 }
+
+                result = lst.ToArray();
             }
 
             List<string> jarList = new List<string>();
@@ -377,7 +385,7 @@ namespace MASES.JNet.Specific.CLI
             _JarList = jarList;
 
             List<string> namespaceList = new List<string>();
-            foreach (var assembly in ReferencesOf<T>())
+            foreach (var assembly in AssemblyReferencesOf<T>())
             {
                 foreach (var item in assembly.GetExportedTypes())
                 {
@@ -410,7 +418,7 @@ namespace MASES.JNet.Specific.CLI
             _ImportList = importList;
 
             if (!Interactive
-                && Script == null
+                && string.IsNullOrWhiteSpace(Script)
                 && string.IsNullOrWhiteSpace(_classToRun)) // set default to DefaultClassToRun since nothing was set
             {
                 _classToRun = DefaultClassToRun;
