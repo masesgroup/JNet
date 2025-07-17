@@ -156,7 +156,7 @@ namespace MASES.JNet.Specific.CLI
         /// </summary>
         /// <typeparam name="T">The <see cref="Type"/> to parse</typeparam>
         /// <returns>An <see cref="IEnumerable{T}"/> containing the <see cref="Assembly"/> found from <typeparamref name="T"/></returns>
-        public static IEnumerable<Assembly> ReferencesOf<T>()
+        public static IEnumerable<Assembly> AssemblyReferencesOf<T>()
         {
             List<Assembly> assemblies = new List<Assembly>();
             var baseType = typeof(T);
@@ -191,7 +191,7 @@ namespace MASES.JNet.Specific.CLI
         {
             Type RunnerType = typeof(TRunner);
             Dictionary<string, Type> implementedClasses = new Dictionary<string, Type>();
-            foreach (var reference in JNetCLICoreHelper.ReferencesOf<TRunner>())
+            foreach (var reference in JNetCLICoreHelper.AssemblyReferencesOf<TRunner>())
             {
                 IDictionary<string, Type> classes = RunnerType.RunStaticMethodOn(typeof(SetupJVMWrapper), nameof(JNetCoreBase<TRunner>.GetMainClasses), reference) as IDictionary<string, Type>;
                 foreach (var cls in classes)
@@ -390,6 +390,7 @@ namespace MASES.JNet.Specific.CLI
                         Console.WriteLine($"Using remaining argument {item}");
                         _classToRun = item;
                         lst.Remove(item);
+                        break;
                     }
                     else Console.WriteLine($"Discarded remaining argument {item}");
                 }
@@ -406,7 +407,7 @@ namespace MASES.JNet.Specific.CLI
             _JarList = jarList;
 
             List<string> namespaceList = new List<string>();
-            foreach (var assembly in ReferencesOf<T>())
+            foreach (var assembly in AssemblyReferencesOf<T>())
             {
                 foreach (var item in assembly.GetExportedTypes())
                 {
