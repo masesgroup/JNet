@@ -210,6 +210,21 @@ namespace MASES.JNet.Specific.CLI
             return implementedClasses;
         }
 
+        static Type SearchClassToRun(this IDictionary<string, Type> on, string className, out string className2)
+        {
+            className2 = null;
+            var invariantLowClassName = className.ToLowerInvariant();
+            foreach (var item in on)
+            {
+                if (item.Key.ToLowerInvariant() == invariantLowClassName)
+                {
+                    className2 = item.Key;
+                    return item.Value;
+                }
+            }
+            return null;
+        }
+
         /// <summary>
         /// Prepare <see cref="MainClassToRun"/> property
         /// </summary>
@@ -231,19 +246,9 @@ namespace MASES.JNet.Specific.CLI
         public static void PrepareMainClassToRun(this IDictionary<string, Type> on, string className)
         {
             if (string.IsNullOrWhiteSpace(className)) return;
-            if (on == null) throw new ArgumentNullException(nameof(on), $"Requested class {className} is not applicable.");
-            var invariantLowClassName = className.ToLowerInvariant();
-            Console.WriteLine($"Searching class {invariantLowClassName}");
-            Type type = null;
-            foreach (var item in on)
-            {
-                if (item.Key.ToLowerInvariant() == invariantLowClassName)
-                {
-                    type = item.Value;
-                    break;
-                }
-            }
-
+            if (on == null) throw new ArgumentNullException(nameof(on), $"Requested class {className} is not applicable.");     
+            Console.WriteLine($"Searching class {className}");
+            var type = SearchClassToRun(on, className, out _);
             _mainClassToRun = type ?? throw new ArgumentException($"Requested class {className} is not a valid class name.");
         }
 
@@ -334,22 +339,6 @@ namespace MASES.JNet.Specific.CLI
         /// </summary>
         public static IEnumerable<string> ImportList => _ImportList;
 
-        class ClassComparer : IEqualityComparer<string>
-        {
-            public bool Equals(string x, string y)
-            {
-                if (x == null && y == null) return true;
-                Console.WriteLine($"Comparing {x} to {y}");
-                return x?.ToLowerInvariant() == y?.ToLowerInvariant();
-            }
-
-            public int GetHashCode(string obj)
-            {
-                if (obj == null) return 0;
-                return obj.GetHashCode();
-            }
-        }
-
         /// <summary>
         /// Process parsed args
         /// </summary>
@@ -381,14 +370,13 @@ namespace MASES.JNet.Specific.CLI
                 Console.WriteLine($"Searching remaining arguments {string.Join(" ", result)}");
                 // search in remaining arguments
                 List<string> lst = new List<string>(result);
-                var implementedClasses = new Dictionary<string, Type>(JNetCLICoreHelper.MainClassesFrom<T>(), new ClassComparer());
+                var implementedClasses = JNetCLICoreHelper.MainClassesFrom<T>();
                 foreach (var item in lst.ToArray())
                 {
                     Console.WriteLine($"Searching remaining argument {item}");
-                    if (implementedClasses.ContainsKey(item))
+                    if (implementedClasses.SearchClassToRun(item, out _classToRun) != null)
                     {
                         Console.WriteLine($"Using remaining argument {item}");
-                        _classToRun = item;
                         lst.Remove(item);
                         break;
                     }
