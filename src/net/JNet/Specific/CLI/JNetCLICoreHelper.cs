@@ -247,7 +247,6 @@ namespace MASES.JNet.Specific.CLI
         {
             if (string.IsNullOrWhiteSpace(className)) return;
             if (on == null) throw new ArgumentNullException(nameof(on), $"Requested class {className} is not applicable.");     
-            Console.WriteLine($"Searching class {className}");
             var type = SearchClassToRun(on, className, out _);
             _mainClassToRun = type ?? throw new ArgumentException($"Requested class {className} is not a valid class name.");
         }
@@ -352,9 +351,6 @@ namespace MASES.JNet.Specific.CLI
 
             _classToRun = parsedArgs.Get<string>(CLIParam.ClassToRun[0]);
 
-            Console.WriteLine($"Found class to run {_classToRun}");
-            Console.WriteLine($"Default class to run {DefaultClassToRun}");
-
             _Interactive = parsedArgs.Exist(CLIParam.Interactive[0]);
 
             _RunCommand = parsedArgs.Get<string>(CLIParam.RunCommand[0]);
@@ -367,20 +363,16 @@ namespace MASES.JNet.Specific.CLI
                 && string.IsNullOrWhiteSpace(DefaultClassToRun)
                 && result != null && result.Length > 0)
             {
-                Console.WriteLine($"Searching remaining arguments {string.Join(" ", result)}");
                 // search in remaining arguments
                 List<string> lst = new List<string>(result);
                 var implementedClasses = JNetCLICoreHelper.MainClassesFrom<T>();
                 foreach (var item in lst.ToArray())
                 {
-                    Console.WriteLine($"Searching remaining argument {item}");
                     if (implementedClasses.SearchClassToRun(item, out _classToRun) != null)
                     {
-                        Console.WriteLine($"Using remaining argument {item}");
                         lst.Remove(item);
                         break;
                     }
-                    else Console.WriteLine($"Discarded remaining argument {item}");
                 }
 
                 result = lst.ToArray();
@@ -431,7 +423,6 @@ namespace MASES.JNet.Specific.CLI
                 && string.IsNullOrWhiteSpace(Script)
                 && string.IsNullOrWhiteSpace(_classToRun)) // set default to DefaultClassToRun since nothing was set
             {
-                Console.WriteLine($"Set _classToRun to {DefaultClassToRun}");
                 _classToRun = DefaultClassToRun;
             }
 
