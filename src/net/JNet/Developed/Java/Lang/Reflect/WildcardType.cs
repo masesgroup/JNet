@@ -16,9 +16,6 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-using MASES.JNet;
-
 namespace Java.Lang.Reflect
 {
     /// <summary>

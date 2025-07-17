@@ -16,13 +16,6 @@
 *  Refer to LICENSE for more information.
 */
 
-using MASES.JCOBridge.C2JBridge;
-using Microsoft.SqlServer.Server;
-using System.Diagnostics.Contracts;
-using System.Xml.Linq;
-using System;
-using MASES.JNet;
-
 namespace Java.Lang.Reflect
 {
     /// <summary>

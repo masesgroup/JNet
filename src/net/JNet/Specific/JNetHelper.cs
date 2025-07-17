@@ -20,7 +20,6 @@ using Java.Nio;
 using Java.Util;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
-using MASES.JNet.Specific.Extensions;
 using System;
 
 namespace MASES.JNet.Specific

@@ -18,11 +18,9 @@
 
 using MASES.CLIParser;
 using MASES.JCOBridge.C2JBridge;
-using MASES.JNet;
 using MASES.JNet.Specific.Extensions;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Reflection;
 

@@ -19,7 +19,6 @@
 using Java.Lang.Annotation;
 using Java.Lang.Reflect;
 using MASES.JCOBridge.C2JBridge;
-using MASES.JNet;
 
 namespace Java.Lang
 {

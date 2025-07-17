@@ -18,7 +18,6 @@
 
 using Java.Awt.EventNs;
 using MASES.JCOBridge.C2JBridge;
-using System;
 
 namespace Javax.Swing.Event
 {

@@ -16,10 +16,8 @@
 *  Refer to LICENSE for more information.
 */
 
-using Java.Lang;
 using Java.Util.Function;
 using MASES.JCOBridge.C2JBridge;
-using System;
 
 namespace Java.Util
 {

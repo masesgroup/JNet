@@ -17,7 +17,6 @@
 */
 
 using Java.Lang;
-using Java.Util.Function;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JNet.Specific.Extensions;
 using System.IO;
