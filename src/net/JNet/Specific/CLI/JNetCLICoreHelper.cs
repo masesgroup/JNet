@@ -233,7 +233,7 @@ namespace MASES.JNet.Specific.CLI
             if (string.IsNullOrWhiteSpace(className)) return;
             if (on == null) throw new ArgumentNullException(nameof(on), $"Requested class {className} is not applicable.");
             var invariantLowClassName = className.ToLowerInvariant();
-            Console.WriteLine($"Searching remaining argument {invariantLowClassName}");
+            Console.WriteLine($"Searching class {invariantLowClassName}");
             Type type = null;
             foreach (var item in on)
             {
@@ -362,6 +362,9 @@ namespace MASES.JNet.Specific.CLI
 
             _classToRun = parsedArgs.Get<string>(CLIParam.ClassToRun[0]);
 
+            Console.WriteLine($"Found class to run {_classToRun}");
+            Console.WriteLine($"Default class to run {DefaultClassToRun}");
+
             _Interactive = parsedArgs.Exist(CLIParam.Interactive[0]);
 
             _RunCommand = parsedArgs.Get<string>(CLIParam.RunCommand[0]);
@@ -374,6 +377,7 @@ namespace MASES.JNet.Specific.CLI
                 && string.IsNullOrWhiteSpace(DefaultClassToRun)
                 && result != null && result.Length > 0)
             {
+                Console.WriteLine($"Searching remaining arguments {string.Join(" ", result)}");
                 // search in remaining arguments
                 List<string> lst = new List<string>(result);
                 var implementedClasses = new Dictionary<string, Type>(JNetCLICoreHelper.MainClassesFrom<T>(), new ClassComparer());
@@ -437,6 +441,7 @@ namespace MASES.JNet.Specific.CLI
                 && Script == null
                 && string.IsNullOrWhiteSpace(_classToRun)) // set default to DefaultClassToRun since nothing was set
             {
+                Console.WriteLine($"Set _classToRun to {DefaultClassToRun}");
                 _classToRun = DefaultClassToRun;
             }
 
