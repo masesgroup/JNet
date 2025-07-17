@@ -37,9 +37,9 @@ namespace MASES.JNet.Specific.CLI
         {
             // ReflectorArgs
             public static string[] NoLogo = new string[] { "NoLogo", "nl" };
-            public static string[] ClassToRun = new string[] { "ClassToRun", "c" };
+            public static string[] ClassToRun = new string[] { "ClassToRun", "ctr" };
             public static string[] Interactive = new string[] { "Interactive", "i" };
-            public static string[] RunCommand = new string[] { "RunCommand", "r" };
+            public static string[] RunCommand = new string[] { "RunCommand", "rc" };
             public static string[] Script = new string[] { "Script", "s" };
             public static string[] JarList = new string[] { "JarList", "jl" };
             public static string[] NamespaceList = new string[] { "NamespaceList", "nl" };
@@ -438,7 +438,7 @@ namespace MASES.JNet.Specific.CLI
             _ImportList = importList;
 
             if (!Interactive
-                && Script == null
+                && string.IsNullOrWhiteSpace(Script)
                 && string.IsNullOrWhiteSpace(_classToRun)) // set default to DefaultClassToRun since nothing was set
             {
                 Console.WriteLine($"Set _classToRun to {DefaultClassToRun}");

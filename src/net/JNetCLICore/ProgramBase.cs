@@ -93,7 +93,7 @@ namespace MASES.JNet.CLI
                     }
                 }
             }
-            else if (EnableScript && !string.IsNullOrEmpty(JNetCLICoreHelper.Script))
+            else if (EnableScript && !string.IsNullOrWhiteSpace(JNetCLICoreHelper.Script))
             {
                 ShowLogo("Script mode");
 
