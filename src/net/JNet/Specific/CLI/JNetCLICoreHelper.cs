@@ -233,6 +233,7 @@ namespace MASES.JNet.Specific.CLI
             if (string.IsNullOrWhiteSpace(className)) return;
             if (on == null) throw new ArgumentNullException(nameof(on), $"Requested class {className} is not applicable.");
             var invariantLowClassName = className.ToLowerInvariant();
+            Console.WriteLine($"Searching remaining argument {invariantLowClassName}");
             Type type = null;
             foreach (var item in on)
             {
@@ -378,11 +379,14 @@ namespace MASES.JNet.Specific.CLI
                 var implementedClasses = new Dictionary<string, Type>(JNetCLICoreHelper.MainClassesFrom<T>(), new ClassComparer());
                 foreach (var item in lst.ToArray())
                 {
+                    Console.WriteLine($"Searching remaining argument {item}");
                     if (implementedClasses.ContainsKey(item))
                     {
+                        Console.WriteLine($"Using remaining argument {item}");
                         _classToRun = item;
                         lst.Remove(item);
                     }
+                    else Console.WriteLine($"Discarded remaining argument {item}");
                 }
 
                 result = lst.ToArray();
