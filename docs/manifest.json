@@ -27074,6 +27074,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Concurrent.CallableDirect-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Concurrent.CallableDirect-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Util.Concurrent.CallableDirect<V>",
+      "Summary": "<p sourcefile=\"api/Java.Util.Concurrent.CallableDirect-1.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Util.Concurrent.Callable\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Java.Util.Concurrent.CallableDirect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Java.Util.Concurrent.CallableDirect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Java.Util.Concurrent.CallableDirect",
+      "Summary": "<p sourcefile=\"api/Java.Util.Concurrent.CallableDirect.yml\" sourcestartlinenumber=\"1\">Direct override of <xref href=\"Java.Util.Concurrent.Callable\" data-throw-if-not-resolved=\"false\"></xref> or its generic type if there is one</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Java.Util.Concurrent.CancellationException.yml",
       "output": {
         ".html": {
@@ -27980,7 +28008,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Concurrent.ICallable<V>",
-      "Summary": "<p sourcefile=\"api/Java.Util.Concurrent.ICallable-1.yml\" sourcestartlinenumber=\"1\">.NET interface skeleton to be manually developed following <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Concurrent.ICallable-1.yml\" sourcestartlinenumber=\"1\">.NET interface for org.mases.jnet.generated.java.util.concurrent.Callable implementing <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html</a></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -69956,6 +69984,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.CLI.JNetCLICore-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.CLI.JNetCLICore-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.CLI.JNetCLICore<T>",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.CLI.JNetCLICore-1.yml\" sourcestartlinenumber=\"1\">Public entry point of <xref href=\"MASES.JNet.CLI.JNetCLICore%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.CLI.JNetCLICore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.CLI.JNetCLICore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.CLI.JNetCLICore",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.CLI.JNetCLICore.yml\" sourcestartlinenumber=\"1\">Concrete implementation of <xref href=\"MASES.JNet.CLI.JNetCLICore%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.CLI.ProgramBase-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.CLI.ProgramBase-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.CLI.ProgramBase<TRunner, TProgram>",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.CLI.ProgramBase-2.yml\" sourcestartlinenumber=\"1\">A base classs to be used in CLI executable</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.CLI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.CLI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.CLI",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MASES.JNet.JNetCore-1.yml",
       "output": {
         ".html": {
@@ -69981,6 +70065,804 @@
       "IsMRef": true,
       "Title": "MASES.JNet.JNetCoreBase<T>",
       "Summary": "<p sourcefile=\"api/MASES.JNet.JNetCoreBase-1.yml\" sourcestartlinenumber=\"1\">Public entry point of <xref href=\"MASES.JNet.JNetCoreBase%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.GetClassForNameCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.GetClassForNameCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.GetClassForNameCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.InvokeCommandCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.InvokeCommandCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.InvokeCommandCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.InvokeCommandCmdletCommandBase-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.InvokeCommandCmdletCommandBase-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.InvokeCommandCmdletCommandBase<TCmdlet, TCore>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.AddNotificationListenerCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.AddNotificationListenerCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.AddNotificationListenerCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.GetDefaultDomainCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.GetDefaultDomainCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.GetDefaultDomainCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.GetDomainsCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.GetDomainsCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.GetDomainsCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.GetIsMXBeanInterfaceCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.GetIsMXBeanInterfaceCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.GetIsMXBeanInterfaceCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.GetJMXConnectorCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.GetJMXConnectorCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.GetJMXConnectorCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.GetMBeanCountCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.GetMBeanCountCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.GetMBeanCountCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.GetMBeanInfoCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.GetMBeanInfoCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.GetMBeanInfoCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.GetQueryNamesCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.GetQueryNamesCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.GetQueryNamesCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryAndCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryAndCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryAndCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryAnySubStringCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryAnySubStringCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryAnySubStringCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryAttrCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryAttrCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryAttrCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryBetweenCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryBetweenCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryBetweenCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryDivCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryDivCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryDivCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryEqCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryEqCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryEqCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryFinalSubStringCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryFinalSubStringCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryFinalSubStringCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryGeqCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryGeqCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryGeqCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryGtCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryGtCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryGtCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryInCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryInCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryInCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryInitialSubStringCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryInitialSubStringCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryInitialSubStringCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryIsInstanceOfCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryIsInstanceOfCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryIsInstanceOfCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryLeqCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryLeqCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryLeqCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryLtCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryLtCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryLtCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryMatchCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryMatchCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryMatchCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryMinusCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryMinusCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryMinusCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryNotCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryNotCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryNotCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryOrCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryOrCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryOrCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryPlusCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryPlusCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryPlusCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryTimesCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryTimesCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryTimesCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryValueCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryValueCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.InvokeQueryValueCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.NewJMXServiceURLCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.NewMBeanProxyCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.NewMBeanProxyCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.NewMBeanProxyCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.NewMXBeanProxyCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.NewMXBeanProxyCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.NewMXBeanProxyCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.NewNotificationListenerCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.NewNotificationListenerCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.NewNotificationListenerCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.NewObjectNameCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.NewObjectNameCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.NewObjectNameCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.RemoveNotificationListenerCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.RemoveNotificationListenerCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX.RemoveNotificationListenerCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JMX.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JMX",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JNetPSCmdlet-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JNetPSCmdlet-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JNetPSCmdlet<TCore>",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.PowerShell.Cmdlet.JNetPSCmdlet-1.yml\" sourcestartlinenumber=\"1\">Base class to be extended in derived projects for all PS cmdlet which needs the core active</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JNetPSExternalizableCmdlet-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JNetPSExternalizableCmdlet-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JNetPSExternalizableCmdlet<T>",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.PowerShell.Cmdlet.JNetPSExternalizableCmdlet-1.yml\" sourcestartlinenumber=\"1\">Base class to be extended in derived projects to execute externally</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JNetPSExternalize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.JNetPSExternalize.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.JNetPSExternalize",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.PowerShell.Cmdlet.JNetPSExternalize.yml\" sourcestartlinenumber=\"1\">Set to indicate the class need to run externally</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.NewObjectCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.NewObjectCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.NewObjectCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.NewObjectCmdletCommandBase-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.NewObjectCmdletCommandBase-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.NewObjectCmdletCommandBase<TCmdlet, TCore>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommand.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommand",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.PowerShell.Cmdlet.StartJNetPSCmdletCommandBase-2.yml\" sourcestartlinenumber=\"1\">Base class to be extended in derived projects to add other parameters</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.Cmdlet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.Cmdlet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.Cmdlet",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.JNetPSCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.JNetPSCore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.JNetPSCore",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.PowerShell.JNetPSCore.yml\" sourcestartlinenumber=\"1\">Concrete implementation of <xref href=\"MASES.JNet.JNetCore%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.JNetPSHelper-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.JNetPSHelper-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.JNetPSHelper<TClass>",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.PowerShell.JNetPSHelper-1.yml\" sourcestartlinenumber=\"1\">Public Helper class customized on <code class=\"typeparamref\">TClass</code></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.JNetPSHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.JNetPSHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.JNetPSHelper",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.PowerShell.JNetPSHelper.yml\" sourcestartlinenumber=\"1\">Generic public Helper class</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.JNetPSHelperExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.JNetPSHelperExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell.JNetPSHelperExtensions",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.PowerShell.JNetPSHelperExtensions.yml\" sourcestartlinenumber=\"1\">Public extension class</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.PowerShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.PowerShell.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.PowerShell",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.CLI.JNetCLICoreHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.CLI.JNetCLICoreHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Specific.CLI.JNetCLICoreHelper",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.Specific.CLI.JNetCLICoreHelper.yml\" sourcestartlinenumber=\"1\">Helper class for CLI operations</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Specific.CLI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Specific.CLI.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Specific.CLI",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -70134,846 +71016,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MASES.JNet",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetCLI.JNetCLICore-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetCLI.JNetCLICore-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetCLI.JNetCLICore<T>",
-      "Summary": "<p sourcefile=\"api/MASES.JNetCLI.JNetCLICore-1.yml\" sourcestartlinenumber=\"1\">Public entry point of <xref href=\"MASES.JNetCLI.JNetCLICore%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetCLI.JNetCLICore.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetCLI.JNetCLICore.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetCLI.JNetCLICore",
-      "Summary": "<p sourcefile=\"api/MASES.JNetCLI.JNetCLICore.yml\" sourcestartlinenumber=\"1\">Concrete implementation of <xref href=\"MASES.JNetCLI.JNetCLICore%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetCLI.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetCLI.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetCLI",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.GetClassForNameCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.GetClassForNameCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.GetClassForNameCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.InvokeCommandCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.InvokeCommandCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.InvokeCommandCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.AddNotificationListenerCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.AddNotificationListenerCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.AddNotificationListenerCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetDefaultDomainCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetDefaultDomainCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.GetDefaultDomainCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetDomainsCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetDomainsCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.GetDomainsCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetIsMXBeanInterfaceCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetIsMXBeanInterfaceCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.GetIsMXBeanInterfaceCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetJMXConnectorCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetJMXConnectorCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.GetJMXConnectorCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetMBeanCountCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetMBeanCountCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.GetMBeanCountCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetMBeanInfoCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetMBeanInfoCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.GetMBeanInfoCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.GetQueryNamesCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryAndCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryAndCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryAndCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryAnySubStringCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryAnySubStringCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryAnySubStringCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryAttrCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryAttrCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryAttrCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryBetweenCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryBetweenCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryBetweenCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryClassattrCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryDivCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryDivCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryDivCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryEqCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryEqCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryEqCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryFinalSubStringCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryFinalSubStringCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryFinalSubStringCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryGeqCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryGeqCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryGeqCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryGtCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryGtCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryGtCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryInCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryInCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryInCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryInitialSubStringCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryInitialSubStringCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryInitialSubStringCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryIsInstanceOfCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryIsInstanceOfCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryIsInstanceOfCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryLeqCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryLeqCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryLeqCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryLtCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryLtCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryLtCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryMatchCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryMatchCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryMatchCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryMinusCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryMinusCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryMinusCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryNotCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryNotCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryNotCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryOrCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryOrCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryOrCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryPlusCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryPlusCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryPlusCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryTimesCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryTimesCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryTimesCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.InvokeQueryValueCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.NewAttributeChangeNotificationFilterCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.NewJMXServiceURLCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewMBeanProxyCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewMBeanProxyCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.NewMBeanProxyCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewMXBeanProxyCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewMXBeanProxyCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.NewMXBeanProxyCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.NewNotificationFilterSupportCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewNotificationListenerCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewNotificationListenerCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.NewNotificationListenerCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewObjectNameCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.NewObjectNameCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.NewObjectNameCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.RemoveNotificationListenerCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.RemoveNotificationListenerCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX.RemoveNotificationListenerCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.JMX.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.JMX.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.JMX",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.NewObjectCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.NewObjectCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.NewObjectCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.StartJNetPSCmdletCommand.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.StartJNetPSCmdletCommand.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet.StartJNetPSCmdletCommand",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.Cmdlet.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.Cmdlet.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.Cmdlet",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.JNetPSCore.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.JNetPSCore.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS.JNetPSCore",
-      "Summary": "<p sourcefile=\"api/MASES.JNetPS.JNetPSCore.yml\" sourcestartlinenumber=\"1\">Concrete implementation of <xref href=\"MASES.JNet.JNetCore%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPS.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPS.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPS",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase-2.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPSCore.Cmdlet.InvokeCommandCmdletCommandBase<TCmdlet, TCore>",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPSCore.Cmdlet.JNetPSCmdlet<TCore>",
-      "Summary": "<p sourcefile=\"api/MASES.JNetPSCore.Cmdlet.JNetPSCmdlet-1.yml\" sourcestartlinenumber=\"1\">Base class to be extended in derived projects for all PS cmdlet which needs the core active</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet<T>",
-      "Summary": "<p sourcefile=\"api/MASES.JNetPSCore.Cmdlet.JNetPSExternalizableCmdlet-1.yml\" sourcestartlinenumber=\"1\">Base class to be extended in derived projects to execute externally</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPSCore.Cmdlet.JNetPSExternalize.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPSCore.Cmdlet.JNetPSExternalize.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPSCore.Cmdlet.JNetPSExternalize",
-      "Summary": "<p sourcefile=\"api/MASES.JNetPSCore.Cmdlet.JNetPSExternalize.yml\" sourcestartlinenumber=\"1\">Set to indicate the class need to run externally</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase-2.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPSCore.Cmdlet.NewObjectCmdletCommandBase<TCmdlet, TCore>",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase<TCmdlet, TCore>",
-      "Summary": "<p sourcefile=\"api/MASES.JNetPSCore.Cmdlet.StartJNetPSCmdletCommandBase-2.yml\" sourcestartlinenumber=\"1\">Base class to be extended in derived projects to add other parameters</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPSCore.Cmdlet.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPSCore.Cmdlet.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPSCore.Cmdlet",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPSCore.JNetPSHelper-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPSCore.JNetPSHelper-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPSCore.JNetPSHelper<TClass>",
-      "Summary": "<p sourcefile=\"api/MASES.JNetPSCore.JNetPSHelper-1.yml\" sourcestartlinenumber=\"1\">Public Helper class customized on <code class=\"typeparamref\">TClass</code></p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPSCore.JNetPSHelper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPSCore.JNetPSHelper.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPSCore.JNetPSHelper",
-      "Summary": "<p sourcefile=\"api/MASES.JNetPSCore.JNetPSHelper.yml\" sourcestartlinenumber=\"1\">Generic public Helper class</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPSCore.JNetPSHelperExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPSCore.JNetPSHelperExtensions.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPSCore.JNetPSHelperExtensions",
-      "Summary": "<p sourcefile=\"api/MASES.JNetPSCore.JNetPSHelperExtensions.yml\" sourcestartlinenumber=\"1\">Public extension class</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetPSCore.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetPSCore.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetPSCore",
       "Summary": null
     },
     {

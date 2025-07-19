@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class ProgramBase&lt;TRunner, TProgram&gt; | MASES Group - JNet </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ProgramBase&lt;TRunner, TProgram&gt; | MASES Group - JNet ">
+      <meta name="description" content="This is a descriptive page of JNet, the .NET suite for Java™/JVM™">
+      <meta name="description" content="A base classs to be used in CLI executable">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/JNet/new/master/apiSpec/new?filename=MASES_JNet_CLI_ProgramBase_2.md&amp;value=---%0Auid%3A%20MASES.JNet.CLI.ProgramBase%602%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MASES.JNet.CLI.ProgramBase`2">
+
+
+
+  <h1 id="MASES_JNet_CLI_ProgramBase_2" data-uid="MASES.JNet.CLI.ProgramBase`2" class="text-break">
+Class ProgramBase&lt;TRunner, TProgram&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MASES.html">MASES</a>.<a class="xref" href="MASES.JNet.html">JNet</a>.<a class="xref" href="MASES.JNet.CLI.html">CLI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.JNetCLICore.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A base classs to be used in CLI executable</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ProgramBase&lt;TRunner, TProgram&gt; where TRunner : JNetCoreBase&lt;TRunner&gt; where TProgram : ProgramBase&lt;TRunner, TProgram&gt;</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TRunner</code></dt>
+    <dd><p>The class extending <a class="xref" href="MASES.JNet.JNetCoreBase-1.html">JNetCoreBase&lt;T&gt;</a></p>
+</dd>
+    <dt><code>TProgram</code></dt>
+    <dd><p>The class extending <a class="xref" href="MASES.JNet.CLI.ProgramBase-2.html">ProgramBase&lt;TRunner, TProgram&gt;</a></p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ProgramBase&lt;TRunner, TProgram&gt;</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MASES_JNet_CLI_ProgramBase_2_DefaultClassToRun_" data-uid="MASES.JNet.CLI.ProgramBase`2.DefaultClassToRun*"></a>
+
+  <h3 id="MASES_JNet_CLI_ProgramBase_2_DefaultClassToRun" data-uid="MASES.JNet.CLI.ProgramBase`2.DefaultClassToRun">
+  DefaultClassToRun
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The default class to run in CLI version if neighter <a class="xref" href="MASES.JNet.Specific.CLI.JNetCLICoreHelper.html#MASES_JNet_Specific_CLI_JNetCLICoreHelper_ApplicationClassToRun">ApplicationClassToRun</a> nor <a class="xref" href="MASES.JNet.Specific.CLI.JNetCLICoreHelper.html#MASES_JNet_Specific_CLI_JNetCLICoreHelper_ClassToRun">ClassToRun</a> are set</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string DefaultClassToRun { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_CLI_ProgramBase_2_EnableInteractive_" data-uid="MASES.JNet.CLI.ProgramBase`2.EnableInteractive*"></a>
+
+  <h3 id="MASES_JNet_CLI_ProgramBase_2_EnableInteractive" data-uid="MASES.JNet.CLI.ProgramBase`2.EnableInteractive">
+  EnableInteractive
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to use <a class="xref" href="MASES.JNet.Specific.CLI.JNetCLICoreHelper.html#MASES_JNet_Specific_CLI_JNetCLICoreHelper_Interactive">Interactive</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool EnableInteractive { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_CLI_ProgramBase_2_EnableMainClassToRun_" data-uid="MASES.JNet.CLI.ProgramBase`2.EnableMainClassToRun*"></a>
+
+  <h3 id="MASES_JNet_CLI_ProgramBase_2_EnableMainClassToRun" data-uid="MASES.JNet.CLI.ProgramBase`2.EnableMainClassToRun">
+  EnableMainClassToRun
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to use <a class="xref" href="MASES.JNet.Specific.CLI.JNetCLICoreHelper.html#MASES_JNet_Specific_CLI_JNetCLICoreHelper_MainClassToRun">MainClassToRun</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool EnableMainClassToRun { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_CLI_ProgramBase_2_EnableRunCommand_" data-uid="MASES.JNet.CLI.ProgramBase`2.EnableRunCommand*"></a>
+
+  <h3 id="MASES_JNet_CLI_ProgramBase_2_EnableRunCommand" data-uid="MASES.JNet.CLI.ProgramBase`2.EnableRunCommand">
+  EnableRunCommand
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to use <a class="xref" href="MASES.JNet.Specific.CLI.JNetCLICoreHelper.html#MASES_JNet_Specific_CLI_JNetCLICoreHelper_RunCommand">RunCommand</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool EnableRunCommand { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_CLI_ProgramBase_2_EnableScript_" data-uid="MASES.JNet.CLI.ProgramBase`2.EnableScript*"></a>
+
+  <h3 id="MASES_JNet_CLI_ProgramBase_2_EnableScript" data-uid="MASES.JNet.CLI.ProgramBase`2.EnableScript">
+  EnableScript
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to use <a class="xref" href="MASES.JNet.Specific.CLI.JNetCLICoreHelper.html#MASES_JNet_Specific_CLI_JNetCLICoreHelper_Script">Script</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool EnableScript { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_CLI_ProgramBase_2_EntryLine_" data-uid="MASES.JNet.CLI.ProgramBase`2.EntryLine*"></a>
+
+  <h3 id="MASES_JNet_CLI_ProgramBase_2_EntryLine" data-uid="MASES.JNet.CLI.ProgramBase`2.EntryLine">
+  EntryLine
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The line proposing info about using of the program</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string EntryLine { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_CLI_ProgramBase_2_ExampleLines_" data-uid="MASES.JNet.CLI.ProgramBase`2.ExampleLines*"></a>
+
+  <h3 id="MASES_JNet_CLI_ProgramBase_2_ExampleLines" data-uid="MASES.JNet.CLI.ProgramBase`2.ExampleLines">
+  ExampleLines
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A set of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> with examples</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ExampleLines { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_CLI_ProgramBase_2_LogoLine_" data-uid="MASES.JNet.CLI.ProgramBase`2.LogoLine*"></a>
+
+  <h3 id="MASES_JNet_CLI_ProgramBase_2_LogoLine" data-uid="MASES.JNet.CLI.ProgramBase`2.LogoLine">
+  LogoLine
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The initial logo</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string LogoLine { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_CLI_ProgramBase_2_ProgramName_" data-uid="MASES.JNet.CLI.ProgramBase`2.ProgramName*"></a>
+
+  <h3 id="MASES_JNet_CLI_ProgramBase_2_ProgramName" data-uid="MASES.JNet.CLI.ProgramBase`2.ProgramName">
+  ProgramName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The program name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ProgramName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_CLI_ProgramBase_2_ProgramVersion_" data-uid="MASES.JNet.CLI.ProgramBase`2.ProgramVersion*"></a>
+
+  <h3 id="MASES_JNet_CLI_ProgramBase_2_ProgramVersion" data-uid="MASES.JNet.CLI.ProgramBase`2.ProgramVersion">
+  ProgramVersion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The program version</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Version ProgramVersion { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.version">Version</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_CLI_ProgramBase_2_ProjectName_" data-uid="MASES.JNet.CLI.ProgramBase`2.ProjectName*"></a>
+
+  <h3 id="MASES_JNet_CLI_ProgramBase_2_ProjectName" data-uid="MASES.JNet.CLI.ProgramBase`2.ProjectName">
+  ProjectName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The project of the <a class="xref" href="MASES.JNet.CLI.ProgramBase-2.html#MASES_JNet_CLI_ProgramBase_2_ProgramName">ProgramName</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ProjectName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_CLI_ProgramBase_2_SpecificArguments_" data-uid="MASES.JNet.CLI.ProgramBase`2.SpecificArguments*"></a>
+
+  <h3 id="MASES_JNet_CLI_ProgramBase_2_SpecificArguments" data-uid="MASES.JNet.CLI.ProgramBase`2.SpecificArguments">
+  SpecificArguments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Arguments specific to the class extending <a class="xref" href="MASES.JNet.CLI.ProgramBase-2.html">ProgramBase&lt;TRunner, TProgram&gt;</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string SpecificArguments { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MASES_JNet_CLI_ProgramBase_2_InternalMain_" data-uid="MASES.JNet.CLI.ProgramBase`2.InternalMain*"></a>
+
+  <h3 id="MASES_JNet_CLI_ProgramBase_2_InternalMain_System_String___" data-uid="MASES.JNet.CLI.ProgramBase`2.InternalMain(System.String[])">
+  InternalMain(string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task InternalMain(string[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_CLI_ProgramBase_2_ShowHelp_" data-uid="MASES.JNet.CLI.ProgramBase`2.ShowHelp*"></a>
+
+  <h3 id="MASES_JNet_CLI_ProgramBase_2_ShowHelp_System_String_" data-uid="MASES.JNet.CLI.ProgramBase`2.ShowHelp(System.String)">
+  ShowHelp(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ShowHelp(string errorString = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>errorString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_CLI_ProgramBase_2_ShowLogo_" data-uid="MASES.JNet.CLI.ProgramBase`2.ShowLogo*"></a>
+
+  <h3 id="MASES_JNet_CLI_ProgramBase_2_ShowLogo_System_String_" data-uid="MASES.JNet.CLI.ProgramBase`2.ShowLogo(System.String)">
+  ShowLogo(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ShowLogo(string logoTrailer = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>logoTrailer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetCLICore/ProgramBase.cs/#L42" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <script type="text/javascript">document.write('<div style="text-align: center;">Copyright © 2022 - ' + new Date().getFullYear() + ' MASES s.r.l. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>');</script>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
