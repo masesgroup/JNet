@@ -95,7 +95,7 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
     * enhanced ByteBuffer management
     * speed-up array/list conversion
 * V2.5.11: updates to JCOBridge 2.5.21 and adds management of [CET](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) on recent Intel CPU due to [latest change on .NET 9](https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support): usage explanation on [this](src/documentation/articles/usage.md#intel-cet-and-jnet)
-* V2.5.13: adds [![JNetCLICore](https://img.shields.io/nuget/v/MASES.JNetCLICore)](https://www.nuget.org/packages/MASES.JNetCLICore) to help CLI operations across projects based on JNet
+* V2.5.13: adds [JNetCLICore](https://www.nuget.org/packages/MASES.JNetCLICore) to help CLI operations across projects based on JNet
 
 ---
 
