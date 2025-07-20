@@ -253,7 +253,7 @@ namespace MASES.JNet.PowerShell
             return attribute.NounName;
         }
         /// <summary>
-        /// Sets <see cref="JNetCLICoreHelper.ApplicationClassToRun"/>
+        /// Sets <see cref="JNetCLICoreHelper.ApplicationClassToRun"/> using <see cref="NounName{T}"/>
         /// </summary>
         public static void SetClassToRunByNounName<T>() where T : System.Management.Automation.Cmdlet
         {
