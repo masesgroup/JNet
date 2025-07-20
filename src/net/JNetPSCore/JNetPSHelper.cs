@@ -253,6 +253,14 @@ namespace MASES.JNet.PowerShell
             return attribute.NounName;
         }
         /// <summary>
+        /// Sets <see cref="JNetCLICoreHelper.ApplicationClassToRun"/> using <see cref="NounName{T}"/>
+        /// </summary>
+        public static void SetClassToRunByNounName<T>() where T : System.Management.Automation.Cmdlet
+        {
+            JNetCLICoreHelper.ApplicationClassToRun = NounName<T>();
+        }
+
+        /// <summary>
         /// Extracts the verb name from the <see cref="CmdletAttribute"/>
         /// </summary>
         /// <typeparam name="T">The <see cref="System.Management.Automation.Cmdlet"/></typeparam>
@@ -385,10 +393,6 @@ namespace MASES.JNet.PowerShell
         /// Sets <see cref="JNetCoreBase{T}.ApplicationLogClassPath"/>
         /// </summary>
         public static void SetLogClassPath(bool? logClassPath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationLogClassPath), logClassPath); }
-        /// <summary>
-        /// Sets <see cref="JNetCLICoreHelper.ApplicationClassToRun"/>
-        /// </summary>
-        public static void SetClassToRun(string classToRun) { JNetPSHelper<TClass>.Set(typeof(JNetCLICoreHelper), nameof(JNetCLICoreHelper.ApplicationClassToRun), classToRun); }
 
         /// <summary>
         /// Invokes <see cref="SetupJVMWrapper{T}.CreateGlobalInstance"/> to start engine
