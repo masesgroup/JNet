@@ -52,7 +52,8 @@
       "https://xref.docs.microsoft.com/query?uid={uid}"
     ],
     "xref": [
-      "https://cliparser.masesgroup.com/xrefmap.yml"
+      "https://cliparser.masesgroup.com/xrefmap.yml",
+      "https://jcobridge-api.masesgroup.com/xrefmap.yml"
     ],
     "postProcessors": [ "ExtractSearchIndex" ],
     "globalMetadata": {

@@ -26,7 +26,7 @@ using System.Threading;
 namespace MASES.JNet.Specific
 {
     /// <summary>
-    /// An extension of <see href="https://www.jcobridge.com/api-clr/html/T_MASES_JCOBridge_C2JBridge_JVMBridgeBaseEnumerator_1.htm"/> implementing <see cref="IAsyncEnumerator{TObject}"/> used to manage Java Iterator in async way
+    /// An extension of <see cref="JVMBridgeBasePrefetchableEnumerator{TObject}"/> implementing <see cref="IAsyncEnumerator{TObject}"/> used to manage Java Iterator in async way
     /// </summary>
     /// <typeparam name="TObject">The returning type of the iterator</typeparam>
     public class JNetAsyncEnumerator<TObject> : JVMBridgeBasePrefetchableEnumerator<TObject>, IAsyncEnumerator<TObject>
@@ -46,9 +46,7 @@ namespace MASES.JNet.Specific
             _cancellationToken = cancellationToken;
             enumeratorBase = this;
         }
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/M_MASES_JCOBridge_C2JBridge_JVMBridgeBasePrefetchableEnumerator_DoWorkCycle.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         protected override bool DoWorkCycle()
         {
             _sync.WaitOne();

@@ -29,7 +29,7 @@ namespace Javax.Naming.Event
     }
 
     /// <summary>
-    /// Listener for ObjectChangeListener. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>, implements <see cref="IObjectChangeListener"/>
+    /// Listener for ObjectChangeListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IObjectChangeListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class ObjectChangeListener : IObjectChangeListener

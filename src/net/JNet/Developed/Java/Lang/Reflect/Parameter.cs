@@ -24,13 +24,9 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class Parameter : AnnotatedElement
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.Parameter";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override bool IsBridgeInterface => false;
         /// <summary>
         /// Returns an <see cref="AnnotatedType"/> object that represents the use of a type to specify the type of the formal parameter represented by this <see cref="Parameter"/>.

@@ -39,7 +39,7 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html"/>. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>
+    /// Listener for <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html"/>. Extends <see cref="JVMBridgeListener"/>
     /// </summary>
     public abstract class BiPredicate : JVMBridgeListener
     {
@@ -47,9 +47,7 @@ namespace Java.Util.Function
         /// Enable/disable handlers initialization, default is <see langword="true"/>
         /// </summary>
         protected virtual bool InitHandlers { get; } = true;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override string BridgeClassName => "org.mases.jnet.developed.java.util.function.BiPredicate";
     }
 
@@ -58,9 +56,7 @@ namespace Java.Util.Function
     /// </summary>
     public partial class BiPredicateDirect : BiPredicate
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override bool AutoInit => false;
 
         /// <inheritdoc />
@@ -70,25 +66,15 @@ namespace Java.Util.Function
         private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override string BridgeClassName => _bridgeClassName;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override bool IsBridgeAbstract => true;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override bool IsBridgeCloseable => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override bool IsBridgeInterface => true;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override bool IsBridgeStatic => false;
 
         /// <summary>
@@ -170,9 +156,7 @@ namespace Java.Util.Function
     /// </summary>
     public partial class BiPredicateDirect<T, U> : BiPredicate<T, U>
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override bool AutoInit => false;
 
         /// <inheritdoc />
@@ -182,25 +166,15 @@ namespace Java.Util.Function
         private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override string BridgeClassName => _bridgeClassName;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override bool IsBridgeAbstract => true;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override bool IsBridgeCloseable => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override bool IsBridgeInterface => true;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override bool IsBridgeStatic => false;
 
         /// <summary>

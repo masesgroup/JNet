@@ -34,32 +34,22 @@ namespace MASES.JNet.Specific
         private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
         private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override bool IsBridgeAbstract => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override bool IsBridgeCloseable => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override bool IsBridgeInterface => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override bool IsBridgeStatic => false;
 
         /// <summary>
-        /// Retrieve the <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName.htm"/> of <typeparamref name="TClass"></typeparamref>
+        /// Retrieve the <see cref="IJVMBridgeDefinition.BridgeClassName"/> of <typeparamref name="TClass"></typeparamref>
         /// </summary>
-        /// <typeparam name="TClass">A type implementing <see href="https://www.jcobridge.com/api-clr/html/T_MASES_JCOBridge_C2JBridge_IJVMBridgeBase.htm"/></typeparam>
-        /// <returns>The <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName.htm"/></returns>
+        /// <typeparam name="TClass">A type implementing <see cref="IJVMBridgeBase"/></typeparam>
+        /// <returns>The <see cref="IJVMBridgeDefinition.BridgeClassName"/></returns>
         public static Java.Lang.Class<TClass> Class<TClass>() where TClass : IJVMBridgeBase, new()
         {
             var className = JVMBridgeBase.ClassNameOf<TClass>();

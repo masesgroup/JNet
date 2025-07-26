@@ -27,13 +27,9 @@ namespace Java.Util
     /// </summary>
     public partial class Iterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Iterator>
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override string BridgeClassName => "java.util.Iterator";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override bool IsBridgeInterface => true;
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
@@ -104,13 +100,9 @@ namespace Java.Util
     /// </summary>
     public partial class Iterator<E> : JVMBridgeBase<Iterator<E>>, IIterator<E>
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override string BridgeClassName => "java.util.Iterator";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override bool IsBridgeInterface => true;
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge

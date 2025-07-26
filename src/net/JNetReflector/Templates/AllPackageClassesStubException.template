@@ -3,9 +3,7 @@ ALLPACKAGE_CLASSES_STUB_CLASS_DECORATION_PLACEHOLDER
 public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER
 {
     const string _bridgeClassName = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER";
-    /// <summary>
-    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-    /// </summary>
+    /// <inheritdoc/>
     public override string BridgeClassName => _bridgeClassName;
 
     // TODO: complete the class
