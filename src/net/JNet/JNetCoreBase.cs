@@ -165,11 +165,33 @@ namespace MASES.JNet
         {
             JCOBridge.C2JBridge.JCOBridge.RegisterExceptions(typeof(JNetCoreBase<>).Assembly);
         }
+
+        void EventOrExceptionHandlerInternal(object o, EventOrExceptionEventArgs e)
+        {
+            EventOrExceptionHandler(e);
+        }
+        /// <summary>
+        /// Manages events raised from the underlying JCOBridge engine
+        /// </summary>
+        /// <param name="e">The <see cref="EventOrExceptionEventArgs"/> with information</param>
+        protected virtual void EventOrExceptionHandler(EventOrExceptionEventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(e.Message)) Console.WriteLine(e.Message);
+            else if (e.Error is LicenseManager.Common.FallbackInTrialModeException || e.Error is LicenseManager.Common.MissingLicenseException) return;
+            else if (e.Error != null)
+            {
+                Console.WriteLine();
+                Console.WriteLine("{0}: {1}", e.Error.GetType().Name, e.Error.Message);
+                Console.WriteLine();
+            }
+        }
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/M_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_ProcessCommandLine.htm"/>
         /// </summary>
         protected override string[] ProcessCommandLine()
         {
+            JCOBridge.C2JBridge.JCOBridge.SetEventOrExceptionHandler(EventOrExceptionHandlerInternal);
             Parser.Add(CommandLineArguments);
             _parsedArgs = Parser.Parse(base.ProcessCommandLine());
 #if DEBUG

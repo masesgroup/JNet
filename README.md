@@ -96,6 +96,7 @@ This project adheres to the Contributor [Covenant code of conduct](CODE_OF_CONDU
     * speed-up array/list conversion
 * V2.5.11: updates to JCOBridge 2.5.21 and adds management of [CET](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) on recent Intel CPU due to [latest change on .NET 9](https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support): usage explanation on [this](src/documentation/articles/usage.md#intel-cet-and-jnet)
 * V2.5.13: adds [JNetCLICore](https://www.nuget.org/packages/MASES.JNetCLICore) to help CLI operations across projects based on JNet
+* V2.6.0: aligns to JCOBridge 2.6.* series
 
 ---
 
@@ -107,17 +108,24 @@ JNet uses [JCOBridge](https://www.jcobridge.com), and its [features](https://www
   * JCOBridge does not make any code injection into JVM;
   * JCOBridge does not use any other communication mechanism than JNI;
   * .NET (CLR) inherently inherits the cyber-security levels of running JVM; 
-* **Direct access the JVM from any .NET application**: 
+* **Direct access to the JVM from any .NET application**: 
   * Any Java/Scala/Kotlin/... class can be directly managed;
   * No need to learn new APIs: we try to expose the same APIs in C# style;
   * No extra validation cycle on protocol and functionality: bug fix, improvements, new features are immediately available;
   * Documentation is shared;
 * **Dynamic code**: it helps to write a Java/Scala/Kotlin/etc seamless language code directly inside a standard .NET application written in C#/VB.NET: look at this [simple example](https://www.jcobridge.com/net-examples/dotnet-examples/) and [JNet APIs extensibility](src/documentation/articles/API_extensibility.md).
 
+[JCOBridge 2.6.*](https://www.jcobridge.com), and consequently JNet, can be used for free without any obligations; you need to purchase a commercial license, or uninstall the software, if you have incomes from the product usage.
+
 ### JCOBridge resources
 
 Have a look at the following JCOBridge resources:
-- [Release notes](https://www.jcobridge.com/release-notes/)
-- [Community Edition](https://www.jcobridge.com/pricing-25/)
-- [Commercial Edition](https://www.jcobridge.com/pricing-25/)
-- Latest release: [![JCOBridge nuget](https://img.shields.io/nuget/v/MASES.JCOBridge)](https://www.nuget.org/packages/MASES.JCOBridge)
+
+|JCOBridge | 2.5.* series | 2.6.* series |
+|:---:	|:---:	|:---:	|
+|JNet | > 1.5.* series | > 2.6.* series |
+|Release notes|[Link](https://www.jcobridge.com/release-notes/)| [Link](https://www.jcobridge.com/release-notes/)|
+|Community Edition|[Conditions](https://www.jcobridge.com/pricing-25/)|[Conditions](https://www.jcobridge.com/pricing-25/)|
+|Commercial Edition|[Information](https://www.jcobridge.com/pricing-26/)|[Information](https://www.jcobridge.com/pricing-26/)|
+
+Latest release: [![JCOBridge nuget](https://img.shields.io/nuget/v/MASES.JCOBridge)](https://www.nuget.org/packages/MASES.JCOBridge)
