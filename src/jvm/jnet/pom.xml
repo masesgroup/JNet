@@ -41,8 +41,11 @@
 		<maven.compiler.target>11</maven.compiler.target>
 		<classpathfile>${basedir}/classpathfile.classpath</classpathfile>
 		<jnetversion>2.5.13.0</jnetversion>
-		<jcobridgepath>${basedir}/../../../bin/net8.0/JCOBridge.jar</jcobridgepath>
-		<jarsDestination>${basedir}/../../../jars/</jarsDestination>
+		<jcobridgeFolderName>bin</jcobridgeFolderName>
+		<runtimeFolderName>net8.0</runtimeFolderName>
+		<rootDir>${basedir}/../../../</rootDir>
+		<jcobridgepath>${rootDir}/${jcobridgeFolderName}/${runtimeFolderName}/JCOBridge.jar</jcobridgepath>
+		<jarsDestination>${rootDir}/jars/</jarsDestination>
 	</properties>
 	<distributionManagement>
 		<snapshotRepository>
