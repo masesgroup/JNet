@@ -27,18 +27,18 @@ Its primary scope is to support other, public or internal, MASES Group projects:
 
 The repository code and releases may contain bugs, the release cycle depends from critical discovered issues and/or enhancement requested from this or other projects.
 
-Looking for the help of experts? MASES Group can help you design, build, deploy, and manage applications mixing .NET and JVM enabled languages.
+Looking for the help of experts? MASES Group can help you design, build, deploy, and manage applications mixing .NET and JVM™ enabled languages.
 
 ---
 
 ## Scope of the project
 
-This project aims to create a set of libraries and tools to direct access, from .NET, all the features available in the Java Platform, this is the counterpart of [JCOReflector](https://github.com/masesgroup/JCOReflector).
+This project aims to create a set of libraries and tools to direct access, from .NET, all the features available in the Java™ Platform, this is the counterpart of [JCOReflector](https://github.com/masesgroup/JCOReflector).
 
-There are many client libraries written to manage communication with Java. Conversely, this project use directly the Java packages giving more than one benefit:
+There are many client libraries written to manage communication with Java™. Conversely, this project use directly the Java™ packages giving more than one benefit:
 * all implemented features are availables at no extra implementation costs, see [JNet usage](usage.md);
 * avoids any third party communication protocol implementation;
-* access all features made available from Java platform.
+* access all features made available from Java™ platform.
 
 So, for example, do you want an `ArrayList`? Just write in C# a line of code like this:
 
