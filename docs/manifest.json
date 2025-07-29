@@ -1702,7 +1702,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.Dnd.DragGestureListener",
-      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DragGestureListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Awt.Dnd.IDragGestureListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DragGestureListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragGestureListener.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Awt.Dnd.IDragGestureListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1758,7 +1758,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.Dnd.DragSourceAdapter",
-      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DragSourceAdapter.yml\" sourcestartlinenumber=\"1\">Listener for DragSourceAdapter. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Awt.Dnd.IDragSourceAdapter\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DragSourceAdapter.yml\" sourcestartlinenumber=\"1\">Listener for DragSourceAdapter. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Awt.Dnd.IDragSourceAdapter\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1842,7 +1842,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.Dnd.DragSourceListener",
-      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DragSourceListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Awt.Dnd.IDragSourceListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DragSourceListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DragSourceListener.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Awt.Dnd.IDragSourceListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -1996,7 +1996,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.Dnd.DropTargetListener",
-      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DropTargetListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Awt.Dnd.IDropTargetListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.Dnd.DropTargetListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/dnd/DropTargetListener.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Awt.Dnd.IDropTargetListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2248,7 +2248,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.AWTEventListener",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.AWTEventListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Awt.EventNs.IAWTEventListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.AWTEventListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Awt.EventNs.IAWTEventListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2304,7 +2304,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.ActionListener",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ActionListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Awt.EventNs.IActionListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ActionListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ActionListener.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Awt.EventNs.IActionListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2346,7 +2346,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.AdjustmentListener",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.AdjustmentListener.yml\" sourcestartlinenumber=\"1\">Listener for AdjustmentListener. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Awt.EventNs.IAdjustmentListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.AdjustmentListener.yml\" sourcestartlinenumber=\"1\">Listener for AdjustmentListener. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Awt.EventNs.IAdjustmentListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2416,7 +2416,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.ComponentListener",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ComponentListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Awt.EventNs.IComponentListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ComponentListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ComponentListener.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Awt.EventNs.IComponentListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -2570,7 +2570,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.FocusListener",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.FocusListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Awt.EventNs.IFocusListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.FocusListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/FocusListener.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Awt.EventNs.IFocusListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3004,7 +3004,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.InputMethodListener",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.InputMethodListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Awt.EventNs.IInputMethodListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.InputMethodListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/InputMethodListener.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Awt.EventNs.IInputMethodListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3060,7 +3060,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.ItemListener",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ItemListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Awt.EventNs.IItemListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.ItemListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/ItemListener.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Awt.EventNs.IItemListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3130,7 +3130,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.KeyListener",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.KeyListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Awt.EventNs.IKeyListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.KeyListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/KeyListener.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Awt.EventNs.IKeyListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3158,7 +3158,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.MouseAdapter",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.MouseAdapter.yml\" sourcestartlinenumber=\"1\">Listener for MouseAdapter. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Awt.EventNs.IMouseAdapter\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.MouseAdapter.yml\" sourcestartlinenumber=\"1\">Listener for MouseAdapter. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Awt.EventNs.IMouseAdapter\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3354,7 +3354,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.TextListener",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.TextListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Awt.EventNs.ITextListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.TextListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/TextListener.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Awt.EventNs.ITextListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -3382,7 +3382,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Awt.EventNs.WindowAdapter",
-      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.WindowAdapter.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Awt.EventNs.IWindowAdapter\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Awt.EventNs.WindowAdapter.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/WindowAdapter.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Awt.EventNs.IWindowAdapter\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -8338,7 +8338,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Beans.PropertyChangeListener",
-      "Summary": "<p sourcefile=\"api/Java.Beans.PropertyChangeListener.yml\" sourcestartlinenumber=\"1\">Listener for PropertyChangeListener. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Beans.IPropertyChangeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Beans.PropertyChangeListener.yml\" sourcestartlinenumber=\"1\">Listener for PropertyChangeListener. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Beans.IPropertyChangeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -14064,7 +14064,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Lang.Thread.UncaughtExceptionHandler",
-      "Summary": "<p sourcefile=\"api/Java.Lang.Thread.UncaughtExceptionHandler.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Lang.Thread.UncaughtExceptionHandler.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -26580,7 +26580,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Comparator<T>",
-      "Summary": "<p sourcefile=\"api/Java.Util.Comparator-1.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Util.IComparator%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Comparator-1.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Util.IComparator%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -26594,7 +26594,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Comparator",
-      "Summary": "<p sourcefile=\"api/Java.Util.Comparator.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Java.Util.IComparator%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Comparator.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Comparator.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Java.Util.IComparator%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29422,7 +29422,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.BiConsumer",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.BiConsumer.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.BiConsumer.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29478,7 +29478,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.BiFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.BiFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.BiFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29534,7 +29534,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.BiPredicate",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.BiPredicate.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.BiPredicate.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29590,7 +29590,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.BinaryOperator",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.BinaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.BinaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/BinaryOperator.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29632,7 +29632,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.BooleanSupplier",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.BooleanSupplier.yml\" sourcestartlinenumber=\"1\">Listener for Java BooleanSupplier <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/BooleanSupplier.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/BooleanSupplier.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.BooleanSupplier.yml\" sourcestartlinenumber=\"1\">Listener for Java BooleanSupplier <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/BooleanSupplier.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/BooleanSupplier.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29674,7 +29674,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.Consumer",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.Consumer.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.Consumer.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29716,7 +29716,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.DoubleBinaryOperator",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoubleBinaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for Java DoubleBinaryOperator <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoubleBinaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for Java DoubleBinaryOperator <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29744,7 +29744,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.DoubleConsumer",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoubleConsumer.yml\" sourcestartlinenumber=\"1\">Listener for Java DoubleConsumer <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleConsumer.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoubleConsumer.yml\" sourcestartlinenumber=\"1\">Listener for Java DoubleConsumer <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleConsumer.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29786,7 +29786,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.DoubleFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoubleFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoubleFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29828,7 +29828,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.DoublePredicate",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoublePredicate.yml\" sourcestartlinenumber=\"1\">Listener for Java DoublePredicate <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoublePredicate.yml\" sourcestartlinenumber=\"1\">Listener for Java DoublePredicate <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29856,7 +29856,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.DoubleSupplier",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoubleSupplier.yml\" sourcestartlinenumber=\"1\">Listener for Java DoubleSupplier <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleSupplier.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleSupplier.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoubleSupplier.yml\" sourcestartlinenumber=\"1\">Listener for Java DoubleSupplier <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleSupplier.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleSupplier.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29884,7 +29884,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.DoubleToIntFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoubleToIntFunction.yml\" sourcestartlinenumber=\"1\">Listener for Java DoubleToIntFunction <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToIntFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToIntFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoubleToIntFunction.yml\" sourcestartlinenumber=\"1\">Listener for Java DoubleToIntFunction <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToIntFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToIntFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29912,7 +29912,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.DoubleToLongFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoubleToLongFunction.yml\" sourcestartlinenumber=\"1\">Listener for Java DoubleToLongFunction <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToLongFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToLongFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoubleToLongFunction.yml\" sourcestartlinenumber=\"1\">Listener for Java DoubleToLongFunction <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToLongFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToLongFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29940,7 +29940,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.DoubleUnaryOperator",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoubleUnaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for Java DoubleUnaryOperator <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.DoubleUnaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for Java DoubleUnaryOperator <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -29982,7 +29982,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.Function",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.Function.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.Function.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30626,7 +30626,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.IntBinaryOperator",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntBinaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for Java IntBinaryOperator <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntBinaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntBinaryOperator.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntBinaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for Java IntBinaryOperator <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntBinaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntBinaryOperator.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30654,7 +30654,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.IntConsumer",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntConsumer.yml\" sourcestartlinenumber=\"1\">Listener for Java IntConsumer <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntConsumer.yml\" sourcestartlinenumber=\"1\">Listener for Java IntConsumer <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html</a>. Extends JVMBridgeListener</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30696,7 +30696,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.IntFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30766,7 +30766,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.IntSupplier",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntSupplier.yml\" sourcestartlinenumber=\"1\">Listener for Java IntSupplier <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntSupplier.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntSupplier.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntSupplier.yml\" sourcestartlinenumber=\"1\">Listener for Java IntSupplier <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntSupplier.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntSupplier.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30794,7 +30794,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.IntToDoubleFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntToDoubleFunction.yml\" sourcestartlinenumber=\"1\">Listener for Java IntToDoubleFunction <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntToDoubleFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntToDoubleFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntToDoubleFunction.yml\" sourcestartlinenumber=\"1\">Listener for Java IntToDoubleFunction <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntToDoubleFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntToDoubleFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30822,7 +30822,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.IntToLongFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntToLongFunction.yml\" sourcestartlinenumber=\"1\">Listener for Java IntToLongFunction <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntToLongFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntToLongFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntToLongFunction.yml\" sourcestartlinenumber=\"1\">Listener for Java IntToLongFunction <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntToLongFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntToLongFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30850,7 +30850,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.IntUnaryOperator",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntUnaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for Java IntUnaryOperator <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntUnaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntUnaryOperator.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntUnaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for Java IntUnaryOperator <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntUnaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntUnaryOperator.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30878,7 +30878,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.LongBinaryOperator",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongBinaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for Java LongBinaryOperator <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongBinaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongBinaryOperator.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongBinaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for Java LongBinaryOperator <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongBinaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongBinaryOperator.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30906,7 +30906,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.LongConsumer",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongConsumer.yml\" sourcestartlinenumber=\"1\">Listener for Java LongConsumer <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongConsumer.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongConsumer.yml\" sourcestartlinenumber=\"1\">Listener for Java LongConsumer <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongConsumer.html</a>. Extends JVMBridgeListener</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30948,7 +30948,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.LongFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30990,7 +30990,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.LongPredicate",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongPredicate.yml\" sourcestartlinenumber=\"1\">Listener for Java LongPredicate <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongPredicate.yml\" sourcestartlinenumber=\"1\">Listener for Java LongPredicate <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html</a>. Extends JVMBridgeListener</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31018,7 +31018,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.LongSupplier",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongSupplier.yml\" sourcestartlinenumber=\"1\">Listener for Java LongSupplier <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongSupplier.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongSupplier.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongSupplier.yml\" sourcestartlinenumber=\"1\">Listener for Java LongSupplier <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongSupplier.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongSupplier.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31046,7 +31046,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.LongToDoubleFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongToDoubleFunction.yml\" sourcestartlinenumber=\"1\">Listener for Java LongToDoubleFunction <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongToDoubleFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongToDoubleFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongToDoubleFunction.yml\" sourcestartlinenumber=\"1\">Listener for Java LongToDoubleFunction <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongToDoubleFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongToDoubleFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31074,7 +31074,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.LongToIntFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongToIntFunction.yml\" sourcestartlinenumber=\"1\">Listener for Java LongToIntFunction <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongToIntFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongToIntFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongToIntFunction.yml\" sourcestartlinenumber=\"1\">Listener for Java LongToIntFunction <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongToIntFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongToIntFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31102,7 +31102,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.LongUnaryOperator",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongUnaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for Java LongUnaryOperator <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongUnaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongUnaryOperator.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongUnaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for Java LongUnaryOperator <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongUnaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongUnaryOperator.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31144,7 +31144,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.ObjDoubleConsumer",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.ObjDoubleConsumer.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjDoubleConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjDoubleConsumer.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.ObjDoubleConsumer.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjDoubleConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjDoubleConsumer.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31200,7 +31200,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.ObjIntConsumer",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.ObjIntConsumer.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjIntConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjIntConsumer.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.ObjIntConsumer.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjIntConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjIntConsumer.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31256,7 +31256,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.ObjLongConsumer",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.ObjLongConsumer.yml\" sourcestartlinenumber=\"1\">Listener for Java ObjLongConsumer <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjLongConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjLongConsumer.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.ObjLongConsumer.yml\" sourcestartlinenumber=\"1\">Listener for Java ObjLongConsumer <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjLongConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjLongConsumer.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31312,7 +31312,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.Predicate",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.Predicate.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.Predicate.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31368,7 +31368,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.Supplier",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.Supplier.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.Supplier.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31424,7 +31424,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.ToDoubleBiFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.ToDoubleBiFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleBiFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleBiFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.ToDoubleBiFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleBiFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleBiFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31480,7 +31480,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.ToDoubleFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.ToDoubleFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.ToDoubleFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31536,7 +31536,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.ToIntBiFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.ToIntBiFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntBiFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntBiFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.ToIntBiFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntBiFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntBiFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31592,7 +31592,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.ToIntFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.ToIntFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.ToIntFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31648,7 +31648,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.ToLongBiFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.ToLongBiFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ToLongBiFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ToLongBiFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.ToLongBiFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ToLongBiFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ToLongBiFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31704,7 +31704,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.ToLongFunction",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.ToLongFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ToLongFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ToLongFunction.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.ToLongFunction.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/ToLongFunction.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/ToLongFunction.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -31760,7 +31760,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.UnaryOperator",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.UnaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/UnaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/UnaryOperator.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a></p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.UnaryOperator.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/UnaryOperator.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/UnaryOperator.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -44444,7 +44444,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Naming.Event.NamingListener",
-      "Summary": "<p sourcefile=\"api/Javax.Naming.Event.NamingListener.yml\" sourcestartlinenumber=\"1\">Listener for NamingListener. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Javax.Naming.Event.INamingListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Naming.Event.NamingListener.yml\" sourcestartlinenumber=\"1\">Listener for NamingListener. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Javax.Naming.Event.INamingListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -44472,7 +44472,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Naming.Event.ObjectChangeListener",
-      "Summary": "<p sourcefile=\"api/Javax.Naming.Event.ObjectChangeListener.yml\" sourcestartlinenumber=\"1\">Listener for ObjectChangeListener. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Javax.Naming.Event.IObjectChangeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Naming.Event.ObjectChangeListener.yml\" sourcestartlinenumber=\"1\">Listener for ObjectChangeListener. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Javax.Naming.Event.IObjectChangeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -51780,7 +51780,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Sql.ConnectionEventListener",
-      "Summary": "<p sourcefile=\"api/Javax.Sql.ConnectionEventListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Javax.Sql.IConnectionEventListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Sql.ConnectionEventListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.sql/javax/sql/ConnectionEventListener.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Javax.Sql.IConnectionEventListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -53810,7 +53810,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.CaretListener",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.CaretListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Javax.Swing.Event.ICaretListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.CaretListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/CaretListener.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Javax.Swing.Event.ICaretListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -53880,7 +53880,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.ChangeListener",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.ChangeListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Javax.Swing.Event.IChangeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.ChangeListener.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/ChangeListener.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Javax.Swing.Event.IChangeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -54664,7 +54664,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Javax.Swing.Event.MouseInputAdapter",
-      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.MouseInputAdapter.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html</a>. Extends <a href=\"https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm\">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm</a>, implements <xref href=\"Javax.Swing.Event.IMouseInputAdapter\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+      "Summary": "<p sourcefile=\"api/Javax.Swing.Event.MouseInputAdapter.yml\" sourcestartlinenumber=\"1\">Listener for <a href=\"https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html\">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/event/MouseInputAdapter.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref>, implements <xref href=\"Javax.Swing.Event.IMouseInputAdapter\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -70960,7 +70960,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MASES.JNet.Specific.JNetAsyncEnumerator<TObject>",
-      "Summary": "<p sourcefile=\"api/MASES.JNet.Specific.JNetAsyncEnumerator-1.yml\" sourcestartlinenumber=\"1\">An extension of <a href=\"https://www.jcobridge.com/api-clr/html/T_MASES_JCOBridge_C2JBridge_JVMBridgeBaseEnumerator_1.htm\">https://www.jcobridge.com/api-clr/html/T_MASES_JCOBridge_C2JBridge_JVMBridgeBaseEnumerator_1.htm</a> implementing <xref href=\"System.Collections.Generic.IAsyncEnumerator%601\" data-throw-if-not-resolved=\"false\"></xref> used to manage Java Iterator in async way</p>\n"
+      "Summary": "<p sourcefile=\"api/MASES.JNet.Specific.JNetAsyncEnumerator-1.yml\" sourcestartlinenumber=\"1\">An extension of <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeBasePrefetchableEnumerator%601\" data-throw-if-not-resolved=\"false\"></xref> implementing <xref href=\"System.Collections.Generic.IAsyncEnumerator%601\" data-throw-if-not-resolved=\"false\"></xref> used to manage Java Iterator in async way</p>\n"
     },
     {
       "type": "ManagedReference",

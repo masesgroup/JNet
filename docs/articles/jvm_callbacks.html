@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-      <title>JVM callbacks within JNet powered code | MASES Group - JNet </title>
+      <title>JVM™ callbacks within JNet powered code | MASES Group - JNet </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="JVM callbacks within JNet powered code | MASES Group - JNet ">
-      <meta name="description" content="Describes how to manage callbacks from JVM using the .NET suite for Java™/JVM™">
+      <meta name="title" content="JVM™ callbacks within JNet powered code | MASES Group - JNet ">
+      <meta name="description" content="Describes how to manage callbacks from JVM™ using the .NET suite for Java™/JVM™">
       
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -85,15 +85,15 @@
         </div>
 
         <article data-uid="">
-<h1 id="jnet-jvm-callbacks">JNet: JVM callbacks</h1>
+<h1 id="jnet-jvm-callbacks">JNet: JVM™ callbacks</h1>
 
-<p>One of the features of <a href="https://www.jcobridge.com/">JCOBridge</a>, used in JNet, is the callback management from JVM.
+<p>One of the features of <a href="https://www.jcobridge.com/">JCOBridge</a>, used in JNet, is the callback management from JVM™.
 Many applications use the callback mechanism to be informed about events which happens during execution.
 Apache Kakfa exposes many API which have callbacks in the parameters.
-The Java code of a callback can be written with lambda expressions, but JNet cannot, it needs an object.</p>
+The Java™ code of a callback can be written with lambda expressions, but JNet cannot, it needs an object.</p>
 <h2 id="jnet-callback-internals">JNet Callback internals</h2>
-<p>JNet is based on <a href="https://www.jcobridge.com/">JCOBridge</a>. JCOBridge as per its name is a bridge between the CLR (CoreCLR) and the JVM.
-Events, generally are expressed as interfaces in Java, and a lambda expression is translated into an object at compile time. Otherwise the developer can implement a Java class which <strong>implements</strong> the interface: with JCOBridge the developer needs to follow a seamless approach.
+<p>JNet is based on <a href="https://www.jcobridge.com/">JCOBridge</a>. JCOBridge as per its name is a bridge between the CLR (CoreCLR) and the JVM™.
+Events, generally are expressed as interfaces in Java™, and a lambda expression is translated into an object at compile time. Otherwise the developer can implement a Java™ class which <strong>implements</strong> the interface: with JCOBridge the developer needs to follow a seamless approach.
 In JNet some callbacks are ready made. In this tutorial the <strong>Predicate</strong> interface (<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html">java.util.function.Predicate</a>) will be taken as an example.
 The concrete class implementing the interface is the following one:</p>
 <pre><code class="lang-java">public final class JNetPredicate extends JCListener implements Predicate {
@@ -120,7 +120,7 @@ The concrete class implementing the interface is the following one:</p>
 </ul>
 </li>
 </ul>
-<p>Now there is a concrete class within the JVM space.
+<p>Now there is a concrete class within the JVM™ space.
 Going on to the CLR side a possible concrete class in C# is as the following one:</p>
 <pre><code class="lang-c#">public class Predicate&lt;TObject&gt; : JVMBridgeListener
 {
@@ -151,15 +151,15 @@ Going on to the CLR side a possible concrete class in C# is as the following one
 </code></pre>
 <p>The structure follows the guidelines of JCOBridge:</p>
 <ul>
-<li>It <strong>must</strong> <code>extends</code> the base class <code>JVMBridgeListener</code> : this is a constraint of JCOBridge; <code>JVMBridgeListener</code> contains all the functionality to handle events from the JVM;</li>
-<li>The <code>ClassName</code> property informs the base class about the concrete class in JVM associated to this event handler;</li>
-<li>Within the constructor the method <code>AddEventHandler</code> registers a .NET <code>EventHandler</code> associated to the method in JVM; look at the key string: <strong>it is the same used from the JVM</strong>;
+<li>It <strong>must</strong> <code>extends</code> the base class <code>JVMBridgeListener</code> : this is a constraint of JCOBridge; <code>JVMBridgeListener</code> contains all the functionality to handle events from the JVM™;</li>
+<li>The <code>ClassName</code> property informs the base class about the concrete class in JVM™ associated to this event handler;</li>
+<li>Within the constructor the method <code>AddEventHandler</code> registers a .NET <code>EventHandler</code> associated to the method in JVM™; look at the key string: <strong>it is the same used from the JVM™</strong>;
 <ul>
 <li>The costructor of the code above accept in input an <code>Func</code> which permits to write lambda expression in C#;</li>
 <li>The code above associate a private handler with specific data type:
 <ul>
 <li><code>CLRListenerEventArgs</code> is mandatory and it is used from <code>JVMBridgeListener</code>;</li>
-<li><code>TObject</code> represents the CLR version of the corresponding <code>TObject</code> within the JVM;</li>
+<li><code>TObject</code> represents the CLR version of the corresponding <code>TObject</code> within the JVM™;</li>
 </ul>
 </li>
 </ul>
@@ -167,7 +167,7 @@ Going on to the CLR side a possible concrete class in C# is as the following one
 <li>On callback invocation (<code>test</code> in this case) the CLR will invoke <code>EventHandler</code>:
 <ul>
 <li>The first parameter is directly reported using the <code>TypedEventData</code> property;</li>
-<li>On completion the result is reported back to the JVM using the <code>SetReturnValue</code> function;</li>
+<li>On completion the result is reported back to the JVM™ using the <code>SetReturnValue</code> function;</li>
 </ul>
 </li>
 <li>Other pieces of the class are useful in other condition:
@@ -205,7 +205,7 @@ A correct approach is like the following:</p>
 <p>there are two main drawbacks:</p>
 <ul>
 <li>it creates a resource leak because the object instance related to <code>Predicate&lt;int&gt;</code> cannot be programmatically disposed;</li>
-<li>on each cycle, the engine shall allocate the infrastructure to handle events from the JVM.</li>
+<li>on each cycle, the engine shall allocate the infrastructure to handle events from the JVM™.</li>
 </ul>
 
 </article>
