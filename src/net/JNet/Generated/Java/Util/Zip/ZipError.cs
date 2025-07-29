@@ -32,9 +32,7 @@ namespace Java.Util.Zip
     public partial class ZipError : Java.Lang.InternalError
     {
         const string _bridgeClassName = "java.util.zip.ZipError";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

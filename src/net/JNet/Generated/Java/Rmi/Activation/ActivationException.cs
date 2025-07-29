@@ -32,9 +32,7 @@ namespace Java.Rmi.Activation
     public partial class ActivationException : Java.Lang.Exception
     {
         const string _bridgeClassName = "java.rmi.activation.ActivationException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

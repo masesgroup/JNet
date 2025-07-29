@@ -32,9 +32,7 @@ namespace Org.W3c.Dom.Ls
     public partial class LSException : Java.Lang.RuntimeException
     {
         const string _bridgeClassName = "org.w3c.dom.ls.LSException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

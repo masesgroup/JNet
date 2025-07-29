@@ -32,9 +32,7 @@ namespace Java.Awt
     public partial class HeadlessException : Java.Lang.UnsupportedOperationException
     {
         const string _bridgeClassName = "java.awt.HeadlessException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

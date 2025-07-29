@@ -32,9 +32,7 @@ namespace Java.Net
     public partial class SocketTimeoutException : Java.Io.InterruptedIOException
     {
         const string _bridgeClassName = "java.net.SocketTimeoutException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

@@ -32,9 +32,7 @@ namespace Javax.Security.Auth.Login
     public partial class CredentialNotFoundException : Javax.Security.Auth.Login.CredentialException
     {
         const string _bridgeClassName = "javax.security.auth.login.CredentialNotFoundException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

@@ -32,9 +32,7 @@ namespace Java.Lang
     public partial class NoSuchFieldError : Java.Lang.IncompatibleClassChangeError
     {
         const string _bridgeClassName = "java.lang.NoSuchFieldError";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

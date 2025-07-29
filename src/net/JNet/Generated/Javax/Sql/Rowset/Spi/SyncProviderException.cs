@@ -32,9 +32,7 @@ namespace Javax.Sql.Rowset.Spi
     public partial class SyncProviderException : Java.Sql.SQLException
     {
         const string _bridgeClassName = "javax.sql.rowset.spi.SyncProviderException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

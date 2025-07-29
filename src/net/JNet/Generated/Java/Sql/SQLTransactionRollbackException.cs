@@ -32,9 +32,7 @@ namespace Java.Sql
     public partial class SQLTransactionRollbackException : Java.Sql.SQLTransientException
     {
         const string _bridgeClassName = "java.sql.SQLTransactionRollbackException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class
