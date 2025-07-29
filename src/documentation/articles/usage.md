@@ -1,20 +1,20 @@
 ---
 title: Usage .NET suite for Java™/JVM™
-_description: Describes how to use JNet, set-up environment, identify the JVM and write good code
+_description: Describes how to use JNet, set-up environment, identify the JVM™ and write good code
 ---
 
 # JNet usage
 
-To use JNet classes the developer can write code in .NET using the same classes available in the official Java packages.
+To use JNet classes the developer can write code in .NET using the same classes available in the official Java™ packages.
 If classes or methods are not available yet it is possible to use the approach synthetized in [What to do if an API was not yet implemented](API_extensibility.md)
 
 ## Environment setup
 
 JNet accepts many command-line switches to customize its behavior. The full list is available at [Command line switch](commandlineswitch.md) page.
 
-### JVM identification
+### JVM™ identification
 
-One of the most important command-line switch is **JVMPath** and it is available in [JCOBridge switches](https://www.jcobridge.com/net-examples/command-line-options/): it can be used to set-up the location of the JVM library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.
+One of the most important command-line switch is **JVMPath** and it is available in [JCOBridge switches](https://www.jcobridge.com/net-examples/command-line-options/): it can be used to set-up the location of the JVM™ library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.
 If a developer is using JNet within its own product it is possible to override the **JVMPath** property with a snippet like the following one:
 
 ```c#
@@ -54,11 +54,11 @@ If the developer/user encounter this condition can do the following steps:
 
 ### Intel CET and JNet
 
-JNet uses an embedded JVM through JCOBridge, however JVM initialization is incompatible with [CET](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) because the code used to identify CPU try to modify the return address and this is considered from CET a violation: see [this comment](https://github.com/masesgroup/JNet/issues/573#issuecomment-2544249107).
+JNet uses an embedded JVM™ through JCOBridge, however JVM™ initialization is incompatible with [CET](https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html) because the code used to identify CPU try to modify the return address and this is considered from CET a violation: see [this comment](https://github.com/masesgroup/JNet/issues/573#issuecomment-2544249107).
 
 From .NET 9 preview 6, [CET is enabled by default on supported hardware](https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support) when the final stage produce an executable artifact, i.e. the csproj file contains `<OutputType>Exe</OutputType>`.
 
-If the application, upon startup, fails with the error 0xc0000409 (subcode 0x30) it was compiled with CET enabled and it fails during JVM initialization.
+If the application, upon startup, fails with the error 0xc0000409 (subcode 0x30) it was compiled with CET enabled and it fails during JVM™ initialization.
 
 To solve the issue there are four possible solutions:
 1. use a .NET version, e.g. 8, that does not enable CET by default
@@ -181,12 +181,12 @@ namespace MASES.JNetExample
 ```
 
 the `Collections.Singleton("test")` ends its life, from .NET point of view, when `arrayList.AddAll(0, set)` is invoked:
-- `Java.Util.Set<string>` is a .NET container for JVM `java.util.Set<String>`
-- `arrayList.AddAll(0, set)` receives the `Java.Util.Set<string>` instance and sends to JVM the reference to `java.util.Set<String>` of JVM
+- `Java.Util.Set<string>` is a .NET container for JVM™ `java.util.Set<String>`
+- `arrayList.AddAll(0, set)` receives the `Java.Util.Set<string>` instance and sends to JVM™ the reference to `java.util.Set<String>` of JVM™
 - from .NET point of view `Java.Util.Set<string>` has ended its life and can be retired because does not have any other root referencing it
 - .NET Garbage Collector activates arbitrarily when some conditions meet: https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/
 
-Most of the time the code above works without problem, but sometimes the JVM can raise a `Java.Lang.NullPointerException` because `Java.Util.Set<string>` was retired from .NET GC.
+Most of the time the code above works without problem, but sometimes the JVM™ can raise a `Java.Lang.NullPointerException` because `Java.Util.Set<string>` was retired from .NET GC.
 
 To solve the issue, and force the GC to not retire the instance, there are some possible code snippet a developer can follows:
 

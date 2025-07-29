@@ -18,7 +18,7 @@ The roadmap can be synthetized in the following points:
   - [x] Add constructor reflection  
   - [x] Add methods reflection
   - [x] Add fields reflection
-  - [x] Extend functionalities to cover more JVM classes (e.g. generics)
+  - [x] Extend functionalities to cover more JVM™ classes (e.g. generics)
   - [x] Add Listener management
 * JNetPSCore:
 	- [ ] Add more functionalities

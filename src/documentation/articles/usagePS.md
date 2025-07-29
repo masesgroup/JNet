@@ -91,10 +91,10 @@ _jnetps_ accepts the following cmdlets:
   * HeapSize
   * InitialHeapSize
   * LogClassPath
-* **Invoke-JCommand**: executes the main method of a specific Java Main-Class in argument and exit. The arguments are:
+* **Invoke-JCommand**: executes the main method of a specific Java™ Main-Class in argument and exit. The arguments are:
   * MainClass
   * Arguments
-* **New-JObject**: Creates a new JVM object of the class specified in argument using the parameters within command line for constructor. The arguments are:
+* **New-JObject**: Creates a new JVM™ object of the class specified in argument using the parameters within command line for constructor. The arguments are:
   * Class
   * Arguments
 * **Get-ClassForName**: returns a Class from the class name
@@ -140,7 +140,7 @@ From version 1.5.0 new JMX comlets are available:
 * **New-ObjectName**: create a new ObjectName to be used in Get-JMXConnector
 * **Remove-NotificationListener**: removes a notification listener and filter from a JMXConnector
 
-### JVM identification
+### JVM™ identification
 
-One of the most important command-line switch is **JVMPath**: it can be used to set-up the location of the JVM library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.
+One of the most important command-line switch is **JVMPath**: it can be used to set-up the location of the JVM™ library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.
 
