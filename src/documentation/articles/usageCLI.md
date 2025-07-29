@@ -12,7 +12,7 @@ _description: Describes the CLI tool to use Java™/JVM™ classes from any comm
   * The image hosts both .NET 6 and JRE 11 runtimes
 
 > [!IMPORTANT]
-> The **dotnet tool** needs a JRE/JDK installed within the system (see [JVM identification](#jvm-identification))
+> The **dotnet tool** needs a JRE/JDK installed within the system (see [JVM™ identification](#jvm-identification))
 
 ## Usage
 
@@ -45,7 +45,7 @@ docker run masesgroup/jnet -i
 _jnet_ accepts the following command-line switch:
 
 * **Interactive** (**i**): Activates an interactive shell
-* **RunCommand** (**r**): executes the main method of a specific Java class in argument and exit
+* **RunCommand** (**r**): executes the main method of a specific Java™ class in argument and exit
 * **Script** (**s**): Executes the c# script in the file arument
 * **JarList** (**jl**): A CSV list of JAR to be used or folders containing the JARs
 * **NamespaceList** (**nl**): A CSV list of namespace to be used for interactive shell, JNet namespace are added automatically
@@ -53,6 +53,6 @@ _jnet_ accepts the following command-line switch:
 
 Plus other switches available at [Command line switch](commandlineswitch.md) page.
 
-### JVM identification
+### JVM™ identification
 
-One of the most important command-line switch is **JVMPath** and it is available in [JCOBridge switches](https://www.jcobridge.com/net-examples/command-line-options/): it can be used to set-up the location of the JVM library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.
+One of the most important command-line switch is **JVMPath** and it is available in [JCOBridge switches](https://www.jcobridge.com/net-examples/command-line-options/): it can be used to set-up the location of the JVM™ library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.

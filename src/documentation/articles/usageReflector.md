@@ -1,11 +1,11 @@
 ---
 title: JNetReflector tool of .NET suite for Java™/JVM™
-_description: Describes the tool which builds .NET classes analyzing JVM Jar or modules
+_description: Describes the tool which builds .NET classes analyzing JVM™ Jar or modules
 ---
 
 # JNet: Reflector
 
-The tool is able to build .NET classes which reproduce the JVM class (Java, Scala, Kotlin, ...) counterpart.
+The tool is able to build .NET classes which reproduce the JVM™ class (Java™, Scala, Kotlin, ...) counterpart.
 
 ## Installation
 
@@ -43,9 +43,9 @@ _jnetreflector_ accepts the following command-line switch:
 * **DestinationRootPath**: The destination root path where reflected classes will be stored
 * **DestinationCSharpClassPath**: The destination root path where C# reflected classes will be stored
 * **RelativeDestinationCSharpClassPath**: The relative destination root path, respect to DestinationRootPath, where C# reflected classes will be stored
-* **DestinationJavaListenerPath**: The destination root path where Java listener classes will be stored
-* **RelativeDestinationJavaListenerPath**: The destination root path, respect to DestinationRootPath, where Java listener classes will be stored
-* **JavaListenerBasePackage**: The base package name to use when a Java listener class is created
+* **DestinationJavaListenerPath**: The destination root path where Java™ listener classes will be stored
+* **RelativeDestinationJavaListenerPath**: The destination root path, respect to DestinationRootPath, where Java™ listener classes will be stored
+* **JavaListenerBasePackage**: The base package name to use when a Java™ listener class is created
 * **ClassesToAnalyze**: A CSV list of full qualified class names to be analyzed
 * **JarList**: A CSV list of JAR to be analyzed or folders containing the JARs
 * **ModulesToParse**: A CSV list of module patterns to be parsed during analysis, it avoids the usage of OriginRootPath
@@ -56,7 +56,7 @@ _jnetreflector_ accepts the following command-line switch:
 * **ClassesManuallyDeveloped**: A CSV list of class names will be manually developed
 * **ClassesToBeListener**: A CSV list of class names to be treated as Listener, the tool consider any class which its name ends with "Listener" or "Adapter" as Listener
 * **ClassesToRemoveAsListener**: A CSV list of class names to be removed from the list of Listener identified since the tool consider any class which its name ends with "Listener" or "Adapter" as Listener
-* **ClassesToAvoidJavaListener**: A CSV list of class names to be avoided during generation of Java listener classes
+* **ClassesToAvoidJavaListener**: A CSV list of class names to be avoided during generation of Java™ listener classes
 * **NamespacesInConflict**: A CSV list of namespaces in conflict with class name: to this one will be added an "Ns" at the end
 * **ClassesInConflict**: A CSV list of classes in conflict with namespace name: to this one will be added an "Class" at the end
 * **PreferMethodWithSignature**: The option forces the tool to identify and use signature when available
@@ -67,10 +67,10 @@ _jnetreflector_ accepts the following command-line switch:
 * **AvoidCSharpGenericClauseDefinition**: The option forces the tool to reflect generics without create the clauses of C# generic definition
 * **DisableGenericsInNonGenericClasses**: The option disables generation of generic methods in non generic classes
 * **DisableGenerics**: The option forces the tool to disable any generic type
-* **UseDirectDotNetType**: The option forces the tool to use directly .NET type instead of JVM class, netive types are always managed as native (boolean - bool, etc)
+* **UseDirectDotNetType**: The option forces the tool to use directly .NET type instead of JVM™ class, netive types are always managed as native (boolean - bool, etc)
 * **CreateInterfaceInheritance**: The option forces the tool to create the C# interface inheritance
 * **DisableInterfaceMethodGeneration**: The option disables the generation of the methods in the C# interface
-* **UseDotNetNullable**: The option forces the tool to use .NET nullable instead of Java types for native types
+* **UseDotNetNullable**: The option forces the tool to use .NET nullable instead of Java™ types for native types
 * **AvoidParallelBuild**: The option forces the tool to disable parallel execution
 * **DryRun**: Execute everything, but do not write anything to disk
 * **DoNotCamel**: Does not use camelized names in methods, class and so on
@@ -79,7 +79,7 @@ _jnetreflector_ accepts the following command-line switch:
 
 ## JNet reflected classes
 
-Many JNet classes are generated using JNetReflector. The JVM used to build the classes is the Temurin version 11 which is the minimum JVM version supported from JCOBridge.
+Many JNet classes are generated using JNetReflector. The JVM™ used to build the classes is the Temurin version 11 which is the minimum JVM™ version supported from JCOBridge.
 The command line interface uses the following command line:
 
 ```sh

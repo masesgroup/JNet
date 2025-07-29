@@ -13,9 +13,9 @@ Plus it accepts from:
 * **JCOBridge**:
   * All command-line switches of JCOBridge available at https://www.jcobridge.com/net-examples/command-line-options/
 
-## JVM identification
+## JVM™ identification
 
-One of the most important command-line switch is **JVMPath** and it is available in [JCOBridge switches](https://www.jcobridge.com/net-examples/command-line-options/): it can be used to set-up the location of the JVM library if JCOBridge is not able to identify a suitable JRE installation.
+One of the most important command-line switch is **JVMPath** and it is available in [JCOBridge switches](https://www.jcobridge.com/net-examples/command-line-options/): it can be used to set-up the location of the JVM™ library if JCOBridge is not able to identify a suitable JRE installation.
 If a developer is using KNet within its own product it is possible to override the **JVMPath** property with a snippet like the following one:
 
 ```c#

@@ -10,7 +10,7 @@
   href: performancetips.md
 - name: APIs extendibility
   href: API_extensibility.md
-- name: JVM callbacks
+- name: JVM™ callbacks
   href: jvm_callbacks.md
 - name: JNet CLI usage
   href: usageCLI.md
