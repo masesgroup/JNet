@@ -185,13 +185,18 @@ namespace MASES.JNet
                 Console.WriteLine();
             }
         }
+        /// <inheritdoc/>
+        protected override void PreInitialization(ref string scopeOn, ref Version scopeOnVersion)
+        {
+            base.PreInitialization(ref scopeOn, ref scopeOnVersion);
+            JCOBridge.C2JBridge.JCOBridge.SetEventOrExceptionHandler(EventOrExceptionHandlerInternal);
+        }
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/M_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_ProcessCommandLine.htm"/>
         /// </summary>
         protected override string[] ProcessCommandLine()
-        {
-            JCOBridge.C2JBridge.JCOBridge.SetEventOrExceptionHandler(EventOrExceptionHandlerInternal);
+        {       
             Parser.Add(CommandLineArguments);
             _parsedArgs = Parser.Parse(base.ProcessCommandLine());
 #if DEBUG
