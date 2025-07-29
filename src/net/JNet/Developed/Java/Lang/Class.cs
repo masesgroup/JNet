@@ -37,9 +37,7 @@ namespace Java.Lang
         /// Returns the cached <see cref="Java.Lang.ClassLoader.SystemClassLoader"/>, it is used internally from <see cref="Of{T}"/>
         /// </summary>
         public static Java.Lang.ClassLoader SystemClassLoader => _loader;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override string BridgeClassName => "java.lang.Class";
         /// <summary>
         /// Returns the <see cref="Class"/> object associated with the class or interface with the given string name.

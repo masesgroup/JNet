@@ -32,9 +32,7 @@ namespace Javax.Naming
     public partial class ConfigurationException : Javax.Naming.NamingException
     {
         const string _bridgeClassName = "javax.naming.ConfigurationException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

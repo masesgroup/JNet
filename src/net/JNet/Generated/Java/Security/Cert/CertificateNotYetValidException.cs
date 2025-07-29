@@ -32,9 +32,7 @@ namespace Java.Security.Cert
     public partial class CertificateNotYetValidException : Java.Security.Cert.CertificateException
     {
         const string _bridgeClassName = "java.security.cert.CertificateNotYetValidException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

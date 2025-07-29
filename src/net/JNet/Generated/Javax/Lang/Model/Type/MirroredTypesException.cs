@@ -32,9 +32,7 @@ namespace Javax.Lang.Model.Type
     public partial class MirroredTypesException : Java.Lang.RuntimeException
     {
         const string _bridgeClassName = "javax.lang.model.type.MirroredTypesException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

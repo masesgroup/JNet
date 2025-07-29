@@ -32,9 +32,7 @@ namespace Java.Time.Format
     public partial class DateTimeParseException : Java.Time.DateTimeException
     {
         const string _bridgeClassName = "java.time.format.DateTimeParseException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

@@ -45,51 +45,51 @@ namespace MASES.JNet
 
         #region Initialization
         /// <summary>
-        /// Sets the value of <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_LicensePath.htm" />
+        /// Sets the value of <see cref="SetupJVMWrapper.LicensePath" />
         /// </summary>
         public static string ApplicationLicensePath { get; set; }
         /// <summary>
-        /// Sets the value of <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JDKHome.htm" />
+        /// Sets the value of <see cref="SetupJVMWrapper.JDKHome" />
         /// </summary>
         public static string ApplicationJDKHome { get; set; }
         /// <summary>
-        /// Sets the value of <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JVMPath.htm" />
+        /// Sets the value of <see cref="SetupJVMWrapper.JVMPath" />
         /// </summary>
         public static string ApplicationJVMPath { get; set; }
         /// <summary>
-        /// Sets the value of <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JNIVerbosity.htm" />
+        /// Sets the value of <see cref="SetupJVMWrapper.JNIVerbosity" />
         /// </summary>
         public static string ApplicationJNIVerbosity { get; set; }
         /// <summary>
-        /// Sets the value of <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JNIOutputFile.htm" />
+        /// Sets the value of <see cref="SetupJVMWrapper.JNIOutputFile" />
         /// </summary>
         public static string ApplicationJNIOutputFile { get; set; }
         /// <summary>
-        /// Sets the value of <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JmxPort.htm" />
+        /// Sets the value of <see cref="SetupJVMWrapper.JmxPort" />
         /// </summary>
         public static short? ApplicationJmxPort { get; set; }
         /// <summary>
-        /// Sets the value of <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_EnableDebug.htm" />
+        /// Sets the value of <see cref="SetupJVMWrapper.EnableDebug" />
         /// </summary>
         public static bool? ApplicationEnableDebug { get; set; }
         /// <summary>
-        /// Sets the value of <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JavaDebugPort.htm" />
+        /// Sets the value of <see cref="SetupJVMWrapper.JavaDebugPort" />
         /// </summary>
         public static short? ApplicationJavaDebugPort { get; set; }
         /// <summary>
-        /// Sets the value of <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_DebugSuspendFlag.htm" />
+        /// Sets the value of <see cref="SetupJVMWrapper.DebugSuspendFlag" />
         /// </summary>
         public static string ApplicationDebugSuspendFlag { get; set; }
         /// <summary>
-        /// Sets the value of <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JavaDebugOpts.htm" />
+        /// Sets the value of <see cref="SetupJVMWrapper.JavaDebugOpts" />
         /// </summary>
         public static string ApplicationJavaDebugOpts { get; set; }
         /// <summary>
-        /// Sets the global value of <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_GlobalHeapSize.htm" />
+        /// Sets the global value of <see cref="SetupJVMWrapper.GlobalHeapSize" />
         /// </summary>
         public static string ApplicationHeapSize { get; set; }
         /// <summary>
-        /// Sets the global value of the <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_InitialHeapSize.htm" />
+        /// Sets the global value of the <see cref="SetupJVMWrapper.InitialHeapSize" />
         /// </summary>
         public static string ApplicationInitialHeapSize { get; set; }
         /// <summary>
@@ -101,29 +101,29 @@ namespace MASES.JNet
         /// </summary>
         public static IDictionary<string, string> ApplicationJVMExtraOptions { get; } = new ConcurrentDictionary<string, string>();
 
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_LicensePath.htm" />
+        /// <inheritdoc/>
         public override string LicensePath { get { return ApplicationLicensePath ?? base.LicensePath; } }
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JDKHome.htm" />
+        /// <inheritdoc/>
         public override string JDKHome { get { return ApplicationJDKHome ?? base.JDKHome; } }
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JVMPath.htm" />
+        /// <inheritdoc/>
         public override string JVMPath { get { return ApplicationJVMPath ?? base.JVMPath; } }
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JNIVerbosity.htm" />
+        /// <inheritdoc/>
         public override string JNIVerbosity { get { return ApplicationJNIVerbosity ?? base.JNIVerbosity; } }
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JNIOutputFile.htm" />
+        /// <inheritdoc/>
         public override string JNIOutputFile { get { return ApplicationJNIOutputFile ?? base.JNIOutputFile; } }
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JmxPort.htm" />
+        /// <inheritdoc/>
         public override short? JmxPort { get { return ApplicationJmxPort.HasValue ? ApplicationJmxPort : base.JmxPort; } }
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_EnableDebug.htm" />
+        /// <inheritdoc/>
         public override bool EnableDebug { get { return ApplicationEnableDebug ?? base.EnableDebug; } }
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JavaDebugPort.htm" />
+        /// <inheritdoc/>
         public override short JavaDebugPort { get { return ApplicationJavaDebugPort ?? base.JavaDebugPort; } }
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_DebugSuspendFlag.htm" />
+        /// <inheritdoc/>
         public override string DebugSuspendFlag { get { return ApplicationDebugSuspendFlag != null ? ApplicationDebugSuspendFlag : base.DebugSuspendFlag; } }
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JavaDebugOpts.htm" />
+        /// <inheritdoc/>
         public override string JavaDebugOpts { get { return ApplicationJavaDebugOpts != null ? ApplicationJavaDebugOpts : base.JavaDebugOpts; } }
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_GlobalHeapSize.htm" />
+        /// <inheritdoc/>
         public override string GlobalHeapSize { get { return string.IsNullOrEmpty(base.GlobalHeapSize) ? ApplicationHeapSize : base.GlobalHeapSize; } }
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_InitialHeapSize.htm" />
+        /// <inheritdoc/>
         public override string InitialHeapSize { get { return string.IsNullOrEmpty(base.InitialHeapSize) ? ApplicationInitialHeapSize : base.InitialHeapSize; } }
 
         /// <summary>
@@ -171,7 +171,7 @@ namespace MASES.JNet
             EventOrExceptionHandler(e);
         }
         /// <summary>
-        /// Manages events raised from the underlying JCOBridge engine
+        /// Manages events raised from the underlying JCOBridge engine; see <see cref="JCOBridge.C2JBridge.JCOBridge.SetEventOrExceptionHandler(EventHandler{EventOrExceptionEventArgs})"/>
         /// </summary>
         /// <param name="e">The <see cref="EventOrExceptionEventArgs"/> with information</param>
         protected virtual void EventOrExceptionHandler(EventOrExceptionEventArgs e)
@@ -192,11 +192,10 @@ namespace MASES.JNet
             JCOBridge.C2JBridge.JCOBridge.SetEventOrExceptionHandler(EventOrExceptionHandlerInternal);
         }
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/M_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_ProcessCommandLine.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         protected override string[] ProcessCommandLine()
-        {       
+        {
+            JCOBridge.C2JBridge.JCOBridge.SetEventOrExceptionHandler(EventOrExceptionHandlerInternal);
             Parser.Add(CommandLineArguments);
             _parsedArgs = Parser.Parse(base.ProcessCommandLine());
 #if DEBUG
@@ -242,7 +241,7 @@ namespace MASES.JNet
             return item;
         }
 
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JVMOptions.htm"/>
+        /// <inheritdoc/>
         public sealed override IEnumerable<KeyValuePair<string, string>> JVMOptions
         {
             get
@@ -287,7 +286,7 @@ namespace MASES.JNet
         }
 
         string classPath = string.Empty;
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_ClassPath.htm"/>
+        /// <inheritdoc/>
 #if JNETREFLECTOR
         public override string ClassPath => buildClassPath();
 #else

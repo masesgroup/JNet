@@ -32,9 +32,7 @@ namespace Java.Net.Http
     public partial class HttpConnectTimeoutException : Java.Net.Http.HttpTimeoutException
     {
         const string _bridgeClassName = "java.net.http.HttpConnectTimeoutException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

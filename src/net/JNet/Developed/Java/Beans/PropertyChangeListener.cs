@@ -29,7 +29,7 @@ namespace Java.Beans
     }
 
     /// <summary>
-    /// Listener for PropertyChangeListener. Extends <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener.htm"/>, implements <see cref="IPropertyChangeListener"/>
+    /// Listener for PropertyChangeListener. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IPropertyChangeListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class PropertyChangeListener : IPropertyChangeListener

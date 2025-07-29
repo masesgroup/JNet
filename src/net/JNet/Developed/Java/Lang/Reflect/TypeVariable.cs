@@ -26,16 +26,12 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class TypeVariable : AnnotatedElement
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.TypeVariable";
 
         public static implicit operator Type(TypeVariable t) => t.Cast<Type>();
 
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override bool IsBridgeInterface => true;
         /// <summary>
         /// Returns an array of <see cref="AnnotatedType"/> objects that represent the use of types to denote the upper bounds of the type parameter represented by this <see cref="TypeVariable"/>.

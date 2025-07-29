@@ -32,9 +32,7 @@ namespace Javax.Management.Relation
     public partial class InvalidRelationTypeException : Javax.Management.Relation.RelationException
     {
         const string _bridgeClassName = "javax.management.relation.InvalidRelationTypeException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

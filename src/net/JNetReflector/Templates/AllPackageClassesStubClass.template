@@ -15,25 +15,15 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLAS
     private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName);
     private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
-    /// <summary>
-    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-    /// </summary>
+    /// <inheritdoc/>
     public override string BridgeClassName => _bridgeClassName;
-    /// <summary>
-    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-    /// </summary>
+    /// <inheritdoc/>
     public override bool IsBridgeAbstract => ALLPACKAGE_CLASSES_STUB_ISABSTRACT_PLACEHOLDER;
-    /// <summary>
-    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-    /// </summary>
+    /// <inheritdoc/>
     public override bool IsBridgeCloseable => ALLPACKAGE_CLASSES_STUB_ISCLOSEABLE_PLACEHOLDER;
-    /// <summary>
-    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-    /// </summary>
+    /// <inheritdoc/>
     public override bool IsBridgeInterface => ALLPACKAGE_CLASSES_STUB_ISINTERFACE_PLACEHOLDER;
-    /// <summary>
-    /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-    /// </summary>
+    /// <inheritdoc/>
     public override bool IsBridgeStatic => ALLPACKAGE_CLASSES_STUB_ISSTATIC_PLACEHOLDER;
 
     // TODO: complete the class

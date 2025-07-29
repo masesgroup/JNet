@@ -32,9 +32,7 @@ namespace Java.Lang
     public partial class VirtualMachineError : Java.Lang.Error
     {
         const string _bridgeClassName = "java.lang.VirtualMachineError";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

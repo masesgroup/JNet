@@ -24,9 +24,7 @@ namespace Java.Lang.ModuleNs
 #if JNETREFLECTOR
     public sealed class ModuleDescriptor : JVMBridgeBase<ModuleDescriptor>
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override string BridgeClassName => "java.lang.module.ModuleDescriptor";
 #else
     public partial class ModuleDescriptor

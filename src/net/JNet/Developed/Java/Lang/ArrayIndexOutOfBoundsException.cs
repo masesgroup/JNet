@@ -25,9 +25,7 @@ namespace Java.Lang
     /// </summary>
     public class ArrayIndexOutOfBoundsException : IndexOutOfBoundsException
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override string BridgeClassName => "java.lang.ArrayIndexOutOfBoundsException";
     }
 }

@@ -32,9 +32,7 @@ namespace Java.Rmi
     public partial class ServerException : Java.Rmi.RemoteException
     {
         const string _bridgeClassName = "java.rmi.ServerException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

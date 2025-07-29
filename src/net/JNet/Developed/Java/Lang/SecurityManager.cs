@@ -26,9 +26,7 @@ namespace Java.Lang
     /// </summary>
     public sealed class SecurityManager : JVMBridgeBase<SecurityManager>
     {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc />
         public override string BridgeClassName => "java.lang.SecurityManager";
     }
 #endif

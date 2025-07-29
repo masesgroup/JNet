@@ -32,9 +32,7 @@ namespace Javax.Lang.Model.Element
     public partial class UnknownElementException : Javax.Lang.Model.UnknownEntityException
     {
         const string _bridgeClassName = "javax.lang.model.element.UnknownElementException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class

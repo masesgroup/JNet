@@ -32,9 +32,7 @@ namespace Java.Util.Jar
     public partial class JarException : Java.Util.Zip.ZipException
     {
         const string _bridgeClassName = "java.util.jar.JarException";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeException_BridgeClassName.htm"/>
-        /// </summary>
+        /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
 
         // TODO: complete the class
