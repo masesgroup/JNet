@@ -89,15 +89,15 @@
 
 <p>What to do if an API was not yet implemented? The simplest answer is: help us to make this product reacher 😄
 There is another answer which is not available with other products: Dynamic code and programmatically API access.</p>
-<p>With <strong>JCOBridge</strong> a developer can use some properties to manage objects in the JVM.
-Each JNet class implemented contains some methods and two properties: a direct and a dynamic accessor able to analyze the JVM class and executes the code.
+<p>With <strong>JCOBridge</strong> a developer can use some properties to manage objects in the JVM™.
+Each JNet class implemented contains some methods and two properties: a direct and a dynamic accessor able to analyze the JVM™ class and executes the code.
 So it is not necessary at all to have the methods be ready to be used.</p>
 <p>Let's go to show some possible conditions analyzing the <code>Hashtable</code> class (code at <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Hashtable.cs">https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Util/Hashtable.cs</a>).</p>
 <h2 id="when-a-method-is-not-available">When a method is not available</h2>
 <p>The class has a single ready made method:</p>
 <pre><code class="lang-C#">public void Put(K key, V value) =&gt; IExecute(&quot;put&quot;, key, value);
 </code></pre>
-<p>This is a void method, using <strong>IExecute</strong> the user of the library can invoke the <code>Put</code> method on the class and execute the Java counterpart.
+<p>This is a void method, using <strong>IExecute</strong> the user of the library can invoke the <code>Put</code> method on the class and execute the Java™ counterpart.
 The developer can, anyway, invoke the <code>put</code> method directly from the instance of the <code>Hashtable</code> class using two different paradigms: <strong>direct</strong> or <strong>dynamic</strong> access.
 The <code>put</code> method can be replaced with any method (with or without parameters) of the <code>Hashtable</code> class.</p>
 <h3 id="direct-access">Direct access</h3>
@@ -117,21 +117,21 @@ bool isEmpty = data.IExecute&lt;bool&gt;(&quot;isEmpty&quot;);
 data.put(&quot;a&quot;, &quot;b&quot;);
 var isEmpty = data.isEmpty();
 </code></pre>
-<p>The <code>Hashtable</code>, and any other ready made class of the library, supports the <strong>dynamic</strong> access to the methods available in Java side.
+<p>The <code>Hashtable</code>, and any other ready made class of the library, supports the <strong>dynamic</strong> access to the methods available in Java™ side.
 The previous example demostrates the behavior.</p>
 <h2 id="when-a-class-is-not-available">When a class is not available</h2>
 <p>In a more complex scenario the method can return back objects or can accept input of not ready made classes: no problem, there is a solution.</p>
 <h3 id="return-class-is-not-available">Return class is not available</h3>
 <p>To discuss this case we use another class: the <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Panel.html">AWT Panel</a>, implemented in <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Java/Awt/Panel.cs">Java.Awt.Panel</a>.
 The .NET class does not have any implemented method: we discuss about <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Component.html#createVolatileImage-int-int-">createVolatileImage</a> inherited from the base class <code>Component</code>.
-The method returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/VolatileImage.html">VolatileImage</a> which is not yet implemented; a solution on this problem is to use directly the <code>createVolatileImage</code> Java method like the following code snippet does:</p>
+The method returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/image/VolatileImage.html">VolatileImage</a> which is not yet implemented; a solution on this problem is to use directly the <code>createVolatileImage</code> Java™ method like the following code snippet does:</p>
 <pre><code class="lang-C#">Java.Awt.Panel panel = new();
 var volImage = panel.IExecute(&quot;createVolatileImage&quot;, 100, 100); // the returned object is a dynamic object which reference the VolatileImage object in Java
 var snapshot = volImage.getSnapshot(); // the returned object is a dynamic object reference of the BufferedImage object in Java
 var isContentLost = volImage.contentsLost(); // the returned object is a bool representing the Java counterpart
 
 </code></pre>
-<p>The example above uses the classes <code>VolatileImage</code> and <code>BufferedImage</code> which are not implemented yet: the classes exists in JVM and can be accessed.</p>
+<p>The example above uses the classes <code>VolatileImage</code> and <code>BufferedImage</code> which are not implemented yet: the classes exists in JVM™ and can be accessed.</p>
 <h3 id="input-and-return-class-are-not-available">Input and Return class are not available</h3>
 <p>If even the input class is not available the solution is like the following:</p>
 <pre><code class="lang-C#">Java.Awt.Panel panel = new();
@@ -141,13 +141,13 @@ var snapshot = volImage.getSnapshot(); // the returned object is a dynamic objec
 var isContentLost = volImage.contentsLost(); // the returned object is a bool representing the Java counterpart
 
 </code></pre>
-<p>In the above example the class <code>ImageCapabilities</code> is not implemented yet. Since it exists in the JVM it can be allocated and used.
+<p>In the above example the class <code>ImageCapabilities</code> is not implemented yet. Since it exists in the JVM™ it can be allocated and used.
 Each object, like <code>Panel</code> instance, exposes (hidden in the editor) two properties:</p>
 <ul>
-<li><strong>JVM</strong> which access the JVM using methods;</li>
-<li><strong>DynJVM</strong> which access the JVM using the Dynamic engine.</li>
+<li><strong>JVM</strong> which access the JVM™ using methods;</li>
+<li><strong>DynJVM</strong> which access the JVM™ using the Dynamic engine.</li>
 </ul>
-<p>Using the listed properties it is possible to instruct the JVM about the action to be done.</p>
+<p>Using the listed properties it is possible to instruct the JVM™ about the action to be done.</p>
 <h3 id="anything-is-not-available">Anything is not available</h3>
 <p>If no classes are available the solution comes from the global accessor available in JCOBridge and the code snippet is like the following one:</p>
 <pre><code class="lang-C#">var panel = JNetCore.New(&quot;java.awt.Panel&quot;); // the returned object is a dynamic object reference of the Panel object in Java
@@ -157,13 +157,13 @@ var snapshot = volImage.getSnapshot(); // the returned object is a dynamic objec
 var isContentLost = volImage.contentsLost(); // the returned object is a bool representing the Java counterpart
 
 </code></pre>
-<p>The example above consider that even the class <code>Panel</code> is not implemented yet. Since it exists in the JVM it can be allocated and used.
+<p>The example above consider that even the class <code>Panel</code> is not implemented yet. Since it exists in the JVM™ it can be allocated and used.
 In previous chapter the tutorial reports about two hidden properties in each object; the properties on each class are just an useful reference to the real one available in <code>JCOBridge.Global</code>:</p>
 <ul>
-<li><strong>JVM</strong> which access the JVM using methods;</li>
-<li><strong>DynJVM</strong> which access the JVM using the Dynamic engine.</li>
+<li><strong>JVM</strong> which access the JVM™ using methods;</li>
+<li><strong>DynJVM</strong> which access the JVM™ using the Dynamic engine.</li>
 </ul>
-<p>Using the properties it is possible to instruct the JVM about the action to be done.</p>
+<p>Using the properties it is possible to instruct the JVM™ about the action to be done.</p>
 <h3 id="call-a-method-dynamically">Call a method dynamically</h3>
 <p>Look at the simple example below:</p>
 <pre><code class="lang-C#">
@@ -174,13 +174,13 @@ var result = panel.DynInstance.getLayout(); // this line invokes dynamically the
 <p>As exposed before, each object, like <code>Panel</code> instance, exposes (hidden in the editor) two properties.</p>
 <p>Explaining the code:</p>
 <ul>
-<li>The first line creates a JVM object in C# style: <code>Container</code> lives in the CLR and has its counterpart in the JVM.</li>
+<li>The first line creates a JVM™ object in C# style: <code>Container</code> lives in the CLR and has its counterpart in the JVM™.</li>
 <li>The <code>result</code> is a <strong>dynamic</strong> object that can be used to extract data or invokes other methods on the result of <code>getLayout</code> which is an object of type <code>LayoutManager</code>.</li>
 </ul>
 <h2 id="api-exendibility-limitation">API exendibility limitation</h2>
-<p>Starting from the assumption that JCOBridge does not make any code injection, or compilation, within JVM side, the actual limitation is related to something missing within the JVM.
-In the <a href="jvm_callbacks.html">JVM callbacks</a> article there is an explanation of how works callbacks.
-<strong>The callback feature needs a concrete class in the JVM and if it does not exist there is no way to use it from JNet.</strong></p>
+<p>Starting from the assumption that JCOBridge does not make any code injection, or compilation, within JVM™ side, the actual limitation is related to something missing within the JVM™.
+In the <a href="jvm_callbacks.html">JVM™ callbacks</a> article there is an explanation of how works callbacks.
+<strong>The callback feature needs a concrete class in the JVM™ and if it does not exist there is no way to use it from JNet.</strong></p>
 
 </article>
 

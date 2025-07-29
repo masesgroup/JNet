@@ -5,7 +5,7 @@
       <title>Usage .NET suite for Java™/JVM™ | MASES Group - JNet </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Usage .NET suite for Java™/JVM™ | MASES Group - JNet ">
-      <meta name="description" content="Describes how to use JNet, set-up environment, identify the JVM and write good code">
+      <meta name="description" content="Describes how to use JNet, set-up environment, identify the JVM™ and write good code">
       
       <link rel="icon" href="../images/favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -87,12 +87,12 @@
         <article data-uid="">
 <h1 id="jnet-usage">JNet usage</h1>
 
-<p>To use JNet classes the developer can write code in .NET using the same classes available in the official Java packages.
+<p>To use JNet classes the developer can write code in .NET using the same classes available in the official Java™ packages.
 If classes or methods are not available yet it is possible to use the approach synthetized in <a href="API_extensibility.html">What to do if an API was not yet implemented</a></p>
 <h2 id="environment-setup">Environment setup</h2>
 <p>JNet accepts many command-line switches to customize its behavior. The full list is available at <a href="commandlineswitch.html">Command line switch</a> page.</p>
-<h3 id="jvm-identification">JVM identification</h3>
-<p>One of the most important command-line switch is <strong>JVMPath</strong> and it is available in <a href="https://www.jcobridge.com/net-examples/command-line-options/">JCOBridge switches</a>: it can be used to set-up the location of the JVM library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.
+<h3 id="jvm-identification">JVM™ identification</h3>
+<p>One of the most important command-line switch is <strong>JVMPath</strong> and it is available in <a href="https://www.jcobridge.com/net-examples/command-line-options/">JCOBridge switches</a>: it can be used to set-up the location of the JVM™ library (jvm.dll/libjvm.so) if JCOBridge is not able to identify a suitable JRE installation.
 If a developer is using JNet within its own product it is possible to override the <strong>JVMPath</strong> property with a snippet like the following one:</p>
 <pre><code class="lang-c#">class MyJNetCore : JNetCore
 {
@@ -134,9 +134,9 @@ If the developer/user encounter this condition can do the following steps:</p>
 </ul>
 </div>
 <h3 id="intel-cet-and-jnet">Intel CET and JNet</h3>
-<p>JNet uses an embedded JVM through JCOBridge, however JVM initialization is incompatible with <a href="https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html">CET</a> because the code used to identify CPU try to modify the return address and this is considered from CET a violation: see <a href="https://github.com/masesgroup/JNet/issues/573#issuecomment-2544249107">this comment</a>.</p>
+<p>JNet uses an embedded JVM™ through JCOBridge, however JVM™ initialization is incompatible with <a href="https://www.intel.com/content/www/us/en/developer/articles/technical/technical-look-control-flow-enforcement-technology.html">CET</a> because the code used to identify CPU try to modify the return address and this is considered from CET a violation: see <a href="https://github.com/masesgroup/JNet/issues/573#issuecomment-2544249107">this comment</a>.</p>
 <p>From .NET 9 preview 6, <a href="https://learn.microsoft.com/en-us/dotnet/core/compatibility/interop/9.0/cet-support">CET is enabled by default on supported hardware</a> when the final stage produce an executable artifact, i.e. the csproj file contains <code>&lt;OutputType&gt;Exe&lt;/OutputType&gt;</code>.</p>
-<p>If the application, upon startup, fails with the error 0xc0000409 (subcode 0x30) it was compiled with CET enabled and it fails during JVM initialization.</p>
+<p>If the application, upon startup, fails with the error 0xc0000409 (subcode 0x30) it was compiled with CET enabled and it fails during JVM™ initialization.</p>
 <p>To solve the issue there are four possible solutions:</p>
 <ol>
 <li>use a .NET version, e.g. 8, that does not enable CET by default</li>
@@ -246,12 +246,12 @@ namespace MASES.JNetExample
 </code></pre>
 <p>the <code>Collections.Singleton(&quot;test&quot;)</code> ends its life, from .NET point of view, when <code>arrayList.AddAll(0, set)</code> is invoked:</p>
 <ul>
-<li><code>Java.Util.Set&lt;string&gt;</code> is a .NET container for JVM <code>java.util.Set&lt;String&gt;</code></li>
-<li><code>arrayList.AddAll(0, set)</code> receives the <code>Java.Util.Set&lt;string&gt;</code> instance and sends to JVM the reference to <code>java.util.Set&lt;String&gt;</code> of JVM</li>
+<li><code>Java.Util.Set&lt;string&gt;</code> is a .NET container for JVM™ <code>java.util.Set&lt;String&gt;</code></li>
+<li><code>arrayList.AddAll(0, set)</code> receives the <code>Java.Util.Set&lt;string&gt;</code> instance and sends to JVM™ the reference to <code>java.util.Set&lt;String&gt;</code> of JVM™</li>
 <li>from .NET point of view <code>Java.Util.Set&lt;string&gt;</code> has ended its life and can be retired because does not have any other root referencing it</li>
 <li>.NET Garbage Collector activates arbitrarily when some conditions meet: <a href="https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/">https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/</a></li>
 </ul>
-<p>Most of the time the code above works without problem, but sometimes the JVM can raise a <code>Java.Lang.NullPointerException</code> because <code>Java.Util.Set&lt;string&gt;</code> was retired from .NET GC.</p>
+<p>Most of the time the code above works without problem, but sometimes the JVM™ can raise a <code>Java.Lang.NullPointerException</code> because <code>Java.Util.Set&lt;string&gt;</code> was retired from .NET GC.</p>
 <p>To solve the issue, and force the GC to not retire the instance, there are some possible code snippet a developer can follows:</p>
 <h3 id="using-or-try-finally-with-dispose-patterns"><code>using</code> or <code>try-finally</code> with <code>Dispose</code> patterns</h3>
 <p>All classes implements <code>IDisposable</code> interface, the code snippet becomes:</p>
