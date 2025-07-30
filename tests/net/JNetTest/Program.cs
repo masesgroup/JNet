@@ -286,13 +286,29 @@ namespace MASES.JNetTest
             }
         }
 
+        class TestFuture : JVMBridgeBase<TestFuture>
+        {
+            public override string BridgeClassName => "org.mases.jnet.TestFuture";
+
+            public CompletableFuture<String> WithException()
+            {
+                return IExecute<CompletableFuture<String>>("withException");
+            }
+
+            public CompletableFuture<String> WithComplete()
+            {
+                return IExecute<CompletableFuture<String>>("withComplete");
+            }
+        }
+
         static async Task TestAsyncOperation(bool withEx)
         {
             System.Console.WriteLine("TestAsyncOperation");
 
-            var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestFuture") as IJavaObject;
+            var clazz = JVMBridgeBase.ClazzOf<TestFuture>();
 
-            CompletableFuture<String> completableFuture = jClass.Invoke<CompletableFuture<String>>(withEx ? "withException" : "withComplete");
+            TestFuture testFuture = new TestFuture();
+            CompletableFuture<String> completableFuture = withEx ? testFuture.WithException() : testFuture.WithComplete();
 
             String result = await completableFuture.GetAsync();
             if (result != "Hello")

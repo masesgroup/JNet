@@ -1,5 +1,5 @@
 <archetype>
-  <id>testclass</id>
+  <id>jnet-test</id>
   <sources>
     <source>src/main/java/App.java</source>
   </sources>
