@@ -22,7 +22,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace MASES.JNetReflector
+namespace MASES.JNet.Reflector
 {
     class CLIParam : MASES.JNet.CLIParam
     {

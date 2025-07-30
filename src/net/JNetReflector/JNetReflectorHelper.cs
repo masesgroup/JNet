@@ -25,7 +25,7 @@ using Java.Lang;
 using Java.Lang.Reflect;
 using Java.Util;
 using MASES.JCOBridge.C2JBridge;
-using MASES.JNetReflector;
+using MASES.JNet.Reflector;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;

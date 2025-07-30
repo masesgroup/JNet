@@ -24,7 +24,7 @@ using System.Collections.Generic;
 using Java.Lang;
 using Java.Lang.Reflect;
 using System.Text;
-using MASES.JNetReflector.Templates;
+using MASES.JNet.Reflector.Templates;
 using System.Runtime.CompilerServices;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -33,7 +33,7 @@ using Org.Mases.Jnet;
 using System.Diagnostics;
 using MASES.JCOBridge.C2JBridge;
 
-namespace MASES.JNetReflector
+namespace MASES.JNet.Reflector
 {
     static class JNetReflectorExtensions
     {

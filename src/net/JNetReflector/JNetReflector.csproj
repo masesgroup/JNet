@@ -5,7 +5,7 @@
 		<PackageType>DotnetTool</PackageType>
 		<OutputType>Exe</OutputType>
 		<AssemblyName>MASES.JNetReflector</AssemblyName>
-		<RootNamespace>MASES.JNetReflector</RootNamespace>
+		<RootNamespace>MASES.JNet.Reflector</RootNamespace>
 		<Title>JNetReflector - JNet (.NET suite for Java™/JVM™) class reflection utility command line interface</Title>
 		<Description>JNetReflector - JNet (.NET suite for Java™/JVM™) class reflection utility command line interface</Description>
 		<Product>JNetReflector</Product>
