@@ -7,7 +7,7 @@
 		<Description>.NET suite for Java™/JVM™ - a comprehensive suite of libraries and tools to use Java™/JVM™ APIs (Java, Scala, Kotlin, ...) and .NET side-by-side</Description>
 		<Product>JNet</Product>
 		<OutputPath>..\..\..\bin\</OutputPath>
-		<PackageTags>jnet dotnet clr jvm dotnetcore netcore dotnet6 net6 dotnet8 net8 java bridge gateway</PackageTags>
+		<PackageTags>jnet dotnet clr jvm dotnetcore netcore dotnet8 net8 dotnet8 net9 java bridge gateway</PackageTags>
 		<PackageId>MASES.JNet</PackageId>
 		<PackageReadmeFile>usage.md</PackageReadmeFile>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -50,7 +50,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="MASES.CLIParser" Version="3.2.1" />
-		<PackageReference Include="MASES.JCOBridge" Version="2.6.0-rc4">
+		<PackageReference Include="MASES.JCOBridge" Version="2.6.0-rc5">
 			<IncludeAssets>All</IncludeAssets>
 			<PrivateAssets>None</PrivateAssets>
 		</PackageReference>

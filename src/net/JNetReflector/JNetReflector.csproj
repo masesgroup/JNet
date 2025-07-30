@@ -11,7 +11,7 @@
 		<Product>JNetReflector</Product>
 		<OutputPath>..\..\..\binReflector\</OutputPath>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-		<PackageTags>jnet cli reflection utility dotnet clr netcore net8 java jvm</PackageTags>
+		<PackageTags>jnet cli reflection utility dotnet clr netcore dotnet8 net8 dotnet8 net9 java jvm</PackageTags>
 		<PackageId>MASES.JNetReflector</PackageId>
 		<DefineConstants>$(DefineConstants)TRACE;JNETREFLECTOR</DefineConstants>
 		<PackageReadmeFile>usageReflector.md</PackageReadmeFile>
@@ -116,7 +116,7 @@
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="MASES.CLIParser" Version="3.2.1" />
-		<PackageReference Include="MASES.JCOBridge" Version="2.6.0-rc4">
+		<PackageReference Include="MASES.JCOBridge" Version="2.6.0-rc5">
 			<IncludeAssets>All</IncludeAssets>
 			<PrivateAssets>None</PrivateAssets>
 		</PackageReference>
