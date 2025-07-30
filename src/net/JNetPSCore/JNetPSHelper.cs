@@ -393,6 +393,10 @@ namespace MASES.JNet.PowerShell
         /// Sets <see cref="JNetCoreBase{T}.ApplicationLogClassPath"/>
         /// </summary>
         public static void SetLogClassPath(bool? logClassPath) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationLogClassPath), logClassPath); }
+        /// <summary>
+        /// Sets <see cref="JNetCoreBase{T}.ApplicationWriteEventOrExceptionOnCmdLine"/>
+        /// </summary>
+        public static void SetWriteEventOrExceptionOnCmdLine(bool? writeEventOrExceptionOnCmdLine) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationWriteEventOrExceptionOnCmdLine), writeEventOrExceptionOnCmdLine); }
 
         /// <summary>
         /// Invokes <see cref="SetupJVMWrapper{T}.CreateGlobalInstance"/> to start engine
