@@ -7,7 +7,7 @@
 		<Description>JNetCLI - JNet (.NET suite for Java™/JVM™) command line base library</Description>
 		<Product>JNetCLICore</Product>
 		<OutputPath>..\..\..\bin\</OutputPath>
-		<PackageTags>jnet cli dotnet clr netcore net8</PackageTags>
+		<PackageTags>jnet cli dotnet clr netcore dotnet8 net8 dotnet8 net9</PackageTags>
 		<PackageId>MASES.JNetCLICore</PackageId>
 		<PackageReadmeFile>usagecli.md</PackageReadmeFile>
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>

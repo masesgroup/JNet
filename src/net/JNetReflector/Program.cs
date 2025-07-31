@@ -21,7 +21,7 @@ using System.IO;
 using System.Reflection;
 using System.Text;
 
-namespace MASES.JNetReflector
+namespace MASES.JNet.Reflector
 {
     class Program
     {

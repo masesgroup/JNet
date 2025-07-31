@@ -266,7 +266,7 @@ jobs:
           path: .\bin\*nupkg
 
       - name: Create Jars for tests
-        run: mvn --file ./tests/jvm/testclass/pom.xml --no-transfer-progress package
+        run: mvn --file ./tests/jvm/jnettest/pom.xml --no-transfer-progress package
         env:
           MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
           MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}

@@ -134,6 +134,14 @@ namespace MASES.JNet.PowerShell.Cmdlet
             HelpMessage = "Set on command-line to print ClassPath")]
         public SwitchParameter LogClassPath { get; set; }
 
+        /// <inheritdoc cref="JNetCoreBase{TCore}.ApplicationWriteEventsOnCmdLine" />
+        [Parameter(
+            // Mandatory = true,
+            ValueFromPipeline = true,
+            ValueFromPipelineByPropertyName = true,
+            HelpMessage = "Set on command-line to show events from the underlying JCOBridge engine")]
+        public SwitchParameter WriteEventOrExceptionOnCmdLine { get; set; }
+
         /// <inheritdoc cref="JNetCoreBase{TCore}.ApplicationJVMExtraOptions" />
         [Parameter(
             // Mandatory = true,
@@ -166,6 +174,7 @@ namespace MASES.JNet.PowerShell.Cmdlet
             JNetPSHelper<TCore>.SetHeapSize(HeapSize);
             JNetPSHelper<TCore>.SetInitialHeapSize(InitialHeapSize);
             JNetPSHelper<TCore>.SetLogClassPath(LogClassPath.IsPresent);
+            JNetPSHelper<TCore>.SetWriteEventOrExceptionOnCmdLine(WriteEventOrExceptionOnCmdLine.IsPresent);
             if (ExtraJVMOptions != null)
             {
                 foreach (var item in ExtraJVMOptions)

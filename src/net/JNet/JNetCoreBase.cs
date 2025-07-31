@@ -29,6 +29,7 @@ namespace MASES.JNet
     {
         // CommonArgs
         public const string LogClassPath = "LogClassPath";
+        public const string WriteEventOrExceptionOnCmdLine = "WriteEventOrExceptionOnCmdLine";
     }
 
     /// <summary>
@@ -97,6 +98,10 @@ namespace MASES.JNet
         /// </summary>
         public static bool? ApplicationLogClassPath { get; set; }
         /// <summary>
+        /// Sets the global value to show events from the underlying JCOBridge engine
+        /// </summary>
+        public static bool? ApplicationWriteEventOrExceptionOnCmdLine { get; set; }
+        /// <summary>
         /// Generic extra options to be used from JVM
         /// </summary>
         public static IDictionary<string, string> ApplicationJVMExtraOptions { get; } = new ConcurrentDictionary<string, string>();
@@ -145,6 +150,12 @@ namespace MASES.JNet
                     Type = ArgumentType.Single,
                     Help = "Add on command-line to show ClassPath resolution.",
                 },
+                new ArgumentMetadata<bool>()
+                {
+                    Name = CLIParam.WriteEventOrExceptionOnCmdLine,
+                    Type = ArgumentType.Single,
+                    Help = "Add on command-line to show events from the underlying JCOBridge engine.",
+                },
             };
 
         bool _logClassPath = false;
@@ -152,6 +163,12 @@ namespace MASES.JNet
         /// Set to <see langword="true"/> to print ClassPath
         /// </summary>
         public virtual bool LogClassPath => ApplicationLogClassPath ?? _logClassPath;
+
+        bool _writeEventOrExceptionOnCmdLine = false;
+        /// <summary>
+        /// Set to <see langword="true"/> to show events from the underlying JCOBridge engine
+        /// </summary>
+        public virtual bool WriteEventOrExceptionOnCmdLine => ApplicationWriteEventOrExceptionOnCmdLine ?? _writeEventOrExceptionOnCmdLine;
 
         IEnumerable<IArgumentMetadataParsed> _parsedArgs = null;
         /// <summary>
@@ -168,14 +185,28 @@ namespace MASES.JNet
 
         void EventOrExceptionHandlerInternal(object o, EventOrExceptionEventArgs e)
         {
-            EventOrExceptionHandler(e);
+            try
+            {
+                if (EventOrExceptionEvent != null)
+                {
+                    EventOrExceptionEvent(e);
+                }
+                EventOrExceptionHandler(e);
+            }
+            catch (Exception ex) { Console.WriteLine($"EventOrExceptionEvent or EventOrExceptionHandler raised an exception {ex.ToString()}"); }
         }
+        /// <summary>
+        /// Set the handler to receive events raised from the underlying JCOBridge engine; see <see cref="JCOBridge.C2JBridge.JCOBridge.SetEventOrExceptionHandler(EventHandler{EventOrExceptionEventArgs})"/>
+        /// </summary>
+        public global::System.Action<EventOrExceptionEventArgs> EventOrExceptionEvent { get; set; } = null;
+
         /// <summary>
         /// Manages events raised from the underlying JCOBridge engine; see <see cref="JCOBridge.C2JBridge.JCOBridge.SetEventOrExceptionHandler(EventHandler{EventOrExceptionEventArgs})"/>
         /// </summary>
         /// <param name="e">The <see cref="EventOrExceptionEventArgs"/> with information</param>
         protected virtual void EventOrExceptionHandler(EventOrExceptionEventArgs e)
         {
+            if (!WriteEventOrExceptionOnCmdLine) return;
             if (!string.IsNullOrWhiteSpace(e.Message)) Console.WriteLine(e.Message);
             else if (e.Error is LicenseManager.Common.FallbackInTrialModeException || e.Error is LicenseManager.Common.MissingLicenseException) return;
             else if (e.Error != null)

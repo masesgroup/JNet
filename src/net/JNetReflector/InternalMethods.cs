@@ -23,7 +23,7 @@ using System.Collections.Generic;
 using Java.Lang;
 using Java.Lang.Reflect;
 using System.Text;
-using MASES.JNetReflector.Templates;
+using MASES.JNet.Reflector.Templates;
 using System.Linq;
 using Org.Mases.Jnet;
 using System.Diagnostics;
@@ -31,7 +31,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Reflection;
 
-namespace MASES.JNetReflector
+namespace MASES.JNet.Reflector
 {
     static class ReflectionUtils
     {

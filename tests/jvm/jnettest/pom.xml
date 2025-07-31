@@ -3,8 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.masesgroup</groupId>
-	<artifactId>jnet-test</artifactId>
-	<name>mases.jnet-test</name>
+	<artifactId>jnettest</artifactId>
+	<name>mases.jnettest</name>
 	<description>JNet-Java test library</description>
 	<url>https://github.com/masesgroup/JNet</url>
 	<version>${jnettestversion}</version>

@@ -8,7 +8,7 @@
 		<Product>JNetPSCore</Product>
 		<OutputPath>..\..\..\bin\</OutputPath>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<PackageTags>jnet cli powershell dotnet clr jvm dotnetcore netcore dotnet6 net6 java bridge gateway</PackageTags>
+		<PackageTags>jnet cli powershell dotnet clr jvm dotnetcore netcore dotnet8 net8 dotnet8 net9 java bridge gateway</PackageTags>
 		<PackageId>MASES.JNetPSCore</PackageId>
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
 		<RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
