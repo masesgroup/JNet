@@ -19,14 +19,14 @@
 using Java.Lang;
 using MASES.CLIParser;
 using MASES.JNet;
-using MASES.JNetReflector.Templates;
+using MASES.JNet.Reflector.Templates;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime;
 using System.Text.Json;
 
-namespace MASES.JNetReflector
+namespace MASES.JNet.Reflector
 {
     /// <summary>
     /// Public entry point of <see cref="JNetReflectorCore{T}"/>

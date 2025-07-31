@@ -21,7 +21,7 @@ using System.Collections.Generic;
 using System.IO;
 using System;
 
-namespace MASES.JNetReflector.Templates
+namespace MASES.JNet.Reflector.Templates
 {
     public class Template
     {
