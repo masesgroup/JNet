@@ -36,7 +36,7 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java DoubleToIntFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToIntFunction.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java DoubleToIntFunction <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToIntFunction.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>
     /// </summary>
     public class DoubleToIntFunction : JVMBridgeListener, IDoubleToIntFunction
     {

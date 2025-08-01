@@ -36,7 +36,7 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java DoubleUnaryOperator <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java DoubleUnaryOperator <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>
     /// </summary>
     public class DoubleUnaryOperator : JVMBridgeListener, IDoubleUnaryOperator
     {

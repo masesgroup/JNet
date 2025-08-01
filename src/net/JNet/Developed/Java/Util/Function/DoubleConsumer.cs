@@ -35,7 +35,7 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java DoubleConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleConsumer.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java DoubleConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleConsumer.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>
     /// </summary>
     public class DoubleConsumer : JVMBridgeListener, IDoubleConsumer
     {
