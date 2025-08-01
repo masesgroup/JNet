@@ -5,6 +5,15 @@
 		<AssemblyOriginatorKeyFile>..\..\..\src\net\Common\JNet.snk</AssemblyOriginatorKeyFile>
 		<OutputPath>..\..\..\bin\</OutputPath>
 	</PropertyGroup>
+	<ItemGroup Condition="True">
+		<jnettest_jars Include="$(ProjectDir)\..\..\..\jars\jnettest-*" />
+	</ItemGroup>
+	<Target Name="CopyCustomContentTest" AfterTargets="AfterBuild" >
+		<Copy SourceFiles="@(jnettest_jars)" DestinationFolder="$(OutDir)\jars\%(RecursiveDir)" />
+	</Target>
+	<Target Name="CopyCustomContentOnPublishTest" AfterTargets="Publish" >
+		<Copy SourceFiles="@(jnettest_jars)" DestinationFolder="$(OutDir)\jars\%(RecursiveDir)" />
+	</Target>
 	<ItemGroup>
 		<None Include="..\..\..\LICENSE" Pack="true" PackagePath="" />
 		<None Include="..\..\..\src\net\Common\JCOB128x128.png" Pack="true" PackagePath="" />

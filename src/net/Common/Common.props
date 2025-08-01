@@ -32,9 +32,7 @@
 		<TargetFramework>net8.0</TargetFramework>
 	</PropertyGroup>
 	<ItemGroup Condition="True">
-		<jnet_jars Include="$(ProjectDir)\..\..\..\jars\jnet-*">
-			<InProject>false</InProject>
-		</jnet_jars>
+		<jnet_jars Include="$(ProjectDir)\..\..\..\jars\jnet-*" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(JNET_DOCKER_BUILD_ACTIONS)' != 'true'">
 		<None Include="..\..\..\LICENSE" Pack="true" PackagePath="" />
