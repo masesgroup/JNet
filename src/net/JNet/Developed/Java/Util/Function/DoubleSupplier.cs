@@ -35,7 +35,7 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java DoubleSupplier <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleSupplier.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java DoubleSupplier <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleSupplier.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>
     /// </summary>
     public class DoubleSupplier : JVMBridgeListener, IDoubleSupplier
     {

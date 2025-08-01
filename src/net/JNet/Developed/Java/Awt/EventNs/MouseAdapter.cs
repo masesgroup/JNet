@@ -60,7 +60,7 @@ namespace Java.Awt.EventNs
     }
 
     /// <summary>
-    /// Listener for MouseAdapter. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IMouseAdapter"/>
+    /// Listener for MouseAdapter. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>, implements <see cref="IMouseAdapter"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class MouseAdapter : IMouseAdapter

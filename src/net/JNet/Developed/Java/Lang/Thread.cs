@@ -31,7 +31,7 @@ namespace Java.Lang
 
         #region Thread.UncaughtExceptionHandler
         /// <summary>
-        /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html"/>. Extends <see cref="JVMBridgeListener"/>
+        /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.UncaughtExceptionHandler.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>
         /// </summary>
         /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
         public class UncaughtExceptionHandler : JVMBridgeListener

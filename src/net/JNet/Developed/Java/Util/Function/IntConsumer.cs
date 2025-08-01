@@ -29,7 +29,7 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java IntConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java IntConsumer <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>
     /// </summary>
     public class IntConsumer : Consumer<int>, IIntConsumer
     {

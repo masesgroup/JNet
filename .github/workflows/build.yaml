@@ -11,7 +11,13 @@ on:
     paths-ignore:
       - 'docs/**'
   workflow_dispatch:
-  
+    inputs:
+      ForceContinueOnError:
+        description: 'Force continue-on-error'
+        required: false
+        default: false
+        type: boolean
+        
 concurrency:
   group: '${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}'
   cancel-in-progress: true
@@ -308,8 +314,6 @@ jobs:
             framework: net462
           - os: macos-latest
             framework: net462
-          - os: macos-13
-            framework: net462
           - jdk_vendor: oracle
             jdk_version: 11
           - jdk_vendor: graalvm
@@ -368,13 +372,13 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' || (matrix.os == 'windows-latest' && matrix.framework != 'net462') }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
-        continue-on-error: true
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: |
           dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
           dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
           
       - if: ${{ matrix.os == 'windows-latest' && matrix.framework == 'net462' }}
-        continue-on-error: true
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: |
           .\bin\${{ matrix.framework }}\JNetTest.exe
           .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
@@ -475,21 +479,21 @@ jobs:
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
 
       - if: ${{ matrix.os != 'windows-latest' }}
-        continue-on-error: true
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}/bin/JNetPSTest.ps1
 
       - if: ${{ matrix.os == 'windows-latest' }}
-        continue-on-error: true
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1
 
       - if: ${{ matrix.os == 'windows-latest' }}
-        continue-on-error: true
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: powershell
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed

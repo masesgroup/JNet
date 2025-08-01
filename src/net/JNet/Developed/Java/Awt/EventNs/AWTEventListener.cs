@@ -29,7 +29,7 @@ namespace Java.Awt.EventNs
     }
 
     /// <summary>
-    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html"/>. Extends <see cref="JVMBridgeListener"/>, implements <see cref="IAWTEventListener"/>
+    /// Listener for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/event/AWTEventListener.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>, implements <see cref="IAWTEventListener"/>
     /// </summary>
     /// <remarks>Remember to Dispose the object otherwise there is a resource leak, the object contains a reference to the the corresponding JVM object</remarks>
     public partial class AWTEventListener : IAWTEventListener

@@ -29,7 +29,7 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java LongPredicate <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java LongPredicate <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>
     /// </summary>
     public class LongPredicate : Predicate<long>, ILongPredicate
     {

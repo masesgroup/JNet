@@ -35,7 +35,7 @@ namespace Java.Util.Function
     }
 
     /// <summary>
-    /// Listener for Java IntSupplier <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntSupplier.html"/>. Extends <see cref="JVMBridgeListener"/>
+    /// Listener for Java IntSupplier <see href="https://docs.oracle.com/javase/8/docs/api/java/util/function/IntSupplier.html"/>. Extends <see cref="MASES.JCOBridge.C2JBridge.JVMBridgeListener"/>
     /// </summary>
     public class IntSupplier : JVMBridgeListener, IIntSupplier
     {
