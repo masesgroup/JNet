@@ -199,7 +199,7 @@ Class JNetPSHelper&lt;TClass&gt;  <a class="header-action link-secondary" title=
 
   <h3 id="MASES_JNet_PowerShell_JNetPSHelper_1_AddJVMOption_System_String_System_String_" data-uid="MASES.JNet.PowerShell.JNetPSHelper`1.AddJVMOption(System.String,System.String)">
   AddJVMOption(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/JNetPSHelper.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/JNetPSHelper.cs/#L453"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds <code class="paramref">jvmOptionName</code>, with optional <code class="paramref">jvmOptionValue</code>, to ApplicationJVMExtraOptions</p>
@@ -235,7 +235,7 @@ Class JNetPSHelper&lt;TClass&gt;  <a class="header-action link-secondary" title=
 
   <h3 id="MASES_JNet_PowerShell_JNetPSHelper_1_CreateGlobalInstance_System_Management_Automation_Cmdlet_" data-uid="MASES.JNet.PowerShell.JNetPSHelper`1.CreateGlobalInstance(System.Management.Automation.Cmdlet)">
   CreateGlobalInstance(Cmdlet)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/JNetPSHelper.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/JNetPSHelper.cs/#L405"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Invokes <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.SetupJVMWrapper-1.html#MASES_JCOBridge_C2JBridge_SetupJVMWrapper_1_CreateGlobalInstance">CreateGlobalInstance()</a> to start engine</p>
@@ -366,7 +366,7 @@ Class JNetPSHelper&lt;TClass&gt;  <a class="header-action link-secondary" title=
 
   <h3 id="MASES_JNet_PowerShell_JNetPSHelper_1_Launch_System_Type_System_String___" data-uid="MASES.JNet.PowerShell.JNetPSHelper`1.Launch(System.Type,System.String[])">
   Launch(Type, params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/JNetPSHelper.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/JNetPSHelper.cs/#L434"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Invokes JNetCore&lt;TClass&gt;.Launch(Type, string[]) to start a Main-Class</p>
@@ -400,7 +400,7 @@ Class JNetPSHelper&lt;TClass&gt;  <a class="header-action link-secondary" title=
 
   <h3 id="MASES_JNet_PowerShell_JNetPSHelper_1_New_System_String_System_Object___" data-uid="MASES.JNet.PowerShell.JNetPSHelper`1.New(System.String,System.Object[])">
   New(string, params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/JNetPSHelper.cs/#L440"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/JNetPSHelper.cs/#L444"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a new class instance</p>
@@ -840,6 +840,38 @@ Class JNetPSHelper&lt;TClass&gt;  <a class="header-action link-secondary" title=
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>logClassPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_JNet_PowerShell_JNetPSHelper_1_SetWriteEventOrExceptionOnCmdLine_" data-uid="MASES.JNet.PowerShell.JNetPSHelper`1.SetWriteEventOrExceptionOnCmdLine*"></a>
+
+  <h3 id="MASES_JNet_PowerShell_JNetPSHelper_1_SetWriteEventOrExceptionOnCmdLine_System_Nullable_System_Boolean__" data-uid="MASES.JNet.PowerShell.JNetPSHelper`1.SetWriteEventOrExceptionOnCmdLine(System.Nullable{System.Boolean})">
+  SetWriteEventOrExceptionOnCmdLine(bool?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetPSCore/JNetPSHelper.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets <a class="xref" href="MASES.JNet.JNetCoreBase-1.html#MASES_JNet_JNetCoreBase_1_ApplicationWriteEventOrExceptionOnCmdLine">ApplicationWriteEventOrExceptionOnCmdLine</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetWriteEventOrExceptionOnCmdLine(bool? writeEventOrExceptionOnCmdLine)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writeEventOrExceptionOnCmdLine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
     <dd></dd>
   </dl>
 

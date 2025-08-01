@@ -30654,7 +30654,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.IntConsumer",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntConsumer.yml\" sourcestartlinenumber=\"1\">Listener for Java IntConsumer <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html</a>. Extends JVMBridgeListener</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.IntConsumer.yml\" sourcestartlinenumber=\"1\">Listener for Java IntConsumer <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30906,7 +30906,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.LongConsumer",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongConsumer.yml\" sourcestartlinenumber=\"1\">Listener for Java LongConsumer <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongConsumer.html</a>. Extends JVMBridgeListener</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongConsumer.yml\" sourcestartlinenumber=\"1\">Listener for Java LongConsumer <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongConsumer.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongConsumer.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -30990,7 +30990,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Java.Util.Function.LongPredicate",
-      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongPredicate.yml\" sourcestartlinenumber=\"1\">Listener for Java LongPredicate <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html</a>. Extends JVMBridgeListener</p>\n"
+      "Summary": "<p sourcefile=\"api/Java.Util.Function.LongPredicate.yml\" sourcestartlinenumber=\"1\">Listener for Java LongPredicate <a href=\"https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html\">https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html</a>. Extends <xref href=\"MASES.JCOBridge.C2JBridge.JVMBridgeListener\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
     },
     {
       "type": "ManagedReference",
@@ -70838,6 +70838,258 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.FileNameAndDirectory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.FileNameAndDirectory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.FileNameAndDirectory",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.JNetReflectorCore-1.ConfigurationType.ClassAndPatterns.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.JNetReflectorCore-1.ConfigurationType.ClassAndPatterns.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.JNetReflectorCore<T>.ConfigurationType.ClassAndPatterns",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.JNetReflectorCore-1.ConfigurationType.JVMOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.JNetReflectorCore-1.ConfigurationType.JVMOption.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.JNetReflectorCore<T>.ConfigurationType.JVMOption",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.JNetReflectorCore-1.ConfigurationType.VersionUrl.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.JNetReflectorCore-1.ConfigurationType.VersionUrl.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.JNetReflectorCore<T>.ConfigurationType.VersionUrl",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.JNetReflectorCore-1.ConfigurationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.JNetReflectorCore-1.ConfigurationType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.JNetReflectorCore<T>.ConfigurationType",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.Reflector.JNetReflectorCore-1.ConfigurationType.yml\" sourcestartlinenumber=\"1\">Class used to define configuration information</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.JNetReflectorCore-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.JNetReflectorCore-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.JNetReflectorCore<T>",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.Reflector.JNetReflectorCore-1.yml\" sourcestartlinenumber=\"1\">Public entry point of <xref href=\"MASES.JNet.Reflector.JNetReflectorCore%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.JNetReflectorCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.JNetReflectorCore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.JNetReflectorCore",
+      "Summary": "<p sourcefile=\"api/MASES.JNet.Reflector.JNetReflectorCore.yml\" sourcestartlinenumber=\"1\">Concrete implementation of <xref href=\"MASES.JNet.Reflector.JNetReflectorCore%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.SpecialNames.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.SpecialNames.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.SpecialNames",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.ConstructorStub",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.FieldStub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.FieldStub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.FieldStub",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.MethodStub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.MethodStub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.MethodStub",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.OperatorStub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.OperatorStub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.OperatorStub",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.PropertyStub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.PropertyStub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.PropertyStub",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.Templates.AllPackageClasses.ClassStub",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.Templates.AllPackageClasses.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.Templates.AllPackageClasses.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.Templates.AllPackageClasses",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.Templates.Template.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.Templates.Template.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.Templates.Template",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.Templates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.Templates.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector.Templates",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MASES.JNet.Reflector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MASES.JNet.Reflector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "MASES.JNet.Reflector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MASES.JNet.Specific.CLI.JNetCLICoreHelper.yml",
       "output": {
         ".html": {
@@ -71016,258 +71268,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "MASES.JNet",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.FileNameAndDirectory.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.FileNameAndDirectory.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.FileNameAndDirectory",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.ClassAndPatterns.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.ClassAndPatterns.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.JNetReflectorCore<T>.ConfigurationType.ClassAndPatterns",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.JVMOption.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.JVMOption.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.JNetReflectorCore<T>.ConfigurationType.JVMOption",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.VersionUrl.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.VersionUrl.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.JNetReflectorCore<T>.ConfigurationType.VersionUrl",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.JNetReflectorCore<T>.ConfigurationType",
-      "Summary": "<p sourcefile=\"api/MASES.JNetReflector.JNetReflectorCore-1.ConfigurationType.yml\" sourcestartlinenumber=\"1\">Class used to define configuration information</p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.JNetReflectorCore-1.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.JNetReflectorCore<T>",
-      "Summary": "<p sourcefile=\"api/MASES.JNetReflector.JNetReflectorCore-1.yml\" sourcestartlinenumber=\"1\">Public entry point of <xref href=\"MASES.JNetReflector.JNetReflectorCore%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.JNetReflectorCore.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.JNetReflectorCore.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.JNetReflectorCore",
-      "Summary": "<p sourcefile=\"api/MASES.JNetReflector.JNetReflectorCore.yml\" sourcestartlinenumber=\"1\">Concrete implementation of <xref href=\"MASES.JNetReflector.JNetReflectorCore%601\" data-throw-if-not-resolved=\"false\"></xref></p>\n"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.SpecialNames.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.SpecialNames.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.SpecialNames",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.ConstructorStub",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.FieldStub",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.MethodStub",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.OperatorStub.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.OperatorStub.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.OperatorStub",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.PropertyStub",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.Templates.AllPackageClasses.ClassStub.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.Templates.AllPackageClasses.ClassStub",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.Templates.AllPackageClasses.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.Templates.AllPackageClasses.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.Templates.AllPackageClasses",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.Templates.Template.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.Templates.Template.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.Templates.Template",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.Templates.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.Templates.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector.Templates",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MASES.JNetReflector.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MASES.JNetReflector.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "MASES.JNetReflector",
       "Summary": null
     },
     {
