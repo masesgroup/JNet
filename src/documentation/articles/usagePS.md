@@ -91,6 +91,9 @@ _jnetps_ accepts the following cmdlets:
   * HeapSize
   * InitialHeapSize
   * LogClassPath
+  * WriteEventOrExceptionOnCmdLine
+  * ExtraJVMOptions
+  * ExtraJVMKVOptions
 * **Invoke-JCommand**: executes the main method of a specific Java™ Main-Class in argument and exit. The arguments are:
   * MainClass
   * Arguments

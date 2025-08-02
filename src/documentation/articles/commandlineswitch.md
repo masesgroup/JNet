@@ -7,7 +7,8 @@ _description: Describes the command-line switch of .NET suite for Java™/JVM™
 
 _jnet_ accepts the following command-line switches:
 
-* **LogClassPath**: put in command line the switch to output all Jars found
+* **LogClassPath**: Add on command-line to show ClassPath resolution and report all Jars found
+* **WriteEventOrExceptionOnCmdLine**: Add on command-line to show on console the events and exceptions from the underlying JCOBridge engine
 
 Plus it accepts from:
 * **JCOBridge**:

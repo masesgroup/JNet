@@ -148,13 +148,13 @@ namespace MASES.JNet
                 {
                     Name = CLIParam.LogClassPath,
                     Type = ArgumentType.Single,
-                    Help = "Add on command-line to show ClassPath resolution.",
+                    Help = "Add on command-line to show ClassPath resolution and report all Jars found.",
                 },
                 new ArgumentMetadata<bool>()
                 {
                     Name = CLIParam.WriteEventOrExceptionOnCmdLine,
                     Type = ArgumentType.Single,
-                    Help = "Add on command-line to show events from the underlying JCOBridge engine.",
+                    Help = "Add on command-line to show on console the events and exceptions from the underlying JCOBridge engine.",
                 },
             };
 
