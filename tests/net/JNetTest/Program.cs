@@ -20,8 +20,8 @@ using Java.Lang;
 using Java.Nio;
 using Java.Util;
 using Java.Util.Concurrent;
+using Java.Util.Function;
 using MASES.JCOBridge.C2JBridge;
-using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNet.Specific;
 using MASES.JNet.Specific.Extensions;
 using MASES.JNetTest.Common;
@@ -38,6 +38,8 @@ namespace MASES.JNetTest
             System.Console.WriteLine("Starting JNetTest");
 
             Initialize();
+
+            TestListeners();
 
             TestExtensions();
 
@@ -90,6 +92,41 @@ namespace MASES.JNetTest
             {
                 System.Console.WriteLine(ex);
                 throw;
+            }
+        }
+
+        class TestListener : JVMBridgeBase<TestListener>
+        {
+            public override string BridgeClassName => "org.mases.jnet.TestListener";
+
+            public TestListener() { }
+
+            public TestListener(params object[] args) : base(args) { }
+
+            public Java.Lang.String Apply(Java.Lang.String str)
+            {
+                return IExecute<Java.Lang.String>("apply", str);
+            }
+        }
+
+        static void TestListeners()
+        {
+            System.Console.WriteLine("TestListeners");
+
+            const string expectedResult = "Ciao";
+
+            using var func = new Function<Java.Lang.String, Java.Lang.String>()
+            {
+                OnApply = (o) =>
+                {
+                    return o;
+                }
+            };
+            TestListener testListener = new TestListener(func);
+            Java.Lang.String result = testListener.Apply(expectedResult);
+            if (result != expectedResult)
+            {
+                System.Console.WriteLine($"Failed to compare: {result}");
             }
         }
 
