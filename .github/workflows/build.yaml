@@ -327,7 +327,7 @@ jobs:
       DOTNET_CreateDumpDiagnostics: 1
       DOTNET_CreateDumpVerboseDiagnostics: 1
       DOTNET_EnableCrashReport: 1
-      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_0 }}
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_1 }}
     
     steps:
       - name: Restore JNet bin from cache
@@ -432,7 +432,7 @@ jobs:
       DOTNET_CreateDumpDiagnostics: 1
       DOTNET_CreateDumpVerboseDiagnostics: 1
       DOTNET_EnableCrashReport: 1
-      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_0 }}
+      JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_1 }}
 
     steps:
       - uses: actions/setup-dotnet@v4
