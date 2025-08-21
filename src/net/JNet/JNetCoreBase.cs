@@ -428,7 +428,7 @@ namespace MASES.JNet
 
             try
             {
-                SetupJVMWrapper<T>.Launch(type, args);
+                JCOBridge.C2JBridge.JCOBridge.Launch(type, args);
             }
             catch (ArgumentException)
             {
