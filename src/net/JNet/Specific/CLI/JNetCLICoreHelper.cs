@@ -177,7 +177,7 @@ namespace MASES.JNet.Specific.CLI
         {
             foreach (var item in ImportList)
             {
-                runner.ImportPackage(item);
+                runner.JVM.ImportPackage(item);
             }
         }
         /// <summary>
@@ -191,7 +191,7 @@ namespace MASES.JNet.Specific.CLI
             Dictionary<string, Type> implementedClasses = new Dictionary<string, Type>();
             foreach (var reference in JNetCLICoreHelper.AssemblyReferencesOf<TRunner>())
             {
-                IDictionary<string, Type> classes = RunnerType.RunStaticMethodOn(typeof(SetupJVMWrapper), nameof(JNetCoreBase<TRunner>.GetMainClasses), reference) as IDictionary<string, Type>;
+                IDictionary<string, Type> classes = JCOBridge.C2JBridge.JCOBridge.GetMainClasses(reference);
                 foreach (var cls in classes)
                 {
                     if (!implementedClasses.ContainsKey(cls.Key))
