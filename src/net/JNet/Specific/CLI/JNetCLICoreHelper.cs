@@ -177,7 +177,7 @@ namespace MASES.JNet.Specific.CLI
         {
             foreach (var item in ImportList)
             {
-                runner.ImportPackage(item);
+                runner.JVM.ImportPackage(item);
             }
         }
         /// <summary>
