@@ -30,8 +30,8 @@ namespace MASES.JNetTemplate.JCOBridgeApp
         {
             public void Execute()
             {
-                ImportPackage("java.lang");
-                ImportPackage("java.util");
+                JVM.ImportPackage("java.lang");
+                JVM.ImportPackage("java.util");
 
                 var str = DynJVM.String.@new();
                 Console.WriteLine("Output from JVM: {0}", str.concat("HELLO WORLD FROM JVM!!!"));
