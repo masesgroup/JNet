@@ -17,6 +17,7 @@
 */
 
 using Java.Lang;
+using Java.Lang.Annotation;
 using Java.Nio;
 using Java.Util;
 using Java.Util.Concurrent;
@@ -51,6 +52,8 @@ namespace MASES.JNetTest
             try
             {
                 TestCreateObjects();
+
+                TestEnum();
 
                 TestListeners();
 
@@ -142,7 +145,36 @@ namespace MASES.JNetTest
             }
         }
 
-        class TestListener : JVMBridgeBase<TestListener>
+        static void TestEnum()
+        {
+            System.Console.WriteLine("TestEnum");
+
+            ElementType type = ElementType.ANNOTATION_TYPE;
+
+            if (type.Equals(ElementType.ANNOTATION_TYPE))
+            {
+                if (type != ElementType.ANNOTATION_TYPE)
+                {
+                   throw new System.InvalidOperationException($"Failed to compare with \"==\": {type} with {ElementType.ANNOTATION_TYPE}");
+                }
+            }
+            else
+            {
+                throw new System.InvalidOperationException($"Failed to compare with Equals: {type} with {ElementType.ANNOTATION_TYPE}");
+            }
+
+            if (!type.Equals(ElementType.PARAMETER))
+            {
+                if (type == ElementType.PARAMETER)
+                {
+                    throw new System.InvalidOperationException($"Failed to compare with \"==\": {type} with {ElementType.PARAMETER}");
+                }
+            }
+            else
+            {
+                throw new System.InvalidOperationException($"Failed to compare with Equals: {type} with {ElementType.PARAMETER}");
+            }
+        }        class TestListener : JVMBridgeBase<TestListener>
         {
             public override string BridgeClassName => "org.mases.jnet.TestListener";
 
