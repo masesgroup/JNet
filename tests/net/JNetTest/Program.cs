@@ -17,6 +17,7 @@
 */
 
 using Java.Lang;
+using Java.Lang.Annotation;
 using Java.Nio;
 using Java.Util;
 using Java.Util.Concurrent;
@@ -38,6 +39,8 @@ namespace MASES.JNetTest
             System.Console.WriteLine("Starting JNetTest");
 
             Initialize();
+
+            TestEnum();
 
             TestListeners();
 
@@ -92,6 +95,23 @@ namespace MASES.JNetTest
             {
                 System.Console.WriteLine(ex);
                 throw;
+            }
+        }
+
+        static void TestEnum()
+        {
+            ElementType type = ElementType.ANNOTATION_TYPE;
+
+            if (type.Equals(ElementType.ANNOTATION_TYPE))
+            {
+                if (type != ElementType.ANNOTATION_TYPE)
+                {
+                    System.Console.WriteLine($"Failed to compare with \"==\": {type} with {ElementType.ANNOTATION_TYPE}");
+                }
+            }
+            else
+            {
+                System.Console.WriteLine($"Failed to compare with Equals: {type} with {ElementType.ANNOTATION_TYPE}");
             }
         }
 
