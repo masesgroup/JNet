@@ -17,6 +17,7 @@
 */
 
 using Java.Lang;
+using Java.Lang.Annotation;
 using Java.Nio;
 using Java.Util;
 using Java.Util.Concurrent;
@@ -39,41 +40,51 @@ namespace MASES.JNetTest
 
             Initialize();
 
-            TestListeners();
-
-            TestExtensions();
-
-            TestMemoryStream();
-
-            TestByteBuffers();
-
-            TestEquality();
-
-            TestSingleton();
-
-            TestSimpleOperatorsExtension<Java.Lang.String, string>("a", "b", "c");
-
-            TestArrays();
-
-            TestOperators();
-
-            TestIterator();
-
-            TestAsyncIterator().Wait();
-
-            TestAsyncOperation(false).Wait();
-
             try
             {
-                TestAsyncOperation(true).Wait();
-            }
-            catch (System.AggregateException ae)
-            {
-                if (ae.InnerException is not UnsupportedOperationException)
+                TestEnum();
+
+                TestListeners();
+
+                TestExtensions();
+
+                TestMemoryStream();
+
+                TestByteBuffers();
+
+                TestEquality();
+
+                TestSingleton();
+
+                TestSimpleOperatorsExtension<Java.Lang.String, string>("a", "b", "c");
+
+                TestArrays();
+
+                TestOperators();
+
+                TestIterator();
+
+                TestAsyncIterator().Wait();
+
+                TestAsyncOperation(false).Wait();
+
+                try
                 {
-                    System.Console.WriteLine($"Not expected exception: {ae.InnerException.GetType()}");
-                    throw;
+                    TestAsyncOperation(true).Wait();
                 }
+                catch (System.AggregateException ae)
+                {
+                    if (ae.InnerException is not UnsupportedOperationException)
+                    {
+                        System.Console.WriteLine($"Not expected exception: {ae.InnerException.GetType()}");
+                        throw;
+                    }
+                }
+            }
+            catch (System.Exception e)
+            {
+                System.Console.WriteLine(e);
+                System.Environment.ExitCode = 1;
             }
         }
 
@@ -92,6 +103,37 @@ namespace MASES.JNetTest
             {
                 System.Console.WriteLine(ex);
                 throw;
+            }
+        }
+
+        static void TestEnum()
+        {
+            System.Console.WriteLine("TestEnum");
+
+            ElementType type = ElementType.ANNOTATION_TYPE;
+
+            if (type.Equals(ElementType.ANNOTATION_TYPE))
+            {
+                if (type != ElementType.ANNOTATION_TYPE)
+                {
+                   throw new System.InvalidOperationException($"Failed to compare with \"==\": {type} with {ElementType.ANNOTATION_TYPE}");
+                }
+            }
+            else
+            {
+                throw new System.InvalidOperationException($"Failed to compare with Equals: {type} with {ElementType.ANNOTATION_TYPE}");
+            }
+
+            if (!type.Equals(ElementType.PARAMETER))
+            {
+                if (type == ElementType.PARAMETER)
+                {
+                    throw new System.InvalidOperationException($"Failed to compare with \"==\": {type} with {ElementType.PARAMETER}");
+                }
+            }
+            else
+            {
+                throw new System.InvalidOperationException($"Failed to compare with Equals: {type} with {ElementType.PARAMETER}");
             }
         }
 
@@ -126,7 +168,7 @@ namespace MASES.JNetTest
             Java.Lang.String result = testListener.Apply(expectedResult);
             if (result != expectedResult)
             {
-                System.Console.WriteLine($"Failed to compare: {result}");
+                throw new System.InvalidOperationException($"Failed to compare: {result}");
             }
         }
 
@@ -143,7 +185,7 @@ namespace MASES.JNetTest
             {
                 System.Console.WriteLine("Add Operation not supported as expected");
             }
-            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
+            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); throw; }
         }
 
         static void TestEquality()
@@ -318,7 +360,7 @@ namespace MASES.JNetTest
             {
                 if (!int.TryParse(item, out int i))
                 {
-                    System.Console.WriteLine($"Failed to parse: {item}");
+                    throw new System.InvalidOperationException($"Failed to parse: {item}");
                 }
             }
         }
@@ -350,7 +392,7 @@ namespace MASES.JNetTest
             String result = await completableFuture.GetAsync();
             if (result != "Hello")
             {
-                System.Console.WriteLine($"Failed to compare: {result}");
+                throw new System.InvalidOperationException($"Failed to compare: {result}");
             }
         }
 
@@ -371,7 +413,7 @@ namespace MASES.JNetTest
             {
                 if (!int.TryParse(item, out int i))
                 {
-                    System.Console.WriteLine($"Failed to parse: {item}");
+                    throw new System.InvalidOperationException($"Failed to parse: {item}");
                 }
             }
         }
