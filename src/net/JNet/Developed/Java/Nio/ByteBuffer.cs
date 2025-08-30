@@ -112,7 +112,7 @@ namespace Java.Nio
         public static ByteBuffer From(IntPtr rawAddr, long capacity, EventHandler<object> disposeEvent = null, object disposeEventState = null, int timeToLive = System.Threading.Timeout.Infinite)
         {
             var buf = JCOBridge.Global.JVM.NewDirectBuffer(rawAddr, capacity, disposeEvent, disposeEventState, timeToLive);
-            return JVMBridgeBase.WrapsDirect<ByteBuffer>(buf.JavaObject);
+            return JVMBridgeBase.WrapsDirect<ByteBuffer>(buf.DisableCleanupAndReturn());
         }
         /// <summary>
         /// Creates a new <see cref="ByteBuffer"/> in the JVM which belongs to <paramref name="data"/>
