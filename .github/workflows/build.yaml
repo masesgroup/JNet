@@ -25,6 +25,24 @@ on:
         options:
           - "0"
           - "1"
+      ProcessDumpType:
+        description: '.NET process dump type'
+        required: false
+        default: '3'
+        type: choice
+        options:
+          - "1"
+          - "2"
+          - "3"
+          - "4"
+      EnableVerboseDiagnosticProcessDump:
+        description: 'Enables verbose diagnostic logging of the dump process'
+        required: false
+        default: '0'
+        type: choice
+        options:
+          - "0"
+          - "1"
         
 concurrency:
   group: '${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}'
@@ -330,11 +348,12 @@ jobs:
     runs-on: ${{ matrix.os }}
     env:
       DOTNET_DbgEnableMiniDump: ${{ inputs.EnableProcessDump }}
-      DOTNET_DbgMiniDumpType: 3
+      DOTNET_DbgMiniDumpType: ${{ inputs.ProcessDumpType }}
       DOTNET_DbgMiniDumpName: ${{ github.workspace }}/coredump.%p
       DOTNET_CreateDumpDiagnostics: ${{ inputs.EnableProcessDump }}
-      DOTNET_CreateDumpVerboseDiagnostics: ${{ inputs.EnableProcessDump }}
+      DOTNET_CreateDumpVerboseDiagnostics: ${{ inputs.EnableVerboseDiagnosticProcessDump }}
       DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
+      DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_3 }}
     
     steps:
@@ -434,11 +453,12 @@ jobs:
     env:
       DOTNET_CLI_UI_LANGUAGE: en_US
       DOTNET_DbgEnableMiniDump: ${{ inputs.EnableProcessDump }}
-      DOTNET_DbgMiniDumpType: 3
+      DOTNET_DbgMiniDumpType: ${{ inputs.ProcessDumpType }}
       DOTNET_DbgMiniDumpName: ${{ github.workspace }}/coredump.%p
       DOTNET_CreateDumpDiagnostics: ${{ inputs.EnableProcessDump }}
-      DOTNET_CreateDumpVerboseDiagnostics: ${{ inputs.EnableProcessDump }}
+      DOTNET_CreateDumpVerboseDiagnostics: ${{ inputs.EnableVerboseDiagnosticProcessDump }}
       DOTNET_EnableCrashReport: ${{ inputs.EnableProcessDump }}
+      DOTNET_CreateDumpLogToFile: ${{ github.workspace }}/coredump.diagnostic
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_3 }}
 
     steps:
