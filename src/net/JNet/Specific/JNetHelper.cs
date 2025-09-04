@@ -72,7 +72,7 @@ namespace MASES.JNet.Specific
             else
             {
                 var buf = JCOBridge.C2JBridge.JCOBridge.Global.JVM.NewDirectBuffer(data, false, false);
-                ByteBuffer bb = JVMBridgeBase.WrapsDirect<ByteBuffer>(buf.JavaObject);
+                ByteBuffer bb = JVMBridgeBase.WrapsDirect<ByteBuffer>(buf.DisableCleanupAndReturn());
                 if (data is byte[]) return ListFrom(bb);
                 else
                 {

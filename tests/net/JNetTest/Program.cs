@@ -42,6 +42,8 @@ namespace MASES.JNetTest
 
             try
             {
+                TestCreateObjects();
+
                 TestEnum();
 
                 TestListeners();
@@ -104,6 +106,36 @@ namespace MASES.JNetTest
                 System.Console.WriteLine(ex);
                 throw;
             }
+        }
+
+        static void TestCreateObjects()
+        {
+            const string dataToUse = "Long string to be written";
+            System.Console.WriteLine("TestCreateObjects");
+
+            Java.Lang.String str = new String();
+            str = str.Concat(dataToUse);
+
+            if (str != dataToUse)
+            {
+                throw new System.InvalidOperationException($"Failed to compare with \"!=\": {str} with {dataToUse}");
+            }
+
+            str = new String(dataToUse);
+
+            if (str != dataToUse)
+            {
+                throw new System.InvalidOperationException($"Failed to compare with \"!=\": {str} with {dataToUse}");
+            }
+
+            str = new String(dataToUse);
+
+            if (str != dataToUse)
+            {
+                throw new System.InvalidOperationException($"Failed to compare with \"==\": {str} with {dataToUse}");
+            }
+
+
         }
 
         static void TestEnum()

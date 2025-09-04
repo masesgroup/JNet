@@ -55,7 +55,7 @@ namespace MASES.JNet.Specific.Extensions
         public static TWrap DirectBufferWithWrap<TData, TWrap>(this TData[] data, bool useMemoryControlBlock = true, bool arrangeCapacity = true, int timeToLive = System.Threading.Timeout.Infinite, Func<ByteBuffer, TWrap> converter = null) where TWrap : IJVMBridgeBase, new()
         {
             var buf = JCOBridge.C2JBridge.JCOBridge.Global.JVM.NewDirectBuffer(data, useMemoryControlBlock, arrangeCapacity, timeToLive);
-            if (data is byte[]) return JVMBridgeBase.WrapsDirect<TWrap>(buf.JavaObject);
+            if (data is byte[]) return JVMBridgeBase.WrapsDirect<TWrap>(buf.DisableCleanupAndReturn());
             else
             {
                 IJVMBridgeBase ibb;
