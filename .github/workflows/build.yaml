@@ -141,7 +141,7 @@ jobs:
           fetch-depth: '1'
           submodules: 'true'
 
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@v5
         with:
           dotnet-version: |
             6.x
@@ -365,7 +365,7 @@ jobs:
           path: ./bin/
           key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
 
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@v5
         if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' }}
         with:
           dotnet-version: |
@@ -462,7 +462,7 @@ jobs:
       JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ENCODED_2_6_3 }}
 
     steps:
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@v5
         with:
           dotnet-version: |
             9.x
