@@ -38,6 +38,14 @@ namespace MASES.JNetTest
         {
             System.Console.WriteLine("Starting JNetTest");
 
+#if DEBUG
+            if (!System.Diagnostics.Debugger.IsAttached)
+            {
+                System.Console.WriteLine("Press a button to start");
+                System.Console.ReadKey();
+            }
+#endif
+
             Initialize();
 
             try
@@ -95,7 +103,7 @@ namespace MASES.JNetTest
             try
             {
                 JNetTestCore.ApplicationHeapSize = "4G";
-                JNetTestCore.ApplicationInitialHeapSize = "1G";
+                JNetTestCore.ApplicationInitialHeapSize = "256M";
                 JNetTestCore.CreateGlobalInstance();
                 var appArgs = JNetTestCore.FilteredArgs;
 
@@ -463,7 +471,7 @@ namespace MASES.JNetTest
 
             const int execution = 10000;
 
-            for (int index = 0; index < 5; index++)
+            for (int index = 0; index < 10; index++)
             {
                 Stopwatch w = Stopwatch.StartNew();
                 Java.Util.ArrayList<int> alist = new Java.Util.ArrayList<int>();
