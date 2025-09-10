@@ -34,6 +34,14 @@ namespace MASES.JNetByteBufferTest
         {
             Console.WriteLine("Starting JNetByteBufferTest");
 
+#if DEBUG
+            if (!System.Diagnostics.Debugger.IsAttached)
+            {
+                System.Console.WriteLine("Press a button to start");
+                System.Console.ReadKey();
+            }
+#endif
+
             Initialize();
 
             Console.WriteLine("Start insert from CLR to JVM");
@@ -78,7 +86,7 @@ namespace MASES.JNetByteBufferTest
             }
 
             var bbCast = Java.Nio.ByteBuffer.From(bytes, false, false);
-            var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
+            var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
 
             System.GC.Collect();
             Java.Lang.System.Gc();
