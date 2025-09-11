@@ -79,7 +79,7 @@ namespace MASES.JNetByteBufferTest
 
         static void TestInsertByteBuffers(int iteration, int length)
         {
-            Console.WriteLine($"TestArrayAndByteBuffer with {iteration} iterations and {length} length");
+            Console.WriteLine($"TestInsertByteBuffers with {iteration} iterations and {length} length");
             int i = 0;
             try
             {
@@ -194,6 +194,8 @@ namespace MASES.JNetByteBufferTest
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
+
+                Console.WriteLine($"Created TestArrayAndByteBuffer");
 
                 Stopwatch watcher1 = Stopwatch.StartNew();
                 for (i = 0; i < iteration; i++)
