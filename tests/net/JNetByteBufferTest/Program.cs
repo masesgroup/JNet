@@ -106,7 +106,7 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertArray due to {ex} at iteration {iteration}");
+                        Console.WriteLine($"Break insertArray at iteration {iteration} due to {ex}");
                         break;
                     }
                 }
@@ -126,7 +126,7 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertByteBuffer due to {ex} at iteration {iteration}");
+                        Console.WriteLine($"Break insertByteBuffer at iteration {iteration} due to {ex}");
                         break;
                     }
                 }
@@ -146,7 +146,7 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertByteBufferNoNew due to {ex} at iteration {iteration}");
+                        Console.WriteLine($"Break insertByteBufferNoNew at iteration {iteration} due to {ex}");
                         break;
                     }
                 }
@@ -166,7 +166,7 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertByteBufferNoGet due to {ex} at iteration {iteration}");
+                        Console.WriteLine($"Break insertByteBufferNoGet at iteration {iteration} due to {ex}");
                         break;
                     }
                 }
