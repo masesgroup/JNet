@@ -100,7 +100,14 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher1 = Stopwatch.StartNew();
                 for (i = 0; i < iteration; i++)
                 {
-                    jClass.Invoke("insertArray", bytes);
+                    try
+                    {
+                        jClass.Invoke("insertArray", bytes);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertArray due to {ex}");
+                    }
                 }
                 watcher1.Stop();
 
@@ -112,7 +119,14 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher2 = Stopwatch.StartNew();
                 for (i = 0; i < iteration; i++)
                 {
-                    jClass.Invoke("insertByteBuffer", bbCast.BridgeInstance);
+                    try
+                    {
+                        jClass.Invoke("insertByteBuffer", bbCast.BridgeInstance);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertByteBuffer due to {ex}");
+                    }
                 }
                 watcher2.Stop();
 
@@ -124,7 +138,14 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher3 = Stopwatch.StartNew();
                 for (i = 0; i < iteration; i++)
                 {
-                    jClass.Invoke("insertByteBufferNoNew", bbCast.BridgeInstance);
+                    try
+                    {
+                        jClass.Invoke("insertByteBufferNoNew", bbCast.BridgeInstance);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertByteBufferNoNew due to {ex}");
+                    }
                 }
                 watcher3.Stop();
 
@@ -136,7 +157,14 @@ namespace MASES.JNetByteBufferTest
                 Stopwatch watcher4 = Stopwatch.StartNew();
                 for (i = 0; i < iteration; i++)
                 {
-                    jClass.Invoke("insertByteBufferNoGet", bbCast.BridgeInstance);
+                    try
+                    {
+                        jClass.Invoke("insertByteBufferNoGet", bbCast.BridgeInstance);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertByteBufferNoGet due to {ex}");
+                    }
                 }
                 watcher4.Stop();
 
