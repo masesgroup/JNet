@@ -79,6 +79,7 @@ namespace MASES.JNetByteBufferTest
 
         static void TestInsertByteBuffers(int iteration, int length)
         {
+            Console.WriteLine($"TestArrayAndByteBuffer with {iteration} iterations and {length} length");
             int i = 0;
             try
             {
@@ -152,6 +153,7 @@ namespace MASES.JNetByteBufferTest
 
         static void TestGetByteBuffers(int iteration, int length)
         {
+            Console.WriteLine($"TestGetByteBuffers with {iteration} iterations and {length} length");
             int i = 0;
             try
             {
