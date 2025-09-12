@@ -10,6 +10,9 @@ public class TestArrayAndByteBuffer {
     byte[] _array;
     ByteBuffer _buffer;
 
+    public TestArrayAndByteBuffer() {
+    }
+
     public TestArrayAndByteBuffer(int length) throws IOException {
         _array = new byte[length];
         for (int i = 0; i < length; i++)
@@ -20,6 +23,7 @@ public class TestArrayAndByteBuffer {
     }
 
     public void insertArray(byte[] array) {
+        _array = array;
         m_length = array.length;
     }
 
