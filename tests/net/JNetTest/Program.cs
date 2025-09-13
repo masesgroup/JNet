@@ -462,6 +462,15 @@ namespace MASES.JNetTest
         {
             System.Console.WriteLine("TestExtensions");
 
+            try
+            {
+                JVMBridgeBase.ClazzOf("java.nio.ByteOrder", true);
+            }
+            catch (Exception ex)
+            {
+                System.Console.WriteLine($"ClazzOf of java.nio.ByteOrder reported: {ex}");
+            }
+
             System.Collections.Generic.Dictionary<string, bool> dict = new();
             dict.Add("true", true);
             dict.Add("false", false);
