@@ -102,7 +102,7 @@ Class Enum&lt;E&gt;  <a class="header-action link-secondary" title="View source"
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Enum&lt;E&gt; : JVMBridgeBase&lt;Enum&lt;E&gt;&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition where E : Enum&lt;E&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class Enum&lt;E&gt; : JVMBridgeBase&lt;Enum&lt;E&gt;&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IEquatable&lt;IJVMBridgeBase&gt;, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEquatable&lt;Enum&lt;E&gt;&gt; where E : Enum&lt;E&gt;</code></pre>
   </div>
 
 
@@ -130,10 +130,12 @@ Class Enum&lt;E&gt;  <a class="header-action link-secondary" title="View source"
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeCore.html">IJVMBridgeCore</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a>&gt;</div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseStatic.html">IJVMBridgeBaseStatic</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBase.html">IJVMBridgeBase</a></div>
       <div><a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html">IJVMBridgeDefinition</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Java.Lang.Enum-1.html">Enum</a>&lt;E&gt;&gt;</div>
     </dd>
   </dl>
 
@@ -389,6 +391,12 @@ Class Enum&lt;E&gt;  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Enum&lt;E&gt;&gt;.NewWithSignature(string, params object[])</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Enum&lt;E&gt;&gt;.NewAndWrapsDirect&lt;TNewClass&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Enum&lt;E&gt;&gt;.NewWithSignatureAndWrapsDirect&lt;TNewClass&gt;(string, string, params object[])</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_Execute__1___0___">JVMBridgeBase&lt;Enum&lt;E&gt;&gt;.Execute&lt;T&gt;(params T[])</a>
     </div>
     <div>
@@ -396,6 +404,9 @@ Class Enum&lt;E&gt;  <a class="header-action link-secondary" title="View source"
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;Enum&lt;E&gt;&gt;.BridgeClazz</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
@@ -464,7 +475,7 @@ Class Enum&lt;E&gt;  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_GetHashCode">JVMBridgeBase.GetHashCode()</a>
@@ -949,6 +960,84 @@ public Enum(params object[] args)</code></pre>
 
 
 
+  <a id="Java_Lang_Enum_1_Equals_" data-uid="Java.Lang.Enum`1.Equals*"></a>
+
+  <h3 id="Java_Lang_Enum_1_Equals_Java_Lang_Enum__0__" data-uid="Java.Lang.Enum`1.Equals(Java.Lang.Enum{`0})">
+  Equals(Enum&lt;E&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Enum.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Enum&lt;E&gt; other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Java.Lang.Enum-1.html">Enum</a>&lt;E&gt;</dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Enum_1_Equals_" data-uid="Java.Lang.Enum`1.Equals*"></a>
+
+  <h3 id="Java_Lang_Enum_1_Equals_System_Object_" data-uid="Java.Lang.Enum`1.Equals(System.Object)">
+  Equals(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Enum.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The object to compare with the current object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the specified object  is equal to the current object; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Lang_Enum_1_Name_" data-uid="Java.Lang.Enum`1.Name*"></a>
 
   <h3 id="Java_Lang_Enum_1_Name" data-uid="Java.Lang.Enum`1.Name">
@@ -1067,6 +1156,44 @@ public Enum(params object[] args)</code></pre>
 </h2>
 
 
+  <a id="Java_Lang_Enum_1_op_Equality_" data-uid="Java.Lang.Enum`1.op_Equality*"></a>
+
+  <h3 id="Java_Lang_Enum_1_op_Equality_Java_Lang_Enum__0__Java_Lang_Enum__0__" data-uid="Java.Lang.Enum`1.op_Equality(Java.Lang.Enum{`0},Java.Lang.Enum{`0})">
+  operator ==(Enum&lt;E&gt;, Enum&lt;E&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Enum.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Enum&lt;E&gt; left, Enum&lt;E&gt; right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Java.Lang.Enum-1.html">Enum</a>&lt;E&gt;</dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Java.Lang.Enum-1.html">Enum</a>&lt;E&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Java_Lang_Enum_1_op_Implicit_" data-uid="Java.Lang.Enum`1.op_Implicit*"></a>
 
   <h3 id="Java_Lang_Enum_1_op_Implicit_Java_Lang_Enum__0___Java_Io_Serializable" data-uid="Java.Lang.Enum`1.op_Implicit(Java.Lang.Enum{`0})~Java.Io.Serializable">
@@ -1165,6 +1292,44 @@ public Enum(params object[] args)</code></pre>
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="Java.Lang.Enum.html">Enum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Enum_1_op_Inequality_" data-uid="Java.Lang.Enum`1.op_Inequality*"></a>
+
+  <h3 id="Java_Lang_Enum_1_op_Inequality_Java_Lang_Enum__0__Java_Lang_Enum__0__" data-uid="Java.Lang.Enum`1.op_Inequality(Java.Lang.Enum{`0},Java.Lang.Enum{`0})">
+  operator !=(Enum&lt;E&gt;, Enum&lt;E&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Lang/Enum.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Enum&lt;E&gt; left, Enum&lt;E&gt; right)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>left</code> <a class="xref" href="Java.Lang.Enum-1.html">Enum</a>&lt;E&gt;</dt>
+    <dd></dd>
+    <dt><code>right</code> <a class="xref" href="Java.Lang.Enum-1.html">Enum</a>&lt;E&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd></dd>
   </dl>
 
