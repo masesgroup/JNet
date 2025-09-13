@@ -40,7 +40,7 @@
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>
 		<classpathfile>${basedir}/classpathfile.classpath</classpathfile>
-		<jnetversion>2.6.2.0</jnetversion>
+		<jnetversion>2.6.3.0</jnetversion>
 		<binFolderName>bin</binFolderName>
 		<runtimeFolderName>net8.0</runtimeFolderName>
 		<rootDir>${basedir}/../../../</rootDir>
