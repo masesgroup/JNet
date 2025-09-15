@@ -178,7 +178,7 @@ namespace MASES.JNetByteBufferTest
             }
             catch
             {
-                Console.WriteLine($"Failed at iteration: {iteration}");
+                Console.WriteLine($"Failed at iteration: {i}");
                 throw;
             }
         }
@@ -258,7 +258,7 @@ namespace MASES.JNetByteBufferTest
             }
             catch
             {
-                Console.WriteLine($"Failed at iteration: {iteration}");
+                Console.WriteLine($"Failed at iteration: {i}");
                 throw;
             }
         }

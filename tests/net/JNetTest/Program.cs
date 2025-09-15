@@ -142,8 +142,6 @@ namespace MASES.JNetTest
             {
                 throw new System.InvalidOperationException($"Failed to compare with \"==\": {str} with {dataToUse}");
             }
-
-
         }
 
         static void TestEnum()
