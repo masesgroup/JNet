@@ -350,6 +350,8 @@ jobs:
             framework: net462
           - jdk_vendor: oracle
             jdk_version: 11
+          - jdk_vendor: oracle
+            jdk_version: 17
           - jdk_vendor: graalvm
             jdk_version: 11
         
