@@ -93,7 +93,7 @@ namespace MASES.JNetTest
             }
             catch (System.Exception e)
             {
-                System.Console.WriteLine(e.ToString());
+                System.Console.WriteLine(e);
                 System.Environment.ExitCode = 1;
             }
         }
