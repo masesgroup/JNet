@@ -102,6 +102,7 @@ namespace MASES.JNetTest
         {
             try
             {
+                JNetTestCore.ApplicationWriteEventOrExceptionOnCmdLine = true;
                 JNetTestCore.ApplicationHeapSize = "4G";
                 JNetTestCore.ApplicationInitialHeapSize = "256M";
                 JNetTestCore.CreateGlobalInstance();
@@ -459,15 +460,6 @@ namespace MASES.JNetTest
         static void TestExtensions()
         {
             System.Console.WriteLine("TestExtensions");
-
-            try
-            {
-                JVMBridgeBase.ClazzOf("java.nio.ByteOrder", true);
-            }
-            catch (Exception ex)
-            {
-                System.Console.WriteLine($"ClazzOf of java.nio.ByteOrder reported: {ex}");
-            }
 
             System.Collections.Generic.Dictionary<string, bool> dict = new();
             dict.Add("true", true);
