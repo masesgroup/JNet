@@ -84,7 +84,7 @@ jobs:
     #needs: build_macos_native
     name: Check changed files
     outputs:
-      run_build_windows: ${{ steps.check_files.outputs.run_build_windows }}
+      run_build_windows: ${{ steps.check_files.outputs.run_build_windows || steps.force_execute.outputs.run_build_windows }}
     runs-on: ubuntu-latest
     steps:
       - name: Force check on true
