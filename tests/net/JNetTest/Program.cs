@@ -20,6 +20,7 @@ using Java.Lang;
 using Java.Nio;
 using Java.Util;
 using Java.Util.Concurrent;
+using Java.Util.Function;
 using MASES.JCOBridge.C2JBridge;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNet.Specific;
@@ -37,41 +38,61 @@ namespace MASES.JNetTest
         {
             System.Console.WriteLine("Starting JNetTest");
 
+#if DEBUG
+            if (!System.Diagnostics.Debugger.IsAttached)
+            {
+                System.Console.WriteLine("Press a button to start");
+                System.Console.ReadKey();
+            }
+#endif
+
             Initialize();
-
-            TestExtensions();
-
-            TestMemoryStream();
-
-            TestByteBuffers();
-
-            TestEquality();
-
-            TestSingleton();
-
-            TestSimpleOperatorsExtension<Java.Lang.String, string>("a", "b", "c");
-
-            TestArrays();
-
-            TestOperators();
-
-            TestIterator();
-
-            TestAsyncIterator().Wait();
-
-            TestAsyncOperation(false).Wait();
 
             try
             {
-                TestAsyncOperation(true).Wait();
-            }
-            catch (System.AggregateException ae)
-            {
-                if (ae.InnerException is not UnsupportedOperationException)
+                TestCreateObjects();
+
+                TestListeners();
+
+                TestExtensions();
+
+                TestMemoryStream();
+
+                TestByteBuffers();
+
+                TestEquality();
+
+                TestSingleton();
+
+                TestSimpleOperatorsExtension<Java.Lang.String, string>("a", "b", "c");
+
+                TestArrays();
+
+                TestOperators();
+
+                TestIterator();
+
+                TestAsyncIterator().Wait();
+
+                TestAsyncOperation(false).Wait();
+
+                try
                 {
-                    System.Console.WriteLine($"Not expected exception: {ae.InnerException.GetType()}");
-                    throw;
+                    TestAsyncOperation(true).Wait();
                 }
+                catch (System.AggregateException ae)
+                {
+                    if (ae.InnerException is not UnsupportedOperationException)
+                    {
+                        System.Console.WriteLine($"Not expected exception: {ae.InnerException.GetType()}");
+                        throw;
+                    }
+                }
+            }
+            catch (System.Exception e)
+            {
+                System.Console.WriteLine(e.ToString());
+                System.Environment.ExitCode = 1;
             }
         }
 
@@ -93,6 +114,69 @@ namespace MASES.JNetTest
             }
         }
 
+        static void TestCreateObjects()
+        {
+            const string dataToUse = "Long string to be written";
+            System.Console.WriteLine("TestCreateObjects");
+
+            Java.Lang.String str = new String();
+            str = str.Concat(dataToUse);
+
+            if (str != dataToUse)
+            {
+                throw new System.InvalidOperationException($"Failed to compare with \"!=\": {str} with {dataToUse}");
+            }
+
+            str = new String(dataToUse);
+
+            if (str != dataToUse)
+            {
+                throw new System.InvalidOperationException($"Failed to compare with \"!=\": {str} with {dataToUse}");
+            }
+
+            str = new String(dataToUse);
+
+            if (str != dataToUse)
+            {
+                throw new System.InvalidOperationException($"Failed to compare with \"==\": {str} with {dataToUse}");
+            }
+        }
+
+        class TestListener : JVMBridgeBase<TestListener>
+        {
+            public override string BridgeClassName => "org.mases.jnet.TestListener";
+
+            public TestListener() { }
+
+            public TestListener(params object[] args) : base(args) { }
+
+            public Java.Lang.String Apply(Java.Lang.String str)
+            {
+                return IExecute<Java.Lang.String>("apply", str);
+            }
+        }
+
+        static void TestListeners()
+        {
+            System.Console.WriteLine("TestListeners");
+
+            const string expectedResult = "Ciao";
+
+            using var func = new Function<Java.Lang.String, Java.Lang.String>()
+            {
+                OnApply = (o) =>
+                {
+                    return o;
+                }
+            };
+            TestListener testListener = new TestListener(func);
+            Java.Lang.String result = testListener.Apply(expectedResult);
+            if (result != expectedResult)
+            {
+                throw new System.InvalidOperationException($"Failed to compare: {result}");
+            }
+        }
+
         static void TestSingleton()
         {
             System.Console.WriteLine("TestSingleton");
@@ -106,7 +190,7 @@ namespace MASES.JNetTest
             {
                 System.Console.WriteLine("Add Operation not supported as expected");
             }
-            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); }
+            catch (System.Exception ex) { System.Console.WriteLine(ex.Message); throw; }
         }
 
         static void TestEquality()
@@ -281,7 +365,7 @@ namespace MASES.JNetTest
             {
                 if (!int.TryParse(item, out int i))
                 {
-                    System.Console.WriteLine($"Failed to parse: {item}");
+                    throw new System.InvalidOperationException($"Failed to parse: {item}");
                 }
             }
         }
@@ -297,7 +381,7 @@ namespace MASES.JNetTest
             String result = await completableFuture.GetAsync();
             if (result != "Hello")
             {
-                System.Console.WriteLine($"Failed to compare: {result}");
+                throw new System.InvalidOperationException($"Failed to compare: {result}");
             }
         }
 
@@ -318,7 +402,7 @@ namespace MASES.JNetTest
             {
                 if (!int.TryParse(item, out int i))
                 {
-                    System.Console.WriteLine($"Failed to parse: {item}");
+                    throw new System.InvalidOperationException($"Failed to parse: {item}");
                 }
             }
         }
@@ -336,7 +420,7 @@ namespace MASES.JNetTest
 
             const int execution = 10000;
 
-            for (int index = 0; index < 5; index++)
+            for (int index = 0; index < 10; index++)
             {
                 Stopwatch w = Stopwatch.StartNew();
                 Java.Util.ArrayList<int> alist = new Java.Util.ArrayList<int>();

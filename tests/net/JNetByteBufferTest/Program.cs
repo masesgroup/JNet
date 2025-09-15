@@ -34,6 +34,14 @@ namespace MASES.JNetByteBufferTest
         {
             Console.WriteLine("Starting JNetByteBufferTest");
 
+#if DEBUG
+            if (!System.Diagnostics.Debugger.IsAttached)
+            {
+                System.Console.WriteLine("Press a button to start");
+                System.Console.ReadKey();
+            }
+#endif
+
             Initialize();
 
             Console.WriteLine("Start insert from CLR to JVM");
@@ -71,124 +79,188 @@ namespace MASES.JNetByteBufferTest
 
         static void TestInsertByteBuffers(int iteration, int length)
         {
-            byte[] bytes = new byte[length];
-            for (int i = 0; i < bytes.Length; i++)
+            Console.WriteLine($"TestInsertByteBuffers with {iteration} iterations and {length} length");
+            int i = 0;
+            try
             {
-                bytes[i] = (byte)(i % byte.MaxValue);
+                byte[] bytes = new byte[length];
+                for (i = 0; i < bytes.Length; i++)
+                {
+                    bytes[i] = (byte)(i % byte.MaxValue);
+                }
+
+                var bbCast = Java.Nio.ByteBuffer.From(bytes, false, false);
+                var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Console.WriteLine($"Created TestArrayAndByteBuffer");
+
+                Stopwatch watcher1 = Stopwatch.StartNew();
+                for (i = 0; i < iteration; i++)
+                {
+                    try
+                    {
+                        jClass.Invoke("insertArray", bytes);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertArray at iteration {iteration} due to {ex}");
+                        break;
+                    }
+                }
+                watcher1.Stop();
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Console.WriteLine($"End insertArray");
+
+                Stopwatch watcher2 = Stopwatch.StartNew();
+                for (i = 0; i < iteration; i++)
+                {
+                    try
+                    {
+                        jClass.Invoke("insertByteBuffer", bbCast.BridgeInstance);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertByteBuffer at iteration {iteration} due to {ex}");
+                        break;
+                    }
+                }
+                watcher2.Stop();
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Console.WriteLine($"End insertByteBuffer");
+
+                Stopwatch watcher3 = Stopwatch.StartNew();
+                for (i = 0; i < iteration; i++)
+                {
+                    try
+                    {
+                        jClass.Invoke("insertByteBufferNoNew", bbCast.BridgeInstance);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertByteBufferNoNew at iteration {iteration} due to {ex}");
+                        break;
+                    }
+                }
+                watcher3.Stop();
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Console.WriteLine($"End insertByteBufferNoNew");
+
+                Stopwatch watcher4 = Stopwatch.StartNew();
+                for (i = 0; i < iteration; i++)
+                {
+                    try
+                    {
+                        jClass.Invoke("insertByteBufferNoGet", bbCast.BridgeInstance);
+                    }
+                    catch (Java.Lang.OutOfMemoryError ex)
+                    {
+                        Console.WriteLine($"Break insertByteBufferNoGet at iteration {iteration} due to {ex}");
+                        break;
+                    }
+                }
+                watcher4.Stop();
+
+                Console.WriteLine($"End insertByteBufferNoGet");
+
+                Console.WriteLine($"{length,Padding} - Array {TimeSpan.FromTicks(watcher1.ElapsedTicks / iteration)} - ByteBuffer {TimeSpan.FromTicks(watcher2.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher2.ElapsedTicks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher3.ElapsedTicks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher4.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher4.ElapsedTicks) * 100:0.##}%)");
             }
-
-            var bbCast = Java.Nio.ByteBuffer.From(bytes, false, false);
-            var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
-
-            System.GC.Collect();
-            Java.Lang.System.Gc();
-
-            Stopwatch watcher1 = Stopwatch.StartNew();
-            for (int i = 0; i < iteration; i++)
+            catch
             {
-                jClass.Invoke("insertArray", bytes);
+                Console.WriteLine($"Failed at iteration: {i}");
+                throw;
             }
-            watcher1.Stop();
-
-            System.GC.Collect();
-            Java.Lang.System.Gc();
-
-            Stopwatch watcher2 = Stopwatch.StartNew();
-            for (int i = 0; i < iteration; i++)
-            {
-                jClass.Invoke("insertByteBuffer", bbCast.BridgeInstance);
-            }
-            watcher2.Stop();
-
-            System.GC.Collect();
-            Java.Lang.System.Gc();
-
-            Stopwatch watcher3 = Stopwatch.StartNew();
-            for (int i = 0; i < iteration; i++)
-            {
-                jClass.Invoke("insertByteBufferNoNew", bbCast.BridgeInstance);
-            }
-            watcher3.Stop();
-
-            System.GC.Collect();
-            Java.Lang.System.Gc();
-
-            Stopwatch watcher4 = Stopwatch.StartNew();
-            for (int i = 0; i < iteration; i++)
-            {
-                jClass.Invoke("insertByteBufferNoGet", bbCast.BridgeInstance);
-            }
-            watcher4.Stop();
-
-            Console.WriteLine($"{length,Padding} - Array {TimeSpan.FromTicks(watcher1.ElapsedTicks / iteration)} - ByteBuffer {TimeSpan.FromTicks(watcher2.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher2.ElapsedTicks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher3.ElapsedTicks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher4.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher4.ElapsedTicks) * 100:0.##}%)");
         }
 
         static void TestGetByteBuffers(int iteration, int length)
         {
-            byte[] bytes = new byte[length];
-            var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
-
-            System.GC.Collect();
-            Java.Lang.System.Gc();
-
-            Stopwatch watcher1 = Stopwatch.StartNew();
-            for (int i = 0; i < iteration; i++)
+            Console.WriteLine($"TestGetByteBuffers with {iteration} iterations and {length} length");
+            int i = 0;
+            try
             {
-                var res = jClass.Invoke<byte[]>("getArray");
-                if (res.Length != length) { throw new System.Exception(); }
+                byte[] bytes = new byte[length];
+                var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer", length) as IJavaObject;
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Console.WriteLine($"Created TestArrayAndByteBuffer");
+
+                Stopwatch watcher1 = Stopwatch.StartNew();
+                for (i = 0; i < iteration; i++)
+                {
+                    var res = jClass.Invoke<byte[]>("getArray");
+                    if (res.Length != length) { throw new System.Exception(); }
+                }
+                watcher1.Stop();
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher2 = Stopwatch.StartNew();
+                for (i = 0; i < iteration; i++)
+                {
+                    var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                    var array = res.ToArray();
+                    if (array.Length != length) { throw new System.Exception(); }
+                }
+                watcher2.Stop();
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher3 = Stopwatch.StartNew();
+                for (i = 0; i < iteration; i++)
+                {
+                    var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                    res.ToArray(ref bytes, false);
+                    if (bytes.Length != length) { throw new System.Exception(); }
+                }
+                watcher3.Stop();
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                System.Runtime.InteropServices.GCHandle handle = System.Runtime.InteropServices.GCHandle.Alloc(bytes, System.Runtime.InteropServices.GCHandleType.Pinned);
+
+                Stopwatch watcher4 = Stopwatch.StartNew();
+                for (i = 0; i < iteration; i++)
+                {
+                    var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                    res.ToDirectBuffer().CopyTo(handle.AddrOfPinnedObject(), bytes.Length, 0, bytes.Length);
+                    if (bytes.Length != length) { throw new System.Exception(); }
+                }
+                watcher4.Stop();
+
+                System.GC.Collect();
+                Java.Lang.System.Gc();
+
+                Stopwatch watcher5 = Stopwatch.StartNew();
+                for (i = 0; i < iteration; i++)
+                {
+                    var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
+                    if (res.Remaining() != length) { throw new System.Exception(); }
+                }
+                watcher5.Stop();
+
+                Console.WriteLine($"{length,Padding} - Array {TimeSpan.FromTicks(watcher1.ElapsedTicks / iteration)} - ByteBuffer {TimeSpan.FromTicks(watcher2.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher2.ElapsedTicks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher3.ElapsedTicks) * 100:0.##}%) - ByteBufferNoAlloc {TimeSpan.FromTicks(watcher4.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher4.ElapsedTicks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher5.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher5.ElapsedTicks) * 100:0.##}%)");
             }
-            watcher1.Stop();
-
-            System.GC.Collect();
-            Java.Lang.System.Gc();
-
-            Stopwatch watcher2 = Stopwatch.StartNew();
-            for (int i = 0; i < iteration; i++)
+            catch
             {
-                var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
-                var array = res.ToArray();
-                if (array.Length != length) { throw new System.Exception(); }
+                Console.WriteLine($"Failed at iteration: {i}");
+                throw;
             }
-            watcher2.Stop();
-
-            System.GC.Collect();
-            Java.Lang.System.Gc();
-
-            Stopwatch watcher3 = Stopwatch.StartNew();
-            for (int i = 0; i < iteration; i++)
-            {
-                var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
-                res.ToArray(ref bytes, false);
-                if (bytes.Length != length) { throw new System.Exception(); }
-            }
-            watcher3.Stop();
-
-            System.GC.Collect();
-            Java.Lang.System.Gc();
-
-            System.Runtime.InteropServices.GCHandle handle = System.Runtime.InteropServices.GCHandle.Alloc(bytes, System.Runtime.InteropServices.GCHandleType.Pinned);
-
-            Stopwatch watcher4 = Stopwatch.StartNew();
-            for (int i = 0; i < iteration; i++)
-            {
-                var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
-                res.ToDirectBuffer().CopyTo(handle.AddrOfPinnedObject(), bytes.Length, 0, bytes.Length);
-                if (bytes.Length != length) { throw new System.Exception(); }
-            }
-            watcher4.Stop();
-
-            System.GC.Collect();
-            Java.Lang.System.Gc();
-
-            Stopwatch watcher5 = Stopwatch.StartNew();
-            for (int i = 0; i < iteration; i++)
-            {
-                var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
-                if (res.Remaining() != length) { throw new System.Exception(); }
-            }
-            watcher5.Stop();
-
-            Console.WriteLine($"{length,Padding} - Array {TimeSpan.FromTicks(watcher1.ElapsedTicks / iteration)} - ByteBuffer {TimeSpan.FromTicks(watcher2.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher2.ElapsedTicks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher3.ElapsedTicks) * 100:0.##}%) - ByteBufferNoAlloc {TimeSpan.FromTicks(watcher4.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher4.ElapsedTicks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher5.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher5.ElapsedTicks) * 100:0.##}%)");
         }
     }
 }
