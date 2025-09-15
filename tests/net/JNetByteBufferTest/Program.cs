@@ -64,7 +64,7 @@ namespace MASES.JNetByteBufferTest
             try
             {
                 JNetTestCore.ApplicationWriteEventOrExceptionOnCmdLine = true;
-                JNetTestCore.ApplicationHeapSize = "4G";
+                JNetTestCore.ApplicationHeapSize = "6G";
                 JNetTestCore.ApplicationInitialHeapSize = "1G";
                 JNetTestCore.CreateGlobalInstance();
                 var appArgs = JNetTestCore.FilteredArgs;

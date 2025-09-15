@@ -103,8 +103,8 @@ namespace MASES.JNetTest
             try
             {
                 JNetTestCore.ApplicationWriteEventOrExceptionOnCmdLine = true;
-                JNetTestCore.ApplicationHeapSize = "4G";
-                JNetTestCore.ApplicationInitialHeapSize = "256M";
+                JNetTestCore.ApplicationHeapSize = "6G";
+                JNetTestCore.ApplicationInitialHeapSize = "1G";
                 JNetTestCore.CreateGlobalInstance();
                 var appArgs = JNetTestCore.FilteredArgs;
 
