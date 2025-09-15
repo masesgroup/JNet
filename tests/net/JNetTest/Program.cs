@@ -102,6 +102,7 @@ namespace MASES.JNetTest
         {
             try
             {
+                JNetTestCore.ApplicationWriteEventOrExceptionOnCmdLine = true;
                 JNetTestCore.ApplicationHeapSize = "4G";
                 JNetTestCore.ApplicationInitialHeapSize = "256M";
                 JNetTestCore.CreateGlobalInstance();
@@ -142,8 +143,6 @@ namespace MASES.JNetTest
             {
                 throw new System.InvalidOperationException($"Failed to compare with \"==\": {str} with {dataToUse}");
             }
-
-
         }
 
         static void TestEnum()
@@ -498,7 +497,7 @@ namespace MASES.JNetTest
                 alist = new Java.Util.ArrayList<int>(tmpJList);
                 w.Stop();
                 System.Console.WriteLine($"Java.Util.ArrayList from array Elapsed ticks: {w.ElapsedTicks}");
-
+                
                 var intBuffer = IntBuffer.From(tmpArray, false, false);
 
                 w.Restart();
@@ -506,7 +505,7 @@ namespace MASES.JNetTest
                 alist = new Java.Util.ArrayList<int>(tmpJList);
                 w.Stop();
                 System.Console.WriteLine($"Java.Util.ArrayList from array premade buffer Elapsed ticks: {w.ElapsedTicks}");
-
+                
                 w.Restart();
                 tmpJList = JNetHelper.ListFrom(tmpArray, true);
                 alist = new Java.Util.ArrayList<int>(tmpJList);

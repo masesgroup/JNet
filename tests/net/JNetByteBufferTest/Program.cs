@@ -63,8 +63,9 @@ namespace MASES.JNetByteBufferTest
         {
             try
             {
+                JNetTestCore.ApplicationWriteEventOrExceptionOnCmdLine = true;
                 JNetTestCore.ApplicationHeapSize = "4G";
-                JNetTestCore.ApplicationInitialHeapSize = "1G";
+                JNetTestCore.ApplicationInitialHeapSize = "256M";
                 JNetTestCore.CreateGlobalInstance();
                 var appArgs = JNetTestCore.FilteredArgs;
 
@@ -106,7 +107,7 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertArray at iteration {iteration} due to {ex}");
+                        Console.WriteLine($"Break insertArray at iteration {i} due to {ex}");
                         break;
                     }
                 }
@@ -126,7 +127,7 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertByteBuffer at iteration {iteration} due to {ex}");
+                        Console.WriteLine($"Break insertByteBuffer at iteration {i} due to {ex}");
                         break;
                     }
                 }
@@ -146,7 +147,7 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertByteBufferNoNew at iteration {iteration} due to {ex}");
+                        Console.WriteLine($"Break insertByteBufferNoNew at iteration {i} due to {ex}");
                         break;
                     }
                 }
@@ -166,7 +167,7 @@ namespace MASES.JNetByteBufferTest
                     }
                     catch (Java.Lang.OutOfMemoryError ex)
                     {
-                        Console.WriteLine($"Break insertByteBufferNoGet at iteration {iteration} due to {ex}");
+                        Console.WriteLine($"Break insertByteBufferNoGet at iteration {i} due to {ex}");
                         break;
                     }
                 }
@@ -178,7 +179,7 @@ namespace MASES.JNetByteBufferTest
             }
             catch
             {
-                Console.WriteLine($"Failed at iteration: {iteration}");
+                Console.WriteLine($"Failed at iteration: {i}");
                 throw;
             }
         }
@@ -258,7 +259,7 @@ namespace MASES.JNetByteBufferTest
             }
             catch
             {
-                Console.WriteLine($"Failed at iteration: {iteration}");
+                Console.WriteLine($"Failed at iteration: {i}");
                 throw;
             }
         }
