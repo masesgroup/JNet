@@ -158,7 +158,7 @@ namespace Java.Nio
         public static ByteBuffer From(System.IO.MemoryStream stream, bool useMemoryControlBlock = true, EventHandler<MemoryStream> disposeEvent = null, int timeToLive = System.Threading.Timeout.Infinite)
         {
             var buf = JCOBridge.Global.JVM.NewDirectBuffer(stream, useMemoryControlBlock, disposeEvent, timeToLive);
-            return JVMBridgeBase.WrapsDirect<ByteBuffer>(buf.JavaObject);
+            return JVMBridgeBase.WrapsDirect<ByteBuffer>(buf.DisableCleanupAndReturn());
         }
         /// <summary>
         /// Returns an instance of <see cref="System.IO.Stream"/> associated to this <see cref="ByteBuffer"/> instance

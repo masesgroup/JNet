@@ -59,7 +59,7 @@ namespace MASES.JNet.Specific.Extensions
             else
             {
                 IJVMBridgeBase ibb;
-                ByteBuffer bb = JVMBridgeBase.WrapsDirect<ByteBuffer>(buf.JavaObject);
+                ByteBuffer bb = JVMBridgeBase.WrapsDirect<ByteBuffer>(buf.DisableCleanupAndReturn());
                 bb.Order(BitConverter.IsLittleEndian ? ByteOrder.LITTLE_ENDIAN : ByteOrder.BIG_ENDIAN);
                 if (data is char[]) ibb = bb.AsCharBuffer();
                 else if (data is double[]) ibb = bb.AsDoubleBuffer();
