@@ -25,6 +25,12 @@ namespace Java.Lang
     /// </summary>
     public class Exception : Throwable
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public Exception() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public Exception(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public Exception(string message, global::System.Exception innerException) : base(message, innerException) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.Exception";
     }

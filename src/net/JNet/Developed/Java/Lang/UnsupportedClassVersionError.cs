@@ -25,6 +25,12 @@ namespace Java.Lang
     /// </summary>
     public class UnsupportedClassVersionError : ClassFormatError
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public UnsupportedClassVersionError() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public UnsupportedClassVersionError(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnsupportedClassVersionError(string message, global::System.Exception innerException) : base(message, innerException) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.UnsupportedClassVersionError";
     }

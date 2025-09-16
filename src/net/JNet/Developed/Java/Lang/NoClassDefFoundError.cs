@@ -25,6 +25,12 @@ namespace Java.Lang
     /// </summary>
     public class NoClassDefFoundError : LinkageError
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public NoClassDefFoundError() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public NoClassDefFoundError(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NoClassDefFoundError(string message, global::System.Exception innerException) : base(message, innerException) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.NoClassDefFoundError";
     }

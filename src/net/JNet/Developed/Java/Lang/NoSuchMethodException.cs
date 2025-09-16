@@ -25,6 +25,12 @@ namespace Java.Lang
     /// </summary>
     public class NoSuchMethodException : ReflectiveOperationException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public NoSuchMethodException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public NoSuchMethodException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NoSuchMethodException(string message, global::System.Exception innerException) : base(message, innerException) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.NoSuchMethodException";
     }
