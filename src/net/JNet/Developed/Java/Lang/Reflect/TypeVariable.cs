@@ -26,6 +26,10 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class TypeVariable : AnnotatedElement
     {
+        /// <inheritdoc/>
+        public TypeVariable() { }
+        /// <inheritdoc/>
+        public TypeVariable(IJVMBridgeCore parent) : base(parent) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.TypeVariable";
 

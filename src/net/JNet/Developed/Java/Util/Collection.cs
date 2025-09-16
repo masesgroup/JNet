@@ -20,6 +20,8 @@
 using Java.Util.Function;
 #endif
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Util
 {
 #if !JNETREFLECTOR
@@ -34,6 +36,10 @@ namespace Java.Util
     /// <typeparam name="E"><see href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html"/></typeparam>
     public class Collection<E> : Java.Lang.Iterable<E>
     {
+        /// <inheritdoc/>
+        public Collection() { }
+        /// <inheritdoc/>
+        public Collection(IJVMBridgeCore parent) : base(parent) { }
         /// <inheritdoc />
         public override bool IsBridgeInterface => true;
         /// <inheritdoc />

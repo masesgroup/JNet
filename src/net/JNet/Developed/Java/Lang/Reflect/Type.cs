@@ -26,6 +26,10 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class Type : JVMBridgeBase<Type>
     {
+        /// <inheritdoc/>
+        public Type() { }
+        /// <inheritdoc/>
+        public Type(IJVMBridgeCore parent) : base(parent) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.Type";
         /// <summary>
