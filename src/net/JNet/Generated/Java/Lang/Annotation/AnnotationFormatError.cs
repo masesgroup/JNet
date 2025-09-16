@@ -31,6 +31,13 @@ namespace Java.Lang.Annotation
     /// </summary>
     public partial class AnnotationFormatError : Java.Lang.Error
     {
+        /// <inheritdoc cref="Exception()"/>
+        public AnnotationFormatError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public AnnotationFormatError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public AnnotationFormatError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.annotation.AnnotationFormatError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

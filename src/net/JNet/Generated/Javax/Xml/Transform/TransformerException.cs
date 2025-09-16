@@ -31,6 +31,13 @@ namespace Javax.Xml.Transform
     /// </summary>
     public partial class TransformerException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public TransformerException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public TransformerException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public TransformerException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.xml.transform.TransformerException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

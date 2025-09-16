@@ -31,6 +31,13 @@ namespace Java.Io
     /// </summary>
     public partial class UncheckedIOException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UncheckedIOException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UncheckedIOException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UncheckedIOException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.io.UncheckedIOException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class AcceptPendingException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public AcceptPendingException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public AcceptPendingException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public AcceptPendingException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.AcceptPendingException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

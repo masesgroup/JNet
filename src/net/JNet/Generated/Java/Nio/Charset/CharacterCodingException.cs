@@ -31,6 +31,13 @@ namespace Java.Nio.Charset
     /// </summary>
     public partial class CharacterCodingException : Java.Io.IOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public CharacterCodingException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public CharacterCodingException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public CharacterCodingException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.charset.CharacterCodingException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

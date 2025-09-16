@@ -31,6 +31,13 @@ namespace Java.Rmi
     /// </summary>
     public partial class NotBoundException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NotBoundException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NotBoundException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NotBoundException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.NotBoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

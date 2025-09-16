@@ -31,6 +31,13 @@ namespace Javax.Annotation.Processing
     /// </summary>
     public partial class FilerException : Java.Io.IOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public FilerException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public FilerException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public FilerException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.annotation.processing.FilerException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class OutOfMemoryError : Java.Lang.VirtualMachineError
     {
+        /// <inheritdoc cref="Exception()"/>
+        public OutOfMemoryError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public OutOfMemoryError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public OutOfMemoryError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.OutOfMemoryError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

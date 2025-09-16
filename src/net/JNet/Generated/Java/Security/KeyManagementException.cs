@@ -31,6 +31,13 @@ namespace Java.Security
     /// </summary>
     public partial class KeyManagementException : Java.Security.KeyException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public KeyManagementException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public KeyManagementException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public KeyManagementException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.KeyManagementException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

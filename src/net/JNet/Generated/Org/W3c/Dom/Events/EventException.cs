@@ -31,6 +31,13 @@ namespace Org.W3c.Dom.Events
     /// </summary>
     public partial class EventException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public EventException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public EventException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public EventException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "org.w3c.dom.events.EventException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Javax.Management.Relation
     /// </summary>
     public partial class RelationServiceNotRegisteredException : Javax.Management.Relation.RelationException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public RelationServiceNotRegisteredException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public RelationServiceNotRegisteredException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public RelationServiceNotRegisteredException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.relation.RelationServiceNotRegisteredException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

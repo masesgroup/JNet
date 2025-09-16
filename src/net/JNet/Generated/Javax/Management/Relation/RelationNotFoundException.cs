@@ -31,6 +31,13 @@ namespace Javax.Management.Relation
     /// </summary>
     public partial class RelationNotFoundException : Javax.Management.Relation.RelationException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public RelationNotFoundException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public RelationNotFoundException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public RelationNotFoundException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.relation.RelationNotFoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

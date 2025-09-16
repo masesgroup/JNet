@@ -31,6 +31,13 @@ namespace Javax.Xml.Crypto
     /// </summary>
     public partial class MarshalException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public MarshalException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public MarshalException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public MarshalException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.xml.crypto.MarshalException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

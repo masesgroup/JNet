@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class IllegalArgumentException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public IllegalArgumentException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public IllegalArgumentException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public IllegalArgumentException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.IllegalArgumentException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

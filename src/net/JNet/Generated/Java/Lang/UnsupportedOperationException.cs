@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class UnsupportedOperationException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnsupportedOperationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnsupportedOperationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnsupportedOperationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.UnsupportedOperationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

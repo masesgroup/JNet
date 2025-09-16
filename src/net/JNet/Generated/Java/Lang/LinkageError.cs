@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class LinkageError : Java.Lang.Error
     {
+        /// <inheritdoc cref="Exception()"/>
+        public LinkageError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public LinkageError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public LinkageError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.LinkageError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

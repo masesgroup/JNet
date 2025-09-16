@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class ClosedSelectorException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ClosedSelectorException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ClosedSelectorException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ClosedSelectorException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.ClosedSelectorException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

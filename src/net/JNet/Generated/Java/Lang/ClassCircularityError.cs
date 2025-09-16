@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class ClassCircularityError : Java.Lang.LinkageError
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ClassCircularityError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ClassCircularityError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ClassCircularityError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.ClassCircularityError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

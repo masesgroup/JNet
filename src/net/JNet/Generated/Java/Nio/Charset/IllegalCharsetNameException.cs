@@ -31,6 +31,13 @@ namespace Java.Nio.Charset
     /// </summary>
     public partial class IllegalCharsetNameException : Java.Lang.IllegalArgumentException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public IllegalCharsetNameException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public IllegalCharsetNameException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public IllegalCharsetNameException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.charset.IllegalCharsetNameException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

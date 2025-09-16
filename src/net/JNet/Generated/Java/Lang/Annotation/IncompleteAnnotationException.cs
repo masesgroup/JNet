@@ -31,6 +31,13 @@ namespace Java.Lang.Annotation
     /// </summary>
     public partial class IncompleteAnnotationException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public IncompleteAnnotationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public IncompleteAnnotationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public IncompleteAnnotationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.annotation.IncompleteAnnotationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

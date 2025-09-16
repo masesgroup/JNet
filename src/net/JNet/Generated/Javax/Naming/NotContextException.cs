@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class NotContextException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NotContextException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NotContextException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NotContextException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.NotContextException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

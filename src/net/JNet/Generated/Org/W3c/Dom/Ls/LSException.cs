@@ -31,6 +31,13 @@ namespace Org.W3c.Dom.Ls
     /// </summary>
     public partial class LSException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public LSException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public LSException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public LSException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "org.w3c.dom.ls.LSException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

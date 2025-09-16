@@ -31,6 +31,13 @@ namespace Java.Rmi
     /// </summary>
     public partial class MarshalException : Java.Rmi.RemoteException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public MarshalException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public MarshalException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public MarshalException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.MarshalException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

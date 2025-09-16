@@ -31,6 +31,13 @@ namespace Org.Xml.Sax
     /// </summary>
     public partial class SAXNotRecognizedException : Org.Xml.Sax.SAXException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SAXNotRecognizedException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SAXNotRecognizedException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SAXNotRecognizedException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "org.xml.sax.SAXNotRecognizedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

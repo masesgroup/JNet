@@ -31,6 +31,13 @@ namespace Java.Rmi.Server
     /// </summary>
     public partial class ExportException : Java.Rmi.RemoteException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ExportException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ExportException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ExportException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.server.ExportException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

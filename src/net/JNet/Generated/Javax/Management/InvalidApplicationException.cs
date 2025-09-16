@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class InvalidApplicationException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvalidApplicationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvalidApplicationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvalidApplicationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.InvalidApplicationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

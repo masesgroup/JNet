@@ -31,6 +31,13 @@ namespace Javax.Management.Modelmbean
     /// </summary>
     public partial class XMLParseException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public XMLParseException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public XMLParseException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public XMLParseException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.modelmbean.XMLParseException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

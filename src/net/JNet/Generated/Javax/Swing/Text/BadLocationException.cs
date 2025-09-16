@@ -31,6 +31,13 @@ namespace Javax.Swing.Text
     /// </summary>
     public partial class BadLocationException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public BadLocationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public BadLocationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public BadLocationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.swing.text.BadLocationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

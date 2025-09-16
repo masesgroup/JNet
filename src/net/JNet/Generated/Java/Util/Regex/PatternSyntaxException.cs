@@ -31,6 +31,13 @@ namespace Java.Util.Regex
     /// </summary>
     public partial class PatternSyntaxException : Java.Lang.IllegalArgumentException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public PatternSyntaxException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public PatternSyntaxException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public PatternSyntaxException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.regex.PatternSyntaxException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

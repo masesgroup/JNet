@@ -31,6 +31,13 @@ namespace Java.Nio
     /// </summary>
     public partial class InvalidMarkException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvalidMarkException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvalidMarkException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvalidMarkException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.InvalidMarkException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

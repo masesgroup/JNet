@@ -31,6 +31,13 @@ namespace Java.Sql
     /// </summary>
     public partial class SQLIntegrityConstraintViolationException : Java.Sql.SQLNonTransientException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SQLIntegrityConstraintViolationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SQLIntegrityConstraintViolationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SQLIntegrityConstraintViolationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.sql.SQLIntegrityConstraintViolationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

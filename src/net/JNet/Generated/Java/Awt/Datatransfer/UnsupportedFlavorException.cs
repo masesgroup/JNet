@@ -31,6 +31,13 @@ namespace Java.Awt.Datatransfer
     /// </summary>
     public partial class UnsupportedFlavorException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnsupportedFlavorException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnsupportedFlavorException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnsupportedFlavorException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.awt.datatransfer.UnsupportedFlavorException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

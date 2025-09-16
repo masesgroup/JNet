@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class EnumConstantNotPresentException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public EnumConstantNotPresentException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public EnumConstantNotPresentException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public EnumConstantNotPresentException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.EnumConstantNotPresentException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

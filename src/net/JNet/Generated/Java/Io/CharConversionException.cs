@@ -31,6 +31,13 @@ namespace Java.Io
     /// </summary>
     public partial class CharConversionException : Java.Io.IOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public CharConversionException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public CharConversionException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public CharConversionException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.io.CharConversionException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

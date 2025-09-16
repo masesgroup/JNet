@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class RuntimeException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public RuntimeException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public RuntimeException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public RuntimeException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.RuntimeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

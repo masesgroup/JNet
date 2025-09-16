@@ -31,6 +31,13 @@ namespace Java.Net
     /// </summary>
     public partial class UnknownHostException : Java.Io.IOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnknownHostException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnknownHostException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnknownHostException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.net.UnknownHostException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

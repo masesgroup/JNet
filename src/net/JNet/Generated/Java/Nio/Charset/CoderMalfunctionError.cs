@@ -31,6 +31,13 @@ namespace Java.Nio.Charset
     /// </summary>
     public partial class CoderMalfunctionError : Java.Lang.Error
     {
+        /// <inheritdoc cref="Exception()"/>
+        public CoderMalfunctionError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public CoderMalfunctionError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public CoderMalfunctionError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.charset.CoderMalfunctionError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

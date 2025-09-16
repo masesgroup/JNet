@@ -31,6 +31,13 @@ namespace Javax.Security.Auth.Login
     /// </summary>
     public partial class AccountLockedException : Javax.Security.Auth.Login.AccountException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public AccountLockedException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public AccountLockedException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public AccountLockedException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.security.auth.login.AccountLockedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Javax.Naming.Directory
     /// </summary>
     public partial class InvalidSearchFilterException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvalidSearchFilterException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvalidSearchFilterException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvalidSearchFilterException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.directory.InvalidSearchFilterException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

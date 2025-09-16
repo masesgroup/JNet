@@ -31,6 +31,13 @@ namespace Java.Nio
     /// </summary>
     public partial class BufferUnderflowException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public BufferUnderflowException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public BufferUnderflowException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public BufferUnderflowException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.BufferUnderflowException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

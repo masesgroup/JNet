@@ -31,6 +31,13 @@ namespace Java.Security
     /// </summary>
     public partial class NoSuchProviderException : Java.Security.GeneralSecurityException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NoSuchProviderException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NoSuchProviderException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NoSuchProviderException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.NoSuchProviderException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

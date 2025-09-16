@@ -31,6 +31,13 @@ namespace Javax.Management.Remote
     /// </summary>
     public partial class JMXProviderException : Java.Io.IOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public JMXProviderException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public JMXProviderException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public JMXProviderException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.remote.JMXProviderException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

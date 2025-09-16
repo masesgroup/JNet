@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class UnsupportedAddressTypeException : Java.Lang.IllegalArgumentException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnsupportedAddressTypeException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnsupportedAddressTypeException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnsupportedAddressTypeException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.UnsupportedAddressTypeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

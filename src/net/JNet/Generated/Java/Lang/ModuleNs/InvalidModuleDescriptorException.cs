@@ -31,6 +31,13 @@ namespace Java.Lang.ModuleNs
     /// </summary>
     public partial class InvalidModuleDescriptorException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvalidModuleDescriptorException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvalidModuleDescriptorException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvalidModuleDescriptorException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.module.InvalidModuleDescriptorException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

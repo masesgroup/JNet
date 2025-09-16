@@ -31,6 +31,13 @@ namespace Java.Io
     /// </summary>
     public partial class UnsupportedEncodingException : Java.Io.IOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnsupportedEncodingException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnsupportedEncodingException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnsupportedEncodingException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.io.UnsupportedEncodingException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

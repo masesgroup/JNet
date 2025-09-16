@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class ReadPendingException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ReadPendingException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ReadPendingException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ReadPendingException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.ReadPendingException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

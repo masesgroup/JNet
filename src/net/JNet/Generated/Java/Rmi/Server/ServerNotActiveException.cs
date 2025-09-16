@@ -31,6 +31,13 @@ namespace Java.Rmi.Server
     /// </summary>
     public partial class ServerNotActiveException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ServerNotActiveException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ServerNotActiveException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ServerNotActiveException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.server.ServerNotActiveException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

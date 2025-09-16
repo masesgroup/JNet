@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class CannotProceedException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public CannotProceedException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public CannotProceedException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public CannotProceedException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.CannotProceedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

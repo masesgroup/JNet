@@ -31,6 +31,13 @@ namespace Java.Util.Prefs
     /// </summary>
     public partial class InvalidPreferencesFormatException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvalidPreferencesFormatException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvalidPreferencesFormatException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvalidPreferencesFormatException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.prefs.InvalidPreferencesFormatException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

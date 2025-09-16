@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class AtomicMoveNotSupportedException : Java.Nio.File.FileSystemException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public AtomicMoveNotSupportedException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public AtomicMoveNotSupportedException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public AtomicMoveNotSupportedException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.AtomicMoveNotSupportedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

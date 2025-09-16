@@ -31,6 +31,13 @@ namespace Javax.Swing.Text
     /// </summary>
     public partial class ChangedCharSetException : Java.Io.IOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ChangedCharSetException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ChangedCharSetException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ChangedCharSetException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.swing.text.ChangedCharSetException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

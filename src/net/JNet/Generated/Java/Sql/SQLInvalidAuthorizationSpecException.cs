@@ -31,6 +31,13 @@ namespace Java.Sql
     /// </summary>
     public partial class SQLInvalidAuthorizationSpecException : Java.Sql.SQLNonTransientException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SQLInvalidAuthorizationSpecException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SQLInvalidAuthorizationSpecException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SQLInvalidAuthorizationSpecException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.sql.SQLInvalidAuthorizationSpecException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

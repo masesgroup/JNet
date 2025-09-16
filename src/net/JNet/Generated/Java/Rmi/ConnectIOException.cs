@@ -31,6 +31,13 @@ namespace Java.Rmi
     /// </summary>
     public partial class ConnectIOException : Java.Rmi.RemoteException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ConnectIOException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ConnectIOException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ConnectIOException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.ConnectIOException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

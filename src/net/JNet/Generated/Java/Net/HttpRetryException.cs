@@ -31,6 +31,13 @@ namespace Java.Net
     /// </summary>
     public partial class HttpRetryException : Java.Io.IOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public HttpRetryException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public HttpRetryException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public HttpRetryException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.net.HttpRetryException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

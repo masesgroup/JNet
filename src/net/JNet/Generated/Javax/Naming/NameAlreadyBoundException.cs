@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class NameAlreadyBoundException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NameAlreadyBoundException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NameAlreadyBoundException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NameAlreadyBoundException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.NameAlreadyBoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

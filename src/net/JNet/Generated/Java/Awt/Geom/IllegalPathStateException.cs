@@ -31,6 +31,13 @@ namespace Java.Awt.Geom
     /// </summary>
     public partial class IllegalPathStateException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public IllegalPathStateException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public IllegalPathStateException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public IllegalPathStateException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.awt.geom.IllegalPathStateException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

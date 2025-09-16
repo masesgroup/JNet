@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class IllegalStateException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public IllegalStateException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public IllegalStateException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public IllegalStateException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.IllegalStateException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

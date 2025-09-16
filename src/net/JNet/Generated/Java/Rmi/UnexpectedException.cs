@@ -31,6 +31,13 @@ namespace Java.Rmi
     /// </summary>
     public partial class UnexpectedException : Java.Rmi.RemoteException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnexpectedException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnexpectedException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnexpectedException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.UnexpectedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Javax.Naming.Directory
     /// </summary>
     public partial class NoSuchAttributeException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NoSuchAttributeException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NoSuchAttributeException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NoSuchAttributeException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.directory.NoSuchAttributeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

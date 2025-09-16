@@ -31,6 +31,13 @@ namespace Javax.Security.Auth.Login
     /// </summary>
     public partial class AccountExpiredException : Javax.Security.Auth.Login.AccountException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public AccountExpiredException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public AccountExpiredException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public AccountExpiredException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.security.auth.login.AccountExpiredException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

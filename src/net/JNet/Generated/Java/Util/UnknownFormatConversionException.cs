@@ -31,6 +31,13 @@ namespace Java.Util
     /// </summary>
     public partial class UnknownFormatConversionException : Java.Util.IllegalFormatException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnknownFormatConversionException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnknownFormatConversionException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnknownFormatConversionException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.UnknownFormatConversionException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

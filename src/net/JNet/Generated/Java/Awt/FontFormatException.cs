@@ -31,6 +31,13 @@ namespace Java.Awt
     /// </summary>
     public partial class FontFormatException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public FontFormatException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public FontFormatException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public FontFormatException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.awt.FontFormatException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

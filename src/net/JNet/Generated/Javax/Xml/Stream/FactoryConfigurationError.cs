@@ -31,6 +31,13 @@ namespace Javax.Xml.Stream
     /// </summary>
     public partial class FactoryConfigurationError : Java.Lang.Error
     {
+        /// <inheritdoc cref="Exception()"/>
+        public FactoryConfigurationError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public FactoryConfigurationError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public FactoryConfigurationError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.xml.stream.FactoryConfigurationError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

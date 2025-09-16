@@ -31,6 +31,13 @@ namespace Java.Util
     /// </summary>
     public partial class ConcurrentModificationException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ConcurrentModificationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ConcurrentModificationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ConcurrentModificationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.ConcurrentModificationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

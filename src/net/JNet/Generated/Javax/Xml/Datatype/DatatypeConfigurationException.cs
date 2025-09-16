@@ -31,6 +31,13 @@ namespace Javax.Xml.Datatype
     /// </summary>
     public partial class DatatypeConfigurationException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public DatatypeConfigurationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public DatatypeConfigurationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public DatatypeConfigurationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.xml.datatype.DatatypeConfigurationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

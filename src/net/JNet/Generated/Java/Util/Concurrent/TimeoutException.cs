@@ -31,6 +31,13 @@ namespace Java.Util.Concurrent
     /// </summary>
     public partial class TimeoutException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public TimeoutException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public TimeoutException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public TimeoutException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.concurrent.TimeoutException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

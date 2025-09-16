@@ -31,6 +31,13 @@ namespace Java.Awt
     /// </summary>
     public partial class HeadlessException : Java.Lang.UnsupportedOperationException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public HeadlessException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public HeadlessException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public HeadlessException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.awt.HeadlessException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

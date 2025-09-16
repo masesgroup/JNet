@@ -31,6 +31,13 @@ namespace Javax.Imageio.Metadata
     /// </summary>
     public partial class IIOInvalidTreeException : Javax.Imageio.IIOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public IIOInvalidTreeException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public IIOInvalidTreeException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public IIOInvalidTreeException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.imageio.metadata.IIOInvalidTreeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Sql
     /// </summary>
     public partial class DataTruncation : Java.Sql.SQLWarning
     {
+        /// <inheritdoc cref="Exception()"/>
+        public DataTruncation() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public DataTruncation(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public DataTruncation(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.sql.DataTruncation";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

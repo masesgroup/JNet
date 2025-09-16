@@ -31,6 +31,13 @@ namespace Java.Rmi.Activation
     /// </summary>
     public partial class UnknownGroupException : Java.Rmi.Activation.ActivationException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnknownGroupException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnknownGroupException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnknownGroupException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.activation.UnknownGroupException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

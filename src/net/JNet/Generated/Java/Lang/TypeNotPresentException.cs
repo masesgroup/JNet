@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class TypeNotPresentException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public TypeNotPresentException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public TypeNotPresentException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public TypeNotPresentException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.TypeNotPresentException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

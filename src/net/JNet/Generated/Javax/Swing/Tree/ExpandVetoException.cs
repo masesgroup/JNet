@@ -31,6 +31,13 @@ namespace Javax.Swing.Tree
     /// </summary>
     public partial class ExpandVetoException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ExpandVetoException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ExpandVetoException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ExpandVetoException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.swing.tree.ExpandVetoException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

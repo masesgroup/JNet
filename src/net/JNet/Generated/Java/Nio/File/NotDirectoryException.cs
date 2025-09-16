@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class NotDirectoryException : Java.Nio.File.FileSystemException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NotDirectoryException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NotDirectoryException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NotDirectoryException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.NotDirectoryException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Javax.Management.Relation
     /// </summary>
     public partial class RoleNotFoundException : Javax.Management.Relation.RelationException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public RoleNotFoundException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public RoleNotFoundException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public RoleNotFoundException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.relation.RoleNotFoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

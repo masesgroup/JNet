@@ -31,6 +31,13 @@ namespace Java.Lang.Instrument
     /// </summary>
     public partial class UnmodifiableClassException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnmodifiableClassException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnmodifiableClassException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnmodifiableClassException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.instrument.UnmodifiableClassException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

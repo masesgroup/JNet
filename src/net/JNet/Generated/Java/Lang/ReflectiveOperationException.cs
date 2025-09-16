@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class ReflectiveOperationException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ReflectiveOperationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ReflectiveOperationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ReflectiveOperationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.ReflectiveOperationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

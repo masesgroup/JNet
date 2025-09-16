@@ -31,6 +31,13 @@ namespace Java.Awt
     /// </summary>
     public partial class AWTError : Java.Lang.Error
     {
+        /// <inheritdoc cref="Exception()"/>
+        public AWTError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public AWTError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public AWTError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.awt.AWTError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

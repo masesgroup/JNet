@@ -31,6 +31,13 @@ namespace Java.Awt.Print
     /// </summary>
     public partial class PrinterAbortException : Java.Awt.Print.PrinterException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public PrinterAbortException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public PrinterAbortException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public PrinterAbortException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.awt.print.PrinterAbortException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

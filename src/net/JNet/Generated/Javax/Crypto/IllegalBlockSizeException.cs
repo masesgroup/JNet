@@ -31,6 +31,13 @@ namespace Javax.Crypto
     /// </summary>
     public partial class IllegalBlockSizeException : Java.Security.GeneralSecurityException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public IllegalBlockSizeException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public IllegalBlockSizeException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public IllegalBlockSizeException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.crypto.IllegalBlockSizeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

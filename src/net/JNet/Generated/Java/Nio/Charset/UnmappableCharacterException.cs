@@ -31,6 +31,13 @@ namespace Java.Nio.Charset
     /// </summary>
     public partial class UnmappableCharacterException : Java.Nio.Charset.CharacterCodingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnmappableCharacterException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnmappableCharacterException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnmappableCharacterException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.charset.UnmappableCharacterException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

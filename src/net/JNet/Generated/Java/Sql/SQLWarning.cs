@@ -31,6 +31,13 @@ namespace Java.Sql
     /// </summary>
     public partial class SQLWarning : Java.Sql.SQLException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SQLWarning() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SQLWarning(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SQLWarning(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.sql.SQLWarning";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

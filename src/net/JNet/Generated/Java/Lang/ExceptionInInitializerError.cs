@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class ExceptionInInitializerError : Java.Lang.LinkageError
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ExceptionInInitializerError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ExceptionInInitializerError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ExceptionInInitializerError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.ExceptionInInitializerError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

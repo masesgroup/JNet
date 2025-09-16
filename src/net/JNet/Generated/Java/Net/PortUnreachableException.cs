@@ -31,6 +31,13 @@ namespace Java.Net
     /// </summary>
     public partial class PortUnreachableException : Java.Net.SocketException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public PortUnreachableException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public PortUnreachableException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public PortUnreachableException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.net.PortUnreachableException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

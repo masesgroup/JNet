@@ -31,6 +31,13 @@ namespace Javax.Naming.Directory
     /// </summary>
     public partial class SchemaViolationException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SchemaViolationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SchemaViolationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SchemaViolationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.directory.SchemaViolationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

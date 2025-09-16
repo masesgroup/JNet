@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class ArrayStoreException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ArrayStoreException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ArrayStoreException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ArrayStoreException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.ArrayStoreException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

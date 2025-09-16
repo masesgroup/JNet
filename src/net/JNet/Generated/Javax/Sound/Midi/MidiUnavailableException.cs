@@ -31,6 +31,13 @@ namespace Javax.Sound.Midi
     /// </summary>
     public partial class MidiUnavailableException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public MidiUnavailableException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public MidiUnavailableException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public MidiUnavailableException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.sound.midi.MidiUnavailableException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

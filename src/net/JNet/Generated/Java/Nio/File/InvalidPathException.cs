@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class InvalidPathException : Java.Lang.IllegalArgumentException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvalidPathException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvalidPathException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvalidPathException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.InvalidPathException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

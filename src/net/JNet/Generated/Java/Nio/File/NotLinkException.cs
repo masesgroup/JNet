@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class NotLinkException : Java.Nio.File.FileSystemException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NotLinkException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NotLinkException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NotLinkException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.NotLinkException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

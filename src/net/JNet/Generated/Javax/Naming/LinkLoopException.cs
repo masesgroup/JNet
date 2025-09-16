@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class LinkLoopException : Javax.Naming.LinkException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public LinkLoopException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public LinkLoopException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public LinkLoopException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.LinkLoopException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

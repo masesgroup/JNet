@@ -31,6 +31,13 @@ namespace Java.Util
     /// </summary>
     public partial class FormatterClosedException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public FormatterClosedException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public FormatterClosedException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public FormatterClosedException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.FormatterClosedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

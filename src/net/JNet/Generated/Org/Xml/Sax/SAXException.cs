@@ -31,6 +31,13 @@ namespace Org.Xml.Sax
     /// </summary>
     public partial class SAXException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SAXException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SAXException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SAXException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "org.xml.sax.SAXException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

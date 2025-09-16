@@ -31,6 +31,13 @@ namespace Java.Util
     /// </summary>
     public partial class MissingFormatWidthException : Java.Util.IllegalFormatException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public MissingFormatWidthException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public MissingFormatWidthException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public MissingFormatWidthException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.MissingFormatWidthException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

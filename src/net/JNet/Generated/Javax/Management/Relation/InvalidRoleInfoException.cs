@@ -31,6 +31,13 @@ namespace Javax.Management.Relation
     /// </summary>
     public partial class InvalidRoleInfoException : Javax.Management.Relation.RelationException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvalidRoleInfoException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvalidRoleInfoException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvalidRoleInfoException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.relation.InvalidRoleInfoException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

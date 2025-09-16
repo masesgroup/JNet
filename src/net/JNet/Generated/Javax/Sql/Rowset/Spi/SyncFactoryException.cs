@@ -31,6 +31,13 @@ namespace Javax.Sql.Rowset.Spi
     /// </summary>
     public partial class SyncFactoryException : Java.Sql.SQLException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SyncFactoryException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SyncFactoryException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SyncFactoryException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.sql.rowset.spi.SyncFactoryException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

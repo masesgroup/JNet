@@ -31,6 +31,13 @@ namespace Java.Security.Spec
     /// </summary>
     public partial class InvalidKeySpecException : Java.Security.GeneralSecurityException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvalidKeySpecException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvalidKeySpecException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvalidKeySpecException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.spec.InvalidKeySpecException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

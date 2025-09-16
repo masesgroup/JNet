@@ -31,6 +31,13 @@ namespace Java.Util.Concurrent
     /// </summary>
     public partial class CompletionException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public CompletionException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public CompletionException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public CompletionException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.concurrent.CompletionException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

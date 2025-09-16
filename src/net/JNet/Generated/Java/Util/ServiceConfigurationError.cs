@@ -31,6 +31,13 @@ namespace Java.Util
     /// </summary>
     public partial class ServiceConfigurationError : Java.Lang.Error
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ServiceConfigurationError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ServiceConfigurationError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ServiceConfigurationError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.ServiceConfigurationError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class LimitExceededException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public LimitExceededException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public LimitExceededException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public LimitExceededException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.LimitExceededException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

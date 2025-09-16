@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class BadStringOperationException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public BadStringOperationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public BadStringOperationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public BadStringOperationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.BadStringOperationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

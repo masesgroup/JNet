@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class IllegalCallerException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public IllegalCallerException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public IllegalCallerException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public IllegalCallerException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.IllegalCallerException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

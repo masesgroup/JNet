@@ -31,6 +31,13 @@ namespace Java.Sql
     /// </summary>
     public partial class SQLNonTransientConnectionException : Java.Sql.SQLNonTransientException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SQLNonTransientConnectionException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SQLNonTransientConnectionException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SQLNonTransientConnectionException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.sql.SQLNonTransientConnectionException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

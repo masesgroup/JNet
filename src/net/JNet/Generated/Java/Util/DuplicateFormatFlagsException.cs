@@ -31,6 +31,13 @@ namespace Java.Util
     /// </summary>
     public partial class DuplicateFormatFlagsException : Java.Util.IllegalFormatException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public DuplicateFormatFlagsException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public DuplicateFormatFlagsException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public DuplicateFormatFlagsException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.DuplicateFormatFlagsException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class ReadOnlyFileSystemException : Java.Lang.UnsupportedOperationException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ReadOnlyFileSystemException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ReadOnlyFileSystemException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ReadOnlyFileSystemException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.ReadOnlyFileSystemException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

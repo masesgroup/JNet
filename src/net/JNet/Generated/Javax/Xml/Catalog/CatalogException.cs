@@ -31,6 +31,13 @@ namespace Javax.Xml.Catalog
     /// </summary>
     public partial class CatalogException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public CatalogException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public CatalogException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public CatalogException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.xml.catalog.CatalogException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

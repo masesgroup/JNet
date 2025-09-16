@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class NonReadableChannelException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NonReadableChannelException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NonReadableChannelException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NonReadableChannelException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.NonReadableChannelException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

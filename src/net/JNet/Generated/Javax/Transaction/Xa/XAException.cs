@@ -31,6 +31,13 @@ namespace Javax.Transaction.Xa
     /// </summary>
     public partial class XAException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public XAException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public XAException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public XAException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.transaction.xa.XAException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

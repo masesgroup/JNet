@@ -31,6 +31,13 @@ namespace Java.Lang.Instrument
     /// </summary>
     public partial class UnmodifiableModuleException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnmodifiableModuleException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnmodifiableModuleException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnmodifiableModuleException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.instrument.UnmodifiableModuleException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class SizeLimitExceededException : Javax.Naming.LimitExceededException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SizeLimitExceededException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SizeLimitExceededException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SizeLimitExceededException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.SizeLimitExceededException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

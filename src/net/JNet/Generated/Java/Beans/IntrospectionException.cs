@@ -31,6 +31,13 @@ namespace Java.Beans
     /// </summary>
     public partial class IntrospectionException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public IntrospectionException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public IntrospectionException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public IntrospectionException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.beans.IntrospectionException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

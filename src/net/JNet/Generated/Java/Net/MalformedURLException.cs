@@ -31,6 +31,13 @@ namespace Java.Net
     /// </summary>
     public partial class MalformedURLException : Java.Io.IOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public MalformedURLException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public MalformedURLException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public MalformedURLException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.net.MalformedURLException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Security.Cert
     /// </summary>
     public partial class CRLException : Java.Security.GeneralSecurityException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public CRLException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public CRLException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public CRLException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.cert.CRLException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

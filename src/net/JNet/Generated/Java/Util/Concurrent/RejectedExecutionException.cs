@@ -31,6 +31,13 @@ namespace Java.Util.Concurrent
     /// </summary>
     public partial class RejectedExecutionException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public RejectedExecutionException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public RejectedExecutionException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public RejectedExecutionException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.concurrent.RejectedExecutionException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class ClosedDirectoryStreamException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ClosedDirectoryStreamException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ClosedDirectoryStreamException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ClosedDirectoryStreamException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.ClosedDirectoryStreamException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

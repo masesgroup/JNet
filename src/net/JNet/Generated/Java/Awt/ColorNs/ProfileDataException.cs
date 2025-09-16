@@ -31,6 +31,13 @@ namespace Java.Awt.ColorNs
     /// </summary>
     public partial class ProfileDataException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ProfileDataException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ProfileDataException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ProfileDataException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.awt.color.ProfileDataException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

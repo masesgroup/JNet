@@ -31,6 +31,13 @@ namespace Javax.Management.Modelmbean
     /// </summary>
     public partial class InvalidTargetObjectTypeException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvalidTargetObjectTypeException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvalidTargetObjectTypeException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvalidTargetObjectTypeException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.modelmbean.InvalidTargetObjectTypeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class ProviderMismatchException : Java.Lang.IllegalArgumentException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ProviderMismatchException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ProviderMismatchException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ProviderMismatchException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.ProviderMismatchException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class FileSystemAlreadyExistsException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public FileSystemAlreadyExistsException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public FileSystemAlreadyExistsException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public FileSystemAlreadyExistsException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.FileSystemAlreadyExistsException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

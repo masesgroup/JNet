@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class InterruptedByTimeoutException : Java.Io.IOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InterruptedByTimeoutException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InterruptedByTimeoutException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InterruptedByTimeoutException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.InterruptedByTimeoutException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

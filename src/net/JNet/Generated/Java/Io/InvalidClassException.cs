@@ -31,6 +31,13 @@ namespace Java.Io
     /// </summary>
     public partial class InvalidClassException : Java.Io.ObjectStreamException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvalidClassException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvalidClassException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvalidClassException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.io.InvalidClassException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

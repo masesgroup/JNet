@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class MBeanException : Javax.Management.JMException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public MBeanException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public MBeanException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public MBeanException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.MBeanException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

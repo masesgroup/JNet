@@ -31,6 +31,13 @@ namespace Java.Util.Concurrent
     /// </summary>
     public partial class CancellationException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public CancellationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public CancellationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public CancellationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.concurrent.CancellationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class BadBinaryOpValueExpException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public BadBinaryOpValueExpException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public BadBinaryOpValueExpException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public BadBinaryOpValueExpException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.BadBinaryOpValueExpException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

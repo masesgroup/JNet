@@ -31,6 +31,13 @@ namespace Javax.Swing
     /// </summary>
     public partial class UnsupportedLookAndFeelException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnsupportedLookAndFeelException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnsupportedLookAndFeelException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnsupportedLookAndFeelException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.swing.UnsupportedLookAndFeelException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class NoClassDefFoundError : Java.Lang.LinkageError
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NoClassDefFoundError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NoClassDefFoundError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NoClassDefFoundError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.NoClassDefFoundError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

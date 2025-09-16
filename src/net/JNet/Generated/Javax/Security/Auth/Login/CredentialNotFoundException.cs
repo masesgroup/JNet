@@ -31,6 +31,13 @@ namespace Javax.Security.Auth.Login
     /// </summary>
     public partial class CredentialNotFoundException : Javax.Security.Auth.Login.CredentialException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public CredentialNotFoundException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public CredentialNotFoundException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public CredentialNotFoundException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.security.auth.login.CredentialNotFoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

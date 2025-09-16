@@ -31,6 +31,13 @@ namespace Javax.Sql.Rowset.Spi
     /// </summary>
     public partial class SyncProviderException : Java.Sql.SQLException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SyncProviderException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SyncProviderException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SyncProviderException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.sql.rowset.spi.SyncProviderException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

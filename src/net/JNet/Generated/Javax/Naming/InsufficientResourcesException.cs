@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class InsufficientResourcesException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InsufficientResourcesException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InsufficientResourcesException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InsufficientResourcesException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.InsufficientResourcesException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Lang.Reflect
     /// </summary>
     public partial class InvocationTargetException : Java.Lang.ReflectiveOperationException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvocationTargetException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvocationTargetException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvocationTargetException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.reflect.InvocationTargetException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

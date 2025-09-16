@@ -31,6 +31,13 @@ namespace Java.Lang.Reflect
     /// </summary>
     public partial class InaccessibleObjectException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InaccessibleObjectException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InaccessibleObjectException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InaccessibleObjectException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.reflect.InaccessibleObjectException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

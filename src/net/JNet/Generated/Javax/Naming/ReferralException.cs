@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class ReferralException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ReferralException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ReferralException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ReferralException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.ReferralException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

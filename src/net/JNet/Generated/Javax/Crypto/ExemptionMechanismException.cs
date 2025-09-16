@@ -31,6 +31,13 @@ namespace Javax.Crypto
     /// </summary>
     public partial class ExemptionMechanismException : Java.Security.GeneralSecurityException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ExemptionMechanismException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ExemptionMechanismException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ExemptionMechanismException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.crypto.ExemptionMechanismException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

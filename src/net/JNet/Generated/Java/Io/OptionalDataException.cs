@@ -31,6 +31,13 @@ namespace Java.Io
     /// </summary>
     public partial class OptionalDataException : Java.Io.ObjectStreamException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public OptionalDataException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public OptionalDataException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public OptionalDataException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.io.OptionalDataException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

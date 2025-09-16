@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class AccessDeniedException : Java.Nio.File.FileSystemException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public AccessDeniedException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public AccessDeniedException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public AccessDeniedException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.AccessDeniedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

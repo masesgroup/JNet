@@ -31,6 +31,13 @@ namespace Java.Net
     /// </summary>
     public partial class ConnectException : Java.Net.SocketException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ConnectException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ConnectException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ConnectException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.net.ConnectException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

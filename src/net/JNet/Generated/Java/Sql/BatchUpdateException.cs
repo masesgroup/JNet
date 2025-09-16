@@ -31,6 +31,13 @@ namespace Java.Sql
     /// </summary>
     public partial class BatchUpdateException : Java.Sql.SQLException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public BatchUpdateException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public BatchUpdateException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public BatchUpdateException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.sql.BatchUpdateException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

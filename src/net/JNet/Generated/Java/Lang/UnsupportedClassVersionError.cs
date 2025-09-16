@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class UnsupportedClassVersionError : Java.Lang.ClassFormatError
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnsupportedClassVersionError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnsupportedClassVersionError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnsupportedClassVersionError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.UnsupportedClassVersionError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Security
     /// </summary>
     public partial class GeneralSecurityException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public GeneralSecurityException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public GeneralSecurityException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public GeneralSecurityException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.GeneralSecurityException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

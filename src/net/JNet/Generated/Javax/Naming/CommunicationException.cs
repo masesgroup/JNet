@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class CommunicationException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public CommunicationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public CommunicationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public CommunicationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.CommunicationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

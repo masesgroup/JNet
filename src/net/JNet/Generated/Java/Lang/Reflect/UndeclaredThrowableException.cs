@@ -31,6 +31,13 @@ namespace Java.Lang.Reflect
     /// </summary>
     public partial class UndeclaredThrowableException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UndeclaredThrowableException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UndeclaredThrowableException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UndeclaredThrowableException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.reflect.UndeclaredThrowableException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

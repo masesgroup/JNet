@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class NullPointerException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NullPointerException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NullPointerException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NullPointerException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.NullPointerException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

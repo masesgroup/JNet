@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class DirectoryNotEmptyException : Java.Nio.File.FileSystemException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public DirectoryNotEmptyException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public DirectoryNotEmptyException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public DirectoryNotEmptyException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.DirectoryNotEmptyException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

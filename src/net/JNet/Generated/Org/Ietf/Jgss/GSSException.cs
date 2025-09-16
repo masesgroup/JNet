@@ -31,6 +31,13 @@ namespace Org.Ietf.Jgss
     /// </summary>
     public partial class GSSException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public GSSException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public GSSException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public GSSException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "org.ietf.jgss.GSSException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

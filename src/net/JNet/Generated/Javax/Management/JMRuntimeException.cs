@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class JMRuntimeException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public JMRuntimeException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public JMRuntimeException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public JMRuntimeException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.JMRuntimeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

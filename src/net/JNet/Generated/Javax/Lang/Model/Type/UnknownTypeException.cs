@@ -31,6 +31,13 @@ namespace Javax.Lang.Model.Type
     /// </summary>
     public partial class UnknownTypeException : Javax.Lang.Model.UnknownEntityException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnknownTypeException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnknownTypeException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnknownTypeException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.lang.model.type.UnknownTypeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

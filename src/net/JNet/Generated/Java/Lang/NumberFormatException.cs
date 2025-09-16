@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class NumberFormatException : Java.Lang.IllegalArgumentException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NumberFormatException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NumberFormatException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NumberFormatException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.NumberFormatException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Security.Cert
     /// </summary>
     public partial class CertPathBuilderException : Java.Security.GeneralSecurityException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public CertPathBuilderException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public CertPathBuilderException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public CertPathBuilderException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.cert.CertPathBuilderException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

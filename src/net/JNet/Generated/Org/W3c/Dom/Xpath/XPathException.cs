@@ -31,6 +31,13 @@ namespace Org.W3c.Dom.Xpath
     /// </summary>
     public partial class XPathException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public XPathException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public XPathException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public XPathException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "org.w3c.dom.xpath.XPathException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

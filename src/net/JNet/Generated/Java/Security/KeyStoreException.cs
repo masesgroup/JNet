@@ -31,6 +31,13 @@ namespace Java.Security
     /// </summary>
     public partial class KeyStoreException : Java.Security.GeneralSecurityException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public KeyStoreException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public KeyStoreException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public KeyStoreException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.KeyStoreException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

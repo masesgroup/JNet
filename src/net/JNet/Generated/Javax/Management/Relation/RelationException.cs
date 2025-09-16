@@ -31,6 +31,13 @@ namespace Javax.Management.Relation
     /// </summary>
     public partial class RelationException : Javax.Management.JMException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public RelationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public RelationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public RelationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.relation.RelationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

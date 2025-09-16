@@ -31,6 +31,13 @@ namespace Java.Sql
     /// </summary>
     public partial class SQLTransactionRollbackException : Java.Sql.SQLTransientException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SQLTransactionRollbackException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SQLTransactionRollbackException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SQLTransactionRollbackException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.sql.SQLTransactionRollbackException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

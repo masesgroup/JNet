@@ -31,6 +31,13 @@ namespace Javax.Xml.Crypto
     /// </summary>
     public partial class URIReferenceException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public URIReferenceException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public URIReferenceException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public URIReferenceException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.xml.crypto.URIReferenceException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

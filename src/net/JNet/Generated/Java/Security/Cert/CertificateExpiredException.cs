@@ -31,6 +31,13 @@ namespace Java.Security.Cert
     /// </summary>
     public partial class CertificateExpiredException : Java.Security.Cert.CertificateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public CertificateExpiredException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public CertificateExpiredException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public CertificateExpiredException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.cert.CertificateExpiredException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

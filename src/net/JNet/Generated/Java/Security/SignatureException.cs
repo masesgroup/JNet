@@ -31,6 +31,13 @@ namespace Java.Security
     /// </summary>
     public partial class SignatureException : Java.Security.GeneralSecurityException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SignatureException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SignatureException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SignatureException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.SignatureException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

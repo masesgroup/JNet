@@ -31,6 +31,13 @@ namespace Java.Util
     /// </summary>
     public partial class InputMismatchException : Java.Util.NoSuchElementException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InputMismatchException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InputMismatchException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InputMismatchException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.InputMismatchException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

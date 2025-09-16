@@ -31,6 +31,13 @@ namespace Javax.Xml.Crypto
     /// </summary>
     public partial class KeySelectorException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public KeySelectorException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public KeySelectorException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public KeySelectorException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.xml.crypto.KeySelectorException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

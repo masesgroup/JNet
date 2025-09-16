@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class NonWritableChannelException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NonWritableChannelException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NonWritableChannelException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NonWritableChannelException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.NonWritableChannelException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

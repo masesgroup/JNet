@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class NoSuchMethodError : Java.Lang.IncompatibleClassChangeError
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NoSuchMethodError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NoSuchMethodError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NoSuchMethodError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.NoSuchMethodError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class NotYetBoundException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NotYetBoundException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NotYetBoundException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NotYetBoundException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.NotYetBoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

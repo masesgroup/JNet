@@ -31,6 +31,13 @@ namespace Java.Lang.Reflect
     /// </summary>
     public partial class GenericSignatureFormatError : Java.Lang.ClassFormatError
     {
+        /// <inheritdoc cref="Exception()"/>
+        public GenericSignatureFormatError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public GenericSignatureFormatError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public GenericSignatureFormatError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.reflect.GenericSignatureFormatError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

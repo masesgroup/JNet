@@ -31,6 +31,13 @@ namespace Java.Io
     /// </summary>
     public partial class StreamCorruptedException : Java.Io.ObjectStreamException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public StreamCorruptedException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public StreamCorruptedException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public StreamCorruptedException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.io.StreamCorruptedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

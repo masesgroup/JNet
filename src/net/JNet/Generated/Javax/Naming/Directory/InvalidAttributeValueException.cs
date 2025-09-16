@@ -31,6 +31,13 @@ namespace Javax.Naming.Directory
     /// </summary>
     public partial class InvalidAttributeValueException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvalidAttributeValueException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvalidAttributeValueException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvalidAttributeValueException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.directory.InvalidAttributeValueException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

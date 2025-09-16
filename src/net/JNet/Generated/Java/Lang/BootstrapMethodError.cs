@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class BootstrapMethodError : Java.Lang.LinkageError
     {
+        /// <inheritdoc cref="Exception()"/>
+        public BootstrapMethodError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public BootstrapMethodError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public BootstrapMethodError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.BootstrapMethodError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class StackOverflowError : Java.Lang.VirtualMachineError
     {
+        /// <inheritdoc cref="Exception()"/>
+        public StackOverflowError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public StackOverflowError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public StackOverflowError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.StackOverflowError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

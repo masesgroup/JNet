@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class InternalError : Java.Lang.VirtualMachineError
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InternalError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InternalError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InternalError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.InternalError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

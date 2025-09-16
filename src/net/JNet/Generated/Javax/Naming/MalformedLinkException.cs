@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class MalformedLinkException : Javax.Naming.LinkException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public MalformedLinkException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public MalformedLinkException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public MalformedLinkException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.MalformedLinkException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

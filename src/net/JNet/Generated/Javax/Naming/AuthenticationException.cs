@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class AuthenticationException : Javax.Naming.NamingSecurityException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public AuthenticationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public AuthenticationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public AuthenticationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.AuthenticationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

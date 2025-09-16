@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class InvalidAttributeValueException : Javax.Management.OperationsException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvalidAttributeValueException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvalidAttributeValueException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvalidAttributeValueException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.InvalidAttributeValueException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

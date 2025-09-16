@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class IncompatibleClassChangeError : Java.Lang.LinkageError
     {
+        /// <inheritdoc cref="Exception()"/>
+        public IncompatibleClassChangeError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public IncompatibleClassChangeError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public IncompatibleClassChangeError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.IncompatibleClassChangeError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

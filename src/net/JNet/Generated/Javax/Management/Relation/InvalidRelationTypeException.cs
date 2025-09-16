@@ -31,6 +31,13 @@ namespace Javax.Management.Relation
     /// </summary>
     public partial class InvalidRelationTypeException : Javax.Management.Relation.RelationException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvalidRelationTypeException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvalidRelationTypeException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvalidRelationTypeException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.relation.InvalidRelationTypeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

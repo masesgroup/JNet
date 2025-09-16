@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class ServiceNotFoundException : Javax.Management.OperationsException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ServiceNotFoundException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ServiceNotFoundException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ServiceNotFoundException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.ServiceNotFoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

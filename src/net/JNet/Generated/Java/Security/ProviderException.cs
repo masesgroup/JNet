@@ -31,6 +31,13 @@ namespace Java.Security
     /// </summary>
     public partial class ProviderException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ProviderException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ProviderException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ProviderException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.ProviderException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

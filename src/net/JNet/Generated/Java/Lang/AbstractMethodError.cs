@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class AbstractMethodError : Java.Lang.IncompatibleClassChangeError
     {
+        /// <inheritdoc cref="Exception()"/>
+        public AbstractMethodError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public AbstractMethodError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public AbstractMethodError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.AbstractMethodError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

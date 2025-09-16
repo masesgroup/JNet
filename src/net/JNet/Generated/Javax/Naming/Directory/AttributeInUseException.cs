@@ -31,6 +31,13 @@ namespace Javax.Naming.Directory
     /// </summary>
     public partial class AttributeInUseException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public AttributeInUseException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public AttributeInUseException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public AttributeInUseException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.directory.AttributeInUseException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

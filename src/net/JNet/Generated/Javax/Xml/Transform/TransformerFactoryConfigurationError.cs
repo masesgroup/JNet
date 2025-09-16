@@ -31,6 +31,13 @@ namespace Javax.Xml.Transform
     /// </summary>
     public partial class TransformerFactoryConfigurationError : Java.Lang.Error
     {
+        /// <inheritdoc cref="Exception()"/>
+        public TransformerFactoryConfigurationError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public TransformerFactoryConfigurationError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public TransformerFactoryConfigurationError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.xml.transform.TransformerFactoryConfigurationError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

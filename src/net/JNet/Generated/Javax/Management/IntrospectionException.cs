@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class IntrospectionException : Javax.Management.OperationsException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public IntrospectionException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public IntrospectionException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public IntrospectionException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.IntrospectionException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

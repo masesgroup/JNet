@@ -31,6 +31,13 @@ namespace Java.Util.Prefs
     /// </summary>
     public partial class BackingStoreException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public BackingStoreException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public BackingStoreException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public BackingStoreException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.prefs.BackingStoreException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

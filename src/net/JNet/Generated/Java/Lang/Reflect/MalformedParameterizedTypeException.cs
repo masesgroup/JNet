@@ -31,6 +31,13 @@ namespace Java.Lang.Reflect
     /// </summary>
     public partial class MalformedParameterizedTypeException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public MalformedParameterizedTypeException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public MalformedParameterizedTypeException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public MalformedParameterizedTypeException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.reflect.MalformedParameterizedTypeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

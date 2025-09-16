@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class CancelledKeyException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public CancelledKeyException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public CancelledKeyException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public CancelledKeyException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.CancelledKeyException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

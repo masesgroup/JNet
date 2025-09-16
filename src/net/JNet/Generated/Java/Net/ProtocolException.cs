@@ -31,6 +31,13 @@ namespace Java.Net
     /// </summary>
     public partial class ProtocolException : Java.Io.IOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ProtocolException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ProtocolException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ProtocolException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.net.ProtocolException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

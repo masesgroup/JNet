@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class ClosedFileSystemException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ClosedFileSystemException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ClosedFileSystemException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ClosedFileSystemException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.ClosedFileSystemException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class ClassNotFoundException : Java.Lang.ReflectiveOperationException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ClassNotFoundException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ClassNotFoundException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ClassNotFoundException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.ClassNotFoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

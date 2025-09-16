@@ -31,6 +31,13 @@ namespace Javax.Management.Monitor
     /// </summary>
     public partial class MonitorSettingException : Javax.Management.JMRuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public MonitorSettingException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public MonitorSettingException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public MonitorSettingException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.monitor.MonitorSettingException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

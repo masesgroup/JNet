@@ -31,6 +31,13 @@ namespace Java.Security
     /// </summary>
     public partial class AccessControlException : Java.Lang.SecurityException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public AccessControlException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public AccessControlException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public AccessControlException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.AccessControlException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

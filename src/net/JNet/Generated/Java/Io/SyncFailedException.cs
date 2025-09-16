@@ -31,6 +31,13 @@ namespace Java.Io
     /// </summary>
     public partial class SyncFailedException : Java.Io.IOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SyncFailedException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SyncFailedException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SyncFailedException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.io.SyncFailedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

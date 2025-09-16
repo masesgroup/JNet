@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class NoSuchMethodException : Java.Lang.ReflectiveOperationException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NoSuchMethodException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NoSuchMethodException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NoSuchMethodException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.NoSuchMethodException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

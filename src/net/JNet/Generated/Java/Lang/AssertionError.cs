@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class AssertionError : Java.Lang.Error
     {
+        /// <inheritdoc cref="Exception()"/>
+        public AssertionError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public AssertionError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public AssertionError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.AssertionError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

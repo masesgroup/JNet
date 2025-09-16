@@ -31,6 +31,13 @@ namespace Javax.Security.Auth.Login
     /// </summary>
     public partial class FailedLoginException : Javax.Security.Auth.Login.LoginException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public FailedLoginException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public FailedLoginException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public FailedLoginException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.security.auth.login.FailedLoginException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

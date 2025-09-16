@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class ClosedWatchServiceException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ClosedWatchServiceException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ClosedWatchServiceException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ClosedWatchServiceException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.ClosedWatchServiceException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

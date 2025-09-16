@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class NoPermissionException : Javax.Naming.NamingSecurityException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NoPermissionException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NoPermissionException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NoPermissionException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.NoPermissionException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

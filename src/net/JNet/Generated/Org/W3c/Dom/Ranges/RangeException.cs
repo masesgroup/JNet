@@ -31,6 +31,13 @@ namespace Org.W3c.Dom.Ranges
     /// </summary>
     public partial class RangeException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public RangeException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public RangeException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public RangeException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "org.w3c.dom.ranges.RangeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

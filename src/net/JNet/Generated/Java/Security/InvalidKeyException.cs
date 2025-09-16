@@ -31,6 +31,13 @@ namespace Java.Security
     /// </summary>
     public partial class InvalidKeyException : Java.Security.KeyException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvalidKeyException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvalidKeyException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvalidKeyException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.InvalidKeyException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

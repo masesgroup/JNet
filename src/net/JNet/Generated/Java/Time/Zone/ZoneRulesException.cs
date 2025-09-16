@@ -31,6 +31,13 @@ namespace Java.Time.Zone
     /// </summary>
     public partial class ZoneRulesException : Java.Time.DateTimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ZoneRulesException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ZoneRulesException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ZoneRulesException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.time.zone.ZoneRulesException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

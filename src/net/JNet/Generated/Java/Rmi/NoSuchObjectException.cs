@@ -31,6 +31,13 @@ namespace Java.Rmi
     /// </summary>
     public partial class NoSuchObjectException : Java.Rmi.RemoteException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NoSuchObjectException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NoSuchObjectException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NoSuchObjectException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.NoSuchObjectException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

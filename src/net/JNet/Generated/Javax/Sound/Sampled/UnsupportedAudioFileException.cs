@@ -31,6 +31,13 @@ namespace Javax.Sound.Sampled
     /// </summary>
     public partial class UnsupportedAudioFileException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnsupportedAudioFileException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnsupportedAudioFileException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnsupportedAudioFileException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.sound.sampled.UnsupportedAudioFileException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

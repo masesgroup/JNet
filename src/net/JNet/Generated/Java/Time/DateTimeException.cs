@@ -31,6 +31,13 @@ namespace Java.Time
     /// </summary>
     public partial class DateTimeException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public DateTimeException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public DateTimeException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public DateTimeException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.time.DateTimeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Util.Concurrent
     /// </summary>
     public partial class BrokenBarrierException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public BrokenBarrierException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public BrokenBarrierException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public BrokenBarrierException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.concurrent.BrokenBarrierException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

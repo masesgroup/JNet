@@ -31,6 +31,13 @@ namespace Java.Net
     /// </summary>
     public partial class UnknownServiceException : Java.Io.IOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnknownServiceException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnknownServiceException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnknownServiceException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.net.UnknownServiceException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

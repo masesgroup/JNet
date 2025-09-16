@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class OverlappingFileLockException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public OverlappingFileLockException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public OverlappingFileLockException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public OverlappingFileLockException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.OverlappingFileLockException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Javax.Net.Ssl
     /// </summary>
     public partial class SSLHandshakeException : Javax.Net.Ssl.SSLException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SSLHandshakeException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SSLHandshakeException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SSLHandshakeException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.net.ssl.SSLHandshakeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

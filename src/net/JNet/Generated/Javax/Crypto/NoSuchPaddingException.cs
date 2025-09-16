@@ -31,6 +31,13 @@ namespace Javax.Crypto
     /// </summary>
     public partial class NoSuchPaddingException : Java.Security.GeneralSecurityException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NoSuchPaddingException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NoSuchPaddingException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NoSuchPaddingException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.crypto.NoSuchPaddingException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

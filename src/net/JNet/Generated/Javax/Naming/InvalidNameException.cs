@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class InvalidNameException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InvalidNameException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InvalidNameException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InvalidNameException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.InvalidNameException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class RuntimeOperationsException : Javax.Management.JMRuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public RuntimeOperationsException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public RuntimeOperationsException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public RuntimeOperationsException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.RuntimeOperationsException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Util
     /// </summary>
     public partial class IllegalFormatPrecisionException : Java.Util.IllegalFormatException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public IllegalFormatPrecisionException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public IllegalFormatPrecisionException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public IllegalFormatPrecisionException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.IllegalFormatPrecisionException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class FileSystemException : Java.Io.IOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public FileSystemException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public FileSystemException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public FileSystemException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.FileSystemException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

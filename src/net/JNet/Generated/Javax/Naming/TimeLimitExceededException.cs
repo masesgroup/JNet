@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class TimeLimitExceededException : Javax.Naming.LimitExceededException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public TimeLimitExceededException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public TimeLimitExceededException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public TimeLimitExceededException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.TimeLimitExceededException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

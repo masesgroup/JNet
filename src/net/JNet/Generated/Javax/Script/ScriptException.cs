@@ -31,6 +31,13 @@ namespace Javax.Script
     /// </summary>
     public partial class ScriptException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ScriptException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ScriptException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ScriptException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.script.ScriptException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

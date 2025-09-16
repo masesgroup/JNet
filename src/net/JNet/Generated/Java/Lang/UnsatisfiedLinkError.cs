@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class UnsatisfiedLinkError : Java.Lang.LinkageError
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnsatisfiedLinkError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnsatisfiedLinkError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnsatisfiedLinkError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.UnsatisfiedLinkError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

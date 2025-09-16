@@ -31,6 +31,13 @@ namespace Org.W3c.Dom
     /// </summary>
     public partial class DOMException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public DOMException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public DOMException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public DOMException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "org.w3c.dom.DOMException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

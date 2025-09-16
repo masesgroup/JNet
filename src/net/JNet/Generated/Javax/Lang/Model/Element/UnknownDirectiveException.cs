@@ -31,6 +31,13 @@ namespace Javax.Lang.Model.Element
     /// </summary>
     public partial class UnknownDirectiveException : Javax.Lang.Model.UnknownEntityException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public UnknownDirectiveException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public UnknownDirectiveException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public UnknownDirectiveException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.lang.model.element.UnknownDirectiveException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

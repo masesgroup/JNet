@@ -31,6 +31,13 @@ namespace Javax.Xml.Xpath
     /// </summary>
     public partial class XPathFactoryConfigurationException : Javax.Xml.Xpath.XPathException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public XPathFactoryConfigurationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public XPathFactoryConfigurationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public XPathFactoryConfigurationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.xml.xpath.XPathFactoryConfigurationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

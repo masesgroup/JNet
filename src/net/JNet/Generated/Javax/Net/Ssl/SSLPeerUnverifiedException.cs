@@ -31,6 +31,13 @@ namespace Javax.Net.Ssl
     /// </summary>
     public partial class SSLPeerUnverifiedException : Javax.Net.Ssl.SSLException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SSLPeerUnverifiedException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SSLPeerUnverifiedException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SSLPeerUnverifiedException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.net.ssl.SSLPeerUnverifiedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

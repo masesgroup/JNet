@@ -31,6 +31,13 @@ namespace Java.Nio.Charset
     /// </summary>
     public partial class MalformedInputException : Java.Nio.Charset.CharacterCodingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public MalformedInputException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public MalformedInputException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public MalformedInputException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.charset.MalformedInputException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

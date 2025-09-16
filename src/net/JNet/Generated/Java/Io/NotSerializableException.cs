@@ -31,6 +31,13 @@ namespace Java.Io
     /// </summary>
     public partial class NotSerializableException : Java.Io.ObjectStreamException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public NotSerializableException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public NotSerializableException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public NotSerializableException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.io.NotSerializableException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

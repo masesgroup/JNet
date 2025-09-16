@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class FileLockInterruptionException : Java.Io.IOException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public FileLockInterruptionException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public FileLockInterruptionException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public FileLockInterruptionException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.FileLockInterruptionException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

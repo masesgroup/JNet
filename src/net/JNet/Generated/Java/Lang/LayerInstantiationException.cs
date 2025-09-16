@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class LayerInstantiationException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public LayerInstantiationException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public LayerInstantiationException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public LayerInstantiationException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.LayerInstantiationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

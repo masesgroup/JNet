@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class InterruptedNamingException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public InterruptedNamingException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public InterruptedNamingException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public InterruptedNamingException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.InterruptedNamingException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

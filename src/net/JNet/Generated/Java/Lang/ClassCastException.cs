@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class ClassCastException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ClassCastException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ClassCastException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ClassCastException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.ClassCastException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

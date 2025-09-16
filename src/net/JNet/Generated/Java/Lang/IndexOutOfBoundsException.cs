@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class IndexOutOfBoundsException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public IndexOutOfBoundsException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public IndexOutOfBoundsException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public IndexOutOfBoundsException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.IndexOutOfBoundsException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

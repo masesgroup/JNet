@@ -31,6 +31,13 @@ namespace Java.Net.Http
     /// </summary>
     public partial class HttpConnectTimeoutException : Java.Net.Http.HttpTimeoutException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public HttpConnectTimeoutException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public HttpConnectTimeoutException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public HttpConnectTimeoutException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.net.http.HttpConnectTimeoutException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

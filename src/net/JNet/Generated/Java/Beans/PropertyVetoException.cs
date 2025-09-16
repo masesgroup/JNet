@@ -31,6 +31,13 @@ namespace Java.Beans
     /// </summary>
     public partial class PropertyVetoException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="Exception()"/>
+        public PropertyVetoException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public PropertyVetoException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public PropertyVetoException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.beans.PropertyVetoException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

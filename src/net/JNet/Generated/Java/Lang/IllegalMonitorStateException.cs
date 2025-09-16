@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class IllegalMonitorStateException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public IllegalMonitorStateException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public IllegalMonitorStateException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public IllegalMonitorStateException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.IllegalMonitorStateException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

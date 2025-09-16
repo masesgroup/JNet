@@ -31,6 +31,13 @@ namespace Javax.Management.Openmbean
     /// </summary>
     public partial class KeyAlreadyExistsException : Java.Lang.IllegalArgumentException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public KeyAlreadyExistsException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public KeyAlreadyExistsException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public KeyAlreadyExistsException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.openmbean.KeyAlreadyExistsException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

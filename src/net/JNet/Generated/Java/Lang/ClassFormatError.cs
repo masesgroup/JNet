@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class ClassFormatError : Java.Lang.LinkageError
     {
+        /// <inheritdoc cref="Exception()"/>
+        public ClassFormatError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public ClassFormatError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public ClassFormatError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.ClassFormatError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

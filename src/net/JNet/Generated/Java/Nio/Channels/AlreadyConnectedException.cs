@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class AlreadyConnectedException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public AlreadyConnectedException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public AlreadyConnectedException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public AlreadyConnectedException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.AlreadyConnectedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

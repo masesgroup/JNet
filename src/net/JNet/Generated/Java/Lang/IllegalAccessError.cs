@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class IllegalAccessError : Java.Lang.IncompatibleClassChangeError
     {
+        /// <inheritdoc cref="Exception()"/>
+        public IllegalAccessError() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public IllegalAccessError(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public IllegalAccessError(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.IllegalAccessError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

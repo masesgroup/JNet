@@ -31,6 +31,13 @@ namespace Java.Sql
     /// </summary>
     public partial class SQLTimeoutException : Java.Sql.SQLTransientException
     {
+        /// <inheritdoc cref="Exception()"/>
+        public SQLTimeoutException() { }
+        /// <inheritdoc cref="Exception(string)"/>
+        public SQLTimeoutException(string message) : base(message) { }
+        /// <inheritdoc cref="Exception(string, Exception)"/>
+        public SQLTimeoutException(string message, Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.sql.SQLTimeoutException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
