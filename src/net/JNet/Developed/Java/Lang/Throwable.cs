@@ -25,6 +25,12 @@ namespace Java.Lang
     /// </summary>
     public class Throwable : JVMBridgeException<Throwable>
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public Throwable() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public Throwable(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public Throwable(string message, global::System.Exception innerException) : base(message, innerException) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.Throwable";
         /// <summary>
@@ -45,9 +51,5 @@ namespace Java.Lang
         ///  Creates a localized description of this throwable.
         /// </summary>
         public string LocalizedMessage => IExecute<string>("getLocalizedMessage");
-        /// <summary>
-        /// Returns the detail message string of this throwable.
-        /// </summary>
-        public new string Message => this.BridgeInstance == null ? base.Message : IExecute<string>("getMessage");
     }
 }
