@@ -26,6 +26,10 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class AnnotatedElement : JVMBridgeBase<AnnotatedElement>
     {
+        /// <inheritdoc/>
+        public AnnotatedElement() { }
+        /// <inheritdoc/>
+        public AnnotatedElement(IJVMBridgeCore parent) : base(parent) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.AnnotatedElement";
         /// <inheritdoc />

@@ -26,6 +26,10 @@ namespace Java.Lang.Annotation
 #if JNETREFLECTOR
     public class Annotation : JVMBridgeBase<Annotation>
     {
+        /// <inheritdoc/>
+        public Annotation() { }
+        /// <inheritdoc/>
+        public Annotation(IJVMBridgeCore parent) : base(parent) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.annotation.Annotation";
         /// <summary>

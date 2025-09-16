@@ -26,6 +26,10 @@ namespace Java.Lang
     /// </summary>
     public sealed class Object : JVMBridgeBase<Object>
     {
+        /// <inheritdoc/>
+        public Object() { }
+        /// <inheritdoc/>
+        public Object(IJVMBridgeCore parent) : base(parent) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.Object";
     }

@@ -26,6 +26,10 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class Modifier : JVMBridgeBase<Modifier>
     {
+        /// <inheritdoc/>
+        public Modifier() { }
+        /// <inheritdoc/>
+        public Modifier(IJVMBridgeCore parent) : base(parent) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.Modifier";
         /// <summary>
