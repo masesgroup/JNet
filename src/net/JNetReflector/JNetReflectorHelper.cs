@@ -35,9 +35,9 @@ namespace Org.Mases.Jnet
     public class JNetReflectorHelper : JVMBridgeBase<JNetReflectorHelper>
     {
         static string JNetReflectorHelperTempFolder = Path.Combine(Path.GetDirectoryName(typeof(JNetReflectorHelper).Assembly.Location));
-
+        /// <inheritdoc/>
         public JNetReflectorHelper() { }
-
+        /// <inheritdoc/>
         public JNetReflectorHelper(IJVMBridgeCore parent) : base(parent) { }
 
         public override string BridgeClassName => "org.mases.jnet.developed.JNetReflectorHelper";

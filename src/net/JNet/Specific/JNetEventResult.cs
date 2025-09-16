@@ -27,6 +27,11 @@ namespace MASES.JNet.Specific
     /// </summary>
     public sealed class JNetEventResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JNetEventResult>
     {
+        /// <inheritdoc/>
+        public JNetEventResult() { }
+        /// <inheritdoc/>
+        public JNetEventResult(IJVMBridgeCore parent) : base(parent) { }
+
         const string _bridgeClassName = "org.mases.jnet.developed.JNetEventResult";
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
