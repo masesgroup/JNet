@@ -31,12 +31,12 @@ namespace Java.Lang
     /// </summary>
     public partial class ArithmeticException : Java.Lang.RuntimeException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public ArithmeticException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public ArithmeticException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public ArithmeticException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ArithmeticException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.lang.ArithmeticException";
         /// <inheritdoc/>

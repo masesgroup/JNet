@@ -31,12 +31,12 @@ namespace Javax.Management
     /// </summary>
     public partial class RuntimeMBeanException : Javax.Management.JMRuntimeException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public RuntimeMBeanException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public RuntimeMBeanException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public RuntimeMBeanException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public RuntimeMBeanException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.management.RuntimeMBeanException";
         /// <inheritdoc/>

@@ -31,12 +31,12 @@ namespace Javax.Crypto
     /// </summary>
     public partial class ExemptionMechanismException : Java.Security.GeneralSecurityException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public ExemptionMechanismException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public ExemptionMechanismException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public ExemptionMechanismException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ExemptionMechanismException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.crypto.ExemptionMechanismException";
         /// <inheritdoc/>

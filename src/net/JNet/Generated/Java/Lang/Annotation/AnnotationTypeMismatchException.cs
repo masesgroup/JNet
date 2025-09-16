@@ -31,12 +31,12 @@ namespace Java.Lang.Annotation
     /// </summary>
     public partial class AnnotationTypeMismatchException : Java.Lang.RuntimeException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public AnnotationTypeMismatchException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public AnnotationTypeMismatchException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public AnnotationTypeMismatchException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public AnnotationTypeMismatchException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.lang.annotation.AnnotationTypeMismatchException";
         /// <inheritdoc/>

@@ -31,12 +31,12 @@ namespace Javax.Swing.Text
     /// </summary>
     public partial class BadLocationException : Java.Lang.Exception
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public BadLocationException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public BadLocationException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public BadLocationException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public BadLocationException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.swing.text.BadLocationException";
         /// <inheritdoc/>

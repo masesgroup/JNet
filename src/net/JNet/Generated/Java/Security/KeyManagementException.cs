@@ -31,12 +31,12 @@ namespace Java.Security
     /// </summary>
     public partial class KeyManagementException : Java.Security.KeyException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public KeyManagementException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public KeyManagementException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public KeyManagementException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public KeyManagementException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.security.KeyManagementException";
         /// <inheritdoc/>

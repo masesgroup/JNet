@@ -31,12 +31,12 @@ namespace Java.Security.Spec
     /// </summary>
     public partial class InvalidParameterSpecException : Java.Security.GeneralSecurityException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public InvalidParameterSpecException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public InvalidParameterSpecException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public InvalidParameterSpecException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InvalidParameterSpecException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.security.spec.InvalidParameterSpecException";
         /// <inheritdoc/>

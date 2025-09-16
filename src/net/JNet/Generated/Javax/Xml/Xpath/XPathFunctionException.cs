@@ -31,12 +31,12 @@ namespace Javax.Xml.Xpath
     /// </summary>
     public partial class XPathFunctionException : Javax.Xml.Xpath.XPathExpressionException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public XPathFunctionException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public XPathFunctionException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public XPathFunctionException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public XPathFunctionException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.xml.xpath.XPathFunctionException";
         /// <inheritdoc/>

@@ -31,12 +31,12 @@ namespace Javax.Net.Ssl
     /// </summary>
     public partial class SSLPeerUnverifiedException : Javax.Net.Ssl.SSLException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public SSLPeerUnverifiedException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public SSLPeerUnverifiedException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public SSLPeerUnverifiedException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public SSLPeerUnverifiedException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.net.ssl.SSLPeerUnverifiedException";
         /// <inheritdoc/>

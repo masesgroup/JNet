@@ -31,12 +31,12 @@ namespace Java.Awt.Dnd
     /// </summary>
     public partial class InvalidDnDOperationException : Java.Lang.IllegalStateException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public InvalidDnDOperationException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public InvalidDnDOperationException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public InvalidDnDOperationException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InvalidDnDOperationException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.awt.dnd.InvalidDnDOperationException";
         /// <inheritdoc/>

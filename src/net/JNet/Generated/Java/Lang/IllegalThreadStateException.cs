@@ -31,12 +31,12 @@ namespace Java.Lang
     /// </summary>
     public partial class IllegalThreadStateException : Java.Lang.IllegalArgumentException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public IllegalThreadStateException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public IllegalThreadStateException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public IllegalThreadStateException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public IllegalThreadStateException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.lang.IllegalThreadStateException";
         /// <inheritdoc/>

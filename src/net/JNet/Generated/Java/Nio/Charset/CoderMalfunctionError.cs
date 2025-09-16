@@ -31,12 +31,12 @@ namespace Java.Nio.Charset
     /// </summary>
     public partial class CoderMalfunctionError : Java.Lang.Error
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public CoderMalfunctionError() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public CoderMalfunctionError(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public CoderMalfunctionError(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public CoderMalfunctionError(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.nio.charset.CoderMalfunctionError";
         /// <inheritdoc/>

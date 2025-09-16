@@ -31,12 +31,12 @@ namespace Java.Security.Cert
     /// </summary>
     public partial class CertificateRevokedException : Java.Security.Cert.CertificateException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public CertificateRevokedException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public CertificateRevokedException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public CertificateRevokedException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public CertificateRevokedException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.security.cert.CertificateRevokedException";
         /// <inheritdoc/>

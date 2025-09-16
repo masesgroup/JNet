@@ -31,12 +31,12 @@ namespace Java.Rmi.Activation
     /// </summary>
     public partial class ActivateFailedException : Java.Rmi.RemoteException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public ActivateFailedException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public ActivateFailedException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public ActivateFailedException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ActivateFailedException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.rmi.activation.ActivateFailedException";
         /// <inheritdoc/>

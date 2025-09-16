@@ -31,12 +31,12 @@ namespace Javax.Management.Remote
     /// </summary>
     public partial class JMXProviderException : Java.Io.IOException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public JMXProviderException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public JMXProviderException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public JMXProviderException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public JMXProviderException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.management.remote.JMXProviderException";
         /// <inheritdoc/>

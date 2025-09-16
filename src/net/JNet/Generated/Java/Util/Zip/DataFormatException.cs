@@ -31,12 +31,12 @@ namespace Java.Util.Zip
     /// </summary>
     public partial class DataFormatException : Java.Lang.Exception
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public DataFormatException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public DataFormatException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public DataFormatException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public DataFormatException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.util.zip.DataFormatException";
         /// <inheritdoc/>

@@ -31,12 +31,12 @@ namespace Java.Util
     /// </summary>
     public partial class EmptyStackException : Java.Lang.RuntimeException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public EmptyStackException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public EmptyStackException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public EmptyStackException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public EmptyStackException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.util.EmptyStackException";
         /// <inheritdoc/>
