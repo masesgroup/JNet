@@ -40,9 +40,6 @@ jobs:
           fetch-depth: '1'
           submodules: 'true'
 
-      - name: Add local NuGet source
-        run: dotnet nuget add source ${{ github.workspace }}\JCOBridge\
-
       - name: Prebuild
         run: dotnet build --no-incremental --configuration Release src\net\JNetReflector\JNetReflector.csproj
 
