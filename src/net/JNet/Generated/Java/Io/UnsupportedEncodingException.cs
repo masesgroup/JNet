@@ -31,12 +31,12 @@ namespace Java.Io
     /// </summary>
     public partial class UnsupportedEncodingException : Java.Io.IOException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public UnsupportedEncodingException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public UnsupportedEncodingException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public UnsupportedEncodingException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnsupportedEncodingException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.io.UnsupportedEncodingException";
         /// <inheritdoc/>

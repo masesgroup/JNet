@@ -31,12 +31,12 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class ClosedByInterruptException : Java.Nio.Channels.AsynchronousCloseException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public ClosedByInterruptException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public ClosedByInterruptException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public ClosedByInterruptException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ClosedByInterruptException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.nio.channels.ClosedByInterruptException";
         /// <inheritdoc/>

@@ -31,12 +31,12 @@ namespace Java.Nio.File
     /// </summary>
     public partial class DirectoryIteratorException : Java.Util.ConcurrentModificationException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public DirectoryIteratorException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public DirectoryIteratorException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public DirectoryIteratorException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public DirectoryIteratorException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.nio.file.DirectoryIteratorException";
         /// <inheritdoc/>

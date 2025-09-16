@@ -31,12 +31,12 @@ namespace Java.Lang
     /// </summary>
     public partial class Error : Java.Lang.Throwable
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public Error() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public Error(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public Error(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public Error(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.lang.Error";
         /// <inheritdoc/>

@@ -31,12 +31,12 @@ namespace Javax.Swing
     /// </summary>
     public partial class UnsupportedLookAndFeelException : Java.Lang.Exception
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public UnsupportedLookAndFeelException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public UnsupportedLookAndFeelException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public UnsupportedLookAndFeelException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnsupportedLookAndFeelException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.swing.UnsupportedLookAndFeelException";
         /// <inheritdoc/>

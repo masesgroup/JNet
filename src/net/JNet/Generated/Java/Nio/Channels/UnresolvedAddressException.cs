@@ -31,12 +31,12 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class UnresolvedAddressException : Java.Lang.IllegalArgumentException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public UnresolvedAddressException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public UnresolvedAddressException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public UnresolvedAddressException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnresolvedAddressException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.nio.channels.UnresolvedAddressException";
         /// <inheritdoc/>

@@ -31,12 +31,12 @@ namespace Java.Nio.File
     /// </summary>
     public partial class ReadOnlyFileSystemException : Java.Lang.UnsupportedOperationException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public ReadOnlyFileSystemException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public ReadOnlyFileSystemException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public ReadOnlyFileSystemException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ReadOnlyFileSystemException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.nio.file.ReadOnlyFileSystemException";
         /// <inheritdoc/>

@@ -31,12 +31,12 @@ namespace Java.Io
     /// </summary>
     public partial class IOError : Java.Lang.Error
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public IOError() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public IOError(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public IOError(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public IOError(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.io.IOError";
         /// <inheritdoc/>

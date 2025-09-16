@@ -31,12 +31,12 @@ namespace Javax.Management
     /// </summary>
     public partial class OperationsException : Javax.Management.JMException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public OperationsException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public OperationsException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public OperationsException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public OperationsException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.management.OperationsException";
         /// <inheritdoc/>

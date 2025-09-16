@@ -31,12 +31,12 @@ namespace Java.Lang
     /// </summary>
     public partial class NoClassDefFoundError : Java.Lang.LinkageError
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public NoClassDefFoundError() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public NoClassDefFoundError(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public NoClassDefFoundError(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NoClassDefFoundError(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.lang.NoClassDefFoundError";
         /// <inheritdoc/>

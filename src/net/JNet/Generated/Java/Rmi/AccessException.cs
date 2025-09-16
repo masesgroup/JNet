@@ -31,12 +31,12 @@ namespace Java.Rmi
     /// </summary>
     public partial class AccessException : Java.Rmi.RemoteException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public AccessException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public AccessException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public AccessException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public AccessException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.rmi.AccessException";
         /// <inheritdoc/>

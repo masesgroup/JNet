@@ -31,12 +31,12 @@ namespace Java.Io
     /// </summary>
     public partial class InvalidClassException : Java.Io.ObjectStreamException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public InvalidClassException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public InvalidClassException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public InvalidClassException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InvalidClassException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.io.InvalidClassException";
         /// <inheritdoc/>

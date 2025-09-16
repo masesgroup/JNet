@@ -31,12 +31,12 @@ namespace Javax.Xml.Crypto
     /// </summary>
     public partial class NoSuchMechanismException : Java.Lang.RuntimeException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public NoSuchMechanismException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public NoSuchMechanismException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public NoSuchMechanismException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NoSuchMechanismException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.xml.crypto.NoSuchMechanismException";
         /// <inheritdoc/>

@@ -31,12 +31,12 @@ namespace Javax.Naming
     /// </summary>
     public partial class InterruptedNamingException : Javax.Naming.NamingException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public InterruptedNamingException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public InterruptedNamingException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public InterruptedNamingException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InterruptedNamingException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.naming.InterruptedNamingException";
         /// <inheritdoc/>

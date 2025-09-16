@@ -31,12 +31,12 @@ namespace Javax.Management.Openmbean
     /// </summary>
     public partial class OpenDataException : Javax.Management.JMException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public OpenDataException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public OpenDataException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public OpenDataException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public OpenDataException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.management.openmbean.OpenDataException";
         /// <inheritdoc/>

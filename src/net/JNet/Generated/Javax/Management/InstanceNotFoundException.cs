@@ -31,12 +31,12 @@ namespace Javax.Management
     /// </summary>
     public partial class InstanceNotFoundException : Javax.Management.OperationsException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public InstanceNotFoundException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public InstanceNotFoundException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public InstanceNotFoundException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InstanceNotFoundException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.management.InstanceNotFoundException";
         /// <inheritdoc/>

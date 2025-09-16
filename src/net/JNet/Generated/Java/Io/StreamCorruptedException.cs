@@ -31,12 +31,12 @@ namespace Java.Io
     /// </summary>
     public partial class StreamCorruptedException : Java.Io.ObjectStreamException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public StreamCorruptedException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public StreamCorruptedException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public StreamCorruptedException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public StreamCorruptedException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.io.StreamCorruptedException";
         /// <inheritdoc/>

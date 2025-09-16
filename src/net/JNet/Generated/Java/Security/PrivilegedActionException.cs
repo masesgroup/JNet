@@ -31,12 +31,12 @@ namespace Java.Security
     /// </summary>
     public partial class PrivilegedActionException : Java.Lang.Exception
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public PrivilegedActionException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public PrivilegedActionException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public PrivilegedActionException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public PrivilegedActionException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.security.PrivilegedActionException";
         /// <inheritdoc/>

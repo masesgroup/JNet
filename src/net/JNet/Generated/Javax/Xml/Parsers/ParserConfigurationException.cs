@@ -31,12 +31,12 @@ namespace Javax.Xml.Parsers
     /// </summary>
     public partial class ParserConfigurationException : Java.Lang.Exception
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public ParserConfigurationException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public ParserConfigurationException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public ParserConfigurationException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ParserConfigurationException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.xml.parsers.ParserConfigurationException";
         /// <inheritdoc/>

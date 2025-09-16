@@ -31,12 +31,12 @@ namespace Java.Sql
     /// </summary>
     public partial class BatchUpdateException : Java.Sql.SQLException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public BatchUpdateException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public BatchUpdateException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public BatchUpdateException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public BatchUpdateException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.sql.BatchUpdateException";
         /// <inheritdoc/>

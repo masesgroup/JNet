@@ -31,12 +31,12 @@ namespace Javax.Crypto
     /// </summary>
     public partial class AEADBadTagException : Javax.Crypto.BadPaddingException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public AEADBadTagException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public AEADBadTagException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public AEADBadTagException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public AEADBadTagException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.crypto.AEADBadTagException";
         /// <inheritdoc/>

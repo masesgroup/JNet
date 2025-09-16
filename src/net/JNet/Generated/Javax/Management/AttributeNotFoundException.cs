@@ -31,12 +31,12 @@ namespace Javax.Management
     /// </summary>
     public partial class AttributeNotFoundException : Javax.Management.OperationsException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public AttributeNotFoundException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public AttributeNotFoundException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public AttributeNotFoundException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public AttributeNotFoundException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.management.AttributeNotFoundException";
         /// <inheritdoc/>
