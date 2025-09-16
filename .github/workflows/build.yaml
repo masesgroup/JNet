@@ -240,6 +240,9 @@ jobs:
           fetch-depth: '1'
           submodules: 'true'
 
+      - name: Add local NuGet source
+        run: dotnet nuget add source ${{ github.workspace }}\JCOBridge\
+
       - name: Pre compile
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\JNet\JNet.csproj
         env:
