@@ -37,6 +37,11 @@ namespace Javax.Xml.Crypto.Dsig.Spec
         /// </summary>
         public XPathFilter2ParameterSpec() { }
         /// <summary>
+        /// Internal constructor: used internally from JCOBridge
+        /// </summary>
+        [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public XPathFilter2ParameterSpec(IJVMBridgeCore parent) : base(parent) { }
+        /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public XPathFilter2ParameterSpec(params object[] args) : base(args) { }
