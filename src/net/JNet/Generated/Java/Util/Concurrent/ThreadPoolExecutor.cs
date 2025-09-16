@@ -37,6 +37,11 @@ namespace Java.Util.Concurrent
         /// </summary>
         public ThreadPoolExecutor() { }
         /// <summary>
+        /// Internal constructor: used internally from JCOBridge
+        /// </summary>
+        [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public ThreadPoolExecutor(IJVMBridgeCore parent) : base(parent) { }
+        /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         public ThreadPoolExecutor(params object[] args) : base(args) { }
@@ -68,6 +73,11 @@ namespace Java.Util.Concurrent
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public AbortPolicy() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public AbortPolicy(IJVMBridgeCore parent) : base(parent) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -105,6 +115,11 @@ namespace Java.Util.Concurrent
             /// </summary>
             public CallerRunsPolicy() { }
             /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public CallerRunsPolicy(IJVMBridgeCore parent) : base(parent) { }
+            /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public CallerRunsPolicy(params object[] args) : base(args) { }
@@ -141,6 +156,11 @@ namespace Java.Util.Concurrent
             /// </summary>
             public DiscardOldestPolicy() { }
             /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public DiscardOldestPolicy(IJVMBridgeCore parent) : base(parent) { }
+            /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
             public DiscardOldestPolicy(params object[] args) : base(args) { }
@@ -176,6 +196,11 @@ namespace Java.Util.Concurrent
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
             public DiscardPolicy() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public DiscardPolicy(IJVMBridgeCore parent) : base(parent) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
