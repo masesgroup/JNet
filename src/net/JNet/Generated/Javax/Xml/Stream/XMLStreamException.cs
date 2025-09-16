@@ -31,12 +31,12 @@ namespace Javax.Xml.Stream
     /// </summary>
     public partial class XMLStreamException : Java.Lang.Exception
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public XMLStreamException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public XMLStreamException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public XMLStreamException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public XMLStreamException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.xml.stream.XMLStreamException";
         /// <inheritdoc/>

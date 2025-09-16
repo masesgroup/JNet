@@ -31,12 +31,12 @@ namespace Java.Lang
     /// </summary>
     public partial class AbstractMethodError : Java.Lang.IncompatibleClassChangeError
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public AbstractMethodError() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public AbstractMethodError(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public AbstractMethodError(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public AbstractMethodError(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.lang.AbstractMethodError";
         /// <inheritdoc/>

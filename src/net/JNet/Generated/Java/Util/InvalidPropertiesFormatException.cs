@@ -31,12 +31,12 @@ namespace Java.Util
     /// </summary>
     public partial class InvalidPropertiesFormatException : Java.Io.IOException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public InvalidPropertiesFormatException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public InvalidPropertiesFormatException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public InvalidPropertiesFormatException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InvalidPropertiesFormatException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.util.InvalidPropertiesFormatException";
         /// <inheritdoc/>

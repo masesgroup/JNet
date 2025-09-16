@@ -31,12 +31,12 @@ namespace Org.W3c.Dom.Xpath
     /// </summary>
     public partial class XPathException : Java.Lang.RuntimeException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public XPathException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public XPathException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public XPathException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public XPathException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "org.w3c.dom.xpath.XPathException";
         /// <inheritdoc/>

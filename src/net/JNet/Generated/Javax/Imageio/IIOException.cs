@@ -31,12 +31,12 @@ namespace Javax.Imageio
     /// </summary>
     public partial class IIOException : Java.Io.IOException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public IIOException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public IIOException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public IIOException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public IIOException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.imageio.IIOException";
         /// <inheritdoc/>

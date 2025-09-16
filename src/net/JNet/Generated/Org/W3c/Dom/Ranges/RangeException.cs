@@ -31,12 +31,12 @@ namespace Org.W3c.Dom.Ranges
     /// </summary>
     public partial class RangeException : Java.Lang.RuntimeException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public RangeException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public RangeException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public RangeException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public RangeException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "org.w3c.dom.ranges.RangeException";
         /// <inheritdoc/>

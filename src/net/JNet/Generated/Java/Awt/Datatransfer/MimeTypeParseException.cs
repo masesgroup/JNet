@@ -31,12 +31,12 @@ namespace Java.Awt.Datatransfer
     /// </summary>
     public partial class MimeTypeParseException : Java.Lang.Exception
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public MimeTypeParseException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public MimeTypeParseException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public MimeTypeParseException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public MimeTypeParseException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.awt.datatransfer.MimeTypeParseException";
         /// <inheritdoc/>

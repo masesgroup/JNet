@@ -31,12 +31,12 @@ namespace Javax.Sql.Rowset.Serial
     /// </summary>
     public partial class SerialException : Java.Sql.SQLException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public SerialException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public SerialException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public SerialException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public SerialException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.sql.rowset.serial.SerialException";
         /// <inheritdoc/>

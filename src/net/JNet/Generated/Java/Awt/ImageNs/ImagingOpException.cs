@@ -31,12 +31,12 @@ namespace Java.Awt.ImageNs
     /// </summary>
     public partial class ImagingOpException : Java.Lang.RuntimeException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public ImagingOpException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public ImagingOpException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public ImagingOpException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ImagingOpException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.awt.image.ImagingOpException";
         /// <inheritdoc/>

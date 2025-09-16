@@ -31,12 +31,12 @@ namespace Javax.Management.Openmbean
     /// </summary>
     public partial class InvalidKeyException : Java.Lang.IllegalArgumentException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public InvalidKeyException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public InvalidKeyException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public InvalidKeyException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InvalidKeyException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.management.openmbean.InvalidKeyException";
         /// <inheritdoc/>

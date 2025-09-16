@@ -31,12 +31,12 @@ namespace Javax.Xml.Transform
     /// </summary>
     public partial class TransformerConfigurationException : Javax.Xml.Transform.TransformerException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public TransformerConfigurationException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public TransformerConfigurationException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public TransformerConfigurationException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public TransformerConfigurationException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.xml.transform.TransformerConfigurationException";
         /// <inheritdoc/>

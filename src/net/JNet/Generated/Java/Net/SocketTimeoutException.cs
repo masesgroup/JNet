@@ -31,12 +31,12 @@ namespace Java.Net
     /// </summary>
     public partial class SocketTimeoutException : Java.Io.InterruptedIOException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public SocketTimeoutException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public SocketTimeoutException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public SocketTimeoutException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public SocketTimeoutException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.net.SocketTimeoutException";
         /// <inheritdoc/>

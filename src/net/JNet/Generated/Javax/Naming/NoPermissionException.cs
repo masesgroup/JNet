@@ -31,12 +31,12 @@ namespace Javax.Naming
     /// </summary>
     public partial class NoPermissionException : Javax.Naming.NamingSecurityException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public NoPermissionException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public NoPermissionException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public NoPermissionException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NoPermissionException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.naming.NoPermissionException";
         /// <inheritdoc/>

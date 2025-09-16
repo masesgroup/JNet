@@ -31,12 +31,12 @@ namespace Java.Lang.Annotation
     /// </summary>
     public partial class AnnotationFormatError : Java.Lang.Error
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public AnnotationFormatError() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public AnnotationFormatError(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public AnnotationFormatError(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public AnnotationFormatError(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.lang.annotation.AnnotationFormatError";
         /// <inheritdoc/>

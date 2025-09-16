@@ -31,12 +31,12 @@ namespace Java.Util
     /// </summary>
     public partial class InputMismatchException : Java.Util.NoSuchElementException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public InputMismatchException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public InputMismatchException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public InputMismatchException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InputMismatchException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.util.InputMismatchException";
         /// <inheritdoc/>

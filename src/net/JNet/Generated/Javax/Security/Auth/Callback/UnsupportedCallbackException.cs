@@ -31,12 +31,12 @@ namespace Javax.Security.Auth.Callback
     /// </summary>
     public partial class UnsupportedCallbackException : Java.Lang.Exception
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public UnsupportedCallbackException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public UnsupportedCallbackException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public UnsupportedCallbackException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnsupportedCallbackException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.security.auth.callback.UnsupportedCallbackException";
         /// <inheritdoc/>

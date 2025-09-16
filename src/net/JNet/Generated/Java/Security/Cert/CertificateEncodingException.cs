@@ -31,12 +31,12 @@ namespace Java.Security.Cert
     /// </summary>
     public partial class CertificateEncodingException : Java.Security.Cert.CertificateException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public CertificateEncodingException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public CertificateEncodingException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public CertificateEncodingException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public CertificateEncodingException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.security.cert.CertificateEncodingException";
         /// <inheritdoc/>

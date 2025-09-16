@@ -31,12 +31,12 @@ namespace Java.Security.Cert
     /// </summary>
     public partial class CertPathValidatorException : Java.Security.GeneralSecurityException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public CertPathValidatorException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public CertPathValidatorException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public CertPathValidatorException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public CertPathValidatorException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.security.cert.CertPathValidatorException";
         /// <inheritdoc/>

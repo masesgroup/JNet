@@ -31,12 +31,12 @@ namespace Java.Util
     /// </summary>
     public partial class IllegalFormatPrecisionException : Java.Util.IllegalFormatException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public IllegalFormatPrecisionException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public IllegalFormatPrecisionException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public IllegalFormatPrecisionException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public IllegalFormatPrecisionException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.util.IllegalFormatPrecisionException";
         /// <inheritdoc/>

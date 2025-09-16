@@ -31,12 +31,12 @@ namespace Javax.Annotation.Processing
     /// </summary>
     public partial class FilerException : Java.Io.IOException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public FilerException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public FilerException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public FilerException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public FilerException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.annotation.processing.FilerException";
         /// <inheritdoc/>

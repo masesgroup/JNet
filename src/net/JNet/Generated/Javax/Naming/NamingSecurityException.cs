@@ -31,12 +31,12 @@ namespace Javax.Naming
     /// </summary>
     public partial class NamingSecurityException : Javax.Naming.NamingException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public NamingSecurityException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public NamingSecurityException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public NamingSecurityException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NamingSecurityException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.naming.NamingSecurityException";
         /// <inheritdoc/>

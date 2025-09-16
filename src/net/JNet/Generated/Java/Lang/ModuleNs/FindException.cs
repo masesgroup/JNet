@@ -31,12 +31,12 @@ namespace Java.Lang.ModuleNs
     /// </summary>
     public partial class FindException : Java.Lang.RuntimeException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public FindException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public FindException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public FindException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public FindException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.lang.module.FindException";
         /// <inheritdoc/>

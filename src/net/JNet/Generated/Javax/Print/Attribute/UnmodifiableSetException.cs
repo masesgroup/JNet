@@ -31,12 +31,12 @@ namespace Javax.Print.Attribute
     /// </summary>
     public partial class UnmodifiableSetException : Java.Lang.RuntimeException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public UnmodifiableSetException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public UnmodifiableSetException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public UnmodifiableSetException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnmodifiableSetException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.print.attribute.UnmodifiableSetException";
         /// <inheritdoc/>

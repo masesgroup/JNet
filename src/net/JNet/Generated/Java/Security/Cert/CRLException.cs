@@ -31,12 +31,12 @@ namespace Java.Security.Cert
     /// </summary>
     public partial class CRLException : Java.Security.GeneralSecurityException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public CRLException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public CRLException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public CRLException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public CRLException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.security.cert.CRLException";
         /// <inheritdoc/>

@@ -31,12 +31,12 @@ namespace Java.Net.Http
     /// </summary>
     public partial class HttpTimeoutException : Java.Io.IOException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public HttpTimeoutException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public HttpTimeoutException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public HttpTimeoutException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public HttpTimeoutException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.net.http.HttpTimeoutException";
         /// <inheritdoc/>

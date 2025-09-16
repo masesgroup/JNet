@@ -31,12 +31,12 @@ namespace Javax.Management.Monitor
     /// </summary>
     public partial class MonitorSettingException : Javax.Management.JMRuntimeException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public MonitorSettingException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public MonitorSettingException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public MonitorSettingException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public MonitorSettingException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.management.monitor.MonitorSettingException";
         /// <inheritdoc/>

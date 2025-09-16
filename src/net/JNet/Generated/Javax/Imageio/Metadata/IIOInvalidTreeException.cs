@@ -31,12 +31,12 @@ namespace Javax.Imageio.Metadata
     /// </summary>
     public partial class IIOInvalidTreeException : Javax.Imageio.IIOException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public IIOInvalidTreeException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public IIOInvalidTreeException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public IIOInvalidTreeException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public IIOInvalidTreeException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.imageio.metadata.IIOInvalidTreeException";
         /// <inheritdoc/>

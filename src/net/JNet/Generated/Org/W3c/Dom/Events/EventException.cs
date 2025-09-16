@@ -31,12 +31,12 @@ namespace Org.W3c.Dom.Events
     /// </summary>
     public partial class EventException : Java.Lang.RuntimeException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public EventException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public EventException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public EventException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public EventException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "org.w3c.dom.events.EventException";
         /// <inheritdoc/>

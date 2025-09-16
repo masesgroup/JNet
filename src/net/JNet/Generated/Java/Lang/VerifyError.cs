@@ -31,12 +31,12 @@ namespace Java.Lang
     /// </summary>
     public partial class VerifyError : Java.Lang.LinkageError
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public VerifyError() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public VerifyError(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public VerifyError(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public VerifyError(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.lang.VerifyError";
         /// <inheritdoc/>

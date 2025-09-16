@@ -31,12 +31,12 @@ namespace Java.Util.Concurrent
     /// </summary>
     public partial class CancellationException : Java.Lang.IllegalStateException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public CancellationException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public CancellationException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public CancellationException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public CancellationException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.util.concurrent.CancellationException";
         /// <inheritdoc/>

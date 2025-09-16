@@ -31,12 +31,12 @@ namespace Java.Util
     /// </summary>
     public partial class MissingFormatWidthException : Java.Util.IllegalFormatException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public MissingFormatWidthException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public MissingFormatWidthException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public MissingFormatWidthException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public MissingFormatWidthException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "java.util.MissingFormatWidthException";
         /// <inheritdoc/>

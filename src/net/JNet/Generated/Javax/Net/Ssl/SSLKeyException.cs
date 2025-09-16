@@ -31,12 +31,12 @@ namespace Javax.Net.Ssl
     /// </summary>
     public partial class SSLKeyException : Javax.Net.Ssl.SSLException
     {
-        /// <inheritdoc cref="Exception()"/>
+        /// <inheritdoc cref="global::System.Exception()"/>
         public SSLKeyException() { }
-        /// <inheritdoc cref="Exception(string)"/>
+        /// <inheritdoc cref="global::System.Exception(string)"/>
         public SSLKeyException(string message) : base(message) { }
-        /// <inheritdoc cref="Exception(string, Exception)"/>
-        public SSLKeyException(string message, Exception innerException) : base(message, innerException) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public SSLKeyException(string message, global::System.Exception innerException) : base(message, innerException) { }
 
         const string _bridgeClassName = "javax.net.ssl.SSLKeyException";
         /// <inheritdoc/>
