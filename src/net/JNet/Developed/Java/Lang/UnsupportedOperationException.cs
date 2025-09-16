@@ -25,6 +25,12 @@ namespace Java.Lang
     /// </summary>
     public class UnsupportedOperationException : RuntimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public UnsupportedOperationException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public UnsupportedOperationException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnsupportedOperationException(string message, global::System.Exception innerException) : base(message, innerException) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.UnsupportedOperationException";
     }

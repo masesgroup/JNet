@@ -25,6 +25,12 @@ namespace Java.Lang
     /// </summary>
     public class ReflectiveOperationException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ReflectiveOperationException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ReflectiveOperationException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ReflectiveOperationException(string message, global::System.Exception innerException) : base(message, innerException) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.ReflectiveOperationException";
     }

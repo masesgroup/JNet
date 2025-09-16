@@ -25,6 +25,12 @@ namespace Java.Lang
     /// </summary>
     public class ClassFormatError : LinkageError
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ClassFormatError() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ClassFormatError(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ClassFormatError(string message, global::System.Exception innerException) : base(message, innerException) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.ClassFormatError";
     }
