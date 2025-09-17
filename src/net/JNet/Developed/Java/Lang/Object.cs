@@ -29,7 +29,7 @@ namespace Java.Lang
         /// <inheritdoc/>
         public Object() { }
         /// <inheritdoc/>
-        public Object(IJVMBridgeCore parent) : base(parent) { }
+        public Object(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.Object";
     }

@@ -40,7 +40,7 @@ namespace Java.Lang
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public Runtime(IJVMBridgeCore parent) : base(parent) { }
+        public Runtime(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
@@ -77,7 +77,7 @@ namespace Java.Lang
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Version(IJVMBridgeCore parent) : base(parent) { }
+            public Version(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>

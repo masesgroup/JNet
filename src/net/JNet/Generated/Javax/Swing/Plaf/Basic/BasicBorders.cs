@@ -40,7 +40,7 @@ namespace Javax.Swing.Plaf.Basic
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public BasicBorders(IJVMBridgeCore parent) : base(parent) { }
+        public BasicBorders(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
@@ -77,7 +77,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public ButtonBorder(IJVMBridgeCore parent) : base(parent) { }
+            public ButtonBorder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -118,7 +118,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public FieldBorder(IJVMBridgeCore parent) : base(parent) { }
+            public FieldBorder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -159,7 +159,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public MarginBorder(IJVMBridgeCore parent) : base(parent) { }
+            public MarginBorder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -200,7 +200,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public MenuBarBorder(IJVMBridgeCore parent) : base(parent) { }
+            public MenuBarBorder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -241,7 +241,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public RadioButtonBorder(IJVMBridgeCore parent) : base(parent) { }
+            public RadioButtonBorder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -282,7 +282,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public RolloverButtonBorder(IJVMBridgeCore parent) : base(parent) { }
+            public RolloverButtonBorder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -323,7 +323,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public SplitPaneBorder(IJVMBridgeCore parent) : base(parent) { }
+            public SplitPaneBorder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -364,7 +364,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public ToggleButtonBorder(IJVMBridgeCore parent) : base(parent) { }
+            public ToggleButtonBorder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>

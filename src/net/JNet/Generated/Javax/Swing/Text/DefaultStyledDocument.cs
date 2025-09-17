@@ -40,7 +40,7 @@ namespace Javax.Swing.Text
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public DefaultStyledDocument(IJVMBridgeCore parent) : base(parent) { }
+        public DefaultStyledDocument(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
@@ -77,7 +77,7 @@ namespace Javax.Swing.Text
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public AttributeUndoableEdit(IJVMBridgeCore parent) : base(parent) { }
+            public AttributeUndoableEdit(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -118,7 +118,7 @@ namespace Javax.Swing.Text
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public ElementBuffer(IJVMBridgeCore parent) : base(parent) { }
+            public ElementBuffer(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -159,7 +159,7 @@ namespace Javax.Swing.Text
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public ElementSpec(IJVMBridgeCore parent) : base(parent) { }
+            public ElementSpec(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>

@@ -34,7 +34,7 @@ namespace MASES.JNet.Specific
         /// <inheritdoc/>
         public JNetHelper() { }
         /// <inheritdoc/>
-        public JNetHelper(IJVMBridgeCore parent) : base(parent) { }
+        public JNetHelper(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
 
         private static readonly global::System.Exception _LocalBridgeClazzException = null;
         private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);

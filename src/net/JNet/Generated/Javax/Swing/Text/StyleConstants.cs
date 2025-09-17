@@ -40,7 +40,7 @@ namespace Javax.Swing.Text
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public StyleConstants(IJVMBridgeCore parent) : base(parent) { }
+        public StyleConstants(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
@@ -77,7 +77,7 @@ namespace Javax.Swing.Text
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public CharacterConstants(IJVMBridgeCore parent) : base(parent) { }
+            public CharacterConstants(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -118,7 +118,7 @@ namespace Javax.Swing.Text
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public ColorConstants(IJVMBridgeCore parent) : base(parent) { }
+            public ColorConstants(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -159,7 +159,7 @@ namespace Javax.Swing.Text
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public FontConstants(IJVMBridgeCore parent) : base(parent) { }
+            public FontConstants(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -200,7 +200,7 @@ namespace Javax.Swing.Text
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public ParagraphConstants(IJVMBridgeCore parent) : base(parent) { }
+            public ParagraphConstants(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>

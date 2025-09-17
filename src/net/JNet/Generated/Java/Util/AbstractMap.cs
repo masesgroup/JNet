@@ -41,7 +41,7 @@ namespace Java.Util
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public AbstractMap(IJVMBridgeCore parent) : base(parent) { }
+        public AbstractMap(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
@@ -79,7 +79,7 @@ namespace Java.Util
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public SimpleEntry(IJVMBridgeCore parent) : base(parent) { }
+            public SimpleEntry(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -122,7 +122,7 @@ namespace Java.Util
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public SimpleEntry(IJVMBridgeCore parent) : base(parent) { }
+            public SimpleEntry(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -163,7 +163,7 @@ namespace Java.Util
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public SimpleImmutableEntry(IJVMBridgeCore parent) : base(parent) { }
+            public SimpleImmutableEntry(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -206,7 +206,7 @@ namespace Java.Util
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public SimpleImmutableEntry(IJVMBridgeCore parent) : base(parent) { }
+            public SimpleImmutableEntry(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -254,7 +254,7 @@ namespace Java.Util
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public AbstractMap(IJVMBridgeCore parent) : base(parent) { }
+        public AbstractMap(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>

@@ -29,7 +29,7 @@ namespace Java.Lang
         /// <inheritdoc/>
         public SecurityManager() { }
         /// <inheritdoc/>
-        public SecurityManager(IJVMBridgeCore parent) : base(parent) { }
+        public SecurityManager(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.SecurityManager";
     }

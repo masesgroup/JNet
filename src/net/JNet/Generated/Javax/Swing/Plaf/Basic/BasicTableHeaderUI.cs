@@ -40,7 +40,7 @@ namespace Javax.Swing.Plaf.Basic
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public BasicTableHeaderUI(IJVMBridgeCore parent) : base(parent) { }
+        public BasicTableHeaderUI(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
@@ -77,7 +77,7 @@ namespace Javax.Swing.Plaf.Basic
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public MouseInputHandler(IJVMBridgeCore parent) : base(parent) { }
+            public MouseInputHandler(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>

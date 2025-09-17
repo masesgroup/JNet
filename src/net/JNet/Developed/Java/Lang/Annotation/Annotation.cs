@@ -29,7 +29,7 @@ namespace Java.Lang.Annotation
         /// <inheritdoc/>
         public Annotation() { }
         /// <inheritdoc/>
-        public Annotation(IJVMBridgeCore parent) : base(parent) { }
+        public Annotation(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.annotation.Annotation";
         /// <summary>

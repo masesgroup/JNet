@@ -36,7 +36,7 @@ namespace Java.Lang
         /// </summary>
         public ClassLoader() { }
         /// <inheritdoc/>
-        public ClassLoader(IJVMBridgeCore parent) : base(parent) { }
+        public ClassLoader(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>

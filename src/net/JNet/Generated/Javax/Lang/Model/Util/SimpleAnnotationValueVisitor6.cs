@@ -40,7 +40,7 @@ namespace Javax.Lang.Model.Util
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public SimpleAnnotationValueVisitor6(IJVMBridgeCore parent) : base(parent) { }
+        public SimpleAnnotationValueVisitor6(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
@@ -83,7 +83,7 @@ namespace Javax.Lang.Model.Util
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public SimpleAnnotationValueVisitor6(IJVMBridgeCore parent) : base(parent) { }
+        public SimpleAnnotationValueVisitor6(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>

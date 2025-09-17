@@ -40,7 +40,7 @@ namespace Java.Lang.ModuleNs
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public ModuleDescriptor(IJVMBridgeCore parent) : base(parent) { }
+        public ModuleDescriptor(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
@@ -77,7 +77,7 @@ namespace Java.Lang.ModuleNs
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Builder(IJVMBridgeCore parent) : base(parent) { }
+            public Builder(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -118,7 +118,7 @@ namespace Java.Lang.ModuleNs
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Exports(IJVMBridgeCore parent) : base(parent) { }
+            public Exports(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -155,7 +155,7 @@ namespace Java.Lang.ModuleNs
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public Modifier(IJVMBridgeCore parent) : base(parent) { }
+                public Modifier(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
@@ -200,7 +200,7 @@ namespace Java.Lang.ModuleNs
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Modifier(IJVMBridgeCore parent) : base(parent) { }
+            public Modifier(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -241,7 +241,7 @@ namespace Java.Lang.ModuleNs
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Opens(IJVMBridgeCore parent) : base(parent) { }
+            public Opens(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -278,7 +278,7 @@ namespace Java.Lang.ModuleNs
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public Modifier(IJVMBridgeCore parent) : base(parent) { }
+                public Modifier(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
@@ -323,7 +323,7 @@ namespace Java.Lang.ModuleNs
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Provides(IJVMBridgeCore parent) : base(parent) { }
+            public Provides(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -364,7 +364,7 @@ namespace Java.Lang.ModuleNs
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Requires(IJVMBridgeCore parent) : base(parent) { }
+            public Requires(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -401,7 +401,7 @@ namespace Java.Lang.ModuleNs
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public Modifier(IJVMBridgeCore parent) : base(parent) { }
+                public Modifier(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
@@ -446,7 +446,7 @@ namespace Java.Lang.ModuleNs
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Version(IJVMBridgeCore parent) : base(parent) { }
+            public Version(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>

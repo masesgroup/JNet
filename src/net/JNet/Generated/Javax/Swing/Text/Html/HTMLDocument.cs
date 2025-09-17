@@ -40,7 +40,7 @@ namespace Javax.Swing.Text.Html
         /// Internal constructor: used internally from JCOBridge
         /// </summary>
         [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public HTMLDocument(IJVMBridgeCore parent) : base(parent) { }
+        public HTMLDocument(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
@@ -77,7 +77,7 @@ namespace Javax.Swing.Text.Html
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public BlockElement(IJVMBridgeCore parent) : base(parent) { }
+            public BlockElement(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -118,7 +118,7 @@ namespace Javax.Swing.Text.Html
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public HTMLReader(IJVMBridgeCore parent) : base(parent) { }
+            public HTMLReader(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -155,7 +155,7 @@ namespace Javax.Swing.Text.Html
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public FormAction(IJVMBridgeCore parent) : base(parent) { }
+                public FormAction(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
@@ -196,7 +196,7 @@ namespace Javax.Swing.Text.Html
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public CharacterAction(IJVMBridgeCore parent) : base(parent) { }
+                public CharacterAction(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
@@ -237,7 +237,7 @@ namespace Javax.Swing.Text.Html
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public PreAction(IJVMBridgeCore parent) : base(parent) { }
+                public PreAction(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
@@ -278,7 +278,7 @@ namespace Javax.Swing.Text.Html
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public HiddenAction(IJVMBridgeCore parent) : base(parent) { }
+                public HiddenAction(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
@@ -319,7 +319,7 @@ namespace Javax.Swing.Text.Html
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public IsindexAction(IJVMBridgeCore parent) : base(parent) { }
+                public IsindexAction(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
@@ -360,7 +360,7 @@ namespace Javax.Swing.Text.Html
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public SpecialAction(IJVMBridgeCore parent) : base(parent) { }
+                public SpecialAction(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
@@ -401,7 +401,7 @@ namespace Javax.Swing.Text.Html
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public ParagraphAction(IJVMBridgeCore parent) : base(parent) { }
+                public ParagraphAction(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
@@ -442,7 +442,7 @@ namespace Javax.Swing.Text.Html
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public BlockAction(IJVMBridgeCore parent) : base(parent) { }
+                public BlockAction(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
@@ -483,7 +483,7 @@ namespace Javax.Swing.Text.Html
                 /// Internal constructor: used internally from JCOBridge
                 /// </summary>
                 [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public TagAction(IJVMBridgeCore parent) : base(parent) { }
+                public TagAction(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
                 /// <summary>
                 /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
                 /// </summary>
@@ -529,7 +529,7 @@ namespace Javax.Swing.Text.Html
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public Iterator(IJVMBridgeCore parent) : base(parent) { }
+            public Iterator(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
@@ -571,7 +571,7 @@ namespace Javax.Swing.Text.Html
             /// Internal constructor: used internally from JCOBridge
             /// </summary>
             [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public RunElement(IJVMBridgeCore parent) : base(parent) { }
+            public RunElement(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>

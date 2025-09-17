@@ -29,7 +29,7 @@ namespace Java.Lang.Reflect
         /// <inheritdoc/>
         public Executable() { }
         /// <inheritdoc/>
-        public Executable(IJVMBridgeCore parent) : base(parent) { }
+        public Executable(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.Executable";
         /// <summary>

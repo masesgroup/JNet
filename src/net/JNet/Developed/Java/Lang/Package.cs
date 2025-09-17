@@ -29,7 +29,7 @@ namespace Java.Lang
         /// <inheritdoc/>
         public Package() { }
         /// <inheritdoc/>
-        public Package(IJVMBridgeCore parent) : base(parent) { }
+        public Package(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.Package";
         /// <summary>

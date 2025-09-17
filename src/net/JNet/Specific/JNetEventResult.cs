@@ -30,7 +30,7 @@ namespace MASES.JNet.Specific
         /// <inheritdoc/>
         public JNetEventResult() { }
         /// <inheritdoc/>
-        public JNetEventResult(IJVMBridgeCore parent) : base(parent) { }
+        public JNetEventResult(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
 
         const string _bridgeClassName = "org.mases.jnet.developed.JNetEventResult";
 
