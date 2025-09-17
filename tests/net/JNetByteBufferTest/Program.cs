@@ -90,8 +90,8 @@ namespace MASES.JNetByteBufferTest
                     bytes[i] = (byte)(i % byte.MaxValue);
                 }
 
-                var bbCast = Java.Nio.ByteBuffer.From(bytes, false, false);
-                var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
+                using var bbCast = Java.Nio.ByteBuffer.From(bytes, false, false);
+                using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
