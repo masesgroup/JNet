@@ -1,4 +1,4 @@
-﻿/*
+/*
 *  Copyright 2025 MASES s.r.l.
 *
 *  Licensed under the Apache License, Version 2.0 (the "License");
@@ -90,8 +90,8 @@ namespace MASES.JNetByteBufferTest
                     bytes[i] = (byte)(i % byte.MaxValue);
                 }
 
-                using var bbCast = Java.Nio.ByteBuffer.From(bytes, false, false);
-                using var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
+                var bbCast = Java.Nio.ByteBuffer.From(bytes, false, false);
+                var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestArrayAndByteBuffer") as IJavaObject;
 
                 System.GC.Collect();
                 Java.Lang.System.Gc();
