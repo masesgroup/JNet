@@ -122,7 +122,7 @@ namespace Java.Awt.ImageNs
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/BufferStrategy.html#dispose()"/>
         /// </summary>
-        public new void Dispose()
+        public void DisposeJVM()
         {
             IExecuteWithSignature("dispose", "()V");
         }

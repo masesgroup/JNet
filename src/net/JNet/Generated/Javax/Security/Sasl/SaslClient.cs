@@ -118,7 +118,7 @@ namespace Javax.Security.Sasl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#dispose()"/>
         /// </summary>
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
-        void Dispose();
+        void DisposeJVM();
 
         #endregion
 
@@ -220,7 +220,7 @@ namespace Javax.Security.Sasl
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.security.sasl/javax/security/sasl/SaslClient.html#dispose()"/>
         /// </summary>
         /// <exception cref="Javax.Security.Sasl.SaslException"/>
-        public new void Dispose()
+        public void DisposeJVM()
         {
             IExecuteWithSignature("dispose", "()V");
         }
