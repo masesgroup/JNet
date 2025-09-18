@@ -72,22 +72,33 @@ namespace MASES.JNetTest
 
                 TestOperators();
 
-                TestIterator();
+                TestIterator(false, false);
+
+                TestIterator(true, true);
+
+                TestIterator(true, false);
 
                 TestAsyncIterator().Wait();
-
-                TestAsyncOperation(false).Wait();
-
-                try
+#if DEBUG
+                const int asyncOperations = 100;
+#else
+                const int asyncOperations = 5;
+#endif
+                for (int i = 0; i < asyncOperations; i++)
                 {
-                    TestAsyncOperation(true).Wait();
-                }
-                catch (System.AggregateException ae)
-                {
-                    if (ae.InnerException is not UnsupportedOperationException)
+                    TestAsyncOperation(i, false).Wait();
+
+                    try
                     {
-                        System.Console.WriteLine($"Not expected exception: {ae.InnerException.GetType()}");
-                        throw;
+                        TestAsyncOperation(i, true).Wait();
+                    }
+                    catch (System.AggregateException ae)
+                    {
+                        if (ae.InnerException is not UnsupportedOperationException)
+                        {
+                            System.Console.WriteLine($"Not expected exception: {ae.InnerException.GetType()}");
+                            throw;
+                        }
                     }
                 }
             }
@@ -108,7 +119,7 @@ namespace MASES.JNetTest
                 JNetTestCore.CreateGlobalInstance();
                 var appArgs = JNetTestCore.FilteredArgs;
 
-                System.Console.WriteLine($"Initialized JNetTestCore, remaining arguments are {string.Join(" ", appArgs)}");
+                System.Console.WriteLine("Initialized JNetTestCore" + (appArgs.Length != 0 ? $", remaining arguments are {string.Join(" ", appArgs)}" : string.Empty));
             }
             catch (Exception ex)
             {
@@ -155,7 +166,7 @@ namespace MASES.JNetTest
             {
                 if (type != ElementType.ANNOTATION_TYPE)
                 {
-                   throw new System.InvalidOperationException($"Failed to compare with \"==\": {type} with {ElementType.ANNOTATION_TYPE}");
+                    throw new System.InvalidOperationException($"Failed to compare with \"==\": {type} with {ElementType.ANNOTATION_TYPE}");
                 }
             }
             else
@@ -426,9 +437,9 @@ namespace MASES.JNetTest
             }
         }
 
-        static async Task TestAsyncOperation(bool withEx)
+        static async Task TestAsyncOperation(int index, bool withEx)
         {
-            System.Console.WriteLine("TestAsyncOperation");
+            System.Console.WriteLine($"TestAsyncOperation {index} withEx {withEx}");
 
             var clazz = JVMBridgeBase.ClazzOf<TestFuture>();
 
@@ -442,9 +453,9 @@ namespace MASES.JNetTest
             }
         }
 
-        static void TestIterator()
+        static void TestIterator(bool usePrefetch, bool useThread)
         {
-            System.Console.WriteLine("TestIterator");
+            System.Console.WriteLine($"TestIterator with useThread {useThread} - usePrefetch {usePrefetch}");
 
             const int execution = 100;
             Stopwatch w = Stopwatch.StartNew();
@@ -455,11 +466,14 @@ namespace MASES.JNetTest
             }
             w.Stop();
 
-            foreach (var item in (alist).WithPrefetch())
+            for (int iteration = 0; iteration < 10; iteration++)
             {
-                if (!int.TryParse(item, out int i))
+                foreach (var item in (alist).WithPrefetch(usePrefetch).WithThread(useThread))
                 {
-                    throw new System.InvalidOperationException($"Failed to parse: {item}");
+                    if (!int.TryParse(item, out int i))
+                    {
+                        throw new System.InvalidOperationException($"Failed to parse: {item}");
+                    }
                 }
             }
         }
@@ -504,7 +518,7 @@ namespace MASES.JNetTest
                 alist = new Java.Util.ArrayList<int>(tmpJList);
                 w.Stop();
                 System.Console.WriteLine($"Java.Util.ArrayList from array Elapsed ticks: {w.ElapsedTicks}");
-                
+
                 var intBuffer = IntBuffer.From(tmpArray, false, false);
 
                 w.Restart();
@@ -512,7 +526,7 @@ namespace MASES.JNetTest
                 alist = new Java.Util.ArrayList<int>(tmpJList);
                 w.Stop();
                 System.Console.WriteLine($"Java.Util.ArrayList from array premade buffer Elapsed ticks: {w.ElapsedTicks}");
-                
+
                 w.Restart();
                 tmpJList = JNetHelper.ListFrom(tmpArray, true);
                 alist = new Java.Util.ArrayList<int>(tmpJList);
