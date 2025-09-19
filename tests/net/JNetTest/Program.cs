@@ -45,11 +45,10 @@ namespace MASES.JNetTest
                 System.Console.ReadKey();
             }
 #endif
-            PreVerifyPureCode();
 
             Initialize();
-
-            try
+			Stopwatch stopwatch = Stopwatch.StartNew();
+			try
             {
                 TestCreateObjects();
 
@@ -108,6 +107,11 @@ namespace MASES.JNetTest
                 System.Console.WriteLine(e);
                 System.Environment.ExitCode = 1;
             }
+            finally
+            {
+				stopwatch.Stop();
+				System.Console.WriteLine($"All tests completed in {stopwatch.Elapsed}");
+			}
         }
 
         static void Initialize()
@@ -476,30 +480,6 @@ namespace MASES.JNetTest
                         throw new System.InvalidOperationException($"Failed to parse: {item}");
                     }
                 }
-            }
-        }
-
-        static void PreVerifyPureCode()
-        {
-            System.Console.WriteLine("PreVerifyPureCode to compare .NET speed");
-
-            const int execution = 10000;
-
-            for (int index = 0; index < 10; index++)
-            {
-                Stopwatch w = Stopwatch.StartNew();
-                System.Collections.Generic.List<int> nlist = new System.Collections.Generic.List<int>();
-                for (int i = 0; i < execution; i++)
-                {
-                    nlist.Add(i);
-                }
-                w.Stop();
-                System.Console.WriteLine($"System.Collections.Generic.List Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks}");
-
-                w.Restart();
-                var tmpArray = nlist.ToArray();
-                w.Stop();
-                System.Console.WriteLine($"System.Collections.Generic.List ToArray Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks}");
             }
         }
 
