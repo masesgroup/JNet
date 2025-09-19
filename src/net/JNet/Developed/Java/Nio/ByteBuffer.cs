@@ -181,18 +181,5 @@ namespace Java.Nio
         }
 
         #endregion
-
-        #region IDisposable
-        /// <inheritdoc/>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                ToDirectBuffer().Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #endregion
     }
 }
