@@ -45,6 +45,7 @@ namespace MASES.JNetTest
                 System.Console.ReadKey();
             }
 #endif
+            PreVerifyPureCode();
 
             Initialize();
 
@@ -478,6 +479,30 @@ namespace MASES.JNetTest
             }
         }
 
+        static void PreVerifyPureCode()
+        {
+            System.Console.WriteLine("PreVerifyPureCode to compare .NET speed");
+
+            const int execution = 10000;
+
+            for (int index = 0; index < 10; index++)
+            {
+                Stopwatch w = Stopwatch.StartNew();
+                System.Collections.Generic.List<int> nlist = new System.Collections.Generic.List<int>();
+                for (int i = 0; i < execution; i++)
+                {
+                    nlist.Add(i);
+                }
+                w.Stop();
+                System.Console.WriteLine($"System.Collections.Generic.List Elapsed ticks: {w.ElapsedTicks}");
+
+                w.Restart();
+                var tmpArray = nlist.ToArray();
+                w.Stop();
+                System.Console.WriteLine($"System.Collections.Generic.List ToArray Elapsed ticks: {w.ElapsedTicks}");
+            }
+        }
+
         static void TestExtensions()
         {
             System.Console.WriteLine("TestExtensions");
@@ -509,7 +534,8 @@ namespace MASES.JNetTest
                     nlist.Add(i);
                 }
                 w.Stop();
-                System.Console.WriteLine($"System.Collections.Generic.List Elapsed ticks: {w.ElapsedTicks}");
+                var referenceValue = w.ElapsedTicks;
+                System.Console.WriteLine($"System.Collections.Generic.List Elapsed ticks: {referenceValue}");
 
                 var tmpArray = nlist.ToArray();
 
@@ -517,7 +543,7 @@ namespace MASES.JNetTest
                 var tmpJList = JNetHelper.ListFrom(tmpArray);
                 alist = new Java.Util.ArrayList<int>(tmpJList);
                 w.Stop();
-                System.Console.WriteLine($"Java.Util.ArrayList from array Elapsed ticks: {w.ElapsedTicks}");
+                System.Console.WriteLine($"Java.Util.ArrayList from array Elapsed ticks: {w.ElapsedTicks} ({100 * w.ElapsedTicks / referenceValue}%)");
 
                 var intBuffer = IntBuffer.From(tmpArray, false, false);
 
@@ -525,13 +551,13 @@ namespace MASES.JNetTest
                 tmpJList = JNetHelper.ListFrom(intBuffer);
                 alist = new Java.Util.ArrayList<int>(tmpJList);
                 w.Stop();
-                System.Console.WriteLine($"Java.Util.ArrayList from array premade buffer Elapsed ticks: {w.ElapsedTicks}");
+                System.Console.WriteLine($"Java.Util.ArrayList from array premade buffer Elapsed ticks: {w.ElapsedTicks} ({100 * w.ElapsedTicks / referenceValue}%)");
 
                 w.Restart();
                 tmpJList = JNetHelper.ListFrom(tmpArray, true);
                 alist = new Java.Util.ArrayList<int>(tmpJList);
                 w.Stop();
-                System.Console.WriteLine($"Java.Util.ArrayList from array buffered Elapsed ticks: {w.ElapsedTicks}");
+                System.Console.WriteLine($"Java.Util.ArrayList from array buffered Elapsed ticks: {w.ElapsedTicks} ({100 * w.ElapsedTicks / referenceValue}%)");
                 //var collection = newDict.Values.ToJCollection();
                 //var intermediate = collection.ToList<Map.Entry<string, string>>();
                 var list = ((List<int>)alist).ToList();
