@@ -31,6 +31,13 @@ namespace Java.Text
     /// </summary>
     public partial class ParseException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ParseException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ParseException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ParseException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.text.ParseException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

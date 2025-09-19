@@ -31,6 +31,13 @@ namespace Java.Security
     /// </summary>
     public partial class KeyException : Java.Security.GeneralSecurityException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public KeyException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public KeyException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public KeyException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.KeyException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

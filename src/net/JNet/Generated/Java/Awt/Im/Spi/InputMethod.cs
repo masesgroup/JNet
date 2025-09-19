@@ -38,13 +38,19 @@ namespace Java.Awt.Im.Spi
         [global::System.Obsolete("InputMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public InputMethod() { }
         /// <summary>
+        /// Internal constructor: used internally from JCOBridge
+        /// </summary>
+        [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public InputMethod(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+        /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
         [global::System.Obsolete("InputMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public InputMethod(params object[] args) : base(args) { }
 
-        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, false);
-        private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        private static readonly global::System.Exception _LocalBridgeClazzException = null;
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
@@ -105,7 +111,7 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#dispose()"/>
         /// </summary>
-        void Dispose();
+        void DisposeJVM();
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#endComposition()"/>
         /// </summary>
@@ -230,7 +236,7 @@ namespace Java.Awt.Im.Spi
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/im/spi/InputMethod.html#dispose()"/>
         /// </summary>
-        public new void Dispose()
+        public void DisposeJVM()
         {
             IExecuteWithSignature("dispose", "()V");
         }

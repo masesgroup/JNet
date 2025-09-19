@@ -31,6 +31,13 @@ namespace Java.Net
     /// </summary>
     public partial class NoRouteToHostException : Java.Net.SocketException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public NoRouteToHostException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public NoRouteToHostException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NoRouteToHostException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.net.NoRouteToHostException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

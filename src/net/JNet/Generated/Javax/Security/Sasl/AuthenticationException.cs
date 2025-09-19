@@ -31,6 +31,13 @@ namespace Javax.Security.Sasl
     /// </summary>
     public partial class AuthenticationException : Javax.Security.Sasl.SaslException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public AuthenticationException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public AuthenticationException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public AuthenticationException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.security.sasl.AuthenticationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

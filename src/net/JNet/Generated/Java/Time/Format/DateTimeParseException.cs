@@ -31,6 +31,13 @@ namespace Java.Time.Format
     /// </summary>
     public partial class DateTimeParseException : Java.Time.DateTimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public DateTimeParseException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public DateTimeParseException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public DateTimeParseException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.time.format.DateTimeParseException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

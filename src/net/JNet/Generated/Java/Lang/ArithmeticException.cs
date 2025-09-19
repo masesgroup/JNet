@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class ArithmeticException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ArithmeticException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ArithmeticException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ArithmeticException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.ArithmeticException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

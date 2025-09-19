@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class IllegalChannelGroupException : Java.Lang.IllegalArgumentException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public IllegalChannelGroupException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public IllegalChannelGroupException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public IllegalChannelGroupException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.IllegalChannelGroupException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

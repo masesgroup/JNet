@@ -31,6 +31,13 @@ namespace Javax.Naming.Directory
     /// </summary>
     public partial class InvalidSearchControlsException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public InvalidSearchControlsException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public InvalidSearchControlsException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InvalidSearchControlsException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.directory.InvalidSearchControlsException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

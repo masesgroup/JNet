@@ -31,6 +31,13 @@ namespace Javax.Sound.Sampled
     /// </summary>
     public partial class LineUnavailableException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public LineUnavailableException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public LineUnavailableException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public LineUnavailableException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.sound.sampled.LineUnavailableException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

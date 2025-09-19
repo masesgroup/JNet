@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class LinkException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public LinkException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public LinkException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public LinkException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.LinkException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

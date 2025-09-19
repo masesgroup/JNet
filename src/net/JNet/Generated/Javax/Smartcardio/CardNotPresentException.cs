@@ -31,6 +31,13 @@ namespace Javax.Smartcardio
     /// </summary>
     public partial class CardNotPresentException : Javax.Smartcardio.CardException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public CardNotPresentException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public CardNotPresentException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public CardNotPresentException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.smartcardio.CardNotPresentException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

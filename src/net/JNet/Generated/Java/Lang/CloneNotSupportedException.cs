@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class CloneNotSupportedException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public CloneNotSupportedException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public CloneNotSupportedException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public CloneNotSupportedException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.CloneNotSupportedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

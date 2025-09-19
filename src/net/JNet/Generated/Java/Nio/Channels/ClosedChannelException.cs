@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class ClosedChannelException : Java.Io.IOException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ClosedChannelException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ClosedChannelException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ClosedChannelException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.ClosedChannelException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Javax.Print
     /// </summary>
     public partial class PrintException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public PrintException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public PrintException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public PrintException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.print.PrintException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

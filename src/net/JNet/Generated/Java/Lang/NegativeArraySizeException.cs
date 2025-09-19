@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class NegativeArraySizeException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public NegativeArraySizeException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public NegativeArraySizeException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NegativeArraySizeException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.NegativeArraySizeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

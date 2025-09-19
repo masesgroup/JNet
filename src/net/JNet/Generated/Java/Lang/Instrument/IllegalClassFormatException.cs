@@ -31,6 +31,13 @@ namespace Java.Lang.Instrument
     /// </summary>
     public partial class IllegalClassFormatException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public IllegalClassFormatException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public IllegalClassFormatException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public IllegalClassFormatException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.instrument.IllegalClassFormatException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Net
     /// </summary>
     public partial class SocketException : Java.Io.IOException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public SocketException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public SocketException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public SocketException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.net.SocketException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

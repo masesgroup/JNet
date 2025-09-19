@@ -31,6 +31,13 @@ namespace Javax.Naming.Ldap
     /// </summary>
     public partial class LdapReferralException : Javax.Naming.ReferralException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public LdapReferralException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public LdapReferralException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public LdapReferralException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.ldap.LdapReferralException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Rmi.Activation
     /// </summary>
     public partial class ActivationException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ActivationException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ActivationException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ActivationException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.activation.ActivationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

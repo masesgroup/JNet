@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class NotYetConnectedException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public NotYetConnectedException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public NotYetConnectedException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NotYetConnectedException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.NotYetConnectedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

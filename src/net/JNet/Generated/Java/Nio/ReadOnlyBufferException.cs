@@ -31,6 +31,13 @@ namespace Java.Nio
     /// </summary>
     public partial class ReadOnlyBufferException : Java.Lang.UnsupportedOperationException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ReadOnlyBufferException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ReadOnlyBufferException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ReadOnlyBufferException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.ReadOnlyBufferException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

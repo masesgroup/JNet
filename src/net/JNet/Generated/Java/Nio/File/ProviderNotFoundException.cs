@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class ProviderNotFoundException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ProviderNotFoundException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ProviderNotFoundException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ProviderNotFoundException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.ProviderNotFoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

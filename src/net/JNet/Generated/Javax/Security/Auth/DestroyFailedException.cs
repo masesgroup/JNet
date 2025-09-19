@@ -31,6 +31,13 @@ namespace Javax.Security.Auth
     /// </summary>
     public partial class DestroyFailedException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public DestroyFailedException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public DestroyFailedException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public DestroyFailedException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.security.auth.DestroyFailedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

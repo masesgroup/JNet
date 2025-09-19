@@ -31,6 +31,13 @@ namespace Java.Nio.Charset
     /// </summary>
     public partial class UnsupportedCharsetException : Java.Lang.IllegalArgumentException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public UnsupportedCharsetException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public UnsupportedCharsetException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnsupportedCharsetException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.charset.UnsupportedCharsetException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

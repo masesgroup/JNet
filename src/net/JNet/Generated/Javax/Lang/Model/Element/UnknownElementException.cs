@@ -31,6 +31,13 @@ namespace Javax.Lang.Model.Element
     /// </summary>
     public partial class UnknownElementException : Javax.Lang.Model.UnknownEntityException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public UnknownElementException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public UnknownElementException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnknownElementException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.lang.model.element.UnknownElementException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Rmi
     /// </summary>
     public partial class UnknownHostException : Java.Rmi.RemoteException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public UnknownHostException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public UnknownHostException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnknownHostException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.UnknownHostException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

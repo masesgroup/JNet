@@ -31,6 +31,13 @@ namespace Javax.Crypto
     /// </summary>
     public partial class ShortBufferException : Java.Security.GeneralSecurityException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ShortBufferException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ShortBufferException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ShortBufferException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.crypto.ShortBufferException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

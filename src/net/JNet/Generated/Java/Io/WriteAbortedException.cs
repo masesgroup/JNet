@@ -31,6 +31,13 @@ namespace Java.Io
     /// </summary>
     public partial class WriteAbortedException : Java.Io.ObjectStreamException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public WriteAbortedException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public WriteAbortedException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public WriteAbortedException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.io.WriteAbortedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

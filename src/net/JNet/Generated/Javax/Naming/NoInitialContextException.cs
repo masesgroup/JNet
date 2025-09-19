@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class NoInitialContextException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public NoInitialContextException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public NoInitialContextException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NoInitialContextException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.NoInitialContextException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

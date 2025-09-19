@@ -31,6 +31,13 @@ namespace Javax.Crypto
     /// </summary>
     public partial class BadPaddingException : Java.Security.GeneralSecurityException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public BadPaddingException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public BadPaddingException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public BadPaddingException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.crypto.BadPaddingException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

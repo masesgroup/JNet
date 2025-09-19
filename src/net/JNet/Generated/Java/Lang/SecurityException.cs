@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class SecurityException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public SecurityException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public SecurityException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public SecurityException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.SecurityException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Security.Cert
     /// </summary>
     public partial class CertificateNotYetValidException : Java.Security.Cert.CertificateException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public CertificateNotYetValidException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public CertificateNotYetValidException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public CertificateNotYetValidException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.cert.CertificateNotYetValidException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

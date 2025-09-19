@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class FileSystemNotFoundException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public FileSystemNotFoundException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public FileSystemNotFoundException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public FileSystemNotFoundException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.FileSystemNotFoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

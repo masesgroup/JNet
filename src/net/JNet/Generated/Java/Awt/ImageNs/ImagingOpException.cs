@@ -31,6 +31,13 @@ namespace Java.Awt.ImageNs
     /// </summary>
     public partial class ImagingOpException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ImagingOpException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ImagingOpException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ImagingOpException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.awt.image.ImagingOpException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Awt
     /// </summary>
     public partial class AWTException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public AWTException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public AWTException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public AWTException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.awt.AWTException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

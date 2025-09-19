@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class NoConnectionPendingException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public NoConnectionPendingException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public NoConnectionPendingException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NoConnectionPendingException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.NoConnectionPendingException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

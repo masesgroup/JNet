@@ -31,6 +31,13 @@ namespace Javax.Xml.Crypto.Dsig
     /// </summary>
     public partial class XMLSignatureException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public XMLSignatureException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public XMLSignatureException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public XMLSignatureException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.xml.crypto.dsig.XMLSignatureException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
