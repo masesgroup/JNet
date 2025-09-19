@@ -1552,7 +1552,7 @@ namespace MASES.JNet.Reflector
                 string methodName = method.MethodName(classDefinitions, false, JNetReflectorCore.UseCamel);
 
                 if (methodName == "Clone" && returnType == SpecialNames.NetObject) continue;
-                if (methodName == "Dispose") modifier = " new" + modifier; // avoids warning for override
+                if (methodName == "Dispose") methodName += "JVM"; // avoids warning for override
                 if (returnType.StartsWith(SpecialNames.JavaLangClass))
                 {
                     returnType = returnType.Contains('<') ? returnType.Substring(0, returnType.IndexOf('<')) : returnType;
