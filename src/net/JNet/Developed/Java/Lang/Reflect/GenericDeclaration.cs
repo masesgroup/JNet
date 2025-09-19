@@ -29,7 +29,7 @@ namespace Java.Lang.Reflect
         /// <inheritdoc/>
         public GenericDeclaration() { }
         /// <inheritdoc/>
-        public GenericDeclaration(IJVMBridgeCore parent) : base(parent) { }
+        public GenericDeclaration(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.GenericDeclaration";
         /// <inheritdoc />

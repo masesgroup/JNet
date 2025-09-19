@@ -29,7 +29,7 @@ namespace Java.Lang.Reflect
         /// <inheritdoc/>
         public ParameterizedType() { }
         /// <inheritdoc/>
-        public ParameterizedType(IJVMBridgeCore parent) : base(parent) { }
+        public ParameterizedType(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.ParameterizedType";
         /// <summary>

@@ -38,7 +38,7 @@ namespace Org.Mases.Jnet
         /// <inheritdoc/>
         public JNetReflectorHelper() { }
         /// <inheritdoc/>
-        public JNetReflectorHelper(IJVMBridgeCore parent) : base(parent) { }
+        public JNetReflectorHelper(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
 
         public override string BridgeClassName => "org.mases.jnet.developed.JNetReflectorHelper";
 

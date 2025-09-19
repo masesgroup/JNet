@@ -29,7 +29,7 @@ namespace Java.Lang.Reflect
         /// <inheritdoc/>
         public Method() { }
         /// <inheritdoc/>
-        public Method(IJVMBridgeCore parent) : base(parent) { }
+        public Method(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.Method";
         /// <summary>

@@ -29,7 +29,7 @@ namespace Java.Lang.Reflect
         /// <inheritdoc/>
         public GenericArrayType() { }
         /// <inheritdoc/>
-        public GenericArrayType(IJVMBridgeCore parent) : base(parent) { }
+        public GenericArrayType(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.GenericArrayType";
         /// <summary>

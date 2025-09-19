@@ -29,7 +29,7 @@ namespace Java.Lang.Reflect
         /// <inheritdoc/>
         public AnnotatedElement() { }
         /// <inheritdoc/>
-        public AnnotatedElement(IJVMBridgeCore parent) : base(parent) { }
+        public AnnotatedElement(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.AnnotatedElement";
         /// <inheritdoc />

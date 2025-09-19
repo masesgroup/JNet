@@ -29,7 +29,7 @@ namespace Java.Lang.Reflect
         /// <inheritdoc/>
         public WildcardType() { }
         /// <inheritdoc/>
-        public WildcardType(IJVMBridgeCore parent) : base(parent) { }
+        public WildcardType(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.WildcardType";
         /// <summary>

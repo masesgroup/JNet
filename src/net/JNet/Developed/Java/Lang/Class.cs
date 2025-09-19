@@ -31,7 +31,7 @@ namespace Java.Lang
         /// <inheritdoc/>
         public Class() { }
         /// <inheritdoc/>
-        public Class(IJVMBridgeCore parent) : base(parent) { }
+        public Class(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
 
         static readonly Java.Lang.ClassLoader _loader = storeLoader();
         static Java.Lang.ClassLoader storeLoader()

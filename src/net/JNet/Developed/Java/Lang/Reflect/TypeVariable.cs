@@ -29,7 +29,7 @@ namespace Java.Lang.Reflect
         /// <inheritdoc/>
         public TypeVariable() { }
         /// <inheritdoc/>
-        public TypeVariable(IJVMBridgeCore parent) : base(parent) { }
+        public TypeVariable(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.TypeVariable";
 

@@ -28,7 +28,7 @@ namespace Java.Lang
         /// <inheritdoc/>
         public Compiler() { }
         /// <inheritdoc/>
-        public Compiler(IJVMBridgeCore parent) : base(parent) { }
+        public Compiler(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.Compiler";
         /// <inheritdoc />

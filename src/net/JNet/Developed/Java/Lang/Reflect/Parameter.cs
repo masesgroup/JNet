@@ -29,7 +29,7 @@ namespace Java.Lang.Reflect
         /// <inheritdoc/>
         public Parameter() { }
         /// <inheritdoc/>
-        public Parameter(IJVMBridgeCore parent) : base(parent) { }
+        public Parameter(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.Parameter";
         /// <inheritdoc />

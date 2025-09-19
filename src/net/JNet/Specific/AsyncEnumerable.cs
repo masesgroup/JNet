@@ -89,7 +89,7 @@ namespace MASES.JNet.Specific
         /// </summary>
         public JNetAsyncEnumerable() { }
         /// <inheritdoc/>
-        public JNetAsyncEnumerable(IJVMBridgeCore parent) : base(parent) { }
+        public JNetAsyncEnumerable(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Create an instance of <see cref="JNetAsyncEnumerable{TClass, TObject}"/>
         /// </summary>

@@ -36,7 +36,7 @@ namespace Java.Util
         /// </summary>
         public Iterator() { }
         /// <inheritdoc/>
-        public Iterator(IJVMBridgeCore parent) : base(parent) { }
+        public Iterator(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
@@ -111,7 +111,7 @@ namespace Java.Util
         /// </summary>
         public Iterator() { }
         /// <inheritdoc/>
-        public Iterator(IJVMBridgeCore parent) : base(parent) { }
+        public Iterator(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>

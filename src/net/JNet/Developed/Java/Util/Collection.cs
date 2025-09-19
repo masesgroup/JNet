@@ -39,7 +39,7 @@ namespace Java.Util
         /// <inheritdoc/>
         public Collection() { }
         /// <inheritdoc/>
-        public Collection(IJVMBridgeCore parent) : base(parent) { }
+        public Collection(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override bool IsBridgeInterface => true;
         /// <inheritdoc />

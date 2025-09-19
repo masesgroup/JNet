@@ -29,7 +29,7 @@ namespace Java.Lang.Reflect
         /// <inheritdoc/>
         public Constructor() { }
         /// <inheritdoc/>
-        public Constructor(IJVMBridgeCore parent) : base(parent) { }
+        public Constructor(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.Constructor";
 #else
@@ -46,7 +46,7 @@ namespace Java.Lang.Reflect
         /// <inheritdoc/>
         public Constructor() { }
         /// <inheritdoc/>
-        public Constructor(IJVMBridgeCore parent) : base(parent) { }
+        public Constructor(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Uses the constructor represented by this <see cref="Constructor"/> object to create and initialize a new instance of the constructor's declaring class, with the specified initialization parameters.
         /// </summary>

@@ -31,7 +31,7 @@ namespace Java.Lang
         /// <inheritdoc/>
         public Module() { }
         /// <inheritdoc/>
-        public Module(IJVMBridgeCore parent) : base(parent) { }
+        public Module(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.Module";
         /// <summary>
