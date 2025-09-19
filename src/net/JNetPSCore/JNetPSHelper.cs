@@ -390,9 +390,9 @@ namespace MASES.JNet.PowerShell
         /// </summary>
         public static void SetInitialHeapSize(string initialHeapSize) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationInitialHeapSize), initialHeapSize); }
         /// <summary>
-        /// Sets <see cref="JNetCoreBase{T}.ApplicationEnableOpenOnJavaNio"/>
+        /// Sets <see cref="JNetCoreBase{T}.ApplicationDisableOpenOnJavaNio"/>
         /// </summary>
-        public static void SetEnableOpenOnJavaNiog(bool? enableOpenOnJavaNio) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationEnableOpenOnJavaNio), enableOpenOnJavaNio); }
+        public static void SetDisableOpenOnJavaNio(bool? enableOpenOnJavaNio) { Set(typeof(JNetCoreBase<>), nameof(JNetCore<TClass>.ApplicationDisableOpenOnJavaNio), enableOpenOnJavaNio); }
         /// <summary>
         /// Sets <see cref="JNetCoreBase{T}.ApplicationEnableDebug"/>
         /// </summary>
