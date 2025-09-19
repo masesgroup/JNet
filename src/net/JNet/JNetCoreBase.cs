@@ -94,6 +94,14 @@ namespace MASES.JNet
         /// </summary>
         public static string ApplicationInitialHeapSize { get; set; }
         /// <summary>
+        /// Sets the value of <see cref="SetupJVMWrapper.EnableOpenOnJavaNio" />
+        /// </summary>
+        public static bool? ApplicationEnableOpenOnJavaNio { get; set; }
+        /// <summary>
+        /// Sets the value of <see cref="SetupJVMWrapper.EnableNativeAccess" />
+        /// </summary>
+        public static bool? ApplicationEnableNativeAccess { get; set; }
+        /// <summary>
         /// Sets the global value of the log class path
         /// </summary>
         public static bool? ApplicationLogClassPath { get; set; }
@@ -130,6 +138,10 @@ namespace MASES.JNet
         public override string GlobalHeapSize { get { return string.IsNullOrEmpty(base.GlobalHeapSize) ? ApplicationHeapSize : base.GlobalHeapSize; } }
         /// <inheritdoc/>
         public override string InitialHeapSize { get { return string.IsNullOrEmpty(base.InitialHeapSize) ? ApplicationInitialHeapSize : base.InitialHeapSize; } }
+        /// <inheritdoc/>
+        public override bool EnableOpenOnJavaNio { get { return ApplicationEnableOpenOnJavaNio ?? base.EnableOpenOnJavaNio; } }
+        /// <inheritdoc/>
+        public override bool EnableNativeAccess { get { return ApplicationEnableNativeAccess ?? base.EnableNativeAccess; } }
 
         /// <summary>
         /// Command line <see cref="Parser"/> instance
