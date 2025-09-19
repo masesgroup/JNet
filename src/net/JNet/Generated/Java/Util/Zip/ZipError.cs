@@ -31,6 +31,13 @@ namespace Java.Util.Zip
     /// </summary>
     public partial class ZipError : Java.Lang.InternalError
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ZipError() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ZipError(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ZipError(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.zip.ZipError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

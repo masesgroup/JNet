@@ -31,6 +31,13 @@ namespace Java.Net
     /// </summary>
     public partial class URISyntaxException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public URISyntaxException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public URISyntaxException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public URISyntaxException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.net.URISyntaxException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

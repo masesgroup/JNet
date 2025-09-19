@@ -31,6 +31,13 @@ namespace Java.Lang.Invoke
     /// </summary>
     public partial class StringConcatException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public StringConcatException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public StringConcatException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public StringConcatException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.invoke.StringConcatException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

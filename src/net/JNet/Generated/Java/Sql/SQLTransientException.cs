@@ -31,6 +31,13 @@ namespace Java.Sql
     /// </summary>
     public partial class SQLTransientException : Java.Sql.SQLException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public SQLTransientException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public SQLTransientException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public SQLTransientException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.sql.SQLTransientException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

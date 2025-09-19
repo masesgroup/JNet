@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class Exception : Java.Lang.Throwable
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public Exception() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public Exception(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public Exception(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.Exception";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

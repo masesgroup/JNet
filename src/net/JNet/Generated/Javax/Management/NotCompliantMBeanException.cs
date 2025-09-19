@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class NotCompliantMBeanException : Javax.Management.OperationsException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public NotCompliantMBeanException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public NotCompliantMBeanException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NotCompliantMBeanException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.NotCompliantMBeanException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

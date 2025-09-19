@@ -31,6 +31,13 @@ namespace Java.Util
     /// </summary>
     public partial class IllegalFormatCodePointException : Java.Util.IllegalFormatException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public IllegalFormatCodePointException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public IllegalFormatCodePointException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public IllegalFormatCodePointException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.IllegalFormatCodePointException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

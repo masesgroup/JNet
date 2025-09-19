@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class BadAttributeValueExpException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public BadAttributeValueExpException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public BadAttributeValueExpException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public BadAttributeValueExpException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.BadAttributeValueExpException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

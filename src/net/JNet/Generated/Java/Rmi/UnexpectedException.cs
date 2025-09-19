@@ -31,6 +31,13 @@ namespace Java.Rmi
     /// </summary>
     public partial class UnexpectedException : Java.Rmi.RemoteException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public UnexpectedException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public UnexpectedException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnexpectedException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.UnexpectedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

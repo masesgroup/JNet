@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class ReflectionException : Javax.Management.JMException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ReflectionException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ReflectionException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ReflectionException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.ReflectionException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

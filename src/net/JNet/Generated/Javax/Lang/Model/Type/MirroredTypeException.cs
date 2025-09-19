@@ -31,6 +31,13 @@ namespace Javax.Lang.Model.Type
     /// </summary>
     public partial class MirroredTypeException : Javax.Lang.Model.Type.MirroredTypesException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public MirroredTypeException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public MirroredTypeException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public MirroredTypeException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.lang.model.type.MirroredTypeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

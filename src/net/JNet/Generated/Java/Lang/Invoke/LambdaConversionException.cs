@@ -31,6 +31,13 @@ namespace Java.Lang.Invoke
     /// </summary>
     public partial class LambdaConversionException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public LambdaConversionException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public LambdaConversionException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public LambdaConversionException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.invoke.LambdaConversionException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

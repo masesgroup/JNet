@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class IllegalSelectorException : Java.Lang.IllegalArgumentException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public IllegalSelectorException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public IllegalSelectorException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public IllegalSelectorException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.IllegalSelectorException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

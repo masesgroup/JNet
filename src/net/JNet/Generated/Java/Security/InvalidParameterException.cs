@@ -31,6 +31,13 @@ namespace Java.Security
     /// </summary>
     public partial class InvalidParameterException : Java.Lang.IllegalArgumentException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public InvalidParameterException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public InvalidParameterException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InvalidParameterException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.InvalidParameterException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

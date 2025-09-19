@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class MalformedObjectNameException : Javax.Management.OperationsException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public MalformedObjectNameException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public MalformedObjectNameException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public MalformedObjectNameException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.MalformedObjectNameException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

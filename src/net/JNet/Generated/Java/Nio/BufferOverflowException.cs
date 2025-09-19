@@ -31,6 +31,13 @@ namespace Java.Nio
     /// </summary>
     public partial class BufferOverflowException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public BufferOverflowException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public BufferOverflowException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public BufferOverflowException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.BufferOverflowException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

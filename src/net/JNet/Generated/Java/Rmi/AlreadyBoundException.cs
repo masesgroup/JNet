@@ -31,6 +31,13 @@ namespace Java.Rmi
     /// </summary>
     public partial class AlreadyBoundException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public AlreadyBoundException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public AlreadyBoundException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public AlreadyBoundException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.AlreadyBoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

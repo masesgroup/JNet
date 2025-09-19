@@ -31,6 +31,13 @@ namespace Java.Sql
     /// </summary>
     public partial class SQLRecoverableException : Java.Sql.SQLException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public SQLRecoverableException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public SQLRecoverableException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public SQLRecoverableException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.sql.SQLRecoverableException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

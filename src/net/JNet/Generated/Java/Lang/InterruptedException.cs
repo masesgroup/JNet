@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class InterruptedException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public InterruptedException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public InterruptedException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InterruptedException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.InterruptedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

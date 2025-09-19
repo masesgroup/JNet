@@ -31,6 +31,13 @@ namespace Javax.Security.Auth.Callback
     /// </summary>
     public partial class UnsupportedCallbackException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public UnsupportedCallbackException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public UnsupportedCallbackException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnsupportedCallbackException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.security.auth.callback.UnsupportedCallbackException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

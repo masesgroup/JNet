@@ -31,6 +31,13 @@ namespace Javax.Xml.Crypto.Dsig
     /// </summary>
     public partial class TransformException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public TransformException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public TransformException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public TransformException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.xml.crypto.dsig.TransformException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

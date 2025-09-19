@@ -31,6 +31,13 @@ namespace Java.Nio.File.Attribute
     /// </summary>
     public partial class UserPrincipalNotFoundException : Java.Io.IOException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public UserPrincipalNotFoundException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public UserPrincipalNotFoundException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UserPrincipalNotFoundException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.attribute.UserPrincipalNotFoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

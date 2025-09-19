@@ -31,6 +31,13 @@ namespace Java.Util
     /// </summary>
     public partial class MissingFormatArgumentException : Java.Util.IllegalFormatException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public MissingFormatArgumentException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public MissingFormatArgumentException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public MissingFormatArgumentException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.MissingFormatArgumentException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class InstanceNotFoundException : Javax.Management.OperationsException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public InstanceNotFoundException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public InstanceNotFoundException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InstanceNotFoundException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.InstanceNotFoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

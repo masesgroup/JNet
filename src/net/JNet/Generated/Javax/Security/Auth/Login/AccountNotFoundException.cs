@@ -31,6 +31,13 @@ namespace Javax.Security.Auth.Login
     /// </summary>
     public partial class AccountNotFoundException : Javax.Security.Auth.Login.AccountException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public AccountNotFoundException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public AccountNotFoundException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public AccountNotFoundException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.security.auth.login.AccountNotFoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

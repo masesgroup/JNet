@@ -31,6 +31,13 @@ namespace Java.Awt.Dnd
     /// </summary>
     public partial class InvalidDnDOperationException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public InvalidDnDOperationException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public InvalidDnDOperationException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InvalidDnDOperationException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.awt.dnd.InvalidDnDOperationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

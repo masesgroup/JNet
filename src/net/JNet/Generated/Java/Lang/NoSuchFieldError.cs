@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class NoSuchFieldError : Java.Lang.IncompatibleClassChangeError
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public NoSuchFieldError() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public NoSuchFieldError(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NoSuchFieldError(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.NoSuchFieldError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

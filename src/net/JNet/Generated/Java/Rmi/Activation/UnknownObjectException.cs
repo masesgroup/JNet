@@ -31,6 +31,13 @@ namespace Java.Rmi.Activation
     /// </summary>
     public partial class UnknownObjectException : Java.Rmi.Activation.ActivationException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public UnknownObjectException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public UnknownObjectException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnknownObjectException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.activation.UnknownObjectException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

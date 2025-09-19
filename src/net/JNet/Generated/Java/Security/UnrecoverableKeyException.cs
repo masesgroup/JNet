@@ -31,6 +31,13 @@ namespace Java.Security
     /// </summary>
     public partial class UnrecoverableKeyException : Java.Security.UnrecoverableEntryException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public UnrecoverableKeyException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public UnrecoverableKeyException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnrecoverableKeyException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.UnrecoverableKeyException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

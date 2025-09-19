@@ -31,6 +31,13 @@ namespace Javax.Swing.Undo
     /// </summary>
     public partial class CannotRedoException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public CannotRedoException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public CannotRedoException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public CannotRedoException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.swing.undo.CannotRedoException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

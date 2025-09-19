@@ -31,6 +31,13 @@ namespace Java.Io
     /// </summary>
     public partial class EOFException : Java.Io.IOException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public EOFException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public EOFException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public EOFException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.io.EOFException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

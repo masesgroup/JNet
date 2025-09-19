@@ -31,6 +31,13 @@ namespace Java.Rmi
     /// </summary>
     public partial class ServerError : Java.Rmi.RemoteException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ServerError() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ServerError(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ServerError(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.ServerError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

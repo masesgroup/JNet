@@ -31,6 +31,13 @@ namespace Java.Io
     /// </summary>
     public partial class UTFDataFormatException : Java.Io.IOException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public UTFDataFormatException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public UTFDataFormatException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UTFDataFormatException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.io.UTFDataFormatException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

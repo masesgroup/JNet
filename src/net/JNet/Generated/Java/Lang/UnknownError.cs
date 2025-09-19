@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class UnknownError : Java.Lang.VirtualMachineError
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public UnknownError() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public UnknownError(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnknownError(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.UnknownError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
