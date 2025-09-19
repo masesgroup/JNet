@@ -26,6 +26,10 @@ namespace Java.Lang
     /// </summary>
     public sealed class SecurityManager : JVMBridgeBase<SecurityManager>
     {
+        /// <inheritdoc/>
+        public SecurityManager() { }
+        /// <inheritdoc/>
+        public SecurityManager(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.SecurityManager";
     }

@@ -25,6 +25,12 @@ namespace Java.Lang
     /// </summary>
     public class RuntimeException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public RuntimeException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public RuntimeException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public RuntimeException(string message, global::System.Exception innerException) : base(message, innerException) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.RuntimeException";
     }

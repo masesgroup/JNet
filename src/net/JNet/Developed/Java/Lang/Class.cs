@@ -28,6 +28,11 @@ namespace Java.Lang
     /// </summary>
     public class Class : JVMBridgeBase<Class>
     {
+        /// <inheritdoc/>
+        public Class() { }
+        /// <inheritdoc/>
+        public Class(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+
         static readonly Java.Lang.ClassLoader _loader = storeLoader();
         static Java.Lang.ClassLoader storeLoader()
         {

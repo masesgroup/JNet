@@ -159,8 +159,9 @@ namespace MASES.JNet.Reflector.Templates
             public const string LISTENER_CLASS_WARNING = "#warning Remember to build the Java class for event listener";
 
             public static string LISTENER_CLASS_BLOCK = "    const string _bridgeClassName = \"ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER\";" + Environment.NewLine
-                                                      + "    private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName, false);" + Environment.NewLine
-                                                      + "    private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new global::System.InvalidOperationException($\"Class {_bridgeClassName} was not found.\");" + Environment.NewLine
+                                                      + "    private static readonly global::System.Exception _LocalBridgeClazzException = null;" + Environment.NewLine
+                                                      + "    private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);" + Environment.NewLine
+                                                      + "    private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($\"Class {_bridgeClassName} was not found.\");" + Environment.NewLine
                                                       + "    " + Environment.NewLine
                                                       + "    /// <inheritdoc />" + Environment.NewLine
                                                       + "    public override string BridgeClassName => _bridgeClassName;" + Environment.NewLine;

@@ -26,6 +26,10 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class AccessibleObject : JVMBridgeBase<AccessibleObject>
     {
+        /// <inheritdoc/>
+        public AccessibleObject() { }
+        /// <inheritdoc/>
+        public AccessibleObject(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.AccessibleObject";
         /// <summary>

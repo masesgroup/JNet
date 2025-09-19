@@ -16,6 +16,8 @@
 *  Refer to LICENSE for more information.
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang.Reflect
 {
     /// <summary>
@@ -24,6 +26,10 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class WildcardType : Type
     {
+        /// <inheritdoc/>
+        public WildcardType() { }
+        /// <inheritdoc/>
+        public WildcardType(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.WildcardType";
         /// <summary>

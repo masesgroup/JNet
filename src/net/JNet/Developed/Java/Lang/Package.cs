@@ -26,6 +26,10 @@ namespace Java.Lang
     /// </summary>
     public sealed class Package : JVMBridgeBase<Package>
     {
+        /// <inheritdoc/>
+        public Package() { }
+        /// <inheritdoc/>
+        public Package(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.Package";
         /// <summary>

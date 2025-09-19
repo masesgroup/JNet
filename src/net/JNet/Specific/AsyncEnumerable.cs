@@ -87,9 +87,9 @@ namespace MASES.JNet.Specific
         /// <summary>
         /// Create an instance of <see cref="JNetAsyncEnumerable{TClass, TObject}"/>
         /// </summary>
-        public JNetAsyncEnumerable()
-        {
-        }
+        public JNetAsyncEnumerable() { }
+        /// <inheritdoc/>
+        public JNetAsyncEnumerable(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Create an instance of <see cref="JNetAsyncEnumerable{TClass, TObject}"/>
         /// </summary>

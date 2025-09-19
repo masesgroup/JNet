@@ -47,6 +47,8 @@ namespace Java.Lang
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public Iterable() { }
+        /// <inheritdoc/>
+        public Iterable(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
@@ -86,6 +88,8 @@ namespace Java.Lang
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
         public Iterable() { }
+        /// <inheritdoc/>
+        public Iterable(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>

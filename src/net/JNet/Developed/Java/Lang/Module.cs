@@ -28,6 +28,10 @@ namespace Java.Lang
     /// </summary>
     public sealed class Module : JVMBridgeBase<Module>
     {
+        /// <inheritdoc/>
+        public Module() { }
+        /// <inheritdoc/>
+        public Module(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.Module";
         /// <summary>

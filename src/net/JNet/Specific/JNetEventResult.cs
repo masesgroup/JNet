@@ -16,6 +16,7 @@
 *  Refer to LICENSE for more information.
 */
 
+using MASES.JCOBridge.C2JBridge;
 using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
 
@@ -26,10 +27,16 @@ namespace MASES.JNet.Specific
     /// </summary>
     public sealed class JNetEventResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<JNetEventResult>
     {
+        /// <inheritdoc/>
+        public JNetEventResult() { }
+        /// <inheritdoc/>
+        public JNetEventResult(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+
         const string _bridgeClassName = "org.mases.jnet.developed.JNetEventResult";
 
-        private static readonly IJavaType _LocalBridgeClazz = ClazzOf(_bridgeClassName);
-        private static IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw new InvalidOperationException($"Class {_bridgeClassName} was not found.");
+        private static readonly global::System.Exception _LocalBridgeClazzException = null;
+        private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
+        private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
 
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

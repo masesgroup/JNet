@@ -25,6 +25,10 @@ namespace Java.Lang
     /// </summary>
     public class Compiler : JVMBridgeBase<Compiler>
     {
+        /// <inheritdoc/>
+        public Compiler() { }
+        /// <inheritdoc/>
+        public Compiler(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.Compiler";
         /// <inheritdoc />

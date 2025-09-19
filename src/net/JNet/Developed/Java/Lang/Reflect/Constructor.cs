@@ -16,6 +16,8 @@
 *  Refer to LICENSE for more information.
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang.Reflect
 {
     /// <summary>
@@ -24,6 +26,10 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class Constructor : Executable
     {
+        /// <inheritdoc/>
+        public Constructor() { }
+        /// <inheritdoc/>
+        public Constructor(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.Constructor";
 #else
@@ -37,6 +43,10 @@ namespace Java.Lang.Reflect
     /// </summary>
     public class Constructor<T> : Constructor
     {
+        /// <inheritdoc/>
+        public Constructor() { }
+        /// <inheritdoc/>
+        public Constructor(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <summary>
         /// Uses the constructor represented by this <see cref="Constructor"/> object to create and initialize a new instance of the constructor's declaring class, with the specified initialization parameters.
         /// </summary>

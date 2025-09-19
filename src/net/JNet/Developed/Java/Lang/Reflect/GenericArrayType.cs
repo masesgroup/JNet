@@ -16,6 +16,8 @@
 *  Refer to LICENSE for more information.
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang.Reflect
 {
     /// <summary>
@@ -24,6 +26,10 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class GenericArrayType : Type
     {
+        /// <inheritdoc/>
+        public GenericArrayType() { }
+        /// <inheritdoc/>
+        public GenericArrayType(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.GenericArrayType";
         /// <summary>

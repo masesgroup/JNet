@@ -2,6 +2,13 @@
 ALLPACKAGE_CLASSES_STUB_CLASS_DECORATION_PLACEHOLDER
 public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : ALLPACKAGE_CLASSES_STUB_BASECLASS_PLACEHOLDER
 {
+    /// <inheritdoc cref="global::System.Exception()"/>
+    public ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER() { }
+    /// <inheritdoc cref="global::System.Exception(string)"/>
+    public ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER(string message) : base(message) { }
+    /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+    public ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER(string message, global::System.Exception innerException) : base(message, innerException) { }
+
     const string _bridgeClassName = "ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER";
     /// <inheritdoc/>
     public override string BridgeClassName => _bridgeClassName;

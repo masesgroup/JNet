@@ -1,4 +1,4 @@
-﻿/*
+/*
 *  Copyright 2025 MASES s.r.l.
 *
 *  Licensed under the Apache License, Version 2.0 (the "License");
@@ -69,7 +69,7 @@ namespace MASES.JNetByteBufferTest
                 JNetTestCore.CreateGlobalInstance();
                 var appArgs = JNetTestCore.FilteredArgs;
 
-                System.Console.WriteLine($"Initialized JNetTestCore, remaining arguments are {string.Join(" ", appArgs)}");
+                System.Console.WriteLine("Initialized JNetTestCore" + (appArgs.Length != 0 ? $", remaining arguments are {string.Join(" ", appArgs)}" : string.Empty));
             }
             catch (Exception ex)
             {
@@ -78,9 +78,9 @@ namespace MASES.JNetByteBufferTest
             }
         }
 
-        static void TestInsertByteBuffers(int iteration, int length)
+        static void TestInsertByteBuffers(int iterations, int length)
         {
-            Console.WriteLine($"TestInsertByteBuffers with {iteration} iterations and {length} length");
+            Console.WriteLine($"TestInsertByteBuffers with {iterations} iterations and {length} length");
             int i = 0;
             try
             {
@@ -99,7 +99,7 @@ namespace MASES.JNetByteBufferTest
                 Console.WriteLine($"Created TestArrayAndByteBuffer");
 
                 Stopwatch watcher1 = Stopwatch.StartNew();
-                for (i = 0; i < iteration; i++)
+                for (i = 0; i < iterations; i++)
                 {
                     try
                     {
@@ -119,7 +119,7 @@ namespace MASES.JNetByteBufferTest
                 Console.WriteLine($"End insertArray");
 
                 Stopwatch watcher2 = Stopwatch.StartNew();
-                for (i = 0; i < iteration; i++)
+                for (i = 0; i < iterations; i++)
                 {
                     try
                     {
@@ -139,7 +139,7 @@ namespace MASES.JNetByteBufferTest
                 Console.WriteLine($"End insertByteBuffer");
 
                 Stopwatch watcher3 = Stopwatch.StartNew();
-                for (i = 0; i < iteration; i++)
+                for (i = 0; i < iterations; i++)
                 {
                     try
                     {
@@ -159,7 +159,7 @@ namespace MASES.JNetByteBufferTest
                 Console.WriteLine($"End insertByteBufferNoNew");
 
                 Stopwatch watcher4 = Stopwatch.StartNew();
-                for (i = 0; i < iteration; i++)
+                for (i = 0; i < iterations; i++)
                 {
                     try
                     {
@@ -175,7 +175,7 @@ namespace MASES.JNetByteBufferTest
 
                 Console.WriteLine($"End insertByteBufferNoGet");
 
-                Console.WriteLine($"{length,Padding} - Array {TimeSpan.FromTicks(watcher1.ElapsedTicks / iteration)} - ByteBuffer {TimeSpan.FromTicks(watcher2.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher2.ElapsedTicks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher3.ElapsedTicks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher4.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher4.ElapsedTicks) * 100:0.##}%)");
+                Console.WriteLine($"{length,Padding} - Array {TimeSpan.FromTicks(watcher1.ElapsedTicks / iterations)} - ByteBuffer {TimeSpan.FromTicks(watcher2.ElapsedTicks / iterations)} ({((double)watcher1.ElapsedTicks / watcher2.ElapsedTicks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.ElapsedTicks / iterations)} ({((double)watcher1.ElapsedTicks / watcher3.ElapsedTicks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher4.ElapsedTicks / iterations)} ({((double)watcher1.ElapsedTicks / watcher4.ElapsedTicks) * 100:0.##}%)");
             }
             catch
             {
@@ -184,9 +184,9 @@ namespace MASES.JNetByteBufferTest
             }
         }
 
-        static void TestGetByteBuffers(int iteration, int length)
+        static void TestGetByteBuffers(int iterations, int length)
         {
-            Console.WriteLine($"TestGetByteBuffers with {iteration} iterations and {length} length");
+            Console.WriteLine($"TestGetByteBuffers with {iterations} iterations and {length} length");
             int i = 0;
             try
             {
@@ -199,7 +199,7 @@ namespace MASES.JNetByteBufferTest
                 Console.WriteLine($"Created TestArrayAndByteBuffer");
 
                 Stopwatch watcher1 = Stopwatch.StartNew();
-                for (i = 0; i < iteration; i++)
+                for (i = 0; i < iterations; i++)
                 {
                     var res = jClass.Invoke<byte[]>("getArray");
                     if (res.Length != length) { throw new System.Exception(); }
@@ -210,7 +210,7 @@ namespace MASES.JNetByteBufferTest
                 Java.Lang.System.Gc();
 
                 Stopwatch watcher2 = Stopwatch.StartNew();
-                for (i = 0; i < iteration; i++)
+                for (i = 0; i < iterations; i++)
                 {
                     var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
                     var array = res.ToArray();
@@ -222,7 +222,7 @@ namespace MASES.JNetByteBufferTest
                 Java.Lang.System.Gc();
 
                 Stopwatch watcher3 = Stopwatch.StartNew();
-                for (i = 0; i < iteration; i++)
+                for (i = 0; i < iterations; i++)
                 {
                     var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
                     res.ToArray(ref bytes, false);
@@ -236,7 +236,7 @@ namespace MASES.JNetByteBufferTest
                 System.Runtime.InteropServices.GCHandle handle = System.Runtime.InteropServices.GCHandle.Alloc(bytes, System.Runtime.InteropServices.GCHandleType.Pinned);
 
                 Stopwatch watcher4 = Stopwatch.StartNew();
-                for (i = 0; i < iteration; i++)
+                for (i = 0; i < iterations; i++)
                 {
                     var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
                     res.ToDirectBuffer().CopyTo(handle.AddrOfPinnedObject(), bytes.Length, 0, bytes.Length);
@@ -248,14 +248,14 @@ namespace MASES.JNetByteBufferTest
                 Java.Lang.System.Gc();
 
                 Stopwatch watcher5 = Stopwatch.StartNew();
-                for (i = 0; i < iteration; i++)
+                for (i = 0; i < iterations; i++)
                 {
                     var res = jClass.Invoke<ByteBuffer>("getByteBuffer");
                     if (res.Remaining() != length) { throw new System.Exception(); }
                 }
                 watcher5.Stop();
 
-                Console.WriteLine($"{length,Padding} - Array {TimeSpan.FromTicks(watcher1.ElapsedTicks / iteration)} - ByteBuffer {TimeSpan.FromTicks(watcher2.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher2.ElapsedTicks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher3.ElapsedTicks) * 100:0.##}%) - ByteBufferNoAlloc {TimeSpan.FromTicks(watcher4.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher4.ElapsedTicks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher5.ElapsedTicks / iteration)} ({((double)watcher1.ElapsedTicks / watcher5.ElapsedTicks) * 100:0.##}%)");
+                Console.WriteLine($"{length,Padding} - Array {TimeSpan.FromTicks(watcher1.ElapsedTicks / iterations)} - ByteBuffer {TimeSpan.FromTicks(watcher2.ElapsedTicks / iterations)} ({((double)watcher1.ElapsedTicks / watcher2.ElapsedTicks) * 100:0.##}%) - ByteBufferNoNew {TimeSpan.FromTicks(watcher3.ElapsedTicks / iterations)} ({((double)watcher1.ElapsedTicks / watcher3.ElapsedTicks) * 100:0.##}%) - ByteBufferNoAlloc {TimeSpan.FromTicks(watcher4.ElapsedTicks / iterations)} ({((double)watcher1.ElapsedTicks / watcher4.ElapsedTicks) * 100:0.##}%) - ByteBufferNoGet {TimeSpan.FromTicks(watcher5.ElapsedTicks / iterations)} ({((double)watcher1.ElapsedTicks / watcher5.ElapsedTicks) * 100:0.##}%)");
             }
             catch
             {

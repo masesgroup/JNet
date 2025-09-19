@@ -16,6 +16,8 @@
 *  Refer to LICENSE for more information.
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace Java.Lang.Reflect
 {
     /// <summary>
@@ -24,6 +26,10 @@ namespace Java.Lang.Reflect
 #if JNETREFLECTOR
     public class ParameterizedType : Type
     {
+        /// <inheritdoc/>
+        public ParameterizedType() { }
+        /// <inheritdoc/>
+        public ParameterizedType(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
         /// <inheritdoc />
         public override string BridgeClassName => "java.lang.reflect.ParameterizedType";
         /// <summary>
