@@ -48,7 +48,10 @@ namespace MASES.JNetByteBufferTest
 
             Console.WriteLine("Enabling Critical methods");
 
-            JNetTestCore.GlobalInstance.Management.EnableCriticalMethods = true;
+            var management = JNetTestCore.GlobalInstance.Management;
+
+            management.EnableCriticalMethods = true;
+            management.EnableCriticalMethodsOnGetThreshold = management.EnableCriticalMethodsOnSetThreshold = 0;
 
             ExecuteTests();
         }
