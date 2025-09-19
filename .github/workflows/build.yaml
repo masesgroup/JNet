@@ -407,15 +407,19 @@ jobs:
 
       - if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' || (matrix.os == 'windows-2022' && matrix.framework != 'net462') }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: |
-          dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
-          dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
+        run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
+
+      - if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' || (matrix.os == 'windows-2022' && matrix.framework != 'net462') }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
           
       - if: ${{ matrix.os == 'windows-2022' && matrix.framework == 'net462' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
-        run: |
-          .\bin\${{ matrix.framework }}\JNetTest.exe
-          .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
+        run: .\bin\${{ matrix.framework }}\JNetTest.exe
+
+      - if: ${{ matrix.os == 'windows-2022' && matrix.framework == 'net462' }}
+        continue-on-error: ${{ inputs.ForceContinueOnError == true }}
+        run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
 
       - uses: actions/upload-artifact@v4
         if: ${{ matrix.os == 'windows-2022' }}

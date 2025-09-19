@@ -44,19 +44,13 @@ namespace MASES.JNetByteBufferTest
 
             Initialize();
 
-            Console.WriteLine("Start insert from CLR to JVM");
+            ExecuteTests();
 
-            for (int i = MinValue; i < MaxValue; i *= 10)
-            {
-                TestInsertByteBuffers(iterations, i);
-            }
+            Console.WriteLine("Enabling Critical methods");
 
-            Console.WriteLine("Start get from JVM to CLR");
+            JNetTestCore.GlobalInstance.Management.EnableCriticalMethods = true;
 
-            for (int i = MinValue; i < MaxValue; i *= 10)
-            {
-                TestGetByteBuffers(iterations, i);
-            }
+            ExecuteTests();
         }
 
         static void Initialize()
@@ -75,6 +69,23 @@ namespace MASES.JNetByteBufferTest
             {
                 System.Console.WriteLine(ex);
                 throw;
+            }
+        }
+
+        static void ExecuteTests()
+        {
+            Console.WriteLine("Start insert from CLR to JVM");
+
+            for (int i = MinValue; i < MaxValue; i *= 10)
+            {
+                TestInsertByteBuffers(iterations, i);
+            }
+
+            Console.WriteLine("Start get from JVM to CLR");
+
+            for (int i = MinValue; i < MaxValue; i *= 10)
+            {
+                TestGetByteBuffers(iterations, i);
             }
         }
 
