@@ -31,6 +31,13 @@ namespace Java.Awt.ColorNs
     /// </summary>
     public partial class CMMException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public CMMException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public CMMException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public CMMException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.awt.color.CMMException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

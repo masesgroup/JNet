@@ -31,6 +31,13 @@ namespace Org.Xml.Sax
     /// </summary>
     public partial class SAXNotSupportedException : Org.Xml.Sax.SAXException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public SAXNotSupportedException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public SAXNotSupportedException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public SAXNotSupportedException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "org.xml.sax.SAXNotSupportedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

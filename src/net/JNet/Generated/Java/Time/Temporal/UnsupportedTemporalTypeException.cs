@@ -31,6 +31,13 @@ namespace Java.Time.Temporal
     /// </summary>
     public partial class UnsupportedTemporalTypeException : Java.Time.DateTimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public UnsupportedTemporalTypeException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public UnsupportedTemporalTypeException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnsupportedTemporalTypeException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.time.temporal.UnsupportedTemporalTypeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

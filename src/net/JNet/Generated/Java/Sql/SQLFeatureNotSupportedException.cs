@@ -31,6 +31,13 @@ namespace Java.Sql
     /// </summary>
     public partial class SQLFeatureNotSupportedException : Java.Sql.SQLNonTransientException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public SQLFeatureNotSupportedException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public SQLFeatureNotSupportedException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public SQLFeatureNotSupportedException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.sql.SQLFeatureNotSupportedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

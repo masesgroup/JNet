@@ -31,6 +31,13 @@ namespace Java.Rmi.Server
     /// </summary>
     public partial class ServerCloneException : Java.Lang.CloneNotSupportedException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ServerCloneException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ServerCloneException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ServerCloneException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.server.ServerCloneException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

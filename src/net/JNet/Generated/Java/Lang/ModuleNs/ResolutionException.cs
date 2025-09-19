@@ -31,6 +31,13 @@ namespace Java.Lang.ModuleNs
     /// </summary>
     public partial class ResolutionException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ResolutionException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ResolutionException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ResolutionException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.module.ResolutionException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

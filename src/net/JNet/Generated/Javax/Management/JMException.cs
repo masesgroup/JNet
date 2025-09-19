@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class JMException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public JMException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public JMException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public JMException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.JMException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

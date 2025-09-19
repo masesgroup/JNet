@@ -31,6 +31,13 @@ namespace Javax.Xml.Validation
     /// </summary>
     public partial class SchemaFactoryConfigurationError : Java.Lang.Error
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public SchemaFactoryConfigurationError() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public SchemaFactoryConfigurationError(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public SchemaFactoryConfigurationError(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.xml.validation.SchemaFactoryConfigurationError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

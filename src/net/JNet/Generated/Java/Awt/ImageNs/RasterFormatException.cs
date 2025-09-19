@@ -31,6 +31,13 @@ namespace Java.Awt.ImageNs
     /// </summary>
     public partial class RasterFormatException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public RasterFormatException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public RasterFormatException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public RasterFormatException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.awt.image.RasterFormatException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

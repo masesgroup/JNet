@@ -31,6 +31,13 @@ namespace Javax.Xml.Parsers
     /// </summary>
     public partial class FactoryConfigurationError : Java.Lang.Error
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public FactoryConfigurationError() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public FactoryConfigurationError(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public FactoryConfigurationError(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.xml.parsers.FactoryConfigurationError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

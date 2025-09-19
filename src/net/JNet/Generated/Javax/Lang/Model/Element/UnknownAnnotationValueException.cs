@@ -31,6 +31,13 @@ namespace Javax.Lang.Model.Element
     /// </summary>
     public partial class UnknownAnnotationValueException : Javax.Lang.Model.UnknownEntityException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public UnknownAnnotationValueException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public UnknownAnnotationValueException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public UnknownAnnotationValueException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.lang.model.element.UnknownAnnotationValueException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

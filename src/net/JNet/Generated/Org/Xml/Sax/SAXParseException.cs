@@ -31,6 +31,13 @@ namespace Org.Xml.Sax
     /// </summary>
     public partial class SAXParseException : Org.Xml.Sax.SAXException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public SAXParseException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public SAXParseException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public SAXParseException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "org.xml.sax.SAXParseException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

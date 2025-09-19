@@ -31,6 +31,13 @@ namespace Java.Awt.Print
     /// </summary>
     public partial class PrinterException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public PrinterException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public PrinterException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public PrinterException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.awt.print.PrinterException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

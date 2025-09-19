@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class IllegalAccessException : Java.Lang.ReflectiveOperationException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public IllegalAccessException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public IllegalAccessException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public IllegalAccessException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.IllegalAccessException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

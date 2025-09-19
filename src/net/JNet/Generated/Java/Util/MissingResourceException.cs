@@ -31,6 +31,13 @@ namespace Java.Util
     /// </summary>
     public partial class MissingResourceException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public MissingResourceException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public MissingResourceException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public MissingResourceException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.MissingResourceException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

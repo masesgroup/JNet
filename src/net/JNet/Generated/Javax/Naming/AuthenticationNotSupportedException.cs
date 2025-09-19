@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class AuthenticationNotSupportedException : Javax.Naming.NamingSecurityException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public AuthenticationNotSupportedException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public AuthenticationNotSupportedException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public AuthenticationNotSupportedException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.AuthenticationNotSupportedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

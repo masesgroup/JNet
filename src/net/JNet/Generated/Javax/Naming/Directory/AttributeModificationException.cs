@@ -31,6 +31,13 @@ namespace Javax.Naming.Directory
     /// </summary>
     public partial class AttributeModificationException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public AttributeModificationException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public AttributeModificationException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public AttributeModificationException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.directory.AttributeModificationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

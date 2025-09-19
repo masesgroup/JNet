@@ -31,6 +31,13 @@ namespace Javax.Management.Openmbean
     /// </summary>
     public partial class InvalidOpenTypeException : Java.Lang.IllegalArgumentException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public InvalidOpenTypeException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public InvalidOpenTypeException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InvalidOpenTypeException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.openmbean.InvalidOpenTypeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

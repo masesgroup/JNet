@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class OperationNotSupportedException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public OperationNotSupportedException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public OperationNotSupportedException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public OperationNotSupportedException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.OperationNotSupportedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

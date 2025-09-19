@@ -31,6 +31,13 @@ namespace Javax.Management
     /// </summary>
     public partial class ListenerNotFoundException : Javax.Management.OperationsException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ListenerNotFoundException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ListenerNotFoundException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ListenerNotFoundException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.management.ListenerNotFoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

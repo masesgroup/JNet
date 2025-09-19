@@ -31,6 +31,13 @@ namespace Java.Io
     /// </summary>
     public partial class FileNotFoundException : Java.Io.IOException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public FileNotFoundException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public FileNotFoundException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public FileNotFoundException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.io.FileNotFoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

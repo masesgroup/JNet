@@ -31,6 +31,13 @@ namespace Javax.Naming
     /// </summary>
     public partial class ConfigurationException : Javax.Naming.NamingException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ConfigurationException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ConfigurationException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ConfigurationException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.naming.ConfigurationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Nio.Channels
     /// </summary>
     public partial class IllegalBlockingModeException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public IllegalBlockingModeException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public IllegalBlockingModeException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public IllegalBlockingModeException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.channels.IllegalBlockingModeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

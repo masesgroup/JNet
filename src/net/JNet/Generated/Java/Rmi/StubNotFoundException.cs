@@ -31,6 +31,13 @@ namespace Java.Rmi
     /// </summary>
     public partial class StubNotFoundException : Java.Rmi.RemoteException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public StubNotFoundException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public StubNotFoundException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public StubNotFoundException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.rmi.StubNotFoundException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

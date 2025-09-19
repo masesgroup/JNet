@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class ThreadDeath : Java.Lang.Error
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ThreadDeath() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ThreadDeath(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ThreadDeath(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.ThreadDeath";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

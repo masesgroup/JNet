@@ -31,6 +31,13 @@ namespace Java.Security
     /// </summary>
     public partial class DigestException : Java.Security.GeneralSecurityException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public DigestException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public DigestException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public DigestException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.DigestException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

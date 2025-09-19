@@ -31,6 +31,13 @@ namespace Java.Awt.Geom
     /// </summary>
     public partial class NoninvertibleTransformException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public NoninvertibleTransformException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public NoninvertibleTransformException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NoninvertibleTransformException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.awt.geom.NoninvertibleTransformException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

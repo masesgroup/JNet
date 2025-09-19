@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class NoSuchFieldException : Java.Lang.ReflectiveOperationException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public NoSuchFieldException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public NoSuchFieldException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NoSuchFieldException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.NoSuchFieldException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

@@ -31,6 +31,13 @@ namespace Java.Util.Concurrent
     /// </summary>
     public partial class ExecutionException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ExecutionException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ExecutionException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ExecutionException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.concurrent.ExecutionException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

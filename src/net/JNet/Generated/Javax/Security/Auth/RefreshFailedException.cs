@@ -31,6 +31,13 @@ namespace Javax.Security.Auth
     /// </summary>
     public partial class RefreshFailedException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public RefreshFailedException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public RefreshFailedException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public RefreshFailedException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.security.auth.RefreshFailedException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

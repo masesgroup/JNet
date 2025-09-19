@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class NoSuchFileException : Java.Nio.File.FileSystemException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public NoSuchFileException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public NoSuchFileException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NoSuchFileException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.NoSuchFileException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

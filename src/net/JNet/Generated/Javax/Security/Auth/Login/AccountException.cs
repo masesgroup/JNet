@@ -31,6 +31,13 @@ namespace Javax.Security.Auth.Login
     /// </summary>
     public partial class AccountException : Javax.Security.Auth.Login.LoginException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public AccountException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public AccountException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public AccountException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.security.auth.login.AccountException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

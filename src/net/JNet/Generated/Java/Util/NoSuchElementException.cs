@@ -31,6 +31,13 @@ namespace Java.Util
     /// </summary>
     public partial class NoSuchElementException : Java.Lang.RuntimeException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public NoSuchElementException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public NoSuchElementException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NoSuchElementException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.NoSuchElementException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

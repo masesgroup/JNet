@@ -31,6 +31,13 @@ namespace Java.Net.Http
     /// </summary>
     public partial class WebSocketHandshakeException : Java.Io.IOException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public WebSocketHandshakeException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public WebSocketHandshakeException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public WebSocketHandshakeException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.net.http.WebSocketHandshakeException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

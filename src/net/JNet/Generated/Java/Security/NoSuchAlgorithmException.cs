@@ -31,6 +31,13 @@ namespace Java.Security
     /// </summary>
     public partial class NoSuchAlgorithmException : Java.Security.GeneralSecurityException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public NoSuchAlgorithmException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public NoSuchAlgorithmException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public NoSuchAlgorithmException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.NoSuchAlgorithmException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

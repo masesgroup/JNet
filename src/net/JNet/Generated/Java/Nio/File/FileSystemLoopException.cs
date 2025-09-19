@@ -31,6 +31,13 @@ namespace Java.Nio.File
     /// </summary>
     public partial class FileSystemLoopException : Java.Nio.File.FileSystemException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public FileSystemLoopException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public FileSystemLoopException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public FileSystemLoopException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.nio.file.FileSystemLoopException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

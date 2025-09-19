@@ -31,6 +31,13 @@ namespace Java.Security
     /// </summary>
     public partial class PrivilegedActionException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public PrivilegedActionException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public PrivilegedActionException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public PrivilegedActionException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.PrivilegedActionException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

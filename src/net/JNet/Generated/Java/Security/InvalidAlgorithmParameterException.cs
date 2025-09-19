@@ -31,6 +31,13 @@ namespace Java.Security
     /// </summary>
     public partial class InvalidAlgorithmParameterException : Java.Security.GeneralSecurityException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public InvalidAlgorithmParameterException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public InvalidAlgorithmParameterException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InvalidAlgorithmParameterException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.security.InvalidAlgorithmParameterException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

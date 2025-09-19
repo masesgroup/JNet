@@ -31,6 +31,13 @@ namespace Javax.Xml.Parsers
     /// </summary>
     public partial class ParserConfigurationException : Java.Lang.Exception
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public ParserConfigurationException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public ParserConfigurationException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public ParserConfigurationException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "javax.xml.parsers.ParserConfigurationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

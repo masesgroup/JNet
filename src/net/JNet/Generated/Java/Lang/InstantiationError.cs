@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class InstantiationError : Java.Lang.IncompatibleClassChangeError
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public InstantiationError() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public InstantiationError(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InstantiationError(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.InstantiationError";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

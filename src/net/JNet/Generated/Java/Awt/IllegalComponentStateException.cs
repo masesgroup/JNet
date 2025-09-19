@@ -31,6 +31,13 @@ namespace Java.Awt
     /// </summary>
     public partial class IllegalComponentStateException : Java.Lang.IllegalStateException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public IllegalComponentStateException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public IllegalComponentStateException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public IllegalComponentStateException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.awt.IllegalComponentStateException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

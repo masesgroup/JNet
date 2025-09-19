@@ -31,6 +31,13 @@ namespace Java.Lang
     /// </summary>
     public partial class InstantiationException : Java.Lang.ReflectiveOperationException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public InstantiationException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public InstantiationException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public InstantiationException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.lang.InstantiationException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;

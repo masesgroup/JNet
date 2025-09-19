@@ -31,6 +31,13 @@ namespace Java.Util.Jar
     /// </summary>
     public partial class JarException : Java.Util.Zip.ZipException
     {
+        /// <inheritdoc cref="global::System.Exception()"/>
+        public JarException() { }
+        /// <inheritdoc cref="global::System.Exception(string)"/>
+        public JarException(string message) : base(message) { }
+        /// <inheritdoc cref="global::System.Exception(string, global::System.Exception)"/>
+        public JarException(string message, global::System.Exception innerException) : base(message, innerException) { }
+
         const string _bridgeClassName = "java.util.jar.JarException";
         /// <inheritdoc/>
         public override string BridgeClassName => _bridgeClassName;
