@@ -54,7 +54,10 @@ namespace MASES.JNetTest
 
                 TestEnum();
 
-                TestListeners();
+                for (int i = 0; i < 5; i++)
+                {
+                    TestListeners($"Listener {i}");
+                }
 
                 TestExtensions();
 
@@ -208,11 +211,17 @@ namespace MASES.JNetTest
             }
         }
 
-        static void TestListeners()
+        static void TestListeners(string expectedResult)
         {
-            System.Console.WriteLine("TestListeners");
+            System.Console.WriteLine($"TestListeners of {expectedResult}");
 
-            const string expectedResult = "Ciao";
+            using var consumer = new Consumer<Java.Lang.String>()
+            {
+                OnAccept = (o) =>
+                {
+                    System.Console.WriteLine($"Consumer Accept {o}");
+                }
+            };
 
             using var func = new Function<Java.Lang.String, Java.Lang.String>()
             {
@@ -221,7 +230,7 @@ namespace MASES.JNetTest
                     return o;
                 }
             };
-            TestListener testListener = new TestListener(func);
+            TestListener testListener = new TestListener(consumer, func);
             Java.Lang.String result = testListener.Apply(expectedResult);
             if (result != expectedResult)
             {
