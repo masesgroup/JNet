@@ -11,5 +11,10 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER : MASES.JCOBridge
         : base("ALLPACKAGE_CLASSES_STUB_JAVACLASS_PLACEHOLDER")
     {
     }
+    /// <summary>
+    /// Internal constructor: used internally from JCOBridge
+    /// </summary>
+    [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+    public ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
 }
 #endregion
