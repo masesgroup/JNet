@@ -31,7 +31,7 @@ public partial class ALLPACKAGE_CLASSES_STUB_CLASS_DIRECT_PLACEHOLDER : ALLPACKA
     /// <summary>
     /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
     /// </summary>
-    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERDirect() { InitializeHandlers(); }
+    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDERDirect() { }
     /// <summary>
     /// Internal constructor: used internally from JCOBridge
     /// </summary>
