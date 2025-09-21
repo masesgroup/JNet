@@ -16,12 +16,14 @@
 *  Refer to LICENSE for more information.
 */
 
+using MASES.JCOBridge.C2JBridge;
+
 namespace MASES.JNet.Specific
 {
     /// <summary>
     /// Generic class to launch a main method in a Java class
     /// </summary>
-    public class GenericCommand : JCOBridge.C2JBridge.JVMBridgeMain<GenericCommand>
+    public class GenericCommand : JCOBridge.C2JBridge.JVMBridgeMainExtensible<GenericCommand>
     {
         static object _classNameLock = new object();
         static string _className;
@@ -47,10 +49,16 @@ namespace MASES.JNet.Specific
                 }
             }
         }
-
-        /// <remarks>
-        /// Not use directly
-        /// </remarks>
-        public GenericCommand() : base(_className) { }
+        /// <summary>
+        /// Initialize a new <see cref="GenericCommand"/>
+        /// </summary>
+        public GenericCommand() { }
+        /// <summary>
+        /// Internal constructor: used internally from JCOBridge
+        /// </summary>
+        [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public GenericCommand(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+        /// <inheritdoc/>
+        public override string BridgeClassName => _className;
     }
 }
