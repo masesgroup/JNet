@@ -28,6 +28,12 @@ ALLPACKAGE_CLASSES_STUB_LISTENER_CLASS_PLACEHOLDER
 /// </summary>
 public partial class ALLPACKAGE_CLASSES_STUB_CLASS_DIRECT_PLACEHOLDER : ALLPACKAGE_CLASSES_STUB_CLASS_PLACEHOLDER
 {
+    /// <summary>
+    /// Internal constructor: used internally from JCOBridge
+    /// </summary>
+    [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+    public ALLPACKAGE_CLASSES_STUB_SIMPLECLASS_PLACEHOLDER(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+
     /// <inheritdoc/>
     public override bool AutoInit => false;
 
