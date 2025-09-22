@@ -89,7 +89,7 @@
 
 
   <h1 id="Javax_Swing_JFrame" data-uid="Javax.Swing.JFrame" class="text-break">
-Class JFrame  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L64"><i class="bi bi-code-slash"></i></a>
+Class JFrame  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -288,7 +288,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
       <a class="xref" href="Java.Awt.Window.html#Java_Awt_Window_CreateBufferStrategy_System_Int32_">Window.CreateBufferStrategy(int)</a>
     </div>
     <div>
-      <a class="xref" href="Java.Awt.Window.html#Java_Awt_Window_Dispose">Window.Dispose()</a>
+      <a class="xref" href="Java.Awt.Window.html#Java_Awt_Window_DisposeJVM">Window.DisposeJVM()</a>
     </div>
     <div>
       <a class="xref" href="Java.Awt.Window.html#Java_Awt_Window_Pack">Window.Pack()</a>
@@ -319,6 +319,9 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
     </div>
     <div>
       <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_HostedContainer">Container.HostedContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_Dispose_System_Boolean_">Container.Dispose(bool)</a>
     </div>
     <div>
       <a class="xref" href="Java.Awt.Container.html#Java_Awt_Container_ComponentCount">Container.ComponentCount</a>
@@ -978,16 +981,16 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Component&gt;.SGetField(IJavaType, string)</a>
@@ -1050,16 +1053,25 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;Component&gt;.BridgeClazz</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
@@ -1113,10 +1125,13 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_CastDirect__1">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</a>
     </div>
     <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
@@ -1164,10 +1179,10 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
@@ -1293,7 +1308,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame__ctor_Java_Awt_GraphicsConfiguration_" data-uid="Javax.Swing.JFrame.#ctor(Java.Awt.GraphicsConfiguration)">
   JFrame(GraphicsConfiguration)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#%3Cinit%3E(java.awt.GraphicsConfiguration)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#%3Cinit%3E(java.awt.GraphicsConfiguration)</a></p>
@@ -1326,7 +1341,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame__ctor_Java_Lang_String_" data-uid="Javax.Swing.JFrame.#ctor(Java.Lang.String)">
   JFrame(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#%3Cinit%3E(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#%3Cinit%3E(java.lang.String)</a></p>
@@ -1364,7 +1379,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame__ctor_Java_Lang_String_Java_Awt_GraphicsConfiguration_" data-uid="Javax.Swing.JFrame.#ctor(Java.Lang.String,Java.Awt.GraphicsConfiguration)">
   JFrame(String, GraphicsConfiguration)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#%3Cinit%3E(java.lang.String,java.awt.GraphicsConfiguration)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#%3Cinit%3E(java.lang.String,java.awt.GraphicsConfiguration)</a></p>
@@ -1398,9 +1413,42 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <a id="Javax_Swing_JFrame__ctor_" data-uid="Javax.Swing.JFrame.#ctor*"></a>
 
+  <h3 id="Javax_Swing_JFrame__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Javax.Swing.JFrame.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  JFrame(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public JFrame(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Swing_JFrame__ctor_" data-uid="Javax.Swing.JFrame.#ctor*"></a>
+
   <h3 id="Javax_Swing_JFrame__ctor_System_Object___" data-uid="Javax.Swing.JFrame.#ctor(System.Object[])">
   JFrame(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -1436,7 +1484,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_BridgeClassName" data-uid="Javax.Swing.JFrame.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -1468,7 +1516,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_ContentPane" data-uid="Javax.Swing.JFrame.ContentPane">
   ContentPane
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getContentPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getContentPane()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setContentPane(java.awt.Container)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setContentPane(java.awt.Container)</a></p>
@@ -1500,7 +1548,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_DefaultCloseOperation" data-uid="Javax.Swing.JFrame.DefaultCloseOperation">
   DefaultCloseOperation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getDefaultCloseOperation()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getDefaultCloseOperation()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setDefaultCloseOperation(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setDefaultCloseOperation(int)</a></p>
@@ -1532,7 +1580,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_GlassPane" data-uid="Javax.Swing.JFrame.GlassPane">
   GlassPane
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L160"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getGlassPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getGlassPane()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setGlassPane(java.awt.Component)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setGlassPane(java.awt.Component)</a></p>
@@ -1564,7 +1612,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_IsBridgeAbstract" data-uid="Javax.Swing.JFrame.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -1596,7 +1644,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_IsBridgeCloseable" data-uid="Javax.Swing.JFrame.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
@@ -1628,7 +1676,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_IsBridgeInterface" data-uid="Javax.Swing.JFrame.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -1660,7 +1708,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_IsBridgeStatic" data-uid="Javax.Swing.JFrame.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -1692,7 +1740,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_JMenuBar" data-uid="Javax.Swing.JFrame.JMenuBar">
   JMenuBar
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getJMenuBar()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getJMenuBar()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setJMenuBar(javax.swing.JMenuBar)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setJMenuBar(javax.swing.JMenuBar)</a></p>
@@ -1724,7 +1772,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_LayeredPane" data-uid="Javax.Swing.JFrame.LayeredPane">
   LayeredPane
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getLayeredPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getLayeredPane()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setLayeredPane(javax.swing.JLayeredPane)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setLayeredPane(javax.swing.JLayeredPane)</a></p>
@@ -1756,7 +1804,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_RootPane" data-uid="Javax.Swing.JFrame.RootPane">
   RootPane
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getRootPane()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getRootPane()</a></p>
@@ -1788,7 +1836,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_TransferHandler" data-uid="Javax.Swing.JFrame.TransferHandler">
   TransferHandler
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getTransferHandler()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#getTransferHandler()</a> <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setTransferHandler(javax.swing.TransferHandler)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setTransferHandler(javax.swing.TransferHandler)</a></p>
@@ -1824,7 +1872,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_IsDefaultLookAndFeelDecorated" data-uid="Javax.Swing.JFrame.IsDefaultLookAndFeelDecorated">
   IsDefaultLookAndFeelDecorated()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#isDefaultLookAndFeelDecorated()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#isDefaultLookAndFeelDecorated()</a></p>
@@ -1857,7 +1905,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_SetDefaultLookAndFeelDecorated_System_Boolean_" data-uid="Javax.Swing.JFrame.SetDefaultLookAndFeelDecorated(System.Boolean)">
   SetDefaultLookAndFeelDecorated(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setDefaultLookAndFeelDecorated(boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JFrame.html#setDefaultLookAndFeelDecorated(boolean)</a></p>
@@ -1894,7 +1942,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_op_Implicit_Javax_Swing_JFrame__Javax_Accessibility_Accessible" data-uid="Javax.Swing.JFrame.op_Implicit(Javax.Swing.JFrame)~Javax.Accessibility.Accessible">
   implicit operator Accessible(JFrame)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Javax.Swing.JFrame.html">JFrame</a> to <a class="xref" href="Javax.Accessibility.Accessible.html">Accessible</a></p>
@@ -1931,7 +1979,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_op_Implicit_Javax_Swing_JFrame__Javax_Swing_RootPaneContainer" data-uid="Javax.Swing.JFrame.op_Implicit(Javax.Swing.JFrame)~Javax.Swing.RootPaneContainer">
   implicit operator RootPaneContainer(JFrame)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Javax.Swing.JFrame.html">JFrame</a> to <a class="xref" href="Javax.Swing.RootPaneContainer.html">RootPaneContainer</a></p>
@@ -1968,7 +2016,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Javax_Swing_JFrame_op_Implicit_Javax_Swing_JFrame__Javax_Swing_WindowConstants" data-uid="Javax.Swing.JFrame.op_Implicit(Javax.Swing.JFrame)~Javax.Swing.WindowConstants">
   implicit operator WindowConstants(JFrame)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Javax.Swing.JFrame.html">JFrame</a> to <a class="xref" href="Javax.Swing.WindowConstants.html">WindowConstants</a></p>
@@ -2005,7 +2053,7 @@ Class JFrame  <a class="header-action link-secondary" title="View source" href="
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L64" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Swing/JFrame.cs/#L70" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Util_Formatter" data-uid="Java.Util.Formatter" class="text-break">
-Class Formatter  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L99"><i class="bi bi-code-slash"></i></a>
+Class Formatter  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -221,16 +221,16 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Formatter&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Formatter&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Formatter&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Formatter&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Formatter&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Formatter&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Formatter&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Formatter&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Formatter&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Formatter&gt;.SGetField(IJavaType, string)</a>
@@ -293,16 +293,25 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;Formatter&gt;.BridgeClazz</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
@@ -359,10 +368,13 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
@@ -410,10 +422,10 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
@@ -542,7 +554,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Io_File_" data-uid="Java.Util.Formatter.#ctor(Java.Io.File)">
   Formatter(File)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File)</a></p>
@@ -580,7 +592,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Io_File_Java_Lang_String_" data-uid="Java.Util.Formatter.#ctor(Java.Io.File,Java.Lang.String)">
   Formatter(File, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L133"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.lang.String)</a></p>
@@ -623,7 +635,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Io_File_Java_Lang_String_Java_Util_Locale_" data-uid="Java.Util.Formatter.#ctor(Java.Io.File,Java.Lang.String,Java.Util.Locale)">
   Formatter(File, String, Locale)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.lang.String,java.util.Locale)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.lang.String,java.util.Locale)</a></p>
@@ -669,7 +681,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Io_File_Java_Nio_Charset_Charset_Java_Util_Locale_" data-uid="Java.Util.Formatter.#ctor(Java.Io.File,Java.Nio.Charset.Charset,Java.Util.Locale)">
   Formatter(File, Charset, Locale)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L144"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset,java.util.Locale)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset,java.util.Locale)</a></p>
@@ -713,7 +725,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Io_OutputStream_" data-uid="Java.Util.Formatter.#ctor(Java.Io.OutputStream)">
   Formatter(OutputStream)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L192"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream)</a></p>
@@ -746,7 +758,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Io_OutputStream_Java_Lang_String_" data-uid="Java.Util.Formatter.#ctor(Java.Io.OutputStream,Java.Lang.String)">
   Formatter(OutputStream, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.lang.String)</a></p>
@@ -787,7 +799,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Io_OutputStream_Java_Lang_String_Java_Util_Locale_" data-uid="Java.Util.Formatter.#ctor(Java.Io.OutputStream,Java.Lang.String,Java.Util.Locale)">
   Formatter(OutputStream, String, Locale)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.lang.String,java.util.Locale)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.lang.String,java.util.Locale)</a></p>
@@ -831,7 +843,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Io_OutputStream_Java_Nio_Charset_Charset_Java_Util_Locale_" data-uid="Java.Util.Formatter.#ctor(Java.Io.OutputStream,Java.Nio.Charset.Charset,Java.Util.Locale)">
   Formatter(OutputStream, Charset, Locale)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L184"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.nio.charset.Charset,java.util.Locale)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.nio.charset.Charset,java.util.Locale)</a></p>
@@ -870,7 +882,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Io_PrintStream_" data-uid="Java.Util.Formatter.#ctor(Java.Io.PrintStream)">
   Formatter(PrintStream)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L200"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.PrintStream)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.PrintStream)</a></p>
@@ -903,7 +915,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Lang_Appendable_" data-uid="Java.Util.Formatter.#ctor(Java.Lang.Appendable)">
   Formatter(Appendable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L217"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.Appendable)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.Appendable)</a></p>
@@ -936,7 +948,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Lang_Appendable_Java_Util_Locale_" data-uid="Java.Util.Formatter.#ctor(Java.Lang.Appendable,Java.Util.Locale)">
   Formatter(Appendable, Locale)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L209"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.Appendable,java.util.Locale)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.Appendable,java.util.Locale)</a></p>
@@ -972,7 +984,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Lang_String_" data-uid="Java.Util.Formatter.#ctor(Java.Lang.String)">
   Formatter(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L260"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String)</a></p>
@@ -1010,7 +1022,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Lang_String_Java_Lang_String_" data-uid="Java.Util.Formatter.#ctor(Java.Lang.String,Java.Lang.String)">
   Formatter(String, String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L240"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.lang.String)</a></p>
@@ -1053,7 +1065,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Lang_String_Java_Lang_String_Java_Util_Locale_" data-uid="Java.Util.Formatter.#ctor(Java.Lang.String,Java.Lang.String,Java.Util.Locale)">
   Formatter(String, String, Locale)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.lang.String,java.util.Locale)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.lang.String,java.util.Locale)</a></p>
@@ -1099,7 +1111,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Lang_String_Java_Nio_Charset_Charset_Java_Util_Locale_" data-uid="Java.Util.Formatter.#ctor(Java.Lang.String,Java.Nio.Charset.Charset,Java.Util.Locale)">
   Formatter(String, Charset, Locale)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L251"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset,java.util.Locale)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset,java.util.Locale)</a></p>
@@ -1143,7 +1155,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter__ctor_Java_Util_Locale_" data-uid="Java.Util.Formatter.#ctor(Java.Util.Locale)">
   Formatter(Locale)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L268"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.util.Locale)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#%3Cinit%3E(java.util.Locale)</a></p>
@@ -1174,9 +1186,42 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <a id="Java_Util_Formatter__ctor_" data-uid="Java.Util.Formatter.#ctor*"></a>
 
+  <h3 id="Java_Util_Formatter__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Util.Formatter.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  Formatter(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public Formatter(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Formatter__ctor_" data-uid="Java.Util.Formatter.#ctor*"></a>
+
   <h3 id="Java_Util_Formatter__ctor_System_Object___" data-uid="Java.Util.Formatter.#ctor(System.Object[])">
   Formatter(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -1212,7 +1257,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter_BridgeClassName" data-uid="Java.Util.Formatter.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -1244,7 +1289,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter_IsBridgeAbstract" data-uid="Java.Util.Formatter.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -1276,7 +1321,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter_IsBridgeCloseable" data-uid="Java.Util.Formatter.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
@@ -1308,7 +1353,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter_IsBridgeInterface" data-uid="Java.Util.Formatter.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -1340,7 +1385,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter_IsBridgeStatic" data-uid="Java.Util.Formatter.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -1376,7 +1421,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter_Close" data-uid="Java.Util.Formatter.Close">
   Close()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L344"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#close()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#close()</a></p>
@@ -1403,7 +1448,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter_Flush" data-uid="Java.Util.Formatter.Flush">
   Flush()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L351"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#flush()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#flush()</a></p>
@@ -1430,7 +1475,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter_Format_Java_Lang_String_System_Object___" data-uid="Java.Util.Formatter.Format(Java.Lang.String,System.Object[])">
   Format(String, params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L318"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#format(java.lang.String,java.lang.Object...)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#format(java.lang.String,java.lang.Object...)</a></p>
@@ -1472,7 +1517,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter_Format_Java_Util_Locale_Java_Lang_String_System_Object___" data-uid="Java.Util.Formatter.Format(Java.Util.Locale,Java.Lang.String,System.Object[])">
   Format(Locale, String, params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L329"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#format(java.util.Locale,java.lang.String,java.lang.Object...)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#format(java.util.Locale,java.lang.String,java.lang.Object...)</a></p>
@@ -1517,7 +1562,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter_IoException" data-uid="Java.Util.Formatter.IoException">
   IoException()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L300"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#ioException()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#ioException()</a></p>
@@ -1550,7 +1595,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter_Locale" data-uid="Java.Util.Formatter.Locale">
   Locale()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L337"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#locale()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#locale()</a></p>
@@ -1583,7 +1628,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter_Out" data-uid="Java.Util.Formatter.Out">
   Out()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L308"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#out()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Formatter.html#out()</a></p>
@@ -1620,7 +1665,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter_op_Implicit_Java_Util_Formatter__Java_Io_Closeable" data-uid="Java.Util.Formatter.op_Implicit(Java.Util.Formatter)~Java.Io.Closeable">
   implicit operator Closeable(Formatter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L279"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Formatter.html">Formatter</a> to <a class="xref" href="Java.Io.Closeable.html">Closeable</a></p>
@@ -1657,7 +1702,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Java_Util_Formatter_op_Implicit_Java_Util_Formatter__Java_Io_Flushable" data-uid="Java.Util.Formatter.op_Implicit(Java.Util.Formatter)~Java.Io.Flushable">
   implicit operator Flushable(Formatter)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L283"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Formatter.html">Formatter</a> to <a class="xref" href="Java.Io.Flushable.html">Flushable</a></p>
@@ -1694,7 +1739,7 @@ Class Formatter  <a class="header-action link-secondary" title="View source" hre
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L99" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Formatter.cs/#L111" class="edit-link">Edit this page</a>
         </div>
 
 

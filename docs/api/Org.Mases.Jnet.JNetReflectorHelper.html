@@ -89,7 +89,7 @@
 
 
   <h1 id="Org_Mases_Jnet_JNetReflectorHelper" data-uid="Org.Mases.Jnet.JNetReflectorHelper" class="text-break">
-Class JNetReflectorHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L40"><i class="bi bi-code-slash"></i></a>
+Class JNetReflectorHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -221,16 +221,16 @@ Class JNetReflectorHelper  <a class="header-action link-secondary" title="View s
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;JNetReflectorHelper&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JNetReflectorHelper&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JNetReflectorHelper&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JNetReflectorHelper&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JNetReflectorHelper&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JNetReflectorHelper&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JNetReflectorHelper&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JNetReflectorHelper&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JNetReflectorHelper&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;JNetReflectorHelper&gt;.SGetField(IJavaType, string)</a>
@@ -293,16 +293,25 @@ Class JNetReflectorHelper  <a class="header-action link-secondary" title="View s
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;JNetReflectorHelper&gt;.BridgeClazz</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
@@ -359,10 +368,13 @@ Class JNetReflectorHelper  <a class="header-action link-secondary" title="View s
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
@@ -410,10 +422,10 @@ Class JNetReflectorHelper  <a class="header-action link-secondary" title="View s
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
@@ -512,6 +524,72 @@ Class JNetReflectorHelper  <a class="header-action link-secondary" title="View s
 
 
 
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_Mases_Jnet_JNetReflectorHelper__ctor_" data-uid="Org.Mases.Jnet.JNetReflectorHelper.#ctor*"></a>
+
+  <h3 id="Org_Mases_Jnet_JNetReflectorHelper__ctor" data-uid="Org.Mases.Jnet.JNetReflectorHelper.#ctor">
+  JNetReflectorHelper()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JNetReflectorHelper()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_Mases_Jnet_JNetReflectorHelper__ctor_" data-uid="Org.Mases.Jnet.JNetReflectorHelper.#ctor*"></a>
+
+  <h3 id="Org_Mases_Jnet_JNetReflectorHelper__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Org.Mases.Jnet.JNetReflectorHelper.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  JNetReflectorHelper(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializer used internally</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JNetReflectorHelper(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd><p>An instance of <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Org_Mases_Jnet_JNetReflectorHelper__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Shall be available in any class inherited from <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html">JVMBridgeBase</a></p>
+</div>
+
+
+
+
   <h2 class="section" id="properties">Properties
 </h2>
 
@@ -520,7 +598,7 @@ Class JNetReflectorHelper  <a class="header-action link-secondary" title="View s
 
   <h3 id="Org_Mases_Jnet_JNetReflectorHelper_BridgeClassName" data-uid="Org.Mases.Jnet.JNetReflectorHelper.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -552,7 +630,7 @@ Class JNetReflectorHelper  <a class="header-action link-secondary" title="View s
 
   <h3 id="Org_Mases_Jnet_JNetReflectorHelper_EnableLogging" data-uid="Org.Mases.Jnet.JNetReflectorHelper.EnableLogging">
   EnableLogging
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Enable or disable logging</p>
@@ -588,7 +666,7 @@ Class JNetReflectorHelper  <a class="header-action link-secondary" title="View s
 
   <h3 id="Org_Mases_Jnet_JNetReflectorHelper_ExtractJavaInfo_Java_Lang_Class_System_String_System_String_" data-uid="Org.Mases.Jnet.JNetReflectorHelper.ExtractJavaInfo(Java.Lang.Class,System.String,System.String)">
   ExtractJavaInfo(Class, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L225"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -628,7 +706,7 @@ Class JNetReflectorHelper  <a class="header-action link-secondary" title="View s
 
   <h3 id="Org_Mases_Jnet_JNetReflectorHelper_ExtractJavaInfo_System_Collections_Generic_IEnumerable_Java_Lang_Class__System_String_System_String_" data-uid="Org.Mases.Jnet.JNetReflectorHelper.ExtractJavaInfo(System.Collections.Generic.IEnumerable{Java.Lang.Class},System.String,System.String)">
   ExtractJavaInfo(IEnumerable&lt;Class&gt;, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L76"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -663,7 +741,7 @@ Class JNetReflectorHelper  <a class="header-action link-secondary" title="View s
 
   <h3 id="Org_Mases_Jnet_JNetReflectorHelper_Find" data-uid="Org.Mases.Jnet.JNetReflectorHelper.Find">
   Find()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L286"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Find all <a class="xref" href="Java.Lang.Class.html">Class</a>es in the classpath</p>
@@ -696,7 +774,7 @@ Class JNetReflectorHelper  <a class="header-action link-secondary" title="View s
 
   <h3 id="Org_Mases_Jnet_JNetReflectorHelper_Find_System_String_System_Boolean_" data-uid="Org.Mases.Jnet.JNetReflectorHelper.Find(System.String,System.Boolean)">
   Find(string, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L293"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Find all <a class="xref" href="Java.Lang.Class.html">Class</a>es with <code class="paramref">packageOrModuleName</code></p>
@@ -738,7 +816,7 @@ Class JNetReflectorHelper  <a class="header-action link-secondary" title="View s
 
   <h3 id="Org_Mases_Jnet_JNetReflectorHelper_IsFromSuperInterface_Java_Lang_Reflect_Method_" data-uid="Org.Mases.Jnet.JNetReflectorHelper.IsFromSuperInterface(Java.Lang.Reflect.Method)">
   IsFromSuperInterface(Method)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Check if <a class="xref" href="Java.Lang.Reflect.Method.html">Method</a> comes from one of the super interfaces</p>
@@ -777,7 +855,7 @@ Class JNetReflectorHelper  <a class="header-action link-secondary" title="View s
 
   <h3 id="Org_Mases_Jnet_JNetReflectorHelper_IsOverrideOrConcrete_Java_Lang_Reflect_Method_" data-uid="Org.Mases.Jnet.JNetReflectorHelper.IsOverrideOrConcrete(Java.Lang.Reflect.Method)">
   IsOverrideOrConcrete(Method)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L59"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Check if <a class="xref" href="Java.Lang.Reflect.Method.html">Method</a> overrides or it is a concrete method</p>
@@ -816,7 +894,7 @@ Class JNetReflectorHelper  <a class="header-action link-secondary" title="View s
 
   <h3 id="Org_Mases_Jnet_JNetReflectorHelper_SignatureForClass_Java_Lang_Class_" data-uid="Org.Mases.Jnet.JNetReflectorHelper.SignatureForClass(Java.Lang.Class)">
   SignatureForClass(Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -852,7 +930,7 @@ Class JNetReflectorHelper  <a class="header-action link-secondary" title="View s
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L40" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNetReflector/JNetReflectorHelper.cs/#L35" class="edit-link">Edit this page</a>
         </div>
 
 

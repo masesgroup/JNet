@@ -89,7 +89,7 @@
 
 
   <h1 id="Javax_Lang_Model_Element_AnnotationValueVisitor" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor" class="text-break">
-Class AnnotationValueVisitor  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L105"><i class="bi bi-code-slash"></i></a>
+Class AnnotationValueVisitor  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -227,16 +227,16 @@ Class AnnotationValueVisitor  <a class="header-action link-secondary" title="Vie
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AnnotationValueVisitor&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotationValueVisitor&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotationValueVisitor&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotationValueVisitor&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotationValueVisitor&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotationValueVisitor&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotationValueVisitor&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotationValueVisitor&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotationValueVisitor&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AnnotationValueVisitor&gt;.SGetField(IJavaType, string)</a>
@@ -299,16 +299,25 @@ Class AnnotationValueVisitor  <a class="header-action link-secondary" title="Vie
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;AnnotationValueVisitor&gt;.BridgeClazz</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
@@ -365,10 +374,13 @@ Class AnnotationValueVisitor  <a class="header-action link-secondary" title="Vie
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
@@ -416,10 +428,10 @@ Class AnnotationValueVisitor  <a class="header-action link-secondary" title="Vie
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
@@ -547,9 +559,42 @@ public AnnotationValueVisitor()</code></pre>
 
   <a id="Javax_Lang_Model_Element_AnnotationValueVisitor__ctor_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.#ctor*"></a>
 
+  <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  AnnotationValueVisitor(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public AnnotationValueVisitor(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Lang_Model_Element_AnnotationValueVisitor__ctor_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.#ctor*"></a>
+
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor__ctor_System_Object___" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.#ctor(System.Object[])">
   AnnotationValueVisitor(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -586,7 +631,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_BridgeClassName" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -618,7 +663,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_IsBridgeAbstract" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -650,7 +695,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_IsBridgeCloseable" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
@@ -682,7 +727,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_IsBridgeInterface" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -714,7 +759,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_IsBridgeStatic" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -750,7 +795,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_Visit_Javax_Lang_Model_Element_AnnotationValue_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.Visit(Javax.Lang.Model.Element.AnnotationValue)">
   Visit(AnnotationValue)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L291"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visit(javax.lang.model.element.AnnotationValue)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visit(javax.lang.model.element.AnnotationValue)</a></p>
@@ -789,7 +834,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_Visit_Javax_Lang_Model_Element_AnnotationValue_System_Object_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.Visit(Javax.Lang.Model.Element.AnnotationValue,System.Object)">
   Visit(AnnotationValue, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visit(javax.lang.model.element.AnnotationValue,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visit(javax.lang.model.element.AnnotationValue,java.lang.Object)</a></p>
@@ -831,7 +876,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_VisitAnnotation_Javax_Lang_Model_Element_AnnotationMirror_System_Object_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.VisitAnnotation(Javax.Lang.Model.Element.AnnotationMirror,System.Object)">
   VisitAnnotation(AnnotationMirror, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L152"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitAnnotation(javax.lang.model.element.AnnotationMirror,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitAnnotation(javax.lang.model.element.AnnotationMirror,java.lang.Object)</a></p>
@@ -873,7 +918,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_VisitArray_Java_Util_List_System_Object_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.VisitArray(Java.Util.List,System.Object)">
   VisitArray(List, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L162"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitArray(java.util.List,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitArray(java.util.List,java.lang.Object)</a></p>
@@ -915,7 +960,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_VisitBoolean_System_Boolean_System_Object_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.VisitBoolean(System.Boolean,System.Object)">
   VisitBoolean(bool, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L172"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitBoolean(boolean,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitBoolean(boolean,java.lang.Object)</a></p>
@@ -957,7 +1002,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_VisitByte_System_Byte_System_Object_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.VisitByte(System.Byte,System.Object)">
   VisitByte(byte, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitByte(byte,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitByte(byte,java.lang.Object)</a></p>
@@ -999,7 +1044,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_VisitChar_System_Char_System_Object_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.VisitChar(System.Char,System.Object)">
   VisitChar(char, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L192"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitChar(char,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitChar(char,java.lang.Object)</a></p>
@@ -1041,7 +1086,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_VisitDouble_System_Double_System_Object_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.VisitDouble(System.Double,System.Object)">
   VisitDouble(double, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L202"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitDouble(double,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitDouble(double,java.lang.Object)</a></p>
@@ -1083,7 +1128,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_VisitEnumConstant_Javax_Lang_Model_Element_VariableElement_System_Object_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.VisitEnumConstant(Javax.Lang.Model.Element.VariableElement,System.Object)">
   VisitEnumConstant(VariableElement, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L212"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitEnumConstant(javax.lang.model.element.VariableElement,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitEnumConstant(javax.lang.model.element.VariableElement,java.lang.Object)</a></p>
@@ -1125,7 +1170,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_VisitFloat_System_Single_System_Object_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.VisitFloat(System.Single,System.Object)">
   VisitFloat(float, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L222"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitFloat(float,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitFloat(float,java.lang.Object)</a></p>
@@ -1167,7 +1212,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_VisitInt_System_Int32_System_Object_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.VisitInt(System.Int32,System.Object)">
   VisitInt(int, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L232"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitInt(int,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitInt(int,java.lang.Object)</a></p>
@@ -1209,7 +1254,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_VisitLong_System_Int64_System_Object_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.VisitLong(System.Int64,System.Object)">
   VisitLong(long, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L242"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitLong(long,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitLong(long,java.lang.Object)</a></p>
@@ -1251,7 +1296,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_VisitShort_System_Int16_System_Object_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.VisitShort(System.Int16,System.Object)">
   VisitShort(short, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L252"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitShort(short,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitShort(short,java.lang.Object)</a></p>
@@ -1293,7 +1338,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_VisitString_Java_Lang_String_System_Object_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.VisitString(Java.Lang.String,System.Object)">
   VisitString(String, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L262"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitString(java.lang.String,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitString(java.lang.String,java.lang.Object)</a></p>
@@ -1335,7 +1380,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_VisitType_Javax_Lang_Model_Type_TypeMirror_System_Object_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.VisitType(Javax.Lang.Model.Type.TypeMirror,System.Object)">
   VisitType(TypeMirror, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L272"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitType(javax.lang.model.type.TypeMirror,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitType(javax.lang.model.type.TypeMirror,java.lang.Object)</a></p>
@@ -1377,7 +1422,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 
   <h3 id="Javax_Lang_Model_Element_AnnotationValueVisitor_VisitUnknown_Javax_Lang_Model_Element_AnnotationValue_System_Object_" data-uid="Javax.Lang.Model.Element.AnnotationValueVisitor.VisitUnknown(Javax.Lang.Model.Element.AnnotationValue,System.Object)">
   VisitUnknown(AnnotationValue, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L282"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitUnknown(javax.lang.model.element.AnnotationValue,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/element/AnnotationValueVisitor.html#visitUnknown(javax.lang.model.element.AnnotationValue,java.lang.Object)</a></p>
@@ -1419,7 +1464,7 @@ public AnnotationValueVisitor(params object[] args)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L105" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Lang/Model/Element/AnnotationValueVisitor.cs/#L117" class="edit-link">Edit this page</a>
         </div>
 
 
