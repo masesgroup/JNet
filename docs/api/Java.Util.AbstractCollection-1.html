@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Util_AbstractCollection_1" data-uid="Java.Util.AbstractCollection`1" class="text-break">
-Class AbstractCollection&lt;E&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L246"><i class="bi bi-code-slash"></i></a>
+Class AbstractCollection&lt;E&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L258"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -271,16 +271,16 @@ Class AbstractCollection&lt;E&gt;  <a class="header-action link-secondary" title
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Iterable&lt;E&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;E&gt;&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;E&gt;&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;E&gt;&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;E&gt;&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;E&gt;&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;E&gt;&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;E&gt;&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;E&gt;&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Iterable&lt;E&gt;&gt;.SGetField(IJavaType, string)</a>
@@ -343,16 +343,25 @@ Class AbstractCollection&lt;E&gt;  <a class="header-action link-secondary" title
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;Iterable&lt;E&gt;&gt;.BridgeClazz</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
@@ -409,10 +418,13 @@ Class AbstractCollection&lt;E&gt;  <a class="header-action link-secondary" title
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
@@ -460,10 +472,10 @@ Class AbstractCollection&lt;E&gt;  <a class="header-action link-secondary" title
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
@@ -577,7 +589,7 @@ Class AbstractCollection&lt;E&gt;  <a class="header-action link-secondary" title
 
   <h3 id="Java_Util_AbstractCollection_1__ctor" data-uid="Java.Util.AbstractCollection`1.#ctor">
   AbstractCollection()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -603,9 +615,42 @@ public AbstractCollection()</code></pre>
 
   <a id="Java_Util_AbstractCollection_1__ctor_" data-uid="Java.Util.AbstractCollection`1.#ctor*"></a>
 
+  <h3 id="Java_Util_AbstractCollection_1__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Util.AbstractCollection`1.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  AbstractCollection(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public AbstractCollection(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_AbstractCollection_1__ctor_" data-uid="Java.Util.AbstractCollection`1.#ctor*"></a>
+
   <h3 id="Java_Util_AbstractCollection_1__ctor_System_Object___" data-uid="Java.Util.AbstractCollection`1.#ctor(System.Object[])">
   AbstractCollection(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -642,7 +687,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_BridgeClassName" data-uid="Java.Util.AbstractCollection`1.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -674,7 +719,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_IsBridgeAbstract" data-uid="Java.Util.AbstractCollection`1.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L102"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -706,7 +751,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_IsBridgeCloseable" data-uid="Java.Util.AbstractCollection`1.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
@@ -738,7 +783,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_IsBridgeInterface" data-uid="Java.Util.AbstractCollection`1.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -770,7 +815,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_IsBridgeStatic" data-uid="Java.Util.AbstractCollection`1.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L108"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -806,7 +851,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_Add__0_" data-uid="Java.Util.AbstractCollection`1.Add(`0)">
   Add(E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L312"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#add(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#add(java.lang.Object)</a></p>
@@ -845,7 +890,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_AddAll__1_Java_Util_Collection___0__" data-uid="Java.Util.AbstractCollection`1.AddAll``1(Java.Util.Collection{``0})">
   AddAll&lt;Arg0ExtendsE&gt;(Collection&lt;Arg0ExtendsE&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L322"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#addAll(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#addAll(java.util.Collection)</a></p>
@@ -890,7 +935,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_Clear" data-uid="Java.Util.AbstractCollection`1.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L390"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#clear()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#clear()</a></p>
@@ -917,7 +962,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_Contains_System_Object_" data-uid="Java.Util.AbstractCollection`1.Contains(System.Object)">
   Contains(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L331"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#contains(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#contains(java.lang.Object)</a></p>
@@ -956,7 +1001,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_ContainsAll_Java_Util_Collection_System_Object__" data-uid="Java.Util.AbstractCollection`1.ContainsAll(Java.Util.Collection{System.Object})">
   ContainsAll(Collection&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L340"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#containsAll(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#containsAll(java.util.Collection)</a></p>
@@ -995,7 +1040,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_IsEmpty" data-uid="Java.Util.AbstractCollection`1.IsEmpty">
   IsEmpty()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L348"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#isEmpty()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#isEmpty()</a></p>
@@ -1028,7 +1073,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_Iterator" data-uid="Java.Util.AbstractCollection`1.Iterator">
   Iterator()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L303"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#iterator()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#iterator()</a></p>
@@ -1061,7 +1106,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_Remove_System_Object_" data-uid="Java.Util.AbstractCollection`1.Remove(System.Object)">
   Remove(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L357"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#remove(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#remove(java.lang.Object)</a></p>
@@ -1100,7 +1145,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_RemoveAll_Java_Util_Collection_System_Object__" data-uid="Java.Util.AbstractCollection`1.RemoveAll(Java.Util.Collection{System.Object})">
   RemoveAll(Collection&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L366"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#removeAll(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#removeAll(java.util.Collection)</a></p>
@@ -1139,7 +1184,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_RetainAll_Java_Util_Collection_System_Object__" data-uid="Java.Util.AbstractCollection`1.RetainAll(Java.Util.Collection{System.Object})">
   RetainAll(Collection&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L363"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L375"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#retainAll(java.util.Collection)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#retainAll(java.util.Collection)</a></p>
@@ -1178,7 +1223,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_Size" data-uid="Java.Util.AbstractCollection`1.Size">
   Size()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L295"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#size()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#size()</a></p>
@@ -1211,7 +1256,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_ToArray" data-uid="Java.Util.AbstractCollection`1.ToArray">
   ToArray()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L383"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#toArray()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#toArray()</a></p>
@@ -1244,7 +1289,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_ToArray__1___0___" data-uid="Java.Util.AbstractCollection`1.ToArray``1(``0[])">
   ToArray&lt;T&gt;(T[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L287"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#toArray(java.lang.Object[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/AbstractCollection.html#toArray(java.lang.Object[])</a></p>
@@ -1292,7 +1337,7 @@ public AbstractCollection(params object[] args)</code></pre>
 
   <h3 id="Java_Util_AbstractCollection_1_op_Implicit_Java_Util_AbstractCollection__0___Java_Util_AbstractCollection" data-uid="Java.Util.AbstractCollection`1.op_Implicit(Java.Util.AbstractCollection{`0})~Java.Util.AbstractCollection">
   implicit operator AbstractCollection(AbstractCollection&lt;E&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L268"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.AbstractCollection-1.html">AbstractCollection&lt;E&gt;</a> to <a class="xref" href="Java.Util.AbstractCollection.html">AbstractCollection</a></p>
@@ -1329,7 +1374,7 @@ public AbstractCollection(params object[] args)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L246" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/AbstractCollection.cs/#L258" class="edit-link">Edit this page</a>
         </div>
 
 

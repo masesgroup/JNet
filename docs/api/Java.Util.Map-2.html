@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Util_Map_2" data-uid="Java.Util.Map`2" class="text-break">
-Class Map&lt;K, V&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1004"><i class="bi bi-code-slash"></i></a>
+Class Map&lt;K, V&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1028"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -238,16 +238,16 @@ Class Map&lt;K, V&gt;  <a class="header-action link-secondary" title="View sourc
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Map&lt;K, V&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Map&lt;K, V&gt;&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Map&lt;K, V&gt;&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Map&lt;K, V&gt;&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Map&lt;K, V&gt;&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Map&lt;K, V&gt;&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Map&lt;K, V&gt;&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Map&lt;K, V&gt;&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Map&lt;K, V&gt;&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Map&lt;K, V&gt;&gt;.SGetField(IJavaType, string)</a>
@@ -310,16 +310,25 @@ Class Map&lt;K, V&gt;  <a class="header-action link-secondary" title="View sourc
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;Map&lt;K, V&gt;&gt;.BridgeClazz</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
@@ -376,10 +385,13 @@ Class Map&lt;K, V&gt;  <a class="header-action link-secondary" title="View sourc
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
@@ -427,10 +439,10 @@ Class Map&lt;K, V&gt;  <a class="header-action link-secondary" title="View sourc
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
@@ -538,7 +550,7 @@ Class Map&lt;K, V&gt;  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Java_Util_Map_2__ctor" data-uid="Java.Util.Map`2.#ctor">
   Map()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L171"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -564,9 +576,42 @@ public Map()</code></pre>
 
   <a id="Java_Util_Map_2__ctor_" data-uid="Java.Util.Map`2.#ctor*"></a>
 
+  <h3 id="Java_Util_Map_2__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Util.Map`2.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  Map(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public Map(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Map_2__ctor_" data-uid="Java.Util.Map`2.#ctor*"></a>
+
   <h3 id="Java_Util_Map_2__ctor_System_Object___" data-uid="Java.Util.Map`2.#ctor(System.Object[])">
   Map(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -603,7 +648,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_BridgeClassName" data-uid="Java.Util.Map`2.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -635,7 +680,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_IsBridgeAbstract" data-uid="Java.Util.Map`2.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -667,7 +712,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_IsBridgeCloseable" data-uid="Java.Util.Map`2.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L193"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
@@ -699,7 +744,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_IsBridgeInterface" data-uid="Java.Util.Map`2.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L195"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -731,7 +776,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_IsBridgeStatic" data-uid="Java.Util.Map`2.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -767,7 +812,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Clear" data-uid="Java.Util.Map`2.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1346"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1370"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#clear()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#clear()</a></p>
@@ -794,7 +839,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_ComputeIfAbsent__2__0_Java_Util_Function_Function___0___1__" data-uid="Java.Util.Map`2.ComputeIfAbsent``2(`0,Java.Util.Function.Function{``0,``1})">
   ComputeIfAbsent&lt;Arg1objectSuperK, Arg1ExtendsV&gt;(K, Function&lt;Arg1objectSuperK, Arg1ExtendsV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1402"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1426"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfAbsent(java.lang.Object,java.util.function.Function)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfAbsent(java.lang.Object,java.util.function.Function)</a></p>
@@ -845,7 +890,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_ComputeIfPresent__3__0_Java_Util_Function_BiFunction___0___1___2__" data-uid="Java.Util.Map`2.ComputeIfPresent``3(`0,Java.Util.Function.BiFunction{``0,``1,``2})">
   ComputeIfPresent&lt;Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV&gt;(K, BiFunction&lt;Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1415"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1439"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)</a></p>
@@ -899,7 +944,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Compute__3__0_Java_Util_Function_BiFunction___0___1___2__" data-uid="Java.Util.Map`2.Compute``3(`0,Java.Util.Function.BiFunction{``0,``1,``2})">
   Compute&lt;Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV&gt;(K, BiFunction&lt;Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1390"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1414"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#compute(java.lang.Object,java.util.function.BiFunction)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#compute(java.lang.Object,java.util.function.BiFunction)</a></p>
@@ -953,7 +998,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_ContainsKey_System_Object_" data-uid="Java.Util.Map`2.ContainsKey(System.Object)">
   ContainsKey(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1262"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1286"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsKey(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsKey(java.lang.Object)</a></p>
@@ -992,7 +1037,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_ContainsValue_System_Object_" data-uid="Java.Util.Map`2.ContainsValue(System.Object)">
   ContainsValue(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1271"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1295"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsValue(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#containsValue(java.lang.Object)</a></p>
@@ -1031,7 +1076,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_CopyOf__2_Java_Util_Map___0___1__" data-uid="Java.Util.Map`2.CopyOf``2(Java.Util.Map{``0,``1})">
   CopyOf&lt;Arg0ExtendsK, Arg0ExtendsV&gt;(Map&lt;Arg0ExtendsK, Arg0ExtendsV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1030"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1054"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#copyOf(java.util.Map)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#copyOf(java.util.Map)</a></p>
@@ -1079,7 +1124,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_EntryMethod__0__1_" data-uid="Java.Util.Map`2.EntryMethod(`0,`1)">
   EntryMethod(K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1249"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1273"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entry(java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entry(java.lang.Object,java.lang.Object)</a></p>
@@ -1121,7 +1166,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_EntrySet" data-uid="Java.Util.Map`2.EntrySet">
   EntrySet()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1303"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1327"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entrySet()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#entrySet()</a></p>
@@ -1154,7 +1199,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_ForEach__2_Java_Util_Function_BiConsumer___0___1__" data-uid="Java.Util.Map`2.ForEach``2(Java.Util.Function.BiConsumer{``0,``1})">
   ForEach&lt;Arg0objectSuperK, Arg0objectSuperV&gt;(BiConsumer&lt;Arg0objectSuperK, Arg0objectSuperV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1468"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1492"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#forEach(java.util.function.BiConsumer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#forEach(java.util.function.BiConsumer)</a></p>
@@ -1196,7 +1241,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Get_System_Object_" data-uid="Java.Util.Map`2.Get(System.Object)">
   Get(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1320"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1344"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#get(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#get(java.lang.Object)</a></p>
@@ -1272,7 +1317,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_GetOrDefault_System_Object__1_" data-uid="Java.Util.Map`2.GetOrDefault(System.Object,`1)">
   GetOrDefault(object, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1425"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1449"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#getOrDefault(java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#getOrDefault(java.lang.Object,java.lang.Object)</a></p>
@@ -1314,7 +1359,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_IsEmpty" data-uid="Java.Util.Map`2.IsEmpty">
   IsEmpty()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1279"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1303"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#isEmpty()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#isEmpty()</a></p>
@@ -1347,7 +1392,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_KeySet" data-uid="Java.Util.Map`2.KeySet">
   KeySet()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1311"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1335"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#keySet()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#keySet()</a></p>
@@ -1380,7 +1425,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Merge__2__0__1_Java_Util_Function_BiFunction___0___0___1__" data-uid="Java.Util.Map`2.Merge``2(`0,`1,Java.Util.Function.BiFunction{``0,``0,``1})">
   Merge&lt;Arg2objectSuperV, Arg2ExtendsV&gt;(K, V, BiFunction&lt;Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1438"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1462"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)</a></p>
@@ -1434,7 +1479,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of" data-uid="Java.Util.Map`2.Of">
   Of()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1038"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1062"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of()</a></p>
@@ -1467,7 +1512,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1)">
   Of(K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1228"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1252"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object)</a></p>
@@ -1509,7 +1554,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1)">
   Of(K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1242"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -1557,7 +1602,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1206"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1230"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -1611,7 +1656,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1192"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1216"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -1671,7 +1716,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1176"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1200"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -1737,7 +1782,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V, K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1182"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -1809,7 +1854,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1__0__1__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V, K, V, K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1162"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -1887,7 +1932,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1__0__1__0__1__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V, K, V, K, V, K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1140"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -1971,7 +2016,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1__0__1__0__1__0__1__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V, K, V, K, V, K, V, K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1092"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -2061,7 +2106,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Of__0__1__0__1__0__1__0__1__0__1__0__1__0__1__0__1__0__1__0__1_" data-uid="Java.Util.Map`2.Of(`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1,`0,`1)">
   Of(K, V, K, V, K, V, K, V, K, V, K, V, K, V, K, V, K, V, K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1066"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1090"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#of(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -2157,7 +2202,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_OfEntries__2_Java_Util_Map_Entry___0___1____" data-uid="Java.Util.Map`2.OfEntries``2(Java.Util.Map.Entry{``0,``1}[])">
   OfEntries&lt;Arg0ExtendsK, Arg0ExtendsV&gt;(params Entry&lt;Arg0ExtendsK, Arg0ExtendsV&gt;[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1239"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1263"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry...)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#ofEntries(java.util.Map.Entry...)</a></p>
@@ -2205,7 +2250,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Put__0__1_" data-uid="Java.Util.Map`2.Put(`0,`1)">
   Put(K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1330"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1354"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#put(java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#put(java.lang.Object,java.lang.Object)</a></p>
@@ -2247,7 +2292,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_PutAll__2_Java_Util_Map___0___1__" data-uid="Java.Util.Map`2.PutAll``2(Java.Util.Map{``0,``1})">
   PutAll&lt;Arg0ExtendsK, Arg0ExtendsV&gt;(Map&lt;Arg0ExtendsK, Arg0ExtendsV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1356"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1380"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putAll(java.util.Map)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putAll(java.util.Map)</a></p>
@@ -2289,7 +2334,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_PutIfAbsent__0__1_" data-uid="Java.Util.Map`2.PutIfAbsent(`0,`1)">
   PutIfAbsent(K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1448"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1472"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putIfAbsent(java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#putIfAbsent(java.lang.Object,java.lang.Object)</a></p>
@@ -2331,7 +2376,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Remove_System_Object_" data-uid="Java.Util.Map`2.Remove(System.Object)">
   Remove(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1339"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1363"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object)</a></p>
@@ -2370,7 +2415,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Remove_System_Object_System_Object_" data-uid="Java.Util.Map`2.Remove(System.Object,System.Object)">
   Remove(object, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1366"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1390"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#remove(java.lang.Object,java.lang.Object)</a></p>
@@ -2412,7 +2457,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Replace__0__1_" data-uid="Java.Util.Map`2.Replace(`0,`1)">
   Replace(K, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1458"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1482"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object)</a></p>
@@ -2454,7 +2499,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Replace__0__1__1_" data-uid="Java.Util.Map`2.Replace(`0,`1,`1)">
   Replace(K, V, V)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1377"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1401"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)</a></p>
@@ -2499,7 +2544,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_ReplaceAll__3_Java_Util_Function_BiFunction___0___1___2__" data-uid="Java.Util.Map`2.ReplaceAll``3(Java.Util.Function.BiFunction{``0,``1,``2})">
   ReplaceAll&lt;Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV&gt;(BiFunction&lt;Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1479"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1503"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replaceAll(java.util.function.BiFunction)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#replaceAll(java.util.function.BiFunction)</a></p>
@@ -2544,7 +2589,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Size" data-uid="Java.Util.Map`2.Size">
   Size()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1287"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1311"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#size()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#size()</a></p>
@@ -2577,7 +2622,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_Values" data-uid="Java.Util.Map`2.Values">
   Values()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1295"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1319"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#values()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html#values()</a></p>
@@ -2614,7 +2659,7 @@ public Map(params object[] args)</code></pre>
 
   <h3 id="Java_Util_Map_2_op_Implicit_Java_Util_Map__0__1___Java_Util_Map" data-uid="Java.Util.Map`2.op_Implicit(Java.Util.Map{`0,`1})~Java.Util.Map">
   implicit operator Map(Map&lt;K, V&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1014"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1038"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Map-2.html">Map&lt;K, V&gt;</a> to <a class="xref" href="Java.Util.Map.html">Map</a></p>
@@ -2688,7 +2733,7 @@ public Map(params object[] args)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1004" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Map.cs/#L1028" class="edit-link">Edit this page</a>
         </div>
 
 

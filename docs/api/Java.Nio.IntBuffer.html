@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Nio_IntBuffer" data-uid="Java.Nio.IntBuffer" class="text-break">
-Class IntBuffer  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L66"><i class="bi bi-code-slash"></i></a>
+Class IntBuffer  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -279,16 +279,16 @@ Class IntBuffer  <a class="header-action link-secondary" title="View source" hre
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Buffer&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SGetField(IJavaType, string)</a>
@@ -351,16 +351,25 @@ Class IntBuffer  <a class="header-action link-secondary" title="View source" hre
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;Buffer&gt;.BridgeClazz</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
@@ -417,10 +426,13 @@ Class IntBuffer  <a class="header-action link-secondary" title="View source" hre
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
@@ -468,10 +480,10 @@ Class IntBuffer  <a class="header-action link-secondary" title="View source" hre
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
@@ -599,9 +611,42 @@ public IntBuffer()</code></pre>
 
   <a id="Java_Nio_IntBuffer__ctor_" data-uid="Java.Nio.IntBuffer.#ctor*"></a>
 
+  <h3 id="Java_Nio_IntBuffer__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Nio.IntBuffer.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  IntBuffer(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public IntBuffer(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Nio_IntBuffer__ctor_" data-uid="Java.Nio.IntBuffer.#ctor*"></a>
+
   <h3 id="Java_Nio_IntBuffer__ctor_System_Object___" data-uid="Java.Nio.IntBuffer.#ctor(System.Object[])">
   IntBuffer(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -638,7 +683,7 @@ public IntBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_IntBuffer_BridgeClassName" data-uid="Java.Nio.IntBuffer.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -670,7 +715,7 @@ public IntBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_IntBuffer_IsBridgeAbstract" data-uid="Java.Nio.IntBuffer.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -702,7 +747,7 @@ public IntBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_IntBuffer_IsBridgeCloseable" data-uid="Java.Nio.IntBuffer.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
@@ -734,7 +779,7 @@ public IntBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_IntBuffer_IsBridgeInterface" data-uid="Java.Nio.IntBuffer.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -766,7 +811,7 @@ public IntBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_IntBuffer_IsBridgeStatic" data-uid="Java.Nio.IntBuffer.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -802,7 +847,7 @@ public IntBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_IntBuffer_Allocate_System_Int32_" data-uid="Java.Nio.IntBuffer.Allocate(System.Int32)">
   Allocate(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#allocate(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#allocate(int)</a></p>
@@ -841,7 +886,7 @@ public IntBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_IntBuffer_AsReadOnlyBuffer" data-uid="Java.Nio.IntBuffer.AsReadOnlyBuffer">
   AsReadOnlyBuffer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#asReadOnlyBuffer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#asReadOnlyBuffer()</a></p>
@@ -874,7 +919,7 @@ public IntBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_IntBuffer_Compact" data-uid="Java.Nio.IntBuffer.Compact">
   Compact()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#compact()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#compact()</a></p>
@@ -907,7 +952,7 @@ public IntBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_IntBuffer_CompareTo_Java_Nio_IntBuffer_" data-uid="Java.Nio.IntBuffer.CompareTo(Java.Nio.IntBuffer)">
   CompareTo(IntBuffer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L207"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#compareTo(java.nio.IntBuffer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#compareTo(java.nio.IntBuffer)</a></p>
@@ -946,7 +991,7 @@ public IntBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_IntBuffer_CompareTo_System_Object_" data-uid="Java.Nio.IntBuffer.CompareTo(System.Object)">
   CompareTo(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#compareTo(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#compareTo(java.lang.Object)</a></p>
@@ -1034,7 +1079,7 @@ so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be 
 
   <h3 id="Java_Nio_IntBuffer_Get" data-uid="Java.Nio.IntBuffer.Get">
   Get()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#get()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#get()</a></p>
@@ -1067,7 +1112,7 @@ so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be 
 
   <h3 id="Java_Nio_IntBuffer_Get_System_Int32_" data-uid="Java.Nio.IntBuffer.Get(System.Int32)">
   Get(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#get(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#get(int)</a></p>
@@ -1106,7 +1151,7 @@ so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be 
 
   <h3 id="Java_Nio_IntBuffer_Get_System_Int32___" data-uid="Java.Nio.IntBuffer.Get(System.Int32[])">
   Get(int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L236"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#get(int[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#get(int[])</a></p>
@@ -1145,7 +1190,7 @@ so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be 
 
   <h3 id="Java_Nio_IntBuffer_Get_System_Int32___System_Int32_System_Int32_" data-uid="Java.Nio.IntBuffer.Get(System.Int32[],System.Int32,System.Int32)">
   Get(int[], int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L227"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#get(int[],int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#get(int[],int,int)</a></p>
@@ -1190,7 +1235,7 @@ so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be 
 
   <h3 id="Java_Nio_IntBuffer_Mismatch_Java_Nio_IntBuffer_" data-uid="Java.Nio.IntBuffer.Mismatch(Java.Nio.IntBuffer)">
   Mismatch(IntBuffer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L216"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#mismatch(java.nio.IntBuffer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#mismatch(java.nio.IntBuffer)</a></p>
@@ -1229,7 +1274,7 @@ so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be 
 
   <h3 id="Java_Nio_IntBuffer_Order" data-uid="Java.Nio.IntBuffer.Order">
   Order()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#order()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#order()</a></p>
@@ -1262,7 +1307,7 @@ so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be 
 
   <h3 id="Java_Nio_IntBuffer_Put_Java_Nio_IntBuffer_" data-uid="Java.Nio.IntBuffer.Put(Java.Nio.IntBuffer)">
   Put(IntBuffer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L256"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(java.nio.IntBuffer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(java.nio.IntBuffer)</a></p>
@@ -1301,7 +1346,7 @@ so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be 
 
   <h3 id="Java_Nio_IntBuffer_Put_System_Int32_" data-uid="Java.Nio.IntBuffer.Put(System.Int32)">
   Put(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L180"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(int)</a></p>
@@ -1340,7 +1385,7 @@ so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be 
 
   <h3 id="Java_Nio_IntBuffer_Put_System_Int32_System_Int32_" data-uid="Java.Nio.IntBuffer.Put(System.Int32,System.Int32)">
   Put(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L171"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(int,int)</a></p>
@@ -1382,7 +1427,7 @@ so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be 
 
   <h3 id="Java_Nio_IntBuffer_Put_System_Int32___" data-uid="Java.Nio.IntBuffer.Put(System.Int32[])">
   Put(int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L189"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(int[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(int[])</a></p>
@@ -1421,7 +1466,7 @@ so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be 
 
   <h3 id="Java_Nio_IntBuffer_Put_System_Int32___System_Int32_System_Int32_" data-uid="Java.Nio.IntBuffer.Put(System.Int32[],System.Int32,System.Int32)">
   Put(int[], int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(int[],int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#put(int[],int,int)</a></p>
@@ -1541,7 +1586,7 @@ so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be 
 
   <h3 id="Java_Nio_IntBuffer_Wrap_System_Int32___" data-uid="Java.Nio.IntBuffer.Wrap(System.Int32[])">
   Wrap(int[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#wrap(int[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#wrap(int[])</a></p>
@@ -1580,7 +1625,7 @@ so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be 
 
   <h3 id="Java_Nio_IntBuffer_Wrap_System_Int32___System_Int32_System_Int32_" data-uid="Java.Nio.IntBuffer.Wrap(System.Int32[],System.Int32,System.Int32)">
   Wrap(int[], int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#wrap(int[],int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/IntBuffer.html#wrap(int[],int,int)</a></p>
@@ -1629,7 +1674,7 @@ so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be 
 
   <h3 id="Java_Nio_IntBuffer_op_Implicit_Java_Nio_IntBuffer__Java_Lang_Comparable" data-uid="Java.Nio.IntBuffer.op_Implicit(Java.Nio.IntBuffer)~Java.Lang.Comparable">
   implicit operator Comparable(IntBuffer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Nio.IntBuffer.html">IntBuffer</a> to <a class="xref" href="Java.Lang.Comparable.html">Comparable</a></p>
@@ -1820,7 +1865,7 @@ so capacity will be memory aligned and the limit of java.nio.ByteBuffer will be 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L66" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/IntBuffer.cs/#L72" class="edit-link">Edit this page</a>
         </div>
 
 

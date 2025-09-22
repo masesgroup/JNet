@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Nio_ByteBuffer" data-uid="Java.Nio.ByteBuffer" class="text-break">
-Class ByteBuffer  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L66"><i class="bi bi-code-slash"></i></a>
+Class ByteBuffer  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -285,16 +285,16 @@ Class ByteBuffer  <a class="header-action link-secondary" title="View source" hr
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Buffer&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Buffer&gt;.SGetField(IJavaType, string)</a>
@@ -357,16 +357,25 @@ Class ByteBuffer  <a class="header-action link-secondary" title="View source" hr
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;Buffer&gt;.BridgeClazz</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
@@ -420,10 +429,16 @@ Class ByteBuffer  <a class="header-action link-secondary" title="View source" hr
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_CastDirect__1">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</a>
     </div>
     <div>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
@@ -471,10 +486,10 @@ Class ByteBuffer  <a class="header-action link-secondary" title="View source" hr
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
@@ -602,9 +617,42 @@ public ByteBuffer()</code></pre>
 
   <a id="Java_Nio_ByteBuffer__ctor_" data-uid="Java.Nio.ByteBuffer.#ctor*"></a>
 
+  <h3 id="Java_Nio_ByteBuffer__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Nio.ByteBuffer.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  ByteBuffer(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public ByteBuffer(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Nio_ByteBuffer__ctor_" data-uid="Java.Nio.ByteBuffer.#ctor*"></a>
+
   <h3 id="Java_Nio_ByteBuffer__ctor_System_Object___" data-uid="Java.Nio.ByteBuffer.#ctor(System.Object[])">
   ByteBuffer(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -641,7 +689,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_BridgeClassName" data-uid="Java.Nio.ByteBuffer.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -673,7 +721,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_Char" data-uid="Java.Nio.ByteBuffer.Char">
   Char
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L136"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getChar()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getChar()</a></p>
@@ -705,7 +753,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_Double" data-uid="Java.Nio.ByteBuffer.Double">
   Double
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getDouble()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getDouble()</a></p>
@@ -737,7 +785,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_Float" data-uid="Java.Nio.ByteBuffer.Float">
   Float
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L150"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getFloat()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getFloat()</a></p>
@@ -769,7 +817,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_Int" data-uid="Java.Nio.ByteBuffer.Int">
   Int
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L157"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getInt()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getInt()</a></p>
@@ -801,7 +849,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_IsBridgeAbstract" data-uid="Java.Nio.ByteBuffer.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -833,7 +881,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_IsBridgeCloseable" data-uid="Java.Nio.ByteBuffer.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
@@ -865,7 +913,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_IsBridgeInterface" data-uid="Java.Nio.ByteBuffer.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -897,7 +945,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_IsBridgeStatic" data-uid="Java.Nio.ByteBuffer.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -929,7 +977,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_Long" data-uid="Java.Nio.ByteBuffer.Long">
   Long
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getLong()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getLong()</a></p>
@@ -961,7 +1009,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_Short" data-uid="Java.Nio.ByteBuffer.Short">
   Short
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L171"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getShort()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getShort()</a></p>
@@ -997,7 +1045,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_AlignedSlice_System_Int32_" data-uid="Java.Nio.ByteBuffer.AlignedSlice(System.Int32)">
   AlignedSlice(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L452"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L458"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#alignedSlice(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#alignedSlice(int)</a></p>
@@ -1036,7 +1084,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_AlignmentOffset_System_Int32_System_Int32_" data-uid="Java.Nio.ByteBuffer.AlignmentOffset(System.Int32,System.Int32)">
   AlignmentOffset(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L449"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#alignmentOffset(int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#alignmentOffset(int,int)</a></p>
@@ -1078,7 +1126,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_Allocate_System_Int32_" data-uid="Java.Nio.ByteBuffer.Allocate(System.Int32)">
   Allocate(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#allocate(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#allocate(int)</a></p>
@@ -1117,7 +1165,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_AllocateDirect_System_Int32_" data-uid="Java.Nio.ByteBuffer.AllocateDirect(System.Int32)">
   AllocateDirect(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#allocateDirect(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#allocateDirect(int)</a></p>
@@ -1156,7 +1204,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_AsCharBuffer" data-uid="Java.Nio.ByteBuffer.AsCharBuffer">
   AsCharBuffer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L381"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asCharBuffer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asCharBuffer()</a></p>
@@ -1189,7 +1237,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_AsDoubleBuffer" data-uid="Java.Nio.ByteBuffer.AsDoubleBuffer">
   AsDoubleBuffer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L389"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asDoubleBuffer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asDoubleBuffer()</a></p>
@@ -1222,7 +1270,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_AsFloatBuffer" data-uid="Java.Nio.ByteBuffer.AsFloatBuffer">
   AsFloatBuffer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L397"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asFloatBuffer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asFloatBuffer()</a></p>
@@ -1255,7 +1303,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_AsIntBuffer" data-uid="Java.Nio.ByteBuffer.AsIntBuffer">
   AsIntBuffer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L405"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asIntBuffer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asIntBuffer()</a></p>
@@ -1288,7 +1336,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_AsLongBuffer" data-uid="Java.Nio.ByteBuffer.AsLongBuffer">
   AsLongBuffer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L407"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L413"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asLongBuffer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asLongBuffer()</a></p>
@@ -1321,7 +1369,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_AsReadOnlyBuffer" data-uid="Java.Nio.ByteBuffer.AsReadOnlyBuffer">
   AsReadOnlyBuffer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L232"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asReadOnlyBuffer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asReadOnlyBuffer()</a></p>
@@ -1354,7 +1402,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_AsShortBuffer" data-uid="Java.Nio.ByteBuffer.AsShortBuffer">
   AsShortBuffer()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L421"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asShortBuffer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#asShortBuffer()</a></p>
@@ -1387,7 +1435,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_Compact" data-uid="Java.Nio.ByteBuffer.Compact">
   Compact()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L240"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#compact()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#compact()</a></p>
@@ -1420,7 +1468,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_CompareTo_Java_Nio_ByteBuffer_" data-uid="Java.Nio.ByteBuffer.CompareTo(Java.Nio.ByteBuffer)">
   CompareTo(ByteBuffer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L496"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L502"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#compareTo(java.nio.ByteBuffer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#compareTo(java.nio.ByteBuffer)</a></p>
@@ -1459,7 +1507,7 @@ public ByteBuffer(params object[] args)</code></pre>
 
   <h3 id="Java_Nio_ByteBuffer_CompareTo_System_Object_" data-uid="Java.Nio.ByteBuffer.CompareTo(System.Object)">
   CompareTo(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L493"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#compareTo(java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#compareTo(java.lang.Object)</a></p>
@@ -1483,33 +1531,6 @@ public ByteBuffer(params object[] args)</code></pre>
     <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
 </dd>
   </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Java_Nio_ByteBuffer_Dispose_" data-uid="Java.Nio.ByteBuffer.Dispose*"></a>
-
-  <h3 id="Java_Nio_ByteBuffer_Dispose" data-uid="Java.Nio.ByteBuffer.Dispose">
-  Dispose()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Developed/Java/Nio/ByteBuffer.cs/#L187"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
-  </div>
-
-
 
 
 
@@ -1569,7 +1590,7 @@ so capacity will be memory aligned and the limit of <a class="xref" href="Java.N
   <h4 class="section" id="Java_Nio_ByteBuffer_From_System_Byte___System_Boolean_System_Boolean_System_Int32__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>The memory associated to <code class="paramref">data</code> will be pinned until the JVM reference of the newly created <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is garbage collected to avoid access violation within the JVM.
 Under heavy pressure the memory footprint can raise up and generate an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a>, use the functionality with caution or take into account the <code class="paramref">timeToLive</code> option which can help to recover the memory in advance before the Garbage Collector of the JVM retires the <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a>
-If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is pretty sure that the pinned memory is no more needed from the JVM, e.g. the invoked method does not queue the <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> and its lifetime ends when the method returns, invoke <a class="xref" href="Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_Dispose">Dispose()</a> to immediately release unmanaged resources and free the memory</p>
+If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is pretty sure that the pinned memory is no more needed from the JVM, e.g. the invoked method does not queue the <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> and its lifetime ends when the method returns, invoke Dispose to immediately release unmanaged resources and free the memory</p>
 </div>
 
 
@@ -1679,7 +1700,7 @@ however, if the <a class="xref" href="https://learn.microsoft.com/dotnet/api/sys
   <h4 class="section" id="Java_Nio_ByteBuffer_From_System_IntPtr_System_Int64_System_EventHandler_System_Object__System_Object_System_Int32__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>The memory associated to <code class="paramref">rawAddr</code> shall be available until the JVM reference of the newly created <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is garbage collected to avoid access violation within the JVM.
 Under heavy pressure the memory footprint can raise up and generate an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.outofmemoryexception">OutOfMemoryException</a>, use the functionality with caution or take into account the <code class="paramref">timeToLive</code> option which can help to recover the memory in advance before the Garbage Collector of the JVM retires the <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a>
-If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is pretty sure that the memory is no more needed from the JVM, e.g. the invoked method does not queue the <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> and its lifetime ends when the method returns, invoke <a class="xref" href="Java.Nio.ByteBuffer.html#Java_Nio_ByteBuffer_Dispose">Dispose()</a> to immediately release unmanaged resources and free the memory</p>
+If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is pretty sure that the memory is no more needed from the JVM, e.g. the invoked method does not queue the <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> and its lifetime ends when the method returns, invoke Dispose to immediately release unmanaged resources and free the memory</p>
 </div>
 
 
@@ -1689,7 +1710,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_Get" data-uid="Java.Nio.ByteBuffer.Get">
   Get()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L179"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#get()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#get()</a></p>
@@ -1722,7 +1743,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_Get_System_Byte___" data-uid="Java.Nio.ByteBuffer.Get(System.Byte[])">
   Get(byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L531"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#get(byte[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#get(byte[])</a></p>
@@ -1761,7 +1782,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_Get_System_Byte___System_Int32_System_Int32_" data-uid="Java.Nio.ByteBuffer.Get(System.Byte[],System.Int32,System.Int32)">
   Get(byte[], int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L516"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L522"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#get(byte[],int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#get(byte[],int,int)</a></p>
@@ -1806,7 +1827,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_Get_System_Int32_" data-uid="Java.Nio.ByteBuffer.Get(System.Int32)">
   Get(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L188"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#get(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#get(int)</a></p>
@@ -1845,7 +1866,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_GetChar_System_Int32_" data-uid="Java.Nio.ByteBuffer.GetChar(System.Int32)">
   GetChar(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getChar(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getChar(int)</a></p>
@@ -1884,7 +1905,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_GetDouble_System_Int32_" data-uid="Java.Nio.ByteBuffer.GetDouble(System.Int32)">
   GetDouble(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L206"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getDouble(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getDouble(int)</a></p>
@@ -1923,7 +1944,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_GetFloat_System_Int32_" data-uid="Java.Nio.ByteBuffer.GetFloat(System.Int32)">
   GetFloat(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getFloat(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getFloat(int)</a></p>
@@ -1962,7 +1983,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_GetInt_System_Int32_" data-uid="Java.Nio.ByteBuffer.GetInt(System.Int32)">
   GetInt(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getInt(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getInt(int)</a></p>
@@ -2001,7 +2022,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_GetLong_System_Int32_" data-uid="Java.Nio.ByteBuffer.GetLong(System.Int32)">
   GetLong(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L424"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L430"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getLong(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getLong(int)</a></p>
@@ -2040,7 +2061,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_GetShort_System_Int32_" data-uid="Java.Nio.ByteBuffer.GetShort(System.Int32)">
   GetShort(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L439"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getShort(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#getShort(int)</a></p>
@@ -2079,7 +2100,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_Mismatch_Java_Nio_ByteBuffer_" data-uid="Java.Nio.ByteBuffer.Mismatch(Java.Nio.ByteBuffer)">
   Mismatch(ByteBuffer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L511"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#mismatch(java.nio.ByteBuffer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#mismatch(java.nio.ByteBuffer)</a></p>
@@ -2118,7 +2139,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_Order" data-uid="Java.Nio.ByteBuffer.Order">
   Order()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L478"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L484"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#order()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#order()</a></p>
@@ -2151,7 +2172,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_Order_Java_Nio_ByteOrder_" data-uid="Java.Nio.ByteBuffer.Order(Java.Nio.ByteOrder)">
   Order(ByteOrder)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L461"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L467"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#order(java.nio.ByteOrder)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#order(java.nio.ByteOrder)</a></p>
@@ -2190,7 +2211,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_Put_Java_Nio_ByteBuffer_" data-uid="Java.Nio.ByteBuffer.Put(Java.Nio.ByteBuffer)">
   Put(ByteBuffer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L545"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L551"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#put(java.nio.ByteBuffer)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#put(java.nio.ByteBuffer)</a></p>
@@ -2229,7 +2250,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_Put_System_Byte_" data-uid="Java.Nio.ByteBuffer.Put(System.Byte)">
   Put(byte)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L249"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#put(byte)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#put(byte)</a></p>
@@ -2268,7 +2289,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_Put_System_Byte___" data-uid="Java.Nio.ByteBuffer.Put(System.Byte[])">
   Put(byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L476"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#put(byte[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#put(byte[])</a></p>
@@ -2307,7 +2328,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_Put_System_Byte___System_Int32_System_Int32_" data-uid="Java.Nio.ByteBuffer.Put(System.Byte[],System.Int32,System.Int32)">
   Put(byte[], int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L536"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L542"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#put(byte[],int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#put(byte[],int,int)</a></p>
@@ -2352,7 +2373,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_Put_System_Int32_System_Byte_" data-uid="Java.Nio.ByteBuffer.Put(System.Int32,System.Byte)">
   Put(int, byte)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#put(int,byte)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#put(int,byte)</a></p>
@@ -2394,7 +2415,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_PutChar_System_Char_" data-uid="Java.Nio.ByteBuffer.PutChar(System.Char)">
   PutChar(char)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L268"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putChar(char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putChar(char)</a></p>
@@ -2433,7 +2454,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_PutChar_System_Int32_System_Char_" data-uid="Java.Nio.ByteBuffer.PutChar(System.Int32,System.Char)">
   PutChar(int, char)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L278"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putChar(int,char)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putChar(int,char)</a></p>
@@ -2475,7 +2496,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_PutDouble_System_Double_" data-uid="Java.Nio.ByteBuffer.PutDouble(System.Double)">
   PutDouble(double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L287"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putDouble(double)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putDouble(double)</a></p>
@@ -2514,7 +2535,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_PutDouble_System_Int32_System_Double_" data-uid="Java.Nio.ByteBuffer.PutDouble(System.Int32,System.Double)">
   PutDouble(int, double)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L297"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putDouble(int,double)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putDouble(int,double)</a></p>
@@ -2556,7 +2577,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_PutFloat_System_Int32_System_Single_" data-uid="Java.Nio.ByteBuffer.PutFloat(System.Int32,System.Single)">
   PutFloat(int, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L310"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L316"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putFloat(int,float)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putFloat(int,float)</a></p>
@@ -2598,7 +2619,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_PutFloat_System_Single_" data-uid="Java.Nio.ByteBuffer.PutFloat(System.Single)">
   PutFloat(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L306"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putFloat(float)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putFloat(float)</a></p>
@@ -2637,7 +2658,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_PutInt_System_Int32_" data-uid="Java.Nio.ByteBuffer.PutInt(System.Int32)">
   PutInt(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L335"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putInt(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putInt(int)</a></p>
@@ -2676,7 +2697,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_PutInt_System_Int32_System_Int32_" data-uid="Java.Nio.ByteBuffer.PutInt(System.Int32,System.Int32)">
   PutInt(int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L326"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putInt(int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putInt(int,int)</a></p>
@@ -2718,7 +2739,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_PutLong_System_Int32_System_Int64_" data-uid="Java.Nio.ByteBuffer.PutLong(System.Int32,System.Int64)">
   PutLong(int, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L345"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putLong(int,long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putLong(int,long)</a></p>
@@ -2760,7 +2781,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_PutLong_System_Int64_" data-uid="Java.Nio.ByteBuffer.PutLong(System.Int64)">
   PutLong(long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L354"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putLong(long)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putLong(long)</a></p>
@@ -2799,7 +2820,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_PutShort_System_Int16_" data-uid="Java.Nio.ByteBuffer.PutShort(System.Int16)">
   PutShort(short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L373"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putShort(short)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putShort(short)</a></p>
@@ -2838,7 +2859,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_PutShort_System_Int32_System_Int16_" data-uid="Java.Nio.ByteBuffer.PutShort(System.Int32,System.Int16)">
   PutShort(int, short)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L364"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putShort(int,short)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#putShort(int,short)</a></p>
@@ -3027,7 +3048,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_Wrap_System_Byte___" data-uid="Java.Nio.ByteBuffer.Wrap(System.Byte[])">
   Wrap(byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#wrap(byte[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#wrap(byte[])</a></p>
@@ -3066,7 +3087,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_Wrap_System_Byte___System_Int32_System_Int32_" data-uid="Java.Nio.ByteBuffer.Wrap(System.Byte[],System.Int32,System.Int32)">
   Wrap(byte[], int, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#wrap(byte[],int,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/ByteBuffer.html#wrap(byte[],int,int)</a></p>
@@ -3115,7 +3136,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 
   <h3 id="Java_Nio_ByteBuffer_op_Implicit_Java_Nio_ByteBuffer__Java_Lang_Comparable" data-uid="Java.Nio.ByteBuffer.op_Implicit(Java.Nio.ByteBuffer)~Java.Lang.Comparable">
   implicit operator Comparable(ByteBuffer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> to <a class="xref" href="Java.Lang.Comparable.html">Comparable</a></p>
@@ -3386,7 +3407,7 @@ If the user of <a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a> is
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L66" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Nio/ByteBuffer.cs/#L72" class="edit-link">Edit this page</a>
         </div>
 
 

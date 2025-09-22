@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Lang_Invoke_MethodHandleInfo" data-uid="Java.Lang.Invoke.MethodHandleInfo" class="text-break">
-Class MethodHandleInfo  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L117"><i class="bi bi-code-slash"></i></a>
+Class MethodHandleInfo  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L123"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -222,16 +222,16 @@ Class MethodHandleInfo  <a class="header-action link-secondary" title="View sour
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MethodHandleInfo&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandleInfo&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandleInfo&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandleInfo&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandleInfo&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandleInfo&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandleInfo&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandleInfo&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandleInfo&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandleInfo&gt;.SGetField(IJavaType, string)</a>
@@ -294,16 +294,25 @@ Class MethodHandleInfo  <a class="header-action link-secondary" title="View sour
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;MethodHandleInfo&gt;.BridgeClazz</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
@@ -360,10 +369,13 @@ Class MethodHandleInfo  <a class="header-action link-secondary" title="View sour
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
@@ -411,10 +423,10 @@ Class MethodHandleInfo  <a class="header-action link-secondary" title="View sour
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
@@ -542,9 +554,42 @@ public MethodHandleInfo()</code></pre>
 
   <a id="Java_Lang_Invoke_MethodHandleInfo__ctor_" data-uid="Java.Lang.Invoke.MethodHandleInfo.#ctor*"></a>
 
+  <h3 id="Java_Lang_Invoke_MethodHandleInfo__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Lang.Invoke.MethodHandleInfo.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  MethodHandleInfo(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public MethodHandleInfo(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Invoke_MethodHandleInfo__ctor_" data-uid="Java.Lang.Invoke.MethodHandleInfo.#ctor*"></a>
+
   <h3 id="Java_Lang_Invoke_MethodHandleInfo__ctor_System_Object___" data-uid="Java.Lang.Invoke.MethodHandleInfo.#ctor(System.Object[])">
   MethodHandleInfo(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L48"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -581,7 +626,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_BridgeClassName" data-uid="Java.Lang.Invoke.MethodHandleInfo.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -613,7 +658,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_DeclaringClass" data-uid="Java.Lang.Invoke.MethodHandleInfo.DeclaringClass">
   DeclaringClass
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L220"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getDeclaringClass()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getDeclaringClass()</a></p>
@@ -645,7 +690,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_IsBridgeAbstract" data-uid="Java.Lang.Invoke.MethodHandleInfo.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -677,7 +722,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_IsBridgeCloseable" data-uid="Java.Lang.Invoke.MethodHandleInfo.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
@@ -709,7 +754,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_IsBridgeInterface" data-uid="Java.Lang.Invoke.MethodHandleInfo.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -741,7 +786,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_IsBridgeStatic" data-uid="Java.Lang.Invoke.MethodHandleInfo.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -773,7 +818,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_MethodType" data-uid="Java.Lang.Invoke.MethodHandleInfo.MethodType">
   MethodType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L227"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getMethodType()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getMethodType()</a></p>
@@ -805,7 +850,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_Modifiers" data-uid="Java.Lang.Invoke.MethodHandleInfo.Modifiers">
   Modifiers
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L234"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getModifiers()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getModifiers()</a></p>
@@ -837,7 +882,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_Name" data-uid="Java.Lang.Invoke.MethodHandleInfo.Name">
   Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L241"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getName()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getName()</a></p>
@@ -869,7 +914,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_REF_getField" data-uid="Java.Lang.Invoke.MethodHandleInfo.REF_getField">
   REF_getField
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_getField">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_getField</a></p>
@@ -901,7 +946,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_REF_getStatic" data-uid="Java.Lang.Invoke.MethodHandleInfo.REF_getStatic">
   REF_getStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_getStatic">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_getStatic</a></p>
@@ -933,7 +978,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_REF_invokeInterface" data-uid="Java.Lang.Invoke.MethodHandleInfo.REF_invokeInterface">
   REF_invokeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeInterface">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeInterface</a></p>
@@ -965,7 +1010,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_REF_invokeSpecial" data-uid="Java.Lang.Invoke.MethodHandleInfo.REF_invokeSpecial">
   REF_invokeSpecial
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L155"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeSpecial">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeSpecial</a></p>
@@ -997,7 +1042,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_REF_invokeStatic" data-uid="Java.Lang.Invoke.MethodHandleInfo.REF_invokeStatic">
   REF_invokeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeStatic">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeStatic</a></p>
@@ -1029,7 +1074,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_REF_invokeVirtual" data-uid="Java.Lang.Invoke.MethodHandleInfo.REF_invokeVirtual">
   REF_invokeVirtual
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeVirtual">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeVirtual</a></p>
@@ -1061,7 +1106,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_REF_newInvokeSpecial" data-uid="Java.Lang.Invoke.MethodHandleInfo.REF_newInvokeSpecial">
   REF_newInvokeSpecial
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_newInvokeSpecial">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_newInvokeSpecial</a></p>
@@ -1093,7 +1138,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_REF_putField" data-uid="Java.Lang.Invoke.MethodHandleInfo.REF_putField">
   REF_putField
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L179"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_putField">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_putField</a></p>
@@ -1125,7 +1170,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_REF_putStatic" data-uid="Java.Lang.Invoke.MethodHandleInfo.REF_putStatic">
   REF_putStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_putStatic">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#REF_putStatic</a></p>
@@ -1157,7 +1202,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_ReferenceKind" data-uid="Java.Lang.Invoke.MethodHandleInfo.ReferenceKind">
   ReferenceKind
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L248"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getReferenceKind()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#getReferenceKind()</a></p>
@@ -1193,7 +1238,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_IsVarArgs" data-uid="Java.Lang.Invoke.MethodHandleInfo.IsVarArgs">
   IsVarArgs()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L267"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#isVarArgs()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#isVarArgs()</a></p>
@@ -1226,7 +1271,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_ReferenceKindToString_System_Int32_" data-uid="Java.Lang.Invoke.MethodHandleInfo.ReferenceKindToString(System.Int32)">
   ReferenceKindToString(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#referenceKindToString(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#referenceKindToString(int)</a></p>
@@ -1265,7 +1310,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_ReflectAs__1_Java_Lang_Class_Java_Lang_Invoke_MethodHandles_Lookup_" data-uid="Java.Lang.Invoke.MethodHandleInfo.ReflectAs``1(Java.Lang.Class,Java.Lang.Invoke.MethodHandles.Lookup)">
   ReflectAs&lt;T&gt;(Class, Lookup)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#reflectAs(java.lang.Class,java.lang.invoke.MethodHandles.Lookup)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#reflectAs(java.lang.Class,java.lang.invoke.MethodHandles.Lookup)</a></p>
@@ -1313,7 +1358,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 
   <h3 id="Java_Lang_Invoke_MethodHandleInfo_ToString_System_Int32_Java_Lang_Class_Java_Lang_String_Java_Lang_Invoke_MethodType_" data-uid="Java.Lang.Invoke.MethodHandleInfo.ToString(System.Int32,Java.Lang.Class,Java.Lang.String,Java.Lang.Invoke.MethodType)">
   ToString(int, Class, String, MethodType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L209"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#toString(int,java.lang.Class,java.lang.String,java.lang.invoke.MethodType)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandleInfo.html#toString(int,java.lang.Class,java.lang.String,java.lang.invoke.MethodType)</a></p>
@@ -1361,7 +1406,7 @@ public MethodHandleInfo(params object[] args)</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L117" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandleInfo.cs/#L123" class="edit-link">Edit this page</a>
         </div>
 
 

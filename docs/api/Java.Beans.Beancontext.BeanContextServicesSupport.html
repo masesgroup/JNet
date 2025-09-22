@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Beans_Beancontext_BeanContextServicesSupport" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport" class="text-break">
-Class BeanContextServicesSupport  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L64"><i class="bi bi-code-slash"></i></a>
+Class BeanContextServicesSupport  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -358,16 +358,16 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BeanContextChildSupport&gt;.SGetField(IJavaType, string)</a>
@@ -430,16 +430,25 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;BeanContextChildSupport&gt;.BridgeClazz</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
@@ -496,10 +505,13 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
@@ -547,10 +559,10 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
@@ -679,7 +691,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_Java_Beans_Beancontext_BeanContextServices_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor(Java.Beans.Beancontext.BeanContextServices)">
   BeanContextServicesSupport(BeanContextServices)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices)</a></p>
@@ -712,7 +724,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_Java_Beans_Beancontext_BeanContextServices_Java_Util_Locale_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor(Java.Beans.Beancontext.BeanContextServices,Java.Util.Locale)">
   BeanContextServicesSupport(BeanContextServices, Locale)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.util.Locale)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.util.Locale)</a></p>
@@ -748,7 +760,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_Java_Beans_Beancontext_BeanContextServices_Java_Util_Locale_System_Boolean_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor(Java.Beans.Beancontext.BeanContextServices,Java.Util.Locale,System.Boolean)">
   BeanContextServicesSupport(BeanContextServices, Locale, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.util.Locale,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.util.Locale,boolean)</a></p>
@@ -787,7 +799,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_Java_Beans_Beancontext_BeanContextServices_Java_Util_Locale_System_Boolean_System_Boolean_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor(Java.Beans.Beancontext.BeanContextServices,Java.Util.Locale,System.Boolean,System.Boolean)">
   BeanContextServicesSupport(BeanContextServices, Locale, bool, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.util.Locale,boolean,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#%3Cinit%3E(java.beans.beancontext.BeanContextServices,java.util.Locale,boolean,boolean)</a></p>
@@ -827,9 +839,42 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <a id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor*"></a>
 
+  <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  BeanContextServicesSupport(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public BeanContextServicesSupport(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor*"></a>
+
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport__ctor_System_Object___" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.#ctor(System.Object[])">
   BeanContextServicesSupport(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -865,7 +910,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_BeanContextServicesPeer" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.BeanContextServicesPeer">
   BeanContextServicesPeer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getBeanContextServicesPeer()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getBeanContextServicesPeer()</a></p>
@@ -897,7 +942,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_BridgeClassName" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -929,7 +974,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_CurrentServiceClasses" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.CurrentServiceClasses">
   CurrentServiceClasses
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L141"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getCurrentServiceClasses()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getCurrentServiceClasses()</a></p>
@@ -961,7 +1006,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_IsBridgeAbstract" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -993,7 +1038,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_IsBridgeCloseable" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
@@ -1025,7 +1070,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_IsBridgeInterface" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -1057,7 +1102,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_IsBridgeStatic" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -1093,7 +1138,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_AddBeanContextServicesListener_Java_Beans_Beancontext_BeanContextServicesListener_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.AddBeanContextServicesListener(Java.Beans.Beancontext.BeanContextServicesListener)">
   AddBeanContextServicesListener(BeanContextServicesListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)</a></p>
@@ -1126,7 +1171,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_AddService_Java_Lang_Class_Java_Beans_Beancontext_BeanContextServiceProvider_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.AddService(Java.Lang.Class,Java.Beans.Beancontext.BeanContextServiceProvider)">
   AddService(Class, BeanContextServiceProvider)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#addService(java.lang.Class,java.beans.beancontext.BeanContextServiceProvider)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#addService(java.lang.Class,java.beans.beancontext.BeanContextServiceProvider)</a></p>
@@ -1168,7 +1213,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_GetCurrentServiceSelectors_Java_Lang_Class_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.GetCurrentServiceSelectors(Java.Lang.Class)">
   GetCurrentServiceSelectors(Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getCurrentServiceSelectors(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getCurrentServiceSelectors(java.lang.Class)</a></p>
@@ -1207,7 +1252,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_GetService_Java_Beans_Beancontext_BeanContextChild_System_Object_Java_Lang_Class_System_Object_Java_Beans_Beancontext_BeanContextServiceRevokedListener_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.GetService(Java.Beans.Beancontext.BeanContextChild,System.Object,Java.Lang.Class,System.Object,Java.Beans.Beancontext.BeanContextServiceRevokedListener)">
   GetService(BeanContextChild, object, Class, object, BeanContextServiceRevokedListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L165"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Class,java.lang.Object,java.beans.beancontext.BeanContextServiceRevokedListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#getService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Class,java.lang.Object,java.beans.beancontext.BeanContextServiceRevokedListener)</a></p>
@@ -1263,7 +1308,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_HasService_Java_Lang_Class_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.HasService(Java.Lang.Class)">
   HasService(Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L183"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#hasService(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#hasService(java.lang.Class)</a></p>
@@ -1302,7 +1347,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_Initialize" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.Initialize">
   Initialize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L198"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#initialize()">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#initialize()</a></p>
@@ -1329,7 +1374,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_ReleaseService_Java_Beans_Beancontext_BeanContextChild_System_Object_System_Object_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.ReleaseService(Java.Beans.Beancontext.BeanContextChild,System.Object,System.Object)">
   ReleaseService(BeanContextChild, object, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L208"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#releaseService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#releaseService(java.beans.beancontext.BeanContextChild,java.lang.Object,java.lang.Object)</a></p>
@@ -1368,7 +1413,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_RemoveBeanContextServicesListener_Java_Beans_Beancontext_BeanContextServicesListener_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.RemoveBeanContextServicesListener(Java.Beans.Beancontext.BeanContextServicesListener)">
   RemoveBeanContextServicesListener(BeanContextServicesListener)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L216"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#removeBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#removeBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener)</a></p>
@@ -1401,7 +1446,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_RevokeService_Java_Lang_Class_Java_Beans_Beancontext_BeanContextServiceProvider_System_Boolean_" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.RevokeService(Java.Lang.Class,Java.Beans.Beancontext.BeanContextServiceProvider,System.Boolean)">
   RevokeService(Class, BeanContextServiceProvider, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L226"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#revokeService(java.lang.Class,java.beans.beancontext.BeanContextServiceProvider,boolean)">https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/beans/beancontext/BeanContextServicesSupport.html#revokeService(java.lang.Class,java.beans.beancontext.BeanContextServiceProvider,boolean)</a></p>
@@ -1444,7 +1489,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 
   <h3 id="Java_Beans_Beancontext_BeanContextServicesSupport_op_Implicit_Java_Beans_Beancontext_BeanContextServicesSupport__Java_Beans_Beancontext_BeanContextServices" data-uid="Java.Beans.Beancontext.BeanContextServicesSupport.op_Implicit(Java.Beans.Beancontext.BeanContextServicesSupport)~Java.Beans.Beancontext.BeanContextServices">
   implicit operator BeanContextServices(BeanContextServicesSupport)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L118"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Beans.Beancontext.BeanContextServicesSupport.html">BeanContextServicesSupport</a> to <a class="xref" href="Java.Beans.Beancontext.BeanContextServices.html">BeanContextServices</a></p>
@@ -1481,7 +1526,7 @@ Class BeanContextServicesSupport  <a class="header-action link-secondary" title=
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L64" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Beans/Beancontext/BeanContextServicesSupport.cs/#L70" class="edit-link">Edit this page</a>
         </div>
 
 

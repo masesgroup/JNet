@@ -89,7 +89,7 @@
 
 
   <h1 id="Javax_Management_Modelmbean_ModelMBeanOperationInfo" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo" class="text-break">
-Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L64"><i class="bi bi-code-slash"></i></a>
+Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -253,16 +253,16 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.SGetField(IJavaType, string)</a>
@@ -325,16 +325,25 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;MBeanFeatureInfo&gt;.BridgeClazz</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
@@ -391,10 +400,13 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
@@ -442,10 +454,10 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
@@ -574,7 +586,7 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Javax_Management_Modelmbean_ModelMBeanOperationInfo__ctor_Java_Lang_String_Java_Lang_Reflect_Method_" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.#ctor(Java.Lang.String,Java.Lang.Reflect.Method)">
   ModelMBeanOperationInfo(String, Method)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#%3Cinit%3E(java.lang.String,java.lang.reflect.Method)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#%3Cinit%3E(java.lang.String,java.lang.reflect.Method)</a></p>
@@ -610,7 +622,7 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Javax_Management_Modelmbean_ModelMBeanOperationInfo__ctor_Java_Lang_String_Java_Lang_Reflect_Method_Javax_Management_Descriptor_" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.#ctor(Java.Lang.String,Java.Lang.Reflect.Method,Javax.Management.Descriptor)">
   ModelMBeanOperationInfo(String, Method, Descriptor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#%3Cinit%3E(java.lang.String,java.lang.reflect.Method,javax.management.Descriptor)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#%3Cinit%3E(java.lang.String,java.lang.reflect.Method,javax.management.Descriptor)</a></p>
@@ -649,7 +661,7 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Javax_Management_Modelmbean_ModelMBeanOperationInfo__ctor_Java_Lang_String_Java_Lang_String_Javax_Management_MBeanParameterInfo___Java_Lang_String_System_Int32_" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.#ctor(Java.Lang.String,Java.Lang.String,Javax.Management.MBeanParameterInfo[],Java.Lang.String,System.Int32)">
   ModelMBeanOperationInfo(String, String, MBeanParameterInfo[], String, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L113"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.MBeanParameterInfo[],java.lang.String,int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.MBeanParameterInfo[],java.lang.String,int)</a></p>
@@ -694,7 +706,7 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Javax_Management_Modelmbean_ModelMBeanOperationInfo__ctor_Java_Lang_String_Java_Lang_String_Javax_Management_MBeanParameterInfo___Java_Lang_String_System_Int32_Javax_Management_Descriptor_" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.#ctor(Java.Lang.String,Java.Lang.String,Javax.Management.MBeanParameterInfo[],Java.Lang.String,System.Int32,Javax.Management.Descriptor)">
   ModelMBeanOperationInfo(String, String, MBeanParameterInfo[], String, int, Descriptor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.MBeanParameterInfo[],java.lang.String,int,javax.management.Descriptor)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#%3Cinit%3E(java.lang.String,java.lang.String,javax.management.MBeanParameterInfo[],java.lang.String,int,javax.management.Descriptor)</a></p>
@@ -742,7 +754,7 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Javax_Management_Modelmbean_ModelMBeanOperationInfo__ctor_Javax_Management_Modelmbean_ModelMBeanOperationInfo_" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.#ctor(Javax.Management.Modelmbean.ModelMBeanOperationInfo)">
   ModelMBeanOperationInfo(ModelMBeanOperationInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L121"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#%3Cinit%3E(javax.management.modelmbean.ModelMBeanOperationInfo)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#%3Cinit%3E(javax.management.modelmbean.ModelMBeanOperationInfo)</a></p>
@@ -773,9 +785,42 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
 
   <a id="Javax_Management_Modelmbean_ModelMBeanOperationInfo__ctor_" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.#ctor*"></a>
 
+  <h3 id="Javax_Management_Modelmbean_ModelMBeanOperationInfo__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  ModelMBeanOperationInfo(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public ModelMBeanOperationInfo(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Management_Modelmbean_ModelMBeanOperationInfo__ctor_" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.#ctor*"></a>
+
   <h3 id="Javax_Management_Modelmbean_ModelMBeanOperationInfo__ctor_System_Object___" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.#ctor(System.Object[])">
   ModelMBeanOperationInfo(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -811,7 +856,7 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Javax_Management_Modelmbean_ModelMBeanOperationInfo_BridgeClassName" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L54"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -843,7 +888,7 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Javax_Management_Modelmbean_ModelMBeanOperationInfo_IsBridgeAbstract" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -875,7 +920,7 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Javax_Management_Modelmbean_ModelMBeanOperationInfo_IsBridgeCloseable" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
@@ -907,7 +952,7 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Javax_Management_Modelmbean_ModelMBeanOperationInfo_IsBridgeInterface" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -939,7 +984,7 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Javax_Management_Modelmbean_ModelMBeanOperationInfo_IsBridgeStatic" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -975,7 +1020,7 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Javax_Management_Modelmbean_ModelMBeanOperationInfo_SetDescriptor_Javax_Management_Descriptor_" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.SetDescriptor(Javax.Management.Descriptor)">
   SetDescriptor(Descriptor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L149"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#setDescriptor(javax.management.Descriptor)">https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/ModelMBeanOperationInfo.html#setDescriptor(javax.management.Descriptor)</a></p>
@@ -1012,7 +1057,7 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
 
   <h3 id="Javax_Management_Modelmbean_ModelMBeanOperationInfo_op_Implicit_Javax_Management_Modelmbean_ModelMBeanOperationInfo__Javax_Management_DescriptorAccess" data-uid="Javax.Management.Modelmbean.ModelMBeanOperationInfo.op_Implicit(Javax.Management.Modelmbean.ModelMBeanOperationInfo)~Javax.Management.DescriptorAccess">
   implicit operator DescriptorAccess(ModelMBeanOperationInfo)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L132"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Javax.Management.Modelmbean.ModelMBeanOperationInfo.html">ModelMBeanOperationInfo</a> to <a class="xref" href="Javax.Management.DescriptorAccess.html">DescriptorAccess</a></p>
@@ -1049,7 +1094,7 @@ Class ModelMBeanOperationInfo  <a class="header-action link-secondary" title="Vi
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L64" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Javax/Management/Modelmbean/ModelMBeanOperationInfo.cs/#L70" class="edit-link">Edit this page</a>
         </div>
 
 

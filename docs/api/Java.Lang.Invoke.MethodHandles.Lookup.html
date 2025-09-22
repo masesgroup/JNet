@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Lang_Invoke_MethodHandles_Lookup" data-uid="Java.Lang.Invoke.MethodHandles.Lookup" class="text-break">
-Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L544"><i class="bi bi-code-slash"></i></a>
+Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L556"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -221,16 +221,16 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MethodHandles.Lookup&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandles.Lookup&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandles.Lookup&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandles.Lookup&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandles.Lookup&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandles.Lookup&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandles.Lookup&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandles.Lookup&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandles.Lookup&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MethodHandles.Lookup&gt;.SGetField(IJavaType, string)</a>
@@ -293,16 +293,25 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;MethodHandles.Lookup&gt;.BridgeClazz</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
@@ -359,10 +368,13 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
@@ -410,10 +422,10 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
@@ -515,7 +527,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup__ctor" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.#ctor">
   Lookup()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -540,9 +552,42 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <a id="Java_Lang_Invoke_MethodHandles_Lookup__ctor_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.#ctor*"></a>
 
+  <h3 id="Java_Lang_Invoke_MethodHandles_Lookup__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  Lookup(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public Lookup(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Lang_Invoke_MethodHandles_Lookup__ctor_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.#ctor*"></a>
+
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup__ctor_System_Object___" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.#ctor(System.Object[])">
   Lookup(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -578,7 +623,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_BridgeClassName" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -610,7 +655,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_IsBridgeAbstract" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L93"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -642,7 +687,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_IsBridgeCloseable" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
@@ -674,7 +719,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_IsBridgeInterface" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -706,7 +751,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_IsBridgeStatic" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L99"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -738,7 +783,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_MODULE" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.MODULE">
   MODULE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L558"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L570"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#MODULE">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#MODULE</a></p>
@@ -770,7 +815,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_PACKAGE" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.PACKAGE">
   PACKAGE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L576"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PACKAGE">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PACKAGE</a></p>
@@ -802,7 +847,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_PRIVATE" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.PRIVATE">
   PRIVATE
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L570"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L582"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PRIVATE">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PRIVATE</a></p>
@@ -834,7 +879,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_PROTECTED" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.PROTECTED">
   PROTECTED
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L576"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L588"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PROTECTED">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PROTECTED</a></p>
@@ -866,7 +911,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_PUBLIC" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.PUBLIC">
   PUBLIC
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L582"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L594"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PUBLIC">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#PUBLIC</a></p>
@@ -898,7 +943,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_UNCONDITIONAL" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.UNCONDITIONAL">
   UNCONDITIONAL
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L600"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#UNCONDITIONAL">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#UNCONDITIONAL</a></p>
@@ -934,7 +979,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_AccessClass_Java_Lang_Class_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.AccessClass(Java.Lang.Class)">
   AccessClass(Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L621"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L633"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#accessClass(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#accessClass(java.lang.Class)</a></p>
@@ -978,7 +1023,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_Bind_System_Object_Java_Lang_String_Java_Lang_Invoke_MethodType_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.Bind(System.Object,Java.Lang.String,Java.Lang.Invoke.MethodType)">
   Bind(object, String, MethodType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L663"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L675"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#bind(java.lang.Object,java.lang.String,java.lang.invoke.MethodType)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#bind(java.lang.Object,java.lang.String,java.lang.invoke.MethodType)</a></p>
@@ -1030,7 +1075,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_DefineClass_System_Byte___" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.DefineClass(System.Byte[])">
   DefineClass(byte[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L631"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L643"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#defineClass(byte[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#defineClass(byte[])</a></p>
@@ -1074,7 +1119,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_DropLookupMode_System_Int32_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.DropLookupMode(System.Int32)">
   DropLookupMode(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L836"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L848"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#dropLookupMode(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#dropLookupMode(int)</a></p>
@@ -1113,7 +1158,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_FindClass_Java_Lang_String_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.FindClass(Java.Lang.String)">
   FindClass(String)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L642"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L654"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findClass(java.lang.String)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findClass(java.lang.String)</a></p>
@@ -1159,7 +1204,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_FindConstructor_Java_Lang_Class_Java_Lang_Invoke_MethodType_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.FindConstructor(Java.Lang.Class,Java.Lang.Invoke.MethodType)">
   FindConstructor(Class, MethodType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L675"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L687"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findConstructor(java.lang.Class,java.lang.invoke.MethodType)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findConstructor(java.lang.Class,java.lang.invoke.MethodType)</a></p>
@@ -1208,7 +1253,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_FindGetter_Java_Lang_Class_Java_Lang_String_Java_Lang_Class_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.FindGetter(Java.Lang.Class,Java.Lang.String,Java.Lang.Class)">
   FindGetter(Class, String, Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L688"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L700"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findGetter(java.lang.Class,java.lang.String,java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findGetter(java.lang.Class,java.lang.String,java.lang.Class)</a></p>
@@ -1260,7 +1305,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_FindSetter_Java_Lang_Class_Java_Lang_String_Java_Lang_Class_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.FindSetter(Java.Lang.Class,Java.Lang.String,Java.Lang.Class)">
   FindSetter(Class, String, Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L701"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L713"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findSetter(java.lang.Class,java.lang.String,java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findSetter(java.lang.Class,java.lang.String,java.lang.Class)</a></p>
@@ -1312,7 +1357,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_FindSpecial_Java_Lang_Class_Java_Lang_String_Java_Lang_Invoke_MethodType_Java_Lang_Class_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.FindSpecial(Java.Lang.Class,Java.Lang.String,Java.Lang.Invoke.MethodType,Java.Lang.Class)">
   FindSpecial(Class, String, MethodType, Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L715"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L727"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findSpecial(java.lang.Class,java.lang.String,java.lang.invoke.MethodType,java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findSpecial(java.lang.Class,java.lang.String,java.lang.invoke.MethodType,java.lang.Class)</a></p>
@@ -1367,7 +1412,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_FindStatic_Java_Lang_Class_Java_Lang_String_Java_Lang_Invoke_MethodType_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.FindStatic(Java.Lang.Class,Java.Lang.String,Java.Lang.Invoke.MethodType)">
   FindStatic(Class, String, MethodType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L728"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L740"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findStatic(java.lang.Class,java.lang.String,java.lang.invoke.MethodType)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findStatic(java.lang.Class,java.lang.String,java.lang.invoke.MethodType)</a></p>
@@ -1419,7 +1464,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_FindStaticGetter_Java_Lang_Class_Java_Lang_String_Java_Lang_Class_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.FindStaticGetter(Java.Lang.Class,Java.Lang.String,Java.Lang.Class)">
   FindStaticGetter(Class, String, Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L741"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L753"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findStaticGetter(java.lang.Class,java.lang.String,java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findStaticGetter(java.lang.Class,java.lang.String,java.lang.Class)</a></p>
@@ -1471,7 +1516,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_FindStaticSetter_Java_Lang_Class_Java_Lang_String_Java_Lang_Class_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.FindStaticSetter(Java.Lang.Class,Java.Lang.String,Java.Lang.Class)">
   FindStaticSetter(Class, String, Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L754"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L766"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findStaticSetter(java.lang.Class,java.lang.String,java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findStaticSetter(java.lang.Class,java.lang.String,java.lang.Class)</a></p>
@@ -1523,7 +1568,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_FindStaticVarHandle_Java_Lang_Class_Java_Lang_String_Java_Lang_Class_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.FindStaticVarHandle(Java.Lang.Class,Java.Lang.String,Java.Lang.Class)">
   FindStaticVarHandle(Class, String, Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L858"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L870"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findStaticVarHandle(java.lang.Class,java.lang.String,java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findStaticVarHandle(java.lang.Class,java.lang.String,java.lang.Class)</a></p>
@@ -1575,7 +1620,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_FindVarHandle_Java_Lang_Class_Java_Lang_String_Java_Lang_Class_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.FindVarHandle(Java.Lang.Class,Java.Lang.String,Java.Lang.Class)">
   FindVarHandle(Class, String, Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L871"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L883"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findVarHandle(java.lang.Class,java.lang.String,java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findVarHandle(java.lang.Class,java.lang.String,java.lang.Class)</a></p>
@@ -1627,7 +1672,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_FindVirtual_Java_Lang_Class_Java_Lang_String_Java_Lang_Invoke_MethodType_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.FindVirtual(Java.Lang.Class,Java.Lang.String,Java.Lang.Invoke.MethodType)">
   FindVirtual(Class, String, MethodType)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L767"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L779"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findVirtual(java.lang.Class,java.lang.String,java.lang.invoke.MethodType)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#findVirtual(java.lang.Class,java.lang.String,java.lang.invoke.MethodType)</a></p>
@@ -1679,7 +1724,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_HasPrivateAccess" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.HasPrivateAccess">
   HasPrivateAccess()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L603"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L615"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()</a></p>
@@ -1712,7 +1757,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_In_Java_Lang_Class_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.In(Java.Lang.Class)">
   In(Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L845"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L857"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#in(java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#in(java.lang.Class)</a></p>
@@ -1751,7 +1796,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_LookupClass" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.LookupClass">
   LookupClass()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L650"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L662"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupClass()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupClass()</a></p>
@@ -1784,7 +1829,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_LookupModes" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.LookupModes">
   LookupModes()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L611"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L623"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupModes()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupModes()</a></p>
@@ -1817,7 +1862,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_RevealDirect_Java_Lang_Invoke_MethodHandle_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.RevealDirect(Java.Lang.Invoke.MethodHandle)">
   RevealDirect(MethodHandle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L827"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L839"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#revealDirect(java.lang.invoke.MethodHandle)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#revealDirect(java.lang.invoke.MethodHandle)</a></p>
@@ -1856,7 +1901,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_Unreflect_Java_Lang_Reflect_Method_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.Unreflect(Java.Lang.Reflect.Method)">
   Unreflect(Method)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L777"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L789"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflect(java.lang.reflect.Method)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflect(java.lang.reflect.Method)</a></p>
@@ -1900,7 +1945,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_UnreflectConstructor_Java_Lang_Reflect_Constructor_System_Object__" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.UnreflectConstructor(Java.Lang.Reflect.Constructor{System.Object})">
   UnreflectConstructor(Constructor&lt;object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L787"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L799"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectConstructor(java.lang.reflect.Constructor)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectConstructor(java.lang.reflect.Constructor)</a></p>
@@ -1944,7 +1989,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_UnreflectGetter_Java_Lang_Reflect_Field_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.UnreflectGetter(Java.Lang.Reflect.Field)">
   UnreflectGetter(Field)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L797"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L809"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectGetter(java.lang.reflect.Field)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectGetter(java.lang.reflect.Field)</a></p>
@@ -1988,7 +2033,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_UnreflectSetter_Java_Lang_Reflect_Field_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.UnreflectSetter(Java.Lang.Reflect.Field)">
   UnreflectSetter(Field)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L807"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L819"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectSetter(java.lang.reflect.Field)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectSetter(java.lang.reflect.Field)</a></p>
@@ -2032,7 +2077,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_UnreflectSpecial_Java_Lang_Reflect_Method_Java_Lang_Class_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.UnreflectSpecial(Java.Lang.Reflect.Method,Java.Lang.Class)">
   UnreflectSpecial(Method, Class)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L818"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L830"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectSpecial(java.lang.reflect.Method,java.lang.Class)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectSpecial(java.lang.reflect.Method,java.lang.Class)</a></p>
@@ -2079,7 +2124,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 
   <h3 id="Java_Lang_Invoke_MethodHandles_Lookup_UnreflectVarHandle_Java_Lang_Reflect_Field_" data-uid="Java.Lang.Invoke.MethodHandles.Lookup.UnreflectVarHandle(Java.Lang.Reflect.Field)">
   UnreflectVarHandle(Field)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L881"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L893"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectVarHandle(java.lang.reflect.Field)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectVarHandle(java.lang.reflect.Field)</a></p>
@@ -2123,7 +2168,7 @@ Class MethodHandles.Lookup  <a class="header-action link-secondary" title="View 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L544" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Lang/Invoke/MethodHandles.cs/#L556" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -89,7 +89,7 @@
 
 
   <h1 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1" class="text-break">
-Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L368"><i class="bi bi-code-slash"></i></a>
+Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L380"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -228,16 +228,16 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;TArrayType&gt;(IJavaType, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(IJavaType, string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField(IJavaType, string)</a>
@@ -300,16 +300,25 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase-1.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_1_BridgeClazz">JVMBridgeBase&lt;Serializable&gt;.BridgeClazz</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ReferenceEqualsJVM_MASES_JCOBridge_C2JBridge_JVMBridgeBase_MASES_JCOBridge_C2JBridge_JVMBridgeBase_">JVMBridgeBase.ReferenceEqualsJVM(JVMBridgeBase, JVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">JVMBridgeBase.ClazzOf&lt;TClass&gt;(out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, out Exception, bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_RuntimeClassNameOf__1">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.RuntimeClassNameOf(Type)</a>
     </div>
     <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ClassNameOf__1">JVMBridgeBase.ClassNameOf&lt;T&gt;()</a>
@@ -366,10 +375,13 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Dispose">JVMBridgeBase.Dispose()</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.Dispose(bool)</a>
+    </div>
+    <div>
       <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_ToString">JVMBridgeBase.ToString()</a>
     </div>
     <div>
-      <span class="xref">JVMBridgeBase.Equals(IJVMBridgeBase)</span>
+      <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.JVMBridgeBase.html#MASES_JCOBridge_C2JBridge_JVMBridgeBase_Equals_MASES_JCOBridge_C2JBridge_IJVMBridgeBase_">JVMBridgeBase.Equals(IJVMBridgeBase)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
@@ -417,10 +429,10 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;TArrayType&gt;(string, params object[])</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;TArrayType&gt;(string, string, params object[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
@@ -522,7 +534,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1__ctor" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.#ctor">
   AtomicReferenceArray()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
@@ -547,9 +559,42 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <a id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1__ctor_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.#ctor*"></a>
 
+  <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1__ctor_MASES_JCOBridge_C2JBridge_IJVMBridgeBaseInitializer_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.#ctor(MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer)">
+  AtomicReferenceArray(IJVMBridgeBaseInitializer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal constructor: used internally from JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public AtomicReferenceArray(IJVMBridgeBaseInitializer initializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>initializer</code> <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeBaseInitializer.html">IJVMBridgeBaseInitializer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1__ctor_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.#ctor*"></a>
+
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1__ctor_System_Int32_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.#ctor(System.Int32)">
   AtomicReferenceArray(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L383"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L395"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#%3Cinit%3E(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#%3Cinit%3E(int)</a></p>
@@ -582,7 +627,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1__ctor_System_Object___" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.#ctor(System.Object[])">
   AtomicReferenceArray(params object[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
@@ -614,7 +659,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1__ctor__0___" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.#ctor(`0[])">
   AtomicReferenceArray(E[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L387"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#%3Cinit%3E(java.lang.Object[])">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#%3Cinit%3E(java.lang.Object[])</a></p>
@@ -651,7 +696,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_BridgeClassName" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.BridgeClassName">
   BridgeClassName
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Java class name to be instantiated</p>
@@ -683,7 +728,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_IsBridgeAbstract" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.IsBridgeAbstract">
   IsBridgeAbstract
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an abstract class, i.e. cannot be created an instance</p>
@@ -715,7 +760,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_IsBridgeCloseable" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.IsBridgeCloseable">
   IsBridgeCloseable
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> implements Closeable</p>
@@ -747,7 +792,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_IsBridgeInterface" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.IsBridgeInterface">
   IsBridgeInterface
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L102"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is an interface, i.e. does not have any public constructor</p>
@@ -779,7 +824,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_IsBridgeStatic" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.IsBridgeStatic">
   IsBridgeStatic
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the <a class="xref" href="https://jcobridge-api.masesgroup.com/api/MASES.JCOBridge.C2JBridge.IJVMBridgeDefinition.html#MASES_JCOBridge_C2JBridge_IJVMBridgeDefinition_BridgeClassName">BridgeClassName</a> is a static class, i.e. does not have any public constructor</p>
@@ -815,7 +860,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_AccumulateAndGet_System_Int32__0_Java_Util_Function_BinaryOperator__0__" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.AccumulateAndGet(System.Int32,`0,Java.Util.Function.BinaryOperator{`0})">
   AccumulateAndGet(int, E, BinaryOperator&lt;E&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L481"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#accumulateAndGet(int,java.lang.Object,java.util.function.BinaryOperator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#accumulateAndGet(int,java.lang.Object,java.util.function.BinaryOperator)</a></p>
@@ -860,7 +905,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_CompareAndExchange_System_Int32__0__0_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.CompareAndExchange(System.Int32,`0,`0)">
   CompareAndExchange(int, E, E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L492"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndExchange(int,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndExchange(int,java.lang.Object,java.lang.Object)</a></p>
@@ -905,7 +950,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_CompareAndExchangeAcquire_System_Int32__0__0_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.CompareAndExchangeAcquire(System.Int32,`0,`0)">
   CompareAndExchangeAcquire(int, E, E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L491"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L503"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndExchangeAcquire(int,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndExchangeAcquire(int,java.lang.Object,java.lang.Object)</a></p>
@@ -950,7 +995,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_CompareAndExchangeRelease_System_Int32__0__0_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.CompareAndExchangeRelease(System.Int32,`0,`0)">
   CompareAndExchangeRelease(int, E, E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L514"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndExchangeRelease(int,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndExchangeRelease(int,java.lang.Object,java.lang.Object)</a></p>
@@ -995,7 +1040,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_CompareAndSet_System_Int32__0__0_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.CompareAndSet(System.Int32,`0,`0)">
   CompareAndSet(int, E, E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L414"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L426"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndSet(int,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#compareAndSet(int,java.lang.Object,java.lang.Object)</a></p>
@@ -1040,7 +1085,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_Get_System_Int32_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.Get(System.Int32)">
   Get(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L523"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#get(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#get(int)</a></p>
@@ -1079,7 +1124,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_GetAcquire_System_Int32_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.GetAcquire(System.Int32)">
   GetAcquire(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L532"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAcquire(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAcquire(int)</a></p>
@@ -1118,7 +1163,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_GetAndAccumulate_System_Int32__0_Java_Util_Function_BinaryOperator__0__" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.GetAndAccumulate(System.Int32,`0,Java.Util.Function.BinaryOperator{`0})">
   GetAndAccumulate(int, E, BinaryOperator&lt;E&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L531"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L543"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAndAccumulate(int,java.lang.Object,java.util.function.BinaryOperator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAndAccumulate(int,java.lang.Object,java.util.function.BinaryOperator)</a></p>
@@ -1163,7 +1208,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_GetAndSet_System_Int32__0_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.GetAndSet(System.Int32,`0)">
   GetAndSet(int, E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L553"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAndSet(int,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAndSet(int,java.lang.Object)</a></p>
@@ -1205,7 +1250,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_GetAndUpdate_System_Int32_Java_Util_Function_UnaryOperator__0__" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.GetAndUpdate(System.Int32,Java.Util.Function.UnaryOperator{`0})">
   GetAndUpdate(int, UnaryOperator&lt;E&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L551"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L563"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAndUpdate(int,java.util.function.UnaryOperator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getAndUpdate(int,java.util.function.UnaryOperator)</a></p>
@@ -1247,7 +1292,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_GetOpaque_System_Int32_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.GetOpaque(System.Int32)">
   GetOpaque(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L572"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getOpaque(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getOpaque(int)</a></p>
@@ -1286,7 +1331,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_GetPlain_System_Int32_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.GetPlain(System.Int32)">
   GetPlain(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L569"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L581"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getPlain(int)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#getPlain(int)</a></p>
@@ -1325,7 +1370,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_LazySet_System_Int32__0_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.LazySet(System.Int32,`0)">
   LazySet(int, E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L608"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#lazySet(int,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#lazySet(int,java.lang.Object)</a></p>
@@ -1361,7 +1406,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_Length" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.Length">
   Length()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L587"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L599"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#length()">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#length()</a></p>
@@ -1394,7 +1439,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_Set_System_Int32__0_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.Set(System.Int32,`0)">
   Set(int, E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L605"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L617"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#set(int,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#set(int,java.lang.Object)</a></p>
@@ -1430,7 +1475,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_SetOpaque_System_Int32__0_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.SetOpaque(System.Int32,`0)">
   SetOpaque(int, E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L614"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L626"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#setOpaque(int,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#setOpaque(int,java.lang.Object)</a></p>
@@ -1466,7 +1511,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_SetPlain_System_Int32__0_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.SetPlain(System.Int32,`0)">
   SetPlain(int, E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L623"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L635"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#setPlain(int,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#setPlain(int,java.lang.Object)</a></p>
@@ -1502,7 +1547,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_SetRelease_System_Int32__0_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.SetRelease(System.Int32,`0)">
   SetRelease(int, E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L632"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L644"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#setRelease(int,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#setRelease(int,java.lang.Object)</a></p>
@@ -1538,7 +1583,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_UpdateAndGet_System_Int32_Java_Util_Function_UnaryOperator__0__" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.UpdateAndGet(System.Int32,Java.Util.Function.UnaryOperator{`0})">
   UpdateAndGet(int, UnaryOperator&lt;E&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L579"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L591"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#updateAndGet(int,java.util.function.UnaryOperator)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#updateAndGet(int,java.util.function.UnaryOperator)</a></p>
@@ -1580,7 +1625,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_WeakCompareAndSetAcquire_System_Int32__0__0_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.WeakCompareAndSetAcquire(System.Int32,`0,`0)">
   WeakCompareAndSetAcquire(int, E, E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L437"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#weakCompareAndSetAcquire(int,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#weakCompareAndSetAcquire(int,java.lang.Object,java.lang.Object)</a></p>
@@ -1625,7 +1670,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_WeakCompareAndSetPlain_System_Int32__0__0_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.WeakCompareAndSetPlain(System.Int32,`0,`0)">
   WeakCompareAndSetPlain(int, E, E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L436"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L448"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#weakCompareAndSetPlain(int,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#weakCompareAndSetPlain(int,java.lang.Object,java.lang.Object)</a></p>
@@ -1670,7 +1715,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_WeakCompareAndSetRelease_System_Int32__0__0_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.WeakCompareAndSetRelease(System.Int32,`0,`0)">
   WeakCompareAndSetRelease(int, E, E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L459"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#weakCompareAndSetRelease(int,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#weakCompareAndSetRelease(int,java.lang.Object,java.lang.Object)</a></p>
@@ -1715,7 +1760,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_WeakCompareAndSetVolatile_System_Int32__0__0_" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.WeakCompareAndSetVolatile(System.Int32,`0,`0)">
   WeakCompareAndSetVolatile(int, E, E)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L470"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#weakCompareAndSetVolatile(int,java.lang.Object,java.lang.Object)">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html#weakCompareAndSetVolatile(int,java.lang.Object,java.lang.Object)</a></p>
@@ -1764,7 +1809,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 
   <h3 id="Java_Util_Concurrent_Atomic_AtomicReferenceArray_1_op_Implicit_Java_Util_Concurrent_Atomic_AtomicReferenceArray__0___Java_Util_Concurrent_Atomic_AtomicReferenceArray" data-uid="Java.Util.Concurrent.Atomic.AtomicReferenceArray`1.op_Implicit(Java.Util.Concurrent.Atomic.AtomicReferenceArray{`0})~Java.Util.Concurrent.Atomic.AtomicReferenceArray">
   implicit operator AtomicReferenceArray(AtomicReferenceArray&lt;E&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L406"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Util.Concurrent.Atomic.AtomicReferenceArray-1.html">AtomicReferenceArray&lt;E&gt;</a> to <a class="xref" href="Java.Util.Concurrent.Atomic.AtomicReferenceArray.html">AtomicReferenceArray</a></p>
@@ -1801,7 +1846,7 @@ Class AtomicReferenceArray&lt;E&gt;  <a class="header-action link-secondary" tit
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L368" class="edit-link">Edit this page</a>
+          <a href="https://github.com/masesgroup/JNet/blob/master/src/net/JNet/Generated/Java/Util/Concurrent/Atomic/AtomicReferenceArray.cs/#L380" class="edit-link">Edit this page</a>
         </div>
 
 
