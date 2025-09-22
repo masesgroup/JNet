@@ -64,6 +64,16 @@ namespace Java.Awt.EventNs
     /// </summary>
     public partial class ComponentListenerDirect : ComponentListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ComponentListenerDirect() { }
+        /// <summary>
+        /// Internal constructor: used internally from JCOBridge
+        /// </summary>
+        [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public ComponentListenerDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+
         /// <inheritdoc/>
         public override bool AutoInit => false;
 

@@ -146,6 +146,16 @@ namespace Java.Net.Http
         /// </summary>
         public partial class ListenerDirect : Listener
         {
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            public ListenerDirect() { }
+            /// <summary>
+            /// Internal constructor: used internally from JCOBridge
+            /// </summary>
+            [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public ListenerDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+
             /// <inheritdoc/>
             public override bool AutoInit => false;
 

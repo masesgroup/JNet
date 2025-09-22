@@ -64,6 +64,16 @@ namespace Java.Awt.DesktopNs
     /// </summary>
     public partial class SystemEventListenerDirect : SystemEventListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public SystemEventListenerDirect() { }
+        /// <summary>
+        /// Internal constructor: used internally from JCOBridge
+        /// </summary>
+        [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public SystemEventListenerDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+
         /// <inheritdoc/>
         public override bool AutoInit => false;
 

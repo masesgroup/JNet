@@ -64,6 +64,16 @@ namespace Javax.Swing.Event
     /// </summary>
     public partial class MenuListenerDirect : MenuListener
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public MenuListenerDirect() { }
+        /// <summary>
+        /// Internal constructor: used internally from JCOBridge
+        /// </summary>
+        [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public MenuListenerDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+
         /// <inheritdoc/>
         public override bool AutoInit => false;
 

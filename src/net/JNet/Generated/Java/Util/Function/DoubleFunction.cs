@@ -64,6 +64,16 @@ namespace Java.Util.Function
     /// </summary>
     public partial class DoubleFunctionDirect : DoubleFunction
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DoubleFunctionDirect() { }
+        /// <summary>
+        /// Internal constructor: used internally from JCOBridge
+        /// </summary>
+        [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public DoubleFunctionDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+
         /// <inheritdoc/>
         public override bool AutoInit => false;
 
@@ -128,6 +138,16 @@ namespace Java.Util.Function
     /// </summary>
     public partial class DoubleFunctionDirect<R> : DoubleFunction<R>
     {
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public DoubleFunctionDirect() { }
+        /// <summary>
+        /// Internal constructor: used internally from JCOBridge
+        /// </summary>
+        [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public DoubleFunctionDirect(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
+
         /// <inheritdoc/>
         public override bool AutoInit => false;
 
