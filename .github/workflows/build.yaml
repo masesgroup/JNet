@@ -339,14 +339,14 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-latest', 'windows-2022', 'macos-14' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
+        os: [ 'ubuntu-latest', 'windows-2022', 'macos-latest' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
         framework: [ 'net462', 'net8.0', 'net9.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '11', '17', '21' ] # only LTS versions
         exclude:
           - os: ubuntu-latest
             framework: net462
-          - os: macos-14
+          - os: macos-latest
             framework: net462
           - jdk_vendor: oracle
             jdk_version: 11
@@ -374,7 +374,7 @@ jobs:
           key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
 
       - uses: actions/setup-dotnet@v5
-        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-14' || matrix.os == 'macos-13' }}
+        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' }}
         with:
           dotnet-version: |
             9.x
@@ -405,11 +405,11 @@ jobs:
           distribution: 'graalvm' # See 'Supported distributions' for available options
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-14' || matrix.os == 'macos-13' || (matrix.os == 'windows-2022' && matrix.framework != 'net462') }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
+      - if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' || (matrix.os == 'windows-2022' && matrix.framework != 'net462') }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: dotnet ./bin/${{ matrix.framework }}/JNetTest.dll
 
-      - if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-14' || matrix.os == 'macos-13' || (matrix.os == 'windows-2022' && matrix.framework != 'net462') }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
+      - if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest' || matrix.os == 'macos-13' || (matrix.os == 'windows-2022' && matrix.framework != 'net462') }} # for windows see https://github.com/masesgroup/JNet/issues/573#issuecomment-2550033900
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         run: dotnet ./bin/${{ matrix.framework }}/JNetByteBufferTest.dll
           
@@ -449,7 +449,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-latest', 'windows-2022', 'macos-14' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
+        os: [ 'ubuntu-latest', 'windows-2022', 'macos-latest' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '11', '17', '21' ] # only LTS versions
         exclude:
