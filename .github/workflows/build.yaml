@@ -339,12 +339,14 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-latest', 'windows-2022', 'windows-2025', 'macos-13', 'macos-14', 'macos-15' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
+        os: [ 'ubuntu-22.04', 'ubuntu-24.04', 'windows-2022', 'windows-2025', 'macos-13', 'macos-14', 'macos-15' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
         framework: [ 'net462', 'net8.0', 'net9.0' ]
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '11', '17', '21' ] # only LTS versions
         exclude:
-          - os: ubuntu-latest
+          - os: ubuntu-22.04
+            framework: net462
+          - os: ubuntu-24.04
             framework: net462
           - os: macos-13
             framework: net462
@@ -378,7 +380,7 @@ jobs:
           key: JNet_${{ github.run_number }}_${{ github.run_attempt }}_bin_${{ github.sha }}
 
       - uses: actions/setup-dotnet@v5
-        if: ${{ matrix.os == 'ubuntu-latest' || matrix.os == 'macos-15' || matrix.os == 'macos-14' || matrix.os == 'macos-13' }}
+        if: ${{ matrix.os == 'ubuntu-22.04' || matrix.os == 'ubuntu-24.04' || matrix.os == 'macos-15' || matrix.os == 'macos-14' || matrix.os == 'macos-13' }}
         with:
           dotnet-version: |
             9.x
@@ -453,7 +455,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'ubuntu-latest', 'windows-2022', 'windows-2025', 'macos-13', 'macos-14', 'macos-15' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
+        os: [ 'ubuntu-22.04', 'ubuntu-24.04', 'windows-2022', 'windows-2025', 'macos-13', 'macos-14', 'macos-15' ] # , 'macos-13' ] disable due to https://github.com/masesgroup/JNet/issues/518#issuecomment-2547271924
         jdk_vendor: [ 'temurin', 'zulu', 'microsoft', 'corretto', 'oracle', 'graalvm' ]
         jdk_version: [ '11', '17', '21' ] # only LTS versions
         exclude:
