@@ -428,7 +428,7 @@ jobs:
         run: .\bin\${{ matrix.framework }}\JNetByteBufferTest.exe
 
       - uses: actions/upload-artifact@v4
-        if: ${{ matrix.os == 'windows-2025' }}
+        if: ${{ matrix.os == 'windows-2022' || matrix.os == 'windows-2025' }}
         with:
           if-no-files-found: ignore
           name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
@@ -436,7 +436,7 @@ jobs:
           retention-days: 7
 
       - uses: actions/upload-artifact@v4
-        if: ${{ matrix.os != 'windows-2025' }}
+        if: ${{ matrix.os != 'windows-2022' && matrix.os != 'windows-2025' }}
         with:
           if-no-files-found: ignore
           name: Crash_tests_${{ matrix.os }}_${{ matrix.framework }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
@@ -483,7 +483,7 @@ jobs:
             9.x
 
       - name: Download Procdump and prepare
-        if: ${{ matrix.os == 'windows-2025' && inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
+        if: ${{ ( matrix.os == 'windows-2022' || matrix.os == 'windows-2025' ) && inputs.EnableProcessDump }} # see https://gist.github.com/Sedeniono/e6d6504e3bf0645937852ee5681ef9ee and https://learn.microsoft.com/it-it/sysinternals/downloads/procdump
         continue-on-error: true
         run: |
           C:\msys64\usr\bin\wget.exe https://download.sysinternals.com/files/Procdump.zip
@@ -519,32 +519,32 @@ jobs:
       - shell: pwsh
         run: Register-PSRepository -Name Local_Nuget_Feed -SourceLocation $env:GITHUB_WORKSPACE\bin -PublishLocation $env:GITHUB_WORKSPACE\bin -InstallationPolicy Trusted
 
-      - if: ${{ matrix.os != 'windows-2025' }}
+      - if: ${{ matrix.os != 'windows-2022' && matrix.os != 'windows-2025' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}/bin/JNetPSTest.ps1
 
-      - if: ${{ matrix.os == 'windows-2025' }}
+      - if: ${{ matrix.os == 'windows-2022' || matrix.os == 'windows-2025' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: pwsh
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1
 
-      - if: ${{ matrix.os == 'windows-2025' }}
+      - if: ${{ matrix.os == 'windows-2022' || matrix.os == 'windows-2025' }}
         continue-on-error: ${{ inputs.ForceContinueOnError == true }}
         shell: powershell
         run: |
           Install-Module MASES.JNetPS -Repository Local_Nuget_Feed
           ${{ github.workspace }}\bin\JNetPSTest.ps1
           
-      - if: ${{ matrix.os == 'windows-2025' }}
+      - if: ${{ matrix.os == 'windows-2022' || matrix.os == 'windows-2025' }}
         run: (Get-EventLog -LogName Application -Newest 5).Message
 
       - uses: actions/upload-artifact@v4
-        if: ${{ matrix.os == 'windows-2025' }}
+        if: ${{ matrix.os == 'windows-2022' || matrix.os == 'windows-2025' }}
         with:
           if-no-files-found: ignore
           name: Crash_powershell_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
@@ -552,7 +552,7 @@ jobs:
           retention-days: 7
 
       - uses: actions/upload-artifact@v4
-        if: ${{ matrix.os != 'windows-2025' }}
+        if: ${{ matrix.os != 'windows-2022' && matrix.os != 'windows-2025' }}
         with:
           if-no-files-found: ignore
           name: Crash_powershell_${{ matrix.os }}_${{ matrix.jdk_vendor }}_${{ matrix.jdk_version }}
