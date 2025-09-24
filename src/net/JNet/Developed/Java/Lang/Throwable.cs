@@ -47,7 +47,20 @@ namespace Java.Lang
         /// <summary>
         /// Returns the cause of this throwable or null if the cause is nonexistent or unknown.
         /// </summary>
-        public Throwable Cause => IExecute<Throwable>("getCause");
+        public Throwable Cause
+        {
+            get
+            {
+                try
+                {
+                    return IExecute<Throwable>("getCause");
+                }
+                catch
+                {
+                    return InnerException as Throwable;
+                }
+            }
+        }
         /// <summary>
         ///  Creates a localized description of this throwable.
         /// </summary>
