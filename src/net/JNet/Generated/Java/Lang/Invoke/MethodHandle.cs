@@ -104,7 +104,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Throwable"/>
         public object Invoke(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("invoke", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("invoke", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("invoke", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invokeExact(java.lang.Object...)"/>
@@ -114,7 +114,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Throwable"/>
         public object InvokeExact(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("invokeExact", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("invokeExact", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("invokeExact", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#asCollector(int,java.lang.Class,int)"/>
@@ -218,7 +218,7 @@ namespace Java.Lang.Invoke
         /// <exception cref="Java.Lang.Throwable"/>
         public object InvokeWithArguments(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("invokeWithArguments", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("invokeWithArguments", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("invokeWithArguments", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/invoke/MethodHandle.html#invokeWithArguments(java.util.List)"/>

@@ -276,7 +276,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
         public static Javax.Swing.RowFilter DateFilterMethod(Javax.Swing.RowFilter.ComparisonType arg0, Java.Util.Date arg1, params int[] arg2)
         {
-            if (arg2.Length == 0) return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "dateFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/util/Date;[I)Ljavax/swing/RowFilter;", arg0, arg1); else return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "dateFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/util/Date;[I)Ljavax/swing/RowFilter;", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "dateFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/util/Date;[I)Ljavax/swing/RowFilter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#notFilter(javax.swing.RowFilter)"/>
@@ -296,7 +296,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
         public static Javax.Swing.RowFilter NumberFilterMethod(Javax.Swing.RowFilter.ComparisonType arg0, Java.Lang.Number arg1, params int[] arg2)
         {
-            if (arg2.Length == 0) return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "numberFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/lang/Number;[I)Ljavax/swing/RowFilter;", arg0, arg1); else return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "numberFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/lang/Number;[I)Ljavax/swing/RowFilter;", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "numberFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/lang/Number;[I)Ljavax/swing/RowFilter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#orFilter(java.lang.Iterable)"/>
@@ -315,7 +315,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
         public static Javax.Swing.RowFilter RegexFilterMethod(Java.Lang.String arg0, params int[] arg1)
         {
-            if (arg1.Length == 0) return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "regexFilter", "(Ljava/lang/String;[I)Ljavax/swing/RowFilter;", arg0); else return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "regexFilter", "(Ljava/lang/String;[I)Ljavax/swing/RowFilter;", arg0, arg1);
+            return SExecuteWithSignature<Javax.Swing.RowFilter>(LocalBridgeClazz, "regexFilter", "(Ljava/lang/String;[I)Ljavax/swing/RowFilter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
         }
 
         #endregion
@@ -598,7 +598,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
         public static Javax.Swing.RowFilter<M, I> DateFilterMethod(Javax.Swing.RowFilter.ComparisonType arg0, Java.Util.Date arg1, params int[] arg2)
         {
-            if (arg2.Length == 0) return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "dateFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/util/Date;[I)Ljavax/swing/RowFilter;", arg0, arg1); else return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "dateFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/util/Date;[I)Ljavax/swing/RowFilter;", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "dateFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/util/Date;[I)Ljavax/swing/RowFilter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#notFilter(javax.swing.RowFilter)"/>
@@ -618,7 +618,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
         public static Javax.Swing.RowFilter<M, I> NumberFilterMethod(Javax.Swing.RowFilter.ComparisonType arg0, Java.Lang.Number arg1, params int[] arg2)
         {
-            if (arg2.Length == 0) return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "numberFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/lang/Number;[I)Ljavax/swing/RowFilter;", arg0, arg1); else return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "numberFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/lang/Number;[I)Ljavax/swing/RowFilter;", arg0, arg1, arg2);
+            return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "numberFilter", "(Ljavax/swing/RowFilter$ComparisonType;Ljava/lang/Number;[I)Ljavax/swing/RowFilter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/RowFilter.html#orFilter(java.lang.Iterable)"/>
@@ -640,7 +640,7 @@ namespace Javax.Swing
         /// <returns><see cref="Javax.Swing.RowFilter"/></returns>
         public static Javax.Swing.RowFilter<M, I> RegexFilterMethod(Java.Lang.String arg0, params int[] arg1)
         {
-            if (arg1.Length == 0) return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "regexFilter", "(Ljava/lang/String;[I)Ljavax/swing/RowFilter;", arg0); else return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "regexFilter", "(Ljava/lang/String;[I)Ljavax/swing/RowFilter;", arg0, arg1);
+            return SExecuteWithSignature<Javax.Swing.RowFilter<M, I>>(LocalBridgeClazz, "regexFilter", "(Ljava/lang/String;[I)Ljavax/swing/RowFilter;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
         }
 
         #endregion

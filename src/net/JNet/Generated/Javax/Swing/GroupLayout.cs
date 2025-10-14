@@ -431,7 +431,7 @@ namespace Javax.Swing
         /// <param name="arg1"><see cref="Java.Awt.Component"/></param>
         public void LinkSize(int arg0, params Java.Awt.Component[] arg1)
         {
-            if (arg1.Length == 0) IExecuteWithSignature("linkSize", "(I[Ljava/awt/Component;)V", arg0); else IExecuteWithSignature("linkSize", "(I[Ljava/awt/Component;)V", arg0, arg1);
+            IExecuteWithSignature("linkSize", "(I[Ljava/awt/Component;)V", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#linkSize(java.awt.Component...)"/>
@@ -439,7 +439,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Awt.Component"/></param>
         public void LinkSize(params Java.Awt.Component[] arg0)
         {
-            if (arg0.Length == 0) IExecuteWithSignature("linkSize", "([Ljava/awt/Component;)V"); else IExecuteWithSignature("linkSize", "([Ljava/awt/Component;)V", arg0);
+            IExecuteWithSignature("linkSize", "([Ljava/awt/Component;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/GroupLayout.html#removeLayoutComponent(java.awt.Component)"/>
