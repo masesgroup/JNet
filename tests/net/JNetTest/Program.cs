@@ -47,10 +47,12 @@ namespace MASES.JNetTest
 #endif
 
             Initialize();
-			Stopwatch stopwatch = Stopwatch.StartNew();
-			try
+            Stopwatch stopwatch = Stopwatch.StartNew();
+            try
             {
                 TestCreateObjects();
+
+                TestVarArg();
 
                 TestEnum();
 
@@ -128,9 +130,9 @@ namespace MASES.JNetTest
             }
             finally
             {
-				stopwatch.Stop();
-				System.Console.WriteLine($"All tests completed in {stopwatch.Elapsed}");
-			}
+                stopwatch.Stop();
+                System.Console.WriteLine($"All tests completed in {stopwatch.Elapsed}");
+            }
         }
 
         static void Initialize()
@@ -177,6 +179,30 @@ namespace MASES.JNetTest
             if (str != dataToUse)
             {
                 throw new System.InvalidOperationException($"Failed to compare with \"==\": {str} with {dataToUse}");
+            }
+        }
+
+        static void TestVarArg()
+        {
+            System.Console.WriteLine("TestVarArg");
+
+            for (int i = 0; i < 10; i++)
+            {
+                string str;
+                try
+                {
+                    str = String.Format("This is the %d %s for a %s", i, "test", "varArg");
+                }
+                catch
+                {
+                    str = String.SExecuteWithSignature("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", "This is the %d %s for a %s", i, "test", "varArg").ToString();
+                }
+
+                var dataToUse = string.Format("This is the {0} {1} for a {2}", i, "test", "varArg");
+                if (str != dataToUse)
+                {
+                    throw new System.InvalidOperationException($"Failed to compare {str} with {dataToUse}");
+                }
             }
         }
 
@@ -520,9 +546,12 @@ namespace MASES.JNetTest
             var newDict = map.ToNetDictiony<string, bool, Java.Lang.String, Java.Lang.Boolean>();
 
             const int execution = 10000;
+            const int numRepetition = 10;
+            System.Collections.Generic.List<System.Collections.Generic.List<long>> executionData = new System.Collections.Generic.List<System.Collections.Generic.List<long>>();
 
-            for (int index = 0; index < 10; index++)
+            for (int index = 0; index < numRepetition; index++)
             {
+                System.Collections.Generic.List<long> singleExecutionData = new System.Collections.Generic.List<long>();
                 Stopwatch w = Stopwatch.StartNew();
                 Java.Util.ArrayList<int> alist = new Java.Util.ArrayList<int>();
                 for (int i = 0; i < execution; i++)
@@ -530,6 +559,7 @@ namespace MASES.JNetTest
                     alist.Add(i);
                 }
                 w.Stop();
+                singleExecutionData.Add(w.Elapsed.Ticks);
                 System.Console.WriteLine($"ArrayList Elapsed ticks: {w.Elapsed.Ticks}");
 
                 w.Restart();
@@ -539,6 +569,7 @@ namespace MASES.JNetTest
                     nlist.Add(i);
                 }
                 w.Stop();
+                singleExecutionData.Add(w.Elapsed.Ticks);
                 var referenceValue = w.Elapsed.Ticks;
                 System.Console.WriteLine($"System.Collections.Generic.List Elapsed {w.Elapsed} - ticks: {referenceValue}");
 
@@ -548,6 +579,7 @@ namespace MASES.JNetTest
                 var tmpJList = JNetHelper.ListFrom(tmpArray);
                 alist = new Java.Util.ArrayList<int>(tmpJList);
                 w.Stop();
+                singleExecutionData.Add(w.Elapsed.Ticks);
                 System.Console.WriteLine($"Java.Util.ArrayList from array Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 var intBuffer = IntBuffer.From(tmpArray, false, false);
@@ -556,16 +588,32 @@ namespace MASES.JNetTest
                 tmpJList = JNetHelper.ListFrom(intBuffer);
                 alist = new Java.Util.ArrayList<int>(tmpJList);
                 w.Stop();
+                singleExecutionData.Add(w.Elapsed.Ticks);
                 System.Console.WriteLine($"Java.Util.ArrayList from array premade buffer Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
                 tmpJList = JNetHelper.ListFrom(tmpArray, true);
                 alist = new Java.Util.ArrayList<int>(tmpJList);
                 w.Stop();
+                singleExecutionData.Add(w.Elapsed.Ticks);
                 System.Console.WriteLine($"Java.Util.ArrayList from array buffered Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
                 //var collection = newDict.Values.ToJCollection();
                 //var intermediate = collection.ToList<Map.Entry<string, string>>();
                 var list = ((List<int>)alist).ToList();
+
+                executionData.Add(singleExecutionData);
+            }
+
+            int numOfTests = executionData[0].Count;
+
+            for (int i = 0; i < numOfTests; i++)
+            {
+                long total = 0;
+                for (int index = 1; index < numRepetition; index++)
+                {
+                    total += executionData[index][i];
+                }
+                System.Console.WriteLine($"Test {i} Mean {System.TimeSpan.FromTicks(total / (numRepetition - 1))}");
             }
         }
     }
