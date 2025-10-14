@@ -1844,7 +1844,8 @@ namespace MASES.JNetReflector
                                                                 execStub,
                                                                 methodNameOrigin,
                                                                 string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
-                                                                $", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}{(executionParamsString.Length == 0 ? string.Empty : $", {executionParamsString}")})",
+                                                                executionParamsString.Length == 0 ? $", {varArg.Name()}"
+                                                                                                  : $", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}, {executionParamsString})",
                                                                 returnType);
                     }
                     else
@@ -1863,7 +1864,8 @@ namespace MASES.JNetReflector
                                                                 isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : executeGenType,
                                                                 methodNameOrigin,
                                                                 string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
-                                                                $", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}{(executionParamsString.Length == 0 ? string.Empty : $", {executionParamsString}")})"
+                                                                executionParamsString.Length == 0 ? $", {varArg.Name()}"
+                                                                                                  : $", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}, {executionParamsString})"
                                                                 );
 
                         if (isListenerReturnType && isDirectListener == false)
@@ -1874,7 +1876,9 @@ namespace MASES.JNetReflector
                                                                           isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : executeGenTypeDirect,
                                                                           methodNameOrigin,
                                                                           string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
-                                                                          $", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}{(executionParamsString.Length == 0 ? string.Empty : $", {executionParamsString}")})"
+                                                                          executionParamsString.Length == 0 ? $", {varArg.Name()}"
+                                                                                                            : $", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}, {executionParamsString})"
+
                                                                           );
                         }
                     }
