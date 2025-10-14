@@ -743,7 +743,7 @@ namespace MASES.JNetReflector
                                                      .Replace(AllPackageClasses.ClassStub.SIMPLECLASS, jClass.JVMClassName(null, false, false))
                                                      .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(null, isGeneric, false))
                                                      .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
-                                                     .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, false, JNetReflectorCore.UseCamel))
+                                                     .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, false, JNetReflectorCore.UseCamel, out _))
                                                      .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, string.Empty);
             }
             else
@@ -756,7 +756,7 @@ namespace MASES.JNetReflector
                                                 .Replace(AllPackageClasses.ClassStub.CLASS, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, false))
                                                 .Replace(AllPackageClasses.ClassStub.CLASS_DIRECT, jClass.JVMClassName(new List<KeyValuePair<string, string>>(), isGeneric, true))
                                                 .Replace(AllPackageClasses.ClassStub.HELP, jClass.JavadocHrefUrl(JNetReflectorCore.UseCamel))
-                                                .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, jClassIsListener, JNetReflectorCore.UseCamel) + (isMainClass ? SpecialNames.MainClassPlaceHolder : string.Empty))
+                                                .Replace(AllPackageClasses.ClassStub.BASECLASS, jClass.JVMBaseClassName(isGeneric, jClassIsListener, JNetReflectorCore.UseCamel, out bool baseClassIsJVMBridgeBase) + (isMainClass ? SpecialNames.MainClassPlaceHolder : string.Empty))
                                                 .Replace(AllPackageClasses.ClassStub.WHERECLAUSES, jClass.WhereClauses(isGeneric, JNetReflectorCore.UseCamel))
                                                 .Replace(AllPackageClasses.ClassStub.ISABSTRACT, isClassAbstract ? "true" : "false")
                                                 .Replace(AllPackageClasses.ClassStub.ISCLOSEABLE, isClassCloseable ? "true" : "false")
@@ -765,7 +765,7 @@ namespace MASES.JNetReflector
 
                 if (!jClassIsListener)
                 {
-                    constructorClassBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true).AddTabLevel(1);
+                    constructorClassBlock = jClass.AnalyzeConstructors(classDefinitions, isGeneric, true, baseClassIsJVMBridgeBase).AddTabLevel(1);
                     operatorClassBlock = jClass.AnalyzeOperators(classDefinitions, isGeneric, true).AddTabLevel(1);
                     fieldClassBlock = jClass.AnalyzeFields(classDefinitions, isGeneric).AddTabLevel(1);
                     staticMethodClassBlock = jClass.AnalyzeMethods(classDefinitions, methodPrefilter, isGeneric, false, jClassIsListener, false, true).AddTabLevel(1);
@@ -908,7 +908,7 @@ namespace MASES.JNetReflector
             }
         }
 
-        static string AnalyzeConstructors(this Class classDefinition, IEnumerable<Class> classDefinitions, bool isGeneric, bool isNested)
+        static string AnalyzeConstructors(this Class classDefinition, IEnumerable<Class> classDefinitions, bool isGeneric, bool isNested, bool baseClassIsJVMBridgeBase)
         {
             ReportTrace(ReflectionTraceLevel.Info, "******************* Analyze Constructors of {0} *******************", classDefinition.GenericString);
 
@@ -1040,12 +1040,13 @@ namespace MASES.JNetReflector
                     if (item.IsVarArgs)
                     {
                         constructorParamsBuilder.AppendFormat($"params {typeStr} {varArg.Name()}, ");
+                        if (!baseClassIsJVMBridgeBase) constructorExecutionParamsBuilder.AppendFormat($"{item.Name()}, ");
                     }
                     else
                     {
                         constructorParamsBuilder.AppendFormat($"{typeStr} {item.Name()}, ");
+                        constructorExecutionParamsBuilder.AppendFormat($"{item.Name()}, ");
                     }
-                    constructorExecutionParamsBuilder.AppendFormat($"{item.Name()}, ");
                 }
 
                 ReportTrace(ReflectionTraceLevel.Debug, "Preparing constructor {0}", constructor.GenericString);
@@ -1056,6 +1057,12 @@ namespace MASES.JNetReflector
                 {
                     if (paramsString.EndsWith(", ")) paramsString = paramsString.Substring(0, paramsString.Length - 2); // remove last occurrence of ", "
                     if (executionParamsString.EndsWith(", ")) executionParamsString = executionParamsString.Substring(0, executionParamsString.Length - 2); // remove last occurrence of ", "
+                }
+
+                if (hasVarArg && baseClassIsJVMBridgeBase)
+                {
+                    executionParamsString = executionParamsString.Length == 0 ? $"{varArg.Name()}"
+                                                                              : $"MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}, {executionParamsString})";
                 }
 
                 var exceptions = constructor.ExceptionTypes;
