@@ -1844,7 +1844,7 @@ namespace MASES.JNet.Reflector
                                                                 execStub,
                                                                 methodNameOrigin,
                                                                 string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
-                                                                $"MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}{(executionParamsString.Length == 0 ? string.Empty : $", {executionParamsString}")})",
+                                                                $", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}{(executionParamsString.Length == 0 ? string.Empty : $", {executionParamsString}")})",
                                                                 returnType);
                     }
                     else
@@ -1863,7 +1863,7 @@ namespace MASES.JNet.Reflector
                                                                 isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : executeGenType,
                                                                 methodNameOrigin,
                                                                 string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
-                                                                $"MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}{(executionParamsString.Length == 0 ? string.Empty : $", {executionParamsString}")})"
+                                                                $", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}{(executionParamsString.Length == 0 ? string.Empty : $", {executionParamsString}")})"
                                                                 );
 
                         if (isListenerReturnType && isDirectListener == false)
@@ -1874,7 +1874,7 @@ namespace MASES.JNet.Reflector
                                                                           isVoidMethod || method.IsObjectReturnType(isGeneric, JNetReflectorCore.UseCamel) ? string.Empty : executeGenTypeDirect,
                                                                           methodNameOrigin,
                                                                           string.IsNullOrWhiteSpace(signature) ? string.Empty : $", \"{signature}\"",
-                                                                          $"MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}{(executionParamsString.Length == 0 ? string.Empty : $", {executionParamsString}")})"
+                                                                          $", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild({varArg.Name()}{(executionParamsString.Length == 0 ? string.Empty : $", {executionParamsString}")})"
                                                                           );
                         }
                     }
