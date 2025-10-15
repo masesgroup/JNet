@@ -26,12 +26,14 @@ public class TestFuture {
 
        _service.submit(() -> {
             Thread.sleep(500);
-            completableFuture.completeExceptionally(new UnsupportedOperationException());
+            completableFuture.completeExceptionally(new UnsupportedOperationException("_service.submit", new UnsupportedOperationException("_service.submit", new UnsupportedOperationException("_service.submit"))));
             return null;
         });
 
         return completableFuture;
     }
 
-
+    public void shutdown() throws SecurityException {
+        _service.shutdown();
+    }
 }

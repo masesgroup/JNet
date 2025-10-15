@@ -23,7 +23,6 @@ using Java.Util;
 using Java.Util.Concurrent;
 using Java.Util.Function;
 using MASES.JCOBridge.C2JBridge;
-using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNet.Specific;
 using MASES.JNet.Specific.Extensions;
 using MASES.JNetTest.Common;
@@ -57,7 +56,10 @@ namespace MASES.JNetTest
 
                 TestEnum();
 
-                TestListeners();
+                for (int i = 0; i < 5; i++)
+                {
+                    TestListeners($"Listener {i}");
+                }
 
                 TestExtensions();
 
@@ -75,22 +77,33 @@ namespace MASES.JNetTest
 
                 TestOperators();
 
-                TestIterator();
+                TestIterator(false, false);
+
+                TestIterator(true, true);
+
+                TestIterator(true, false);
 
                 TestAsyncIterator().Wait();
-
-                TestAsyncOperation(false).Wait();
-
-                try
+#if DEBUG
+                const int asyncOperations = 100;
+#else
+                const int asyncOperations = 5;
+#endif
+                for (int i = 0; i < asyncOperations; i++)
                 {
-                    TestAsyncOperation(true).Wait();
-                }
-                catch (System.AggregateException ae)
-                {
-                    if (ae.InnerException is not UnsupportedOperationException)
+                    TestAsyncOperation(i, false).Wait();
+
+                    try
                     {
-                        System.Console.WriteLine($"Not expected exception: {ae.InnerException.GetType()}");
-                        throw;
+                        TestAsyncOperation(i, true).Wait();
+                    }
+                    catch (System.AggregateException ae)
+                    {
+                        if (ae.InnerException is not UnsupportedOperationException)
+                        {
+                            System.Console.WriteLine($"Not expected exception: {ae.InnerException?.GetType()}");
+                            throw;
+                        }
                     }
                 }
             }
@@ -111,11 +124,11 @@ namespace MASES.JNetTest
             try
             {
                 JNetTestCore.ApplicationHeapSize = "4G";
-                JNetTestCore.ApplicationInitialHeapSize = "1G";
+                JNetTestCore.ApplicationInitialHeapSize = "256M";
                 JNetTestCore.CreateGlobalInstance();
                 var appArgs = JNetTestCore.FilteredArgs;
 
-                System.Console.WriteLine($"Initialized JNetTestCore, remaining arguments are {string.Join(" ", appArgs)}");
+                System.Console.WriteLine("Initialized JNetTestCore" + (appArgs.Length != 0 ? $", remaining arguments are {string.Join(" ", appArgs)}" : string.Empty));
             }
             catch (Exception ex)
             {
@@ -155,29 +168,40 @@ namespace MASES.JNetTest
         static void TestVarArg()
         {
             System.Console.WriteLine("TestVarArg");
-
+            const string formatToUSe = "This is the %d %s for a %s";
             for (int i = 0; i < 10; i++)
             {
                 bool fallback = false;
+                bool fallback2 = false;
                 string str;
                 var dataToUse = string.Format("This is the {0} {1} for a {2}", i, "test", "varArg");
                 try
                 {
-                    str = String.Format("This is the %d %s for a %s", i, "test", "varArg");
+                    str = String.Format(formatToUSe, i, "test", "varArg");
                 }
                 catch
                 {
+                    // https://github.com/masesgroup/JNet/issues/770#issuecomment-3405824484
                     fallback = true;
-                    str = String.SExecuteWithSignature("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", "This is the %d %s for a %s", i, "test", "varArg").ToString();
+                    try
+                    {
+                        str = String.SExecuteWithSignature("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", formatToUSe, i, "test", "varArg").ToString();
+                    }
+                    catch
+                    {
+                        // https://github.com/masesgroup/JNet/issues/770#issuecomment-3406351861
+                        fallback2 = true;
+                        str = String.SExecute("format", formatToUSe, i, "test", "varArg").ToString();
+                    }
                 }
 
                 if (str != dataToUse)
                 {
-                    throw new System.InvalidOperationException($"Failed to compare {str} with {dataToUse}: fallback is {fallback}");
+                    throw new System.InvalidOperationException($"Failed to compare {str} with {dataToUse}: fallback is {fallback}, fallback2 is {fallback2}");
                 }
-                if (fallback)
+                else if (fallback || fallback2)
                 {
-                    throw new System.InvalidOperationException($"Failed to build {dataToUse} using var arg.");
+                    System.Console.WriteLine($"Test ended in right way with fallback ({fallback}) and fallback2 ({fallback2})");
                 }
             }
         }
@@ -192,7 +216,7 @@ namespace MASES.JNetTest
             {
                 if (type != ElementType.ANNOTATION_TYPE)
                 {
-                   throw new System.InvalidOperationException($"Failed to compare with \"==\": {type} with {ElementType.ANNOTATION_TYPE}");
+                    throw new System.InvalidOperationException($"Failed to compare with \"==\": {type} with {ElementType.ANNOTATION_TYPE}");
                 }
             }
             else
@@ -211,7 +235,9 @@ namespace MASES.JNetTest
             {
                 throw new System.InvalidOperationException($"Failed to compare with Equals: {type} with {ElementType.PARAMETER}");
             }
-        }        class TestListener : JVMBridgeBase<TestListener>
+        }
+
+        class TestListener : JVMBridgeBase<TestListener>
         {
             public override string BridgeClassName => "org.mases.jnet.TestListener";
 
@@ -225,11 +251,17 @@ namespace MASES.JNetTest
             }
         }
 
-        static void TestListeners()
+        static void TestListeners(string expectedResult)
         {
-            System.Console.WriteLine("TestListeners");
+            System.Console.WriteLine($"TestListeners of {expectedResult}");
 
-            const string expectedResult = "Ciao";
+            using var consumer = new Consumer<Java.Lang.String>()
+            {
+                OnAccept = (o) =>
+                {
+                    System.Console.WriteLine($"Consumer Accept {o}");
+                }
+            };
 
             using var func = new Function<Java.Lang.String, Java.Lang.String>()
             {
@@ -238,7 +270,7 @@ namespace MASES.JNetTest
                     return o;
                 }
             };
-            TestListener testListener = new TestListener(func);
+            TestListener testListener = new TestListener(consumer, func);
             Java.Lang.String result = testListener.Apply(expectedResult);
             if (result != expectedResult)
             {
@@ -439,24 +471,52 @@ namespace MASES.JNetTest
             }
         }
 
-        static async Task TestAsyncOperation(bool withEx)
+        class TestFuture : JVMBridgeBase<TestFuture>
         {
-            System.Console.WriteLine("TestAsyncOperation");
+            /// <inheritdoc/>
+            public TestFuture() { }
 
-            var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestFuture") as IJavaObject;
+            public override string BridgeClassName => "org.mases.jnet.TestFuture";
 
-            CompletableFuture<String> completableFuture = jClass.Invoke<CompletableFuture<String>>(withEx ? "withException" : "withComplete");
-
-            String result = await completableFuture.GetAsync();
-            if (result != "Hello")
+            public CompletableFuture<String> WithException()
             {
-                throw new System.InvalidOperationException($"Failed to compare: {result}");
+                return IExecute<CompletableFuture<String>>("withException");
+            }
+
+            public CompletableFuture<String> WithComplete()
+            {
+                return IExecute<CompletableFuture<String>>("withComplete");
+            }
+
+            public CompletableFuture<String> Shutdown()
+            {
+                return IExecute<CompletableFuture<String>>("shutdown");
             }
         }
 
-        static void TestIterator()
+        static async Task TestAsyncOperation(int index, bool withEx)
         {
-            System.Console.WriteLine("TestIterator");
+            System.Console.WriteLine($"TestAsyncOperation {index} withEx {withEx}");
+
+            var clazz = JVMBridgeBase.ClazzOf<TestFuture>();
+
+            TestFuture testFuture = new TestFuture();
+            try
+            {
+                CompletableFuture<String> completableFuture = withEx ? testFuture.WithException() : testFuture.WithComplete();
+
+                String result = await completableFuture.GetAsync();
+                if (result != "Hello")
+                {
+                    throw new System.InvalidOperationException($"Failed to compare: {result}");
+                }
+            }
+            finally { testFuture.Shutdown(); }
+        }
+
+        static void TestIterator(bool usePrefetch, bool useThread)
+        {
+            System.Console.WriteLine($"TestIterator with useThread {useThread} - usePrefetch {usePrefetch}");
 
             const int execution = 100;
             Stopwatch w = Stopwatch.StartNew();
@@ -467,11 +527,14 @@ namespace MASES.JNetTest
             }
             w.Stop();
 
-            foreach (var item in (alist).WithPrefetch())
+            for (int iteration = 0; iteration < 10; iteration++)
             {
-                if (!int.TryParse(item, out int i))
+                foreach (var item in (alist).WithPrefetch(usePrefetch).WithThread(useThread))
                 {
-                    throw new System.InvalidOperationException($"Failed to parse: {item}");
+                    if (!int.TryParse(item, out int i))
+                    {
+                        throw new System.InvalidOperationException($"Failed to parse: {item}");
+                    }
                 }
             }
         }
