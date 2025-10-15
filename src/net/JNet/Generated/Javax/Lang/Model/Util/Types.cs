@@ -331,7 +331,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Javax.Lang.Model.Type.DeclaredType"/></returns>
         public Javax.Lang.Model.Type.DeclaredType GetDeclaredType(Javax.Lang.Model.Element.TypeElement arg0, params Javax.Lang.Model.Type.TypeMirror[] arg1)
         {
-            if (arg1.Length == 0) return IExecuteWithSignature<Javax.Lang.Model.Type.DeclaredType>("getDeclaredType", "(Ljavax/lang/model/element/TypeElement;[Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/DeclaredType;", arg0); else return IExecuteWithSignature<Javax.Lang.Model.Type.DeclaredType>("getDeclaredType", "(Ljavax/lang/model/element/TypeElement;[Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/DeclaredType;", arg0, arg1);
+            return IExecuteWithSignature<Javax.Lang.Model.Type.DeclaredType>("getDeclaredType", "(Ljavax/lang/model/element/TypeElement;[Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/DeclaredType;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getDeclaredType(javax.lang.model.type.DeclaredType,javax.lang.model.element.TypeElement,javax.lang.model.type.TypeMirror...)"/>
@@ -342,7 +342,7 @@ namespace Javax.Lang.Model.Util
         /// <returns><see cref="Javax.Lang.Model.Type.DeclaredType"/></returns>
         public Javax.Lang.Model.Type.DeclaredType GetDeclaredType(Javax.Lang.Model.Type.DeclaredType arg0, Javax.Lang.Model.Element.TypeElement arg1, params Javax.Lang.Model.Type.TypeMirror[] arg2)
         {
-            if (arg2.Length == 0) return IExecuteWithSignature<Javax.Lang.Model.Type.DeclaredType>("getDeclaredType", "(Ljavax/lang/model/type/DeclaredType;Ljavax/lang/model/element/TypeElement;[Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/DeclaredType;", arg0, arg1); else return IExecuteWithSignature<Javax.Lang.Model.Type.DeclaredType>("getDeclaredType", "(Ljavax/lang/model/type/DeclaredType;Ljavax/lang/model/element/TypeElement;[Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/DeclaredType;", arg0, arg1, arg2);
+            return IExecuteWithSignature<Javax.Lang.Model.Type.DeclaredType>("getDeclaredType", "(Ljavax/lang/model/type/DeclaredType;Ljavax/lang/model/element/TypeElement;[Ljavax/lang/model/type/TypeMirror;)Ljavax/lang/model/type/DeclaredType;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/util/Types.html#getNoType(javax.lang.model.type.TypeKind)"/>

@@ -139,7 +139,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.Reflect.InvocationTargetException"/>
         public object NewInstance(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature("newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature("newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature("newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
 
         #endregion
@@ -187,7 +187,7 @@ namespace Java.Lang.Reflect
         /// <exception cref="Java.Lang.Reflect.InvocationTargetException"/>
         public T NewInstance(params object[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<T>("newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;"); else return IExecuteWithSignature<T>("newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
+            return IExecuteWithSignature<T>("newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
 
         #endregion

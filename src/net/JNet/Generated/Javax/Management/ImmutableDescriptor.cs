@@ -111,7 +111,7 @@ namespace Javax.Management
         /// <returns><see cref="Javax.Management.ImmutableDescriptor"/></returns>
         public static Javax.Management.ImmutableDescriptor Union(params Javax.Management.Descriptor[] arg0)
         {
-            if (arg0.Length == 0) return SExecuteWithSignature<Javax.Management.ImmutableDescriptor>(LocalBridgeClazz, "union", "([Ljavax/management/Descriptor;)Ljavax/management/ImmutableDescriptor;"); else return SExecuteWithSignature<Javax.Management.ImmutableDescriptor>(LocalBridgeClazz, "union", "([Ljavax/management/Descriptor;)Ljavax/management/ImmutableDescriptor;", arg0);
+            return SExecuteWithSignature<Javax.Management.ImmutableDescriptor>(LocalBridgeClazz, "union", "([Ljavax/management/Descriptor;)Ljavax/management/ImmutableDescriptor;", arg0);
         }
 
         #endregion
@@ -155,7 +155,7 @@ namespace Javax.Management
         /// <returns><see cref="object"/></returns>
         public object[] GetFieldValues(params Java.Lang.String[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignatureArray<object>("getFieldValues", "([Ljava/lang/String;)[Ljava/lang/Object;"); else return IExecuteWithSignatureArray<object>("getFieldValues", "([Ljava/lang/String;)[Ljava/lang/Object;", arg0);
+            return IExecuteWithSignatureArray<object>("getFieldValues", "([Ljava/lang/String;)[Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/ImmutableDescriptor.html#removeField(java.lang.String)"/>
