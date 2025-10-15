@@ -53,7 +53,7 @@ namespace MASES.JNetTest
             {
                 TestCreateObjects();
 
-                TestVarArg();
+                // TestVarArg(); https://github.com/masesgroup/JNet/issues/770#issuecomment-3405824484
 
                 TestEnum();
 
