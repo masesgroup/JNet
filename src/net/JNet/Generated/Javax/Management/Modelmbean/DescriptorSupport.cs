@@ -163,7 +163,7 @@ namespace Javax.Management.Modelmbean
         /// <returns><see cref="object"/></returns>
         public object[] GetFieldValues(params Java.Lang.String[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignatureArray<object>("getFieldValues", "([Ljava/lang/String;)[Ljava/lang/Object;"); else return IExecuteWithSignatureArray<object>("getFieldValues", "([Ljava/lang/String;)[Ljava/lang/Object;", arg0);
+            return IExecuteWithSignatureArray<object>("getFieldValues", "([Ljava/lang/String;)[Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.management/javax/management/modelmbean/DescriptorSupport.html#toXMLString()"/>

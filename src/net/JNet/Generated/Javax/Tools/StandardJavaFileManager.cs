@@ -278,7 +278,7 @@ namespace Javax.Tools
         /// <returns><see cref="Java.Lang.Iterable"/></returns>
         public Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject> GetJavaFileObjects<ReturnExtendsJavax_Tools_JavaFileObject>(params Java.Io.File[] arg0) where ReturnExtendsJavax_Tools_JavaFileObject : Javax.Tools.JavaFileObject
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject>>("getJavaFileObjects", "([Ljava/io/File;)Ljava/lang/Iterable;"); else return IExecuteWithSignature<Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject>>("getJavaFileObjects", "([Ljava/io/File;)Ljava/lang/Iterable;", arg0);
+            return IExecuteWithSignature<Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject>>("getJavaFileObjects", "([Ljava/io/File;)Ljava/lang/Iterable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjects(java.lang.String...)"/>
@@ -288,7 +288,7 @@ namespace Javax.Tools
         /// <returns><see cref="Java.Lang.Iterable"/></returns>
         public Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject> GetJavaFileObjects<ReturnExtendsJavax_Tools_JavaFileObject>(params Java.Lang.String[] arg0) where ReturnExtendsJavax_Tools_JavaFileObject : Javax.Tools.JavaFileObject
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject>>("getJavaFileObjects", "([Ljava/lang/String;)Ljava/lang/Iterable;"); else return IExecuteWithSignature<Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject>>("getJavaFileObjects", "([Ljava/lang/String;)Ljava/lang/Iterable;", arg0);
+            return IExecuteWithSignature<Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject>>("getJavaFileObjects", "([Ljava/lang/String;)Ljava/lang/Iterable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjectsFromFiles(java.lang.Iterable)"/>
@@ -340,7 +340,7 @@ namespace Javax.Tools
         /// <returns><see cref="Java.Lang.Iterable"/></returns>
         public Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject> GetJavaFileObjects<ReturnExtendsJavax_Tools_JavaFileObject>(params Java.Nio.File.Path[] arg0) where ReturnExtendsJavax_Tools_JavaFileObject : Javax.Tools.JavaFileObject
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject>>("getJavaFileObjects", "([Ljava/nio/file/Path;)Ljava/lang/Iterable;"); else return IExecuteWithSignature<Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject>>("getJavaFileObjects", "([Ljava/nio/file/Path;)Ljava/lang/Iterable;", arg0);
+            return IExecuteWithSignature<Java.Lang.Iterable<ReturnExtendsJavax_Tools_JavaFileObject>>("getJavaFileObjects", "([Ljava/nio/file/Path;)Ljava/lang/Iterable;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/StandardJavaFileManager.html#getJavaFileObjectsFromPaths(java.lang.Iterable)"/>
@@ -425,7 +425,7 @@ namespace Javax.Tools
             /// <returns><see cref="Java.Nio.File.Path"/></returns>
             public Java.Nio.File.Path GetPath(Java.Lang.String arg0, params Java.Lang.String[] arg1)
             {
-                if (arg1.Length == 0) return IExecuteWithSignature<Java.Nio.File.Path>("getPath", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;", arg0); else return IExecuteWithSignature<Java.Nio.File.Path>("getPath", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;", arg0, arg1);
+                return IExecuteWithSignature<Java.Nio.File.Path>("getPath", "(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
             }
 
             #endregion

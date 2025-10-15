@@ -148,7 +148,7 @@ namespace Java.Text
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String Format(Java.Lang.String arg0, params object[] arg1)
         {
-            if (arg1.Length == 0) return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0); else return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", arg0, arg1);
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg1, arg0));
         }
 
         #endregion

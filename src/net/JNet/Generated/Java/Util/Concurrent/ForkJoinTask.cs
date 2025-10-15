@@ -224,7 +224,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public static void InvokeAll(params Java.Util.Concurrent.ForkJoinTask[] arg0)
         {
-            if (arg0.Length == 0) SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "([Ljava/util/concurrent/ForkJoinTask;)V"); else SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "([Ljava/util/concurrent/ForkJoinTask;)V", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "([Ljava/util/concurrent/ForkJoinTask;)V", arg0);
         }
 
         #endregion
@@ -541,7 +541,7 @@ namespace Java.Util.Concurrent
         /// <param name="arg0"><see cref="Java.Util.Concurrent.ForkJoinTask"/></param>
         public static void InvokeAll(params Java.Util.Concurrent.ForkJoinTask<object>[] arg0)
         {
-            if (arg0.Length == 0) SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "([Ljava/util/concurrent/ForkJoinTask;)V"); else SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "([Ljava/util/concurrent/ForkJoinTask;)V", arg0);
+            SExecuteWithSignature(LocalBridgeClazz, "invokeAll", "([Ljava/util/concurrent/ForkJoinTask;)V", arg0);
         }
 
         #endregion

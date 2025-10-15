@@ -361,7 +361,7 @@ namespace Java.Util.Stream
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public static Java.Util.Stream.LongStream Of(params long[] arg0)
         {
-            if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "of", "([J)Ljava/util/stream/LongStream;"); else return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "of", "([J)Ljava/util/stream/LongStream;", arg0);
+            return SExecuteWithSignature<Java.Util.Stream.LongStream>(LocalBridgeClazz, "of", "([J)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/LongStream.html#of(long)"/>

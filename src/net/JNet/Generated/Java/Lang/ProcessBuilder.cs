@@ -101,48 +101,7 @@ namespace Java.Lang
             public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
-            #region Type declaration
-            /// <summary>
-            /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.Redirect.Type.html"/>
-            /// </summary>
-            public partial class Type : Java.Lang.Enum<Java.Lang.ProcessBuilder.Redirect.Type>
-            {
-                const string _bridgeClassName = "java.lang.ProcessBuilder$Redirect$Type";
-                /// <summary>
-                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-                /// </summary>
-                public Type() { }
-                /// <summary>
-                /// Internal constructor: used internally from JCOBridge
-                /// </summary>
-                [global::System.Obsolete("This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-                public Type(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
-                /// <summary>
-                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-                /// </summary>
-                public Type(params object[] args) : base(args) { }
 
-                private static readonly global::System.Exception _LocalBridgeClazzException = null;
-                private static readonly MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType _LocalBridgeClazz = JVMBridgeBase.ClazzOf(_bridgeClassName, out _LocalBridgeClazzException, false);
-                private static MASES.JCOBridge.C2JBridge.JVMInterop.IJavaType LocalBridgeClazz => _LocalBridgeClazz ?? throw _LocalBridgeClazzException ?? new global::System.InvalidOperationException($"Class {_bridgeClassName} was not found.");
-
-                /// <inheritdoc/>
-                public override string BridgeClassName => _bridgeClassName;
-                /// <inheritdoc/>
-                public override bool IsBridgeAbstract => false;
-                /// <inheritdoc/>
-                public override bool IsBridgeCloseable => false;
-                /// <inheritdoc/>
-                public override bool IsBridgeInterface => false;
-                /// <inheritdoc/>
-                public override bool IsBridgeStatic => true;
-
-                // TODO: complete the class
-
-            }
-            #endregion
-
-        
         }
         #endregion
 
@@ -228,7 +187,7 @@ namespace Java.Lang
         /// <returns><see cref="Java.Lang.ProcessBuilder"/></returns>
         public Java.Lang.ProcessBuilder Command(params Java.Lang.String[] arg0)
         {
-            if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.ProcessBuilder>("command", "([Ljava/lang/String;)Ljava/lang/ProcessBuilder;"); else return IExecuteWithSignature<Java.Lang.ProcessBuilder>("command", "([Ljava/lang/String;)Ljava/lang/ProcessBuilder;", arg0);
+            return IExecuteWithSignature<Java.Lang.ProcessBuilder>("command", "([Ljava/lang/String;)Ljava/lang/ProcessBuilder;", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/ProcessBuilder.html#command(java.util.List)"/>
@@ -440,38 +399,7 @@ namespace Java.Lang
             #endregion
 
             #region Nested classes
-            #region Type implementation
-            public partial class Type
-            {
-                #region Constructors
 
-                #endregion
-
-                #region Class/Interface conversion operators
-
-                #endregion
-
-                #region Fields
-
-                #endregion
-
-                #region Static methods
-
-                #endregion
-
-                #region Instance methods
-
-                #endregion
-
-                #region Nested classes
-
-                #endregion
-
-                // TODO: complete the class
-            }
-            #endregion
-
-        
             #endregion
 
             // TODO: complete the class

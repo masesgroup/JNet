@@ -322,7 +322,7 @@ namespace Java.Lang.Instrument
         /// <exception cref="Java.Lang.Instrument.UnmodifiableClassException"/>
         public void RedefineClasses(params Java.Lang.Instrument.ClassDefinition[] arg0)
         {
-            if (arg0.Length == 0) IExecuteWithSignature("redefineClasses", "([Ljava/lang/instrument/ClassDefinition;)V"); else IExecuteWithSignature("redefineClasses", "([Ljava/lang/instrument/ClassDefinition;)V", arg0);
+            IExecuteWithSignature("redefineClasses", "([Ljava/lang/instrument/ClassDefinition;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#redefineModule(java.lang.Module,java.util.Set,java.util.Map,java.util.Map,java.util.Set,java.util.Map)"/>
@@ -344,7 +344,7 @@ namespace Java.Lang.Instrument
         /// <exception cref="Java.Lang.Instrument.UnmodifiableClassException"/>
         public void RetransformClasses(params Java.Lang.Class[] arg0)
         {
-            if (arg0.Length == 0) IExecuteWithSignature("retransformClasses", "([Ljava/lang/Class;)V"); else IExecuteWithSignature("retransformClasses", "([Ljava/lang/Class;)V", arg0);
+            IExecuteWithSignature("retransformClasses", "([Ljava/lang/Class;)V", arg0);
         }
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.instrument/java/lang/instrument/Instrumentation.html#setNativeMethodPrefix(java.lang.instrument.ClassFileTransformer,java.lang.String)"/>
