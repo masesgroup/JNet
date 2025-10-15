@@ -259,8 +259,6 @@ namespace MASES.JNetTest
 
             public TestListener() { }
 
-            public TestListener(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
-
             public TestListener(params object[] args) : base(args) { }
 
             public Java.Lang.String Apply(Java.Lang.String str)
@@ -493,8 +491,6 @@ namespace MASES.JNetTest
         {
             /// <inheritdoc/>
             public TestFuture() { }
-            /// <inheritdoc/>
-            public TestFuture(IJVMBridgeBaseInitializer initializer) : base(initializer) { }
 
             public override string BridgeClassName => "org.mases.jnet.TestFuture";
 
