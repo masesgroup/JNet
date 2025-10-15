@@ -33,5 +33,7 @@ public class TestFuture {
         return completableFuture;
     }
 
-
+    public void shutdown() throws SecurityException {
+        _service.shutdown();
+    }
 }
