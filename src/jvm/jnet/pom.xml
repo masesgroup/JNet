@@ -37,12 +37,17 @@
 		</developer>
 	</developers>
 	<properties>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
+		<java.version>11</java.version>
+		<maven.compiler.release>${java.version}</maven.compiler.release>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<classpathfile>${basedir}/classpathfile.classpath</classpathfile>
 		<jnetversion>2.5.13.0</jnetversion>
-		<jcobridgepath>${basedir}/../../../bin/net8.0/JCOBridge.jar</jcobridgepath>
-		<jarsDestination>${basedir}/../../../jars/</jarsDestination>
+		<binFolderName>bin</binFolderName>
+		<runtimeFolderName>net8.0</runtimeFolderName>
+		<rootDir>${basedir}/../../../</rootDir>
+		<jcobridgepath>${rootDir}/${binFolderName}/${runtimeFolderName}/JCOBridge.jar</jcobridgepath>
+		<jarsDestination>${rootDir}/jars/</jarsDestination>
 	</properties>
 	<distributionManagement>
 		<snapshotRepository>
@@ -136,14 +141,10 @@
 						<arg>-cp</arg>
 						<arg>${originalClassPath}${path.separator}${jcobridgepath}</arg>
 					</compilerArgs>
-					<source>11</source>
-					<target>11</target>
+					<release>${maven.compiler.release}</release>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.14.1</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

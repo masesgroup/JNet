@@ -56,7 +56,7 @@ jobs:
           gpg-passphrase: MAVEN_GPG_PASSPHRASE # env variable for GPG private key passphrase
   
       - name: Create Jars for JNet
-        run: mvn "-Djcobridgepath=../../../binReflector/net8.0/JCOBridge.jar" --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
+        run: mvn "-DbinFolderName=binReflector" --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
         env:
           MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
           MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
@@ -83,7 +83,7 @@ jobs:
 
       - name: Try Java compilation
         continue-on-error: true
-        run: mvn "-Djcobridgepath=../../../binReflector/net8.0/JCOBridge.jar" --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
+        run: mvn "-DbinFolderName=binReflector" --file ./src/jvm/jnet/pom.xml --no-transfer-progress package
         env:
           MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
           MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
