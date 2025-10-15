@@ -52,7 +52,7 @@ namespace MASES.JNetTest
             {
                 TestCreateObjects();
 
-                // TestVarArg(); https://github.com/masesgroup/JNet/issues/770#issuecomment-3405824484
+                TestVarArg();
 
                 TestEnum();
 
@@ -185,23 +185,40 @@ namespace MASES.JNetTest
         static void TestVarArg()
         {
             System.Console.WriteLine("TestVarArg");
-
+            const string formatToUSe = "This is the %d %s for a %s";
             for (int i = 0; i < 10; i++)
             {
+                bool fallback = false;
+                bool fallback2 = false;
                 string str;
+                var dataToUse = string.Format("This is the {0} {1} for a {2}", i, "test", "varArg");
                 try
                 {
-                    str = String.Format("This is the %d %s for a %s", i, "test", "varArg");
+                    str = String.Format(formatToUSe, i, "test", "varArg");
                 }
                 catch
                 {
-                    str = String.SExecuteWithSignature("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", "This is the %d %s for a %s", i, "test", "varArg").ToString();
+                    // https://github.com/masesgroup/JNet/issues/770#issuecomment-3405824484
+                    fallback = true;
+                    try
+                    {
+                        str = String.SExecuteWithSignature("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", formatToUSe, i, "test", "varArg").ToString();
+                    }
+                    catch
+                    {
+                        // https://github.com/masesgroup/JNet/issues/770#issuecomment-3406351861
+                        fallback2 = true;
+                        str = String.SExecute("format", formatToUSe, i, "test", "varArg").ToString();
+                    }
                 }
 
-                var dataToUse = string.Format("This is the {0} {1} for a {2}", i, "test", "varArg");
                 if (str != dataToUse)
                 {
-                    throw new System.InvalidOperationException($"Failed to compare {str} with {dataToUse}");
+                    throw new System.InvalidOperationException($"Failed to compare {str} with {dataToUse}: fallback is {fallback}, fallback2 is {fallback2}");
+                }
+                else if (fallback || fallback2)
+                {
+                    System.Console.WriteLine($"Test ended in right way with fallback ({fallback}) and fallback2 ({fallback2})");
                 }
             }
         }
