@@ -104,22 +104,6 @@ namespace MASES.JNetTest
                             System.Console.WriteLine($"Not expected exception: {ae.InnerException?.GetType()}");
                             throw;
                         }
-                        else
-                        {
-                            if (ae.InnerException?.InnerException is not UnsupportedOperationException)
-                            {
-                                System.Console.WriteLine($"Not expected exception: {ae.InnerException?.InnerException?.GetType()}");
-                                throw;
-                            }
-                            else
-                            {
-                                if (ae.InnerException?.InnerException?.InnerException is not UnsupportedOperationException)
-                                {
-                                    System.Console.WriteLine($"Not expected exception: {ae.InnerException?.InnerException?.InnerException?.GetType()}");
-                                    throw;
-                                }
-                            }
-                        }
                     }
                 }
             }
