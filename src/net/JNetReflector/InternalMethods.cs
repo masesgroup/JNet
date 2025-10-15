@@ -563,7 +563,30 @@ namespace MASES.JNetReflector
                 List<Class> nesting = new List<Class>();
                 foreach (var item in entry.Classes)
                 {
-                    if (item.JVMNestingLevels() > entry.JVMNestingLevels()) nesting.Add(item);
+                    if (item.JVMNestingLevels() > entry.JVMNestingLevels())
+                    {
+                        if (item.MustBeAvoided())
+                        {
+                            ReportTrace(ReflectionTraceLevel.Debug, "Discarding avoided class {0}", item.GenericString);
+                            continue;
+                        }
+
+                        bool jSubClassIsDepracated = item.IsDeprecated();
+                        if (!JNetReflectorCore.ReflectDeprecated && jSubClassIsDepracated)
+                        {
+                            ReportTrace(ReflectionTraceLevel.Debug, "Discarding deprecated class {0}", item.GenericString);
+                            continue;
+                        }
+
+                        bool jSubClassIsOrFromGeneric = item.IsOrInheritFromJVMGenericClass();
+                        if (JNetReflectorCore.DisableGenerics && jSubClassIsOrFromGeneric)
+                        {
+                            ReportTrace(ReflectionTraceLevel.Debug, "Discarding generic class {0}", item.GenericString);
+                            continue;
+                        }
+
+                        nesting.Add(item);
+                    }
                 }
                 if (nesting.Count > 0)
                 {
