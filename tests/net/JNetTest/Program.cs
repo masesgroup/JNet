@@ -23,7 +23,6 @@ using Java.Util;
 using Java.Util.Concurrent;
 using Java.Util.Function;
 using MASES.JCOBridge.C2JBridge;
-using MASES.JCOBridge.C2JBridge.JVMInterop;
 using MASES.JNet.Specific;
 using MASES.JNet.Specific.Extensions;
 using MASES.JNetTest.Common;
@@ -53,11 +52,12 @@ namespace MASES.JNetTest
             {
                 TestCreateObjects();
 
-                TestVarArg();
-
                 TestEnum();
 
-                TestListeners();
+                for (int i = 0; i < 5; i++)
+                {
+                    TestListeners($"Listener {i}");
+                }
 
                 TestExtensions();
 
@@ -75,22 +75,49 @@ namespace MASES.JNetTest
 
                 TestOperators();
 
-                TestIterator();
+                TestIterator(false, false);
+
+                TestIterator(true, true);
+
+                TestIterator(true, false);
 
                 TestAsyncIterator().Wait();
-
-                TestAsyncOperation(false).Wait();
-
-                try
+#if DEBUG
+                const int asyncOperations = 100;
+#else
+                const int asyncOperations = 5;
+#endif
+                for (int i = 0; i < asyncOperations; i++)
                 {
-                    TestAsyncOperation(true).Wait();
-                }
-                catch (System.AggregateException ae)
-                {
-                    if (ae.InnerException is not UnsupportedOperationException)
+                    TestAsyncOperation(i, false).Wait();
+
+                    try
                     {
-                        System.Console.WriteLine($"Not expected exception: {ae.InnerException.GetType()}");
-                        throw;
+                        TestAsyncOperation(i, true).Wait();
+                    }
+                    catch (System.AggregateException ae)
+                    {
+                        if (ae.InnerException is not UnsupportedOperationException)
+                        {
+                            System.Console.WriteLine($"Not expected exception: {ae.InnerException.GetType()}");
+                            throw;
+                        }
+                        else
+                        {
+                            if (ae.InnerException.InnerException is not UnsupportedOperationException)
+                            {
+                                System.Console.WriteLine($"Not expected exception: {ae.InnerException.InnerException.GetType()}");
+                                throw;
+                            }
+                            else
+                            {
+                                if (ae.InnerException.InnerException.InnerException is not UnsupportedOperationException)
+                                {
+                                    System.Console.WriteLine($"Not expected exception: {ae.InnerException.InnerException.InnerException.GetType()}");
+                                    throw;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -110,12 +137,13 @@ namespace MASES.JNetTest
         {
             try
             {
+                JNetTestCore.ApplicationWriteEventOrExceptionOnCmdLine = true;
                 JNetTestCore.ApplicationHeapSize = "4G";
-                JNetTestCore.ApplicationInitialHeapSize = "1G";
+                JNetTestCore.ApplicationInitialHeapSize = "256M";
                 JNetTestCore.CreateGlobalInstance();
                 var appArgs = JNetTestCore.FilteredArgs;
 
-                System.Console.WriteLine($"Initialized JNetTestCore, remaining arguments are {string.Join(" ", appArgs)}");
+                System.Console.WriteLine("Initialized JNetTestCore" + (appArgs.Length != 0 ? $", remaining arguments are {string.Join(" ", appArgs)}" : string.Empty));
             }
             catch (Exception ex)
             {
@@ -152,47 +180,6 @@ namespace MASES.JNetTest
             }
         }
 
-        static void TestVarArg()
-        {
-            System.Console.WriteLine("TestVarArg");
-            const string formatToUSe = "This is the %d %s for a %s";
-            for (int i = 0; i < 10; i++)
-            {
-                bool fallback = false;
-                bool fallback2 = false;
-                string str;
-                var dataToUse = string.Format("This is the {0} {1} for a {2}", i, "test", "varArg");
-                try
-                {
-                    str = String.Format(formatToUSe, i, "test", "varArg");
-                }
-                catch
-                {
-                    // https://github.com/masesgroup/JNet/issues/770#issuecomment-3405824484
-                    fallback = true;
-                    try
-                    {
-                        str = String.SExecuteWithSignature("format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;", formatToUSe, i, "test", "varArg").ToString();
-                    }
-                    catch
-                    {
-                        // https://github.com/masesgroup/JNet/issues/770#issuecomment-3406351861
-                        fallback2 = true;
-                        str = String.SExecute("format", formatToUSe, i, "test", "varArg").ToString();
-                    }
-                }
-
-                if (str != dataToUse)
-                {
-                    throw new System.InvalidOperationException($"Failed to compare {str} with {dataToUse}: fallback is {fallback}, fallback2 is {fallback2}");
-                }
-                else if (fallback || fallback2)
-                {
-                    System.Console.WriteLine($"Test ended in right way with fallback ({fallback}) and fallback2 ({fallback2})");
-                }
-            }
-        }
-
         static void TestEnum()
         {
             System.Console.WriteLine("TestEnum");
@@ -203,7 +190,7 @@ namespace MASES.JNetTest
             {
                 if (type != ElementType.ANNOTATION_TYPE)
                 {
-                   throw new System.InvalidOperationException($"Failed to compare with \"==\": {type} with {ElementType.ANNOTATION_TYPE}");
+                    throw new System.InvalidOperationException($"Failed to compare with \"==\": {type} with {ElementType.ANNOTATION_TYPE}");
                 }
             }
             else
@@ -222,7 +209,9 @@ namespace MASES.JNetTest
             {
                 throw new System.InvalidOperationException($"Failed to compare with Equals: {type} with {ElementType.PARAMETER}");
             }
-        }        class TestListener : JVMBridgeBase<TestListener>
+        }
+
+        class TestListener : JVMBridgeBase<TestListener>
         {
             public override string BridgeClassName => "org.mases.jnet.TestListener";
 
@@ -236,11 +225,17 @@ namespace MASES.JNetTest
             }
         }
 
-        static void TestListeners()
+        static void TestListeners(string expectedResult)
         {
-            System.Console.WriteLine("TestListeners");
+            System.Console.WriteLine($"TestListeners of {expectedResult}");
 
-            const string expectedResult = "Ciao";
+            using var consumer = new Consumer<Java.Lang.String>()
+            {
+                OnAccept = (o) =>
+                {
+                    System.Console.WriteLine($"Consumer Accept {o}");
+                }
+            };
 
             using var func = new Function<Java.Lang.String, Java.Lang.String>()
             {
@@ -249,7 +244,7 @@ namespace MASES.JNetTest
                     return o;
                 }
             };
-            TestListener testListener = new TestListener(func);
+            TestListener testListener = new TestListener(consumer, func);
             Java.Lang.String result = testListener.Apply(expectedResult);
             if (result != expectedResult)
             {
@@ -450,24 +445,52 @@ namespace MASES.JNetTest
             }
         }
 
-        static async Task TestAsyncOperation(bool withEx)
+        class TestFuture : JVMBridgeBase<TestFuture>
         {
-            System.Console.WriteLine("TestAsyncOperation");
+            /// <inheritdoc/>
+            public TestFuture() { }
 
-            var jClass = JNetTestCore.GlobalInstance.JVM.New("org.mases.jnet.TestFuture") as IJavaObject;
+            public override string BridgeClassName => "org.mases.jnet.TestFuture";
 
-            CompletableFuture<String> completableFuture = jClass.Invoke<CompletableFuture<String>>(withEx ? "withException" : "withComplete");
-
-            String result = await completableFuture.GetAsync();
-            if (result != "Hello")
+            public CompletableFuture<String> WithException()
             {
-                throw new System.InvalidOperationException($"Failed to compare: {result}");
+                return IExecute<CompletableFuture<String>>("withException");
+            }
+
+            public CompletableFuture<String> WithComplete()
+            {
+                return IExecute<CompletableFuture<String>>("withComplete");
+            }
+
+            public CompletableFuture<String> Shutdown()
+            {
+                return IExecute<CompletableFuture<String>>("shutdown");
             }
         }
 
-        static void TestIterator()
+        static async Task TestAsyncOperation(int index, bool withEx)
         {
-            System.Console.WriteLine("TestIterator");
+            System.Console.WriteLine($"TestAsyncOperation {index} withEx {withEx}");
+
+            var clazz = JVMBridgeBase.ClazzOf<TestFuture>();
+
+            TestFuture testFuture = new TestFuture();
+            try
+            {
+                CompletableFuture<String> completableFuture = withEx ? testFuture.WithException() : testFuture.WithComplete();
+
+                String result = await completableFuture.GetAsync();
+                if (result != "Hello")
+                {
+                    throw new System.InvalidOperationException($"Failed to compare: {result}");
+                }
+            }
+            finally { testFuture.Shutdown(); }
+        }
+
+        static void TestIterator(bool usePrefetch, bool useThread)
+        {
+            System.Console.WriteLine($"TestIterator with useThread {useThread} - usePrefetch {usePrefetch}");
 
             const int execution = 100;
             Stopwatch w = Stopwatch.StartNew();
@@ -478,11 +501,14 @@ namespace MASES.JNetTest
             }
             w.Stop();
 
-            foreach (var item in (alist).WithPrefetch())
+            for (int iteration = 0; iteration < 10; iteration++)
             {
-                if (!int.TryParse(item, out int i))
+                foreach (var item in (alist).WithPrefetch(usePrefetch).WithThread(useThread))
                 {
-                    throw new System.InvalidOperationException($"Failed to parse: {item}");
+                    if (!int.TryParse(item, out int i))
+                    {
+                        throw new System.InvalidOperationException($"Failed to parse: {item}");
+                    }
                 }
             }
         }
@@ -499,12 +525,9 @@ namespace MASES.JNetTest
             var newDict = map.ToNetDictiony<string, bool, Java.Lang.String, Java.Lang.Boolean>();
 
             const int execution = 10000;
-            const int numRepetition = 10;
-            System.Collections.Generic.List<System.Collections.Generic.List<long>> executionData = new System.Collections.Generic.List<System.Collections.Generic.List<long>>();
 
-            for (int index = 0; index < numRepetition; index++)
+            for (int index = 0; index < 10; index++)
             {
-                System.Collections.Generic.List<long> singleExecutionData = new System.Collections.Generic.List<long>();
                 Stopwatch w = Stopwatch.StartNew();
                 Java.Util.ArrayList<int> alist = new Java.Util.ArrayList<int>();
                 for (int i = 0; i < execution; i++)
@@ -512,7 +535,6 @@ namespace MASES.JNetTest
                     alist.Add(i);
                 }
                 w.Stop();
-                singleExecutionData.Add(w.Elapsed.Ticks);
                 System.Console.WriteLine($"ArrayList Elapsed ticks: {w.Elapsed.Ticks}");
 
                 w.Restart();
@@ -522,7 +544,6 @@ namespace MASES.JNetTest
                     nlist.Add(i);
                 }
                 w.Stop();
-                singleExecutionData.Add(w.Elapsed.Ticks);
                 var referenceValue = w.Elapsed.Ticks;
                 System.Console.WriteLine($"System.Collections.Generic.List Elapsed {w.Elapsed} - ticks: {referenceValue}");
 
@@ -532,7 +553,6 @@ namespace MASES.JNetTest
                 var tmpJList = JNetHelper.ListFrom(tmpArray);
                 alist = new Java.Util.ArrayList<int>(tmpJList);
                 w.Stop();
-                singleExecutionData.Add(w.Elapsed.Ticks);
                 System.Console.WriteLine($"Java.Util.ArrayList from array Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 var intBuffer = IntBuffer.From(tmpArray, false, false);
@@ -541,32 +561,16 @@ namespace MASES.JNetTest
                 tmpJList = JNetHelper.ListFrom(intBuffer);
                 alist = new Java.Util.ArrayList<int>(tmpJList);
                 w.Stop();
-                singleExecutionData.Add(w.Elapsed.Ticks);
                 System.Console.WriteLine($"Java.Util.ArrayList from array premade buffer Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
                 tmpJList = JNetHelper.ListFrom(tmpArray, true);
                 alist = new Java.Util.ArrayList<int>(tmpJList);
                 w.Stop();
-                singleExecutionData.Add(w.Elapsed.Ticks);
                 System.Console.WriteLine($"Java.Util.ArrayList from array buffered Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
                 //var collection = newDict.Values.ToJCollection();
                 //var intermediate = collection.ToList<Map.Entry<string, string>>();
                 var list = ((List<int>)alist).ToList();
-
-                executionData.Add(singleExecutionData);
-            }
-
-            int numOfTests = executionData[0].Count;
-
-            for (int i = 0; i < numOfTests; i++)
-            {
-                long total = 0;
-                for (int index = 1; index < numRepetition; index++)
-                {
-                    total += executionData[index][i];
-                }
-                System.Console.WriteLine($"Test {i} Mean {System.TimeSpan.FromTicks(total / (numRepetition - 1))}");
             }
         }
     }
