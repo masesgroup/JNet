@@ -30,10 +30,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class JNetHelper {
-    public static List<?> listFromPrimitiveArray(Object input) {
+	public static List<?> listFromPrimitiveArray(Object input) {
 		if (input == null) throw new IllegalArgumentException("Input parameter is null");
 		
-        if (input instanceof boolean[]) {
+		if (input instanceof boolean[]) {
 			final List<Boolean> l = new ArrayList<Boolean>();
 			for (final boolean s : (boolean[])input) {
 				l.add(s);
@@ -84,87 +84,89 @@ public class JNetHelper {
 		if(!input.getClass().isArray()) throw new IllegalArgumentException("Input parameter is not an array");
 
 		throw new ClassCastException(input.getClass().getName() + " cannot be converted with this function");
-    }
+	}
 
-    public static List<?> listFromByteBuffer(ByteBuffer input) {
+	public static List<Byte> listFromByteBuffer(ByteBuffer input) {
 		if (input == null) throw new IllegalArgumentException("Input parameter is null");
 		
 		input.rewind();
-		byte[] array = new byte[input.remaining()];
-        input.get(array, 0, array.length);
-		final List<Byte> l = new ArrayList<Byte>();
-		for (final byte s : array) {
-			l.add(s);
+		int length = input.remaining();
+		final ArrayList<Byte> l = new ArrayList<Byte>(length);
+		for (int i = 0; i < length; i++) {
+			l.set(i, Byte.valueOf(input.get(i)));
 		}
 		return l;
-    }
+	}
 	
-    public static List<?> listFromCharBuffer(CharBuffer input) {
+	public static List<Character> listFromCharBuffer(CharBuffer input) {
 		if (input == null) throw new IllegalArgumentException("Input parameter is null");
 
 		input.rewind();
-		char[] array = new char[input.remaining()];
-        input.get(array, 0, array.length);
-		final List<Character> l = new ArrayList<Character>();
-		for (final char s : array) {
-			l.add(s);
+		int length = input.remaining();
+		final ArrayList<Character> l = new ArrayList<Character>(length);
+		for (int i = 0; i < length; i++) {
+			l.set(i, Character.valueOf(input.get(i)));
 		}
 		return l;
-    }
+	}
 	
-    public static List<?> listFromDoubleBuffer(DoubleBuffer input) {
+	public static List<Double> listFromDoubleBuffer(DoubleBuffer input) {
 		if (input == null) throw new IllegalArgumentException("Input parameter is null");
 
 		input.rewind();
-		double[] array = new double[input.remaining()];
-        input.get(array, 0, array.length);
-		Double[] array2 = Arrays.stream(array).boxed().toArray(Double[]::new);
-		return Arrays.asList(array2);
-    }
-	
-    public static List<?> listFromFloatBuffer(FloatBuffer input) {
-		if (input == null) throw new IllegalArgumentException("Input parameter is null");
-
-		input.rewind();
-		float[] array = new float[input.remaining()];
-        input.get(array, 0, array.length);
-		final List<Float> l = new ArrayList<Float>();
-		for (final float s : array) {
-			l.add(s);
+		int length = input.remaining();
+		final ArrayList<Double> l = new ArrayList<Double>(length);
+		for (int i = 0; i < length; i++) {
+			l.set(i, Double.valueOf(input.get(i)));
 		}
 		return l;
-    }
+	}
 	
-    public static List<?> listFromIntBuffer(IntBuffer input) {
+	public static List<Float> listFromFloatBuffer(FloatBuffer input) {
 		if (input == null) throw new IllegalArgumentException("Input parameter is null");
 
 		input.rewind();
-		int[] array = new int[input.remaining()];
-        input.get(array, 0, array.length);
-		Integer[] array2 = Arrays.stream(array).boxed().toArray(Integer[]::new);
-		return Arrays.asList(array2);
-    }
-	
-    public static List<?> listFromLongBuffer(LongBuffer input) {
-		if (input == null) throw new IllegalArgumentException("Input parameter is null");
-
-		input.rewind();
-		long[] array = new long[input.remaining()];
-        input.get(array, 0, array.length);
-		Long[] array2 = Arrays.stream(array).boxed().toArray(Long[]::new);
-		return Arrays.asList(array2);
-    }
-	
-    public static List<?> listFromShortBuffer(ShortBuffer input) {
-		if (input == null) throw new IllegalArgumentException("Input parameter is null");
-
-		input.rewind();
-		short[] array = new short[input.remaining()];
-        input.get(array, 0, array.length);
-		final List<Short> l = new ArrayList<Short>();
-		for (final short s : array) {
-			l.add(s);
+		int length = input.remaining();
+		final ArrayList<Float> l = new ArrayList<Float>(length);
+		for (int i = 0; i < length; i++) {
+			l.set(i, Float.valueOf(input.get(i)));
 		}
 		return l;
-    }
+	}
+	
+	public static List<Integer> listFromIntBuffer(IntBuffer input) {
+		if (input == null) throw new IllegalArgumentException("Input parameter is null");
+
+		input.rewind();
+		int length = input.remaining();
+		final ArrayList<Integer> l = new ArrayList<Integer>(length);
+		for (int i = 0; i < length; i++) {
+			l.set(i, Integer.valueOf(input.get(i)));
+		}
+		return l;
+	}
+	
+	public static List<Long> listFromLongBuffer(LongBuffer input) {
+		if (input == null) throw new IllegalArgumentException("Input parameter is null");
+
+		input.rewind();
+		int length = input.remaining();
+		final ArrayList<Long> l = new ArrayList<Long>(length);
+		for (int i = 0; i < length; i++) {
+			l.set(i, Long.valueOf(input.get(i)));
+		}
+		return l;
+	}
+	
+	public static List<Short> listFromShortBuffer(ShortBuffer input) {
+		if (input == null) throw new IllegalArgumentException("Input parameter is null");
+
+		input.rewind();
+		int length = input.remaining();
+		final ArrayList<Short> l = new ArrayList<Short>(length);
+		for (int i = 0; i < length; i++) {
+			l.set(i, Short.valueOf(input.get(i)));
+		}
+		return l;
+	}
 }
