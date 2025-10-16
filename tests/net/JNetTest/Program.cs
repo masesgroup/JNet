@@ -608,18 +608,22 @@ namespace MASES.JNetTest
                 singleExecutionData.Add(w.Elapsed.Ticks);
                 System.Console.WriteLine($"Java.Util.ArrayList from array Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
+                w.Restart();
                 var intBuffer = IntBuffer.From(tmpArray, false, false);
+                w.Stop();
+                singleExecutionData.Add(w.Elapsed.Ticks);
+                System.Console.WriteLine($"IntBuffer.From from array Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
-                tmpJList = JNetHelper.ListFrom(intBuffer);
-                alist = new Java.Util.ArrayList<int>(tmpJList);
+                var tmpJList2 = JNetHelper.ListFrom(intBuffer);
+                alist = new Java.Util.ArrayList<int>(tmpJList2);
                 w.Stop();
                 singleExecutionData.Add(w.Elapsed.Ticks);
                 System.Console.WriteLine($"Java.Util.ArrayList from array premade buffer Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
 
                 w.Restart();
-                tmpJList = JNetHelper.ListFrom(tmpArray, true);
-                alist = new Java.Util.ArrayList<int>(tmpJList);
+                var tmpJList3 = JNetHelper.ListFrom(tmpArray, true);
+                alist = new Java.Util.ArrayList<int>(tmpJList3);
                 w.Stop();
                 singleExecutionData.Add(w.Elapsed.Ticks);
                 System.Console.WriteLine($"Java.Util.ArrayList from array buffered Elapsed {w.Elapsed} - ticks: {w.Elapsed.Ticks} ({100 * w.Elapsed.Ticks / referenceValue}%)");
