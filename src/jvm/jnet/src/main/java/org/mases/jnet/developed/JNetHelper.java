@@ -88,12 +88,12 @@ public class JNetHelper {
 
 	public static List<Byte> listFromByteBuffer(ByteBuffer input) {
 		if (input == null) throw new IllegalArgumentException("Input parameter is null");
-		
+
 		input.rewind();
 		int length = input.remaining();
 		final ArrayList<Byte> l = new ArrayList<Byte>(length);
 		for (int i = 0; i < length; i++) {
-			l.add(Byte.valueOf(input.get(i)));
+			l.add(input.get(i));
 		}
 		return l;
 	}
@@ -105,7 +105,7 @@ public class JNetHelper {
 		int length = input.remaining();
 		final ArrayList<Character> l = new ArrayList<Character>(length);
 		for (int i = 0; i < length; i++) {
-			l.add(Character.valueOf(input.get(i)));
+			l.add(input.get(i));
 		}
 		return l;
 	}
@@ -117,7 +117,7 @@ public class JNetHelper {
 		int length = input.remaining();
 		final ArrayList<Double> l = new ArrayList<Double>(length);
 		for (int i = 0; i < length; i++) {
-			l.add(Double.valueOf(input.get(i)));
+			l.add(input.get(i));
 		}
 		return l;
 	}
@@ -129,7 +129,7 @@ public class JNetHelper {
 		int length = input.remaining();
 		final ArrayList<Float> l = new ArrayList<Float>(length);
 		for (int i = 0; i < length; i++) {
-			l.add(Float.valueOf(input.get(i)));
+			l.add(input.get(i));
 		}
 		return l;
 	}
@@ -141,7 +141,7 @@ public class JNetHelper {
 		int length = input.remaining();
 		final ArrayList<Integer> l = new ArrayList<Integer>(length);
 		for (int i = 0; i < length; i++) {
-			l.add(Integer.valueOf(input.get(i)));
+			l.add(input.get(i));
 		}
 		return l;
 	}
@@ -153,7 +153,7 @@ public class JNetHelper {
 		int length = input.remaining();
 		final ArrayList<Long> l = new ArrayList<Long>(length);
 		for (int i = 0; i < length; i++) {
-			l.add(Long.valueOf(input.get(i)));
+			l.add(input.get(i));
 		}
 		return l;
 	}
@@ -165,7 +165,7 @@ public class JNetHelper {
 		int length = input.remaining();
 		final ArrayList<Short> l = new ArrayList<Short>(length);
 		for (int i = 0; i < length; i++) {
-			l.add(Short.valueOf(input.get(i)));
+			l.add(input.get(i));
 		}
 		return l;
 	}
