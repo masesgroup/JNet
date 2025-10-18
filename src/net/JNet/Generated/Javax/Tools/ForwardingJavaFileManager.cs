@@ -71,7 +71,7 @@ namespace Javax.Tools
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/ForwardingJavaFileManager.html"/>
     /// </summary>
     /// <typeparam name="M"><see cref="Javax.Tools.IJavaFileManager"/></typeparam>
-    public partial class ForwardingJavaFileManager<M> : Javax.Tools.JavaFileManager where M : Javax.Tools.IJavaFileManager, new()
+    public partial class ForwardingJavaFileManager<M> : Javax.Tools.JavaFileManager where M : Javax.Tools.IJavaFileManager
     {
         const string _bridgeClassName = "javax.tools.ForwardingJavaFileManager";
         /// <summary>

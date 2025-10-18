@@ -181,7 +181,7 @@ namespace Javax.Security.Auth
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Security.IPrincipal"/></typeparam>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public Java.Util.Set<T> GetPrincipals<T>(Java.Lang.Class arg0) where T : Java.Security.IPrincipal, new()
+        public Java.Util.Set<T> GetPrincipals<T>(Java.Lang.Class arg0) where T : Java.Security.IPrincipal
         {
             return IExecute<Java.Util.Set<T>>("getPrincipals", arg0);
         }

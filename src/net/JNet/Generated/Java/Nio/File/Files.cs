@@ -91,7 +91,7 @@ namespace Java.Nio.File
         /// <typeparam name="A"><see cref="Java.Nio.File.Attribute.IBasicFileAttributes"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static A ReadAttributes<A>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where A : Java.Nio.File.Attribute.IBasicFileAttributes, new()
+        public static A ReadAttributes<A>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where A : Java.Nio.File.Attribute.IBasicFileAttributes
         {
             return SExecute<A>(LocalBridgeClazz, "readAttributes", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }
@@ -103,7 +103,7 @@ namespace Java.Nio.File
         /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
         /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.IFileAttributeView"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public static V GetFileAttributeView<V>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V : Java.Nio.File.Attribute.IFileAttributeView, new()
+        public static V GetFileAttributeView<V>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V : Java.Nio.File.Attribute.IFileAttributeView
         {
             return SExecute<V>(LocalBridgeClazz, "getFileAttributeView", MASES.JNet.Specific.Extensions.JNetCoreExtensions.VarArgRebuild(arg2, arg0, arg1));
         }
