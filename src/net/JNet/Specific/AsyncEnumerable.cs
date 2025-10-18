@@ -82,7 +82,7 @@ namespace MASES.JNet.Specific
     /// <typeparam name="TClass">The class implementing <see cref="IJVMBridgeBase"/></typeparam>
     /// <typeparam name="TObject">The type of objects to enumerate implementing <see cref="IJVMBridgeBase"/></typeparam>
     public abstract class JNetAsyncEnumerable<TClass, TObject> : JVMBridgeBaseEnumerable<TClass, TObject>, IAsyncEnumerable<TObject>
-        where TClass : JVMBridgeBase, new()
+        where TClass : JVMBridgeBase
     {
         /// <summary>
         /// Create an instance of <see cref="JNetAsyncEnumerable{TClass, TObject}"/>
