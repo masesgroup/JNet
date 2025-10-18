@@ -37,6 +37,8 @@ namespace MASES.JNet.Reflector
 {
     static class JNetReflectorExtensions
     {
+        const bool enableNewConstraint = false;
+
         static string _CurrentJavadocBaseUrl;
         static int _CurrentJavadocVersion;
         static bool _CurrentNoModule;
@@ -786,7 +788,8 @@ namespace MASES.JNet.Reflector
             string result = string.Empty;
             if (bClass != null && bClass.IsInterface())
             {
-                result = bClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), usedInGenerics, true) + AllPackageClasses.WHERE_CLAUSE_NEW; // the new constraint means the type shall be a class implementing the interface
+                result = bClass.JVMInterfaceName(new List<KeyValuePair<string, string>>(), usedInGenerics, true) 
+                         + (enableNewConstraint ? AllPackageClasses.WHERE_CLAUSE_NEW : string.Empty); // the new constraint means the type shall be a class implementing the interface
             }
             else if (parentTypeName != null && bound.TypeName.Contains(SpecialNames.BeginGenericDeclaration)
                     && bound.TypeName.Contains(SpecialNames.JavaLangAnyType))
