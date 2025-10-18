@@ -56,7 +56,7 @@ namespace MASES.JNet.Specific
         /// </summary>
         /// <typeparam name="TClass">A type implementing <see cref="IJVMBridgeBase"/></typeparam>
         /// <returns>The <see cref="IJVMBridgeDefinition.BridgeClassName"/></returns>
-        public static Java.Lang.Class<TClass> Class<TClass>() where TClass : IJVMBridgeBase, new()
+        public static Java.Lang.Class<TClass> Class<TClass>() where TClass : IJVMBridgeBase
         {
             var className = JVMBridgeBase.ClassNameOf<TClass>();
             return Java.Lang.Class<TClass>.SExecute<Java.Lang.Class<TClass>>("forName", className);
