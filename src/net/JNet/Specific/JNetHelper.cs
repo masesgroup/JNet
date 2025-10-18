@@ -99,9 +99,9 @@ namespace MASES.JNet.Specific
         /// </summary>
         /// <param name="arg0"><see cref="ByteBuffer"/> to be used</param>
         /// <returns>A <see cref="Java.Util.List"/> can be used as input of <see cref="ArrayList{T}"/></returns>
-        public static List ListFrom(ByteBuffer arg0)
+        public static List<Java.Lang.Byte> ListFrom(ByteBuffer arg0)
         {
-            return SExecute<List>(LocalBridgeClazz, "listFromByteBuffer", arg0);
+            return SExecute<List<Java.Lang.Byte>>(LocalBridgeClazz, "listFromByteBuffer", arg0);
         }
 
         /// <summary>
@@ -109,9 +109,9 @@ namespace MASES.JNet.Specific
         /// </summary>
         /// <param name="arg0"><see cref="CharBuffer"/> to be used</param>
         /// <returns>A <see cref="Java.Util.List"/> can be used as input of <see cref="ArrayList{T}"/></returns>
-        public static List ListFrom(CharBuffer arg0)
+        public static List<Java.Lang.Character> ListFrom(CharBuffer arg0)
         {
-            return SExecute<List>(LocalBridgeClazz, "listFromCharBuffer", arg0);
+            return SExecute<List<Java.Lang.Character>>(LocalBridgeClazz, "listFromCharBuffer", arg0);
         }
 
         /// <summary>
@@ -119,9 +119,9 @@ namespace MASES.JNet.Specific
         /// </summary>
         /// <param name="arg0"><see cref="DoubleBuffer"/> to be used</param>
         /// <returns>A <see cref="Java.Util.List"/> can be used as input of <see cref="ArrayList{T}"/></returns>
-        public static List ListFrom(DoubleBuffer arg0)
+        public static List<Java.Lang.Double> ListFrom(DoubleBuffer arg0)
         {
-            return SExecute<List>(LocalBridgeClazz, "listFromDoubleBuffer", arg0);
+            return SExecute<List<Java.Lang.Double>>(LocalBridgeClazz, "listFromDoubleBuffer", arg0);
         }
 
         /// <summary>
@@ -129,9 +129,9 @@ namespace MASES.JNet.Specific
         /// </summary>
         /// <param name="arg0"><see cref="FloatBuffer"/> to be used</param>
         /// <returns>A <see cref="Java.Util.List"/> can be used as input of <see cref="ArrayList{T}"/></returns>
-        public static List ListFrom(FloatBuffer arg0)
+        public static List<Java.Lang.Float> ListFrom(FloatBuffer arg0)
         {
-            return SExecute<List>(LocalBridgeClazz, "listFromFloatBuffer", arg0);
+            return SExecute<List<Java.Lang.Float>>(LocalBridgeClazz, "listFromFloatBuffer", arg0);
         }
 
         /// <summary>
@@ -139,9 +139,9 @@ namespace MASES.JNet.Specific
         /// </summary>
         /// <param name="arg0"><see cref="IntBuffer"/> to be used</param>
         /// <returns>A <see cref="Java.Util.List"/> can be used as input of <see cref="ArrayList{T}"/></returns>
-        public static List ListFrom(IntBuffer arg0)
+        public static List<Java.Lang.Integer> ListFrom(IntBuffer arg0)
         {
-            return SExecute<List>(LocalBridgeClazz, "listFromIntBuffer", arg0);
+            return SExecute<List<Java.Lang.Integer>>(LocalBridgeClazz, "listFromIntBuffer", arg0);
         }
 
         /// <summary>
@@ -149,9 +149,9 @@ namespace MASES.JNet.Specific
         /// </summary>
         /// <param name="arg0"><see cref="LongBuffer"/> to be used</param>
         /// <returns>A <see cref="Java.Util.List"/> can be used as input of <see cref="ArrayList{T}"/></returns>
-        public static List ListFrom(LongBuffer arg0)
+        public static List<Java.Lang.Long> ListFrom(LongBuffer arg0)
         {
-            return SExecute<List>(LocalBridgeClazz, "listFromLongBuffer", arg0);
+            return SExecute<List<Java.Lang.Long>>(LocalBridgeClazz, "listFromLongBuffer", arg0);
         }
 
         /// <summary>
@@ -159,9 +159,9 @@ namespace MASES.JNet.Specific
         /// </summary>
         /// <param name="arg0"><see cref="ShortBuffer"/> to be used</param>
         /// <returns>A <see cref="Java.Util.List"/> can be used as input of <see cref="ArrayList{T}"/></returns>
-        public static List ListFrom(ShortBuffer arg0)
+        public static List<Java.Lang.Short> ListFrom(ShortBuffer arg0)
         {
-            return SExecute<List>(LocalBridgeClazz, "listFromShortBuffer", arg0);
+            return SExecute<List<Java.Lang.Short>>(LocalBridgeClazz, "listFromShortBuffer", arg0);
         }
     }
 }
