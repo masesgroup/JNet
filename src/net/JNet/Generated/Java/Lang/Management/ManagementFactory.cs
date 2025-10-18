@@ -219,7 +219,7 @@ namespace Java.Lang.Management
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Management.IPlatformManagedObject"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
-        public static Java.Util.List<T> GetPlatformMXBeans<T>(Java.Lang.Class arg0) where T : Java.Lang.Management.IPlatformManagedObject, new()
+        public static Java.Util.List<T> GetPlatformMXBeans<T>(Java.Lang.Class arg0) where T : Java.Lang.Management.IPlatformManagedObject
         {
             return SExecute<Java.Util.List<T>>(LocalBridgeClazz, "getPlatformMXBeans", arg0);
         }
@@ -231,7 +231,7 @@ namespace Java.Lang.Management
         /// <typeparam name="T"><see cref="Java.Lang.Management.IPlatformManagedObject"/></typeparam>
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Util.List<T> GetPlatformMXBeans<T>(Javax.Management.MBeanServerConnection arg0, Java.Lang.Class arg1) where T : Java.Lang.Management.IPlatformManagedObject, new()
+        public static Java.Util.List<T> GetPlatformMXBeans<T>(Javax.Management.MBeanServerConnection arg0, Java.Lang.Class arg1) where T : Java.Lang.Management.IPlatformManagedObject
         {
             return SExecute<Java.Util.List<T>>(LocalBridgeClazz, "getPlatformMXBeans", arg0, arg1);
         }
@@ -241,7 +241,7 @@ namespace Java.Lang.Management
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Management.IPlatformManagedObject"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T GetPlatformMXBean<T>(Java.Lang.Class arg0) where T : Java.Lang.Management.IPlatformManagedObject, new()
+        public static T GetPlatformMXBean<T>(Java.Lang.Class arg0) where T : Java.Lang.Management.IPlatformManagedObject
         {
             return SExecute<T>(LocalBridgeClazz, "getPlatformMXBean", arg0);
         }
@@ -253,7 +253,7 @@ namespace Java.Lang.Management
         /// <typeparam name="T"><see cref="Java.Lang.Management.IPlatformManagedObject"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static T GetPlatformMXBean<T>(Javax.Management.MBeanServerConnection arg0, Java.Lang.Class arg1) where T : Java.Lang.Management.IPlatformManagedObject, new()
+        public static T GetPlatformMXBean<T>(Javax.Management.MBeanServerConnection arg0, Java.Lang.Class arg1) where T : Java.Lang.Management.IPlatformManagedObject
         {
             return SExecute<T>(LocalBridgeClazz, "getPlatformMXBean", arg0, arg1);
         }

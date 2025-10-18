@@ -109,7 +109,7 @@ namespace Javax.Swing
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="T"><see cref="Java.Util.IEventListener"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T[] GetListeners<T>(Java.Lang.Class arg0) where T : Java.Util.IEventListener, new()
+        public T[] GetListeners<T>(Java.Lang.Class arg0) where T : Java.Util.IEventListener
         {
             return IExecuteArray<T>("getListeners", arg0);
         }

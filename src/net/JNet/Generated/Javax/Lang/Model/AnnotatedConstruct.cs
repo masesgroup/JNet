@@ -85,14 +85,14 @@ namespace Javax.Lang.Model
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        A GetAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new();
+        A GetAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation;
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/lang/model/AnnotatedConstruct.html#getAnnotationsByType(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new();
+        A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation;
 
         #endregion
 
@@ -137,7 +137,7 @@ namespace Javax.Lang.Model
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A GetAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
+        public A GetAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation
         {
             return IExecute<A>("getAnnotation", arg0);
         }
@@ -147,7 +147,7 @@ namespace Javax.Lang.Model
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <typeparam name="A"><see cref="Java.Lang.Annotation.IAnnotation"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
-        public A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
+        public A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation
         {
             return IExecuteArray<A>("getAnnotationsByType", arg0);
         }

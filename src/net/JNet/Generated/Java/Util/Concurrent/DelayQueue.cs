@@ -71,7 +71,7 @@ namespace Java.Util.Concurrent
     /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/DelayQueue.html"/>
     /// </summary>
     /// <typeparam name="E"><see cref="Java.Util.Concurrent.IDelayed"/></typeparam>
-    public partial class DelayQueue<E> : Java.Util.AbstractQueue<E> where E : Java.Util.Concurrent.IDelayed, new()
+    public partial class DelayQueue<E> : Java.Util.AbstractQueue<E> where E : Java.Util.Concurrent.IDelayed
     {
         const string _bridgeClassName = "java.util.concurrent.DelayQueue";
         /// <summary>
