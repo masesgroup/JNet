@@ -107,7 +107,7 @@ namespace Java.Nio
         /// <remarks>
         /// The memory associated to <paramref name="rawAddr"/> shall be available until the JVM reference of the newly created <see cref="ByteBuffer"/> is garbage collected to avoid access violation within the JVM. 
         /// Under heavy pressure the memory footprint can raise up and generate an <see cref="OutOfMemoryException"/>, use the functionality with caution or take into account the <paramref name="timeToLive"/> option which can help to recover the memory in advance before the Garbage Collector of the JVM retires the <see cref="ByteBuffer"/>
-        /// If the user of <see cref="ByteBuffer"/> is pretty sure that the memory is no more needed from the JVM, e.g. the invoked method does not queue the <see cref="ByteBuffer"/> and its lifetime ends when the method returns, invoke <see cref="Dispose"/> to immediately release unmanaged resources and free the memory
+        /// If the user of <see cref="ByteBuffer"/> is pretty sure that the memory is no more needed from the JVM, e.g. the invoked method does not queue the <see cref="ByteBuffer"/> and its lifetime ends when the method returns; to immediately release unmanaged resources, and free the memory, invokes <see cref="ToDirectBuffer"/> and invoke <see cref="JCOBridgeDirectBuffer{T}.Dispose"/>
         /// </remarks>
         public static ByteBuffer From(IntPtr rawAddr, long capacity, EventHandler<object> disposeEvent = null, object disposeEventState = null, int timeToLive = System.Threading.Timeout.Infinite)
         {
@@ -127,7 +127,7 @@ namespace Java.Nio
         /// <remarks>
         /// The memory associated to <paramref name="data"/> will be pinned until the JVM reference of the newly created <see cref="ByteBuffer"/> is garbage collected to avoid access violation within the JVM. 
         /// Under heavy pressure the memory footprint can raise up and generate an <see cref="OutOfMemoryException"/>, use the functionality with caution or take into account the <paramref name="timeToLive"/> option which can help to recover the memory in advance before the Garbage Collector of the JVM retires the <see cref="ByteBuffer"/>
-        /// If the user of <see cref="ByteBuffer"/> is pretty sure that the pinned memory is no more needed from the JVM, e.g. the invoked method does not queue the <see cref="ByteBuffer"/> and its lifetime ends when the method returns, invoke <see cref="Dispose"/> to immediately release unmanaged resources and free the memory
+        /// If the user of <see cref="ByteBuffer"/> is pretty sure that the pinned memory is no more needed from the JVM, e.g. the invoked method does not queue the <see cref="ByteBuffer"/> and its lifetime ends when the method returns; to immediately release unmanaged resources, and free the memory, invokes <see cref="ToDirectBuffer"/> and invoke <see cref="JCOBridgeDirectBuffer{T}.Dispose"/>
         /// </remarks>
         public static ByteBuffer From(byte[] data, bool useMemoryControlBlock = true, bool arrangeCapacity = true, int timeToLive = System.Threading.Timeout.Infinite)
         {
